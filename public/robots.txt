@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://thegardenplanner.app/sitemap.xml
+Sitemap: https://thegardenplanner.app/sitemap-index.xml

@@ -1,11 +1,15 @@
 # Netlify configuration for thegardenplanner.app
-# Static site — no build step. Repository root is published as-is.
+# Astro builds the /blog section; the marketing pages in public/ pass through
+# untouched. Netlify runs `npm install` automatically, then the build command.
 
 [build]
-  publish = "."
-  command = ""
+  publish = "dist"
+  command = "npm run build"
 
-# Pretty URLs (also resolved automatically by Netlify, declared here for clarity)
+[build.environment]
+  NODE_VERSION = "22"
+
+# Pretty URLs for the static marketing pages (served from public/).
 [[redirects]]
   from = "/privacy"
   to = "/privacy.html"

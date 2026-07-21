@@ -1,0 +1,80 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+export async function getStaticPaths() {
+  const posts = (await getCollection('blog')).filter((p) => !p.data.draft);
+  return posts.map((post) => ({ params: { slug: post.id }, props: { post } }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+const { data } = post;
+
+const url = new URL(`/blog/${post.id}/`, Astro.site).href;
+const image = data.image
+  ? new URL(data.image, Astro.site).href
+  : 'https://thegardenplanner.app/assets/app-icon.png';
+
+const fmt = (d: Date) =>
+  d.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+
+// Article structured data helps Google understand and surface the post.
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BlogPosting',
+  headline: data.title,
+  description: data.description,
+  image,
+  datePublished: data.date.toISOString(),
+  dateModified: (data.updated ?? data.date).toISOString(),
+  author: { '@type': 'Organization', name: 'Garden Pro Planner' },
+  publisher: {
+    '@type': 'Organization',
+    name: 'Garden Pro Planner',
+    logo: { '@type': 'ImageObject', url: 'https://thegardenplanner.app/assets/app-icon.png' },
+  },
+  mainEntityOfPage: { '@type': 'WebPage', '@id': url },
+};
+---
+<BaseLayout
+  title={`${data.title} — Garden Pro Planner`}
+  description={data.description}
+  canonical={url}
+  image={image}
+  type="article"
+>
+  <script type="application/ld+json" slot="head" set:html={JSON.stringify(jsonLd)} />
+
+  <article class="section">
+    <div class="wrap wrap-narrow">
+      <nav class="crumbs"><a href="/blog">← All posts</a></nav>
+      <header class="post-header">
+        <h1>{data.title}</h1>
+        <p class="post-meta">
+          <time datetime={data.date.toISOString()}>{fmt(data.date)}</time>
+          {data.updated && <span> · Updated {fmt(data.updated)}</span>}
+        </p>
+        {data.tags.length > 0 && (
+          <ul class="tag-row">
+            {data.tags.map((t) => <li class="tag">{t}</li>)}
+          </ul>
+        )}
+      </header>
+
+      {data.image && (
+        <img class="post-hero-img" src={data.image} alt={data.imageAlt ?? data.title} loading="eager" />
+      )}
+
+      <div class="prose">
+        <Content />
+      </div>
+
+      <aside class="post-cta">
+        <h3>Grow this in Garden Pro Planner</h3>
+        <p>Plan your season around a 225+ plant library and your local frost dates — with a planting calendar, pest guides, and yield tracking.</p>
+        <a class="btn" href="https://apps.apple.com/app/id1539031278">Get the free app</a>
+      </aside>
+    </div>
+  </article>
+</BaseLayout>
