@@ -15,6 +15,7 @@
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
+:focus-visible{outline:2px solid var(--green-600);outline-offset:2px}
 body{
   margin:0;
   font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
@@ -42,10 +43,11 @@ h1,h2,h3{font-family:'Fraunces',Georgia,serif;font-weight:600;line-height:1.1;co
 }
 .brand-name{font-family:'Fraunces',serif;font-size:18px}
 .nav{display:flex;align-items:center;gap:26px}
-.nav a{color:var(--ink-soft);font-weight:500;font-size:15px}
-.nav a:hover{color:var(--green-700);text-decoration:none}
-.btn{display:inline-flex;align-items:center;justify-content:center;background:var(--green-600);color:#fff;border-radius:999px;padding:10px 20px;font-weight:600}
-.btn:hover{background:var(--green-700);text-decoration:none}
+.nav a:not(.btn){color:var(--ink-soft);font-weight:500;font-size:15px;transition:color .15s ease}
+.nav a:not(.btn):hover{color:var(--green-700);text-decoration:none}
+.btn{display:inline-flex;align-items:center;justify-content:center;background:var(--green-600);color:#fff;border-radius:999px;padding:10px 20px;font-weight:600;transition:background .15s ease,transform .15s ease,box-shadow .15s ease}
+.btn:hover{background:var(--green-700);text-decoration:none;transform:translateY(-1px);box-shadow:0 8px 20px -8px rgba(18,58,38,.45)}
+.btn:active{transform:translateY(0)}
 .btn-sm{padding:8px 16px;font-size:14px}
 
 /* Hero */
@@ -60,8 +62,8 @@ h1,h2,h3{font-family:'Fraunces',Georgia,serif;font-weight:600;line-height:1.1;co
 .badge-row li::before{content:"✓";position:absolute;left:0;color:var(--green-600);font-weight:700}
 
 /* App Store button */
-.appstore{display:inline-flex;align-items:center;gap:12px;background:#111;color:#fff;border-radius:14px;padding:10px 20px}
-.appstore:hover{background:#000;text-decoration:none}
+.appstore{display:inline-flex;align-items:center;gap:12px;background:#111;color:#fff;border-radius:14px;padding:10px 20px;transition:background .15s ease,transform .15s ease}
+.appstore:hover{background:#000;text-decoration:none;transform:translateY(-1px)}
 .appstore-txt{display:flex;flex-direction:column;line-height:1.1;text-align:left}
 .appstore-txt small{font-size:11px;font-weight:400;opacity:.85}
 .appstore-txt strong{font-size:19px;font-weight:600}
@@ -86,7 +88,8 @@ h1,h2,h3{font-family:'Fraunces',Georgia,serif;font-weight:600;line-height:1.1;co
 
 /* Features */
 .features{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-.feature{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px}
+.feature{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;transition:box-shadow .2s ease,transform .2s ease,border-color .2s ease}
+.feature:hover{box-shadow:var(--shadow);transform:translateY(-2px);border-color:var(--green-100)}
 .feature-ico{font-size:30px;margin-bottom:12px}
 .feature h3{font-size:21px;margin-bottom:8px}
 .feature p{margin:0;color:var(--ink-soft);font-size:15.5px}
@@ -94,10 +97,12 @@ h1,h2,h3{font-family:'Fraunces',Georgia,serif;font-weight:600;line-height:1.1;co
 /* Gallery */
 .gallery{display:flex;gap:28px;justify-content:center;flex-wrap:wrap}
 .gallery figure{margin:0;text-align:center}
+.gallery figure .phone{margin-left:auto;margin-right:auto}
 .gallery figcaption{margin-top:16px;font-weight:600;color:var(--ink)}
 
 /* FAQ */
-.faq details{border:1px solid var(--line);border-radius:14px;padding:4px 20px;margin-bottom:14px;background:#fff}
+.faq details{border:1px solid var(--line);border-radius:14px;padding:4px 20px;margin-bottom:14px;background:#fff;transition:border-color .15s ease}
+.faq details:hover{border-color:var(--green-100)}
 .faq summary{cursor:pointer;font-weight:600;padding:16px 0;list-style:none;position:relative;padding-right:30px}
 .faq summary::-webkit-details-marker{display:none}
 .faq summary::after{content:"+";position:absolute;right:4px;top:14px;font-size:22px;color:var(--green-600);transition:transform .2s}
