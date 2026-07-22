@@ -16,6 +16,10 @@
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 :focus-visible{outline:2px solid var(--green-600);outline-offset:2px}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{animation-duration:.001ms !important;animation-iteration-count:1 !important;transition-duration:.001ms !important}
+}
 body{
   margin:0;
   font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
@@ -48,7 +52,39 @@ h1,h2,h3{font-family:'Fraunces',Georgia,serif;font-weight:600;line-height:1.1;co
 .btn{display:inline-flex;align-items:center;justify-content:center;background:var(--green-600);color:#fff;border-radius:999px;padding:10px 20px;font-weight:600;transition:background .15s ease,transform .15s ease,box-shadow .15s ease}
 .btn:hover{background:var(--green-700);text-decoration:none;transform:translateY(-1px);box-shadow:0 8px 20px -8px rgba(18,58,38,.45)}
 .btn:active{transform:translateY(0)}
-.btn-sm{padding:8px 16px;font-size:14px}
+
+/* "Get the app" header CTA */
+.btn-sm{
+  position:relative;
+  overflow:hidden;
+  gap:7px;
+  padding:8px 18px 8px 14px;
+  font-size:14px;
+  background:linear-gradient(135deg,var(--green-600),var(--green-500));
+  box-shadow:0 1px 2px rgba(18,58,38,.2);
+}
+.btn-sm:hover{background:linear-gradient(135deg,var(--green-700),var(--green-600))}
+.btn-sm .btn-icon{flex:none;transition:transform .3s ease}
+.btn-sm:hover .btn-icon{transform:rotate(-8deg) scale(1.08)}
+.btn-sm::after{
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  width:40%;
+  height:100%;
+  background:linear-gradient(115deg,transparent,rgba(255,255,255,.5),transparent);
+  transform:translateX(-320%) skewX(-20deg);
+  animation:btn-shine 6s ease-in-out infinite;
+  pointer-events:none;
+}
+@keyframes btn-shine{
+  0%,88%{transform:translateX(-320%) skewX(-20deg)}
+  96%,100%{transform:translateX(320%) skewX(-20deg)}
+}
+@media (prefers-reduced-motion:reduce){
+  .btn-sm::after{animation:none;display:none}
+}
 
 /* Hero */
 .hero{background:linear-gradient(180deg,var(--green-50),#fff);border-bottom:1px solid var(--line);overflow:hidden}
