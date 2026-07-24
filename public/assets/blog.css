@@ -74,3 +74,18 @@
 }
 .post-cta h3 { font-size: 22px; }
 .post-cta p { color: var(--ink-soft); margin: 10px auto 18px; max-width: 46ch; }
+.post-cta .btn { min-height: 48px; padding: 12px 26px; }
+
+@media (max-width: 560px) {
+  .blog-hero { padding: 40px 0 32px; }
+  .post-card-link { padding: 20px 20px 22px; }
+  .post-card-title { font-size: 21px; }
+  .post-list { gap: 16px; }
+  .prose { font-size: 17px; margin-top: 24px; }
+  .prose h2 { font-size: 24px; }
+  .prose h3 { font-size: 20px; }
+  /* Wide comparison tables scroll on their own rather than stretching the page. */
+  .prose table { display: block; overflow-x: auto; white-space: nowrap; }
+  .post-cta { padding: 24px 20px; margin-top: 36px; }
+  .post-cta .btn { width: 100%; }
+}

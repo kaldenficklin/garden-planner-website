@@ -27,6 +27,10 @@ body{
   background:var(--white);
   line-height:1.6;
   -webkit-font-smoothing:antialiased;
+  /* Stop iOS from inflating type in landscape, and kill the grey flash on tap. */
+  -webkit-text-size-adjust:100%;
+  -webkit-tap-highlight-color:rgba(37,145,91,.12);
+  overflow-x:hidden;
 }
 img{max-width:100%;display:block}
 a{color:var(--green-700);text-decoration:none}
@@ -160,6 +164,16 @@ h1,h2,h3{font-family:'Fraunces',Georgia,serif;font-weight:600;line-height:1.1;co
 .footer-nav a:hover{color:#fff}
 .copyright{margin:0;font-size:14px;color:#8fb39c}
 
+/* Mobile sticky download bar — hidden on desktop, revealed by site.js after
+   the visitor scrolls past the hero. */
+.mobile-cta{display:none}
+.mobile-cta-inner{display:flex;align-items:center;gap:12px}
+.mobile-cta-icon{width:44px;height:44px;border-radius:10px;flex:none}
+.mobile-cta-text{display:flex;flex-direction:column;line-height:1.25;min-width:0}
+.mobile-cta-text strong{font-size:15px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mobile-cta-text span{font-size:13px;color:var(--ink-soft)}
+.mobile-cta-btn{flex:none;min-height:44px;padding:10px 24px;font-size:15px}
+
 /* Content pages (privacy/support) */
 .page{padding:56px 0 80px}
 .page h1{font-size:clamp(30px,4vw,44px);margin-bottom:8px}
@@ -170,15 +184,68 @@ h1,h2,h3{font-family:'Fraunces',Georgia,serif;font-weight:600;line-height:1.1;co
 .page a{font-weight:500}
 
 @media(max-width:860px){
-  .hero-grid{grid-template-columns:1fr;text-align:center;padding-top:48px}
+  .hero-grid{grid-template-columns:1fr;text-align:center;padding:36px 24px 32px}
   .lead{margin-left:auto;margin-right:auto}
   .cta-row,.badge-row{justify-content:center}
-  .hero-shot{order:-1;margin-bottom:8px}
+  /* The headline and the download button come first. Ad traffic decides in
+     the first screenful, and a phone mockup does not close anyone. */
+  .hero-shot{margin-top:32px}
   .features{grid-template-columns:1fr 1fr}
   .nav a:not(.btn){display:none}
+
+  /* Screens become a swipeable carousel instead of four stacked mockups. */
+  .gallery{
+    flex-wrap:nowrap;justify-content:flex-start;gap:16px;
+    overflow-x:auto;scroll-snap-type:x mandatory;
+    -webkit-overflow-scrolling:touch;scrollbar-width:none;
+    margin:0 -24px;padding:4px 24px 8px;
+  }
+  .gallery::-webkit-scrollbar{display:none}
+  .gallery figure{scroll-snap-align:center;flex:0 0 62%}
+  .gallery figcaption{margin-top:12px;font-size:15px}
+
+  .mobile-cta{
+    display:block;
+    position:fixed;left:0;right:0;bottom:0;z-index:60;
+    background:rgba(255,255,255,.96);
+    backdrop-filter:saturate(1.4) blur(10px);
+    border-top:1px solid var(--line);
+    padding:10px 16px calc(10px + env(safe-area-inset-bottom));
+    box-shadow:0 -10px 30px -20px rgba(18,58,38,.6);
+    transform:translateY(130%);
+    transition:transform .25s ease;
+  }
+  .mobile-cta.is-visible{transform:none}
+  .mobile-cta-btn{margin-left:auto}
+  /* Room for the bar so it never covers the end of the footer. */
+  body{padding-bottom:80px}
 }
+
 @media(max-width:560px){
   .features{grid-template-columns:1fr}
-  .section{padding:56px 0}
+  .feature{padding:22px}
+  .section{padding:48px 0}
+  .section-title{margin-bottom:32px}
   .brand-name{display:none}
+  .hero h1{font-size:clamp(32px,8.5vw,42px)}
+  .lead{font-size:17px;margin:16px auto 24px}
+  .eyebrow{font-size:12px}
+
+  /* One full-width, thumb-sized download button. */
+  .cta-row{width:100%}
+  .cta-row .appstore{width:100%;justify-content:center;min-height:56px;border-radius:16px}
+  .cta-band .appstore{width:100%;max-width:340px;justify-content:center;min-height:56px}
+
+  .badge-row{gap:8px 16px;margin-top:22px;font-size:13px;justify-content:center}
+  .hero-shot .phone{max-width:250px}
+  .phone{border-radius:32px;padding:8px}
+  .phone img{border-radius:24px}
+
+  /* 44px minimum on everything you tap. */
+  .btn-sm{padding:11px 16px;min-height:44px}
+  .faq summary{padding:18px 0;min-height:44px}
+  .faq details{padding:2px 16px}
+  .footer-nav{gap:6px 20px}
+  .footer-nav a{padding:8px 0;display:inline-block}
+  .site-footer{padding:40px 0}
 }
