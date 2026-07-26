@@ -5,3 +5,6 @@ node_modules/
 # Astro build output & cache
 dist/
 .astro/
+
+# Instagram/social exports — generated on demand, not served by the site
+social-exports/

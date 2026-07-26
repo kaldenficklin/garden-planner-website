@@ -5,11 +5,11 @@ governs how they get distributed.
 
 Accounts:
 
-| Platform  | Handle              | Type                       |
-| --------- | ------------------- | -------------------------- |
-| Instagram | `gardenplannerguru` | Personal — needs switching  |
-| Pinterest | `GardenPlannerGuru` | Business                    |
-| Site      | thegardenplanner.app | Claimed on Pinterest ✅    |
+| Platform  | Handle               | Type                    |
+| --------- | -------------------- | ----------------------- |
+| Instagram | `gardenplannerguru`  | Personal — by choice    |
+| Pinterest | `GardenPlannerGuru`  | Business                |
+| Site      | thegardenplanner.app | Claimed on Pinterest ✅ |
 
 ---
 
@@ -32,9 +32,20 @@ integration to do the first one:
   to outbound links. Its realistic contribution is brand recall, saves, and App
   Store installs through the bio link — not clicks to blog posts.
 
-The IG→Pinterest auto-publish is still worth turning on, because it keeps the
-Pinterest account active for free and Instagram-sourced pins do get impressions.
-Just don't count it as a traffic channel.
+### The Instagram account stays personal
+
+That is a deliberate choice, and it closes two doors — both gated behind the
+same Professional-account requirement:
+
+- **Pinterest's IG auto-publish is unavailable.** Pinterest only links Business
+  accounts. No loss on traffic, per the above; the cost is that the Pinterest
+  account no longer gets free activity from Instagram posts, so its pins have to
+  be created deliberately.
+- **Instagram's publishing API is unavailable**, so nothing can post to the feed
+  on a schedule. Every Instagram post is made by hand, on the phone.
+
+The remaining friction is therefore purely mechanical — getting correctly-shaped
+images onto the phone. That is what `scripts/make-instagram.mjs` is for.
 
 ---
 
@@ -44,26 +55,40 @@ Just don't count it as a traffic channel.
   Pinterest. This turns on Article Rich Pins — every pin linking to the blog now
   shows the headline, author, publish date and site name pulled from the
   `article:*` tags in `BaseLayout.astro`, and carries the account's attribution.
-- Instagram bio written (147/150).
+- Instagram bio written (147/150), link in bio, profile photo and display name
+  all set.
 
-## Remaining setup — phone only
+---
 
-Instagram's web app cannot do any of these. All four are on the phone.
+## Getting a post onto Instagram
 
-1. **Switch to a Professional (Business) account.**
-   Settings → Account type and tools → Switch to professional account →
-   category *Gardening* or *Publisher*. Pinterest's auto-publish requires a
-   Business account and Pinterest only lets the primary account holder link one.
-2. **Set the link in bio** to `https://thegardenplanner.app/blog` — the blog,
-   not the homepage. Someone arriving from a gardening post wants the guide;
-   the blog's own layout sells the app on every page anyway.
-3. **Add a profile photo.** Use `public/assets/app-icon.png`.
-4. **Change the display name** from "Kalden Ficklin" to
-   `Garden Pro Planner · Vegetable Gardening`. The name field is a *searchable*
-   index on Instagram; the handle alone is not enough.
+```
+node scripts/make-instagram.mjs            # all posts
+node scripts/make-instagram.mjs <slug>...  # just these
+```
 
-Then, back on Pinterest: Settings → Link to Pinterest → Instagram → Link, and
-opt into importing the last 90 days.
+Writes to `social-exports/` (gitignored — these are not served by the site):
+
+| File               | Size      | For                                       |
+| ------------------ | --------- | ----------------------------------------- |
+| `<slug>-feed.jpg`  | 1080×1350 | 4:5 feed post — the tallest shape the feed allows |
+| `<slug>-story.jpg` | 1080×1920 | 9:16 story, bottom third left clear for the link sticker |
+| `captions.txt`     | —         | hook, body, hashtags and URL per post     |
+
+Then: open `social-exports/` in Finder, AirDrop the two images to the phone,
+and post from the Instagram app. Paste the caption from `captions.txt`, put the
+hashtag line in the **first comment** rather than the caption, and add a link
+sticker to the story pointing at that post's URL.
+
+Both shapes are re-cropped from the original master photo, not resized from the
+published hero or pin — no upscaling and no second round of JPEG compression.
+Masters live in `$TMPDIR/gpp-masters/` and are temporary; if the OS has cleared
+them, regenerate with `gen-post-image.mjs` before exporting.
+
+**The story is the part that matters.** Link stickers are available on personal
+accounts regardless of follower count, and they are the only reliable way to
+send someone from Instagram to a blog post. A feed post builds the audience; the
+story is what converts it.
 
 ---
 
