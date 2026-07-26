@@ -50,6 +50,11 @@ How to actually write it:
   what the old posts were made of.
 - **Ration the "I".** Two or three first-person moments in a post is plenty. The
   post is about the reader's garden. First person is seasoning, not the meal.
+- **Let the season show.** A late-August post should sound like late August:
+  the heat, the glut, tired plants, the first cool night. Someone who was
+  actually outside that week writes differently from someone summarizing a
+  topic, and this is most of the difference. Never write about a season the
+  reader isn't in.
 
 **Anecdotes are invented on purpose, and that is fine.** This is a personal blog
 voice, and illustrative personal history is how the voice works. Write the bad
