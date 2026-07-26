@@ -1,0 +1,29 @@
+---
+/**
+ * Tag pills. Tags that have a hub page become links; the rest stay plain text,
+ * so we never point readers or crawlers at a page that doesn't exist.
+ */
+import { tagSlug, tagCopy } from '../lib/posts';
+
+interface Props {
+  tags: string[];
+  /** Slugs that have a hub page — from `tagsWithPages()`. */
+  linked: string[];
+  /** The hub we're already on, if any; it links nowhere useful. */
+  current?: string;
+}
+
+const { tags, linked, current } = Astro.props;
+const isLinked = (t: string) => linked.includes(tagSlug(t)) && tagSlug(t) !== tagSlug(current ?? '');
+---
+{tags.length > 0 && (
+  <ul class="tag-row">
+    {tags.map((t) =>
+      isLinked(t) ? (
+        <li><a class="tag tag-link" href={`/blog/tag/${tagSlug(t)}/`}>{tagCopy(t).label}</a></li>
+      ) : (
+        <li><span class="tag">{tagCopy(t).label}</span></li>
+      )
+    )}
+  </ul>
+)}

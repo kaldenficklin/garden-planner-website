@@ -1,0 +1,73 @@
+---
+/**
+ * About page. Its job is E-E-A-T: search engines (and readers) weighing
+ * gardening advice want to see who is giving it and where the numbers come
+ * from. Everything here is factual and drawn from the app, the terms page, or
+ * the store listing — see the note by the bio below before adding to it.
+ */
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+
+const canonical = 'https://thegardenplanner.app/about/';
+
+const crumbs = [
+  { name: 'Home', href: '/' },
+  { name: 'About', href: '/about/' },
+];
+
+// Publisher identity, referenced by the BlogPosting markup on every post so
+// Google resolves the posts, the app and the site to one entity.
+const orgLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  '@id': 'https://thegardenplanner.app/#organization',
+  name: 'Garden Pro Planner',
+  url: 'https://thegardenplanner.app/',
+  logo: {
+    '@type': 'ImageObject',
+    url: 'https://thegardenplanner.app/assets/app-icon.png',
+    width: 1024,
+    height: 1024,
+  },
+  email: 'support@thegardenplanner.app',
+  founder: { '@type': 'Person', name: 'Kalden Ficklin' },
+  sameAs: ['https://apps.apple.com/app/id1539031278'],
+};
+---
+<BaseLayout
+  title="About Garden Pro Planner"
+  description="Who builds Garden Pro Planner, where the plant data and frost dates come from, and how the guides on this blog are put together."
+  canonical={canonical}
+>
+  <script type="application/ld+json" slot="head" set:html={JSON.stringify(orgLd)} />
+
+  <main class="page">
+    <div class="wrap wrap-narrow">
+      <Breadcrumbs items={crumbs} />
+      <h1>About Garden Pro Planner</h1>
+      <p class="updated">Who's behind the app, and where the numbers come from.</p>
+
+      <p>Garden Pro Planner is a garden planning app for iPhone and iPad, built and operated by Kalden Ficklin. It has been featured on CBS, NBC and FOX, and is used by gardeners in nine languages.</p>
+
+      <!-- Add a short first-person bio here — how long you have gardened, where,
+           what you grow. This is the single biggest E-E-A-T lever on a site that
+           gives gardening advice, and it is the one thing on this page that
+           cannot be written from the app's data. -->
+
+      <h2>Where the plant data comes from</h2>
+      <p>The app carries a library of 265+ plants. Each entry records sunlight, soil type and pH range, watering needs, spacing and planting depth, days to germinate, days from sprout to harvest, hardiness zone range, expected yield, common pests, crop rotation group, and whether the plant is safe around pets. The same catalog is what the blog's spacing and timing figures are drawn from, so a number quoted in a post is the number the app will give you.</p>
+
+      <h2>How the planting dates are calculated</h2>
+      <p>Planting dates are not generic. The app takes your location, looks up ten years of historical daily minimum temperatures for that spot, and averages them into a last-spring and first-fall frost date. Every sow, transplant and harvest window is then counted backwards or forwards from your own frost dates rather than from a national map. Where local weather history is unavailable, it falls back to a hardiness-zone lookup.</p>
+
+      <h2>How these guides are written</h2>
+      <p>The guides on <a href="/blog/">the blog</a> cover the questions that come up most often in the app: when to start something, what to plant beside it, why it flowered but never fruited, and what is eating it. Where a guide gives a spacing, a timing or a yield, it matches the app's catalog. Where it gives a treatment for a pest, it favours the approach that does least damage to everything else in the bed.</p>
+
+      <h2>Corrections</h2>
+      <p>Gardening advice ages, and local conditions vary more than any article can. If something here is wrong or out of date for your region, email <a href="mailto:support@thegardenplanner.app">support@thegardenplanner.app</a> and it will be corrected.</p>
+
+      <h2>Get the app</h2>
+      <p>Garden Pro Planner is free on the <a href="https://apps.apple.com/app/id1539031278" data-cta="about">App Store</a>, for iPhone and iPad running iOS 15 or later. See the <a href="/support">support page</a> for help getting started, the <a href="/privacy">privacy policy</a> for what the app stores, and the <a href="/terms">terms</a>.</p>
+    </div>
+  </main>
+</BaseLayout>

@@ -1,13 +1,20 @@
 ---
-/** The text-only card list used by the blog index, on every page of it. */
+/** The text-only card list used by the blog index and the tag hubs. */
+import TagRow from './TagRow.astro';
 import type { Post } from '../lib/posts';
-import { formatDate } from '../lib/posts';
+import { formatDate, publishedPosts, tagsWithPages } from '../lib/posts';
 
 interface Props {
   posts: Post[];
+  /** Set on a tag hub, so that tag doesn't link back to the page you're on. */
+  currentTag?: string;
 }
 
-const { posts } = Astro.props;
+const { posts, currentTag } = Astro.props;
+
+// Which tags have a hub is a property of the whole blog, not of this slice of
+// it, so it's derived from every post rather than from `posts`.
+const linked = tagsWithPages(await publishedPosts()).map((t) => t.tag);
 ---
 <ul class="post-list">
   {posts.map((post) => (
@@ -16,13 +23,12 @@ const { posts } = Astro.props;
         <time class="post-date" datetime={post.data.date.toISOString()}>{formatDate(post.data.date)}</time>
         <h2 class="post-card-title">{post.data.title}</h2>
         <p class="post-card-desc">{post.data.description}</p>
-        {post.data.tags.length > 0 && (
-          <ul class="tag-row">
-            {post.data.tags.map((t) => <li class="tag">{t}</li>)}
-          </ul>
-        )}
         <span class="read-more">Read more →</span>
       </a>
+      {/* Outside the card link — a link inside a link is invalid HTML. */}
+      <div class="post-card-tags">
+        <TagRow tags={post.data.tags} linked={linked} current={currentTag} />
+      </div>
     </li>
   ))}
 </ul>

@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
   <title>Support — Garden Pro Planner</title>
   <meta name="description" content="Help and answers for the Garden Pro Planner app." />
   <link rel="canonical" href="https://thegardenplanner.app/support" />
@@ -10,7 +11,11 @@
   <link rel="apple-touch-icon" href="/assets/app-icon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <!-- Loaded without blocking the first paint: the print media query makes
+       the browser fetch it at low priority, and onload promotes it. The
+       stylesheet already carries display=swap, so text is visible throughout. -->
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" /></noscript>
   <link rel="stylesheet" href="/assets/style.css?v=3" />
   <script defer src="/assets/analytics.js?v=1"></script>
   <script defer src="/assets/site.js?v=1"></script>
@@ -97,6 +102,7 @@
       <nav class="footer-nav">
         <a href="/">Home</a>
         <a href="/blog">Blog</a>
+        <a href="/about">About</a>
         <a href="/privacy">Privacy</a>
         <a href="/support">Support</a>
         <a href="/delete-account">Delete account</a>

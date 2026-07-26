@@ -3,10 +3,19 @@ import { render } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import PostNav from '../../components/PostNav.astro';
 import RelatedPosts from '../../components/RelatedPosts.astro';
-import { publishedPosts, relatedPosts, formatDate, type Post } from '../../lib/posts';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import TagRow from '../../components/TagRow.astro';
+import {
+  publishedPosts,
+  relatedPosts,
+  formatDate,
+  tagsWithPages,
+  type Post,
+} from '../../lib/posts';
 
 export async function getStaticPaths() {
   const posts = await publishedPosts();
+  const linkedTags = tagsWithPages(posts).map((t) => t.tag);
   return posts.map((post, i) => ({
     params: { slug: post.id },
     props: {
@@ -15,6 +24,7 @@ export async function getStaticPaths() {
       newer: posts[i - 1],
       older: posts[i + 1],
       related: relatedPosts(post, posts),
+      linkedTags,
     },
   }));
 }
@@ -24,9 +34,10 @@ interface Props {
   newer?: Post;
   older?: Post;
   related: Post[];
+  linkedTags: string[];
 }
 
-const { post, newer, older, related } = Astro.props;
+const { post, newer, older, related, linkedTags } = Astro.props;
 const { Content } = await render(post);
 const { data } = post;
 
@@ -53,6 +64,12 @@ const pinHref =
   `&media=${encodeURIComponent(pinImage)}` +
   `&description=${encodeURIComponent(pinDescription)}`;
 
+const crumbs = [
+  { name: 'Home', href: '/' },
+  { name: 'Blog', href: '/blog/' },
+  { name: data.title, href: `/blog/${post.id}/` },
+];
+
 // Article structured data helps Google understand and surface the post.
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -62,9 +79,10 @@ const jsonLd = {
   image,
   datePublished: data.date.toISOString(),
   dateModified: (data.updated ?? data.date).toISOString(),
-  author: { '@type': 'Organization', name: 'Garden Pro Planner' },
+  author: { '@type': 'Person', name: 'Kalden Ficklin', url: 'https://thegardenplanner.app/about/' },
   publisher: {
     '@type': 'Organization',
+    '@id': 'https://thegardenplanner.app/#organization',
     name: 'Garden Pro Planner',
     logo: { '@type': 'ImageObject', url: 'https://thegardenplanner.app/assets/app-icon.png' },
   },
@@ -85,18 +103,14 @@ const jsonLd = {
 
   <article class="section">
     <div class="wrap wrap-narrow">
-      <nav class="crumbs"><a href="/blog">← All posts</a></nav>
+      <Breadcrumbs items={crumbs} />
       <header class="post-header">
         <h1>{data.title}</h1>
         <p class="post-meta">
           <time datetime={data.date.toISOString()}>{formatDate(data.date)}</time>
           {data.updated && <span> · Updated {formatDate(data.updated)}</span>}
         </p>
-        {data.tags.length > 0 && (
-          <ul class="tag-row">
-            {data.tags.map((t) => <li class="tag">{t}</li>)}
-          </ul>
-        )}
+        <TagRow tags={data.tags} linked={linkedTags} />
       </header>
 
       {data.image && (
@@ -108,6 +122,13 @@ const jsonLd = {
             src={data.image}
             alt={data.imageAlt ?? data.title}
             loading="eager"
+            {/* This is the LCP element. The intrinsic size reserves its box so
+                the article below doesn't jump when it lands, and fetchpriority
+                pulls it ahead of the other images in the queue. Every hero is
+                1200x800 out of scripts/make-images.mjs. */}
+            width="1200"
+            height="800"
+            fetchpriority="high"
             data-pin-media={pinImage}
             data-pin-description={pinDescription}
           />

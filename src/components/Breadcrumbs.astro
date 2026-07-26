@@ -1,0 +1,46 @@
+---
+/**
+ * Breadcrumb trail and its BreadcrumbList structured data, emitted together so
+ * the markup and the schema can never disagree. Breadcrumbs are one of the rich
+ * result types Google still supports, and they replace the bare URL in the
+ * search result with the path through the site.
+ *
+ * The last item is the current page: rendered as plain text, but still listed
+ * in the schema, which is what Google's spec asks for.
+ */
+interface Crumb {
+  name: string;
+  href: string;
+}
+
+interface Props {
+  items: Crumb[];
+}
+
+const { items } = Astro.props;
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: items.map((item, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    name: item.name,
+    item: new URL(item.href, Astro.site).href,
+  })),
+};
+---
+<nav class="crumbs" aria-label="Breadcrumb">
+  <ol class="crumb-list">
+    {items.map((item, i) => (
+      <li class="crumb">
+        {i === items.length - 1 ? (
+          <span aria-current="page">{item.name}</span>
+        ) : (
+          <a href={item.href}>{item.name}</a>
+        )}
+      </li>
+    ))}
+  </ol>
+</nav>
+<script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />

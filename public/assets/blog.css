@@ -67,18 +67,34 @@
 /* Tags */
 .tag-row { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; padding: 0; margin: 14px 0 0; }
 .tag {
+  display: inline-block;
   font-size: 12px; font-weight: 600; letter-spacing: .02em;
   color: var(--green-700); background: var(--green-100);
   padding: 4px 11px; border-radius: 999px;
 }
+a.tag-link { transition: background .15s ease, color .15s ease; }
+a.tag-link:hover { background: var(--green-600); color: #fff; text-decoration: none; }
+
+/* Tags sit outside the card's own link, so they get the card's padding here. */
+.post-card-tags { padding: 0 28px 22px; margin-top: -6px; }
+.post-card-tags .tag-row { margin-top: 0; }
+.tag-back { margin-top: 32px; font-weight: 600; }
 
 /* Single post */
 .crumbs { margin-bottom: 18px; font-weight: 500; font-size: 15px; }
+.crumb-list { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; }
+.crumb + .crumb::before { content: "/"; margin-right: 8px; color: var(--ink-soft); opacity: .6; }
+/* The trail ends on the current page's title, which can be long. */
+.crumb:last-child span { color: var(--ink-soft); }
+.blog-hero .crumbs { margin-bottom: 22px; }
+
 .post-header h1 { font-size: clamp(30px, 4.5vw, 46px); }
 .post-header .post-meta { margin: 14px 0 0; }
 .post-header .tag-row { margin-top: 16px; }
 .post-hero { position: relative; margin: 26px 0 0; }
-.post-hero-img { width: 100%; border-radius: var(--radius); display: block; }
+/* height:auto so the intrinsic-size attributes that stop the layout jumping
+   don't also lock the rendered height. */
+.post-hero-img { width: 100%; height: auto; border-radius: var(--radius); display: block; }
 
 /* Save / share buttons, sitting over the hero photo */
 .hero-actions { position: absolute; top: 14px; right: 14px; display: flex; gap: 8px; }

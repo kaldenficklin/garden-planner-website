@@ -60,6 +60,38 @@ const faqs = [
   },
 ];
 
+// Identifies the publisher once, on the homepage. Posts point their `publisher`
+// at this @id so Google resolves the app, the blog and the site to one entity.
+// WebSite carries the preferred site name for search results — the sitelinks
+// search box it used to power was retired in 2024, the name is what's left.
+const orgLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Organization',
+      '@id': 'https://thegardenplanner.app/#organization',
+      name: 'Garden Pro Planner',
+      url: 'https://thegardenplanner.app/',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://thegardenplanner.app/assets/app-icon.png',
+        width: 1024,
+        height: 1024,
+      },
+      email: 'support@thegardenplanner.app',
+      founder: { '@type': 'Person', name: 'Kalden Ficklin' },
+      sameAs: ['https://apps.apple.com/app/id1539031278'],
+    },
+    {
+      '@type': 'WebSite',
+      '@id': 'https://thegardenplanner.app/#website',
+      url: 'https://thegardenplanner.app/',
+      name: 'Garden Pro Planner',
+      publisher: { '@id': 'https://thegardenplanner.app/#organization' },
+    },
+  ],
+};
+
 const faqLd = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
@@ -81,7 +113,7 @@ const description =
   <title>Garden Pro Planner — The ultimate garden planner app</title>
   <meta name="description" content={description} />
   <link rel="canonical" href="https://thegardenplanner.app/" />
-  <meta name="robots" content="index, follow" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <meta name="theme-color" content="#1f7a4d" />
   <!-- Claims thegardenplanner.app on Pinterest, which is what turns the posts'
        Article Rich Pin markup on. Pinterest re-checks this tag, so it stays. -->
@@ -110,12 +142,17 @@ const description =
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <!-- Loaded without blocking the first paint: the print media query makes
+       the browser fetch it at low priority, and onload promotes it. The
+       stylesheet already carries display=swap, so text is visible throughout. -->
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" /></noscript>
   <link rel="stylesheet" href="/assets/style.css?v=3" />
 
   <script defer src="/assets/analytics.js?v=1" is:inline></script>
   <script defer src="/assets/site.js?v=1" is:inline></script>
 
+  <script type="application/ld+json" set:html={JSON.stringify(orgLd)} />
   <script type="application/ld+json" set:html={JSON.stringify(appLd)} />
   <script type="application/ld+json" set:html={JSON.stringify(faqLd)} />
 </head>
@@ -301,6 +338,7 @@ const description =
       <nav class="footer-nav">
         <a href="/">Home</a>
         <a href="/blog">Blog</a>
+        <a href="/about">About</a>
         <a href="/privacy">Privacy</a>
         <a href="/terms">Terms</a>
         <a href="/support">Support</a>
