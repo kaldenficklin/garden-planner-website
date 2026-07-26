@@ -1,0 +1,28 @@
+---
+/** The text-only card list used by the blog index, on every page of it. */
+import type { Post } from '../lib/posts';
+import { formatDate } from '../lib/posts';
+
+interface Props {
+  posts: Post[];
+}
+
+const { posts } = Astro.props;
+---
+<ul class="post-list">
+  {posts.map((post) => (
+    <li class="post-card">
+      <a class="post-card-link" href={`/blog/${post.id}/`}>
+        <time class="post-date" datetime={post.data.date.toISOString()}>{formatDate(post.data.date)}</time>
+        <h2 class="post-card-title">{post.data.title}</h2>
+        <p class="post-card-desc">{post.data.description}</p>
+        {post.data.tags.length > 0 && (
+          <ul class="tag-row">
+            {post.data.tags.map((t) => <li class="tag">{t}</li>)}
+          </ul>
+        )}
+        <span class="read-more">Read more →</span>
+      </a>
+    </li>
+  ))}
+</ul>

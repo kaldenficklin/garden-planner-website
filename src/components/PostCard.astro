@@ -1,0 +1,37 @@
+---
+/**
+ * Compact post card with its hero photo. Used wherever posts are recommended
+ * rather than listed: the landing page preview and the related-posts rail.
+ * Styles live in style.css so both the marketing page and the blog get them.
+ */
+import type { Post } from '../lib/posts';
+import { formatDate } from '../lib/posts';
+
+interface Props {
+  post: Post;
+  /** The landing-page rail is the only place these are above the fold. */
+  loading?: 'lazy' | 'eager';
+}
+
+const { post, loading = 'lazy' } = Astro.props;
+const { data } = post;
+---
+<article class="post-preview">
+  <a class="post-preview-link" href={`/blog/${post.id}/`}>
+    {data.image && (
+      <img
+        class="post-preview-img"
+        src={data.image}
+        alt={data.imageAlt ?? data.title}
+        loading={loading}
+        width="1200"
+        height="800"
+      />
+    )}
+    <div class="post-preview-body">
+      <time class="post-date" datetime={data.date.toISOString()}>{formatDate(data.date)}</time>
+      <h3 class="post-preview-title">{data.title}</h3>
+      <p class="post-preview-desc">{data.description}</p>
+    </div>
+  </a>
+</article>

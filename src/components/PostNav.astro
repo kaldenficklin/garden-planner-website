@@ -1,0 +1,30 @@
+---
+/** Links to the posts published either side of this one. */
+import type { Post } from '../lib/posts';
+
+interface Props {
+  newer?: Post;
+  older?: Post;
+}
+
+const { newer, older } = Astro.props;
+---
+{(newer || older) && (
+  <nav class="post-nav" aria-label="More posts">
+    {newer ? (
+      <a class="post-nav-link post-nav-newer" href={`/blog/${newer.id}/`} rel="prev">
+        <span class="post-nav-dir">← Newer post</span>
+        <span class="post-nav-title">{newer.data.title}</span>
+      </a>
+    ) : (
+      /* Keeps a lone "older" link pinned to the right of the row. */
+      <span aria-hidden="true"></span>
+    )}
+    {older && (
+      <a class="post-nav-link post-nav-older" href={`/blog/${older.id}/`} rel="next">
+        <span class="post-nav-dir">Older post →</span>
+        <span class="post-nav-title">{older.data.title}</span>
+      </a>
+    )}
+  </nav>
+)}

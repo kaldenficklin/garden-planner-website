@@ -1,0 +1,21 @@
+---
+/** "You might also be interested in" rail at the foot of a post. */
+import PostCard from './PostCard.astro';
+import type { Post } from '../lib/posts';
+
+interface Props {
+  posts: Post[];
+}
+
+const { posts } = Astro.props;
+---
+{posts.length > 0 && (
+  <aside class="related" id="related">
+    <div class="wrap">
+      <h2 class="related-title">You might also be interested in</h2>
+      <div class="post-grid">
+        {posts.map((post) => <PostCard post={post} />)}
+      </div>
+    </div>
+  </aside>
+)}

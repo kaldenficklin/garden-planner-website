@@ -1,0 +1,30 @@
+---
+/**
+ * Pages 2..N of the blog index. Page 1 stays at /blog/ so the section's main
+ * URL never moves, which is why this route starts counting at 2.
+ */
+import BlogIndexPage from '../../../components/BlogIndexPage.astro';
+import { publishedPosts, PER_PAGE, totalPages, type Post } from '../../../lib/posts';
+
+export async function getStaticPaths() {
+  const posts = await publishedPosts();
+  const total = totalPages(posts.length);
+
+  return Array.from({ length: Math.max(0, total - 1) }, (_, i) => {
+    const page = i + 2;
+    return {
+      params: { page: String(page) },
+      props: { posts: posts.slice((page - 1) * PER_PAGE, page * PER_PAGE), current: page, total },
+    };
+  });
+}
+
+interface Props {
+  posts: Post[];
+  current: number;
+  total: number;
+}
+
+const { posts, current, total } = Astro.props;
+---
+<BlogIndexPage posts={posts} current={current} total={total} />

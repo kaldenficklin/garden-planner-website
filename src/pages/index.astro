@@ -1,0 +1,328 @@
+---
+/**
+ * Landing page. It was a static file in public/ until the blog preview below
+ * needed the post collection; the markup is otherwise still hand-written HTML
+ * rather than BaseLayout, because this page carries its own SEO head (app
+ * structured data, FAQ structured data) that no other page wants.
+ */
+import PostCard from '../components/PostCard.astro';
+import { publishedPosts } from '../lib/posts';
+
+const latest = (await publishedPosts()).slice(0, 3);
+
+const APP_STORE = 'https://apps.apple.com/app/id1539031278';
+
+const appLd = {
+  '@context': 'https://schema.org',
+  '@type': 'MobileApplication',
+  name: 'Garden Pro Planner',
+  url: 'https://thegardenplanner.app/',
+  image: 'https://thegardenplanner.app/assets/app-icon.png',
+  description:
+    'Garden Pro Planner is a garden planning app with a 265+ plant library, a square-foot bed planner, a planting calendar tuned to local frost dates, pest guides, and harvest yield tracking.',
+  applicationCategory: 'LifestyleApplication',
+  operatingSystem: 'iOS 15+',
+  softwareVersion: '2.2.0',
+  offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+  author: { '@type': 'Person', name: 'Kalden Ficklin' },
+};
+
+// Keep these in step with the <details> list in the FAQ section below — Google
+// checks that structured-data answers actually appear on the page.
+const faqs = [
+  {
+    q: 'What devices does Garden Pro Planner support?',
+    a: 'Garden Pro Planner is available for iPhone and iPad on the App Store, and runs on iOS 15 and later.',
+  },
+  {
+    q: 'Can I lay out my raised beds in the app?',
+    a: 'Yes. Every bed gets a square-foot grid you plant square by square. Each square is scored for the plant in your hand — good neighbors, room to grow, and what will shade what — or you can tap "Plan it for me" and let the app arrange the whole bed.',
+  },
+  {
+    q: 'How does the planting calendar know my dates?',
+    a: "The calendar is tuned to your location's frost dates. Once you set your location, the app calculates when to start seeds indoors, transplant outdoors, and expect to harvest each plant.",
+  },
+  {
+    q: 'Can I sync planting and harvest events to my calendar?',
+    a: 'Yes. Planting and harvest events can sync to your iOS and Google Calendar, with alerts and watering reminders so nothing gets missed.',
+  },
+  {
+    q: 'How big is the plant library?',
+    a: "The library includes 265+ plants, each with details on sunlight, soil, pH, watering needs, spacing, expected yield, pests, and whether it's safe around pets. You can also narrow it to plants that are hardy in your zone or commonly grown in your region.",
+  },
+  {
+    q: 'What languages are supported?',
+    a: 'Nine: English, Spanish, French, German, Italian, Portuguese, Russian, Japanese, and Simplified Chinese.',
+  },
+  {
+    q: 'Where can I read the privacy policy?',
+    a: 'Our full privacy policy is available at thegardenplanner.app/privacy.',
+  },
+];
+
+const faqLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map(({ q, a }) => ({
+    '@type': 'Question',
+    name: q,
+    acceptedAnswer: { '@type': 'Answer', text: a },
+  })),
+};
+
+const description =
+  'Plan, grow, and harvest more with Garden Pro Planner: a 265+ plant library, a square-foot bed planner, a planting calendar tuned to your frost dates, pest guides, and yield tracking.';
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Garden Pro Planner — The ultimate garden planner app</title>
+  <meta name="description" content={description} />
+  <link rel="canonical" href="https://thegardenplanner.app/" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#1f7a4d" />
+  <!-- Claims thegardenplanner.app on Pinterest, which is what turns the posts'
+       Article Rich Pin markup on. Pinterest re-checks this tag, so it stays. -->
+  <meta name="p:domain_verify" content="0a20837e590225ddfeb792ae57256376" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Garden Pro Planner — The ultimate garden planner app" />
+  <meta property="og:description" content={description} />
+  <meta property="og:url" content="https://thegardenplanner.app/" />
+  <meta property="og:image" content="https://thegardenplanner.app/assets/app-icon.png" />
+  <meta property="og:image:width" content="1024" />
+  <meta property="og:image:height" content="1024" />
+  <meta property="og:image:alt" content="Garden Pro Planner app icon" />
+  <meta property="og:site_name" content="Garden Pro Planner" />
+  <meta property="og:locale" content="en_US" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Garden Pro Planner — The ultimate garden planner app" />
+  <meta name="twitter:description" content="Plan, grow, and harvest more with a 265+ plant library, a square-foot bed planner, a frost-date planting calendar, and yield tracking." />
+  <meta name="twitter:image" content="https://thegardenplanner.app/assets/app-icon.png" />
+
+  <link rel="icon" type="image/png" href="/assets/app-icon.png" />
+  <link rel="apple-touch-icon" href="/assets/app-icon.png" />
+
+  <link rel="alternate" type="application/rss+xml" title="Garden Pro Planner Blog" href="/blog/rss.xml" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/style.css?v=3" />
+
+  <script defer src="/assets/analytics.js?v=1" is:inline></script>
+  <script defer src="/assets/site.js?v=1" is:inline></script>
+
+  <script type="application/ld+json" set:html={JSON.stringify(appLd)} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqLd)} />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="/">
+        <span class="brand-mark">G</span>
+        <span class="brand-name">Garden Pro Planner</span>
+      </a>
+      <nav class="nav">
+        <a href="#features">Features</a>
+        <a href="#screens">Screens</a>
+        <a href="/blog">Blog</a>
+        <a href="#faq">FAQ</a>
+        <a class="btn btn-sm" href={APP_STORE} data-cta="header">
+          <svg class="btn-icon" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" fill="currentColor"><path d="M16.365 1.43c0 1.14-.42 2.22-1.17 3.02-.9.96-2.37 1.7-3.63 1.6-.15-1.13.41-2.32 1.11-3.06.79-.83 2.2-1.46 3.36-1.5.02.31.02.62.02.94zM20.7 17.02c-.55 1.27-.82 1.84-1.53 2.96-.99 1.56-2.39 3.5-4.12 3.51-1.54.02-1.93-.99-4.02-.98-2.09.01-2.52.99-4.06.98-1.73-.01-3.05-1.76-4.04-3.32-2.77-4.36-3.06-9.48-1.35-12.2 1.21-1.94 3.13-3.07 4.93-3.07 1.84 0 2.99 1 4.51 1 1.47 0 2.37-1 4.5-1 1.61 0 3.32.87 4.54 2.38-3.99 2.18-3.34 7.86.11 9.74z"/></svg>
+          <span>Get the app</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">As seen on CBS · NBC · FOX</p>
+          <h1>Plan, grow &amp; harvest more.</h1>
+          <p class="lead">The ultimate garden planner. Lay out every bed square by square, build your season around a 265+ plant library and your own local frost dates, then grow your best garden yet.</p>
+          <div class="cta-row">
+            <a class="appstore" href={APP_STORE} data-cta="hero" aria-label="Download on the App Store">
+              <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true" fill="currentColor"><path d="M16.365 1.43c0 1.14-.42 2.22-1.17 3.02-.9.96-2.37 1.7-3.63 1.6-.15-1.13.41-2.32 1.11-3.06.79-.83 2.2-1.46 3.36-1.5.02.31.02.62.02.94-.01-.32-.01-.63-.03-.94.11 0 .22 0 .33-.06zM20.7 17.02c-.55 1.27-.82 1.84-1.53 2.96-.99 1.56-2.39 3.5-4.12 3.51-1.54.02-1.93-.99-4.02-.98-2.09.01-2.52.99-4.06.98-1.73-.01-3.05-1.76-4.04-3.32-2.77-4.36-3.06-9.48-1.35-12.2 1.21-1.94 3.13-3.07 4.93-3.07 1.84 0 2.99 1 4.51 1 1.47 0 2.37-1 4.5-1 1.61 0 3.32.87 4.54 2.38-3.99 2.18-3.34 7.86.11 9.74z"/></svg>
+              <span class="appstore-txt"><small>Download on the</small><strong>App Store</strong></span>
+            </a>
+          </div>
+          <ul class="badge-row">
+            <li>Top&nbsp;5 gardening app</li>
+            <li>265+ plant library</li>
+            <li>Square-foot bed planner</li>
+          </ul>
+        </div>
+        <div class="hero-shot">
+          <div class="phone">
+            <img src="/assets/screens/blueprint.png" alt="Bed blueprint screen in Garden Pro Planner, showing a raised bed planted square by square" width="660" height="1434" loading="eager" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features" class="section">
+      <div class="wrap">
+        <h2 class="section-title">Everything you need for a better season</h2>
+        <div class="features">
+          <div class="feature">
+            <div class="feature-ico">🌱</div>
+            <h3>Plan your garden</h3>
+            <p>Organize your garden into areas with their own sunlight, soil type, and pH — then match plants to every area with advanced filtering, including plants hardy in your zone and plants that are safe around pets.</p>
+          </div>
+          <div class="feature">
+            <div class="feature-ico">📐</div>
+            <h3>Lay out every bed</h3>
+            <p>Plant each bed on a square-foot grid, square by square. Every square is scored for the plant in your hand — good neighbors, room to grow, and what will shade what — or tap "Plan it for me" and let the app arrange the whole bed.</p>
+          </div>
+          <div class="feature">
+            <div class="feature-ico">📅</div>
+            <h3>Know when to plant</h3>
+            <p>A planting calendar tuned to your location's frost dates shows when to start seeds indoors, transplant, and harvest — with calendar sync and watering reminders.</p>
+          </div>
+          <div class="feature">
+            <div class="feature-ico">🐛</div>
+            <h3>Grow smarter</h3>
+            <p>Detailed pest guides with treatment tips, watering recommendations for each area, and a garden journal of dated notes and photos so you remember what worked.</p>
+          </div>
+          <div class="feature">
+            <div class="feature-ico">🧺</div>
+            <h3>Track your harvest</h3>
+            <p>See the expected yield of every plant, log what you harvest, and watch your estimated seasonal savings add up. Plant counts follow your bed layout, so the numbers keep up on their own.</p>
+          </div>
+          <div class="feature">
+            <div class="feature-ico">🌍</div>
+            <h3>Make it yours</h3>
+            <p>Add your own photos of each garden and plant, pick a custom color theme, and use the app in any of nine languages.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCREENS -->
+    <section id="screens" class="section section-alt">
+      <div class="wrap">
+        <h2 class="section-title">Take a look inside</h2>
+        <div class="gallery">
+          <figure><div class="phone phone-sm"><img src="/assets/screens/garden-detail.png" alt="Garden detail" width="660" height="1434" loading="lazy" /></div><figcaption>Garden areas</figcaption></figure>
+          <figure><div class="phone phone-sm"><img src="/assets/screens/blueprint.png" alt="Bed blueprint on a square-foot grid" width="660" height="1434" loading="lazy" /></div><figcaption>Bed blueprint</figcaption></figure>
+          {/* Caption deliberately carries no plant count: the capture behind it
+              has a region filter applied, so it reads "225 plants" on screen.
+              Recapture with filters cleared before putting the number back. */}
+          <figure><div class="phone phone-sm"><img src="/assets/screens/plants.png" alt="Plant guide, filtered and grouped by type" width="660" height="1434" loading="lazy" /></div><figcaption>Plant library</figcaption></figure>
+          <figure><div class="phone phone-sm"><img src="/assets/screens/calendar.png" alt="Planting calendar" width="660" height="1434" loading="lazy" /></div><figcaption>Planting calendar</figcaption></figure>
+          <figure><div class="phone phone-sm"><img src="/assets/screens/yield.png" alt="Yield and savings tracker" width="660" height="1434" loading="lazy" /></div><figcaption>Yield &amp; savings</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOG PREVIEW -->
+    {latest.length > 0 && (
+      <section id="blog" class="section">
+        <div class="wrap">
+          <div class="section-head">
+            <div>
+              <h2 class="section-title section-title-left">From the blog</h2>
+              <p class="section-sub">Practical guides on when to plant, what to plant together, and how to keep pests off it.</p>
+            </div>
+            <a class="section-link" href="/blog">All posts →</a>
+          </div>
+          <div class="post-grid">
+            {latest.map((post) => <PostCard post={post} />)}
+          </div>
+          <p class="section-foot"><a class="btn btn-outline" href="/blog">Read the blog</a></p>
+        </div>
+      </section>
+    )}
+
+    <!-- FAQ / SUPPORT -->
+    <section id="faq" class="section section-alt">
+      <div class="wrap wrap-narrow">
+        <h2 class="section-title">Frequently asked questions</h2>
+        <div class="faq">
+          <details>
+            <summary>What devices does Garden Pro Planner support?</summary>
+            <p>Garden Pro Planner is available for iPhone and iPad on the App Store, and runs on iOS 15 and later.</p>
+          </details>
+          <details>
+            <summary>Can I lay out my raised beds in the app?</summary>
+            <p>Yes. Every bed gets a square-foot grid you plant square by square. Each square is scored for the plant in your hand — good neighbors, room to grow, and what will shade what — or you can tap "Plan it for me" and let the app arrange the whole bed.</p>
+          </details>
+          <details>
+            <summary>How does the planting calendar know my dates?</summary>
+            <p>The calendar is tuned to your location's frost dates. Once you set your location, the app calculates when to start seeds indoors, transplant outdoors, and expect to harvest each plant.</p>
+          </details>
+          <details>
+            <summary>Can I sync planting and harvest events to my calendar?</summary>
+            <p>Yes. Planting and harvest events can sync to your iOS and Google Calendar, with alerts and watering reminders so nothing gets missed.</p>
+          </details>
+          <details>
+            <summary>How big is the plant library?</summary>
+            <p>The library includes 265+ plants, each with details on sunlight, soil, pH, watering needs, spacing, expected yield, pests, and whether it's safe around pets. You can also narrow it to plants that are hardy in your zone or commonly grown in your region.</p>
+          </details>
+          <details>
+            <summary>What languages are supported?</summary>
+            <p>Nine: English, Spanish, French, German, Italian, Portuguese, Russian, Japanese, and Simplified Chinese.</p>
+          </details>
+          <details>
+            <summary>Where can I read the privacy policy?</summary>
+            <p>Our full privacy policy is available <a href="/privacy">here</a>.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="section cta-band">
+      <div class="wrap cta-inner">
+        <h2>Don't waste a season on poor planning.</h2>
+        <p>Plan it, grow it, and harvest more with Garden Pro Planner.</p>
+        <a class="appstore appstore-light" href={APP_STORE} data-cta="footer-band" aria-label="Download on the App Store">
+          <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true" fill="currentColor"><path d="M16.365 1.43c0 1.14-.42 2.22-1.17 3.02-.9.96-2.37 1.7-3.63 1.6-.15-1.13.41-2.32 1.11-3.06.79-.83 2.2-1.46 3.36-1.5.02.31.02.62.02.94zM20.7 17.02c-.55 1.27-.82 1.84-1.53 2.96-.99 1.56-2.39 3.5-4.12 3.51-1.54.02-1.93-.99-4.02-.98-2.09.01-2.52.99-4.06.98-1.73-.01-3.05-1.76-4.04-3.32-2.77-4.36-3.06-9.48-1.35-12.2 1.21-1.94 3.13-3.07 4.93-3.07 1.84 0 2.99 1 4.51 1 1.47 0 2.37-1 4.5-1 1.61 0 3.32.87 4.54 2.38-3.99 2.18-3.34 7.86.11 9.74z"/></svg>
+          <span class="appstore-txt"><small>Download on the</small><strong>App Store</strong></span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div class="footer-brand">
+        <span class="brand-mark">G</span>
+        <span>Garden Pro Planner</span>
+      </div>
+      <nav class="footer-nav">
+        <a href="/">Home</a>
+        <a href="/blog">Blog</a>
+        <a href="/privacy">Privacy</a>
+        <a href="/terms">Terms</a>
+        <a href="/support">Support</a>
+        <a href="/delete-account">Delete account</a>
+        <a href={APP_STORE} data-cta="footer-link">App Store</a>
+      </nav>
+      <p class="copyright">© <span id="year">2026</span> Garden Pro Planner. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Phone-only download bar; slides up once the hero has scrolled away. -->
+  <div class="mobile-cta">
+    <div class="mobile-cta-inner">
+      <img class="mobile-cta-icon" src="/assets/app-icon.png" alt="" width="44" height="44" />
+      <span class="mobile-cta-text">
+        <strong>Garden Pro Planner</strong>
+        <span>Free · iPhone &amp; iPad</span>
+      </span>
+      <a class="btn mobile-cta-btn" href={APP_STORE} data-cta="sticky-bar">Get</a>
+    </div>
+  </div>
+
+  <script is:inline>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

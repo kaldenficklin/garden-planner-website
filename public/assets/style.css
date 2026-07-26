@@ -134,11 +134,43 @@ h1,h2,h3{font-family:'Fraunces',Georgia,serif;font-weight:600;line-height:1.1;co
 .feature h3{font-size:21px;margin-bottom:8px}
 .feature p{margin:0;color:var(--ink-soft);font-size:15.5px}
 
-/* Gallery */
-.gallery{display:flex;gap:28px;justify-content:center;flex-wrap:wrap}
-.gallery figure{margin:0;text-align:center}
+/* Gallery — a grid so every phone comes out the same width. As a flex row they
+   sized to their captions, and "265+ plant library" is twice as wide as
+   "Calendar". Becomes a swipeable flex carousel on narrow screens, below. */
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:24px;justify-items:center;align-items:start}
+.gallery figure{margin:0;text-align:center;width:100%;max-width:260px}
 .gallery figure .phone{margin-left:auto;margin-right:auto}
 .gallery figcaption{margin-top:16px;font-weight:600;color:var(--ink)}
+
+/* Section header with a link off to the side ("From the blog … All posts →") */
+.section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;margin-bottom:36px}
+.section-title-left{text-align:left;margin-bottom:0}
+.section-sub{color:var(--ink-soft);margin:12px 0 0;max-width:52ch}
+.section-link{font-weight:600;white-space:nowrap;padding-bottom:4px}
+.section-foot{display:none;margin:28px 0 0;text-align:center}
+.btn-outline{background:transparent;color:var(--green-700);border:1px solid var(--green-100);box-shadow:none}
+.btn-outline:hover{background:var(--green-50);color:var(--green-700);box-shadow:none}
+
+/* Post cards with their hero photo — landing-page preview and related posts */
+.post-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;list-style:none;margin:0;padding:0}
+.post-preview{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;
+  transition:box-shadow .2s ease,transform .2s ease,border-color .2s ease;
+}
+.post-preview:hover{box-shadow:var(--shadow);transform:translateY(-2px);border-color:var(--green-100)}
+.post-preview-link{display:flex;flex-direction:column;height:100%;color:inherit}
+.post-preview-link:hover{text-decoration:none}
+/* height:auto so the intrinsic-size attributes on the <img> don't override the
+   crop below — they are there to reserve the space, not to set it. */
+.post-preview-img{width:100%;height:auto;aspect-ratio:3/2;object-fit:cover}
+.post-preview-body{padding:20px 22px 24px}
+.post-preview .post-date{color:var(--ink-soft);font-size:13px;font-weight:500}
+.post-preview-title{font-size:20px;line-height:1.25;margin:8px 0 8px}
+.post-preview-desc{
+  margin:0;color:var(--ink-soft);font-size:15px;
+  /* Clamping keeps every card in a row the same height whatever the excerpt. */
+  display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;
+}
 
 /* FAQ */
 .faq details{border:1px solid var(--line);border-radius:14px;padding:4px 20px;margin-bottom:14px;background:#fff;transition:border-color .15s ease}
@@ -191,11 +223,12 @@ h1,h2,h3{font-family:'Fraunces',Georgia,serif;font-weight:600;line-height:1.1;co
      the first screenful, and a phone mockup does not close anyone. */
   .hero-shot{margin-top:32px}
   .features{grid-template-columns:1fr 1fr}
+  .post-grid{grid-template-columns:1fr 1fr}
   .nav a:not(.btn){display:none}
 
-  /* Screens become a swipeable carousel instead of four stacked mockups. */
+  /* Screens become a swipeable carousel instead of a column of mockups. */
   .gallery{
-    flex-wrap:nowrap;justify-content:flex-start;gap:16px;
+    display:flex;flex-wrap:nowrap;justify-content:flex-start;gap:16px;
     overflow-x:auto;scroll-snap-type:x mandatory;
     -webkit-overflow-scrolling:touch;scrollbar-width:none;
     margin:0 -24px;padding:4px 24px 8px;
@@ -224,6 +257,16 @@ h1,h2,h3{font-family:'Fraunces',Georgia,serif;font-weight:600;line-height:1.1;co
 @media(max-width:560px){
   .features{grid-template-columns:1fr}
   .feature{padding:22px}
+
+  /* Only the newest post survives on the landing page on a phone; the rest are
+     one tap away, and the inline "All posts" link becomes a full-width button. */
+  .post-grid{grid-template-columns:1fr;gap:18px}
+  #blog .post-grid > :nth-child(n+2){display:none}
+  .section-head{margin-bottom:24px}
+  .section-head .section-link{display:none}
+  .section-foot{display:block}
+  .section-foot .btn{width:100%;min-height:48px}
+  .post-preview-body{padding:18px 18px 20px}
   .section{padding:48px 0}
   .section-title{margin-bottom:32px}
   .brand-name{display:none}

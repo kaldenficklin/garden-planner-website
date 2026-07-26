@@ -1,0 +1,37 @@
+---
+/** Numbered pager for the blog index. Page 1 is /blog/, the rest /blog/page/N/. */
+import { pageHref } from '../lib/posts';
+
+interface Props {
+  current: number;
+  total: number;
+}
+
+const { current, total } = Astro.props;
+const pages = Array.from({ length: total }, (_, i) => i + 1);
+---
+{total > 1 && (
+  <nav class="pager" aria-label="Blog pages">
+    {current > 1 ? (
+      <a class="pager-step" href={pageHref(current - 1)} rel="prev">← Newer</a>
+    ) : (
+      <span class="pager-step is-disabled" aria-hidden="true">← Newer</span>
+    )}
+
+    <ol class="pager-pages">
+      {pages.map((n) =>
+        n === current ? (
+          <li><span class="pager-page is-current" aria-current="page">{n}</span></li>
+        ) : (
+          <li><a class="pager-page" href={pageHref(n)}>{n}</a></li>
+        )
+      )}
+    </ol>
+
+    {current < total ? (
+      <a class="pager-step" href={pageHref(current + 1)} rel="next">Older →</a>
+    ) : (
+      <span class="pager-step is-disabled" aria-hidden="true">Older →</span>
+    )}
+  </nav>
+)}

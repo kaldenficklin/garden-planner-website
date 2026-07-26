@@ -1,0 +1,73 @@
+---
+/**
+ * One page of the blog index. Shared by /blog/ (page 1) and /blog/page/N/, so
+ * the two routes only have to work out which slice of posts they are showing.
+ */
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PostList from './PostList.astro';
+import Pagination from './Pagination.astro';
+import type { Post } from '../lib/posts';
+import { pageHref } from '../lib/posts';
+
+interface Props {
+  posts: Post[];
+  current: number;
+  total: number;
+}
+
+const { posts, current, total } = Astro.props;
+
+const canonical = new URL(pageHref(current), Astro.site).href;
+const prev = current > 1 ? new URL(pageHref(current - 1), Astro.site).href : null;
+const next = current < total ? new URL(pageHref(current + 1), Astro.site).href : null;
+
+// Page 2 onward gets its own title so the pages don't compete for the same
+// query, and its own description so search results aren't identical.
+const title =
+  current === 1
+    ? 'The Garden Pro Planner Blog — Grow a Better Garden'
+    : `The Garden Pro Planner Blog — Page ${current}`;
+const description =
+  current === 1
+    ? 'Practical gardening guides: when to plant, companion planting, pest control, seed starting, and harvest tips — from the team behind Garden Pro Planner.'
+    : `Page ${current} of the Garden Pro Planner blog: more guides on planting times, companion planting, pest control, and getting a bigger harvest.`;
+---
+<BaseLayout title={title} description={description} canonical={canonical}>
+  <Fragment slot="head">
+    {prev && <link rel="prev" href={prev} />}
+    {next && <link rel="next" href={next} />}
+  </Fragment>
+
+  <section class="blog-hero">
+    <div class="wrap wrap-narrow">
+      <p class="eyebrow">The Garden Pro Planner Blog</p>
+      <h1>Grow a better garden</h1>
+      <p class="lead">Planting guides, timing charts, and season-by-season advice to help you plan, grow, and harvest more.</p>
+      {total > 1 && <p class="page-count">Page {current} of {total}</p>}
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap wrap-narrow">
+      {posts.length === 0 ? (
+        <p>New posts are on the way. Check back soon!</p>
+      ) : (
+        <>
+          <PostList posts={posts} />
+          <Pagination current={current} total={total} />
+        </>
+      )}
+    </div>
+  </section>
+
+  <section class="section cta-band">
+    <div class="wrap cta-inner">
+      <h2>Plan your best season yet.</h2>
+      <p>Get the 265+ plant library, a square-foot bed planner, a planting calendar tuned to your frost dates, and yield tracking.</p>
+      <a class="appstore appstore-light" href="https://apps.apple.com/app/id1539031278" data-cta="blog-index-band" aria-label="Download on the App Store">
+        <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true" fill="currentColor"><path d="M16.365 1.43c0 1.14-.42 2.22-1.17 3.02-.9.96-2.37 1.7-3.63 1.6-.15-1.13.41-2.32 1.11-3.06.79-.83 2.2-1.46 3.36-1.5.02.31.02.62.02.94zM20.7 17.02c-.55 1.27-.82 1.84-1.53 2.96-.99 1.56-2.39 3.5-4.12 3.51-1.54.02-1.93-.99-4.02-.98-2.09.01-2.52.99-4.06.98-1.73-.01-3.05-1.76-4.04-3.32-2.77-4.36-3.06-9.48-1.35-12.2 1.21-1.94 3.13-3.07 4.93-3.07 1.84 0 2.99 1 4.51 1 1.47 0 2.37-1 4.5-1 1.61 0 3.32.87 4.54 2.38-3.99 2.18-3.34 7.86.11 9.74z"/></svg>
+        <span class="appstore-txt"><small>Download on the</small><strong>App Store</strong></span>
+      </a>
+    </div>
+  </section>
+</BaseLayout>

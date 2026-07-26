@@ -1,13 +1,32 @@
 ---
-import { getCollection, render } from 'astro:content';
+import { render } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import PostNav from '../../components/PostNav.astro';
+import RelatedPosts from '../../components/RelatedPosts.astro';
+import { publishedPosts, relatedPosts, formatDate, type Post } from '../../lib/posts';
 
 export async function getStaticPaths() {
-  const posts = (await getCollection('blog')).filter((p) => !p.data.draft);
-  return posts.map((post) => ({ params: { slug: post.id }, props: { post } }));
+  const posts = await publishedPosts();
+  return posts.map((post, i) => ({
+    params: { slug: post.id },
+    props: {
+      post,
+      // The list is newest-first, so the entry before this one is the newer post.
+      newer: posts[i - 1],
+      older: posts[i + 1],
+      related: relatedPosts(post, posts),
+    },
+  }));
 }
 
-const { post } = Astro.props;
+interface Props {
+  post: Post;
+  newer?: Post;
+  older?: Post;
+  related: Post[];
+}
+
+const { post, newer, older, related } = Astro.props;
 const { Content } = await render(post);
 const { data } = post;
 
@@ -33,9 +52,6 @@ const pinHref =
   `?url=${encodeURIComponent(url)}` +
   `&media=${encodeURIComponent(pinImage)}` +
   `&description=${encodeURIComponent(pinDescription)}`;
-
-const fmt = (d: Date) =>
-  d.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
 
 // Article structured data helps Google understand and surface the post.
 const jsonLd = {
@@ -73,8 +89,8 @@ const jsonLd = {
       <header class="post-header">
         <h1>{data.title}</h1>
         <p class="post-meta">
-          <time datetime={data.date.toISOString()}>{fmt(data.date)}</time>
-          {data.updated && <span> · Updated {fmt(data.updated)}</span>}
+          <time datetime={data.date.toISOString()}>{formatDate(data.date)}</time>
+          {data.updated && <span> · Updated {formatDate(data.updated)}</span>}
         </p>
         {data.tags.length > 0 && (
           <ul class="tag-row">
@@ -144,12 +160,16 @@ const jsonLd = {
         </div>
       )}
 
+      <PostNav newer={newer} older={older} />
+
       <aside class="post-cta">
         <h3>Grow this in Garden Pro Planner</h3>
-        <p>Plan your season around a 225+ plant library and your local frost dates — with a planting calendar, pest guides, and yield tracking.</p>
+        <p>Plan your season around a 265+ plant library and your local frost dates — with a square-foot bed planner, a planting calendar, pest guides, and yield tracking.</p>
         <a class="btn" href="https://apps.apple.com/app/id1539031278" data-cta="post-footer">Get the free app</a>
       </aside>
     </div>
+
+    <RelatedPosts posts={related} />
   </article>
 </BaseLayout>
 

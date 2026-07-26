@@ -2,26 +2,48 @@
 
 Marketing website **and blog** for **Garden Pro Planner** ([App Store](https://apps.apple.com/app/id1539031278)).
 
-Built with [Astro](https://astro.build). The marketing pages live in `public/` and
-pass through untouched; Astro builds the `/blog` section on top of them. Deployed
-on Netlify — every push to `main` auto-publishes to <https://thegardenplanner.app>.
+Built with [Astro](https://astro.build). The secondary marketing pages live in
+`public/` and pass through untouched; Astro builds the landing page and the
+`/blog` section. Deployed on Netlify — every push to `main` auto-publishes to
+<https://thegardenplanner.app>.
 
 ## Structure
 
 | Path | Purpose |
 | --- | --- |
-| `public/index.html` | Landing page (static, passed through) |
+| `src/pages/index.astro` | Landing page — its own `<head>`, not `BaseLayout` |
 | `public/privacy.html` | Privacy policy (`/privacy`) |
 | `public/support.html` | Support / FAQ (`/support`) |
+| `public/terms.html` | Terms (`/terms`) |
 | `public/assets/style.css` | Site styles |
 | `public/assets/blog.css` | Blog-specific styles |
 | `public/assets/analytics.js` | GA4 + campaign attribution + download tracking |
 | `public/assets/site.js` | Mobile download bar |
+| `public/assets/screens/` | App screenshots — see "App screenshots" below |
 | `src/content/blog/*.md` | **Blog posts — one Markdown file each** |
 | `src/content.config.ts` | Blog frontmatter schema |
-| `src/layouts/BaseLayout.astro` | Shared shell + SEO meta |
-| `src/pages/blog/` | Blog index, post template, RSS feed |
+| `src/layouts/BaseLayout.astro` | Shared shell + SEO meta (every page but `/`) |
+| `src/lib/posts.ts` | Post queries, page size, related-post ranking |
+| `src/components/` | Post cards, post list, pager, related posts, post nav |
+| `src/pages/blog/` | Blog index, `/blog/page/N/`, post template, RSS feed |
 | `netlify.toml` | Build + publish config |
+
+The landing page is an Astro page rather than static HTML only because its
+"From the blog" section reads the post collection. Everything else about it is
+still hand-written markup, and it deliberately keeps its own `<head>` — the app
+and FAQ structured data on it belong to no other page.
+
+## Blog pagination
+
+`/blog/` shows the newest `PER_PAGE` posts (6, set in `src/lib/posts.ts`); older
+pages are `/blog/page/2/`, `/blog/page/3/`, and so on. Page 1 keeps the bare
+`/blog/` URL so the section's main address never moves. Every page carries its
+own canonical plus `rel="prev"` / `rel="next"`, and each post links to the posts
+published either side of it.
+
+Related posts ("You might also be interested in") are ranked by shared `tags`,
+then by recency — so tagging a post accurately is what makes it show up in the
+right places.
 
 ## Adding a blog post
 
@@ -205,4 +227,25 @@ npm run build     # production build into dist/
 npm run preview   # serve the built dist/
 ```
 
-Screenshots are sourced from the app repo's `store-assets/screenshots/iphone-6.9/`.
+## App screenshots
+
+`public/assets/screens/` is a copy of the app repo's plain iPhone 6.9" captures,
+resized for the web. To refresh them after a UI change, recapture in the app repo
+and re-sync:
+
+```sh
+cd ../garden-pro-planner && npm run screenshots:capture
+```
+
+```sh
+node scripts/sync-screens.mjs
+```
+
+The sync script reads `../garden-pro-planner/store-assets/screenshots/iphone-6.9/`
+(override with `APP_REPO=…`) and writes 660px-wide PNGs — 2x the widest size the
+site ever displays them at. Use the *plain* captures, not the composed
+`store-assets/marketing/` images: the site draws its own phone bezel in CSS.
+
+Copy claims that quote the app (plant count, feature names) come from the App
+Store listing in `../garden-pro-planner/store.config.json`. Check it when the
+app ships a release.
