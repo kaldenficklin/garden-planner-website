@@ -1,63 +1,61 @@
 ---
 title: "Companion Planting for Tomatoes: What to Plant (and Avoid)"
-description: "The best companion plants for tomatoes — basil, marigolds, carrots — plus what to keep away, and the science behind why it works."
+description: "Most companion planting advice is folklore. What holds up, what doesn't, and the pairings that genuinely shouldn't share a bed with your tomatoes."
 date: 2026-07-17
 tags: ["companion-planting", "tomatoes"]
 draft: false
 ---
 
-Companion planting is the practice of growing certain plants near each other for mutual benefit — better pest control, pollination, flavor, or use of space. Tomatoes happen to be one of the best-studied crops for it. Here's what actually earns a spot next to your tomatoes, and what to keep at a distance.
+I want to be upfront about something, because a lot of companion planting writing isn't: most of what you'll read on this subject is folklore.
 
-## Best companion plants for tomatoes
+Not malicious, just handed down. Charts get copied between websites for twenty years, nobody checks where the original claim came from, and eventually "plant borage with tomatoes to deter hornworms" appears as fact on four hundred pages because it appeared as fact on one. I planted to those charts for years without asking any questions about them.
 
-### Basil
-The classic pairing. Basil's strong scent helps mask tomatoes from pests like thrips and whiteflies, and its flowers draw in pollinators. Gardeners have claimed for generations that basil improves tomato flavor — the jury's out on that, but the pest and pollinator benefits are real. Bonus: they love the same warm, sunny, well-watered conditions.
+Some of it holds up well. Some is harmless and might be doing something. And a few pairings genuinely matter, mostly on the list of things to keep apart. This is how I'd sort it now.
 
-### Marigolds
-French marigolds are one of the few companions with solid research behind them. Their roots release compounds that suppress **root-knot nematodes** — microscopic soil pests that damage tomato roots. Plant them as a border and let them do quiet work underground.
+## The ones I'd actually plant
 
-### Carrots, lettuce & other low growers
-Tomatoes grow tall and open; carrots, lettuce, and spinach grow low. Tucking these beneath your tomatoes uses vertical space efficiently, and the tomato canopy gives cool-season greens welcome afternoon shade in summer.
+**Marigolds** are the strongest case on the list, specifically French marigolds. Their roots release compounds that suppress root-knot nematodes, microscopic soil pests that damage tomato roots, and this is one of the few companion planting claims with real research behind it rather than tradition. Plant them as a border and let them work underground. Worth knowing the effect happens in the soil, so a marigold sitting in a pot beside the bed isn't doing this for you.
 
-### Nasturtiums
-These act as a **trap crop** — aphids prefer nasturtiums and cluster on them instead of your tomatoes, making the pests easy to spot and remove. They also attract predatory insects.
+**Basil** is the classic pairing, and the benefits are real if slightly different from the ones people cite. The strong scent does appear to make it harder for pests like thrips and whiteflies to locate tomatoes, and letting some of it flower pulls in pollinators. The famous claim that it improves tomato flavor has never been demonstrated, and I'd file it under nice story. The practical argument is simpler anyway: basil and tomatoes want identical conditions, so they're easy to grow in the same square foot.
 
-### Borage
-A pollinator magnet that's also said to deter tomato hornworms. Its blue flowers bring in bees, and it's a low-effort addition to any tomato bed.
+**Nasturtiums** work as a trap crop. Aphids genuinely do prefer them and will colonize the nasturtiums instead of your tomatoes, which concentrates the problem somewhere visible and easy to handle. Be prepared to actually handle it, though. A trap crop you ignore is just an aphid nursery with extra steps, which I found out the hard way.
 
-## What NOT to plant near tomatoes
+**Low growers** like lettuce, spinach and carrots aren't companions in any mystical sense. They're good use of space. Tomatoes grow up and are open underneath, greens grow low and appreciate afternoon shade in high summer. Two crops, one square foot, no folklore required.
 
-- **Brassicas (cabbage, broccoli, kale, cauliflower).** Heavy feeders that compete hard for the same nutrients, and they prefer cooler conditions.
-- **Fennel.** Releases compounds that inhibit the growth of many nearby plants, tomatoes included. Give it its own corner.
-- **Potatoes.** Both are in the nightshade family and share diseases like early and late blight. Planting them together lets disease jump easily between them.
-- **Corn.** The corn earworm and tomato fruitworm are the same pest — grouping these crops invites a bigger infestation.
+**Borage** brings in bees reliably and is nearly impossible to kill. The hornworm-deterrent claim attached to it is the sort of thing I'd treat as unproven. Plant it for the pollinators and count anything else as a bonus.
 
-## Why companion planting works
+## The ones to genuinely keep apart
 
-Three mechanisms do most of the heavy lifting:
+This list matters more than the one above, because these failures are real and expensive.
 
-1. **Scent masking & confusion.** Strongly aromatic plants make it harder for pests to locate their target crop by smell.
-2. **Trap cropping.** A more attractive plant lures pests away from the one you care about.
-3. **Beneficial habitat.** Flowering companions feed pollinators and predatory insects that patrol your beds for free.
+**Potatoes.** Both are nightshades and they share diseases, including early and late blight. Planting them together builds a bridge for disease to walk across. This is the pairing I'd break up first.
 
-None of it replaces good basics — healthy soil, proper spacing, and consistent watering — but it stacks the odds in your favor.
+**Corn.** The corn earworm and the tomato fruitworm are the same insect. Growing both together is catering.
 
-## A simple tomato companion layout
+**Fennel.** It releases compounds that inhibit the growth of a long list of neighbors, tomatoes included. Fennel gets its own corner away from everything, which is a shame, because it's a beautiful plant.
 
-Try this in a raised bed:
+**Brassicas** (cabbage, broccoli, kale, cauliflower). Heavy feeders competing for exactly the same nutrients, and they'd rather be cooler than tomatoes want to be. Nothing dies. Both crops just do worse than they would have apart.
+
+## Why any of it works
+
+When companion planting does something, it's usually one of three fairly mundane mechanisms.
+
+Scent masking, where a strongly aromatic plant makes it harder for a pest to find its target by smell. Trap cropping, where something more appealing pulls pests off the crop you care about. And habitat, where flowering companions feed the pollinators and predatory insects that then patrol your beds free of charge.
+
+There's no mysticism in it anywhere. It's chemistry, insect behavior, and real estate.
+
+## A layout worth copying
 
 | Position | Plant | Why |
 | --- | --- | --- |
 | Center | Tomatoes | Main crop |
-| Interplanted | Basil | Pest masking, pollinators |
-| Border | Marigolds | Nematode suppression |
-| Edges | Nasturtiums | Aphid trap crop |
-| Beneath | Lettuce | Uses shade, saves space |
+| Interplanted | Basil | Scent masking, pollinators once flowering |
+| Border | Marigolds | Nematode suppression in the soil |
+| Edges | Nasturtiums | Aphid trap crop, if you'll tend it |
+| Beneath | Lettuce | Uses the shade, saves the space |
 
-Keep brassicas, fennel, potatoes, and corn in a separate bed.
+Potatoes, corn, fennel and brassicas go in a different bed entirely.
 
-## The bottom line
+Garden Pro Planner includes companion planting guidance and filtering across 225+ plants, including which are pet-safe, which helps when you're working out what can share a bed before you commit the space to it.
 
-Pair tomatoes with basil, marigolds, nasturtiums, and low-growing greens; keep them away from brassicas, fennel, potatoes, and corn. It's a low-cost way to cut pest pressure and get more out of every square foot.
-
-Garden Pro Planner includes companion-planting guidance and advanced filtering across 225+ plants, so you can design beds that work together — right down to which plants are pet-safe.
+None of this substitutes for the basics. A tomato in poor soil, crowded against its neighbors and watered erratically, is not going to be rescued by a marigold. Get soil, spacing and water right first. Then use companions to tilt the odds a little further your way.

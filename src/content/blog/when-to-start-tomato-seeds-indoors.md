@@ -1,55 +1,51 @@
 ---
 title: "When to Start Tomato Seeds Indoors (by Frost Date)"
-description: "Start tomato seeds 6–8 weeks before your last frost. Here's how to find your date, count back, and get stocky, transplant-ready seedlings."
+description: "Start tomato seeds 6 to 8 weeks before your last frost, and not a day earlier. Starting too soon is the most common way to ruin a tomato season."
 date: 2026-07-15
 tags: ["seed-starting", "tomatoes", "timing"]
 draft: false
 ---
 
-The single biggest factor in a great tomato harvest isn't your variety or your soil — it's **timing**. Start seeds too early and you'll be babysitting leggy, root-bound plants for weeks. Too late and you'll run out of summer before the fruit ripens. Here's the simple rule that gets it right.
+I started tomatoes in January once.
 
-## The 6–8 week rule
+It was February that felt unbearable, the seed catalogs had arrived, and sowing something seemed like the obvious cure. By the time it was safe to plant them out I had a windowsill of pale, floppy, two-foot plants that had been outgrowing their pots for a month. I potted them up twice. I staked seedlings, which should have told me something. They went in the ground exhausted, and a neighbor's plants started six weeks after mine caught up and passed them by the middle of June.
 
-**Start tomato seeds indoors 6 to 8 weeks before your average last spring frost.**
+Starting too early is the most common way to ruin a tomato season, and it's entirely a discipline problem. The rule that avoids it is short.
 
-Tomatoes are warm-season plants with zero frost tolerance, so they can't go outside until the danger of frost has passed. Six to eight weeks of indoor growth produces a seedling that's big enough to transplant but not so overgrown that it stalls.
+## Six to eight weeks before your last frost
 
-- **6 weeks** — safer if your light is weak (a sunny windowsill rather than grow lights). Smaller transplants catch up fast.
-- **8 weeks** — good if you have strong grow lights and want a head start on early fruit.
+That's it. Count back six to eight weeks from your average last spring frost date and sow then.
 
-## How to find your last frost date
+Tomatoes have no frost tolerance whatsoever, so they can't go outside until frost danger has passed, and six to eight weeks of indoor growing produces a plant that's big enough to transplant without being so overgrown it stalls when it gets there.
 
-Your "average last frost date" is the date after which frost is unlikely in your area. It varies enormously — early March in the Deep South, late May or June in the northern US and mountain zones.
+Where you land in that range depends on your light. If you're working with a sunny windowsill, take the six. Weaker light produces leggier seedlings, so you want less time for that to happen, and smaller transplants catch up fast anyway. If you have decent grow lights, eight weeks gives you a bigger plant and earlier fruit.
 
-You can look it up by ZIP code from NOAA or your regional extension service. Or skip the lookup entirely: **Garden Pro Planner** pulls your local frost dates automatically once you set your location, then builds the whole planting calendar around them.
+## Counting it out
 
-## Counting back: a worked example
+Say your last frost is May 10.
 
-Say your last frost date is **May 10**.
+Six to eight weeks back puts sowing between roughly March 15 and March 29. Sow in that window, grow them on indoors, then transplant after May 10 once nights are staying above about 50°F.
 
-1. Count back 6–8 weeks → **March 15 to March 29**.
-2. Sow seeds in that window.
-3. Transplant outdoors *after* May 10, once nights stay above ~50°F (10°C).
+The same method covers most warm-season crops and only the number changes. Peppers and eggplant want 8 to 10 weeks, so they go in earlier than tomatoes, which surprises people who assume everything starts at once.
 
-That's it. The same "count back from your last frost" method works for peppers (8–10 weeks), eggplant (8–10 weeks), and most warm-season crops — only the number of weeks changes.
+If you don't know your frost date, look it up by ZIP code through NOAA or the National Gardening Association, or ask your regional extension service, which usually has better local resolution. Garden Pro Planner fills your frost dates in from your location and counts back for 225+ plants, which removes the arithmetic and, more usefully, removes the temptation to start early because a date on a screen is harder to argue with than a feeling in February.
 
-## Getting stocky, healthy seedlings
+## Getting seedlings that are worth planting
 
-Timing gets you started; these keep seedlings strong:
+Timing gets you to the starting line. These are what produce a stocky plant rather than a tall sad one.
 
-- **Light, not windowsills.** Seedlings need 14–16 hours of bright light. A cheap LED grow light a few inches above the plants beats any window and prevents the stretched, floppy stems called "legginess."
-- **Bottom heat to germinate.** Tomato seeds sprout fastest at 75–85°F (24–29°C). A seedling heat mat speeds things up; remove it once they sprout.
-- **Pot up once.** When the first true leaves appear, move seedlings to a larger pot. Bury the stem deeper — tomatoes grow roots along any buried stem, building a stronger plant.
-- **Harden off.** Over 7–10 days before transplanting, set plants outside for gradually longer stretches so they adjust to real sun and wind.
+**Light, and more than you think.** Seedlings want 14 to 16 hours of bright light a day, and a windowsill in March doesn't come close, whatever it looks like to your eye. A cheap LED grow light a few inches above the plants beats the sunniest window in the house. This one factor causes most legginess.
 
-## Common timing mistakes
+**Warmth to germinate, then take it away.** Tomato seed sprouts fastest at 75 to 85°F. A seedling heat mat speeds germination considerably. Take it off once they're up, because heat after germination encourages stretching.
 
-- **Starting in January "to get ahead."** Without strong light, you'll just grow weak, overgrown plants. Discipline beats enthusiasm here.
-- **Ignoring soil temperature at transplant.** Air can feel warm while the soil is still cold. Cold soil stalls tomatoes for weeks — wait for consistent 60°F+ soil.
-- **Forgetting to harden off.** Seedlings moved straight from indoors to full sun get scorched. The gradual transition matters.
+**Pot up once, and bury the stem.** When the first true leaves appear, move them into a larger pot and set them deeper than they were. Tomatoes grow roots along any buried stem, so a leggy seedling can be partially rescued by burying it, and any seedling gets a stronger root system this way.
 
-## The bottom line
+**Harden off before they go out.** Over 7 to 10 days, put them outside for gradually longer stretches. Seedlings moved straight from indoors into full sun get scorched in an afternoon, and it's a miserable way to lose plants you've grown for two months.
 
-Find your last frost date, count back 6–8 weeks, and sow. Give the seedlings strong light and a gradual move outdoors, and you'll set up your best tomato season yet.
+## The two other timing mistakes
 
-Want the timing handled for you? Garden Pro Planner calculates your seed-starting, transplant, and harvest dates for 225+ plants automatically — based on your exact location.
+Ignoring soil temperature is the big one. Air can feel like summer while the ground is still cold, and tomatoes set into cold soil sit and sulk for weeks rather than growing. Wait for consistent 60°F soil, and a five-dollar soil thermometer settles the argument.
+
+Skipping hardening off is the other, and it's usually impatience at the very last step, which is a frustrating place to lose a season's work.
+
+Find your last frost date, count back six to eight weeks, and then hold your nerve through February. That last part is genuinely the hardest, and it's the one that made the difference for me.

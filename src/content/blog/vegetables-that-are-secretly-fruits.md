@@ -1,60 +1,61 @@
 ---
 title: "Tomatoes Are Fruit, Zucchini Is Too: The Produce Aisle Has Been Lying to You"
-description: "Botanically, tomatoes, cucumbers, zucchini, peppers, and more are all fruits, not vegetables. Here's the real science behind the grocery store's biggest lie."
+description: "Botanically, tomatoes, cucumbers, peppers and squash are all fruits. The rule is one sentence long, and it predicts which crops need bees to produce."
 date: 2026-07-24
 tags: ["plant-science", "fun-facts", "vegetables"]
 draft: false
 ---
 
-Every grocery store in the country sorts tomatoes, cucumbers, and peppers into the "vegetable" section right alongside broccoli and carrots. Botanically, that's wrong — and once you know the actual rule, you'll never look at your garden the same way again.
+The rule is one sentence long, and once I learned it I couldn't stop applying it to everything in the garden. If it grew out of a fertilized flower and it's carrying the seeds, it's a fruit.
 
-## The rule that changes everything
+That's the whole test. Sweetness doesn't come into it. Neither does what you put it on, or which aisle it lives in at the store. A bell pepper is a fruit. Rhubarb, which almost everybody cooks into pie, isn't.
 
-In botany, a **fruit** is the mature, seed-bearing structure that develops from the fertilized flower of a plant. That's it — that's the whole definition. It has nothing to do with sweetness, and nothing to do with what aisle it belongs in. If it grew from a flower and holds the seeds, it's a fruit.
+I filed this under trivia for years. It isn't, quite. The same rule tells you which plants in your beds can produce entirely on their own, and which ones are completely at the mercy of whether the bees show up.
 
-A **vegetable**, on the other hand, isn't a botanical category at all. It's a culinary one — a catch-all for any edible plant part that isn't a fruit by the definition above: roots (carrots, beets), stems (celery, asparagus), leaves (lettuce, spinach), and flower buds (broccoli, cauliflower).
+## Where the word "vegetable" comes from
 
-So the real question for anything in your garden isn't "does it taste sweet?" — it's "did it grow from a flower and does it hold the seeds?"
+Fruit is a botanical category with a hard definition: the mature, seed-bearing structure that develops from a flower's ovary after fertilization.
 
-## The "vegetables" that are secretly fruits
+Vegetable isn't a botanical category at all. It's a kitchen word. It covers every edible plant part that isn't a fruit, which works out to roots, stems, leaves and unopened flower buds. There's no botanist anywhere who can tell you what makes something a vegetable, because the question doesn't have a scientific answer. It only has a culinary one.
 
-Once you apply that test, a surprising amount of your vegetable garden turns out to be fruit:
+So the useful question about anything you're growing isn't what it tastes like. It's whether it came out of a flower.
 
-| "Vegetable" | Why it's actually a fruit |
+## The ones that catch people out
+
+Apply the test and a good chunk of the vegetable garden turns out to be fruit.
+
+| Sold as a vegetable | Why it's really a fruit |
 | --- | --- |
-| Tomatoes | Develop from the tomato flower, hold the seeds inside |
-| Cucumbers | Grow from a fertilized flower, seeds inside the flesh |
-| Zucchini & summer squash | Same story — squash flowers become squash |
-| Peppers (bell, hot, sweet) | Form from the flower, seeds clustered inside |
-| Eggplant | A classic berry, botanically speaking |
-| Pumpkins & winter squash | Also fruits — specifically a type called a pepo |
-| Green beans & peas (in the pod) | The pod develops from the flower and holds the seeds |
+| Tomatoes | Develop from the flower, seeds held in the flesh |
+| Cucumbers | Grow from a fertilized flower, seeds throughout |
+| Zucchini and summer squash | Squash flowers become squash |
+| Peppers, sweet and hot | Form from the flower, seeds clustered inside |
+| Eggplant | A berry, botanically speaking |
+| Pumpkins and winter squash | Fruits of a type called a pepo |
+| Green beans and peas in the pod | The pod develops from the flower and holds the seeds |
+| Okra | A seed pod, straightforwardly |
+| Avocado | A single-seeded berry |
 
-Corn kernels count too — each individual kernel is technically its own tiny fruit called a caryopsis.
+Corn counts too, which still catches me off guard. Each kernel is its own tiny fruit, called a caryopsis, and it's the same structure as a grain of wheat or rice.
 
-## So what's actually a vegetable?
+The genuine vegetables are the parts that never went through a flower at all. Roots: carrots, beets, radishes, turnips. Stems: celery, asparagus, kohlrabi. Leaves: lettuce, spinach, kale, cabbage. Unopened flower buds: broccoli, cauliflower, artichokes.
 
-Genuine vegetables in your garden are the parts that never went through a flower-to-seed process at all:
+## The part that changes how you garden
 
-- **Roots:** carrots, beets, radishes, turnips
-- **Stems:** celery, asparagus, kohlrabi
-- **Leaves:** lettuce, spinach, kale, cabbage
-- **Flower buds (unopened):** broccoli, cauliflower, artichokes
+Fruits need pollination. Vegetables mostly don't. That one consequence explains an enormous amount of garden frustration.
 
-Notice the pattern: rhubarb is a stem (vegetable), even though it's almost always cooked and eaten like a fruit. Meanwhile a bell pepper, which most people would never call "sweet," is 100% fruit by definition.
+A zucchini plant can flower hard for three weeks and set nothing, because every female flower opened, went unvisited, and shriveled off. A cucumber will do the same. Tomatoes usually manage on their own, since tomato flowers self-pollinate and only need a bit of vibration to shake the pollen loose, which is why you'll see people flicking the flower trusses or running an electric toothbrush against the stem during a still, humid stretch.
 
-## This isn't just trivia — it explains real gardening behavior
+Then look at lettuce. You eat the leaf. The plant never has to flower at all, and if it does you've already lost, because bolting turns it bitter. Carrots are the same story underground. A shaded courtyard where bees hardly ever visit will grow you excellent lettuce, chard, kale and radishes, and will break your heart if you plant it with squash.
 
-Once you know the fruit/vegetable split, some common garden mysteries make a lot more sense:
+The harvesting pattern splits along exactly the same line. Fruiting crops keep producing as long as you keep picking, because taking the mature fruit off tells the plant to flower and set again. Leave one zucchini on the vine to turn into a marrow and the whole plant noticeably slows down. Root and leaf crops don't work like that. You get what you get, once, and then you sow again.
 
-- **Fruits need pollination to form; most vegetables don't.** That's why a squash or cucumber plant can flower for weeks and produce nothing if pollinators aren't visiting, while a head of lettuce or a carrot doesn't need pollination at all to be harvestable.
-- **Fruits keep producing as long as you keep picking.** Tomatoes, peppers, cucumbers, and beans are all "cut-and-come-again" in the sense that removing ripe fruit signals the plant to keep flowering and setting more. Leafy and root vegetables don't work that way — you generally get one harvest per plant.
-- **A famous court case even weighed in.** In 1893, the U.S. Supreme Court ruled in *Nix v. Hedden* that tomatoes should be taxed as vegetables under tariff law — but the Court's own opinion acknowledged tomatoes are botanically a fruit. It just didn't matter for the tax code, which goes by how people use and eat something, not how it grows.
+Garden Pro Planner's plant library covers pollination needs crop by crop across 225+ plants, which is worth a look before you commit a low-bee balcony to cucumbers.
 
-## Why it matters in your own garden
+## The Supreme Court weighed in and got it wrong on purpose
 
-Knowing which of your crops are botanical fruits is actually useful, not just a fun fact for dinner parties. It tells you which plants depend on good pollinator activity to produce at all (squash, cucumbers, tomatoes, peppers), and which ones you can grow successfully even in a spot bees rarely visit (lettuce, carrots, kale). Garden Pro Planner's plant library covers growing needs for 225+ plants, so you can plan your beds around which crops actually need the bees to show up.
+In 1893, in *Nix v. Hedden*, the US Supreme Court ruled unanimously that tomatoes should be taxed as vegetables under the Tariff Act. The Court's own opinion admitted that tomatoes are botanically a fruit. It ruled the other way regardless, on the grounds that tariff law follows ordinary usage rather than botany, and in ordinary usage tomatoes turn up at dinner and not for dessert.
 
-## The bottom line
+So the produce aisle isn't lying exactly. It's running an older system, one organized around how food gets cooked rather than how it grows. Both systems work perfectly well right up until you try to plan a garden using the kitchen one, at which point you're standing in front of a zucchini plant wondering why it won't fruit.
 
-If it grew from a flower and holds the seeds, it's a fruit — no matter how savory it tastes or which grocery aisle it lives in. Tomatoes, cucumbers, zucchini, peppers, eggplant, and squash are all fruit. Carrots, celery, lettuce, and broccoli are the real vegetables. The produce aisle just never got the memo.
+Sort your beds by the botanical rule instead. The flower-grown crops need pollinators and regular picking. Everything else just wants decent soil and water.
