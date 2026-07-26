@@ -7,6 +7,7 @@ image: "/assets/blog/vegetables-that-are-secretly-fruits-hero.jpg"
 imageAlt: "Tomatoes, a cucumber, zucchini, peppers and an eggplant on a wooden table, several sliced open to show their seeds."
 pinImage: "/assets/blog/vegetables-that-are-secretly-fruits-pin.jpg"
 pinTitle: "The Vegetables That Are Secretly Fruits"
+pinKeywords: ["garden facts", "vegetable gardening", "grow your own food"]
 draft: false
 ---
 

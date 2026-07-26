@@ -8,6 +8,7 @@ imageAlt: "A sunny patio corner with pots of lettuce, a fruiting pepper plant, b
 pinImage: "/assets/blog/container-vegetable-gardening-what-actually-grows-well-in-pots-pin.jpg"
 pinTitle: "What Actually Grows Well in Pots"
 heroCrop: "south"
+pinKeywords: ["container gardening", "patio garden", "balcony garden", "small space gardening"]
 draft: false
 ---
 

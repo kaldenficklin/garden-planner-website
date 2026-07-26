@@ -52,6 +52,7 @@ imageAlt: "alt text"                 # describes the hero photo
 pinImage: "/assets/blog/foo-pin.jpg" # 2:3 Pinterest image, title burned in
 pinTitle: "Shorter Pin Title"        # optional, when `title` is too long
 heroCrop: "south"                    # optional, see "Post images" below
+pinKeywords: ["fall vegetable garden", "organic pest control"]  # 3–5, see below
 draft: false                   # true keeps it out of the build
 ---
 ```
@@ -113,6 +114,34 @@ Three paths, all pointing at `<slug>-pin.jpg`:
 
 `og:image` stays the clean hero, because a 2:3 portrait looks wrong in a
 Twitter, Slack, or iMessage unfurl.
+
+### Pinterest discoverability
+
+The pin description is built as `pinTitle. description #Hashtags`. Pinterest
+ranks primarily on the readable sentence, so `description` is doing most of the
+work; the hashtags derived from `pinKeywords` are reinforcement, capped at 5 and
+placed last, which matches Pinterest's own guidance. Write `pinKeywords` as
+phrases people type into Pinterest search, not as site taxonomy.
+
+Posts also emit `article:published_time`, `article:modified_time`,
+`article:author` and `article:tag`, which is what Pinterest reads for **Article
+Rich Pins** (headline, author, date and site name shown on the pin).
+
+Two things have to be done once, by hand, in a Pinterest business account:
+
+1. **Claim `thegardenplanner.app`** (Settings → Claimed accounts). This turns on
+   Rich Pins for the domain and attaches site attribution to every pin from it,
+   including repins.
+2. **Validate one post URL** in the Pinterest Rich Pin Validator to switch
+   Article Rich Pins on.
+
+### Sharing beyond Pinterest
+
+The hero also carries a **Share** button that calls the Web Share API, so on
+mobile it opens the OS share sheet (Messages, WhatsApp, Facebook, email —
+whatever the reader has). On desktop, where Web Share is patchy, it copies the
+link instead. That covers every other platform without a row of per-network
+buttons that mostly go unclicked.
 
 ## Analytics & ad tracking
 

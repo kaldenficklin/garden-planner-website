@@ -7,6 +7,7 @@ image: "/assets/blog/companion-planting-for-tomatoes-hero.jpg"
 imageAlt: "Staked tomato plants interplanted with basil, with orange marigolds bordering the front of the bed."
 pinImage: "/assets/blog/companion-planting-for-tomatoes-pin.jpg"
 pinTitle: "Companion Planting for Tomatoes"
+pinKeywords: ["companion planting", "growing tomatoes", "raised bed garden", "vegetable garden layout"]
 draft: false
 ---
 

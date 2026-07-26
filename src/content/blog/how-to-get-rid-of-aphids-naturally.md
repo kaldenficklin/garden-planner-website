@@ -6,6 +6,7 @@ tags: ["pest-control", "aphids", "organic-gardening"]
 image: "/assets/blog/how-to-get-rid-of-aphids-naturally-hero.jpg"
 imageAlt: "A dense cluster of small green aphids on a curled plant stem, with ants moving among them."
 pinImage: "/assets/blog/how-to-get-rid-of-aphids-naturally-pin.jpg"
+pinKeywords: ["aphid control", "organic pest control", "garden pests", "vegetable garden tips"]
 draft: false
 ---
 

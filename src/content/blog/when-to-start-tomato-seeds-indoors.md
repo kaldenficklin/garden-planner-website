@@ -7,6 +7,7 @@ image: "/assets/blog/when-to-start-tomato-seeds-indoors-hero.jpg"
 imageAlt: "A tray of young stocky tomato seedlings growing under a grow light indoors."
 pinImage: "/assets/blog/when-to-start-tomato-seeds-indoors-pin.jpg"
 pinTitle: "When to Start Tomato Seeds Indoors"
+pinKeywords: ["seed starting", "growing tomatoes from seed", "indoor seed starting", "garden planning"]
 draft: false
 ---
 

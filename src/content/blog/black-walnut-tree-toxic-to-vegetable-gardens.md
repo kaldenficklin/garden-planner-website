@@ -8,6 +8,7 @@ imageAlt: "A large black walnut tree beside a vegetable bed of wilting, yellowin
 pinImage: "/assets/blog/black-walnut-tree-toxic-to-vegetable-gardens-pin.jpg"
 pinTitle: "The Tree That's Quietly Poisoning Your Garden"
 heroCrop: "south"
+pinKeywords: ["black walnut tree", "garden planning", "gardening mistakes", "vegetable garden tips"]
 draft: false
 ---
 

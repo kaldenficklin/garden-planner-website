@@ -28,6 +28,12 @@ const blog = defineCollection({
     // so scripts/rebuild-images.mjs reproduces the same crop. Default picks the
     // busiest region, which is wrong when the subject sits low in the frame.
     heroCrop: z.enum(['attention', 'entropy', 'centre', 'north', 'south']).optional(),
+    // Search terms appended to the Pinterest description as hashtags. Write them
+    // as things people actually search on Pinterest ("fall vegetable garden"),
+    // not as site taxonomy. Falls back to `tags`, which are usually weaker.
+    // Keep to 3–5; Pinterest ranks on the description text far more than on
+    // hashtags, so these are reinforcement, not the strategy.
+    pinKeywords: z.array(z.string()).optional(),
     // Set to true to keep a post out of the build while drafting.
     draft: z.boolean().default(false),
   }),

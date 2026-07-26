@@ -6,6 +6,7 @@ tags: ["pest-control", "squash", "summer"]
 image: "/assets/blog/how-to-get-rid-of-squash-bugs-naturally-hero.jpg"
 imageAlt: "The underside of a squash leaf showing a cluster of bronze squash bug eggs in the V between two veins."
 pinImage: "/assets/blog/how-to-get-rid-of-squash-bugs-naturally-pin.jpg"
+pinKeywords: ["squash bugs", "organic pest control", "growing squash", "vegetable garden pests"]
 draft: false
 ---
 

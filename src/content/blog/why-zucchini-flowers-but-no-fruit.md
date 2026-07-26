@@ -7,6 +7,7 @@ image: "/assets/blog/why-zucchini-flowers-but-no-fruit-hero.jpg"
 imageAlt: "An open yellow female zucchini flower with a small immature squash swelling behind the petals."
 pinImage: "/assets/blog/why-zucchini-flowers-but-no-fruit-pin.jpg"
 pinTitle: "Why Your Zucchini Flowers But Never Makes Squash"
+pinKeywords: ["growing zucchini", "hand pollination", "squash garden", "vegetable garden problems"]
 draft: false
 ---
 

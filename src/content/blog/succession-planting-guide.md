@@ -7,6 +7,7 @@ image: "/assets/blog/succession-planting-guide-hero.jpg"
 imageAlt: "A raised bed half cleared of a spent crop, with a row of fresh seedlings transplanted into the other half."
 pinImage: "/assets/blog/succession-planting-guide-pin.jpg"
 pinTitle: "Keep Your Garden Producing All Summer"
+pinKeywords: ["succession planting", "fall vegetable garden", "vegetable garden planning", "grow more food"]
 draft: false
 ---
 

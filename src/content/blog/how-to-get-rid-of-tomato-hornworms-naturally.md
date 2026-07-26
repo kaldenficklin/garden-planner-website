@@ -6,6 +6,7 @@ tags: ["pest-control", "tomatoes", "organic-gardening"]
 image: "/assets/blog/how-to-get-rid-of-tomato-hornworms-naturally-hero.jpg"
 imageAlt: "A large green hornworm caterpillar on a tomato stem stripped bare of its leaves, with dark droppings on the leaf below."
 pinImage: "/assets/blog/how-to-get-rid-of-tomato-hornworms-naturally-pin.jpg"
+pinKeywords: ["tomato hornworm", "garden pests", "organic pest control", "vegetable garden tips"]
 draft: false
 ---
 

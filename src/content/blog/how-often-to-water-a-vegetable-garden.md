@@ -7,6 +7,7 @@ image: "/assets/blog/how-often-to-water-a-vegetable-garden-hero.jpg"
 imageAlt: "Water from a watering can soaking into dark soil at the base of leafy vegetables mulched with straw."
 pinImage: "/assets/blog/how-often-to-water-a-vegetable-garden-pin.jpg"
 heroCrop: "south"
+pinKeywords: ["garden watering tips", "vegetable garden care", "gardening for beginners"]
 draft: false
 ---
 

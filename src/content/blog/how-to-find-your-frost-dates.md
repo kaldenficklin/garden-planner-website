@@ -6,6 +6,7 @@ tags: ["frost-dates", "planning", "beginners"]
 image: "/assets/blog/how-to-find-your-frost-dates-hero.jpg"
 imageAlt: "Frost-covered kale and chard in a vegetable bed at sunrise."
 pinImage: "/assets/blog/how-to-find-your-frost-dates-pin.jpg"
+pinKeywords: ["frost dates", "garden planning", "vegetable garden calendar", "gardening for beginners"]
 draft: false
 ---
 
