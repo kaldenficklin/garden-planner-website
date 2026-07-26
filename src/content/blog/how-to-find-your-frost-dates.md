@@ -3,6 +3,9 @@ title: "How to Find Your First and Last Frost Dates"
 description: "Looking up your frost dates takes two minutes. Understanding what they're actually promising you takes longer, and that's where gardens get lost."
 date: 2026-07-19
 tags: ["frost-dates", "planning", "beginners"]
+image: "/assets/blog/how-to-find-your-frost-dates-hero.jpg"
+imageAlt: "Frost-covered kale and chard in a vegetable bed at sunrise."
+pinImage: "/assets/blog/how-to-find-your-frost-dates-pin.jpg"
 draft: false
 ---
 

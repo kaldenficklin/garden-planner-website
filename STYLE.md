@@ -206,6 +206,32 @@ the original posts, almost always as filler credibility), "simply," "just,"
 
 ---
 
+## Images
+
+Every post carries two images, both derived from a single generated photo. See
+the README for the commands; this section is about the look.
+
+**The photo is documentary, not stock.** Natural diffused daylight, shallow
+depth of field, muted greens and earth tones, one clear subject. It should look
+like someone crouched down in an actual garden with a 50mm lens, not like a
+brochure. No hands holding produce toward the camera, no smiling models, no
+suspiciously glossy vegetables.
+
+**It has to be botanically right.** The photo is a factual claim, exactly like
+the text. If the article is about squash bug eggs, the image shows squash bug
+eggs in the V of a leaf vein, not a generic beetle. Look at what came back
+before you commit it, and regenerate with a more specific subject if it's
+wrong. A gardening blog that shows the wrong pest loses the reader in one
+glance.
+
+**No text in the generated photo.** All type is composited afterward from the
+brand fonts, so it stays crisp and identical across every pin. Never ask the
+image model for a title, label, or caption.
+
+**The pin title can differ from the SEO title.** Long titles work in search
+results and fail on an image. When the post title runs past roughly 55
+characters, write a shorter one for the pin and record it as `pinTitle`.
+
 ## Pre-publish check
 
 Run these against the new post before committing. Any hit needs a fix or a

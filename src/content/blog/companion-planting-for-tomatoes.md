@@ -3,6 +3,10 @@ title: "Companion Planting for Tomatoes: What to Plant (and Avoid)"
 description: "Most companion planting advice is folklore. What holds up, what doesn't, and the pairings that genuinely shouldn't share a bed with your tomatoes."
 date: 2026-07-17
 tags: ["companion-planting", "tomatoes"]
+image: "/assets/blog/companion-planting-for-tomatoes-hero.jpg"
+imageAlt: "Staked tomato plants interplanted with basil, with orange marigolds bordering the front of the bed."
+pinImage: "/assets/blog/companion-planting-for-tomatoes-pin.jpg"
+pinTitle: "Companion Planting for Tomatoes"
 draft: false
 ---
 

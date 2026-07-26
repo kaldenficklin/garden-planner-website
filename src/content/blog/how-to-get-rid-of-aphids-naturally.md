@@ -3,6 +3,9 @@ title: "How to Get Rid of Aphids Naturally"
 description: "Aphid control is simpler than most guides make it. Start with the hose, escalate only if you need to, and know when a few aphids aren't worth treating."
 date: 2026-07-21
 tags: ["pest-control", "aphids", "organic-gardening"]
+image: "/assets/blog/how-to-get-rid-of-aphids-naturally-hero.jpg"
+imageAlt: "A dense cluster of small green aphids on a curled plant stem, with ants moving among them."
+pinImage: "/assets/blog/how-to-get-rid-of-aphids-naturally-pin.jpg"
 draft: false
 ---
 

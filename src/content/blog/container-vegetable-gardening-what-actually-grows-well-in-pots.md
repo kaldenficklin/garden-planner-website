@@ -3,6 +3,11 @@ title: "Container Vegetable Gardening: What Actually Grows Well in Pots"
 description: "Nearly every container failure comes down to pot size. What grows well in pots, how big each one needs, and the mistakes that kill patio crops."
 date: 2026-07-25
 tags: ["container-gardening", "vegetables", "beginners"]
+image: "/assets/blog/container-vegetable-gardening-what-actually-grows-well-in-pots-hero.jpg"
+imageAlt: "A sunny patio corner with pots of lettuce, a fruiting pepper plant, basil and a compact patio tomato."
+pinImage: "/assets/blog/container-vegetable-gardening-what-actually-grows-well-in-pots-pin.jpg"
+pinTitle: "What Actually Grows Well in Pots"
+heroCrop: "south"
 draft: false
 ---
 

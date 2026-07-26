@@ -3,6 +3,10 @@ title: "Succession Planting: How to Keep Your Vegetable Garden Producing All Sum
 description: "An empty bed in July isn't a finished garden. How to match fast crops to the days you have left before frost and keep harvesting into fall."
 date: 2026-07-24
 tags: ["succession-planting", "vegetable-garden", "summer"]
+image: "/assets/blog/succession-planting-guide-hero.jpg"
+imageAlt: "A raised bed half cleared of a spent crop, with a row of fresh seedlings transplanted into the other half."
+pinImage: "/assets/blog/succession-planting-guide-pin.jpg"
+pinTitle: "Keep Your Garden Producing All Summer"
 draft: false
 ---
 

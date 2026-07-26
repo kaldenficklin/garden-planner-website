@@ -35,6 +35,9 @@ Then fill in the `description` and body, set `draft: false`, commit, and push.
 Netlify rebuilds and the post appears on `/blog`, in the RSS feed, and in the
 sitemap automatically. No HTML or template editing required.
 
+**Voice and style are defined in [`STYLE.md`](STYLE.md)** — read it before
+writing. It also lists the writing patterns that are banned on this blog.
+
 ### Frontmatter reference
 
 ```yaml
@@ -44,11 +47,72 @@ description: "SEO/social snippet, ~155 chars"  # required
 date: 2026-07-21               # required (YYYY-MM-DD)
 updated: 2026-07-25            # optional
 tags: ["seed-starting"]        # optional
-image: "/assets/blog/foo.jpg"  # optional hero/social image
-imageAlt: "alt text"           # optional
+image: "/assets/blog/foo-hero.jpg"   # hero photo, also used as og:image
+imageAlt: "alt text"                 # describes the hero photo
+pinImage: "/assets/blog/foo-pin.jpg" # 2:3 Pinterest image, title burned in
+pinTitle: "Shorter Pin Title"        # optional, when `title` is too long
+heroCrop: "south"                    # optional, see "Post images" below
 draft: false                   # true keeps it out of the build
 ---
 ```
+
+## Post images
+
+Each post gets two images, both generated from one photo:
+
+| File | Size | Where it's used |
+| --- | --- | --- |
+| `<slug>-hero.jpg` | 1200×800 | Top of the post; `og:image` and `twitter:image` for link shares |
+| `<slug>-pin.jpg` | 1000×1500 | Pinterest only — same photo with the title overlaid in brand type |
+
+Generate both with one command:
+
+```sh
+node scripts/gen-post-image.mjs \
+  --slug how-to-plant-garlic-in-fall \
+  --title "How to Plant Garlic in Fall" \
+  --subject "hands pressing garlic cloves into dark soil in a raised bed, papery bulbs and a trowel beside them, autumn light"
+```
+
+`--subject` describes only what is *in* the shot. The house photographic style
+lives in `scripts/gen-post-image.mjs` and is appended automatically, so every
+hero on the blog looks like it came from the same photographer. Change that
+`STYLE` constant only if you intend to restyle the whole blog.
+
+The photo comes from the Higgsfield CLI (`higgsfield auth login` once, ~7
+credits per post). The title is composited locally by `scripts/make-images.mjs`
+using the brand fonts in `scripts/fonts/`, so the type is crisp and identical on
+every pin rather than being hallucinated into the image.
+
+**If the hero crop cuts the point out of the photo**, don't regenerate — the
+hero is a wide slice of a tall image, and the default picks the busiest region,
+which is wrong whenever the subject sits low in the frame (a tree over a dying
+bed, pots on a patio). Add `--crop south` (or `north` / `centre`) and record the
+same value as `heroCrop` in the post's frontmatter so it survives a rebuild.
+
+To re-composite every post after changing the pin design, the fonts, or the JPEG
+quality — no credits, no regeneration:
+
+```sh
+node scripts/rebuild-images.mjs
+```
+
+It reads each post's `pinTitle` and `heroCrop` from frontmatter and rebuilds from
+the cached masters in `$TMPDIR/gpp-masters/`. Posts whose master has been cleaned
+up are skipped with a warning.
+
+### How Pinterest gets the right image
+
+Three paths, all pointing at `<slug>-pin.jpg`:
+
+1. The **"Save this pin"** button on each post passes it explicitly as `media=`.
+2. `data-pin-media` on the hero `<img>` overrides what Pinterest's browser
+   extension would otherwise grab.
+3. An off-screen copy of the pin (`.pin-source`) so Pinterest's "save from URL"
+   flow offers the branded image.
+
+`og:image` stays the clean hero, because a 2:3 portrait looks wrong in a
+Twitter, Slack, or iMessage unfurl.
 
 ## Analytics & ad tracking
 

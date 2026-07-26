@@ -3,6 +3,10 @@ title: "How Often to Water a Vegetable Garden"
 description: "Overwatering and underwatering look identical from above, which is how most gardeners kill plants. The fix is a finger, two inches down."
 date: 2026-07-22
 tags: ["watering", "summer-care", "beginners"]
+image: "/assets/blog/how-often-to-water-a-vegetable-garden-hero.jpg"
+imageAlt: "Water from a watering can soaking into dark soil at the base of leafy vegetables mulched with straw."
+pinImage: "/assets/blog/how-often-to-water-a-vegetable-garden-pin.jpg"
+heroCrop: "south"
 draft: false
 ---
 

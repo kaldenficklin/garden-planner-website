@@ -3,6 +3,11 @@ title: "Never Plant a Vegetable Garden Near This Tree - It's Quietly Poisoning Y
 description: "Black walnuts release juglone, which kills tomatoes, peppers and potatoes outright. The root zone reaches far further than most gardeners expect."
 date: 2026-07-24
 tags: ["plant-science", "companion-planting", "trees"]
+image: "/assets/blog/black-walnut-tree-toxic-to-vegetable-gardens-hero.jpg"
+imageAlt: "A large black walnut tree beside a vegetable bed of wilting, yellowing tomato plants."
+pinImage: "/assets/blog/black-walnut-tree-toxic-to-vegetable-gardens-pin.jpg"
+pinTitle: "The Tree That's Quietly Poisoning Your Garden"
+heroCrop: "south"
 draft: false
 ---
 

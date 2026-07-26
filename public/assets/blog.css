@@ -37,7 +37,30 @@
 .post-header h1 { font-size: clamp(30px, 4.5vw, 46px); }
 .post-header .post-meta { margin: 14px 0 0; }
 .post-header .tag-row { margin-top: 16px; }
-.post-hero-img { width: 100%; border-radius: var(--radius); margin: 26px 0 0; }
+.post-hero { position: relative; margin: 26px 0 0; }
+.post-hero-img { width: 100%; border-radius: var(--radius); display: block; }
+
+/* Pinterest save button, sitting over the hero photo */
+.pin-btn {
+  position: absolute; top: 14px; right: 14px;
+  display: inline-flex; align-items: center; gap: 7px;
+  padding: 9px 15px 9px 13px; border-radius: 999px;
+  background: rgba(255,255,255,.94);
+  color: #e60023; font-weight: 600; font-size: 14px; line-height: 1;
+  box-shadow: 0 4px 14px -4px rgba(18,58,38,.45);
+  backdrop-filter: saturate(140%) blur(6px);
+  transition: background .15s ease, color .15s ease, transform .15s ease;
+}
+.pin-btn:hover { background: #e60023; color: #fff; text-decoration: none; transform: translateY(-1px); }
+.pin-btn:active { transform: translateY(0); }
+.pin-btn svg { flex: none; }
+@media (max-width: 520px) {
+  .pin-btn { top: 10px; right: 10px; padding: 8px 13px 8px 11px; font-size: 13px; }
+}
+
+/* The 2:3 pin lives in the DOM so Pinterest's "save from URL" flow finds it,
+   but it is never shown to readers. */
+.pin-source { position: absolute; left: -9999px; top: 0; width: 1000px; height: 1500px; overflow: hidden; }
 
 /* Prose — readable article body */
 .prose { margin-top: 30px; font-size: 18px; line-height: 1.75; color: var(--ink); }

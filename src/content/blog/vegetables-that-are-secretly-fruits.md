@@ -3,6 +3,10 @@ title: "Tomatoes Are Fruit, Zucchini Is Too: The Produce Aisle Has Been Lying to
 description: "Botanically, tomatoes, cucumbers, peppers and squash are all fruits. The rule is one sentence long, and it predicts which crops need bees to produce."
 date: 2026-07-24
 tags: ["plant-science", "fun-facts", "vegetables"]
+image: "/assets/blog/vegetables-that-are-secretly-fruits-hero.jpg"
+imageAlt: "Tomatoes, a cucumber, zucchini, peppers and an eggplant on a wooden table, several sliced open to show their seeds."
+pinImage: "/assets/blog/vegetables-that-are-secretly-fruits-pin.jpg"
+pinTitle: "The Vegetables That Are Secretly Fruits"
 draft: false
 ---
 

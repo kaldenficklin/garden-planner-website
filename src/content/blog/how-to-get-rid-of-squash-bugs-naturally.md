@@ -3,6 +3,9 @@ title: "How to Get Rid of Squash Bugs Naturally"
 description: "Squash bugs win by being invisible until the damage is done. The whole fight is at the egg stage, and it's a five-minute job once a week."
 date: 2026-07-23
 tags: ["pest-control", "squash", "summer"]
+image: "/assets/blog/how-to-get-rid-of-squash-bugs-naturally-hero.jpg"
+imageAlt: "The underside of a squash leaf showing a cluster of bronze squash bug eggs in the V between two veins."
+pinImage: "/assets/blog/how-to-get-rid-of-squash-bugs-naturally-pin.jpg"
 draft: false
 ---
 

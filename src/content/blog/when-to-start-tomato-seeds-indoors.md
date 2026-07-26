@@ -3,6 +3,10 @@ title: "When to Start Tomato Seeds Indoors (by Frost Date)"
 description: "Start tomato seeds 6 to 8 weeks before your last frost, and not a day earlier. Starting too soon is the most common way to ruin a tomato season."
 date: 2026-07-15
 tags: ["seed-starting", "tomatoes", "timing"]
+image: "/assets/blog/when-to-start-tomato-seeds-indoors-hero.jpg"
+imageAlt: "A tray of young stocky tomato seedlings growing under a grow light indoors."
+pinImage: "/assets/blog/when-to-start-tomato-seeds-indoors-pin.jpg"
+pinTitle: "When to Start Tomato Seeds Indoors"
 draft: false
 ---
 

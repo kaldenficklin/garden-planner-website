@@ -3,6 +3,10 @@ title: "Your Zucchini Plant Is Covered in Flowers and Still Growing Nothing - He
 description: "Zucchini grows separate male and female flowers, and only the female ones make squash. How to tell them apart and finish the job the bees didn't."
 date: 2026-07-24
 tags: ["squash", "pollination", "troubleshooting"]
+image: "/assets/blog/why-zucchini-flowers-but-no-fruit-hero.jpg"
+imageAlt: "An open yellow female zucchini flower with a small immature squash swelling behind the petals."
+pinImage: "/assets/blog/why-zucchini-flowers-but-no-fruit-pin.jpg"
+pinTitle: "Why Your Zucchini Flowers But Never Makes Squash"
 draft: false
 ---
 

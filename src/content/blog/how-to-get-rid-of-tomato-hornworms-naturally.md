@@ -3,6 +3,9 @@ title: "How to Get Rid of Tomato Hornworms Naturally"
 description: "I've never spotted a hornworm before I spotted its droppings. The trick that finds them in ten seconds, and why you should check one's back first."
 date: 2026-07-26
 tags: ["pest-control", "tomatoes", "organic-gardening"]
+image: "/assets/blog/how-to-get-rid-of-tomato-hornworms-naturally-hero.jpg"
+imageAlt: "A large green hornworm caterpillar on a tomato stem stripped bare of its leaves, with dark droppings on the leaf below."
+pinImage: "/assets/blog/how-to-get-rid-of-tomato-hornworms-naturally-pin.jpg"
 draft: false
 ---
 
