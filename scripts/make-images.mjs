@@ -82,9 +82,9 @@ function buildOverlay(title) {
   const lineHeight = Math.round(size * 1.16);
   const blockH = lines.length * lineHeight;
 
-  // Title block sits in the lower third, above the brand footer.
-  const footerY = PIN_H - PAD - 20;
-  const titleBottom = footerY - 74;
+  // No wordmark or URL on the pin — the title is the only type, so it sits
+  // bottom-anchored on the padding rather than above a brand footer.
+  const titleBottom = PIN_H - PAD;
   const titleTop = titleBottom - blockH;
 
   const tspans = lines
@@ -98,39 +98,19 @@ function buildOverlay(title) {
   <defs>
     <linearGradient id="scrim" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%"   stop-color="${GREEN_900}" stop-opacity="0"/>
-      <stop offset="38%"  stop-color="${GREEN_900}" stop-opacity="0.42"/>
-      <stop offset="62%"  stop-color="${GREEN_900}" stop-opacity="0.82"/>
-      <stop offset="100%" stop-color="${GREEN_900}" stop-opacity="0.96"/>
-    </linearGradient>
-    <linearGradient id="topfade" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%"   stop-color="${GREEN_900}" stop-opacity="0.50"/>
-      <stop offset="100%" stop-color="${GREEN_900}" stop-opacity="0"/>
-    </linearGradient>
-    <linearGradient id="mark" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#7fbf8f"/>
-      <stop offset="100%" stop-color="#3aa6b8"/>
+      <stop offset="40%"  stop-color="${GREEN_900}" stop-opacity="0.44"/>
+      <stop offset="70%"  stop-color="${GREEN_900}" stop-opacity="0.84"/>
+      <stop offset="100%" stop-color="${GREEN_900}" stop-opacity="0.94"/>
     </linearGradient>
   </defs>
 
-  <rect x="0" y="0" width="${PIN_W}" height="220" fill="url(#topfade)"/>
-  <rect x="0" y="${PIN_H * 0.34}" width="${PIN_W}" height="${PIN_H * 0.66}" fill="url(#scrim)"/>
-
-  <!-- eyebrow -->
-  <text x="${PAD}" y="${PAD + 34}" font-family="Inter" font-size="23" font-weight="700"
-        fill="#ffffff" opacity="0.92" letter-spacing="3.4">GARDEN PRO PLANNER</text>
+  <rect x="0" y="${PIN_H * 0.36}" width="${PIN_W}" height="${PIN_H * 0.64}" fill="url(#scrim)"/>
 
   <!-- accent rule -->
-  <rect x="${PAD}" y="${titleTop - 40}" width="86" height="6" rx="3" fill="${GREEN_500}"/>
+  <rect x="${PAD}" y="${titleTop - 42}" width="86" height="6" rx="3" fill="${GREEN_500}"/>
 
   <!-- title -->
   <text font-family="Fraunces" font-size="${size}" font-weight="700" fill="#ffffff">${tspans}</text>
-
-  <!-- brand footer -->
-  <rect x="${PAD}" y="${footerY - 34}" width="44" height="44" rx="12" fill="url(#mark)"/>
-  <text x="${PAD + 22}" y="${footerY - 2}" font-family="Fraunces" font-size="27" font-weight="700"
-        fill="#ffffff" text-anchor="middle">G</text>
-  <text x="${PAD + 60}" y="${footerY - 3}" font-family="Inter" font-size="25" font-weight="600"
-        fill="#ffffff" opacity="0.95">thegardenplanner.app</text>
 </svg>`;
 }
 
