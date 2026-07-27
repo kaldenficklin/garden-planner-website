@@ -12,8 +12,11 @@
 
   /* ── Config ─────────────────────────────────────────────────────────── */
 
-  // "Garden Planner" property (401448878 / 545945963), web stream 15277152559.
-  var GA_MEASUREMENT_ID = 'G-D8MEPMRV8T';
+  // "Garden Pro Planner Website" property (401448878 / 547196945), web stream
+  // 15330067195. Deliberately its own property: the apps report into
+  // "garden-planner-e91af" (545945963), and mixing site sessions into the app's
+  // numbers would distort both.
+  var GA_MEASUREMENT_ID = 'G-ZJYHEXNQBX';
 
   // Optional. App Store Connect → App Analytics → Campaigns issues a "provider
   // token". Set it and App Store product-page views get attributed to the same
