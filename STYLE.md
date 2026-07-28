@@ -113,6 +113,41 @@ already sounds like. Available if the blog ever wants a reference-toned section.
 
 Derived from [Wikipedia: Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing).
 
+### Titles (exempt from the Inflation rule below)
+
+Titles are the one place on this blog that should go loud. The body text
+underneath still follows every rule in this guide, but the `title` and
+`pinTitle` fields are written to get the click: curiosity gaps, stakes,
+second-person urgency, "the mistake that's killing your tomatoes" energy.
+Bring back what Part 2's "Inflation" section bans everywhere else — "the one
+mistake," "why your X is dying," "stop doing this," "this is why X keeps
+happening to you."
+
+**One rule does not bend: the title cannot claim something the article
+doesn't actually deliver.** A title can be loud about a true thing ("This
+Common Watering Mistake Is Splitting Your Tomatoes") but can't invent a
+severity, a number, or an outcome the post doesn't back up. This isn't a tone
+rule, it's what keeps the click from bouncing and what keeps Google from
+penalizing the post for a mismatch between title and content — a clickbait
+title that doesn't pay off in the first two paragraphs is worse for traffic
+than a plain one.
+
+Compare: "Why Tomatoes Split After It Rains" (old, plain) vs. "This Common
+Watering Mistake Is Splitting Your Tomatoes (And It's Not the Rain)" (loud,
+still 100% accurate to the post). Aim for the second.
+
+**The pin type treatment is "Tabloid Bold"** (picked 2026-07-28): Inter Black
+all-caps on a warm red-black scrim. Two optional frontmatter fields feed it —
+set them when they help, skip them when they don't:
+- `pinEyebrow`: a short (2-4 word) yellow badge label above the title, e.g.
+  `"WATERING MISTAKE"`. Usually the post's core problem, upper-cased.
+- `pinHighlight`: one word or short phrase from the title to render in yellow
+  instead of white, e.g. `"SPLITTING"`. Must match the title text verbatim
+  (case-insensitive) — if it doesn't, or if it straddles a line break, it's
+  silently ignored, so don't rely on it landing every time.
+
+See `scripts/lib/overlay.mjs` for the implementation.
+
 ### Endings
 
 - **Never** end a post with "The bottom line," "In summary," "The takeaway,"

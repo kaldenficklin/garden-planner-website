@@ -48,8 +48,14 @@ for (const file of readdirSync(BLOG).filter((f) => f.endsWith('.md'))) {
 
   const title = field(src, 'pinTitle') ?? field(src, 'title');
   const crop = field(src, 'heroCrop') ?? 'attention';
+  const eyebrow = field(src, 'pinEyebrow');
+  const highlight = field(src, 'pinHighlight');
 
-  execFileSync('node', [join(HERE, 'make-images.mjs'), master, slug, title, crop], {
+  const args = [join(HERE, 'make-images.mjs'), master, slug, title, crop];
+  if (eyebrow) args.push('--eyebrow', eyebrow);
+  if (highlight) args.push('--highlight', highlight);
+
+  execFileSync('node', args, {
     stdio: 'inherit',
     cwd: ROOT,
   });

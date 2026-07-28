@@ -5,7 +5,12 @@
  *   node scripts/gen-post-image.mjs \
  *     --slug how-to-plant-garlic-in-fall \
  *     --title "How to Plant Garlic in Fall" \
- *     --subject "a gardener's hands pressing garlic cloves into dark soil in a raised bed, papery garlic bulbs and a trowel beside them, autumn light"
+ *     --subject "a gardener's hands pressing garlic cloves into dark soil in a raised bed, papery garlic bulbs and a trowel beside them, autumn light" \
+ *     [--eyebrow "GARLIC SEASON"] [--highlight "GARLIC"]
+ *
+ * --eyebrow is a short (2-4 word) badge label shown above the pin title.
+ * --highlight is a word/phrase from the title to render in the accent color.
+ * Both are optional and passed straight through to make-images.mjs.
  *
  * Writes public/assets/blog/<slug>-hero.jpg and <slug>-pin.jpg, then prints the
  * frontmatter lines to paste into the post.
@@ -84,7 +89,12 @@ if (!res.ok) {
 writeFileSync(master, Buffer.from(await res.arrayBuffer()));
 
 console.log(`[${slug}] compositing hero + pin…`);
-execFileSync('node', [join(HERE, 'make-images.mjs'), master, slug, title, arg('crop') ?? 'attention'], {
+const makeImagesArgs = [join(HERE, 'make-images.mjs'), master, slug, title, arg('crop') ?? 'attention'];
+const eyebrow = arg('eyebrow');
+const highlight = arg('highlight');
+if (eyebrow) makeImagesArgs.push('--eyebrow', eyebrow);
+if (highlight) makeImagesArgs.push('--highlight', highlight);
+execFileSync('node', makeImagesArgs, {
   stdio: 'inherit',
   cwd: ROOT,
 });

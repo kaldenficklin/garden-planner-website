@@ -1,11 +1,13 @@
 ---
-title: "Why Tomatoes Split After It Rains"
+title: "This Common Watering Mistake Is Splitting Your Tomatoes"
 description: "A dry spell followed by a heavy rain is the classic setup for cracked tomatoes. The fix isn't about the storm, it's about the week before it."
 date: 2026-07-28
 tags: ["tomatoes", "pests-and-problems", "watering"]
 image: "/assets/blog/why-tomatoes-split-after-it-rains-hero.jpg"
 imageAlt: "A ripe red tomato still on the vine with a deep radial crack running down from the stem"
 pinImage: "/assets/blog/why-tomatoes-split-after-it-rains-pin.jpg"
+pinEyebrow: "WATERING MISTAKE"
+pinHighlight: "SPLITTING"
 pinKeywords: ["tomato splitting", "cracked tomatoes", "tomato garden problems", "summer vegetable garden"]
 draft: false
 ---

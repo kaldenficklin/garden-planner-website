@@ -12,7 +12,12 @@
  * type is crisp and identical on every pin.
  *
  * Usage:
- *   node scripts/make-images.mjs <master.png> <slug> "<title for the pin>" [heroCrop]
+ *   node scripts/make-images.mjs <master.png> <slug> "<title for the pin>" [heroCrop] [--eyebrow "TEXT"] [--highlight "WORD OR PHRASE"]
+ *
+ * --eyebrow is a short (2-4 word) badge label shown above the title, e.g.
+ *   "WATERING MISTAKE". Omit for no badge.
+ * --highlight is a word or phrase from the title to render in the accent
+ *   color. Must match the title verbatim (case-insensitive) or it's ignored.
  *
  * heroCrop controls which band of the tall master becomes the wide hero:
  *   attention (default) — sharp picks the busiest region. Right for a single
@@ -46,10 +51,23 @@ const CROPS = {
   south: 'south',
 };
 
+function flag(args, name) {
+  const i = args.indexOf(`--${name}`);
+  return i > -1 ? args[i + 1] : undefined;
+}
+
 async function main() {
-  const [master, slug, title, heroCrop = 'attention'] = process.argv.slice(2);
+  const args = process.argv.slice(2);
+  const eyebrow = flag(args, 'eyebrow');
+  const highlight = flag(args, 'highlight');
+  const positional = args.filter((a, i) => {
+    if (a.startsWith('--')) return false;
+    if (args[i - 1] === '--eyebrow' || args[i - 1] === '--highlight') return false;
+    return true;
+  });
+  const [master, slug, title, heroCrop = 'attention'] = positional;
   if (!master || !slug || !title) {
-    console.error('usage: node scripts/make-images.mjs <master.png> <slug> "<title>" [heroCrop]');
+    console.error('usage: node scripts/make-images.mjs <master.png> <slug> "<title>" [heroCrop] [--eyebrow "TEXT"] [--highlight "WORD"]');
     process.exit(1);
   }
   const position = CROPS[heroCrop];
@@ -71,7 +89,7 @@ async function main() {
     .resize(PIN_W, PIN_H, { fit: 'cover', position: sharp.strategy.attention })
     .toBuffer();
 
-  const svg = buildOverlay({ width: PIN_W, height: PIN_H, title });
+  const svg = buildOverlay({ width: PIN_W, height: PIN_H, title, eyebrow, highlight });
   const resvg = new Resvg(svg, {
     fitTo: { mode: 'width', value: PIN_W },
     font: { fontFiles: FONTS, loadSystemFonts: false, defaultFontFamily: 'Inter' },
