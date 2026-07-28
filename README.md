@@ -188,6 +188,43 @@ work; the hashtags derived from `pinKeywords` are reinforcement, capped at 5 and
 placed last, which matches Pinterest's own guidance. Write `pinKeywords` as
 phrases people type into Pinterest search, not as site taxonomy.
 
+## Infographic posts
+
+A second post type, `type: "infographic"`, for the short reference-chart
+format (a 6-mistake grid, a ranked "fastest to slowest" list) rather than a
+written article. It lives in the same `blog` collection as regular posts —
+same tags, same RSS feed, same `/blog` index — just rendered with a composed
+chart image instead of a hero photo + prose. See `src/content.config.ts` for
+the full field list (`infographicLayout`, `infographicItems`, etc.).
+
+The chart image is generated in two steps:
+
+1. **Icons, once, reused forever.** `scripts/gen-icon.mjs` generates one
+   square colored-pencil illustration (Higgsfield, ~7 credits) into
+   `public/assets/icons/<slug>.png`. Only make a new icon when nothing in
+   the existing library fits — that's the whole point of the library.
+2. **Composition, free, instant.** `scripts/gen-infographic.mjs` takes a JSON
+   spec (layout, title, row data, icon slugs) and composites the entire
+   1000×1500 image — background, header, numbered rows, icons, footer CTA —
+   with `scripts/lib/infographic.mjs`. No Higgsfield call, no credits. Every
+   word on the image is code-rendered text, never asked of the image model,
+   so a stat or label can't come back garbled.
+
+```sh
+node scripts/gen-infographic.mjs \
+  --slug 6-tomato-watering-mistakes \
+  --spec ./spec.json
+```
+
+prints the frontmatter lines to paste into the post. The image serves as both
+the on-page image and the Pinterest pin — infographic posts don't need a
+separate `pinImage`.
+
+Because a wrong number is baked into the image permanently instead of sitting
+in editable prose, infographic posts should land as `draft: true` for a human
+read-through before going live — see the daily marketing skill's rules for
+this post type.
+
 Posts also emit `article:published_time`, `article:modified_time`,
 `article:author` and `article:tag`, which is what Pinterest reads for **Article
 Rich Pins** (headline, author, date and site name shown on the pin).

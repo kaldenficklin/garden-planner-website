@@ -15,14 +15,17 @@ interface Props {
 
 const { post, loading = 'lazy' } = Astro.props;
 const { data } = post;
+// Infographic posts have no separate hero photo — the composed chart image
+// stands in, cropped 3:2 by object-fit like every other card.
+const cardImg = data.image ?? data.infographicImage;
 ---
 <article class="post-preview">
   <a class="post-preview-link" href={`/blog/${post.id}/`}>
-    {data.image && (
+    {cardImg && (
       <img
         class="post-preview-img"
-        src={data.image}
-        alt={data.imageAlt ?? data.title}
+        src={cardImg}
+        alt={data.imageAlt ?? data.infographicTitle ?? data.title}
         loading={loading}
         width="1200"
         height="800"

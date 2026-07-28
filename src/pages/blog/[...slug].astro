@@ -41,14 +41,24 @@ const { post, newer, older, related, linkedTags } = Astro.props;
 const { Content } = await render(post);
 const { data } = post;
 
+// An 'infographic' post has no separate hero photo — the composed chart
+// image (scripts/gen-infographic.mjs) IS the hero, and it's already 2:3, so
+// it doubles as the Pinterest pin with no second file needed.
+const isInfographic = data.type === 'infographic';
+const heroSrc = isInfographic ? data.infographicImage : data.image;
+
 const url = new URL(`/blog/${post.id}/`, Astro.site).href;
-const image = data.image
-  ? new URL(data.image, Astro.site).href
+const image = heroSrc
+  ? new URL(heroSrc, Astro.site).href
   : 'https://thegardenplanner.app/assets/app-icon.png';
 
 // Pinterest wants the tall 2:3 image with the title burned in, not the clean
 // hero. Fall back to the hero so a post without a pin image still pins.
-const pinImage = data.pinImage ? new URL(data.pinImage, Astro.site).href : image;
+const pinImage = isInfographic
+  ? image
+  : data.pinImage
+    ? new URL(data.pinImage, Astro.site).href
+    : image;
 
 // Pinterest ranks mostly on the words in the description, so the readable
 // sentence does the work. The hashtags are reinforcement, capped at 5 and
@@ -113,21 +123,23 @@ const jsonLd = {
         <TagRow tags={data.tags} linked={linkedTags} />
       </header>
 
-      {data.image && (
+      {heroSrc && (
         <figure class="post-hero">
           {/* data-pin-media points Pinterest's browser extension at the titled
-              2:3 pin instead of this clean hero. */}
+              2:3 pin instead of this clean hero. Infographic posts have no
+              separate pin — heroSrc already is the 2:3 pin image. */}
           <img
             class="post-hero-img"
-            src={data.image}
-            alt={data.imageAlt ?? data.title}
+            src={heroSrc}
+            alt={isInfographic ? (data.infographicTitle ?? data.title) : (data.imageAlt ?? data.title)}
             loading="eager"
             {/* This is the LCP element. The intrinsic size reserves its box so
                 the article below doesn't jump when it lands, and fetchpriority
-                pulls it ahead of the other images in the queue. Every hero is
-                1200x800 out of scripts/make-images.mjs. */}
-            width="1200"
-            height="800"
+                pulls it ahead of the other images in the queue. Regular heroes
+                are 1200x800 (scripts/make-images.mjs); infographics are the
+                full 1000x1500 chart (scripts/gen-infographic.mjs). */}
+            width={isInfographic ? 1000 : 1200}
+            height={isInfographic ? 1500 : 800}
             fetchpriority="high"
             data-pin-media={pinImage}
             data-pin-description={pinDescription}

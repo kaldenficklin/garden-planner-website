@@ -75,6 +75,10 @@ const TAG_COPY: Record<string, { label: string; intro: string }> = {
     label: 'Summer Gardening',
     intro: 'Keeping a garden productive through the hottest stretch of the season.',
   },
+  infographics: {
+    label: 'Infographics',
+    intro: 'Quick reference charts you can save and come back to — planting speed, common mistakes, and at-a-glance guides.',
+  },
 };
 
 const titleCase = (slug: string) =>
