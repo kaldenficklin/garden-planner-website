@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Daily infographic routine.
+
+  Install:
+    cp scripts/app.thegardenplanner.infographics.plist ~/Library/LaunchAgents/
+    launchctl load ~/Library/LaunchAgents/app.thegardenplanner.infographics.plist
+
+  Uninstall:
+    launchctl unload ~/Library/LaunchAgents/app.thegardenplanner.infographics.plist
+
+  Run it once, now, without waiting for the schedule:
+    launchctl start app.thegardenplanner.infographics
+
+  This is a LaunchAgent, not a LaunchDaemon, because it needs the logged-in
+  user's git credentials and network access.
+
+  On the 7am start: if the Mac is asleep, launchd fires the job on the next
+  wake rather than skipping the day. If the Windows PC hosting the image API
+  is off, the run waits for it (scripts/lib/image-api.mjs) rather than failing,
+  polling every five minutes for up to twenty hours.
+-->
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>app.thegardenplanner.infographics</string>
+
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/bash</string>
+    <!-- Absolute path: launchd does not expand ~ and has no working directory. -->
+    <string>REPO_PATH/scripts/run-daily.sh</string>
+  </array>
+
+  <key>StartCalendarInterval</key>
+  <dict>
+    <key>Hour</key>
+    <integer>7</integer>
+    <key>Minute</key>
+    <integer>0</integer>
+  </dict>
+
+  <!-- The wrapper writes its own log; these catch anything that dies before it. -->
+  <key>StandardOutPath</key>
+  <string>HOME_PATH/Library/Logs/garden-planner/launchd.out.log</string>
+  <key>StandardErrorPath</key>
+  <string>HOME_PATH/Library/Logs/garden-planner/launchd.err.log</string>
+
+  <key>RunAtLoad</key>
+  <false/>
+</dict>
+</plist>

@@ -329,3 +329,69 @@ site ever displays them at. Use the *plain* captures, not the composed
 Copy claims that quote the app (plant count, feature names) come from the App
 Store listing in `../garden-pro-planner/store.config.json`. Check it when the
 app ships a release.
+
+---
+
+## Daily infographics
+
+Two infographics a day, English and Spanish, published to `/infographics/` and
+`/es/infographics/`. See SOCIAL.md for the Pinterest side.
+
+```sh
+node scripts/daily-infographics.mjs                  # 2 topics, commit and push
+node scripts/daily-infographics.mjs --count 1        # just one
+node scripts/daily-infographics.mjs --dry-run        # render + QA, write nothing
+node scripts/daily-infographics.mjs --no-push        # commit locally only
+```
+
+One run picks the next unused topics from `scripts/data/topics.json`, generates
+any icons they need that the shared library does not have, composites both
+languages, runs the QA gate, writes the posts, rebuilds the site, and commits.
+Netlify publishes from `main`.
+
+### Scheduling it
+
+```sh
+sed -e "s|REPO_PATH|$PWD|g" -e "s|HOME_PATH|$HOME|g" \
+  scripts/app.thegardenplanner.infographics.plist > ~/Library/LaunchAgents/app.thegardenplanner.infographics.plist
+launchctl load ~/Library/LaunchAgents/app.thegardenplanner.infographics.plist
+```
+
+Runs at 7am. Logs to `~/Library/Logs/garden-planner/daily-infographics.log`.
+Run it immediately with `launchctl start app.thegardenplanner.infographics`.
+
+**It has to run on a machine at home.** The image API is on the LAN, so this is
+a launchd job on the Mac, not a cloud task. If the Windows PC hosting the API is
+off, the run waits for it — polling every five minutes for up to twenty hours —
+rather than failing. Turning the PC on at 6pm still gets that day published.
+
+### What the QA gate checks
+
+Nothing is written unless everything passes; a missed day is invisible, a broken
+pin is not.
+
+- **Copy** (`scripts/lib/qa.mjs`): exactly 8 steps, at most 2 bullets each,
+  bullet and description lengths, url-safe slugs, and the STYLE.md banned
+  vocabulary.
+- **Icons**: every slug the topic references resolves to a real file. Missing
+  ones are generated first, and each generation is rejected and retried if it
+  comes back blank or bleeding off the edge.
+- **Layout**: `buildGuideInfographic` reports any text it had to clip to fit.
+  The routine treats that as fatal rather than publishing a pin with an
+  ellipsis in it.
+- **Render**: 1000x1500, and a standard-deviation check that catches the flat
+  near-uniform canvas you get when icons or the background fail to composite —
+  the failure that does not throw and looks fine to a script.
+- **Build**: the site is rebuilt before committing, which is the only thing that
+  proves the frontmatter validates and every route still renders.
+
+### Adding topics
+
+Append to `scripts/data/topics.json`. Each entry needs both language blocks,
+8 steps of at most 2 short bullets, and 8 icons — each either already in
+`public/assets/icons/` or carrying a `subject` for the routine to draw it from
+once and add to the library.
+
+Every bullet is a horticultural claim that publishes unreviewed. STYLE.md's rule
+that growing advice has to be correct applies here with no human in the loop, so
+topics are hand-written rather than generated.

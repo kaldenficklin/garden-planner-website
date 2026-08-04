@@ -49,10 +49,26 @@ const blog = defineCollection({
     // and routing infrastructure. See src/lib/posts.ts for where the two are
     // filtered apart.
     type: z.enum(['article', 'infographic']).default('article'),
+
+    // Language of this entry. Articles are English only; infographics ship as
+    // an en/es pair. The two halves of a pair share a `translationKey`, which
+    // is what wires up the hreflang alternates and the language switcher.
+    lang: z.enum(['en', 'es']).default('en'),
+    translationKey: z.string().optional(),
+
+    // Pinterest description for this entry, written as a sentence a person
+    // would search rather than a tag dump. Falls back to `description`. This
+    // is what the pin feeds in src/pages/infographics/rss.xml.js carry, so it
+    // is the text a scheduler hands to Pinterest verbatim.
+    pinDescription: z.string().optional(),
+    // Which board this pin belongs on, matching the board names in SOCIAL.md.
+    pinBoard: z.string().optional(),
+
     // Which infographic template to composite:
     //  'mistakes' — numbered two-column "the mistake / the better habit" rows
     //  'ranked'   — numbered single-column ranked list with a stat per row
-    infographicLayout: z.enum(['mistakes', 'ranked']).optional(),
+    //  'guide'    — numbered how-to grid, 8 steps in two columns + a pro tip
+    infographicLayout: z.enum(['mistakes', 'ranked', 'guide']).optional(),
     // Small eyebrow line above the infographic's big title, e.g.
     // "CONSISTENCY MATTERS". Optional.
     infographicEyebrow: z.string().optional(),
@@ -66,6 +82,28 @@ const blog = defineCollection({
     infographicImage: z.string().optional(),
     // Row data for the infographic. Same shape serves both layouts; each
     // layout only reads the fields it needs.
+    // Row data for the 'guide' layout: exactly 8 steps, each with an icon slug
+    // and up to two short bullets. The card geometry in
+    // scripts/lib/infographic.mjs is sized for two bullets of roughly six
+    // words; longer copy is clamped and reported as a QA warning rather than
+    // silently overflowing.
+    guideSteps: z
+      .array(
+        z.object({
+          icon: z.string(), // icon slug, must exist in public/assets/icons/
+          label: z.string(),
+          bullets: z.array(z.string()).max(2),
+        })
+      )
+      .optional(),
+    // Optional highlighted strip above the footer on the 'guide' layout.
+    guideProTip: z
+      .object({ label: z.string(), text: z.string(), icon: z.string().optional() })
+      .optional(),
+    // The green footer bar's call to action. The site domain underneath it is
+    // fixed in scripts/lib/infographic.mjs, not set per post.
+    guideCta: z.string().optional(),
+
     infographicItems: z
       .array(
         z.object({

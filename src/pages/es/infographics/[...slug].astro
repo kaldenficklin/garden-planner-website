@@ -1,0 +1,22 @@
+---
+import { render } from 'astro:content';
+import InfographicPage from '../../../components/InfographicPage.astro';
+import { publishedPosts, infographics, translationOf, entrySlug, type Post } from '../../../lib/posts';
+
+export async function getStaticPaths() {
+  const all = await publishedPosts();
+  return infographics(all, 'es').map((post) => ({
+    params: { slug: entrySlug(post) },
+    props: { post, translation: translationOf(post, all) },
+  }));
+}
+
+interface Props {
+  post: Post;
+  translation?: Post;
+}
+
+const { post, translation } = Astro.props;
+const { Content } = await render(post);
+---
+<InfographicPage post={post} translation={translation} body={Content} />

@@ -49,23 +49,82 @@ const iconCache = new Map();
  * buildRankedInfographic — they read the cache synchronously and throw if an
  * icon wasn't warmed first.
  */
-export async function warmIconCache(slugs) {
+export async function warmIconCache(slugs, { trim = false, bg = PAPER } = {}) {
   for (const slug of slugs) {
-    if (iconCache.has(slug)) continue;
+    const key = trim ? `${slug}|trim|${bg}` : slug;
+    if (iconCache.has(key)) continue;
     const buf = readFileSync(join(ICONS_DIR, `${slug}.png`));
+    // Trimming matters only where an icon is drawn large. The models centre
+    // each subject inside a varying amount of white, so at 150px an untrimmed
+    // library renders at visibly inconsistent sizes card to card. At the 58-64px
+    // the mistakes/ranked layouts use, the difference is invisible and not worth
+    // the second cache entry.
+    let pipe = sharp(buf);
+    if (trim) {
+      // An icon's "white" is never exactly #ffffff — the model renders about
+      // #fbfbfa and JPEG nudges it further. At 60px nobody sees it; at 138px it
+      // reads as a pale rectangle sitting on the card.
+      //
+      // `normalise` is not enough: one pure-black pixel anywhere in the drawing
+      // makes it a no-op and leaves the background two levels off. So measure
+      // the actual background from a corner of the untrimmed source, stretch
+      // that exact level to pure white, then multiply onto the destination
+      // colour — white * bg == bg, so the tile lands on the panel exactly and
+      // disappears. Which is why the cache key includes `bg`: the same icon
+      // composited onto PAPER and onto GREEN_SOFT are two different images.
+      const corner = await sharp(buf).extract({ left: 0, top: 0, width: 12, height: 12 }).raw().toBuffer();
+      const level = [0, 1, 2].map((c) => {
+        let sum = 0;
+        for (let i = c; i < corner.length; i += 3) sum += corner[i];
+        return sum / (corner.length / 3);
+      });
+      // Cap the stretch. If a subject happens to touch the corner the measured
+      // level is not background, and an uncapped multiplier would blow the
+      // whole icon out to white.
+      const gain = level.map((v) => Math.min(255 / Math.max(v, 1), 1.12));
+
+      const flat = await pipe
+        .linear(gain, [0, 0, 0])
+        .trim({ threshold: 12 })
+        .resize(320, 320, { fit: 'inside', withoutEnlargement: true })
+        .toBuffer({ resolveWithObject: true });
+      const onBg = await sharp({
+        create: { width: flat.info.width, height: flat.info.height, channels: 3, background: bg },
+      })
+        .composite([{ input: flat.data, blend: 'multiply' }])
+        .jpeg({ quality: 82 })
+        .toBuffer({ resolveWithObject: true });
+      iconCache.set(key, {
+        uri: `data:image/jpeg;base64,${onBg.data.toString('base64')}`,
+        w: onBg.info.width,
+        h: onBg.info.height,
+      });
+      continue;
+    }
     // JPEG, not PNG: these icons are opaque on a plain white background (see
     // scripts/gen-icon.mjs), so there's no alpha channel to lose, and JPEG
     // compresses the pencil-texture detail far smaller at this size.
-    const small = await sharp(buf).resize(320, 320).jpeg({ quality: 82 }).toBuffer();
-    iconCache.set(slug, `data:image/jpeg;base64,${small.toString('base64')}`);
+    const out = await pipe
+      .resize(320, 320, { fit: 'inside', withoutEnlargement: true })
+      .jpeg({ quality: 82 })
+      .toBuffer({ resolveWithObject: true });
+    iconCache.set(key, {
+      uri: `data:image/jpeg;base64,${out.data.toString('base64')}`,
+      w: out.info.width,
+      h: out.info.height,
+    });
   }
 }
 
-/** Base64 data URI for an already-warmed icon. */
-function iconDataUri(slug) {
-  const hit = iconCache.get(slug);
-  if (!hit) throw new Error(`icon "${slug}" not in cache — call warmIconCache([...]) first`);
+/** Cache entry ({uri,w,h}) for an already-warmed icon. */
+function iconEntry(slug, trim = false, bg = PAPER) {
+  const hit = iconCache.get(trim ? `${slug}|trim|${bg}` : slug);
+  if (!hit) throw new Error(`icon "${slug}" not in cache for bg ${bg} — call warmIconCache([...]) first`);
   return hit;
+}
+
+function iconDataUri(slug) {
+  return iconEntry(slug).uri;
 }
 
 const widthCache = new Map();
@@ -332,6 +391,177 @@ export function buildRankedInfographic({ eyebrow, title, items, ctaText }) {
     ${rows}
     ${footerCta({ text: ctaText })}
   </svg>`;
+}
+
+/** Like wrapClamped, but reports whether anything had to be cut. */
+function wrapClampedInfo(text, size, maxWidth, maxLines, weight = 500, family = 'Inter') {
+  const full = wrap(text, size, maxWidth, weight, family);
+  const lines = wrapClamped(text, size, maxWidth, maxLines, weight, family);
+  return { lines, clipped: full.length > maxLines };
+}
+
+/**
+ * Draw a trimmed icon centred in a box, scaled to fill its dominant dimension.
+ *
+ * The mistakes/ranked layouts use `slice`, which crops the icon to a square.
+ * That is fine at 60px but at 150px it would cut the top off a tall plant, so
+ * the guide layout scales the real trimmed bounds instead and letterboxes.
+ */
+function iconFitted(slug, cx, cy, boxW, boxH, bg = PAPER) {
+  const { uri, w, h } = iconEntry(slug, true, bg);
+  const scale = Math.min(boxW / w, boxH / h);
+  const dw = w * scale;
+  const dh = h * scale;
+  return `<image href="${uri}" x="${cx - dw / 2}" y="${cy - dh / 2}" width="${dw}" height="${dh}" preserveAspectRatio="xMidYMid meet"/>`;
+}
+
+/** Footer bar carrying the CTA and the site domain. */
+function footerBar({ ctaText, domain }) {
+  const barH = 96;
+  const y = H - barH;
+  const ctaSize = 23;
+  const ctaLines = wrapClamped(String(ctaText).toUpperCase(), ctaSize, W - 140, 2, 800, 'Inter');
+  const lineHeight = ctaSize * 1.2;
+  let out = `<rect x="0" y="${y}" width="${W}" height="${barH}" fill="${GREEN_DARK}"/>`;
+  let ty = y + 34;
+  for (const l of ctaLines) {
+    const lw = measure(l, ctaSize, 800, 'Inter');
+    out += `<text x="${W / 2 - lw / 2}" y="${ty}" font-family="Inter" font-size="${ctaSize}" font-weight="800" letter-spacing="0.5" fill="#ffffff">${esc(l)}</text>`;
+    ty += lineHeight;
+  }
+  const dw = measure(domain, 20, 700, 'Inter');
+  out += `<text x="${W / 2 - dw / 2}" y="${y + barH - 20}" font-family="Inter" font-size="20" font-weight="700" letter-spacing="1.5" fill="${GREEN}">${esc(domain)}</text>`;
+  return out;
+}
+
+/**
+ * "Guide" layout: a numbered how-to grid — eight steps in two columns, each a
+ * card with a heading, up to two short bullets and a large icon, plus an
+ * optional pro-tip strip above the footer.
+ *
+ * House rules baked into the geometry: two bullets per step, roughly six words
+ * each. The card is sized for exactly that. Longer copy does not break the
+ * layout — it gets clamped and reported in `warnings` — but a run of warnings
+ * means the copy is wrong for the format, not that the format needs changing.
+ *
+ * Returns `{ svg, warnings }` rather than a bare string so the caller can fail
+ * a build on clipped text instead of shipping an ellipsis into a pin.
+ *
+ * @param {object} opts
+ * @param {string} opts.eyebrow
+ * @param {string} opts.title
+ * @param {Array<{icon:string, label:string, bullets:string[]}>} opts.steps
+ * @param {{label:string, text:string, icon:string}} [opts.proTip]
+ * @param {string} opts.ctaText
+ * @param {string} opts.domain
+ */
+/**
+ * Warm every icon a guide spec needs, on the right background for where it
+ * lands. Callers should use this rather than warmIconCache directly — the step
+ * icons sit on PAPER cards and the pro-tip icon on a GREEN_SOFT panel, and
+ * getting that pairing wrong is what puts a visible tile back on the canvas.
+ */
+export async function warmGuideIcons({ steps, proTip }) {
+  await warmIconCache(new Set(steps.map((s) => s.icon)), { trim: true, bg: PAPER });
+  if (proTip?.icon) await warmIconCache([proTip.icon], { trim: true, bg: GREEN_SOFT });
+}
+
+export function buildGuideInfographic({ eyebrow, title, steps, proTip, ctaText, domain }) {
+  const warnings = [];
+  if (steps.length !== 8) warnings.push(`guide layout expects 8 steps, got ${steps.length}`);
+
+  const { svg: headerSvg, bottom: headerBottom } = header({ eyebrow, title });
+
+  const pad = 40;
+  const colGap = 16;
+  const rowGap = 16;
+  const cols = 2;
+  const rows = Math.ceil(steps.length / cols);
+  const cardW = (W - pad * 2 - colGap * (cols - 1)) / cols;
+
+  const barTop = H - 96;
+  const tipH = proTip ? 132 : 0;
+  const tipTop = barTop - 16 - tipH;
+  const gridTop = headerBottom + 26;
+  const gridBottom = (proTip ? tipTop : barTop) - 18;
+  const cardH = (gridBottom - gridTop - rowGap * (rows - 1)) / rows;
+
+  if (cardH < 150) warnings.push(`cards are only ${cardH.toFixed(0)}px tall — the title is taking too much room`);
+
+  // Card internals
+  const cardPadL = 16;
+  const numR = 15;
+  const iconBox = 138;
+  const textX0 = cardPadL + numR * 2 + 10;
+  const textW = cardW - textX0 - iconBox - 6;
+
+  let cards = '';
+  steps.forEach((step, i) => {
+    const cx0 = pad + (i % cols) * (cardW + colGap);
+    const cy0 = gridTop + Math.floor(i / cols) * (cardH + rowGap);
+
+    const label = fitOneLine(step.label, textW, { maxSize: 21, minSize: 15, weight: 800 });
+    if (label.line.endsWith('…')) warnings.push(`step ${i + 1} heading was ellipsized: "${step.label}"`);
+
+    const bulletLines = [];
+    for (const b of step.bullets ?? []) {
+      const { lines, clipped } = wrapClampedInfo(b, 15.5, textW - 14, 2, 500, 'Inter');
+      if (clipped) warnings.push(`step ${i + 1} bullet was clipped: "${b}"`);
+      bulletLines.push(lines);
+    }
+
+    const labelLH = Math.round(label.size * 1.12);
+    const bulletLH = 21;
+    const bulletsH = bulletLines.reduce((sum, l) => sum + l.length * bulletLH + 7, 0);
+    const blockH = labelLH + 8 + bulletsH;
+    if (blockH > cardH - 20) warnings.push(`step ${i + 1} copy overflows its card (${blockH.toFixed(0)}px in ${cardH.toFixed(0)}px)`);
+
+    let ty = cy0 + cardH / 2 - blockH / 2 + label.size * 0.85;
+    const badgeCy = ty - label.size * 0.32;
+
+    let bulletSvg = '';
+    let by = ty + labelLH + 12;
+    for (const lines of bulletLines) {
+      bulletSvg += `<circle cx="${cx0 + textX0 + 4}" cy="${by - 5}" r="2.6" fill="${GREEN}"/>`;
+      bulletSvg += textBlock(lines, cx0 + textX0 + 14, by, bulletLH, 15.5, 500, 'Inter', INK_SOFT);
+      by += lines.length * bulletLH + 7;
+    }
+
+    cards += `
+      <rect x="${cx0}" y="${cy0}" width="${cardW}" height="${cardH}" rx="15" fill="${PAPER}" stroke="${BORDER}"/>
+      <circle cx="${cx0 + cardPadL + numR}" cy="${badgeCy}" r="${numR}" fill="${GREEN}"/>
+      <text x="${cx0 + cardPadL + numR - measure(String(i + 1), 16, 800) / 2}" y="${badgeCy + 5.5}" font-family="Inter" font-size="16" font-weight="800" fill="#ffffff">${i + 1}</text>
+      ${textBlock([label.line], cx0 + textX0, ty, labelLH, label.size, 800, 'Inter', GREEN_DARK)}
+      ${bulletSvg}
+      ${iconFitted(step.icon, cx0 + cardW - iconBox / 2 - 6, cy0 + cardH / 2, iconBox, cardH - 22)}
+    `;
+  });
+
+  let tipSvg = '';
+  if (proTip) {
+    const tipIconBox = 112;
+    const tipTextW = W - pad * 2 - 32 - tipIconBox - 20;
+    const { lines, clipped } = wrapClampedInfo(proTip.text, 16.5, tipTextW, 3, 500, 'Inter');
+    if (clipped) warnings.push(`pro tip was clipped: "${proTip.text}"`);
+    const labelSize = 26;
+    let ty = tipTop + 42;
+    tipSvg = `
+      <rect x="${pad}" y="${tipTop}" width="${W - pad * 2}" height="${tipH}" rx="15" fill="${GREEN_SOFT}" stroke="${BORDER}"/>
+      <text x="${pad + 24}" y="${ty}" font-family="Inter" font-size="${labelSize}" font-weight="900" letter-spacing="0.5" fill="${GREEN_DARK}">${esc(String(proTip.label).toUpperCase())}</text>
+      ${textBlock(lines, pad + 24, ty + 30, 23, 16.5, 500, 'Inter', INK)}
+      ${proTip.icon ? iconFitted(proTip.icon, W - pad - tipIconBox / 2 - 12, tipTop + tipH / 2, tipIconBox, tipH - 16, GREEN_SOFT) : ''}
+    `;
+  }
+
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">
+    <rect x="0" y="0" width="${W}" height="${H}" fill="${PAPER}"/>
+    ${headerSvg}
+    ${cards}
+    ${tipSvg}
+    ${footerBar({ ctaText, domain })}
+  </svg>`;
+
+  return { svg, warnings };
 }
 
 /** Render an SVG string to a PNG buffer. */

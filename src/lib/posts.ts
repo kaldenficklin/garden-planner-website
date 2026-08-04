@@ -5,11 +5,55 @@ export type Post = CollectionEntry<'blog'>;
 /** How many posts appear on one page of /blog. */
 export const PER_PAGE = 6;
 
-/** Every published post, newest first. The one place drafts get filtered. */
+/** Every published entry of every type and language, newest first. */
 export async function publishedPosts(): Promise<Post[]> {
   return (await getCollection('blog'))
     .filter((p) => !p.data.draft)
     .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+}
+
+/**
+ * The written blog: English articles only.
+ *
+ * Infographics are deliberately excluded. The routine publishes two a day, so
+ * inside a month they would outnumber the articles and bury them on /blog, in
+ * the RSS feed, and in the tag hubs. They get their own section instead, at
+ * /infographics/, which is also a better match for how people arrive at them
+ * (from a pin, wanting the chart) than a reverse-chronological article list.
+ */
+export const articles = (posts: Post[]) =>
+  posts.filter((p) => p.data.type !== 'infographic' && p.data.lang === 'en');
+
+/** Published infographics in one language, newest first. */
+export const infographics = (posts: Post[], lang: 'en' | 'es' = 'en') =>
+  posts.filter((p) => p.data.type === 'infographic' && p.data.lang === lang);
+
+/**
+ * The slug portion of an entry's URL.
+ *
+ * Spanish entries live in src/content/blog/es/, so their collection id carries
+ * an `es/` prefix that the URL must not repeat — /es/infographics/es/foo/.
+ */
+export const entrySlug = (post: Post) => post.id.replace(/\.md$/, '').replace(/^es\//, '');
+
+/** Where an entry lives. Infographics have their own section; articles stay on /blog. */
+export function postHref(post: Post): string {
+  const slug = entrySlug(post);
+  if (post.data.type !== 'infographic') return `/blog/${slug}/`;
+  return post.data.lang === 'es' ? `/es/infographics/${slug}/` : `/infographics/${slug}/`;
+}
+
+/**
+ * The other language's version of an infographic, if it exists. Pairs are
+ * matched on `translationKey` rather than on slug, because the Spanish slug is
+ * translated too (a Spanish URL full of English words ranks badly and reads as
+ * a machine translation).
+ */
+export function translationOf(post: Post, all: Post[]): Post | undefined {
+  if (!post.data.translationKey) return undefined;
+  return all.find(
+    (p) => p.data.translationKey === post.data.translationKey && p.data.lang !== post.data.lang
+  );
 }
 
 export const totalPages = (count: number) => Math.max(1, Math.ceil(count / PER_PAGE));

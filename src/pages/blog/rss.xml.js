@@ -3,7 +3,9 @@ import { getCollection } from 'astro:content';
 
 export async function GET(context) {
   const posts = (await getCollection('blog'))
-    .filter((p) => !p.data.draft)
+    // Infographics have their own per-language feeds (src/lib/pinFeed.js).
+    // Two a day would swamp the article feed within a month.
+    .filter((p) => !p.data.draft && p.data.type !== 'infographic')
     .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 
   return rss({

@@ -1,0 +1,7 @@
+---
+import InfographicIndex from '../../../components/InfographicIndex.astro';
+import { publishedPosts, infographics } from '../../../lib/posts';
+
+const posts = infographics(await publishedPosts(), 'es');
+---
+<InfographicIndex posts={posts} lang="es" />

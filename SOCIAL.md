@@ -183,3 +183,58 @@ anything that matters here.
 Give it 60–90 days before judging Pinterest. Pins have a long tail — a pin
 posted in July can start driving traffic the following spring, because the
 searches are seasonal and the content is evergreen.
+
+---
+
+## The daily infographic routine
+
+Two infographics go up every day, each as an English and a Spanish pair, from
+`scripts/daily-infographics.mjs`. They are the pin engine: four fresh pins a
+day, every one a new image pointing at a new URL, which is exactly the repeat
+action point 4 above calls the highest-leverage thing on the platform.
+
+They live in their own section rather than on `/blog`. At two a day they would
+outnumber the articles within a month and bury them in the index, the tag hubs
+and the blog RSS feed.
+
+| URL | What it is |
+| --- | --- |
+| `/infographics/` | English section index |
+| `/es/infographics/` | Spanish section index |
+| `/infographics/rss.xml` | English pin feed |
+| `/es/infographics/rss.xml` | Spanish pin feed |
+
+### Connecting Pinterest
+
+The two feeds are built for a scheduler to consume — each item carries the
+1000x1500 image (as an enclosure, a `media:content`, and the first element of
+the HTML content, because the tools disagree about where to look), the pin
+description written for Pinterest search, and the destination URL.
+
+1. Create the boards in point 1 of the Pinterest system above, plus Spanish
+   equivalents for the Spanish pins. A Spanish pin on an English board reads as
+   spam to the algorithm and to the people following that board.
+2. In Tailwind or Publer, add `/infographics/rss.xml` as a feed source pointed
+   at the English boards, and `/es/infographics/rss.xml` at the Spanish ones.
+3. Set the schedule to 2 pins a day per feed, spaced out. That matches the
+   routine's output and keeps inside the 1-3 fresh pins a day this account
+   should be doing while it has no history.
+
+The scheduler is deliberately doing the posting rather than the routine calling
+the Pinterest API directly. It means no OAuth app to register, no refresh token
+sitting on the Mac to expire silently, and the throttling rules are handled by a
+tool that tracks them.
+
+**`pinBoard` in each post's frontmatter names the intended board.** It is not
+read by anything yet — it is there so a future API integration, or a person
+pinning by hand, knows where each one goes without re-deciding.
+
+### Adding topics
+
+`scripts/data/topics.json` is the pool. Each entry publishes once and is then
+never repeated — the routine dedupes on `translationKey`, read straight from the
+published content files, so there is no separate ledger to fall out of sync.
+
+The routine warns when the pool is down to five days of runway and refuses to
+publish a duplicate, so a topic file left empty means a quiet day rather than a
+repeat.

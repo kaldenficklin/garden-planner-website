@@ -1,7 +1,7 @@
 ---
 import BlogIndexPage from '../../components/BlogIndexPage.astro';
-import { publishedPosts, PER_PAGE, totalPages } from '../../lib/posts';
+import { publishedPosts, articles, PER_PAGE, totalPages } from '../../lib/posts';
 
-const posts = await publishedPosts();
+const posts = articles(await publishedPosts());
 ---
 <BlogIndexPage posts={posts.slice(0, PER_PAGE)} current={1} total={totalPages(posts.length)} />

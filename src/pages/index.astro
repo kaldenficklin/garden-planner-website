@@ -6,9 +6,9 @@
  * structured data, FAQ structured data) that no other page wants.
  */
 import PostCard from '../components/PostCard.astro';
-import { publishedPosts } from '../lib/posts';
+import { publishedPosts, articles } from '../lib/posts';
 
-const latest = (await publishedPosts()).slice(0, 3);
+const latest = articles(await publishedPosts()).slice(0, 3);
 
 const APP_STORE = 'https://apps.apple.com/app/id1539031278';
 

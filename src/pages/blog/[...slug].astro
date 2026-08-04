@@ -7,6 +7,7 @@ import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import TagRow from '../../components/TagRow.astro';
 import {
   publishedPosts,
+  articles,
   relatedPosts,
   formatDate,
   tagsWithPages,
@@ -14,7 +15,7 @@ import {
 } from '../../lib/posts';
 
 export async function getStaticPaths() {
-  const posts = await publishedPosts();
+  const posts = articles(await publishedPosts());
   const linkedTags = tagsWithPages(posts).map((t) => t.tag);
   return posts.map((post, i) => ({
     params: { slug: post.id },

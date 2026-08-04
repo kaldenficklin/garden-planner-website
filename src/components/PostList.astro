@@ -2,7 +2,7 @@
 /** The text-only card list used by the blog index and the tag hubs. */
 import TagRow from './TagRow.astro';
 import type { Post } from '../lib/posts';
-import { formatDate, publishedPosts, tagsWithPages } from '../lib/posts';
+import { formatDate, publishedPosts, articles, tagsWithPages } from '../lib/posts';
 
 interface Props {
   posts: Post[];
@@ -14,7 +14,7 @@ const { posts, currentTag } = Astro.props;
 
 // Which tags have a hub is a property of the whole blog, not of this slice of
 // it, so it's derived from every post rather than from `posts`.
-const linked = tagsWithPages(await publishedPosts()).map((t) => t.tag);
+const linked = tagsWithPages(articles(await publishedPosts())).map((t) => t.tag);
 ---
 <ul class="post-list">
   {posts.map((post) => (

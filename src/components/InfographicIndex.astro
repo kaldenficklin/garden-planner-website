@@ -1,0 +1,96 @@
+---
+/**
+ * The /infographics/ section index, in either language.
+ *
+ * A visual grid rather than the text list used on /blog: these entries are
+ * pictures, and the thumbnail is what tells someone whether they want this one.
+ */
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import { postHref, type Post } from '../lib/posts';
+
+interface Props {
+  posts: Post[];
+  lang: 'en' | 'es';
+}
+
+const { posts, lang } = Astro.props;
+
+const T = {
+  en: {
+    title: 'Garden Infographics',
+    metaTitle: 'Garden Infographics — Growing Guides at a Glance — Garden Pro Planner',
+    description:
+      'Save-and-keep reference charts for the vegetable garden: how to grow each crop, when to plant it, and the mistakes worth avoiding.',
+    intro:
+      'Quick reference charts you can save and come back to. Two new ones go up every day, covering vegetables, fruit, herbs, flowers and trees.',
+    home: 'Home',
+    section: 'Infographics',
+    switch: 'Ver en español',
+    switchHref: '/es/infographics/',
+    feed: 'RSS feed',
+  },
+  es: {
+    title: 'Infografías de Jardinería',
+    metaTitle: 'Infografías de Jardinería — Guías de Cultivo — Garden Pro Planner',
+    description:
+      'Fichas de consulta rápida para el huerto: cómo cultivar cada planta, cuándo sembrarla y los errores que conviene evitar.',
+    intro:
+      'Fichas de consulta rápida para guardar y volver a ellas. Publicamos dos nuevas cada día sobre hortalizas, frutas, hierbas, flores y árboles.',
+    home: 'Inicio',
+    section: 'Infografías',
+    switch: 'Read in English',
+    switchHref: '/infographics/',
+    feed: 'Fuente RSS',
+  },
+}[lang];
+
+const base = lang === 'es' ? '/es/infographics/' : '/infographics/';
+const url = new URL(base, Astro.site).href;
+const alternates = [
+  { lang: 'en', href: new URL('/infographics/', Astro.site).href },
+  { lang: 'es', href: new URL('/es/infographics/', Astro.site).href },
+  { lang: 'x-default', href: new URL('/infographics/', Astro.site).href },
+];
+---
+<BaseLayout
+  title={T.metaTitle}
+  description={T.description}
+  canonical={url}
+  lang={lang}
+  alternates={alternates}
+>
+  <section class="section">
+    <div class="wrap">
+      <Breadcrumbs items={[{ name: T.home, href: lang === 'es' ? '/es/infographics/' : '/' }, { name: T.section, href: base }]} />
+      <header class="ig-head">
+        <h1>{T.title}</h1>
+        <p class="ig-intro">{T.intro}</p>
+        <p class="ig-meta">
+          <a href={T.switchHref} rel="alternate" hreflang={lang === 'es' ? 'en' : 'es'}>{T.switch}</a>
+          <span> · </span>
+          <a href={`${base}rss.xml`}>{T.feed}</a>
+        </p>
+      </header>
+
+      <ul class="ig-grid">
+        {posts.map((post) => (
+          <li class="ig-card">
+            <a href={postHref(post)}>
+              {post.data.infographicImage && (
+                <img
+                  src={post.data.infographicImage}
+                  alt={post.data.imageAlt ?? post.data.title}
+                  width="1000"
+                  height="1500"
+                  loading="lazy"
+                />
+              )}
+              <span class="ig-card-title">{post.data.title}</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+</BaseLayout>

@@ -6,10 +6,10 @@
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import PostList from '../../../components/PostList.astro';
 import Breadcrumbs from '../../../components/Breadcrumbs.astro';
-import { publishedPosts, tagsWithPages, postsWithTag, tagCopy, type Post } from '../../../lib/posts';
+import { publishedPosts, articles, tagsWithPages, postsWithTag, tagCopy, type Post } from '../../../lib/posts';
 
 export async function getStaticPaths() {
-  const posts = await publishedPosts();
+  const posts = articles(await publishedPosts());
   return tagsWithPages(posts).map(({ tag }) => ({
     params: { tag },
     props: { tag, posts: postsWithTag(posts, tag) },
