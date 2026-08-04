@@ -77,9 +77,16 @@ export function checkTopic(topic, lang) {
     warnings.push(`${where}: pinDescription is ${t.pinDescription.length} chars, Pinterest shows ~500`);
   }
 
-  const haystack = [t.title, t.description, t.pinDescription, t.proTip?.text].filter(Boolean).join(' ').toLowerCase();
-  for (const word of BANNED) {
-    if (haystack.includes(word)) errors.push(`${where}: STYLE.md bans "${word}"`);
+  // English only, and on word boundaries. STYLE.md's list catalogues English
+  // AI-writing tells, so it says nothing about Spanish copy — and a substring
+  // match flags Spanish words that merely contain an English one ("realmente"
+  // contains "realm", "foster" hides inside nothing useful either way).
+  if (lang === 'en') {
+    const haystack = [t.title, t.description, t.pinDescription, t.proTip?.text].filter(Boolean).join(' ').toLowerCase();
+    for (const word of BANNED) {
+      const pattern = new RegExp(`\\b${word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`);
+      if (pattern.test(haystack)) errors.push(`${where}: STYLE.md bans "${word}"`);
+    }
   }
 
   return { errors, warnings };

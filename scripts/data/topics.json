@@ -19,9 +19,19 @@
     {
       "key": "grow-tomatoes",
       "category": "vegetables",
-      "tags": ["tomatoes", "vegetables", "beginners", "infographics"],
+      "tags": [
+        "tomatoes",
+        "vegetables",
+        "beginners",
+        "infographics"
+      ],
       "pinBoard": "Vegetable Garden Layouts",
-      "pinKeywords": ["how to grow tomatoes", "tomato growing tips", "vegetable garden for beginners", "raised bed tomatoes"],
+      "pinKeywords": [
+        "how to grow tomatoes",
+        "tomato growing tips",
+        "vegetable garden for beginners",
+        "raised bed tomatoes"
+      ],
       "en": {
         "slug": "how-to-grow-tomatoes",
         "title": "How to Grow Tomatoes: A Beginner's Guide in 8 Steps",
@@ -30,16 +40,67 @@
         "description": "Eight steps to a productive tomato plant, from picking a variety through to knowing when the fruit is actually ready.",
         "pinDescription": "How to grow tomatoes from planting to harvest: pick the right variety, plant the stem deep for stronger roots, water at the base, and pick at full colour. A save-and-keep guide for the vegetable garden.",
         "cta": "Plan your beds with Garden Pro Planner",
-        "proTip": { "label": "Pro tip", "text": "Mulch two to three inches around each plant. It holds moisture, blocks weeds, and stops the soil splash that spreads disease onto the lower leaves." },
+        "proTip": {
+          "label": "Pro tip",
+          "text": "Mulch two to three inches around each plant. It holds moisture, blocks weeds, and stops the soil splash that spreads disease onto the lower leaves."
+        },
         "steps": [
-          { "label": "Pick a Variety", "bullets": ["Determinate: one big harvest", "Indeterminate: fruits all season"] },
-          { "label": "Give Full Sun", "bullets": ["Six to eight hours daily", "More sun, more fruit"] },
-          { "label": "Plant Deep", "bullets": ["Bury two thirds of the stem", "Buried stem grows new roots"] },
-          { "label": "Water Steadily", "bullets": ["Keep the soil evenly moist", "Water the base, not leaves"] },
-          { "label": "Feed Regularly", "bullets": ["Compost at planting time", "Low-nitrogen feed once flowering"] },
-          { "label": "Support It", "bullets": ["Cage, stake or trellis", "Add support on planting day"] },
-          { "label": "Prune Suckers", "bullets": ["Pinch suckers on indeterminates", "Strip low leaves for airflow"] },
-          { "label": "Harvest", "bullets": ["Pick at full colour", "Slightly soft to the touch"] }
+          {
+            "label": "Pick a Variety",
+            "bullets": [
+              "Determinate: one big harvest",
+              "Indeterminate: fruits all season"
+            ]
+          },
+          {
+            "label": "Give Full Sun",
+            "bullets": [
+              "Six to eight hours daily",
+              "More sun, more fruit"
+            ]
+          },
+          {
+            "label": "Plant Deep",
+            "bullets": [
+              "Bury two thirds of the stem",
+              "Buried stem grows new roots"
+            ]
+          },
+          {
+            "label": "Water Steadily",
+            "bullets": [
+              "Keep the soil evenly moist",
+              "Water the base, not leaves"
+            ]
+          },
+          {
+            "label": "Feed Regularly",
+            "bullets": [
+              "Compost at planting time",
+              "Low-nitrogen feed once flowering"
+            ]
+          },
+          {
+            "label": "Support It",
+            "bullets": [
+              "Cage, stake or trellis",
+              "Add support on planting day"
+            ]
+          },
+          {
+            "label": "Prune Suckers",
+            "bullets": [
+              "Pinch suckers on indeterminates",
+              "Strip low leaves for airflow"
+            ]
+          },
+          {
+            "label": "Harvest",
+            "bullets": [
+              "Pick at full colour",
+              "Slightly soft to the touch"
+            ]
+          }
         ]
       },
       "es": {
@@ -50,36 +111,123 @@
         "description": "Ocho pasos para una tomatera productiva, desde elegir la variedad hasta saber cuándo el fruto está listo.",
         "pinDescription": "Cómo cultivar tomates desde la siembra hasta la cosecha: elige bien la variedad, entierra el tallo para que eche más raíces, riega en la base y recoge con color pleno. Una guía para guardar.",
         "cta": "Planifica tu huerto con Garden Pro Planner",
-        "proTip": { "label": "Consejo", "text": "Cubre con cinco a ocho centímetros de acolchado. Retiene la humedad, frena las malas hierbas y evita las salpicaduras de tierra que llevan enfermedades a las hojas bajas." },
+        "proTip": {
+          "label": "Consejo",
+          "text": "Cubre con cinco a ocho centímetros de acolchado. Retiene la humedad, frena las malas hierbas y evita las salpicaduras de tierra que llevan enfermedades a las hojas bajas."
+        },
         "steps": [
-          { "label": "Elige Variedad", "bullets": ["Determinada: una sola cosecha", "Indeterminada: toda la temporada"] },
-          { "label": "Pleno Sol", "bullets": ["De seis a ocho horas diarias", "Más sol, más fruta"] },
-          { "label": "Planta Profundo", "bullets": ["Entierra dos tercios del tallo", "El tallo enterrado echa raíces"] },
-          { "label": "Riego Constante", "bullets": ["Mantén la tierra húmeda", "Riega la base, no las hojas"] },
-          { "label": "Abona Seguido", "bullets": ["Compost al plantar", "Abono bajo en nitrógeno al florecer"] },
-          { "label": "Da Soporte", "bullets": ["Jaula, tutor o espaldera", "Colócalo el primer día"] },
-          { "label": "Poda Chupones", "bullets": ["Pellizca los chupones", "Quita hojas bajas para ventilar"] },
-          { "label": "Cosecha", "bullets": ["Recoge con color pleno", "Algo blandas al tacto"] }
+          {
+            "label": "Elige Variedad",
+            "bullets": [
+              "Determinada: una sola cosecha",
+              "Indeterminada: toda la temporada"
+            ]
+          },
+          {
+            "label": "Pleno Sol",
+            "bullets": [
+              "De seis a ocho horas diarias",
+              "Más sol, más fruta"
+            ]
+          },
+          {
+            "label": "Planta Profundo",
+            "bullets": [
+              "Entierra dos tercios del tallo",
+              "El tallo enterrado echa raíces"
+            ]
+          },
+          {
+            "label": "Riego Constante",
+            "bullets": [
+              "Mantén la tierra húmeda",
+              "Riega la base, no las hojas"
+            ]
+          },
+          {
+            "label": "Abona Seguido",
+            "bullets": [
+              "Compost al plantar",
+              "Abono bajo en nitrógeno al florecer"
+            ]
+          },
+          {
+            "label": "Da Soporte",
+            "bullets": [
+              "Jaula, tutor o espaldera",
+              "Colócalo el primer día"
+            ]
+          },
+          {
+            "label": "Poda Chupones",
+            "bullets": [
+              "Pellizca los chupones",
+              "Quita hojas bajas para ventilar"
+            ]
+          },
+          {
+            "label": "Cosecha",
+            "bullets": [
+              "Recoge con color pleno",
+              "Algo blandas al tacto"
+            ]
+          }
         ]
       },
       "icons": [
-        { "slug": "tomato-seedling-pot", "subject": "a young tomato seedling in a small terracotta pot beside a blank wooden plant marker" },
-        { "slug": "sun-over-plant", "subject": "a bright sun shining above a small leafy vegetable plant growing in soil" },
-        { "slug": "deep-planted-seedling", "subject": "a cross-section of soil showing a tomato seedling planted deep, roots forming along the buried stem" },
-        { "slug": "watering-can-sprinkle" },
-        { "slug": "compost-and-feed", "subject": "a bucket of dark compost beside a plain unlabelled paper sack of garden fertiliser" },
-        { "slug": "tomato-cage", "subject": "a wire tomato cage supporting a tomato plant with ripe red fruit" },
-        { "slug": "pruning-shears-tomato", "subject": "a pair of pruning shears trimming a sucker from a tomato plant stem" },
-        { "slug": "harvest-basket-tomatoes", "subject": "a woven basket filled with freshly picked ripe red tomatoes" }
+        {
+          "slug": "tomato-seedling-pot",
+          "subject": "a young tomato seedling in a small terracotta pot beside a blank wooden plant marker"
+        },
+        {
+          "slug": "sun-over-plant",
+          "subject": "a bright sun shining above a small leafy vegetable plant growing in soil"
+        },
+        {
+          "slug": "deep-planted-seedling",
+          "subject": "a cross-section of soil showing a tomato seedling planted deep, roots forming along the buried stem"
+        },
+        {
+          "slug": "watering-can-sprinkle"
+        },
+        {
+          "slug": "compost-and-feed",
+          "subject": "a bucket of dark compost beside a plain unlabelled paper sack of garden fertiliser"
+        },
+        {
+          "slug": "tomato-cage",
+          "subject": "a wire tomato cage supporting a tomato plant with ripe red fruit"
+        },
+        {
+          "slug": "pruning-shears-tomato",
+          "subject": "a pair of pruning shears trimming a sucker from a tomato plant stem"
+        },
+        {
+          "slug": "harvest-basket-tomatoes",
+          "subject": "a woven basket filled with freshly picked ripe red tomatoes"
+        }
       ],
-      "proTipIcon": { "slug": "mulched-plant", "subject": "a young vegetable plant surrounded by a ring of brown wood-chip mulch on dark soil" }
+      "proTipIcon": {
+        "slug": "mulched-plant",
+        "subject": "a young vegetable plant surrounded by a ring of brown wood-chip mulch on dark soil"
+      }
     },
     {
       "key": "grow-strawberries",
       "category": "fruit",
-      "tags": ["fruit", "strawberries", "beginners", "infographics"],
+      "tags": [
+        "fruit",
+        "strawberries",
+        "beginners",
+        "infographics"
+      ],
       "pinBoard": "Container & Small Space Gardening",
-      "pinKeywords": ["how to grow strawberries", "strawberry plants care", "growing fruit at home", "container strawberries"],
+      "pinKeywords": [
+        "how to grow strawberries",
+        "strawberry plants care",
+        "growing fruit at home",
+        "container strawberries"
+      ],
       "en": {
         "slug": "how-to-grow-strawberries",
         "title": "How to Grow Strawberries: 8 Steps to a Real Harvest",
@@ -88,16 +236,67 @@
         "description": "What strawberry plants actually need, from crown depth at planting through to keeping the fruit off wet soil.",
         "pinDescription": "How to grow strawberries at home: set the crown level with the soil, give them full sun, mulch under the fruit, and pinch the first flowers so the plant roots properly. A save-and-keep guide.",
         "cta": "Track your harvest in Garden Pro Planner",
-        "proTip": { "label": "Pro tip", "text": "Pinch off the first flush of flowers on a new plant. You lose a few early berries and get a far stronger plant, and a much bigger crop, for the rest of the season." },
+        "proTip": {
+          "label": "Pro tip",
+          "text": "Pinch off the first flush of flowers on a new plant. You lose a few early berries and get a far stronger plant, and a much bigger crop, for the rest of the season."
+        },
         "steps": [
-          { "label": "Pick a Type", "bullets": ["June-bearing: one heavy crop", "Everbearing: smaller, spread out"] },
-          { "label": "Full Sun", "bullets": ["Six or more hours daily", "Shade means small, sour fruit"] },
-          { "label": "Set the Crown Right", "bullets": ["Crown level with the soil", "Buried crowns rot, exposed dry"] },
-          { "label": "Space Them Out", "bullets": ["About a foot apart", "Crowding invites grey mould"] },
-          { "label": "Water at the Base", "bullets": ["Steady moisture while fruiting", "Wet leaves spread disease"] },
-          { "label": "Mulch Underneath", "bullets": ["Straw keeps fruit off soil", "Cleaner berries, less rot"] },
-          { "label": "Manage Runners", "bullets": ["Cut runners for bigger fruit", "Or root a few for new plants"] },
-          { "label": "Pick Fully Red", "bullets": ["They do not ripen after picking", "Pick every day or two"] }
+          {
+            "label": "Pick a Type",
+            "bullets": [
+              "June-bearing: one heavy crop",
+              "Everbearing: smaller, spread out"
+            ]
+          },
+          {
+            "label": "Full Sun",
+            "bullets": [
+              "Six or more hours daily",
+              "Shade means small, sour fruit"
+            ]
+          },
+          {
+            "label": "Set the Crown Right",
+            "bullets": [
+              "Crown level with the soil",
+              "Buried crowns rot, exposed dry"
+            ]
+          },
+          {
+            "label": "Space Them Out",
+            "bullets": [
+              "About a foot apart",
+              "Crowding invites grey mould"
+            ]
+          },
+          {
+            "label": "Water at the Base",
+            "bullets": [
+              "Steady moisture while fruiting",
+              "Wet leaves spread disease"
+            ]
+          },
+          {
+            "label": "Mulch Underneath",
+            "bullets": [
+              "Straw keeps fruit off soil",
+              "Cleaner berries, less rot"
+            ]
+          },
+          {
+            "label": "Manage Runners",
+            "bullets": [
+              "Cut runners for bigger fruit",
+              "Or root a few for new plants"
+            ]
+          },
+          {
+            "label": "Pick Fully Red",
+            "bullets": [
+              "They do not ripen after picking",
+              "Pick every day or two"
+            ]
+          }
         ]
       },
       "es": {
@@ -108,36 +307,123 @@
         "description": "Lo que de verdad necesitan las fresas, desde la profundidad de la corona hasta mantener el fruto lejos de la tierra húmeda.",
         "pinDescription": "Cómo cultivar fresas en casa: deja la corona al nivel del suelo, dales pleno sol, pon acolchado bajo el fruto y pellizca las primeras flores para que la planta arraigue. Guía para guardar.",
         "cta": "Registra tu cosecha en Garden Pro Planner",
-        "proTip": { "label": "Consejo", "text": "Pellizca la primera floración de una planta nueva. Pierdes unas pocas fresas tempranas y ganas una planta mucho más fuerte, con más cosecha durante el resto de la temporada." },
+        "proTip": {
+          "label": "Consejo",
+          "text": "Pellizca la primera floración de una planta nueva. Pierdes unas pocas fresas tempranas y ganas una planta mucho más fuerte, con más cosecha durante el resto de la temporada."
+        },
         "steps": [
-          { "label": "Elige el Tipo", "bullets": ["De junio: una cosecha fuerte", "Remontante: menos, pero seguido"] },
-          { "label": "Pleno Sol", "bullets": ["Seis horas o más al día", "A la sombra salen ácidas"] },
-          { "label": "Coloca Bien la Corona", "bullets": ["La corona al nivel del suelo", "Enterrada se pudre, fuera se seca"] },
-          { "label": "Dales Espacio", "bullets": ["Unos treinta centímetros", "El agobio trae moho gris"] },
-          { "label": "Riega en la Base", "bullets": ["Humedad constante al fructificar", "Las hojas mojadas enferman"] },
-          { "label": "Acolcha Debajo", "bullets": ["La paja aísla del suelo", "Fresas limpias y sanas"] },
-          { "label": "Controla los Estolones", "bullets": ["Córtalos para fruta más grande", "O enraíza algunos como plantas"] },
-          { "label": "Recoge Bien Rojas", "bullets": ["No maduran tras cortarlas", "Revisa cada uno o dos días"] }
+          {
+            "label": "Elige el Tipo",
+            "bullets": [
+              "De junio: una cosecha fuerte",
+              "Remontante: menos, pero seguido"
+            ]
+          },
+          {
+            "label": "Pleno Sol",
+            "bullets": [
+              "Seis horas o más al día",
+              "A la sombra salen ácidas"
+            ]
+          },
+          {
+            "label": "Coloca Bien la Corona",
+            "bullets": [
+              "La corona al nivel del suelo",
+              "Enterrada se pudre, fuera se seca"
+            ]
+          },
+          {
+            "label": "Dales Espacio",
+            "bullets": [
+              "Unos treinta centímetros",
+              "El agobio trae moho gris"
+            ]
+          },
+          {
+            "label": "Riega en la Base",
+            "bullets": [
+              "Humedad constante al fructificar",
+              "Las hojas mojadas enferman"
+            ]
+          },
+          {
+            "label": "Acolcha Debajo",
+            "bullets": [
+              "La paja aísla del suelo",
+              "Fresas limpias y sanas"
+            ]
+          },
+          {
+            "label": "Controla los Estolones",
+            "bullets": [
+              "Córtalos para fruta más grande",
+              "O enraíza algunos como plantas"
+            ]
+          },
+          {
+            "label": "Recoge Bien Rojas",
+            "bullets": [
+              "No maduran tras cortarlas",
+              "Revisa cada uno o dos días"
+            ]
+          }
         ]
       },
       "icons": [
-        { "slug": "strawberry-plant", "subject": "a strawberry plant with ripe red berries, white flowers and green trifoliate leaves" },
-        { "slug": "sun-over-plant" },
-        { "slug": "strawberry-crown-planting", "subject": "a cross-section of soil showing a strawberry crown set level with the surface, roots spreading below" },
-        { "slug": "spaced-plants-row", "subject": "three small strawberry plants evenly spaced in a row in dark garden soil" },
-        { "slug": "watering-can-sprinkle" },
-        { "slug": "straw-mulch-strawberry", "subject": "a strawberry plant with ripe fruit resting on a bed of golden straw mulch" },
-        { "slug": "strawberry-runner", "subject": "a strawberry plant sending out a long runner with a small new plantlet at its tip" },
-        { "slug": "harvest-basket-strawberries", "subject": "a small woven basket filled with freshly picked ripe red strawberries" }
+        {
+          "slug": "strawberry-plant",
+          "subject": "a strawberry plant with ripe red berries, white flowers and green trifoliate leaves"
+        },
+        {
+          "slug": "sun-over-plant",
+          "subject": "a bright sun shining above a small leafy vegetable plant growing in soil"
+        },
+        {
+          "slug": "strawberry-crown-planting",
+          "subject": "a cross-section of soil showing a strawberry crown set level with the surface, roots spreading below"
+        },
+        {
+          "slug": "spaced-plants-row",
+          "subject": "three small strawberry plants evenly spaced in a row in dark garden soil"
+        },
+        {
+          "slug": "watering-can-sprinkle"
+        },
+        {
+          "slug": "straw-mulch-strawberry",
+          "subject": "a strawberry plant with ripe fruit resting on a bed of golden straw mulch"
+        },
+        {
+          "slug": "strawberry-runner",
+          "subject": "a strawberry plant sending out a long runner with a small new plantlet at its tip"
+        },
+        {
+          "slug": "harvest-basket-strawberries",
+          "subject": "a small woven basket filled with freshly picked ripe red strawberries"
+        }
       ],
-      "proTipIcon": { "slug": "strawberry-flower-pinch", "subject": "a hand pinching a small white strawberry flower from the plant" }
+      "proTipIcon": {
+        "slug": "strawberry-flower-pinch",
+        "subject": "a hand pinching a small white strawberry flower from the plant"
+      }
     },
     {
       "key": "grow-basil",
       "category": "herbs",
-      "tags": ["herbs", "basil", "container-gardening", "infographics"],
+      "tags": [
+        "herbs",
+        "basil",
+        "container-gardening",
+        "infographics"
+      ],
       "pinBoard": "Container & Small Space Gardening",
-      "pinKeywords": ["how to grow basil", "basil plant care", "herb garden for beginners", "growing herbs in pots"],
+      "pinKeywords": [
+        "how to grow basil",
+        "basil plant care",
+        "herb garden for beginners",
+        "growing herbs in pots"
+      ],
       "en": {
         "slug": "how-to-grow-basil",
         "title": "How to Grow Basil That Doesn't Bolt in a Month",
@@ -146,16 +432,67 @@
         "description": "Eight steps to a bushy basil plant, and the pinching habit that keeps it producing instead of running to seed.",
         "pinDescription": "How to grow basil that stays bushy: pinch above a leaf pair to force branching, keep it warm, water the soil rather than the leaves, and remove flower buds as they appear. A save-and-keep herb guide.",
         "cta": "Plan your herb bed in Garden Pro Planner",
-        "proTip": { "label": "Pro tip", "text": "Pinch the growing tip once the plant has two or three sets of true leaves, and keep pinching every couple of weeks. Each cut turns one stem into two, and a pinched plant stays productive far longer." },
+        "proTip": {
+          "label": "Pro tip",
+          "text": "Pinch the growing tip once the plant has two or three sets of true leaves, and keep pinching every couple of weeks. Each cut turns one stem into two, and a pinched plant stays productive far longer."
+        },
         "steps": [
-          { "label": "Wait for Warmth", "bullets": ["Basil hates cold soil", "Plant well after last frost"] },
-          { "label": "Full Sun", "bullets": ["Six to eight hours daily", "Leggy growth means too little"] },
-          { "label": "Free-Draining Soil", "bullets": ["Basil rots in soggy ground", "Pots need drainage holes"] },
-          { "label": "Water the Soil", "bullets": ["Water when the top feels dry", "Keep the leaves dry"] },
-          { "label": "Pinch the Tips", "bullets": ["Cut above a pair of leaves", "One stem becomes two"] },
-          { "label": "Remove Flower Buds", "bullets": ["Flowering turns leaves bitter", "Pinch buds the day you see them"] },
-          { "label": "Feed Lightly", "bullets": ["Too much feed thins the flavour", "A little compost is plenty"] },
-          { "label": "Harvest from the Top", "bullets": ["Take the top, not the base", "Never strip more than a third"] }
+          {
+            "label": "Wait for Warmth",
+            "bullets": [
+              "Basil hates cold soil",
+              "Plant well after last frost"
+            ]
+          },
+          {
+            "label": "Full Sun",
+            "bullets": [
+              "Six to eight hours daily",
+              "Leggy growth means too little"
+            ]
+          },
+          {
+            "label": "Free-Draining Soil",
+            "bullets": [
+              "Basil rots in soggy ground",
+              "Pots need drainage holes"
+            ]
+          },
+          {
+            "label": "Water the Soil",
+            "bullets": [
+              "Water when the top feels dry",
+              "Keep the leaves dry"
+            ]
+          },
+          {
+            "label": "Pinch the Tips",
+            "bullets": [
+              "Cut above a pair of leaves",
+              "One stem becomes two"
+            ]
+          },
+          {
+            "label": "Remove Flower Buds",
+            "bullets": [
+              "Flowering turns leaves bitter",
+              "Pinch buds the day you see them"
+            ]
+          },
+          {
+            "label": "Feed Lightly",
+            "bullets": [
+              "Too much feed thins the flavour",
+              "A little compost is plenty"
+            ]
+          },
+          {
+            "label": "Harvest from the Top",
+            "bullets": [
+              "Take the top, not the base",
+              "Never strip more than a third"
+            ]
+          }
         ]
       },
       "es": {
@@ -166,36 +503,122 @@
         "description": "Ocho pasos para una albahaca frondosa, y el pellizco que la mantiene produciendo en vez de subirse a flor.",
         "pinDescription": "Cómo cultivar albahaca frondosa: pellizca sobre un par de hojas para que ramifique, mantenla en calor, riega la tierra y no las hojas, y quita los botones florales en cuanto aparezcan.",
         "cta": "Planifica tus hierbas en Garden Pro Planner",
-        "proTip": { "label": "Consejo", "text": "Pellizca la punta cuando la planta tenga dos o tres pares de hojas verdaderas, y repite cada dos semanas. Cada corte convierte un tallo en dos, y una planta pellizcada produce mucho más tiempo." },
+        "proTip": {
+          "label": "Consejo",
+          "text": "Pellizca la punta cuando la planta tenga dos o tres pares de hojas verdaderas, y repite cada dos semanas. Cada corte convierte un tallo en dos, y una planta pellizcada produce mucho más tiempo."
+        },
         "steps": [
-          { "label": "Espera el Calor", "bullets": ["La albahaca odia el frío", "Planta pasadas las heladas"] },
-          { "label": "Pleno Sol", "bullets": ["De seis a ocho horas diarias", "Si se estira, le falta luz"] },
-          { "label": "Tierra que Drene", "bullets": ["Se pudre en suelo encharcado", "La maceta necesita agujeros"] },
-          { "label": "Riega la Tierra", "bullets": ["Riega si la capa está seca", "Deja las hojas secas"] },
-          { "label": "Pellizca las Puntas", "bullets": ["Corta sobre un par de hojas", "Un tallo se vuelve dos"] },
-          { "label": "Quita los Botones", "bullets": ["Al florecer amarga la hoja", "Pellízcalos el mismo día"] },
-          { "label": "Abona Poco", "bullets": ["Mucho abono le quita sabor", "Con algo de compost basta"] },
-          { "label": "Corta por Arriba", "bullets": ["Toma la punta, no la base", "Nunca más de un tercio"] }
+          {
+            "label": "Espera el Calor",
+            "bullets": [
+              "La albahaca odia el frío",
+              "Planta pasadas las heladas"
+            ]
+          },
+          {
+            "label": "Pleno Sol",
+            "bullets": [
+              "De seis a ocho horas diarias",
+              "Si se estira, le falta luz"
+            ]
+          },
+          {
+            "label": "Tierra que Drene",
+            "bullets": [
+              "Se pudre en suelo encharcado",
+              "La maceta necesita agujeros"
+            ]
+          },
+          {
+            "label": "Riega la Tierra",
+            "bullets": [
+              "Riega si la capa está seca",
+              "Deja las hojas secas"
+            ]
+          },
+          {
+            "label": "Pellizca las Puntas",
+            "bullets": [
+              "Corta sobre un par de hojas",
+              "Un tallo se vuelve dos"
+            ]
+          },
+          {
+            "label": "Quita los Botones",
+            "bullets": [
+              "Al florecer amarga la hoja",
+              "Pellízcalos el mismo día"
+            ]
+          },
+          {
+            "label": "Abona Poco",
+            "bullets": [
+              "Mucho abono le quita sabor",
+              "Con algo de compost basta"
+            ]
+          },
+          {
+            "label": "Corta por Arriba",
+            "bullets": [
+              "Toma la punta, no la base",
+              "Nunca más de un tercio"
+            ]
+          }
         ]
       },
       "icons": [
-        { "slug": "basil-plant" },
-        { "slug": "sun-over-plant" },
-        { "slug": "pot-with-drainage", "subject": "a terracotta pot filled with loose dark potting soil, drainage holes visible at the base" },
-        { "slug": "watering-can-sprinkle" },
-        { "slug": "pinching-basil-tip", "subject": "fingers pinching the growing tip from a basil stem just above a pair of leaves" },
-        { "slug": "basil-flower-spike", "subject": "a basil plant with a small white flower spike forming at the top of a stem" },
-        { "slug": "compost-and-feed" },
-        { "slug": "basil-harvest-bunch", "subject": "a small bunch of freshly cut basil sprigs tied together" }
+        {
+          "slug": "basil-plant"
+        },
+        {
+          "slug": "sun-over-plant",
+          "subject": "a bright sun shining above a small leafy vegetable plant growing in soil"
+        },
+        {
+          "slug": "pot-with-drainage",
+          "subject": "a terracotta pot filled with loose dark potting soil, drainage holes visible at the base"
+        },
+        {
+          "slug": "watering-can-sprinkle"
+        },
+        {
+          "slug": "pinching-basil-tip",
+          "subject": "fingers pinching the growing tip from a basil stem just above a pair of leaves"
+        },
+        {
+          "slug": "basil-flower-spike",
+          "subject": "a basil plant with a small white flower spike forming at the top of a stem"
+        },
+        {
+          "slug": "compost-and-feed",
+          "subject": "a bucket of dark compost beside a plain unlabelled paper sack of garden fertiliser"
+        },
+        {
+          "slug": "basil-harvest-bunch",
+          "subject": "a small bunch of freshly cut basil sprigs tied together"
+        }
       ],
-      "proTipIcon": { "slug": "pinching-basil-tip" }
+      "proTipIcon": {
+        "slug": "pinching-basil-tip",
+        "subject": "fingers pinching the growing tip from a basil stem just above a pair of leaves"
+      }
     },
     {
       "key": "grow-sunflowers",
       "category": "flowers",
-      "tags": ["flowers", "sunflowers", "beginners", "infographics"],
+      "tags": [
+        "flowers",
+        "sunflowers",
+        "beginners",
+        "infographics"
+      ],
       "pinBoard": "Vegetable Garden Layouts",
-      "pinKeywords": ["how to grow sunflowers", "sunflower growing tips", "flower garden for beginners", "sunflowers from seed"],
+      "pinKeywords": [
+        "how to grow sunflowers",
+        "sunflower growing tips",
+        "flower garden for beginners",
+        "sunflowers from seed"
+      ],
       "en": {
         "slug": "how-to-grow-sunflowers",
         "title": "How to Grow Sunflowers from Seed in 8 Steps",
@@ -204,16 +627,67 @@
         "description": "Sowing depth, spacing, staking and when to cut, for sunflowers that stand up through a summer storm.",
         "pinDescription": "How to grow sunflowers from seed: sow direct rather than transplanting, give tall varieties a stake before they need it, and cut for the vase as the first petals lift. A save-and-keep flower guide.",
         "cta": "Plan your flower beds in Garden Pro Planner",
-        "proTip": { "label": "Pro tip", "text": "Sow a short row every two weeks from spring through midsummer instead of all at once. You get sunflowers in bloom for months rather than one spectacular fortnight and then bare stalks." },
+        "proTip": {
+          "label": "Pro tip",
+          "text": "Sow a short row every two weeks from spring through midsummer instead of all at once. You get sunflowers in bloom for months rather than one spectacular fortnight and then bare stalks."
+        },
         "steps": [
-          { "label": "Sow Direct", "bullets": ["They resent root disturbance", "Direct sowing beats transplanting"] },
-          { "label": "Sow After Frost", "bullets": ["Wait for warm soil", "Cold ground rots the seed"] },
-          { "label": "Plant an Inch Deep", "bullets": ["About an inch down", "Firm the soil over them"] },
-          { "label": "Give Them Room", "bullets": ["Giants need a foot or more", "Crowding means small heads"] },
-          { "label": "Full Sun, All Day", "bullets": ["Six to eight hours minimum", "They lean hard toward light"] },
-          { "label": "Water Deeply", "bullets": ["Soak the root zone weekly", "Deep roots resist wind"] },
-          { "label": "Stake Tall Types", "bullets": ["Stake before the head fills", "A heavy head snaps in wind"] },
-          { "label": "Cut or Leave", "bullets": ["Cut as petals start lifting", "Or leave the heads for birds"] }
+          {
+            "label": "Sow Direct",
+            "bullets": [
+              "They resent root disturbance",
+              "Direct sowing beats transplanting"
+            ]
+          },
+          {
+            "label": "Sow After Frost",
+            "bullets": [
+              "Wait for warm soil",
+              "Cold ground rots the seed"
+            ]
+          },
+          {
+            "label": "Plant an Inch Deep",
+            "bullets": [
+              "About an inch down",
+              "Firm the soil over them"
+            ]
+          },
+          {
+            "label": "Give Them Room",
+            "bullets": [
+              "Giants need a foot or more",
+              "Crowding means small heads"
+            ]
+          },
+          {
+            "label": "Full Sun, All Day",
+            "bullets": [
+              "Six to eight hours minimum",
+              "They lean hard toward light"
+            ]
+          },
+          {
+            "label": "Water Deeply",
+            "bullets": [
+              "Soak the root zone weekly",
+              "Deep roots resist wind"
+            ]
+          },
+          {
+            "label": "Stake Tall Types",
+            "bullets": [
+              "Stake before the head fills",
+              "A heavy head snaps in wind"
+            ]
+          },
+          {
+            "label": "Cut or Leave",
+            "bullets": [
+              "Cut as petals start lifting",
+              "Or leave the heads for birds"
+            ]
+          }
         ]
       },
       "es": {
@@ -224,36 +698,123 @@
         "description": "Profundidad de siembra, marco, tutorado y momento de corte, para girasoles que aguanten una tormenta de verano.",
         "pinDescription": "Cómo cultivar girasoles desde semilla: siembra directa en vez de trasplantar, pon tutor a las variedades altas antes de que lo necesiten, y corta cuando los primeros pétalos se levanten.",
         "cta": "Diseña tus parterres en Garden Pro Planner",
-        "proTip": { "label": "Consejo", "text": "Siembra una hilera corta cada dos semanas desde la primavera hasta mediados de verano en lugar de todo de golpe. Así tendrás girasoles en flor durante meses y no quince días espectaculares." },
+        "proTip": {
+          "label": "Consejo",
+          "text": "Siembra una hilera corta cada dos semanas desde la primavera hasta mediados de verano en lugar de todo de golpe. Así tendrás girasoles en flor durante meses y no quince días espectaculares."
+        },
         "steps": [
-          { "label": "Siembra Directa", "bullets": ["No soportan el trasplante", "Mejor sembrar en su sitio"] },
-          { "label": "Tras las Heladas", "bullets": ["Espera tierra templada", "En frío la semilla se pudre"] },
-          { "label": "Dos Centímetros", "bullets": ["Unos dos o tres centímetros", "Aprieta la tierra encima"] },
-          { "label": "Dales Sitio", "bullets": ["Los gigantes, treinta centímetros", "Apretados salen cabezas pequeñas"] },
-          { "label": "Pleno Sol Todo el Día", "bullets": ["Mínimo de seis a ocho horas", "Se inclinan mucho hacia la luz"] },
-          { "label": "Riega a Fondo", "bullets": ["Empapa la zona de raíces", "Raíz profunda aguanta el viento"] },
-          { "label": "Tutora los Altos", "bullets": ["Pon tutor antes de que pese", "La cabeza llena parte el tallo"] },
-          { "label": "Corta o Deja", "bullets": ["Corta al levantarse los pétalos", "O déjalas para los pájaros"] }
+          {
+            "label": "Siembra Directa",
+            "bullets": [
+              "No soportan el trasplante",
+              "Mejor sembrar en su sitio"
+            ]
+          },
+          {
+            "label": "Tras las Heladas",
+            "bullets": [
+              "Espera tierra templada",
+              "En frío la semilla se pudre"
+            ]
+          },
+          {
+            "label": "Dos Centímetros",
+            "bullets": [
+              "Unos dos o tres centímetros",
+              "Aprieta la tierra encima"
+            ]
+          },
+          {
+            "label": "Dales Sitio",
+            "bullets": [
+              "Los gigantes, treinta centímetros",
+              "Apretados salen cabezas pequeñas"
+            ]
+          },
+          {
+            "label": "Pleno Sol",
+            "bullets": [
+              "Mínimo de seis a ocho horas",
+              "Se inclinan mucho hacia la luz"
+            ]
+          },
+          {
+            "label": "Riega a Fondo",
+            "bullets": [
+              "Empapa la zona de raíces",
+              "Raíz profunda aguanta el viento"
+            ]
+          },
+          {
+            "label": "Tutora los Altos",
+            "bullets": [
+              "Pon tutor antes de que pese",
+              "La cabeza llena parte el tallo"
+            ]
+          },
+          {
+            "label": "Corta o Deja",
+            "bullets": [
+              "Corta al levantarse los pétalos",
+              "O déjalas para los pájaros"
+            ]
+          }
         ]
       },
       "icons": [
-        { "slug": "sunflower-seeds-hand", "subject": "a small pile of striped sunflower seeds beside a shallow furrow in dark soil" },
-        { "slug": "seedling-emerging", "subject": "a single seedling with two seed leaves emerging from dark garden soil" },
-        { "slug": "seed-sowing-depth", "subject": "a cross-section of soil showing a large seed planted about an inch below the surface" },
-        { "slug": "spaced-plants-row" },
-        { "slug": "sun-over-plant" },
-        { "slug": "watering-can-sprinkle" },
-        { "slug": "staked-sunflower", "subject": "a tall sunflower stem tied to a wooden stake with soft garden twine" },
-        { "slug": "sunflower-bloom", "subject": "a single open sunflower head with bright yellow petals and a dark seed centre" }
+        {
+          "slug": "sunflower-seeds-hand",
+          "subject": "a small pile of striped sunflower seeds beside a shallow furrow in dark soil"
+        },
+        {
+          "slug": "seedling-emerging",
+          "subject": "a single seedling with two seed leaves emerging from dark garden soil"
+        },
+        {
+          "slug": "seed-sowing-depth",
+          "subject": "a cross-section of soil showing a large seed planted about an inch below the surface"
+        },
+        {
+          "slug": "spaced-plants-row",
+          "subject": "three small strawberry plants evenly spaced in a row in dark garden soil"
+        },
+        {
+          "slug": "sun-over-plant",
+          "subject": "a bright sun shining above a small leafy vegetable plant growing in soil"
+        },
+        {
+          "slug": "watering-can-sprinkle"
+        },
+        {
+          "slug": "staked-sunflower",
+          "subject": "a tall sunflower stem tied to a wooden stake with soft garden twine"
+        },
+        {
+          "slug": "sunflower-bloom",
+          "subject": "a single open sunflower head with bright yellow petals and a dark seed centre"
+        }
       ],
-      "proTipIcon": { "slug": "sunflower-bloom" }
+      "proTipIcon": {
+        "slug": "sunflower-bloom",
+        "subject": "a single open sunflower head with bright yellow petals and a dark seed centre"
+      }
     },
     {
       "key": "plant-a-fruit-tree",
       "category": "trees",
-      "tags": ["trees", "fruit", "beginners", "infographics"],
+      "tags": [
+        "trees",
+        "fruit",
+        "beginners",
+        "infographics"
+      ],
       "pinBoard": "Raised Bed Gardening",
-      "pinKeywords": ["how to plant a fruit tree", "fruit tree planting guide", "backyard orchard", "apple tree care"],
+      "pinKeywords": [
+        "how to plant a fruit tree",
+        "fruit tree planting guide",
+        "backyard orchard",
+        "apple tree care"
+      ],
       "en": {
         "slug": "how-to-plant-a-fruit-tree",
         "title": "How to Plant a Fruit Tree So It Actually Establishes",
@@ -262,16 +823,67 @@
         "description": "Hole width, graft height, watering and the two mistakes that kill more young fruit trees than anything else.",
         "pinDescription": "How to plant a fruit tree properly: dig wide rather than deep, keep the graft union above the soil, skip the fertiliser in the hole, and water deeply through the first two summers.",
         "cta": "Map your orchard in Garden Pro Planner",
-        "proTip": { "label": "Pro tip", "text": "Most young fruit trees are lost in their first two summers, and almost always to drought rather than cold. One long slow soak a week through dry spells beats a daily sprinkle every time." },
+        "proTip": {
+          "label": "Pro tip",
+          "text": "Most young fruit trees are lost in their first two summers, and almost always to drought rather than cold. One long slow soak a week through dry spells beats a daily sprinkle every time."
+        },
         "steps": [
-          { "label": "Check Pollination", "bullets": ["Many need a second variety", "Check before you buy one"] },
-          { "label": "Plant When Dormant", "bullets": ["Late autumn through early spring", "Roots settle before growth starts"] },
-          { "label": "Dig Wide, Not Deep", "bullets": ["Three times the root width", "Same depth as the pot"] },
-          { "label": "Keep the Graft High", "bullets": ["Graft bump above soil level", "Buried grafts lose the dwarfing"] },
-          { "label": "Skip the Fertiliser", "bullets": ["No feed in the planting hole", "Roots must reach out"] },
-          { "label": "Backfill and Firm", "bullets": ["Use the soil you dug out", "Firm gently, leave no gaps"] },
-          { "label": "Mulch, Not Touching", "bullets": ["Ring of mulch around it", "Keep it off the trunk"] },
-          { "label": "Water Two Years", "bullets": ["Deep soak weekly when dry", "Drought kills more than cold"] }
+          {
+            "label": "Check Pollination",
+            "bullets": [
+              "Many need a second variety",
+              "Check before you buy one"
+            ]
+          },
+          {
+            "label": "Plant When Dormant",
+            "bullets": [
+              "Late autumn through early spring",
+              "Roots settle before growth starts"
+            ]
+          },
+          {
+            "label": "Dig Wide, Not Deep",
+            "bullets": [
+              "Three times the root width",
+              "Same depth as the pot"
+            ]
+          },
+          {
+            "label": "Keep the Graft High",
+            "bullets": [
+              "Graft bump above soil level",
+              "Buried grafts lose the dwarfing"
+            ]
+          },
+          {
+            "label": "Skip the Fertiliser",
+            "bullets": [
+              "No feed in the planting hole",
+              "Roots must reach out"
+            ]
+          },
+          {
+            "label": "Backfill and Firm",
+            "bullets": [
+              "Use the soil you dug out",
+              "Firm gently, leave no gaps"
+            ]
+          },
+          {
+            "label": "Mulch, Not Touching",
+            "bullets": [
+              "Ring of mulch around it",
+              "Keep it off the trunk"
+            ]
+          },
+          {
+            "label": "Water Two Years",
+            "bullets": [
+              "Deep soak weekly when dry",
+              "Drought kills more than cold"
+            ]
+          }
         ]
       },
       "es": {
@@ -282,36 +894,122 @@
         "description": "Ancho del hoyo, altura del injerto, riego y los dos errores que matan más frutales jóvenes que ninguna otra cosa.",
         "pinDescription": "Cómo plantar bien un árbol frutal: cava ancho y no profundo, deja el injerto por encima de la tierra, no eches abono en el hoyo y riega a fondo durante los dos primeros veranos.",
         "cta": "Planifica tu huerto en Garden Pro Planner",
-        "proTip": { "label": "Consejo", "text": "La mayoría de los frutales jóvenes se pierden en sus dos primeros veranos, y casi siempre por sequía y no por frío. Un riego largo y lento por semana en épocas secas vale más que un rociado diario." },
+        "proTip": {
+          "label": "Consejo",
+          "text": "La mayoría de los frutales jóvenes se pierden en sus dos primeros veranos, y casi siempre por sequía y no por frío. Un riego largo y lento por semana en épocas secas vale más que un rociado diario."
+        },
         "steps": [
-          { "label": "Mira la Polinización", "bullets": ["Muchos necesitan otra variedad", "Compruébalo antes de comprar"] },
-          { "label": "Planta en Reposo", "bullets": ["De otoño a principios de primavera", "La raíz se asienta antes de brotar"] },
-          { "label": "Ancho, no Hondo", "bullets": ["Tres veces el ancho del cepellón", "La misma profundidad que la maceta"] },
-          { "label": "Injerto por Encima", "bullets": ["El bulto del injerto, fuera", "Enterrado pierde el enanismo"] },
-          { "label": "Nada de Abono", "bullets": ["Sin abono en el hoyo", "La raíz debe salir a buscar"] },
-          { "label": "Rellena y Asienta", "bullets": ["Usa la misma tierra que sacaste", "Aprieta suave, sin huecos"] },
-          { "label": "Acolcha sin Tocar", "bullets": ["Un anillo de acolchado", "Que no toque el tronco"] },
-          { "label": "Riega Dos Años", "bullets": ["Riego profundo semanal en seco", "La sequía mata más que el frío"] }
+          {
+            "label": "Mira la Polinización",
+            "bullets": [
+              "Muchos necesitan otra variedad",
+              "Compruébalo antes de comprar"
+            ]
+          },
+          {
+            "label": "Planta en Reposo",
+            "bullets": [
+              "De otoño a principios de primavera",
+              "La raíz se asienta antes de brotar"
+            ]
+          },
+          {
+            "label": "Ancho, no Hondo",
+            "bullets": [
+              "Tres veces el ancho del cepellón",
+              "La misma profundidad que la maceta"
+            ]
+          },
+          {
+            "label": "Injerto por Encima",
+            "bullets": [
+              "El bulto del injerto, fuera",
+              "Enterrado pierde el enanismo"
+            ]
+          },
+          {
+            "label": "Nada de Abono",
+            "bullets": [
+              "Sin abono en el hoyo",
+              "La raíz debe salir a buscar"
+            ]
+          },
+          {
+            "label": "Rellena y Asienta",
+            "bullets": [
+              "Usa la misma tierra que sacaste",
+              "Aprieta suave, sin huecos"
+            ]
+          },
+          {
+            "label": "Acolcha sin Tocar",
+            "bullets": [
+              "Un anillo de acolchado",
+              "Que no toque el tronco"
+            ]
+          },
+          {
+            "label": "Riega Dos Años",
+            "bullets": [
+              "Riego profundo semanal en seco",
+              "La sequía mata más que el frío"
+            ]
+          }
         ]
       },
       "icons": [
-        { "slug": "apple-tree-branch", "subject": "a branch of an apple tree with ripe red apples and green leaves" },
-        { "slug": "bare-root-tree", "subject": "a young bare-root fruit tree whip with visible roots, no leaves, ready for planting" },
-        { "slug": "planting-hole", "subject": "a wide shallow planting hole dug in dark soil with a spade resting beside it" },
-        { "slug": "graft-union", "subject": "a close view of the swollen graft union low on a young fruit tree trunk" },
-        { "slug": "compost-and-feed" },
-        { "slug": "backfilling-soil", "subject": "hands firming dark soil around the base of a newly planted young tree" },
-        { "slug": "mulch-ring-tree", "subject": "a ring of bark mulch spread around the base of a young tree, clear of the trunk" },
-        { "slug": "watering-can-sprinkle" }
+        {
+          "slug": "apple-tree-branch",
+          "subject": "a branch of an apple tree with ripe red apples and green leaves"
+        },
+        {
+          "slug": "bare-root-tree",
+          "subject": "a young bare-root fruit tree whip with visible roots, no leaves, ready for planting"
+        },
+        {
+          "slug": "planting-hole",
+          "subject": "a wide shallow planting hole dug in dark soil with a spade resting beside it"
+        },
+        {
+          "slug": "graft-union",
+          "subject": "a close view of the swollen graft union low on a young fruit tree trunk"
+        },
+        {
+          "slug": "compost-and-feed",
+          "subject": "a bucket of dark compost beside a plain unlabelled paper sack of garden fertiliser"
+        },
+        {
+          "slug": "backfilling-soil",
+          "subject": "hands firming dark soil around the base of a newly planted young tree"
+        },
+        {
+          "slug": "mulch-ring-tree",
+          "subject": "a ring of bark mulch spread around the base of a young tree, clear of the trunk"
+        },
+        {
+          "slug": "watering-can-sprinkle"
+        }
       ],
-      "proTipIcon": { "slug": "watering-can-sprinkle" }
+      "proTipIcon": {
+        "slug": "watering-can-sprinkle"
+      }
     },
     {
       "key": "grow-carrots",
       "category": "vegetables",
-      "tags": ["vegetables", "carrots", "beginners", "infographics"],
+      "tags": [
+        "vegetables",
+        "carrots",
+        "beginners",
+        "infographics"
+      ],
       "pinBoard": "Vegetable Garden Layouts",
-      "pinKeywords": ["how to grow carrots", "carrot growing tips", "root vegetables garden", "carrots from seed"],
+      "pinKeywords": [
+        "how to grow carrots",
+        "carrot growing tips",
+        "root vegetables garden",
+        "carrots from seed"
+      ],
       "en": {
         "slug": "how-to-grow-carrots",
         "title": "How to Grow Carrots That Aren't Forked and Stubby",
@@ -320,16 +1018,67 @@
         "description": "Why carrots fork, why they never come up, and the thinning most gardeners skip and then regret.",
         "pinDescription": "How to grow straight carrots: loosen deep stone-free soil, sow direct and shallow, keep the seedbed damp until germination, and thin properly. A save-and-keep root vegetable guide.",
         "cta": "Plan your rows in Garden Pro Planner",
-        "proTip": { "label": "Pro tip", "text": "Carrot seed is tiny and needs constant moisture to germinate, which is the usual reason a row never comes up. Cover the row with a board or damp cloth and check daily, lifting it the moment green shows." },
+        "proTip": {
+          "label": "Pro tip",
+          "text": "Carrot seed is tiny and needs constant moisture to germinate, which is the usual reason a row never comes up. Cover the row with a board or damp cloth and check daily, lifting it the moment green shows."
+        },
         "steps": [
-          { "label": "Loosen Deep Soil", "bullets": ["Dig a foot down, stone free", "Stones and lumps fork roots"] },
-          { "label": "Skip Fresh Manure", "bullets": ["Rich manure splits roots", "Use a bed composted last year"] },
-          { "label": "Sow Direct", "bullets": ["Carrots hate transplanting", "Sow where they will grow"] },
-          { "label": "Sow Shallow", "bullets": ["Barely cover the seed", "Too deep and it never surfaces"] },
-          { "label": "Keep Soil Damp", "bullets": ["Never let the row dry out", "Dry seed simply will not come up"] },
-          { "label": "Thin Ruthlessly", "bullets": ["Thin to two fingers apart", "Crowding gives stubby roots"] },
-          { "label": "Thin in the Evening", "bullets": ["Bruised leaves attract carrot fly", "Water after thinning"] },
-          { "label": "Harvest Young", "bullets": ["Pull when shoulders show", "Sweeter before they go woody"] }
+          {
+            "label": "Loosen Deep Soil",
+            "bullets": [
+              "Dig a foot down, stone free",
+              "Stones and lumps fork roots"
+            ]
+          },
+          {
+            "label": "Skip Fresh Manure",
+            "bullets": [
+              "Rich manure splits roots",
+              "Use a bed composted last year"
+            ]
+          },
+          {
+            "label": "Sow Direct",
+            "bullets": [
+              "Carrots hate transplanting",
+              "Sow where they will grow"
+            ]
+          },
+          {
+            "label": "Sow Shallow",
+            "bullets": [
+              "Barely cover the seed",
+              "Too deep and it never surfaces"
+            ]
+          },
+          {
+            "label": "Keep Soil Damp",
+            "bullets": [
+              "Never let the row dry out",
+              "Dry seed simply will not come up"
+            ]
+          },
+          {
+            "label": "Thin Ruthlessly",
+            "bullets": [
+              "Thin to two fingers apart",
+              "Crowding gives stubby roots"
+            ]
+          },
+          {
+            "label": "Thin in the Evening",
+            "bullets": [
+              "Bruised leaves attract carrot fly",
+              "Water after thinning"
+            ]
+          },
+          {
+            "label": "Harvest Young",
+            "bullets": [
+              "Pull when shoulders show",
+              "Sweeter before they go woody"
+            ]
+          }
         ]
       },
       "es": {
@@ -340,29 +1089,2653 @@
         "description": "Por qué se bifurcan, por qué a veces no nacen, y el aclareo que casi todo el mundo se salta y luego lamenta.",
         "pinDescription": "Cómo cultivar zanahorias rectas: mulle la tierra profunda y sin piedras, siembra directa y superficial, mantén el semillero húmedo hasta que nazcan, y aclara bien.",
         "cta": "Planifica tus hileras en Garden Pro Planner",
-        "proTip": { "label": "Consejo", "text": "La semilla de zanahoria es diminuta y necesita humedad constante para germinar, que es la razón habitual de que una hilera no nazca. Tapa la línea con una tabla o un paño húmedo y revísala a diario." },
+        "proTip": {
+          "label": "Consejo",
+          "text": "La semilla de zanahoria es diminuta y necesita humedad constante para germinar, que es la razón habitual de que una hilera no nazca. Tapa la línea con una tabla o un paño húmedo y revísala a diario."
+        },
         "steps": [
-          { "label": "Mulle la Tierra", "bullets": ["Treinta centímetros, sin piedras", "Las piedras bifurcan la raíz"] },
-          { "label": "Sin Estiércol Fresco", "bullets": ["El estiércol fresco las parte", "Usa un bancal abonado el año antes"] },
-          { "label": "Siembra Directa", "bullets": ["No soportan el trasplante", "Siembra en su sitio definitivo"] },
-          { "label": "Siembra Superficial", "bullets": ["Cubre la semilla apenas", "Muy hondo y no sale"] },
-          { "label": "Tierra Siempre Húmeda", "bullets": ["Que la línea no se seque", "En seco no germina"] },
-          { "label": "Aclara sin Pena", "bullets": ["Deja unos cinco centímetros", "Apretadas salen cortas"] },
-          { "label": "Aclara al Atardecer", "bullets": ["El olor atrae a la mosca", "Riega después de aclarar"] },
-          { "label": "Cosecha Jóvenes", "bullets": ["Arranca al asomar el hombro", "Más dulces antes de endurecer"] }
+          {
+            "label": "Mulle la Tierra",
+            "bullets": [
+              "Treinta centímetros, sin piedras",
+              "Las piedras bifurcan la raíz"
+            ]
+          },
+          {
+            "label": "Sin Estiércol Fresco",
+            "bullets": [
+              "El estiércol fresco las parte",
+              "Usa un bancal abonado el año antes"
+            ]
+          },
+          {
+            "label": "Siembra Directa",
+            "bullets": [
+              "No soportan el trasplante",
+              "Siembra en su sitio definitivo"
+            ]
+          },
+          {
+            "label": "Siembra Superficial",
+            "bullets": [
+              "Cubre la semilla apenas",
+              "Muy hondo y no sale"
+            ]
+          },
+          {
+            "label": "Tierra Siempre Húmeda",
+            "bullets": [
+              "Que la línea no se seque",
+              "En seco no germina"
+            ]
+          },
+          {
+            "label": "Aclara sin Pena",
+            "bullets": [
+              "Deja unos cinco centímetros",
+              "Apretadas salen cortas"
+            ]
+          },
+          {
+            "label": "Aclara al Atardecer",
+            "bullets": [
+              "El olor atrae a la mosca",
+              "Riega después de aclarar"
+            ]
+          },
+          {
+            "label": "Cosecha Jóvenes",
+            "bullets": [
+              "Arranca al asomar el hombro",
+              "Más dulces antes de endurecer"
+            ]
+          }
         ]
       },
       "icons": [
-        { "slug": "loose-deep-soil", "subject": "a garden fork lifting loose crumbly dark soil in a raised bed" },
-        { "slug": "compost-and-feed" },
-        { "slug": "carrot-seed-row", "subject": "tiny carrot seeds being sown along a shallow straight furrow in fine soil" },
-        { "slug": "seed-sowing-depth" },
-        { "slug": "watering-can-sprinkle" },
-        { "slug": "thinning-seedlings", "subject": "fingers pulling one small seedling from a crowded row of carrot seedlings" },
-        { "slug": "carrot-fly-net", "subject": "a low row of carrot seedlings covered by fine mesh insect netting on hoops" },
-        { "slug": "harvested-carrots", "subject": "a bunch of freshly pulled orange carrots with green tops still attached" }
+        {
+          "slug": "loose-deep-soil",
+          "subject": "a garden fork lifting loose crumbly dark soil in a raised bed"
+        },
+        {
+          "slug": "compost-and-feed",
+          "subject": "a bucket of dark compost beside a plain unlabelled paper sack of garden fertiliser"
+        },
+        {
+          "slug": "carrot-seed-row",
+          "subject": "tiny carrot seeds being sown along a shallow straight furrow in fine soil"
+        },
+        {
+          "slug": "seed-sowing-depth",
+          "subject": "a cross-section of soil showing a large seed planted about an inch below the surface"
+        },
+        {
+          "slug": "watering-can-sprinkle"
+        },
+        {
+          "slug": "thinning-seedlings",
+          "subject": "fingers pulling one small seedling from a crowded row of carrot seedlings"
+        },
+        {
+          "slug": "carrot-fly-net",
+          "subject": "a low row of carrot seedlings covered by fine mesh insect netting on hoops"
+        },
+        {
+          "slug": "harvested-carrots",
+          "subject": "a bunch of freshly pulled orange carrots with green tops still attached"
+        }
       ],
-      "proTipIcon": { "slug": "carrot-seed-row" }
+      "proTipIcon": {
+        "slug": "carrot-seed-row",
+        "subject": "tiny carrot seeds being sown along a shallow straight furrow in fine soil"
+      }
+    },
+    {
+      "key": "grow-lettuce",
+      "category": "vegetables",
+      "tags": [
+        "vegetables",
+        "lettuce",
+        "beginners",
+        "infographics"
+      ],
+      "pinBoard": "Vegetable Garden Layouts",
+      "pinKeywords": [
+        "how to grow lettuce",
+        "lettuce growing tips",
+        "salad garden",
+        "cut and come again lettuce"
+      ],
+      "en": {
+        "slug": "how-to-grow-lettuce",
+        "title": "How to Grow Lettuce That Never Turns Bitter",
+        "eyebrow": "Beginner-friendly guide",
+        "chartTitle": "How to grow lettuce",
+        "description": "Eight steps to steady salad leaves, and the heat and timing mistakes that turn a crop bitter overnight.",
+        "pinDescription": "How to grow lettuce that stays sweet: sow little and often, give it afternoon shade in heat, keep the soil damp, and cut the outer leaves so one plant keeps giving. A save-and-keep guide.",
+        "cta": "Plan your salad beds in Garden Pro Planner",
+        "proTip": {
+          "label": "Pro tip",
+          "text": "Sow a short row every two weeks rather than one long row at once. Lettuce goes from perfect to bitter in a matter of days, so a steady trickle beats a glut you cannot eat in time."
+        },
+        "steps": [
+          {
+            "label": "Sow in Cool Weather",
+            "bullets": [
+              "Spring and autumn are best",
+              "Heat turns leaves bitter"
+            ]
+          },
+          {
+            "label": "Sow Shallow",
+            "bullets": [
+              "Barely cover the seed",
+              "Light helps it germinate"
+            ]
+          },
+          {
+            "label": "Give Light Shade",
+            "bullets": [
+              "Afternoon shade in summer",
+              "Shade delays bolting"
+            ]
+          },
+          {
+            "label": "Keep Soil Damp",
+            "bullets": [
+              "Shallow roots dry out fast",
+              "Water little and often"
+            ]
+          },
+          {
+            "label": "Thin Early",
+            "bullets": [
+              "Thin to a hand's width",
+              "Crowding gives small heads"
+            ]
+          },
+          {
+            "label": "Feed Lightly",
+            "bullets": [
+              "Compost is usually enough",
+              "Leafy crops want nitrogen"
+            ]
+          },
+          {
+            "label": "Cut, Don't Pull",
+            "bullets": [
+              "Take outer leaves only",
+              "The centre keeps growing"
+            ]
+          },
+          {
+            "label": "Pull at Bolting",
+            "bullets": [
+              "A tall stem means bitter",
+              "Pull it and sow again"
+            ]
+          }
+        ]
+      },
+      "es": {
+        "slug": "como-cultivar-lechuga",
+        "title": "Cómo Cultivar Lechuga sin que Amargue",
+        "eyebrow": "Guía para principiantes",
+        "chartTitle": "Cómo cultivar lechuga",
+        "description": "Ocho pasos para tener hoja de ensalada continua, y los errores de calor y calendario que la amargan de un día para otro.",
+        "pinDescription": "Cómo cultivar lechuga que no amargue: siembra poco y a menudo, dale sombra por la tarde en verano, mantén la tierra húmeda y corta las hojas de fuera.",
+        "cta": "Planifica tu huerto en Garden Pro Planner",
+        "proTip": {
+          "label": "Consejo",
+          "text": "Siembra una hilera corta cada dos semanas en vez de una larga de golpe. La lechuga pasa de perfecta a amarga en pocos días, así que conviene un goteo constante y no una cosecha que no puedas comer."
+        },
+        "steps": [
+          {
+            "label": "Siembra en Fresco",
+            "bullets": [
+              "Primavera y otoño son mejores",
+              "El calor amarga la hoja"
+            ]
+          },
+          {
+            "label": "Siembra Superficial",
+            "bullets": [
+              "Cubre la semilla apenas",
+              "La luz ayuda a germinar"
+            ]
+          },
+          {
+            "label": "Algo de Sombra",
+            "bullets": [
+              "Sombra por la tarde en verano",
+              "La sombra retrasa la flor"
+            ]
+          },
+          {
+            "label": "Tierra Húmeda",
+            "bullets": [
+              "La raíz es corta y se seca",
+              "Riega poco y a menudo"
+            ]
+          },
+          {
+            "label": "Aclara Pronto",
+            "bullets": [
+              "Deja un palmo entre plantas",
+              "Apretadas salen pequeñas"
+            ]
+          },
+          {
+            "label": "Abona Poco",
+            "bullets": [
+              "Con compost suele bastar",
+              "La hoja quiere nitrógeno"
+            ]
+          },
+          {
+            "label": "Corta, no Arranques",
+            "bullets": [
+              "Toma solo las hojas de fuera",
+              "El centro sigue creciendo"
+            ]
+          },
+          {
+            "label": "Arranca al Espigar",
+            "bullets": [
+              "Si sube un tallo, amarga",
+              "Arráncala y vuelve a sembrar"
+            ]
+          }
+        ]
+      },
+      "icons": [
+        {
+          "slug": "lettuce"
+        },
+        {
+          "slug": "seed-sowing-depth",
+          "subject": "a cross-section of soil showing a small seed planted just below the surface"
+        },
+        {
+          "slug": "shade-cloth-bed",
+          "subject": "a small garden bed of leafy greens partly shaded by a light shade cloth on hoops"
+        },
+        {
+          "slug": "watering-can-sprinkle"
+        },
+        {
+          "slug": "thinning-seedlings",
+          "subject": "fingers pulling one small seedling from a crowded row of seedlings"
+        },
+        {
+          "slug": "compost-and-feed",
+          "subject": "a bucket of dark compost beside a plain unlabelled paper sack of garden fertiliser"
+        },
+        {
+          "slug": "cut-lettuce-leaves",
+          "subject": "a hand cutting an outer leaf from a loose-leaf lettuce with scissors"
+        },
+        {
+          "slug": "bolting-lettuce",
+          "subject": "a lettuce plant that has bolted, with a tall flowering stem rising from the centre"
+        }
+      ],
+      "proTipIcon": {
+        "slug": "spaced-plants-row",
+        "subject": "three small leafy seedlings evenly spaced in a row in dark garden soil"
+      }
+    },
+    {
+      "key": "grow-peppers",
+      "category": "vegetables",
+      "tags": [
+        "vegetables",
+        "peppers",
+        "beginners",
+        "infographics"
+      ],
+      "pinBoard": "Vegetable Garden Layouts",
+      "pinKeywords": [
+        "how to grow peppers",
+        "pepper plant care",
+        "growing bell peppers",
+        "chilli plant tips"
+      ],
+      "en": {
+        "slug": "how-to-grow-peppers",
+        "title": "How to Grow Peppers That Actually Set Fruit",
+        "eyebrow": "Beginner-friendly guide",
+        "chartTitle": "How to grow peppers",
+        "description": "Warmth, feeding and the flower-drop problem, in eight steps for sweet peppers and chillies alike.",
+        "pinDescription": "How to grow peppers that set fruit: start seed early indoors, wait for warm soil, feed low-nitrogen once flowers open, and pinch the first blooms so the plant builds a frame first.",
+        "cta": "Track your peppers in Garden Pro Planner",
+        "proTip": {
+          "label": "Pro tip",
+          "text": "Peppers drop their flowers when nights stay hot or the plant is thirsty. Steady water and a little afternoon shade in a heatwave will save a crop that otherwise sets nothing."
+        },
+        "steps": [
+          {
+            "label": "Start Early Indoors",
+            "bullets": [
+              "Sow eight weeks before planting",
+              "They need a long season"
+            ]
+          },
+          {
+            "label": "Wait for Warm Soil",
+            "bullets": [
+              "Cold soil stalls them",
+              "Plant well after frost"
+            ]
+          },
+          {
+            "label": "Full Sun",
+            "bullets": [
+              "Six to eight hours daily",
+              "Sun drives the fruit"
+            ]
+          },
+          {
+            "label": "Pinch First Flowers",
+            "bullets": [
+              "Remove the earliest blooms",
+              "The plant builds a frame"
+            ]
+          },
+          {
+            "label": "Feed Low Nitrogen",
+            "bullets": [
+              "High nitrogen gives all leaf",
+              "Switch once flowers open"
+            ]
+          },
+          {
+            "label": "Water Steadily",
+            "bullets": [
+              "Dry spells drop the flowers",
+              "Never let it wilt"
+            ]
+          },
+          {
+            "label": "Support Heavy Plants",
+            "bullets": [
+              "Stake once fruit sets",
+              "Loaded branches snap"
+            ]
+          },
+          {
+            "label": "Pick to Keep Picking",
+            "bullets": [
+              "Green picks give more fruit",
+              "Leave them on to ripen red"
+            ]
+          }
+        ]
+      },
+      "es": {
+        "slug": "como-cultivar-pimientos",
+        "title": "Cómo Cultivar Pimientos que de Verdad Cuajen",
+        "eyebrow": "Guía para principiantes",
+        "chartTitle": "Cómo cultivar pimientos",
+        "description": "Calor, abonado y el problema de la caída de flor, en ocho pasos, para pimientos dulces y picantes.",
+        "pinDescription": "Cómo cultivar pimientos que cuajen: siembra pronto en interior, espera tierra templada, abona bajo en nitrógeno al abrir la flor y pellizca las primeras flores.",
+        "cta": "Sigue tus pimientos en Garden Pro Planner",
+        "proTip": {
+          "label": "Consejo",
+          "text": "El pimiento tira la flor cuando las noches son muy cálidas o le falta agua. Un riego constante y algo de sombra por la tarde en una ola de calor salvan una cosecha que si no se queda en nada."
+        },
+        "steps": [
+          {
+            "label": "Siembra Pronto Dentro",
+            "bullets": [
+              "Ocho semanas antes de plantar",
+              "Necesitan temporada larga"
+            ]
+          },
+          {
+            "label": "Espera Tierra Templada",
+            "bullets": [
+              "El frío los para en seco",
+              "Planta pasadas las heladas"
+            ]
+          },
+          {
+            "label": "Pleno Sol",
+            "bullets": [
+              "De seis a ocho horas diarias",
+              "El sol hace el fruto"
+            ]
+          },
+          {
+            "label": "Pellizca la Primera Flor",
+            "bullets": [
+              "Quita las flores más tempranas",
+              "La planta hace estructura"
+            ]
+          },
+          {
+            "label": "Poco Nitrógeno",
+            "bullets": [
+              "Mucho nitrógeno da solo hoja",
+              "Cambia al abrir la flor"
+            ]
+          },
+          {
+            "label": "Riego Constante",
+            "bullets": [
+              "La sequía tira la flor",
+              "Que nunca se marchite"
+            ]
+          },
+          {
+            "label": "Sujeta la Planta",
+            "bullets": [
+              "Pon tutor al cuajar",
+              "Las ramas cargadas parten"
+            ]
+          },
+          {
+            "label": "Recoge para Seguir",
+            "bullets": [
+              "Cogerlos verdes da más fruto",
+              "Déjalos para que enrojezcan"
+            ]
+          }
+        ]
+      },
+      "icons": [
+        {
+          "slug": "seed-tray-indoors",
+          "subject": "a small seed tray of young seedlings on a windowsill in soft daylight"
+        },
+        {
+          "slug": "sun-over-plant",
+          "subject": "a bright sun shining above a small leafy vegetable plant growing in soil"
+        },
+        {
+          "slug": "pepper-plant"
+        },
+        {
+          "slug": "pepper-flower",
+          "subject": "a close view of a small white pepper flower opening on a green stem"
+        },
+        {
+          "slug": "compost-and-feed",
+          "subject": "a bucket of dark compost beside a plain unlabelled paper sack of garden fertiliser"
+        },
+        {
+          "slug": "watering-can-sprinkle"
+        },
+        {
+          "slug": "staked-pepper",
+          "subject": "a pepper plant tied to a short wooden stake with soft twine"
+        },
+        {
+          "slug": "harvest-basket-peppers",
+          "subject": "a woven basket filled with freshly picked red and green peppers"
+        }
+      ],
+      "proTipIcon": {
+        "slug": "pepper-flower",
+        "subject": "a close view of a small white pepper flower opening on a green stem"
+      }
+    },
+    {
+      "key": "grow-zucchini",
+      "category": "vegetables",
+      "tags": [
+        "vegetables",
+        "squash",
+        "beginners",
+        "infographics"
+      ],
+      "pinBoard": "Vegetable Garden Layouts",
+      "pinKeywords": [
+        "how to grow zucchini",
+        "courgette growing tips",
+        "squash pollination",
+        "vegetable garden for beginners"
+      ],
+      "en": {
+        "slug": "how-to-grow-zucchini",
+        "title": "How to Grow Zucchini, and Why Yours Isn't Fruiting",
+        "eyebrow": "Beginner-friendly guide",
+        "chartTitle": "How to grow zucchini",
+        "description": "Spacing, pollination and picking size, plus the male-and-female flower problem behind most fruitless plants.",
+        "pinDescription": "How to grow zucchini: give each plant real space, water at the base to keep mildew off, hand-pollinate when nothing is setting, and pick small and often to keep it producing.",
+        "cta": "Plan your beds with Garden Pro Planner",
+        "proTip": {
+          "label": "Pro tip",
+          "text": "Early flowers are nearly all male, so nothing sets and it looks like failure. Wait a week or two for the female flowers, the ones with a tiny fruit behind the bloom, before worrying."
+        },
+        "steps": [
+          {
+            "label": "Give It Space",
+            "bullets": [
+              "One plant fills a square metre",
+              "Crowding brings mildew"
+            ]
+          },
+          {
+            "label": "Wait for Warmth",
+            "bullets": [
+              "Cold soil rots the seed",
+              "Sow after the last frost"
+            ]
+          },
+          {
+            "label": "Rich Soil",
+            "bullets": [
+              "Dig in plenty of compost",
+              "They are hungry plants"
+            ]
+          },
+          {
+            "label": "Water at the Base",
+            "bullets": [
+              "Wet leaves grow mildew",
+              "Water in the morning"
+            ]
+          },
+          {
+            "label": "Know the Flowers",
+            "bullets": [
+              "Male flowers sit on stems",
+              "Female ones have a tiny fruit"
+            ]
+          },
+          {
+            "label": "Hand-Pollinate",
+            "bullets": [
+              "Brush pollen into the female",
+              "Do it in the morning"
+            ]
+          },
+          {
+            "label": "Pick Small",
+            "bullets": [
+              "Best at finger to hand length",
+              "Marrows stop the plant"
+            ]
+          },
+          {
+            "label": "Pick Every Other Day",
+            "bullets": [
+              "Missed fruit slows production",
+              "Keep the plant cropping"
+            ]
+          }
+        ]
+      },
+      "es": {
+        "slug": "como-cultivar-calabacin",
+        "title": "Cómo Cultivar Calabacín y por qué el Tuyo no Cuaja",
+        "eyebrow": "Guía para principiantes",
+        "chartTitle": "Cómo cultivar calabacín",
+        "description": "Marco, polinización y tamaño de corte, más el asunto de las flores macho y hembra que explica casi todas las plantas sin fruto.",
+        "pinDescription": "Cómo cultivar calabacín: dale espacio de verdad, riega en la base para evitar el oídio, poliniza a mano si no cuaja y recoge pequeño y a menudo.",
+        "cta": "Planifica tu huerto en Garden Pro Planner",
+        "proTip": {
+          "label": "Consejo",
+          "text": "Las primeras flores son casi todas macho, así que no cuaja nada y parece un fracaso. Espera una o dos semanas a las flores hembra, las que llevan un frutito detrás, antes de preocuparte."
+        },
+        "steps": [
+          {
+            "label": "Dale Espacio",
+            "bullets": [
+              "Una planta ocupa un metro",
+              "Apretadas cogen oídio"
+            ]
+          },
+          {
+            "label": "Espera el Calor",
+            "bullets": [
+              "En frío la semilla se pudre",
+              "Siembra pasadas las heladas"
+            ]
+          },
+          {
+            "label": "Tierra Rica",
+            "bullets": [
+              "Añade compost en cantidad",
+              "Son plantas muy exigentes"
+            ]
+          },
+          {
+            "label": "Riega en la Base",
+            "bullets": [
+              "La hoja mojada coge oídio",
+              "Riega por la mañana"
+            ]
+          },
+          {
+            "label": "Distingue las Flores",
+            "bullets": [
+              "La macho va en un tallo",
+              "La hembra lleva un frutito"
+            ]
+          },
+          {
+            "label": "Poliniza a Mano",
+            "bullets": [
+              "Pasa polen a la flor hembra",
+              "Hazlo por la mañana"
+            ]
+          },
+          {
+            "label": "Recoge Pequeño",
+            "bullets": [
+              "Mejor de un palmo o menos",
+              "Los grandes paran la planta"
+            ]
+          },
+          {
+            "label": "Revisa Cada Dos Días",
+            "bullets": [
+              "Un fruto olvidado la frena",
+              "Así sigue produciendo"
+            ]
+          }
+        ]
+      },
+      "icons": [
+        {
+          "slug": "zucchini-plant",
+          "subject": "a zucchini plant with large lobed leaves and one dark green fruit at its base"
+        },
+        {
+          "slug": "seedling-emerging",
+          "subject": "a single seedling with two seed leaves emerging from dark garden soil"
+        },
+        {
+          "slug": "compost-and-feed",
+          "subject": "a bucket of dark compost beside a plain unlabelled paper sack of garden fertiliser"
+        },
+        {
+          "slug": "watering-can-sprinkle"
+        },
+        {
+          "slug": "squash-male-flower",
+          "subject": "a bright yellow squash flower open on a plain slender stem"
+        },
+        {
+          "slug": "hand-pollinating",
+          "subject": "a small soft brush touching the centre of a yellow squash flower"
+        },
+        {
+          "slug": "zucchini-harvest",
+          "subject": "two small dark green zucchini freshly cut, one with the flower still attached"
+        },
+        {
+          "slug": "harvest-basket-tomatoes",
+          "subject": "a woven basket filled with freshly picked garden vegetables"
+        }
+      ],
+      "proTipIcon": {
+        "slug": "squash-male-flower",
+        "subject": "a bright yellow squash flower open on a plain slender stem"
+      }
+    },
+    {
+      "key": "grow-green-beans",
+      "category": "vegetables",
+      "tags": [
+        "vegetables",
+        "beans",
+        "beginners",
+        "infographics"
+      ],
+      "pinBoard": "Vegetable Garden Layouts",
+      "pinKeywords": [
+        "how to grow green beans",
+        "bush beans vs pole beans",
+        "vegetable garden for beginners",
+        "growing beans from seed"
+      ],
+      "en": {
+        "slug": "how-to-grow-green-beans",
+        "title": "How to Grow Green Beans: Bush or Pole, in 8 Steps",
+        "eyebrow": "Beginner-friendly guide",
+        "chartTitle": "How to grow green beans",
+        "description": "Which type to plant, why beans hate transplanting, and the picking habit that keeps a plant cropping for weeks.",
+        "pinDescription": "How to grow green beans: sow direct in warm soil, skip the nitrogen feed because beans make their own, and pick every couple of days to keep the plant producing.",
+        "cta": "Plan your rows in Garden Pro Planner",
+        "proTip": {
+          "label": "Pro tip",
+          "text": "Beans fix their own nitrogen, so a rich nitrogen feed gives you a huge leafy plant and almost no pods. Compost at planting is all they need."
+        },
+        "steps": [
+          {
+            "label": "Bush or Pole",
+            "bullets": [
+              "Bush: quick, all at once",
+              "Pole: slower, crops for weeks"
+            ]
+          },
+          {
+            "label": "Sow Direct",
+            "bullets": [
+              "Beans resent transplanting",
+              "Sow where they will grow"
+            ]
+          },
+          {
+            "label": "Wait for Warm Soil",
+            "bullets": [
+              "Cold soil rots the seed",
+              "Sow after the last frost"
+            ]
+          },
+          {
+            "label": "Skip the Nitrogen",
+            "bullets": [
+              "Beans make their own",
+              "Nitrogen gives leaf, not pods"
+            ]
+          },
+          {
+            "label": "Support Pole Types",
+            "bullets": [
+              "Put the frame up first",
+              "Roots hate later digging"
+            ]
+          },
+          {
+            "label": "Water at Flowering",
+            "bullets": [
+              "Dry spells drop the flowers",
+              "Steady water while podding"
+            ]
+          },
+          {
+            "label": "Pick Young",
+            "bullets": [
+              "Pick before seeds bulge",
+              "Older pods turn stringy"
+            ]
+          },
+          {
+            "label": "Pick Every Other Day",
+            "bullets": [
+              "Left pods stop the plant",
+              "Regular picking keeps it going"
+            ]
+          }
+        ]
+      },
+      "es": {
+        "slug": "como-cultivar-judias-verdes",
+        "title": "Cómo Cultivar Judías Verdes: Mata Baja o de Enrame",
+        "eyebrow": "Guía para principiantes",
+        "chartTitle": "Cómo cultivar judías verdes",
+        "description": "Qué tipo plantar, por qué las judías odian el trasplante y el hábito de recolección que las mantiene produciendo semanas.",
+        "pinDescription": "Cómo cultivar judías verdes: siembra directa en tierra templada, no abones con nitrógeno porque ellas lo fijan solas, y recoge cada dos días.",
+        "cta": "Planifica tus hileras en Garden Pro Planner",
+        "proTip": {
+          "label": "Consejo",
+          "text": "Las judías fijan su propio nitrógeno, así que un abono rico en nitrógeno te da una planta enorme y casi ninguna vaina. Con compost al plantar sobra."
+        },
+        "steps": [
+          {
+            "label": "Baja o de Enrame",
+            "bullets": [
+              "Baja: rápida, todo de golpe",
+              "De enrame: lenta y larga"
+            ]
+          },
+          {
+            "label": "Siembra Directa",
+            "bullets": [
+              "No soportan el trasplante",
+              "Siembra en su sitio"
+            ]
+          },
+          {
+            "label": "Tierra Templada",
+            "bullets": [
+              "En frío la semilla se pudre",
+              "Siembra tras las heladas"
+            ]
+          },
+          {
+            "label": "Sin Nitrógeno",
+            "bullets": [
+              "Ellas lo fijan solas",
+              "El nitrógeno da hoja, no vaina"
+            ]
+          },
+          {
+            "label": "Sujeta las de Enrame",
+            "bullets": [
+              "Monta la estructura antes",
+              "La raíz odia que caves luego"
+            ]
+          },
+          {
+            "label": "Riega en Flor",
+            "bullets": [
+              "La sequía tira la flor",
+              "Riego constante al cuajar"
+            ]
+          },
+          {
+            "label": "Recoge Tiernas",
+            "bullets": [
+              "Antes de que abulte el grano",
+              "Las viejas salen fibrosas"
+            ]
+          },
+          {
+            "label": "Cada Dos Días",
+            "bullets": [
+              "Una vaina olvidada la para",
+              "Recoger seguido la mantiene"
+            ]
+          }
+        ]
+      },
+      "icons": [
+        {
+          "slug": "bush-beans"
+        },
+        {
+          "slug": "seed-sowing-depth",
+          "subject": "a cross-section of soil showing a small seed planted just below the surface"
+        },
+        {
+          "slug": "seedling-emerging",
+          "subject": "a single seedling with two seed leaves emerging from dark garden soil"
+        },
+        {
+          "slug": "compost-and-feed",
+          "subject": "a bucket of dark compost beside a plain unlabelled paper sack of garden fertiliser"
+        },
+        {
+          "slug": "bean-teepee",
+          "subject": "a simple wooden cane teepee with climbing bean vines growing up it"
+        },
+        {
+          "slug": "watering-can-sprinkle"
+        },
+        {
+          "slug": "green-bean-pods",
+          "subject": "a handful of slender fresh green bean pods"
+        },
+        {
+          "slug": "harvest-basket-beans",
+          "subject": "a woven basket filled with freshly picked green beans"
+        }
+      ],
+      "proTipIcon": {
+        "slug": "compost-and-feed",
+        "subject": "a bucket of dark compost beside a plain unlabelled paper sack of garden fertiliser"
+      }
+    },
+    {
+      "key": "grow-potatoes",
+      "category": "vegetables",
+      "tags": [
+        "vegetables",
+        "potatoes",
+        "beginners",
+        "infographics"
+      ],
+      "pinBoard": "Raised Bed Gardening",
+      "pinKeywords": [
+        "how to grow potatoes",
+        "growing potatoes in containers",
+        "seed potato chitting",
+        "potato hilling"
+      ],
+      "en": {
+        "slug": "how-to-grow-potatoes",
+        "title": "How to Grow Potatoes, Including the Hilling Everyone Skips",
+        "eyebrow": "Beginner-friendly guide",
+        "chartTitle": "How to grow potatoes",
+        "description": "Chitting, planting depth, and why mounding soil up the stems is what actually decides your yield.",
+        "pinDescription": "How to grow potatoes: chit the seed potatoes first, plant them deep, then hill soil up the stems as they grow because tubers form along the buried stem, not under the roots.",
+        "cta": "Plan your beds with Garden Pro Planner",
+        "proTip": {
+          "label": "Pro tip",
+          "text": "Tubers form along the buried stem, not below the roots. Every time you mound soil up a growing plant you add more stem for potatoes to form on, which is why hilling matters more than feeding."
+        },
+        "steps": [
+          {
+            "label": "Use Seed Potatoes",
+            "bullets": [
+              "Buy certified seed potatoes",
+              "Shop ones may carry disease"
+            ]
+          },
+          {
+            "label": "Chit Them First",
+            "bullets": [
+              "Sprout them in a light place",
+              "Short green shoots, not long"
+            ]
+          },
+          {
+            "label": "After the Frost",
+            "bullets": [
+              "Frost kills new shoots",
+              "Plant when soil warms"
+            ]
+          },
+          {
+            "label": "Plant Deep",
+            "bullets": [
+              "About a hand's depth",
+              "Eyes facing upward"
+            ]
+          },
+          {
+            "label": "Hill as They Grow",
+            "bullets": [
+              "Mound soil up the stems",
+              "More stem, more tubers"
+            ]
+          },
+          {
+            "label": "Keep Them Covered",
+            "bullets": [
+              "Light turns tubers green",
+              "Green potatoes are toxic"
+            ]
+          },
+          {
+            "label": "Water Steadily",
+            "bullets": [
+              "Most needed while flowering",
+              "Erratic water splits tubers"
+            ]
+          },
+          {
+            "label": "Harvest by Type",
+            "bullets": [
+              "New potatoes after flowering",
+              "Maincrop once tops die back"
+            ]
+          }
+        ]
+      },
+      "es": {
+        "slug": "como-cultivar-patatas",
+        "title": "Cómo Cultivar Patatas y el Aporcado que Todos se Saltan",
+        "eyebrow": "Guía para principiantes",
+        "chartTitle": "Cómo cultivar patatas",
+        "description": "Pregerminado, profundidad y por qué amontonar tierra sobre el tallo es lo que decide de verdad la cosecha.",
+        "pinDescription": "Cómo cultivar patatas: pregermina la simiente, plántala honda y aporca tierra sobre los tallos, porque los tubérculos salen del tallo enterrado y no bajo la raíz.",
+        "cta": "Planifica tu huerto en Garden Pro Planner",
+        "proTip": {
+          "label": "Consejo",
+          "text": "Los tubérculos se forman a lo largo del tallo enterrado, no debajo de la raíz. Cada vez que aporcas tierra añades más tallo donde pueden formarse patatas, y por eso aporcar importa más que abonar."
+        },
+        "steps": [
+          {
+            "label": "Usa Patata de Siembra",
+            "bullets": [
+              "Compra simiente certificada",
+              "La de tienda puede traer plagas"
+            ]
+          },
+          {
+            "label": "Pregerminala",
+            "bullets": [
+              "Brótala en sitio con luz",
+              "Brotes cortos y verdes"
+            ]
+          },
+          {
+            "label": "Espera a las Heladas",
+            "bullets": [
+              "La helada quema el brote",
+              "Planta con tierra templada"
+            ]
+          },
+          {
+            "label": "Planta Honda",
+            "bullets": [
+              "Un palmo de profundidad",
+              "Los brotes hacia arriba"
+            ]
+          },
+          {
+            "label": "Aporca al Crecer",
+            "bullets": [
+              "Amontona tierra en el tallo",
+              "Más tallo, más tubérculos"
+            ]
+          },
+          {
+            "label": "Mantenlas Cubiertas",
+            "bullets": [
+              "La luz las pone verdes",
+              "La patata verde es tóxica"
+            ]
+          },
+          {
+            "label": "Riego Constante",
+            "bullets": [
+              "Sobre todo en floración",
+              "El riego irregular las parte"
+            ]
+          },
+          {
+            "label": "Cosecha según Tipo",
+            "bullets": [
+              "Nuevas tras la floración",
+              "Tardías al secarse la mata"
+            ]
+          }
+        ]
+      },
+      "icons": [
+        {
+          "slug": "seed-potatoes",
+          "subject": "several seed potatoes with short green sprouts, resting in an open egg tray"
+        },
+        {
+          "slug": "chitting-potato",
+          "subject": "a single seed potato with short green shoots emerging from its eyes"
+        },
+        {
+          "slug": "sun-over-plant",
+          "subject": "a bright sun shining above a small leafy vegetable plant growing in soil"
+        },
+        {
+          "slug": "planting-hole",
+          "subject": "a trench dug in dark garden soil with a spade resting beside it"
+        },
+        {
+          "slug": "hilling-potatoes",
+          "subject": "a cross-section showing soil mounded up around a potato plant stem with tubers forming along it"
+        },
+        {
+          "slug": "mulched-plant",
+          "subject": "a young vegetable plant surrounded by a ring of brown wood-chip mulch on dark soil"
+        },
+        {
+          "slug": "watering-can-sprinkle"
+        },
+        {
+          "slug": "harvested-potatoes",
+          "subject": "a cluster of freshly dug potatoes with soil still on their skins"
+        }
+      ],
+      "proTipIcon": {
+        "slug": "hilling-potatoes",
+        "subject": "a cross-section showing soil mounded up around a potato plant stem with tubers forming along it"
+      }
+    },
+    {
+      "key": "grow-cucumbers",
+      "category": "vegetables",
+      "tags": [
+        "vegetables",
+        "cucumbers",
+        "beginners",
+        "infographics"
+      ],
+      "pinBoard": "Container & Small Space Gardening",
+      "pinKeywords": [
+        "how to grow cucumbers",
+        "cucumber trellis ideas",
+        "why cucumbers taste bitter",
+        "vertical vegetable garden"
+      ],
+      "en": {
+        "slug": "how-to-grow-cucumbers",
+        "title": "How to Grow Cucumbers Up a Trellis, Not Across the Bed",
+        "eyebrow": "Beginner-friendly guide",
+        "chartTitle": "How to grow cucumbers",
+        "description": "Growing them vertically, keeping the water steady, and the stress that makes a cucumber turn bitter.",
+        "pinDescription": "How to grow cucumbers: train them up a trellis to save space and keep fruit clean, water steadily because dry spells turn them bitter, and pick young and often.",
+        "cta": "Plan a vertical bed in Garden Pro Planner",
+        "proTip": {
+          "label": "Pro tip",
+          "text": "Bitterness comes from stress, usually uneven watering or heat. A cucumber that dried out once will taste bitter no matter what you do afterwards, so consistency beats rescue."
+        },
+        "steps": [
+          {
+            "label": "Grow Them Up",
+            "bullets": [
+              "A trellis saves bed space",
+              "Fruit stays clean and straight"
+            ]
+          },
+          {
+            "label": "Wait for Warm Soil",
+            "bullets": [
+              "They stall in the cold",
+              "Sow after the last frost"
+            ]
+          },
+          {
+            "label": "Full Sun",
+            "bullets": [
+              "Six or more hours daily",
+              "Sun drives the growth"
+            ]
+          },
+          {
+            "label": "Rich, Draining Soil",
+            "bullets": [
+              "Dig in plenty of compost",
+              "They are hungry and thirsty"
+            ]
+          },
+          {
+            "label": "Water Steadily",
+            "bullets": [
+              "Uneven water turns them bitter",
+              "Never let the plant wilt"
+            ]
+          },
+          {
+            "label": "Mulch the Roots",
+            "bullets": [
+              "Keeps moisture even",
+              "Also keeps the soil cooler"
+            ]
+          },
+          {
+            "label": "Water the Soil",
+            "bullets": [
+              "Wet leaves get mildew",
+              "Water in the morning"
+            ]
+          },
+          {
+            "label": "Pick Young and Often",
+            "bullets": [
+              "Small ones taste best",
+              "Big ones stop the plant"
+            ]
+          }
+        ]
+      },
+      "es": {
+        "slug": "como-cultivar-pepinos",
+        "title": "Cómo Cultivar Pepinos en Vertical y no por el Suelo",
+        "eyebrow": "Guía para principiantes",
+        "chartTitle": "Cómo cultivar pepinos",
+        "description": "Cultivarlos en espaldera, mantener el riego constante y el estrés que hace que un pepino amargue.",
+        "pinDescription": "Cómo cultivar pepinos: guíalos por una espaldera para ganar sitio y mantener el fruto limpio, riega de forma constante porque la sequía los amarga, y recoge jóvenes.",
+        "cta": "Diseña un bancal vertical en Garden Pro Planner",
+        "proTip": {
+          "label": "Consejo",
+          "text": "El amargor viene del estrés, casi siempre riego irregular o calor. Un pepino que se secó una vez amargará hagas lo que hagas después, así que vale más la constancia que el rescate."
+        },
+        "steps": [
+          {
+            "label": "Guíalos Hacia Arriba",
+            "bullets": [
+              "La espaldera ahorra sitio",
+              "El fruto sale limpio y recto"
+            ]
+          },
+          {
+            "label": "Tierra Templada",
+            "bullets": [
+              "En frío se quedan parados",
+              "Siembra tras las heladas"
+            ]
+          },
+          {
+            "label": "Pleno Sol",
+            "bullets": [
+              "Seis horas o más al día",
+              "El sol empuja la planta"
+            ]
+          },
+          {
+            "label": "Tierra Rica que Drene",
+            "bullets": [
+              "Añade compost en cantidad",
+              "Comen y beben mucho"
+            ]
+          },
+          {
+            "label": "Riego Constante",
+            "bullets": [
+              "El riego irregular amarga",
+              "Que no se marchite nunca"
+            ]
+          },
+          {
+            "label": "Acolcha la Base",
+            "bullets": [
+              "Mantiene la humedad estable",
+              "Y la tierra más fresca"
+            ]
+          },
+          {
+            "label": "Riega la Tierra",
+            "bullets": [
+              "La hoja mojada coge oídio",
+              "Riega por la mañana"
+            ]
+          },
+          {
+            "label": "Recoge Jóvenes",
+            "bullets": [
+              "Los pequeños saben mejor",
+              "Los grandes paran la planta"
+            ]
+          }
+        ]
+      },
+      "icons": [
+        {
+          "slug": "cucumber-vine",
+          "subject": "a cucumber vine with broad leaves, a curling tendril and one dark green cucumber hanging"
+        },
+        {
+          "slug": "cucumber-trellis",
+          "subject": "cucumber vines climbing a simple wooden lattice trellis"
+        },
+        {
+          "slug": "sun-over-plant",
+          "subject": "a bright sun shining above a small leafy vegetable plant growing in soil"
+        },
+        {
+          "slug": "compost-and-feed",
+          "subject": "a bucket of dark compost beside a plain unlabelled paper sack of garden fertiliser"
+        },
+        {
+          "slug": "watering-can-sprinkle"
+        },
+        {
+          "slug": "mulched-plant",
+          "subject": "a young vegetable plant surrounded by a ring of brown wood-chip mulch on dark soil"
+        },
+        {
+          "slug": "wet-leaves-evening"
+        },
+        {
+          "slug": "harvest-basket-cucumbers",
+          "subject": "a woven basket filled with freshly picked green cucumbers"
+        }
+      ],
+      "proTipIcon": {
+        "slug": "cucumber-vine",
+        "subject": "a cucumber vine with broad leaves, a curling tendril and one dark green cucumber hanging"
+      }
+    },
+    {
+      "key": "grow-blueberries",
+      "category": "fruit",
+      "tags": [
+        "fruit",
+        "blueberries",
+        "beginners",
+        "infographics"
+      ],
+      "pinBoard": "Container & Small Space Gardening",
+      "pinKeywords": [
+        "how to grow blueberries",
+        "blueberry bush care",
+        "acid loving plants",
+        "growing berries in pots"
+      ],
+      "en": {
+        "slug": "how-to-grow-blueberries",
+        "title": "How to Grow Blueberries: It All Comes Down to Soil pH",
+        "eyebrow": "Beginner-friendly guide",
+        "chartTitle": "How to grow blueberries",
+        "description": "Acid soil, two varieties for pollination, and the shallow roots that make watering and mulch matter more than feeding.",
+        "pinDescription": "How to grow blueberries: they need genuinely acid soil, two different varieties for a decent crop, rainwater rather than tap water, and mulch over their very shallow roots.",
+        "cta": "Track your fruit in Garden Pro Planner",
+        "proTip": {
+          "label": "Pro tip",
+          "text": "Yellow leaves with green veins almost always mean the soil is not acid enough rather than short of feed. Adding fertiliser at that point makes it worse, not better."
+        },
+        "steps": [
+          {
+            "label": "Give Them Acid Soil",
+            "bullets": [
+              "They need acid conditions",
+              "Ordinary soil turns leaves yellow"
+            ]
+          },
+          {
+            "label": "Use Ericaceous Compost",
+            "bullets": [
+              "Best grown in a large pot",
+              "Easier than changing a bed"
+            ]
+          },
+          {
+            "label": "Plant Two Varieties",
+            "bullets": [
+              "Two types crop far better",
+              "Pick ones that overlap"
+            ]
+          },
+          {
+            "label": "Full Sun",
+            "bullets": [
+              "Sun makes sweeter fruit",
+              "Some shade is tolerated"
+            ]
+          },
+          {
+            "label": "Water with Rainwater",
+            "bullets": [
+              "Tap water raises the pH",
+              "Collect it if you can"
+            ]
+          },
+          {
+            "label": "Mulch the Surface",
+            "bullets": [
+              "Roots sit very shallow",
+              "Mulch keeps them damp"
+            ]
+          },
+          {
+            "label": "Feed Ericaceous Only",
+            "bullets": [
+              "Ordinary feed harms them",
+              "Feed in spring only"
+            ]
+          },
+          {
+            "label": "Prune Old Wood",
+            "bullets": [
+              "Best fruit on young stems",
+              "Cut the oldest at the base"
+            ]
+          }
+        ]
+      },
+      "es": {
+        "slug": "como-cultivar-arandanos",
+        "title": "Cómo Cultivar Arándanos: Todo Depende del pH del Suelo",
+        "eyebrow": "Guía para principiantes",
+        "chartTitle": "Cómo cultivar arándanos",
+        "description": "Suelo ácido, dos variedades para polinizar y unas raíces superficiales que hacen que el riego y el acolchado importen más que el abono.",
+        "pinDescription": "Cómo cultivar arándanos: necesitan suelo realmente ácido, dos variedades distintas para una buena cosecha, agua de lluvia en vez de agua del grifo y acolchado sobre sus raíces superficiales.",
+        "cta": "Sigue tu fruta en Garden Pro Planner",
+        "proTip": {
+          "label": "Consejo",
+          "text": "Las hojas amarillas con nervios verdes casi siempre significan que la tierra no es bastante ácida, y no que falte abono. Echar fertilizante en ese momento empeora la cosa."
+        },
+        "steps": [
+          {
+            "label": "Suelo Ácido",
+            "bullets": [
+              "Necesitan tierra ácida",
+              "En tierra normal amarillean"
+            ]
+          },
+          {
+            "label": "Sustrato para Acidófilas",
+            "bullets": [
+              "Mejor en maceta grande",
+              "Más fácil que cambiar el bancal"
+            ]
+          },
+          {
+            "label": "Planta Dos Variedades",
+            "bullets": [
+              "Dos tipos cuajan mucho mejor",
+              "Que coincidan en floración"
+            ]
+          },
+          {
+            "label": "Pleno Sol",
+            "bullets": [
+              "El sol da fruta más dulce",
+              "Toleran algo de sombra"
+            ]
+          },
+          {
+            "label": "Riega con Lluvia",
+            "bullets": [
+              "El agua del grifo sube el pH",
+              "Recógela si puedes"
+            ]
+          },
+          {
+            "label": "Acolcha la Superficie",
+            "bullets": [
+              "La raíz es muy superficial",
+              "El acolchado la mantiene húmeda"
+            ]
+          },
+          {
+            "label": "Abono para Acidófilas",
+            "bullets": [
+              "El abono normal les daña",
+              "Abona solo en primavera"
+            ]
+          },
+          {
+            "label": "Poda la Madera Vieja",
+            "bullets": [
+              "La mejor fruta va en ramas jóvenes",
+              "Corta las más viejas a ras"
+            ]
+          }
+        ]
+      },
+      "icons": [
+        {
+          "slug": "blueberry-bush",
+          "subject": "a blueberry bush branch with clusters of ripe blue berries and green leaves"
+        },
+        {
+          "slug": "pot-with-drainage",
+          "subject": "a terracotta pot filled with loose dark potting soil, drainage holes visible at the base"
+        },
+        {
+          "slug": "spaced-plants-row",
+          "subject": "three small strawberry plants evenly spaced in a row in dark garden soil"
+        },
+        {
+          "slug": "sun-over-plant",
+          "subject": "a bright sun shining above a small leafy vegetable plant growing in soil"
+        },
+        {
+          "slug": "rainwater-butt",
+          "subject": "a simple garden water butt collecting rainwater, with a watering can beside it"
+        },
+        {
+          "slug": "mulched-plant",
+          "subject": "a young vegetable plant surrounded by a ring of brown wood-chip mulch on dark soil"
+        },
+        {
+          "slug": "compost-and-feed",
+          "subject": "a bucket of dark compost beside a plain unlabelled paper sack of garden fertiliser"
+        },
+        {
+          "slug": "pruning-shears-tomato",
+          "subject": "a pair of pruning shears cutting a woody stem on a fruit bush"
+        }
+      ],
+      "proTipIcon": {
+        "slug": "blueberry-bush",
+        "subject": "a blueberry bush branch with clusters of ripe blue berries and green leaves"
+      }
+    },
+    {
+      "key": "grow-mint",
+      "category": "herbs",
+      "tags": [
+        "herbs",
+        "mint",
+        "container-gardening",
+        "infographics"
+      ],
+      "pinBoard": "Container & Small Space Gardening",
+      "pinKeywords": [
+        "how to grow mint",
+        "mint in containers",
+        "herb garden for beginners",
+        "stop mint spreading"
+      ],
+      "en": {
+        "slug": "how-to-grow-mint",
+        "title": "How to Grow Mint Without It Taking Over the Garden",
+        "eyebrow": "Beginner-friendly guide",
+        "chartTitle": "How to grow mint",
+        "description": "Keeping mint contained, keeping it tender, and the one thing to do the day you bring it home.",
+        "pinDescription": "How to grow mint: keep it in a pot because it spreads by underground runners and will take a bed in one season, pinch it often, and cut it hard when it gets woody.",
+        "cta": "Plan your herb bed in Garden Pro Planner",
+        "proTip": {
+          "label": "Pro tip",
+          "text": "If you want mint in a bed, sink the whole pot into the soil with the rim standing proud. You get the look of a planted clump and the roots still cannot escape sideways."
+        },
+        "steps": [
+          {
+            "label": "Keep It Potted",
+            "bullets": [
+              "It spreads by underground runners",
+              "A bed is lost in one season"
+            ]
+          },
+          {
+            "label": "Part Shade Is Fine",
+            "bullets": [
+              "Full sun is not required",
+              "Shade keeps leaves tender"
+            ]
+          },
+          {
+            "label": "Keep Soil Damp",
+            "bullets": [
+              "Mint wilts fast when dry",
+              "It recovers if watered soon"
+            ]
+          },
+          {
+            "label": "Pinch Often",
+            "bullets": [
+              "Pinch tips to keep it bushy",
+              "Stops it going leggy"
+            ]
+          },
+          {
+            "label": "Remove Flowers",
+            "bullets": [
+              "Flowering thins the flavour",
+              "Pinch buds as they form"
+            ]
+          },
+          {
+            "label": "Cut It Back Hard",
+            "bullets": [
+              "Cut low when it gets woody",
+              "It regrows from the base"
+            ]
+          },
+          {
+            "label": "Divide Every Two Years",
+            "bullets": [
+              "Pots exhaust themselves",
+              "Split and repot in spring"
+            ]
+          },
+          {
+            "label": "Harvest from the Top",
+            "bullets": [
+              "Take the top few leaves",
+              "Never strip a whole stem"
+            ]
+          }
+        ]
+      },
+      "es": {
+        "slug": "como-cultivar-menta",
+        "title": "Cómo Cultivar Menta sin que Invada el Jardín",
+        "eyebrow": "Guía para principiantes",
+        "chartTitle": "Cómo cultivar menta",
+        "description": "Cómo contenerla, cómo mantener la hoja tierna y lo único que hay que hacer el día que llega a casa.",
+        "pinDescription": "Cómo cultivar menta: tenla en maceta porque se extiende por estolones subterráneos y se come un bancal en una temporada, pellízcala a menudo y córtala a fondo cuando se haga leñosa.",
+        "cta": "Planifica tus hierbas en Garden Pro Planner",
+        "proTip": {
+          "label": "Consejo",
+          "text": "Si la quieres en el bancal, entierra la maceta entera dejando el borde por encima de la tierra. Tienes el aspecto de una mata plantada y la raíz sigue sin poder escaparse de lado."
+        },
+        "steps": [
+          {
+            "label": "Tenla en Maceta",
+            "bullets": [
+              "Se extiende por estolones",
+              "Se come un bancal en un año"
+            ]
+          },
+          {
+            "label": "Media Sombra Vale",
+            "bullets": [
+              "No necesita pleno sol",
+              "La sombra da hoja tierna"
+            ]
+          },
+          {
+            "label": "Tierra Húmeda",
+            "bullets": [
+              "Se marchita rápido en seco",
+              "Se recupera si riegas pronto"
+            ]
+          },
+          {
+            "label": "Pellizca a Menudo",
+            "bullets": [
+              "Pellizca las puntas",
+              "Evita que se estire"
+            ]
+          },
+          {
+            "label": "Quita las Flores",
+            "bullets": [
+              "Al florecer pierde sabor",
+              "Pellizca los botones"
+            ]
+          },
+          {
+            "label": "Córtala a Fondo",
+            "bullets": [
+              "Corta baja si se hace leñosa",
+              "Rebrota desde la base"
+            ]
+          },
+          {
+            "label": "Divide Cada Dos Años",
+            "bullets": [
+              "La maceta se agota",
+              "Divide y trasplanta en primavera"
+            ]
+          },
+          {
+            "label": "Corta por Arriba",
+            "bullets": [
+              "Toma las hojas altas",
+              "Nunca peles un tallo entero"
+            ]
+          }
+        ]
+      },
+      "icons": [
+        {
+          "slug": "mint-in-pot",
+          "subject": "a healthy mint plant growing in a terracotta pot, bright green toothed leaves"
+        },
+        {
+          "slug": "mint-runners",
+          "subject": "a cross-section of soil showing mint spreading sideways by pale underground runners"
+        },
+        {
+          "slug": "watering-can-sprinkle"
+        },
+        {
+          "slug": "pinching-basil-tip",
+          "subject": "fingers pinching the growing tip from a basil stem just above a pair of leaves"
+        },
+        {
+          "slug": "mint-flower",
+          "subject": "a mint stem with a small pale purple flower spike at its tip"
+        },
+        {
+          "slug": "pruning-shears-tomato",
+          "subject": "a pair of pruning shears trimming a sucker from a tomato plant stem"
+        },
+        {
+          "slug": "dividing-plant",
+          "subject": "a clump of herb roots being pulled apart into two sections by hand"
+        },
+        {
+          "slug": "mint-harvest-bunch",
+          "subject": "a small bunch of freshly cut mint sprigs tied together"
+        }
+      ],
+      "proTipIcon": {
+        "slug": "mint-in-pot",
+        "subject": "a healthy mint plant growing in a terracotta pot, bright green toothed leaves"
+      }
+    },
+    {
+      "key": "grow-marigolds",
+      "category": "flowers",
+      "tags": [
+        "flowers",
+        "marigolds",
+        "companion-planting",
+        "infographics"
+      ],
+      "pinBoard": "Companion Planting",
+      "pinKeywords": [
+        "how to grow marigolds",
+        "marigolds in vegetable garden",
+        "companion planting flowers",
+        "deadheading marigolds"
+      ],
+      "en": {
+        "slug": "how-to-grow-marigolds",
+        "title": "How to Grow Marigolds, the Easiest Flower in the Veg Bed",
+        "eyebrow": "Beginner-friendly guide",
+        "chartTitle": "How to grow marigolds",
+        "description": "Sowing, spacing and the deadheading habit that turns a few weeks of flowers into a whole season.",
+        "pinDescription": "How to grow marigolds: sow direct after frost, give them poor soil rather than rich, and deadhead every few days because a marigold that sets seed stops flowering.",
+        "cta": "Plan your companions in Garden Pro Planner",
+        "proTip": {
+          "label": "Pro tip",
+          "text": "Rich soil and heavy feeding give you a big leafy marigold with few flowers. They bloom hardest in poor ground, which makes them ideal for the awkward corners of a vegetable bed."
+        },
+        "steps": [
+          {
+            "label": "Sow After Frost",
+            "bullets": [
+              "They will not take cold",
+              "Sow direct or start indoors"
+            ]
+          },
+          {
+            "label": "Full Sun",
+            "bullets": [
+              "Six or more hours daily",
+              "Shade means few flowers"
+            ]
+          },
+          {
+            "label": "Poor Soil Is Fine",
+            "bullets": [
+              "Rich soil gives leaf, not bloom",
+              "Skip the fertiliser"
+            ]
+          },
+          {
+            "label": "Do Not Overwater",
+            "bullets": [
+              "Let the surface dry",
+              "Soggy roots rot"
+            ]
+          },
+          {
+            "label": "Space for Airflow",
+            "bullets": [
+              "Crowding brings mildew",
+              "Give each plant room"
+            ]
+          },
+          {
+            "label": "Deadhead Often",
+            "bullets": [
+              "Snip spent blooms every few days",
+              "Seed setting stops flowering"
+            ]
+          },
+          {
+            "label": "Plant Among Veg",
+            "bullets": [
+              "They edge a bed well",
+              "Popular with beneficial insects"
+            ]
+          },
+          {
+            "label": "Save the Seed",
+            "bullets": [
+              "Let a few heads dry",
+              "Free plants for next year"
+            ]
+          }
+        ]
+      },
+      "es": {
+        "slug": "como-cultivar-tagetes",
+        "title": "Cómo Cultivar Tagetes, la Flor más Fácil del Huerto",
+        "eyebrow": "Guía para principiantes",
+        "chartTitle": "Cómo cultivar tagetes",
+        "description": "Siembra, marco y el hábito de quitar flores secas que convierte unas semanas de flor en toda una temporada.",
+        "pinDescription": "Cómo cultivar tagetes: siembra tras las heladas, dales tierra pobre en vez de rica y quita las flores secas cada pocos días, porque si granan dejan de florecer.",
+        "cta": "Planifica asociaciones en Garden Pro Planner",
+        "proTip": {
+          "label": "Consejo",
+          "text": "La tierra rica y mucho abono te dan una planta frondosa con pocas flores. Florecen más en suelo pobre, lo que las hace ideales para los rincones difíciles del huerto."
+        },
+        "steps": [
+          {
+            "label": "Siembra tras Heladas",
+            "bullets": [
+              "No aguantan el frío",
+              "Directa o en semillero"
+            ]
+          },
+          {
+            "label": "Pleno Sol",
+            "bullets": [
+              "Seis horas o más al día",
+              "A la sombra dan poca flor"
+            ]
+          },
+          {
+            "label": "Tierra Pobre Vale",
+            "bullets": [
+              "La rica da hoja, no flor",
+              "No hace falta abonar"
+            ]
+          },
+          {
+            "label": "No Riegues de Más",
+            "bullets": [
+              "Deja secar la superficie",
+              "La raíz encharcada se pudre"
+            ]
+          },
+          {
+            "label": "Espacio para Ventilar",
+            "bullets": [
+              "Apretadas cogen oídio",
+              "Dale sitio a cada planta"
+            ]
+          },
+          {
+            "label": "Quita Flores Secas",
+            "bullets": [
+              "Córtalas cada pocos días",
+              "Si granan dejan de florecer"
+            ]
+          },
+          {
+            "label": "Plántalas en el Huerto",
+            "bullets": [
+              "Van bien de borde",
+              "Atraen insectos útiles"
+            ]
+          },
+          {
+            "label": "Guarda Semilla",
+            "bullets": [
+              "Deja secar unas cabezas",
+              "Plantas gratis el año que viene"
+            ]
+          }
+        ]
+      },
+      "icons": [
+        {
+          "slug": "marigold-flower",
+          "subject": "a bright orange marigold flower with layered petals and green feathery foliage"
+        },
+        {
+          "slug": "sun-over-plant",
+          "subject": "a bright sun shining above a small leafy vegetable plant growing in soil"
+        },
+        {
+          "slug": "loose-deep-soil",
+          "subject": "a garden fork lifting loose crumbly dark soil in a bed"
+        },
+        {
+          "slug": "watering-can-sprinkle"
+        },
+        {
+          "slug": "spaced-plants-row",
+          "subject": "three small strawberry plants evenly spaced in a row in dark garden soil"
+        },
+        {
+          "slug": "deadheading-flower",
+          "subject": "fingers pinching a faded flower head from a stem"
+        },
+        {
+          "slug": "marigold-in-veg-bed",
+          "subject": "a row of orange marigolds growing along the edge of a vegetable bed"
+        },
+        {
+          "slug": "seed-saving-envelope",
+          "subject": "a small pile of dried flower seeds beside a plain unlabelled paper envelope"
+        }
+      ],
+      "proTipIcon": {
+        "slug": "marigold-flower",
+        "subject": "a bright orange marigold flower with layered petals and green feathery foliage"
+      }
+    },
+    {
+      "key": "grow-rosemary",
+      "category": "herbs",
+      "tags": [
+        "herbs",
+        "rosemary",
+        "container-gardening",
+        "infographics"
+      ],
+      "pinBoard": "Container & Small Space Gardening",
+      "pinKeywords": [
+        "how to grow rosemary",
+        "rosemary plant care",
+        "mediterranean herbs",
+        "herbs in pots"
+      ],
+      "en": {
+        "slug": "how-to-grow-rosemary",
+        "title": "How to Grow Rosemary: Almost Everyone Waters It Too Much",
+        "eyebrow": "Beginner-friendly guide",
+        "chartTitle": "How to grow rosemary",
+        "description": "Drainage, sun and restraint. Rosemary dies of kindness more often than neglect.",
+        "pinDescription": "How to grow rosemary: give it gritty free-draining soil and full sun, water only when the soil is properly dry, and never feed it richly. Overwatering kills far more plants than cold does.",
+        "cta": "Plan your herb bed in Garden Pro Planner",
+        "proTip": {
+          "label": "Pro tip",
+          "text": "A rosemary that suddenly goes grey and brittle has usually drowned, not dried out. The roots rot in wet soil and the top dies afterwards, which is why it looks like thirst."
+        },
+        "steps": [
+          {
+            "label": "Full Sun",
+            "bullets": [
+              "Six or more hours daily",
+              "Shade makes it sparse"
+            ]
+          },
+          {
+            "label": "Gritty, Draining Soil",
+            "bullets": [
+              "Add grit or sand",
+              "It hates sitting wet"
+            ]
+          },
+          {
+            "label": "Use a Clay Pot",
+            "bullets": [
+              "Terracotta dries faster",
+              "Drainage holes are essential"
+            ]
+          },
+          {
+            "label": "Water Sparingly",
+            "bullets": [
+              "Only when properly dry",
+              "Overwatering is the usual killer"
+            ]
+          },
+          {
+            "label": "Skip Rich Feed",
+            "bullets": [
+              "Poor soil gives more scent",
+              "Feeding gives soft growth"
+            ]
+          },
+          {
+            "label": "Trim After Flowering",
+            "bullets": [
+              "Shape it once a year",
+              "Never cut into bare wood"
+            ]
+          },
+          {
+            "label": "Shelter in Hard Frost",
+            "bullets": [
+              "Move pots against a wall",
+              "Wet cold is worse than dry cold"
+            ]
+          },
+          {
+            "label": "Harvest Year Round",
+            "bullets": [
+              "Snip young tips",
+              "Strongest before flowering"
+            ]
+          }
+        ]
+      },
+      "es": {
+        "slug": "como-cultivar-romero",
+        "title": "Cómo Cultivar Romero: Casi Todo el Mundo lo Riega de Más",
+        "eyebrow": "Guía para principiantes",
+        "chartTitle": "Cómo cultivar romero",
+        "description": "Drenaje, sol y contención. El romero muere de exceso de cuidado más que de abandono.",
+        "pinDescription": "Cómo cultivar romero: tierra suelta con grava y pleno sol, riega solo cuando esté bien seco y no lo abones en exceso. El riego mata muchas más plantas que el frío.",
+        "cta": "Planifica tus hierbas en Garden Pro Planner",
+        "proTip": {
+          "label": "Consejo",
+          "text": "Un romero que se pone gris y quebradizo de golpe casi siempre se ha ahogado, no secado. La raíz se pudre en tierra húmeda y la parte de arriba muere después, por eso parece sed."
+        },
+        "steps": [
+          {
+            "label": "Pleno Sol",
+            "bullets": [
+              "Seis horas o más al día",
+              "A la sombra sale ralo"
+            ]
+          },
+          {
+            "label": "Tierra con Grava",
+            "bullets": [
+              "Añade arena o grava",
+              "Odia estar encharcado"
+            ]
+          },
+          {
+            "label": "Maceta de Barro",
+            "bullets": [
+              "El barro seca antes",
+              "Con agujeros de drenaje"
+            ]
+          },
+          {
+            "label": "Riega Poco",
+            "bullets": [
+              "Solo si está bien seco",
+              "El exceso es lo que lo mata"
+            ]
+          },
+          {
+            "label": "Sin Abono Rico",
+            "bullets": [
+              "En tierra pobre huele más",
+              "El abono da brote blando"
+            ]
+          },
+          {
+            "label": "Poda tras Florecer",
+            "bullets": [
+              "Dale forma una vez al año",
+              "Nunca cortes en madera vieja"
+            ]
+          },
+          {
+            "label": "Protege del Hielo",
+            "bullets": [
+              "Arrima la maceta a un muro",
+              "El frío húmedo es lo peor"
+            ]
+          },
+          {
+            "label": "Corta Todo el Año",
+            "bullets": [
+              "Corta las puntas tiernas",
+              "Más aroma antes de florecer"
+            ]
+          }
+        ]
+      },
+      "icons": [
+        {
+          "slug": "rosemary-sprig",
+          "subject": "a rosemary plant with woody stems and narrow needle-like grey-green leaves"
+        },
+        {
+          "slug": "sun-over-plant",
+          "subject": "a bright sun shining above a small leafy vegetable plant growing in soil"
+        },
+        {
+          "slug": "gritty-soil",
+          "subject": "a handful of gritty free-draining potting soil mixed with coarse sand"
+        },
+        {
+          "slug": "pot-with-drainage",
+          "subject": "a terracotta pot filled with loose dark potting soil, drainage holes visible at the base"
+        },
+        {
+          "slug": "watering-can-sprinkle"
+        },
+        {
+          "slug": "compost-and-feed",
+          "subject": "a bucket of dark compost beside a plain unlabelled paper sack of garden fertiliser"
+        },
+        {
+          "slug": "pruning-shears-tomato",
+          "subject": "a pair of pruning shears trimming a sucker from a tomato plant stem"
+        },
+        {
+          "slug": "rosemary-harvest",
+          "subject": "a few freshly cut rosemary sprigs lying together"
+        }
+      ],
+      "proTipIcon": {
+        "slug": "rosemary-sprig",
+        "subject": "a rosemary plant with woody stems and narrow needle-like grey-green leaves"
+      }
+    },
+    {
+      "key": "grow-lavender",
+      "category": "flowers",
+      "tags": [
+        "flowers",
+        "lavender",
+        "beginners",
+        "infographics"
+      ],
+      "pinBoard": "Companion Planting",
+      "pinKeywords": [
+        "how to grow lavender",
+        "lavender plant care",
+        "drought tolerant plants",
+        "pruning lavender"
+      ],
+      "en": {
+        "slug": "how-to-grow-lavender",
+        "title": "How to Grow Lavender That Comes Back Year After Year",
+        "eyebrow": "Beginner-friendly guide",
+        "chartTitle": "How to grow lavender",
+        "description": "Sun, sharp drainage and the annual prune that decides whether a plant lasts three years or ten.",
+        "pinDescription": "How to grow lavender: full sun and sharp drainage matter more than anything, water only while it establishes, and prune every year without ever cutting into the bare wood.",
+        "cta": "Plan your borders in Garden Pro Planner",
+        "proTip": {
+          "label": "Pro tip",
+          "text": "Lavender will not regrow from bare woody stems. Prune a little every year while there are still green leaves below your cut, and the plant stays compact instead of splitting open."
+        },
+        "steps": [
+          {
+            "label": "Full Sun",
+            "bullets": [
+              "Six to eight hours daily",
+              "Shade gives few flowers"
+            ]
+          },
+          {
+            "label": "Sharp Drainage",
+            "bullets": [
+              "Add grit to heavy soil",
+              "Wet roots in winter kill it"
+            ]
+          },
+          {
+            "label": "Space for Airflow",
+            "bullets": [
+              "Leave room around each plant",
+              "Damp stagnant air rots it"
+            ]
+          },
+          {
+            "label": "Water Only to Establish",
+            "bullets": [
+              "Water the first season",
+              "After that leave it alone"
+            ]
+          },
+          {
+            "label": "Do Not Feed",
+            "bullets": [
+              "Poor soil gives more scent",
+              "Feeding gives floppy growth"
+            ]
+          },
+          {
+            "label": "Prune Every Year",
+            "bullets": [
+              "Trim after flowering",
+              "Keeps it from splitting open"
+            ]
+          },
+          {
+            "label": "Never Cut Bare Wood",
+            "bullets": [
+              "Cut above green leaves",
+              "Old wood will not regrow"
+            ]
+          },
+          {
+            "label": "Harvest for Scent",
+            "bullets": [
+              "Cut as buds show colour",
+              "Strongest before they open"
+            ]
+          }
+        ]
+      },
+      "es": {
+        "slug": "como-cultivar-lavanda",
+        "title": "Cómo Cultivar Lavanda que Dure Año tras Año",
+        "eyebrow": "Guía para principiantes",
+        "chartTitle": "Cómo cultivar lavanda",
+        "description": "Sol, drenaje muy bueno y la poda anual que decide si una planta dura tres años o diez.",
+        "pinDescription": "Cómo cultivar lavanda: pleno sol y drenaje importan más que nada, riega solo mientras arraiga y poda cada año sin cortar nunca en la madera desnuda.",
+        "cta": "Diseña tus parterres en Garden Pro Planner",
+        "proTip": {
+          "label": "Consejo",
+          "text": "La lavanda no rebrota de la madera desnuda. Poda un poco cada año dejando siempre hoja verde por debajo del corte, y la mata se mantiene compacta en vez de abrirse por el centro."
+        },
+        "steps": [
+          {
+            "label": "Pleno Sol",
+            "bullets": [
+              "De seis a ocho horas diarias",
+              "A la sombra da poca flor"
+            ]
+          },
+          {
+            "label": "Drenaje Muy Bueno",
+            "bullets": [
+              "Añade grava si es arcilla",
+              "La raíz mojada en invierno mata"
+            ]
+          },
+          {
+            "label": "Espacio para Ventilar",
+            "bullets": [
+              "Deja hueco entre plantas",
+              "El aire húmedo la pudre"
+            ]
+          },
+          {
+            "label": "Riega solo al Arraigar",
+            "bullets": [
+              "Riega el primer año",
+              "Después déjala tranquila"
+            ]
+          },
+          {
+            "label": "No la Abones",
+            "bullets": [
+              "En tierra pobre huele más",
+              "El abono da brote blando"
+            ]
+          },
+          {
+            "label": "Poda Cada Año",
+            "bullets": [
+              "Recorta tras la floración",
+              "Evita que se abra por dentro"
+            ]
+          },
+          {
+            "label": "Nunca en Madera Vieja",
+            "bullets": [
+              "Corta sobre hoja verde",
+              "La madera vieja no rebrota"
+            ]
+          },
+          {
+            "label": "Corta para Aroma",
+            "bullets": [
+              "Corta al colorear el botón",
+              "Más aroma antes de abrir"
+            ]
+          }
+        ]
+      },
+      "icons": [
+        {
+          "slug": "lavender-plant",
+          "subject": "a lavender plant with silvery foliage and upright purple flower spikes"
+        },
+        {
+          "slug": "sun-over-plant",
+          "subject": "a bright sun shining above a small leafy vegetable plant growing in soil"
+        },
+        {
+          "slug": "gritty-soil",
+          "subject": "a handful of gritty free-draining soil mixed with coarse sand"
+        },
+        {
+          "slug": "spaced-plants-row",
+          "subject": "three small strawberry plants evenly spaced in a row in dark garden soil"
+        },
+        {
+          "slug": "watering-can-sprinkle"
+        },
+        {
+          "slug": "compost-and-feed",
+          "subject": "a bucket of dark compost beside a plain unlabelled paper sack of garden fertiliser"
+        },
+        {
+          "slug": "pruning-shears-tomato",
+          "subject": "a pair of pruning shears trimming a sucker from a tomato plant stem"
+        },
+        {
+          "slug": "lavender-bundle",
+          "subject": "a small bundle of cut lavender stems tied with twine"
+        }
+      ],
+      "proTipIcon": {
+        "slug": "lavender-plant",
+        "subject": "a lavender plant with silvery foliage and upright purple flower spikes"
+      }
+    },
+    {
+      "key": "start-seeds-indoors",
+      "category": "vegetables",
+      "tags": [
+        "seed-starting",
+        "beginners",
+        "vegetables",
+        "infographics"
+      ],
+      "pinBoard": "Seed Starting & Frost Dates",
+      "pinKeywords": [
+        "starting seeds indoors",
+        "seed starting for beginners",
+        "grow lights for seedlings",
+        "hardening off seedlings"
+      ],
+      "en": {
+        "slug": "how-to-start-seeds-indoors",
+        "title": "How to Start Seeds Indoors Without Growing Leggy Seedlings",
+        "eyebrow": "Beginner-friendly guide",
+        "chartTitle": "How to start seeds indoors",
+        "description": "Timing, light and the hardening-off week that most people skip and then lose their seedlings to.",
+        "pinDescription": "How to start seeds indoors: count back from your last frost date, use light far closer than you think, water from below, and harden seedlings off over a week before planting out.",
+        "cta": "Count back from your frost date in Garden Pro Planner",
+        "proTip": {
+          "label": "Pro tip",
+          "text": "Leggy, stretched seedlings mean too little light, not too little warmth. A windowsill is usually not enough, and a cheap light a few inches above the tray fixes it outright."
+        },
+        "steps": [
+          {
+            "label": "Count Back from Frost",
+            "bullets": [
+              "Work back from last frost",
+              "Each crop has its own lead"
+            ]
+          },
+          {
+            "label": "Use Seed Compost",
+            "bullets": [
+              "Fine, low nutrient mix",
+              "Garden soil brings disease"
+            ]
+          },
+          {
+            "label": "Get Depth Right",
+            "bullets": [
+              "Roughly twice the seed's width",
+              "Too deep and it never surfaces"
+            ]
+          },
+          {
+            "label": "Keep Them Warm",
+            "bullets": [
+              "Warmth is for germination",
+              "Move them cooler once up"
+            ]
+          },
+          {
+            "label": "Give Strong Light",
+            "bullets": [
+              "Light within inches of leaves",
+              "Windowsills make them stretch"
+            ]
+          },
+          {
+            "label": "Water from Below",
+            "bullets": [
+              "Stand trays in shallow water",
+              "Top watering flattens seedlings"
+            ]
+          },
+          {
+            "label": "Pot On When Crowded",
+            "bullets": [
+              "Move up at true leaves",
+              "Roots need somewhere to go"
+            ]
+          },
+          {
+            "label": "Harden Off a Week",
+            "bullets": [
+              "Increase outdoor time daily",
+              "Skipping this loses plants"
+            ]
+          }
+        ]
+      },
+      "es": {
+        "slug": "como-sembrar-en-interior",
+        "title": "Cómo Sembrar en Interior sin que las Plántulas se Estiren",
+        "eyebrow": "Guía para principiantes",
+        "chartTitle": "Cómo sembrar en interior",
+        "description": "Calendario, luz y la semana de aclimatación que casi todo el mundo se salta y que le cuesta las plántulas.",
+        "pinDescription": "Cómo sembrar en interior: cuenta hacia atrás desde la última helada, pon la luz mucho más cerca de lo que crees, riega por abajo y aclimata las plantas una semana antes de sacarlas.",
+        "cta": "Calcula tus fechas en Garden Pro Planner",
+        "proTip": {
+          "label": "Consejo",
+          "text": "Las plántulas estiradas indican falta de luz, no de calor. Una ventana casi nunca basta, y una luz barata a unos centímetros de las hojas lo arregla del todo."
+        },
+        "steps": [
+          {
+            "label": "Cuenta desde la Helada",
+            "bullets": [
+              "Calcula desde la última helada",
+              "Cada cultivo lleva su plazo"
+            ]
+          },
+          {
+            "label": "Sustrato de Semillero",
+            "bullets": [
+              "Fino y con pocos nutrientes",
+              "La tierra del jardín trae hongos"
+            ]
+          },
+          {
+            "label": "Profundidad Correcta",
+            "bullets": [
+              "Unas dos veces el grosor",
+              "Muy hondo y no sale"
+            ]
+          },
+          {
+            "label": "Mantenlas Calientes",
+            "bullets": [
+              "El calor es para germinar",
+              "Luego pásalas a sitio fresco"
+            ]
+          },
+          {
+            "label": "Luz Fuerte",
+            "bullets": [
+              "La luz a pocos centímetros",
+              "En la ventana se estiran"
+            ]
+          },
+          {
+            "label": "Riega por Abajo",
+            "bullets": [
+              "Pon la bandeja en agua",
+              "Regar arriba las tumba"
+            ]
+          },
+          {
+            "label": "Trasplanta al Apretarse",
+            "bullets": [
+              "Cambia al salir hoja verdadera",
+              "La raíz necesita sitio"
+            ]
+          },
+          {
+            "label": "Aclimata una Semana",
+            "bullets": [
+              "Más rato fuera cada día",
+              "Saltarse esto cuesta plantas"
+            ]
+          }
+        ]
+      },
+      "icons": [
+        {
+          "slug": "frost-calendar",
+          "subject": "a simple wall calendar page with a small frost snowflake marked on one square"
+        },
+        {
+          "slug": "seed-tray-indoors",
+          "subject": "a small seed tray of young seedlings on a windowsill in soft daylight"
+        },
+        {
+          "slug": "seed-sowing-depth",
+          "subject": "a cross-section of soil showing a small seed planted just below the surface"
+        },
+        {
+          "slug": "warm-propagator",
+          "subject": "a covered seed tray with a clear plastic lid, condensation on the inside"
+        },
+        {
+          "slug": "grow-light-seedlings",
+          "subject": "a row of seedling trays under a simple bar grow light hanging just above them"
+        },
+        {
+          "slug": "bottom-watering-tray",
+          "subject": "a seedling tray standing in a shallow tray of water"
+        },
+        {
+          "slug": "potting-on-seedling",
+          "subject": "a small seedling being lifted by its leaf and moved into a larger pot"
+        },
+        {
+          "slug": "hardening-off",
+          "subject": "seedling trays standing outdoors beside a doorway in soft daylight"
+        }
+      ],
+      "proTipIcon": {
+        "slug": "grow-light-seedlings",
+        "subject": "a row of seedling trays under a simple bar grow light hanging just above them"
+      }
+    },
+    {
+      "key": "build-a-raised-bed",
+      "category": "vegetables",
+      "tags": [
+        "raised-beds",
+        "beginners",
+        "vegetables",
+        "infographics"
+      ],
+      "pinBoard": "Raised Bed Gardening",
+      "pinKeywords": [
+        "raised garden bed",
+        "how to build a raised bed",
+        "raised bed soil mix",
+        "raised bed vegetable garden"
+      ],
+      "en": {
+        "slug": "how-to-build-a-raised-bed",
+        "title": "How to Build a Raised Bed You Can Actually Reach Across",
+        "eyebrow": "Beginner-friendly guide",
+        "chartTitle": "How to build a raised bed",
+        "description": "Width, depth, timber and the soil mix, with the sizing rule that decides whether you ever compact the soil.",
+        "pinDescription": "How to build a raised bed: keep it four feet wide so you can reach the middle from both sides, at least a foot deep, and fill it with a compost-rich mix rather than garden soil.",
+        "cta": "Lay out your beds in Garden Pro Planner",
+        "proTip": {
+          "label": "Pro tip",
+          "text": "Four feet is the width that matters. Any wider and you end up stepping into the bed to reach the middle, which compacts the soil and undoes the main reason for building one."
+        },
+        "steps": [
+          {
+            "label": "Pick Full Sun",
+            "bullets": [
+              "Six or more hours daily",
+              "Most vegetables want sun"
+            ]
+          },
+          {
+            "label": "Four Feet Wide",
+            "bullets": [
+              "Reach the middle from both sides",
+              "Never step on the soil"
+            ]
+          },
+          {
+            "label": "Make It Deep Enough",
+            "bullets": [
+              "A foot deep at least",
+              "Roots need real depth"
+            ]
+          },
+          {
+            "label": "Use Untreated Timber",
+            "bullets": [
+              "Cedar or larch lasts well",
+              "Avoid old treated sleepers"
+            ]
+          },
+          {
+            "label": "Level the Ground",
+            "bullets": [
+              "Level before you fill it",
+              "A sloped bed drains unevenly"
+            ]
+          },
+          {
+            "label": "Line the Base",
+            "bullets": [
+              "Cardboard smothers grass",
+              "Leave the base open to drain"
+            ]
+          },
+          {
+            "label": "Fill with a Mix",
+            "bullets": [
+              "Compost with topsoil",
+              "Garden soil alone compacts"
+            ]
+          },
+          {
+            "label": "Top Up Each Year",
+            "bullets": [
+              "Soil settles as it rots down",
+              "Add compost every spring"
+            ]
+          }
+        ]
+      },
+      "es": {
+        "slug": "como-construir-un-bancal-elevado",
+        "title": "Cómo Construir un Bancal Elevado al que de Verdad Llegues",
+        "eyebrow": "Guía para principiantes",
+        "chartTitle": "Cómo construir un bancal",
+        "description": "Ancho, profundidad, madera y mezcla de tierra, con la regla de tamaño que decide si acabas pisando el suelo.",
+        "pinDescription": "Cómo construir un bancal elevado: no más de metro veinte de ancho para llegar al centro desde ambos lados, al menos treinta centímetros de hondo y relleno con mezcla rica en compost.",
+        "cta": "Diseña tus bancales en Garden Pro Planner",
+        "proTip": {
+          "label": "Consejo",
+          "text": "El ancho es lo que importa. Más de metro y veinte y acabarás metiéndote dentro para llegar al centro, lo que compacta la tierra y echa por tierra la razón de construirlo."
+        },
+        "steps": [
+          {
+            "label": "Elige Pleno Sol",
+            "bullets": [
+              "Seis horas o más al día",
+              "Casi todo quiere sol"
+            ]
+          },
+          {
+            "label": "Metro Veinte de Ancho",
+            "bullets": [
+              "Llega al centro desde los lados",
+              "Nunca pises la tierra"
+            ]
+          },
+          {
+            "label": "Suficiente Profundidad",
+            "bullets": [
+              "Treinta centímetros mínimo",
+              "La raíz necesita hondura"
+            ]
+          },
+          {
+            "label": "Madera sin Tratar",
+            "bullets": [
+              "El cedro o alerce duran",
+              "Evita traviesas tratadas"
+            ]
+          },
+          {
+            "label": "Nivela el Suelo",
+            "bullets": [
+              "Nivela antes de rellenar",
+              "En pendiente drena mal"
+            ]
+          },
+          {
+            "label": "Forra la Base",
+            "bullets": [
+              "El cartón ahoga la hierba",
+              "Deja la base drenando"
+            ]
+          },
+          {
+            "label": "Rellena con Mezcla",
+            "bullets": [
+              "Compost con tierra vegetal",
+              "La tierra sola se compacta"
+            ]
+          },
+          {
+            "label": "Rellena Cada Año",
+            "bullets": [
+              "La tierra baja al descomponerse",
+              "Añade compost en primavera"
+            ]
+          }
+        ]
+      },
+      "icons": [
+        {
+          "slug": "sun-over-plant",
+          "subject": "a bright sun shining above a small leafy vegetable plant growing in soil"
+        },
+        {
+          "slug": "raised-bed-frame",
+          "subject": "a simple rectangular wooden raised bed frame sitting empty on grass"
+        },
+        {
+          "slug": "bed-depth-cross-section",
+          "subject": "a cross-section of a raised bed showing deep dark soil and plant roots reaching down"
+        },
+        {
+          "slug": "cedar-boards",
+          "subject": "a neat stack of untreated cedar boards with visible wood grain"
+        },
+        {
+          "slug": "level-ground",
+          "subject": "a spirit level resting on the top edge of a wooden bed frame"
+        },
+        {
+          "slug": "cardboard-lining",
+          "subject": "sheets of plain cardboard laid flat on grass inside a bed frame"
+        },
+        {
+          "slug": "soil-mix",
+          "subject": "a heap of dark crumbly soil mixed with compost, a trowel resting in it"
+        },
+        {
+          "slug": "compost-and-feed",
+          "subject": "a bucket of dark compost beside a plain unlabelled paper sack of garden fertiliser"
+        }
+      ],
+      "proTipIcon": {
+        "slug": "raised-bed-frame",
+        "subject": "a simple rectangular wooden raised bed frame sitting empty on grass"
+      }
     }
   ]
 }
