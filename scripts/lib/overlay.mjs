@@ -31,22 +31,47 @@ const FONTS = [join(HERE, '../fonts/Fraunces.ttf'), join(HERE, '../fonts/Inter.t
 const esc = (s) =>
   s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 
-/** Width of one line as Inter Black will actually set it. */
-const widthCache = new Map();
-function measure(text, fontSize) {
-  const key = `${fontSize} ${text}`;
-  const hit = widthCache.get(key);
+/** Title tracking. Anything measured for the title must be measured with this. */
+const TITLE_TRACKING = -0.5;
+
+// Eyebrow badge type. The badge sets looser than the title, so it has to be
+// measured with its own tracking.
+const BADGE_FONT = 24;
+const BADGE_TRACKING = 0.5;
+const BADGE_PAD_X = 18;
+
+/**
+ * Ink box of one run of text as Inter Black will actually set it.
+ *
+ * Returns `{ x, width }` in the coordinate space of a `<text>` drawn at x=0.
+ * `x` is the left side bearing: the gap between the text anchor and the first
+ * glyph's ink. It matters for the badge, where the rectangle has to sit an
+ * equal distance from the ink on both sides, not from the anchor.
+ *
+ * `tracking` must match the letter-spacing the caller actually renders with.
+ * Measuring at one tracking and drawing at another is a per-character error,
+ * which on a 14-character badge label is most of a side's padding.
+ */
+const boxCache = new Map();
+function measureBox(text, fontSize, tracking = TITLE_TRACKING) {
+  const key = `${fontSize} ${tracking} ${text}`;
+  const hit = boxCache.get(key);
   if (hit !== undefined) return hit;
 
-  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="10000" height="${fontSize * 3}"><text font-family="Inter" font-size="${fontSize}" font-weight="900" letter-spacing="-0.5" x="0" y="${fontSize * 1.5}">${esc(text)}</text></svg>`;
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="10000" height="${fontSize * 3}"><text font-family="Inter" font-size="${fontSize}" font-weight="900" letter-spacing="${tracking}" x="0" y="${fontSize * 1.5}">${esc(text)}</text></svg>`;
   const bbox = new Resvg(svg, {
     font: { fontFiles: FONTS, loadSystemFonts: false, defaultFontFamily: 'Inter' },
   }).getBBox();
 
   // An empty or whitespace-only line has no bbox at all.
-  const width = bbox?.width ?? 0;
-  widthCache.set(key, width);
-  return width;
+  const box = { x: bbox?.x ?? 0, width: bbox?.width ?? 0 };
+  boxCache.set(key, box);
+  return box;
+}
+
+/** Width of one line as Inter Black will actually set it. */
+function measure(text, fontSize, tracking = TITLE_TRACKING) {
+  return measureBox(text, fontSize, tracking).width;
 }
 
 /** Greedy word wrap against measured widths. */
@@ -147,10 +172,16 @@ export function buildOverlay({
     })
     .join('');
 
-  const eyebrowWidth = eyebrow ? measure(eyebrow, 24) + 36 : 0;
+  // Measure the badge exactly as it is drawn: upper-cased, at 24px, with the
+  // badge's own positive tracking. Then pull the anchor left by the side
+  // bearing so the ink starts BADGE_PAD_X from the rectangle's edge and the
+  // rectangle ends BADGE_PAD_X past it. Equal gaps on both sides.
+  const eyebrowText = eyebrow ? eyebrow.toUpperCase() : '';
+  const eyebrowBox = eyebrow ? measureBox(eyebrowText, BADGE_FONT, BADGE_TRACKING) : null;
+  const eyebrowWidth = eyebrowBox ? Math.round(eyebrowBox.width) + BADGE_PAD_X * 2 : 0;
   const badge = eyebrow
     ? `<rect x="${pad}" y="${badgeTop}" width="${eyebrowWidth}" height="${badgeH}" rx="8" fill="${BADGE_YELLOW}"/>
-  <text x="${pad + 18}" y="${badgeTop + 34}" font-family="Inter" font-size="24" font-weight="900" letter-spacing="0.5" fill="${SCRIM_DARK}">${esc(eyebrow.toUpperCase())}</text>`
+  <text x="${pad + BADGE_PAD_X - eyebrowBox.x}" y="${badgeTop + 34}" font-family="Inter" font-size="${BADGE_FONT}" font-weight="900" letter-spacing="${BADGE_TRACKING}" fill="${SCRIM_DARK}">${esc(eyebrowText)}</text>`
     : '';
 
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}">
