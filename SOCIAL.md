@@ -204,30 +204,36 @@ and the blog RSS feed.
 | `/infographics/rss.xml` | English pin feed |
 | `/es/infographics/rss.xml` | Spanish pin feed |
 
-### Connecting Pinterest
+### Pinning
 
-The two feeds are built for a scheduler to consume — each item carries the
-1000x1500 image (as an enclosure, a `media:content`, and the first element of
-the HTML content, because the tools disagree about where to look), the pin
-description written for Pinterest search, and the destination URL.
+Pins are created by hand, deliberately: the schedulers that consume an RSS feed
+(Tailwind, Publer) are all paid, and the free alternative — Pinterest's own
+API — needs a developer app and a stored refresh token. Neither is worth it at
+four pins a day.
 
-1. Create the boards in point 1 of the Pinterest system above, plus Spanish
-   equivalents for the Spanish pins. A Spanish pin on an English board reads as
-   spam to the algorithm and to the people following that board.
-2. In Tailwind or Publer, add `/infographics/rss.xml` as a feed source pointed
-   at the English boards, and `/es/infographics/rss.xml` at the Spanish ones.
-3. Set the schedule to 2 pins a day per feed, spaced out. That matches the
-   routine's output and keeps inside the 1-3 fresh pins a day this account
-   should be doing while it has no history.
+The manual flow is already short, because the pin is built into the page:
 
-The scheduler is deliberately doing the posting rather than the routine calling
-the Pinterest API directly. It means no OAuth app to register, no refresh token
-sitting on the Mac to expire silently, and the throttling rules are handled by a
-tool that tracks them.
+1. Run finishes and prints the four URLs to pin, with the board for each.
+2. Open each page and hit **Save this pin**. The button hands Pinterest the
+   1000x1500 image, the `pinDescription` from the frontmatter, and the page URL,
+   so nothing has to be typed or pasted.
+3. Space them out across the day rather than posting four at once. New accounts
+   get throttled for bulk posting.
 
-**`pinBoard` in each post's frontmatter names the intended board.** It is not
-read by anything yet — it is there so a future API integration, or a person
-pinning by hand, knows where each one goes without re-deciding.
+Boards: English infographics go to **Garden Infographics**, Spanish ones to a
+separate Spanish board. A Spanish pin on an English board reads as spam to the
+algorithm and to the people following that board.
+
+**`pinBoard` in each post's frontmatter names the intended board.** Nothing
+reads it automatically — it is there so whoever is pinning does not have to
+re-decide, and so a future automation has the answer already.
+
+### The feeds are still there
+
+`/infographics/rss.xml` and `/es/infographics/rss.xml` are live and cost nothing
+to keep. Each item carries the image, the Pinterest-search description and the
+destination URL, so if manual pinning ever becomes a chore, pointing a scheduler
+at them is a settings change rather than a rebuild.
 
 ### Adding topics
 

@@ -277,3 +277,15 @@ if (PUSH) {
 } else {
   log('(not pushed — --no-push)');
 }
+
+// Pins are created by hand, so the run ends by listing exactly what to pin and
+// where. Each page carries a Save button that pre-fills the right description,
+// so opening these four URLs is the whole job.
+log('\nTo pin (open each and hit "Save this pin"):');
+for (const t of picked) {
+  log(`  EN  https://${DOMAIN}/infographics/${t.en.slug}/`);
+  log(`      → board: ${t.pinBoard ?? 'Garden Infographics'}`);
+  log(`  ES  https://${DOMAIN}/es/infographics/${t.es.slug}/`);
+  log(`      → board: Infografías de Jardinería`);
+}
+log('\nNetlify takes about a minute to publish, so give it a moment before opening these.');

@@ -335,7 +335,8 @@ app ships a release.
 ## Daily infographics
 
 Two infographics a day, English and Spanish, published to `/infographics/` and
-`/es/infographics/`. See SOCIAL.md for the Pinterest side.
+`/es/infographics/`. The run ends by printing the four URLs to pin and the board
+for each; pins are created by hand. See SOCIAL.md.
 
 ```sh
 node scripts/daily-infographics.mjs                  # 2 topics, commit and push
