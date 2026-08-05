@@ -51,6 +51,17 @@ const PUSH = !flag('no-push') && !DRY;
 
 const log = (...a) => console.log(...a);
 
+/**
+ * Every file this run created, as repo-relative paths.
+ *
+ * The commit stages exactly these and nothing else. Staging whole directories
+ * instead swept in the output of an earlier run that had written its files and
+ * then failed before committing — so unreviewed work got published under a
+ * commit message that did not mention it.
+ */
+const written = [];
+const rel = (abs) => abs.slice(ROOT.length + 1);
+
 /** YAML for frontmatter. Deliberately tiny — only the shapes this file emits. */
 function yaml(value, indent = 0) {
   const pad = ' '.repeat(indent);
@@ -132,15 +143,13 @@ async function ensureIcons(topic) {
     }
     log(`  · generating icon ${icon.slug}`);
     const buf = await makeIcon({ slug: icon.slug, subject: icon.subject, log: () => {} });
-    if (!DRY) {
-      mkdirSync(ICONS_DIR, { recursive: true });
-      writeFileSync(dest, buf);
-    } else {
-      // A dry run still has to put the file somewhere, or the render below has
-      // nothing to composite and every check downstream is meaningless.
-      mkdirSync(ICONS_DIR, { recursive: true });
-      writeFileSync(dest, buf);
-    }
+    // A dry run still writes the icon: without it the render below has nothing
+    // to composite and every check downstream is meaningless. Icons are shared
+    // library assets, not per-run output, so keeping one is not a side effect
+    // worth avoiding.
+    mkdirSync(ICONS_DIR, { recursive: true });
+    writeFileSync(dest, buf);
+    written.push(rel(dest));
   }
 }
 
@@ -215,6 +224,7 @@ async function publishTopic(topic) {
     const fm = frontmatter(topic, out.lang, out.imagePath);
     const md = `---${yaml(fm)}\n---\n\n${body(topic[out.lang], out.lang)}`;
     writeFileSync(out.contentFile, md);
+    written.push(rel(out.imageFile), rel(out.contentFile));
     log(`  ✓ ${out.lang}: ${out.imagePath}`);
   }
 }
@@ -260,7 +270,30 @@ try {
 }
 
 const slugs = picked.map((t) => t.en.slug).join(', ');
-execFileSync('git', ['add', 'src/content/blog', 'public/assets/blog', 'public/assets/icons'], { cwd: ROOT });
+// Icons are shared library assets rather than per-run output: additive, reused
+// across topics, and already vetted by inspectIcon when they were generated.
+// A dry run legitimately leaves new ones behind, so sweep those in.
+const looseIcons = execFileSync('git', ['status', '--porcelain', '--', 'public/assets/icons'], { cwd: ROOT, encoding: 'utf8' })
+  .split('\n')
+  .map((l) => l.slice(3).trim())
+  .filter(Boolean);
+
+// A post is the risky thing to publish, so content and images are staged only
+// if THIS run produced them. Anything else under those paths came from a run
+// that wrote its files and then failed before committing — it was never
+// verified here, and folding it in silently is how it reaches the site
+// unnoticed under a commit message that does not mention it.
+const stray = execFileSync('git', ['status', '--porcelain', '--', 'src/content/blog', 'public/assets/blog'], { cwd: ROOT, encoding: 'utf8' })
+  .split('\n')
+  .map((l) => l.slice(3).trim())
+  .filter((f) => f && !written.includes(f));
+if (stray.length) {
+  log(`\n⚠ ${stray.length} file(s) from an earlier incomplete run are NOT being committed:`);
+  for (const f of stray.slice(0, 10)) log(`    ${f}`);
+  log('  Review them, then commit by hand or delete them.');
+}
+
+execFileSync('git', ['add', '--', ...written, ...looseIcons], { cwd: ROOT });
 
 const staged = execFileSync('git', ['diff', '--cached', '--name-only'], { cwd: ROOT, encoding: 'utf8' }).trim();
 if (!staged) {
