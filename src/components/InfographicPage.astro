@@ -11,6 +11,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import { formatDate, postHref, type Post } from '../lib/posts';
+import { pinCreateHref, pinDescriptionFor } from '../lib/pinterest';
 
 interface Props {
   post: Post;
@@ -54,18 +55,8 @@ const href = postHref(post);
 const url = new URL(href, Astro.site).href;
 const image = new URL(data.infographicImage ?? '/assets/app-icon.png', Astro.site).href;
 
-// Pinterest ranks mostly on the words in the description, so the readable
-// sentence does the work. Hashtags are reinforcement, capped at 5 and last.
-const hashtag = (s: string) =>
-  '#' + s.trim().split(/[\s\-_]+/).map((w) => w.charAt(0).toUpperCase() + w.slice(1)).join('');
-const pinTags = (data.pinKeywords ?? data.tags).slice(0, 5).map(hashtag).join(' ');
-const pinDescription = (data.pinDescription ?? `${data.title}. ${data.description}`) +
-  (pinTags ? ` ${pinTags}` : '');
-const pinHref =
-  'https://www.pinterest.com/pin/create/button/' +
-  `?url=${encodeURIComponent(url)}` +
-  `&media=${encodeURIComponent(image)}` +
-  `&description=${encodeURIComponent(pinDescription)}`;
+const pinDescription = pinDescriptionFor(data);
+const pinHref = pinCreateHref(url, image, pinDescription);
 
 const sectionHref = lang === 'es' ? '/es/infographics/' : '/infographics/';
 const crumbs = [
@@ -133,6 +124,7 @@ const jsonLd = {
             height="1500"
             fetchpriority="high"
             data-pin-media={image}
+            data-pin-url={url}
             data-pin-description={pinDescription}
           />
           <div class="hero-actions">

@@ -8,6 +8,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import { postHref, type Post } from '../lib/posts';
+import { pinCreateHref, pinDescriptionFor } from '../lib/pinterest';
 
 interface Props {
   posts: Post[];
@@ -29,6 +30,9 @@ const T = {
     switch: 'Ver en español',
     switchHref: '/es/infographics/',
     feed: 'RSS feed',
+    count: (n: number) => `${n} charts`,
+    save: 'Save this pin to Pinterest',
+    saveShort: 'Pin',
   },
   es: {
     title: 'Infografías de Jardinería',
@@ -42,6 +46,9 @@ const T = {
     switch: 'Read in English',
     switchHref: '/infographics/',
     feed: 'Fuente RSS',
+    count: (n: number) => `${n} fichas`,
+    save: 'Guardar en Pinterest',
+    saveShort: 'Guardar',
   },
 }[lang];
 
@@ -52,6 +59,38 @@ const alternates = [
   { lang: 'es', href: new URL('/es/infographics/', Astro.site).href },
   { lang: 'x-default', href: new URL('/infographics/', Astro.site).href },
 ];
+
+/**
+ * Each card carries its own Save button, so the pin can be created from the
+ * grid without opening the chart first. Pinterest needs absolute URLs for both
+ * the destination page and the image, and the same description the feed and the
+ * detail page use — so the wording of a pin never depends on where it started.
+ */
+const cards = posts.map((post) => {
+  const href = postHref(post);
+  const url = new URL(href, Astro.site).href;
+  const media = new URL(post.data.infographicImage ?? '/assets/app-icon.png', Astro.site).href;
+  const pinDescription = pinDescriptionFor(post.data);
+  return { post, href, url, media, pinDescription, pinHref: pinCreateHref(url, media, pinDescription) };
+});
+
+// ItemList tells Google the page is a gallery and in what order, which is what
+// gets the grid itself eligible for image-rich results rather than only the
+// detail pages.
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: T.title,
+  description: T.description,
+  numberOfItems: cards.length,
+  itemListElement: cards.map((c, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    url: c.url,
+    name: c.post.data.title,
+    image: c.media,
+  })),
+};
 ---
 <BaseLayout
   title={T.metaTitle}
@@ -60,6 +99,8 @@ const alternates = [
   lang={lang}
   alternates={alternates}
 >
+  <script type="application/ld+json" slot="head" set:html={JSON.stringify(jsonLd)} />
+
   <section class="section">
     <div class="wrap">
       <Breadcrumbs items={[{ name: T.home, href: lang === 'es' ? '/es/infographics/' : '/' }, { name: T.section, href: base }]} />
@@ -67,6 +108,8 @@ const alternates = [
         <h1>{T.title}</h1>
         <p class="ig-intro">{T.intro}</p>
         <p class="ig-meta">
+          <span>{T.count(cards.length)}</span>
+          <span> · </span>
           <a href={T.switchHref} rel="alternate" hreflang={lang === 'es' ? 'en' : 'es'}>{T.switch}</a>
           <span> · </span>
           <a href={`${base}rss.xml`}>{T.feed}</a>
@@ -74,9 +117,9 @@ const alternates = [
       </header>
 
       <ul class="ig-grid">
-        {posts.map((post) => (
+        {cards.map(({ post, href, url, media, pinDescription, pinHref }) => (
           <li class="ig-card">
-            <a href={postHref(post)}>
+            <a class="ig-card-link" href={href}>
               {post.data.infographicImage && (
                 <img
                   src={post.data.infographicImage}
@@ -84,9 +127,24 @@ const alternates = [
                   width="1000"
                   height="1500"
                   loading="lazy"
+                  data-pin-media={media}
+                  data-pin-url={url}
+                  data-pin-description={pinDescription}
                 />
               )}
               <span class="ig-card-title">{post.data.title}</span>
+            </a>
+            <a
+              class="ig-pin"
+              href={pinHref}
+              target="_blank"
+              rel="noopener nofollow"
+              data-cta="pinterest-save-grid"
+              title={T.save}
+              aria-label={`${T.save}: ${post.data.title}`}
+            >
+              <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" fill="currentColor"><path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.632-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+              <span>{T.saveShort}</span>
             </a>
           </li>
         ))}

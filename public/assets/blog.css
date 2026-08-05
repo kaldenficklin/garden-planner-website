@@ -189,17 +189,21 @@ a.tag-link:hover { background: var(--green-600); color: #fff; text-decoration: n
 .ig-intro { color: var(--ink-soft); margin: 12px 0 0; max-width: 60ch; }
 .ig-meta { margin: 14px 0 0; font-size: 15px; color: var(--ink-soft); }
 
+/* Denser than a card list on purpose: the point of this page is scanning the
+   whole library at once, so the columns are sized to fit five across a 1080px
+   wrap and three across a phone rather than to make any one chart large. */
 .ig-grid {
   list-style: none;
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-  gap: 26px;
+  grid-template-columns: repeat(auto-fill, minmax(184px, 1fr));
+  gap: 20px;
 }
-.ig-card { margin: 0; }
-.ig-card a {
+.ig-card { margin: 0; position: relative; }
+.ig-card-link {
   display: block;
+  height: 100%;
   color: inherit;
   border: 1px solid var(--border, #e7e2d6);
   border-radius: 14px;
@@ -207,7 +211,7 @@ a.tag-link:hover { background: var(--green-600); color: #fff; text-decoration: n
   background: #fff;
   transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
 }
-.ig-card a:hover {
+.ig-card-link:hover {
   text-decoration: none;
   transform: translateY(-2px);
   box-shadow: var(--shadow);
@@ -216,9 +220,51 @@ a.tag-link:hover { background: var(--green-600); color: #fff; text-decoration: n
 /* The intrinsic 2:3 ratio is declared on the <img> so the grid reserves each
    card's height before the images land and the page doesn't reflow. */
 .ig-card img { display: block; width: 100%; height: auto; aspect-ratio: 2 / 3; object-fit: cover; }
-.ig-card-title { display: block; padding: 14px 16px 16px; font-weight: 600; line-height: 1.3; }
+.ig-card-title {
+  display: block;
+  padding: 12px 14px 14px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 1.3;
+}
+
+/* Save-to-Pinterest, one per chart. It sits over the image rather than under
+   the title so it reads as belonging to that picture, and it is a sibling of
+   the card link rather than a child — a link inside a link is invalid and
+   browsers drop it. Hidden until hover on a mouse, always visible on touch,
+   where there is no hover to reveal it. */
+.ig-pin {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 11px;
+  border-radius: 999px;
+  background: #e60023;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .22);
+  opacity: 0;
+  transform: translateY(-4px);
+  transition: opacity .15s ease, transform .15s ease, background .15s ease;
+}
+.ig-card:hover .ig-pin,
+.ig-pin:focus-visible { opacity: 1; transform: none; }
+.ig-pin:hover { background: #ad081b; text-decoration: none; color: #fff; }
+
+@media (hover: none) {
+  .ig-pin { opacity: 1; transform: none; }
+}
 
 @media (max-width: 640px) {
-  .ig-grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 16px; }
-  .ig-card-title { padding: 11px 12px 13px; font-size: 15px; }
+  .ig-grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 14px; }
+  .ig-card-title { padding: 10px 12px 12px; font-size: 14px; }
+  /* No hover to reveal it here, so it is permanently on top of the chart —
+     drop to the icon alone, which covers far less of the artwork. */
+  .ig-pin { top: 7px; right: 7px; padding: 7px; border-radius: 50%; }
+  .ig-pin span { display: none; }
 }

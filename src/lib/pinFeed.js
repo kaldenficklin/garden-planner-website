@@ -14,6 +14,7 @@
  */
 import rss from '@astrojs/rss';
 import { getCollection } from 'astro:content';
+import { pinDescriptionFor } from './pinterest';
 
 const COPY = {
   en: {
@@ -28,24 +29,8 @@ const COPY = {
   },
 };
 
-const hashtag = (s) =>
-  '#' + s.trim().split(/[\s\-_]+/).map((w) => w.charAt(0).toUpperCase() + w.slice(1)).join('');
-
 const escapeXml = (s) =>
   String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
-
-/**
- * The exact text handed to Pinterest as the pin description.
- *
- * Pinterest ranks primarily on these words, so the readable sentence carries
- * the weight and the hashtags trail it as reinforcement, capped at five per
- * Pinterest's own guidance.
- */
-export function pinDescriptionFor(data) {
-  const sentence = data.pinDescription ?? `${data.title}. ${data.description}`;
-  const tags = (data.pinKeywords ?? data.tags ?? []).slice(0, 5).map(hashtag).join(' ');
-  return tags ? `${sentence} ${tags}` : sentence;
-}
 
 export async function pinFeed(context, lang) {
   const site = context.site;
