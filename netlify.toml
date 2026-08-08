@@ -30,6 +30,65 @@
   to = "/delete-account.html"
   status = 200
 
+# Legacy /article/<id>/<Title>/ URLs from the pre-Astro site. Google still has
+# 19 of them on file (13 already 404, 6 crawled but not indexed). The old
+# "How to grow X" library is now /infographics/, so that section — not /blog/ —
+# is where these belong. Netlify takes the first matching rule, so the specific
+# slugs must stay above the /article/* catch-all.
+
+[[redirects]]
+  from = "/article/:id/How-to-grow-Sunflowers/"
+  to = "/infographics/how-to-grow-sunflowers/"
+  status = 301
+
+[[redirects]]
+  from = "/article/:id/How-to-grow-Tomatoes-(vining)/"
+  to = "/infographics/how-to-grow-tomatoes/"
+  status = 301
+
+# Cherries, oranges, pomegranate and mulberries were all "plant this tree"
+# articles; the fruit-tree guide is their genuine successor.
+[[redirects]]
+  from = "/article/:id/How-to-grow-Cherries/"
+  to = "/infographics/how-to-plant-a-fruit-tree/"
+  status = 301
+
+[[redirects]]
+  from = "/article/:id/How-to-grow-Oranges/"
+  to = "/infographics/how-to-plant-a-fruit-tree/"
+  status = 301
+
+[[redirects]]
+  from = "/article/:id/How-to-grow-Pomegranate/"
+  to = "/infographics/how-to-plant-a-fruit-tree/"
+  status = 301
+
+[[redirects]]
+  from = "/article/:id/How-to-grow-Mulberries/"
+  to = "/infographics/how-to-plant-a-fruit-tree/"
+  status = 301
+
+# Everything else under /article/ (garlic, thyme, parsley, dill, peppers,
+# turnips, brussels sprouts, blueberries, goji, luffa) has no published
+# successor yet — garlic-planting-mistakes.md is still draft: true. The
+# infographics hub is the closest honest destination; promote a URL to its own
+# rule above as each guide ships.
+[[redirects]]
+  from = "/article/*"
+  to = "/infographics/"
+  status = 301
+
+# Old listing page for the same section.
+[[redirects]]
+  from = "/articles"
+  to = "/infographics/"
+  status = 301
+
+[[redirects]]
+  from = "/articles/*"
+  to = "/infographics/"
+  status = 301
+
 # Security headers
 [[headers]]
   for = "/*"
