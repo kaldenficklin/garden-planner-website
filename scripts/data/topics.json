@@ -2327,12 +2327,12 @@
       },
       "icons": [
         {
-          "slug": "cucumber-vine",
-          "subject": "a cucumber vine with broad leaves, a curling tendril and one dark green cucumber hanging"
-        },
-        {
           "slug": "cucumber-trellis",
           "subject": "cucumber vines climbing a simple wooden lattice trellis"
+        },
+        {
+          "slug": "cucumber-vine",
+          "subject": "a cucumber vine with broad leaves, a curling tendril and one dark green cucumber hanging"
         },
         {
           "slug": "sun-over-plant",
