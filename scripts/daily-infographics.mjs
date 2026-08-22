@@ -30,6 +30,7 @@ import { makeIcon } from './gen-icon.mjs';
 import { nextTopics } from './lib/topics.mjs';
 import { checkTopic, checkIcons, checkRender, merge } from './lib/qa.mjs';
 import { buildGuideInfographic, warmGuideIcons, renderPng } from './lib/infographic.mjs';
+import { body } from './lib/post.mjs';
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(HERE, '..');
@@ -91,20 +92,6 @@ function yaml(value, indent = 0) {
 // and a title containing a colon is otherwise invalid YAML.
 const scalar = (v) =>
   typeof v === 'string' ? `"${v.replace(/\\/g, '\\\\').replace(/"/g, '\\"')}"` : String(v);
-
-/**
- * The page body under the chart.
- *
- * The steps are repeated as real text on purpose. A page whose only content is
- * one image is thin content to Google no matter how good the image is, and the
- * pin traffic arrives on a page that should still be worth indexing.
- */
-function body(t, lang) {
-  const heading = lang === 'es' ? 'Los pasos' : 'The steps';
-  const steps = t.steps.map((s, i) => `${i + 1}. **${s.label}.** ${s.bullets.join('. ')}.`).join('\n');
-  const tip = t.proTip ? `\n\n**${t.proTip.label}.** ${t.proTip.text}\n` : '\n';
-  return `${t.description}\n\n## ${heading}\n\n${steps}\n${tip}`;
-}
 
 function frontmatter(topic, lang, imagePath) {
   const t = topic[lang];

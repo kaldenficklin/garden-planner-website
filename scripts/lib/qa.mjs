@@ -89,6 +89,73 @@ export function checkTopic(topic, lang) {
     }
   }
 
+  // STYLE.md allows straight quotes only. A curly apostrophe reaches the card
+  // as a glyph the brand font may not carry, and reaches the markdown as a
+  // character that differs from every other apostrophe on the site.
+  const curly = [t.title, t.description, t.pinDescription, t.proTip?.text,
+    ...(t.steps ?? []).flatMap((s) => [s.label, ...(s.bullets ?? [])])]
+    .filter(Boolean).filter((v) => /[\u2018\u2019\u201c\u201d]/.test(v));
+  for (const v of curly) errors.push(`${where}: curly quote in "${v}" — STYLE.md wants straight quotes`);
+
+  const article = checkArticle(t, lang, where);
+  errors.push(...article.errors);
+  warnings.push(...article.warnings);
+
+  return { errors, warnings };
+}
+
+/**
+ * The written body under the chart.
+ *
+ * Optional, because the pool predates it and falls back to restating the
+ * bullets. But a topic that does carry one has to earn the space: the whole
+ * point is that the page says more than the image, so a three-line article is
+ * worse than none at all. It would read as padding under a chart that already
+ * made the point.
+ */
+function checkArticle(t, lang, where) {
+  const errors = [];
+  const warnings = [];
+  if (!t.article) {
+    warnings.push(`${where}: no article — the body will fall back to restating the chart bullets`);
+    return { errors, warnings };
+  }
+
+  const a = t.article;
+  if (!a.intro) errors.push(`${where}: article has no intro`);
+  if (!Array.isArray(a.sections) || a.sections.length < 3) {
+    errors.push(`${where}: article needs at least 3 sections, has ${a.sections?.length ?? 0}`);
+  }
+  (a.sections ?? []).forEach((s, i) => {
+    if (!s.heading) errors.push(`${where}: article section ${i + 1} has no heading`);
+    if (!s.body) errors.push(`${where}: article section ${i + 1} has no body`);
+  });
+
+  const prose = [a.intro, ...(a.sections ?? []).flatMap((s) => [s.heading, s.body])].filter(Boolean).join(' ');
+  const words = WORDS(prose);
+  if (words < 250) errors.push(`${where}: article is ${words} words, needs 250+ to be worth the scroll`);
+  else if (words < 350) warnings.push(`${where}: article is ${words} words, aim for 350+`);
+
+  if (/[\u2018\u2019\u201c\u201d]/.test(prose)) errors.push(`${where}: article uses curly quotes, STYLE.md wants straight`);
+
+  // STYLE.md: two em dashes per post, maximum.
+  const dashes = (prose.match(/\u2014/g) ?? []).length;
+  if (dashes > 2) errors.push(`${where}: article has ${dashes} em dashes, STYLE.md allows 2`);
+
+  // STYLE.md bans these endings outright; they were the loudest tell on the site.
+  const lastSection = (a.sections ?? [])[(a.sections ?? []).length - 1];
+  if (lastSection?.body && /\b(the bottom line|in summary|to sum up|final thoughts|at the end of the day)\b/i.test(lastSection.body)) {
+    errors.push(`${where}: article ends on a summary phrase STYLE.md bans`);
+  }
+
+  if (lang === 'en') {
+    const haystack = prose.toLowerCase();
+    for (const word of BANNED) {
+      const pattern = new RegExp(`\\b${word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`);
+      if (pattern.test(haystack)) errors.push(`${where}: article uses "${word}", which STYLE.md bans`);
+    }
+  }
+
   return { errors, warnings };
 }
 
