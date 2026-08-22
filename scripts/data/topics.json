@@ -3736,6 +3736,1582 @@
         "slug": "raised-bed-frame",
         "subject": "a simple rectangular wooden raised bed frame sitting empty on grass"
       }
+    },
+    {
+      "key": "grow-garlic",
+      "category": "vegetables",
+      "tags": [
+        "garlic",
+        "vegetables",
+        "beginners",
+        "infographics"
+      ],
+      "pinBoard": "Vegetable Garden Layouts",
+      "pinKeywords": [
+        "how to grow garlic",
+        "planting garlic in fall",
+        "garlic growing guide",
+        "when to harvest garlic"
+      ],
+      "en": {
+        "slug": "how-to-grow-garlic",
+        "title": "How to Grow Garlic From a Single Bulb",
+        "eyebrow": "Beginner-friendly guide",
+        "chartTitle": "How to grow garlic",
+        "description": "When to plant, how deep, and the leaf signal that tells you the bulbs are ready to lift.",
+        "pinDescription": "How to grow garlic: plant cloves in autumn so the cold can do its work, mulch them over winter, snap off the scapes on hardneck types, and lift the bulbs when the lower leaves brown but the tops are still green.",
+        "cta": "Plan your beds with Garden Pro Planner",
+        "proTip": {
+          "label": "Pro tip",
+          "text": "Plant the biggest cloves and eat the small ones. Bulb size follows clove size closely, so the fat outer cloves are next year’s crop and the small inner ones are dinner."
+        },
+        "steps": [
+          {
+            "label": "Plant in Autumn",
+            "bullets": [
+              "Plant before the ground freezes",
+              "Cold weather triggers bulb forming"
+            ]
+          },
+          {
+            "label": "Split the Bulb",
+            "bullets": [
+              "Separate cloves just before planting",
+              "Plant the largest cloves"
+            ]
+          },
+          {
+            "label": "Pointed End Up",
+            "bullets": [
+              "Flat root end sits downward",
+              "A few inches below the surface"
+            ]
+          },
+          {
+            "label": "Space the Cloves",
+            "bullets": [
+              "Six inches apart in rows",
+              "Crowding gives small bulbs"
+            ]
+          },
+          {
+            "label": "Mulch for Winter",
+            "bullets": [
+              "Straw keeps soil temperature steady",
+              "Pull it back in spring"
+            ]
+          },
+          {
+            "label": "Feed in Spring",
+            "bullets": [
+              "Nitrogen feed as leaves grow",
+              "Stop feeding by late spring"
+            ]
+          },
+          {
+            "label": "Snap Off Scapes",
+            "bullets": [
+              "Hardneck types send up scapes",
+              "Removing them swells the bulb"
+            ]
+          },
+          {
+            "label": "Lift When Yellow",
+            "bullets": [
+              "Lower leaves brown, tops still green",
+              "Cure somewhere dry and airy"
+            ]
+          }
+        ]
+      },
+      "es": {
+        "slug": "como-cultivar-ajo",
+        "title": "Cómo Cultivar Ajo a Partir de una Sola Cabeza",
+        "eyebrow": "Guía para principiantes",
+        "chartTitle": "Cómo cultivar ajo",
+        "description": "Cuándo plantar, a qué profundidad y la señal en las hojas que indica que ya puedes arrancarlo.",
+        "pinDescription": "Cómo cultivar ajo: planta los dientes en otoño para que el frío haga su trabajo, acolcha en invierno, corta los escapos en las variedades de cuello duro y arranca las cabezas cuando las hojas de abajo se sequen.",
+        "cta": "Planifica tu huerto con Garden Pro Planner",
+        "proTip": {
+          "label": "Consejo",
+          "text": "Planta los dientes más gordos y cómete los pequeños. El tamaño de la cabeza sigue al del diente, así que los de fuera son la cosecha del año que viene."
+        },
+        "steps": [
+          {
+            "label": "Planta en Otoño",
+            "bullets": [
+              "Antes de que hiele el suelo",
+              "El frío activa la formación"
+            ]
+          },
+          {
+            "label": "Separa la Cabeza",
+            "bullets": [
+              "Separa los dientes al plantar",
+              "Planta los más grandes"
+            ]
+          },
+          {
+            "label": "Punta Hacia Arriba",
+            "bullets": [
+              "La base plana va abajo",
+              "Unos centímetros bajo tierra"
+            ]
+          },
+          {
+            "label": "Marca la Distancia",
+            "bullets": [
+              "Quince centímetros entre dientes",
+              "Apretados dan cabezas pequeñas"
+            ]
+          },
+          {
+            "label": "Acolcha en Invierno",
+            "bullets": [
+              "La paja estabiliza la temperatura",
+              "Retírala en primavera"
+            ]
+          },
+          {
+            "label": "Abona en Primavera",
+            "bullets": [
+              "Nitrógeno mientras crecen las hojas",
+              "Deja de abonar al final"
+            ]
+          },
+          {
+            "label": "Corta los Escapos",
+            "bullets": [
+              "El cuello duro echa escapos",
+              "Cortarlos engorda la cabeza"
+            ]
+          },
+          {
+            "label": "Arranca al Amarillear",
+            "bullets": [
+              "Hojas bajas secas, puntas verdes",
+              "Cura en sitio seco y aireado"
+            ]
+          }
+        ]
+      },
+      "icons": [
+        {
+          "slug": "garlic-bulb",
+          "subject": "a single whole head of garlic with papery white skin"
+        },
+        {
+          "slug": "garlic-cloves-split",
+          "subject": "a head of garlic broken apart into separate loose cloves"
+        },
+        {
+          "slug": "planting-clove-depth",
+          "subject": "a garlic clove sitting pointed end up in a shallow hole in dark soil"
+        },
+        {
+          "slug": "spaced-plants-row",
+          "subject": "three small strawberry plants evenly spaced in a row in dark garden soil"
+        },
+        {
+          "slug": "straw-mulch-bed",
+          "subject": "a garden bed covered with a thick layer of golden straw mulch"
+        },
+        {
+          "slug": "compost-and-feed",
+          "subject": "a bucket of dark compost beside a plain unlabelled paper sack of garden fertiliser"
+        },
+        {
+          "slug": "garlic-scape",
+          "subject": "a curling green garlic scape looping above garlic leaves"
+        },
+        {
+          "slug": "curing-garlic",
+          "subject": "several heads of garlic with dried stems laid out to cure on a wooden slat"
+        }
+      ],
+      "proTipIcon": {
+        "slug": "garlic-bulb",
+        "subject": "a single whole head of garlic with papery white skin"
+      }
+    },
+    {
+      "key": "grow-spinach",
+      "category": "vegetables",
+      "tags": [
+        "spinach",
+        "vegetables",
+        "beginners",
+        "infographics"
+      ],
+      "pinBoard": "Vegetable Garden Layouts",
+      "pinKeywords": [
+        "how to grow spinach",
+        "growing spinach from seed",
+        "stop spinach bolting",
+        "spinach growing guide"
+      ],
+      "en": {
+        "slug": "how-to-grow-spinach",
+        "title": "How to Grow Spinach Without It Bolting in a Week",
+        "eyebrow": "Beginner-friendly guide",
+        "chartTitle": "How to grow spinach",
+        "description": "Sowing times, spacing and watering for spinach, and why heat is what sends it straight to seed.",
+        "pinDescription": "How to grow spinach: sow it in the cool of spring or autumn, keep the soil evenly moist so it never checks, feed it nitrogen for leafy growth, and pick the outer leaves so the centre keeps producing.",
+        "cta": "Plan your rows in Garden Pro Planner",
+        "proTip": {
+          "label": "Pro tip",
+          "text": "Bolting is a heat and stress response, not an age one. Spinach that dries out once will run to seed early even in mild weather, so steady moisture matters more than the calendar."
+        },
+        "steps": [
+          {
+            "label": "Sow When Cool",
+            "bullets": [
+              "Spring and autumn suit it",
+              "Summer heat makes it bolt"
+            ]
+          },
+          {
+            "label": "Sow Direct",
+            "bullets": [
+              "Spinach dislikes root disturbance",
+              "Sow where it will grow"
+            ]
+          },
+          {
+            "label": "Sow Shallow",
+            "bullets": [
+              "About half an inch deep",
+              "Firm the soil lightly over"
+            ]
+          },
+          {
+            "label": "Thin the Seedlings",
+            "bullets": [
+              "Thin to a hand’s width",
+              "Eat the thinnings raw"
+            ]
+          },
+          {
+            "label": "Keep Soil Moist",
+            "bullets": [
+              "Even water delays bolting",
+              "Never let it dry out"
+            ]
+          },
+          {
+            "label": "Feed Nitrogen",
+            "bullets": [
+              "Leafy crops want nitrogen",
+              "Compost does the job"
+            ]
+          },
+          {
+            "label": "Shade in Summer",
+            "bullets": [
+              "Shade cloth buys extra weeks",
+              "Or wait and sow autumn"
+            ]
+          },
+          {
+            "label": "Pick Outer Leaves",
+            "bullets": [
+              "Take the outer leaves first",
+              "The centre keeps growing"
+            ]
+          }
+        ]
+      },
+      "es": {
+        "slug": "como-cultivar-espinacas",
+        "title": "Cómo Cultivar Espinacas Sin Que se Suban a Flor",
+        "eyebrow": "Guía para principiantes",
+        "chartTitle": "Cómo cultivar espinacas",
+        "description": "Cuándo sembrar, cómo aclarar y cómo regar espinacas, y por qué el calor las manda directas a flor.",
+        "pinDescription": "Cómo cultivar espinacas: siembra en el fresco de primavera u otoño, mantén la tierra siempre húmeda, aporta nitrógeno para hoja abundante y recolecta las hojas exteriores para que el centro siga produciendo.",
+        "cta": "Planifica tus hileras en Garden Pro Planner",
+        "proTip": {
+          "label": "Consejo",
+          "text": "Subirse a flor responde al calor y al estrés, no a la edad. Una espinaca que se seque una sola vez florecerá pronto aunque haga fresco, así que el riego constante importa más que el calendario."
+        },
+        "steps": [
+          {
+            "label": "Siembra en Fresco",
+            "bullets": [
+              "Primavera y otoño le van bien",
+              "El calor la sube a flor"
+            ]
+          },
+          {
+            "label": "Siembra Directa",
+            "bullets": [
+              "No le gusta el trasplante",
+              "Siembra donde vaya a crecer"
+            ]
+          },
+          {
+            "label": "Poca Profundidad",
+            "bullets": [
+              "Un centímetro basta",
+              "Aprieta la tierra encima"
+            ]
+          },
+          {
+            "label": "Aclara las Plántulas",
+            "bullets": [
+              "Deja un palmo entre plantas",
+              "Aprovecha lo que quitas"
+            ]
+          },
+          {
+            "label": "Tierra Siempre Húmeda",
+            "bullets": [
+              "El riego constante retrasa la flor",
+              "Nunca la dejes secarse"
+            ]
+          },
+          {
+            "label": "Aporta Nitrógeno",
+            "bullets": [
+              "Las hojas piden nitrógeno",
+              "El compost es suficiente"
+            ]
+          },
+          {
+            "label": "Sombra en Verano",
+            "bullets": [
+              "La malla de sombreo da semanas",
+              "O espera y siembra en otoño"
+            ]
+          },
+          {
+            "label": "Corta las Exteriores",
+            "bullets": [
+              "Recoge primero las hojas de fuera",
+              "El centro sigue creciendo"
+            ]
+          }
+        ]
+      },
+      "icons": [
+        {
+          "slug": "spinach",
+          "subject": "a low rosette of dark green spinach leaves growing in soil"
+        },
+        {
+          "slug": "sowing-seeds-drill",
+          "subject": "a hand scattering small seeds into a shallow straight furrow in dark soil"
+        },
+        {
+          "slug": "seed-sowing-depth",
+          "subject": "a cross-section of soil showing a large seed planted about an inch below the surface"
+        },
+        {
+          "slug": "thinning-seedlings",
+          "subject": "fingers pulling one small seedling from a crowded row of carrot seedlings"
+        },
+        {
+          "slug": "watering-can-sprinkle",
+          "subject": "a metal watering can sprinkling water over a garden bed"
+        },
+        {
+          "slug": "compost-and-feed",
+          "subject": "a bucket of dark compost beside a plain unlabelled paper sack of garden fertiliser"
+        },
+        {
+          "slug": "shade-cloth-bed",
+          "subject": "a small garden bed of leafy greens partly shaded by a light shade cloth on hoops"
+        },
+        {
+          "slug": "picking-outer-leaves",
+          "subject": "a hand picking an outer leaf from a leafy green plant, centre left intact"
+        }
+      ],
+      "proTipIcon": {
+        "slug": "spinach",
+        "subject": "a low rosette of dark green spinach leaves growing in soil"
+      }
+    },
+    {
+      "key": "grow-radishes",
+      "category": "vegetables",
+      "tags": [
+        "radishes",
+        "vegetables",
+        "beginners",
+        "infographics"
+      ],
+      "pinBoard": "Container & Small Space Gardening",
+      "pinKeywords": [
+        "how to grow radishes",
+        "growing radishes from seed",
+        "fast growing vegetables",
+        "radish growing guide"
+      ],
+      "en": {
+        "slug": "how-to-grow-radishes",
+        "title": "How to Grow Radishes in About a Month",
+        "eyebrow": "Beginner-friendly guide",
+        "chartTitle": "How to grow radishes",
+        "description": "Soil, spacing and timing for radishes, including why leaving them in the ground ruins them.",
+        "pinDescription": "How to grow radishes: sow them straight into loose stone-free soil, thin them early so the roots have room, water steadily to keep them crisp, and pull them young before they turn woody and split.",
+        "cta": "Plan your rows in Garden Pro Planner",
+        "proTip": {
+          "label": "Pro tip",
+          "text": "Sow a short row every couple of weeks rather than one long row at once. Radishes go from perfect to woody in days, so a whole row ready on the same day is mostly waste."
+        },
+        "steps": [
+          {
+            "label": "Sow Direct",
+            "bullets": [
+              "Radishes grow fast from seed",
+              "No transplanting needed"
+            ]
+          },
+          {
+            "label": "Loosen the Soil",
+            "bullets": [
+              "Stones give forked roots",
+              "Rake to a fine tilth"
+            ]
+          },
+          {
+            "label": "Sow Thinly",
+            "bullets": [
+              "About half an inch deep",
+              "Thin sowing saves work later"
+            ]
+          },
+          {
+            "label": "Thin Early",
+            "bullets": [
+              "Thin to an inch apart",
+              "Crowded roots stay small"
+            ]
+          },
+          {
+            "label": "Water Steadily",
+            "bullets": [
+              "Dry spells turn them woody",
+              "Even moisture keeps them crisp"
+            ]
+          },
+          {
+            "label": "Give Them Sun",
+            "bullets": [
+              "Six hours of sun daily",
+              "Light shade suits summer sowings"
+            ]
+          },
+          {
+            "label": "Sow in Batches",
+            "bullets": [
+              "A short row every fortnight",
+              "A steady supply, not a glut"
+            ]
+          },
+          {
+            "label": "Pull Them Young",
+            "bullets": [
+              "Ready in about a month",
+              "Left longer they split"
+            ]
+          }
+        ]
+      },
+      "es": {
+        "slug": "como-cultivar-rabanos",
+        "title": "Cómo Cultivar Rábanos en Aproximadamente un Mes",
+        "eyebrow": "Guía para principiantes",
+        "chartTitle": "Cómo cultivar rábanos",
+        "description": "Tierra, distancias y tiempos para los rábanos, y por qué dejarlos en tierra de más los estropea.",
+        "pinDescription": "Cómo cultivar rábanos: siembra directamente en tierra suelta y sin piedras, aclara pronto para que la raíz tenga sitio, riega de forma constante y arráncalos jóvenes antes de que se pongan fibrosos.",
+        "cta": "Planifica tus hileras en Garden Pro Planner",
+        "proTip": {
+          "label": "Consejo",
+          "text": "Siembra una hilera corta cada dos semanas en vez de una larga de golpe. El rábano pasa de perfecto a fibroso en pocos días, y una hilera entera lista el mismo día se desperdicia."
+        },
+        "steps": [
+          {
+            "label": "Siembra Directa",
+            "bullets": [
+              "Crecen rápido desde semilla",
+              "No hace falta trasplantar"
+            ]
+          },
+          {
+            "label": "Afloja la Tierra",
+            "bullets": [
+              "Las piedras bifurcan la raíz",
+              "Rastrilla hasta dejarla fina"
+            ]
+          },
+          {
+            "label": "Siembra Clara",
+            "bullets": [
+              "Un centímetro de profundidad",
+              "Sembrar claro ahorra trabajo"
+            ]
+          },
+          {
+            "label": "Aclara Pronto",
+            "bullets": [
+              "Deja dos centímetros entre plantas",
+              "Apretados salen pequeños"
+            ]
+          },
+          {
+            "label": "Riega Constante",
+            "bullets": [
+              "La sequía los pone fibrosos",
+              "La humedad los mantiene crujientes"
+            ]
+          },
+          {
+            "label": "Dale Sol",
+            "bullets": [
+              "Seis horas de sol al día",
+              "Algo de sombra en verano"
+            ]
+          },
+          {
+            "label": "Siembra Escalonada",
+            "bullets": [
+              "Una hilera corta cada quincena",
+              "Suministro continuo, no de golpe"
+            ]
+          },
+          {
+            "label": "Arranca Joven",
+            "bullets": [
+              "Listos en un mes aproximadamente",
+              "Si esperas, se abren"
+            ]
+          }
+        ]
+      },
+      "icons": [
+        {
+          "slug": "radish",
+          "subject": "a round red radish with green leafy top, freshly pulled"
+        },
+        {
+          "slug": "loose-deep-soil",
+          "subject": "a garden fork lifting loose crumbly dark soil in a raised bed"
+        },
+        {
+          "slug": "seed-sowing-depth",
+          "subject": "a cross-section of soil showing a large seed planted about an inch below the surface"
+        },
+        {
+          "slug": "thinning-seedlings",
+          "subject": "fingers pulling one small seedling from a crowded row of carrot seedlings"
+        },
+        {
+          "slug": "watering-can-sprinkle",
+          "subject": "a metal watering can sprinkling water over a garden bed"
+        },
+        {
+          "slug": "sun-over-plant",
+          "subject": "a bright sun shining above a small leafy vegetable plant growing in soil"
+        },
+        {
+          "slug": "succession-sowing-rows",
+          "subject": "three short parallel rows of seedlings at visibly different sizes in a bed"
+        },
+        {
+          "slug": "harvested-radishes",
+          "subject": "a small bunch of freshly pulled red radishes with their leaves attached"
+        }
+      ],
+      "proTipIcon": {
+        "slug": "radish",
+        "subject": "a round red radish with green leafy top, freshly pulled"
+      }
+    },
+    {
+      "key": "grow-peas",
+      "category": "vegetables",
+      "tags": [
+        "peas",
+        "vegetables",
+        "beginners",
+        "infographics"
+      ],
+      "pinBoard": "Vegetable Garden Layouts",
+      "pinKeywords": [
+        "how to grow peas",
+        "growing peas from seed",
+        "pea plant support",
+        "when to plant peas"
+      ],
+      "en": {
+        "slug": "how-to-grow-peas",
+        "title": "How to Grow Peas That Actually Fill Their Pods",
+        "eyebrow": "Beginner-friendly guide",
+        "chartTitle": "How to grow peas",
+        "description": "Sowing depth, support and the one week of watering that decides how full the pods get.",
+        "pinDescription": "How to grow peas: sow them into cool soil in early spring, give even the dwarf types something to climb, water well once the flowers open because that is when the pods fill, and pick every day to keep them coming.",
+        "cta": "Plan your rows in Garden Pro Planner",
+        "proTip": {
+          "label": "Pro tip",
+          "text": "Peas fix their own nitrogen, so a rich feed gives you a wall of leaves and very few pods. Save the compost for the hungry crop that follows them in the same bed."
+        },
+        "steps": [
+          {
+            "label": "Sow When Cool",
+            "bullets": [
+              "Peas like a cool start",
+              "Early spring or autumn"
+            ]
+          },
+          {
+            "label": "Sun and Drainage",
+            "bullets": [
+              "Full sun, free-draining soil",
+              "Soggy ground rots the seed"
+            ]
+          },
+          {
+            "label": "Sow Two Inches",
+            "bullets": [
+              "Two inches deep in rows",
+              "A few inches between seeds"
+            ]
+          },
+          {
+            "label": "Give Them Support",
+            "bullets": [
+              "Even dwarf types want climbing",
+              "Netting or twiggy sticks work"
+            ]
+          },
+          {
+            "label": "Water at Flowering",
+            "bullets": [
+              "Water well once flowers open",
+              "That is when pods fill"
+            ]
+          },
+          {
+            "label": "Skip the Nitrogen",
+            "bullets": [
+              "Peas fix their own nitrogen",
+              "Rich feed gives leaves only"
+            ]
+          },
+          {
+            "label": "Pick Often",
+            "bullets": [
+              "Picking keeps more pods coming",
+              "Check the plants daily"
+            ]
+          },
+          {
+            "label": "Cut, Don’t Pull",
+            "bullets": [
+              "Cut the tops off at the end",
+              "Leave the roots in place"
+            ]
+          }
+        ]
+      },
+      "es": {
+        "slug": "como-cultivar-guisantes",
+        "title": "Cómo Cultivar Guisantes Que Llenen la Vaina",
+        "eyebrow": "Guía para principiantes",
+        "chartTitle": "Cómo cultivar guisantes",
+        "description": "Profundidad de siembra, entutorado y la semana de riego que decide cómo se llenan las vainas.",
+        "pinDescription": "Cómo cultivar guisantes: siembra en tierra fresca a principios de primavera, pon soporte incluso a las variedades enanas, riega bien en cuanto abran las flores porque es cuando se llena la vaina, y recoge a diario.",
+        "cta": "Planifica tus hileras en Garden Pro Planner",
+        "proTip": {
+          "label": "Consejo",
+          "text": "El guisante fija su propio nitrógeno, así que abonar mucho te da un muro de hojas y muy pocas vainas. Guarda el compost para el cultivo exigente que venga detrás."
+        },
+        "steps": [
+          {
+            "label": "Siembra en Fresco",
+            "bullets": [
+              "Prefieren empezar con fresco",
+              "Principios de primavera u otoño"
+            ]
+          },
+          {
+            "label": "Sol y Drenaje",
+            "bullets": [
+              "Pleno sol y buen drenaje",
+              "El encharcado pudre la semilla"
+            ]
+          },
+          {
+            "label": "Cinco Centímetros",
+            "bullets": [
+              "Cinco centímetros de profundidad",
+              "Deja hueco entre semillas"
+            ]
+          },
+          {
+            "label": "Ponles Soporte",
+            "bullets": [
+              "Hasta las enanas quieren trepar",
+              "Malla o ramas sirven"
+            ]
+          },
+          {
+            "label": "Riega en Flor",
+            "bullets": [
+              "Riega al abrir las flores",
+              "Es cuando llena la vaina"
+            ]
+          },
+          {
+            "label": "Sin Nitrógeno",
+            "bullets": [
+              "Fijan su propio nitrógeno",
+              "Abonar da solo hojas"
+            ]
+          },
+          {
+            "label": "Recoge a Menudo",
+            "bullets": [
+              "Recoger trae más vainas",
+              "Revisa las plantas a diario"
+            ]
+          },
+          {
+            "label": "Corta, No Arranques",
+            "bullets": [
+              "Corta la mata al terminar",
+              "Deja las raíces en tierra"
+            ]
+          }
+        ]
+      },
+      "icons": [
+        {
+          "slug": "pea-seedling",
+          "subject": "a young pea seedling with a curling tendril emerging from dark soil"
+        },
+        {
+          "slug": "sun-over-plant",
+          "subject": "a bright sun shining above a small leafy vegetable plant growing in soil"
+        },
+        {
+          "slug": "seed-sowing-depth",
+          "subject": "a cross-section of soil showing a large seed planted about an inch below the surface"
+        },
+        {
+          "slug": "pea-netting-support",
+          "subject": "pea plants climbing up a vertical net stretched between two canes"
+        },
+        {
+          "slug": "pea-flower",
+          "subject": "a single white pea flower open on a green pea vine"
+        },
+        {
+          "slug": "pea-roots-nodules",
+          "subject": "a pea plant lifted to show pale round nodules along its fine roots"
+        },
+        {
+          "slug": "harvest-basket-peas",
+          "subject": "a woven basket filled with fresh green pea pods"
+        },
+        {
+          "slug": "cut-pea-stems",
+          "subject": "garden scissors cutting through pea stems just above the soil line"
+        }
+      ],
+      "proTipIcon": {
+        "slug": "pea-flower",
+        "subject": "a single white pea flower open on a green pea vine"
+      }
+    },
+    {
+      "key": "grow-kale",
+      "category": "vegetables",
+      "tags": [
+        "kale",
+        "vegetables",
+        "beginners",
+        "infographics"
+      ],
+      "pinBoard": "Raised Bed Gardening",
+      "pinKeywords": [
+        "how to grow kale",
+        "growing kale from seed",
+        "winter vegetables",
+        "kale growing guide"
+      ],
+      "en": {
+        "slug": "how-to-grow-kale",
+        "title": "How to Grow Kale That Stands All Winter",
+        "eyebrow": "Beginner-friendly guide",
+        "chartTitle": "How to grow kale",
+        "description": "Sowing, spacing and netting for kale, plus why the first frost improves the flavour.",
+        "pinDescription": "How to grow kale: sow it in early summer for an autumn and winter crop, plant it deep into firm soil, net it against cabbage white butterflies, and pick the lower leaves so the crown keeps producing.",
+        "cta": "Plan your beds with Garden Pro Planner",
+        "proTip": {
+          "label": "Pro tip",
+          "text": "Frost genuinely improves kale. Cold weather converts some of the starch in the leaves to sugar, so the same plant tastes sweeter in December than it did in September."
+        },
+        "steps": [
+          {
+            "label": "Sow in Summer",
+            "bullets": [
+              "Sow early summer for autumn",
+              "It stands through winter"
+            ]
+          },
+          {
+            "label": "Firm Rich Soil",
+            "bullets": [
+              "Kale wants firm ground",
+              "Dig in plenty of compost"
+            ]
+          },
+          {
+            "label": "Plant Them Deep",
+            "bullets": [
+              "Bury up to the first leaves",
+              "Deep planting steadies the stem"
+            ]
+          },
+          {
+            "label": "Space Them Wide",
+            "bullets": [
+              "Give each plant elbow room",
+              "Crowding brings mildew"
+            ]
+          },
+          {
+            "label": "Net the Bed",
+            "bullets": [
+              "Fine netting stops cabbage whites",
+              "Check under leaves for eggs"
+            ]
+          },
+          {
+            "label": "Water Dry Spells",
+            "bullets": [
+              "Steady water keeps leaves tender",
+              "Mulch to hold moisture in"
+            ]
+          },
+          {
+            "label": "Let It Freeze",
+            "bullets": [
+              "Cold turns starch to sugar",
+              "Pick after the first frost"
+            ]
+          },
+          {
+            "label": "Pick Lower Leaves",
+            "bullets": [
+              "Take the lowest leaves first",
+              "The crown keeps producing"
+            ]
+          }
+        ]
+      },
+      "es": {
+        "slug": "como-cultivar-col-rizada",
+        "title": "Cómo Cultivar Col Rizada Que Aguante Todo el Invierno",
+        "eyebrow": "Guía para principiantes",
+        "chartTitle": "Cómo cultivar col rizada",
+        "description": "Siembra, distancias y mallas para la col rizada, y por qué la primera helada mejora su sabor.",
+        "pinDescription": "Cómo cultivar col rizada: siembra a principios de verano para cosechar en otoño e invierno, planta hondo en tierra firme, protege con malla contra la mariposa de la col y recoge las hojas de abajo.",
+        "cta": "Planifica tu huerto con Garden Pro Planner",
+        "proTip": {
+          "label": "Consejo",
+          "text": "La helada mejora de verdad la col rizada. El frío convierte parte del almidón de la hoja en azúcar, así que la misma planta sabe más dulce en diciembre que en septiembre."
+        },
+        "steps": [
+          {
+            "label": "Siembra en Verano",
+            "bullets": [
+              "A principios de verano para otoño",
+              "Aguanta todo el invierno"
+            ]
+          },
+          {
+            "label": "Tierra Firme y Rica",
+            "bullets": [
+              "Quiere suelo bien asentado",
+              "Añade bastante compost"
+            ]
+          },
+          {
+            "label": "Planta Hondo",
+            "bullets": [
+              "Entierra hasta las primeras hojas",
+              "Así el tallo va firme"
+            ]
+          },
+          {
+            "label": "Deja Espacio",
+            "bullets": [
+              "Cada planta necesita sitio",
+              "Apretadas cogen oídio"
+            ]
+          },
+          {
+            "label": "Pon Malla",
+            "bullets": [
+              "La malla fina para la mariposa",
+              "Mira los huevos bajo la hoja"
+            ]
+          },
+          {
+            "label": "Riega en Sequía",
+            "bullets": [
+              "El riego mantiene la hoja tierna",
+              "Acolcha para retener humedad"
+            ]
+          },
+          {
+            "label": "Déjala Helarse",
+            "bullets": [
+              "El frío convierte almidón en azúcar",
+              "Recoge tras la primera helada"
+            ]
+          },
+          {
+            "label": "Corta las de Abajo",
+            "bullets": [
+              "Recoge primero las hojas bajas",
+              "El cogollo sigue produciendo"
+            ]
+          }
+        ]
+      },
+      "icons": [
+        {
+          "slug": "kale-plant",
+          "subject": "an upright kale plant with crinkled blue-green leaves growing in soil"
+        },
+        {
+          "slug": "soil-mix",
+          "subject": "a heap of dark crumbly soil mixed with compost, a trowel resting in it"
+        },
+        {
+          "slug": "deep-planted-seedling",
+          "subject": "a cross-section of soil showing a tomato seedling planted deep, roots forming along the buried stem"
+        },
+        {
+          "slug": "spaced-plants-row",
+          "subject": "three small strawberry plants evenly spaced in a row in dark garden soil"
+        },
+        {
+          "slug": "brassica-netting",
+          "subject": "fine white mesh netting stretched on hoops over a bed of leafy brassica plants"
+        },
+        {
+          "slug": "mulched-plant",
+          "subject": "a young vegetable plant surrounded by a ring of brown wood-chip mulch on dark soil"
+        },
+        {
+          "slug": "frosted-kale-leaf",
+          "subject": "a crinkled kale leaf edged with white frost crystals"
+        },
+        {
+          "slug": "picking-outer-leaves",
+          "subject": "a hand picking an outer leaf from a leafy green plant, centre left intact"
+        }
+      ],
+      "proTipIcon": {
+        "slug": "frosted-kale-leaf",
+        "subject": "a crinkled kale leaf edged with white frost crystals"
+      }
+    },
+    {
+      "key": "grow-onions",
+      "category": "vegetables",
+      "tags": [
+        "onions",
+        "vegetables",
+        "beginners",
+        "infographics"
+      ],
+      "pinBoard": "Vegetable Garden Layouts",
+      "pinKeywords": [
+        "how to grow onions",
+        "growing onions from sets",
+        "when to harvest onions",
+        "curing onions for storage"
+      ],
+      "en": {
+        "slug": "how-to-grow-onions",
+        "title": "How to Grow Onions Big Enough to Bother Storing",
+        "eyebrow": "Beginner-friendly guide",
+        "chartTitle": "How to grow onions",
+        "description": "Planting sets, spacing for size, and the curing step that decides whether they keep or rot.",
+        "pinDescription": "How to grow onions: push sets into soft soil with the tips just showing, space them properly because spacing decides bulb size, stop watering once the tops flop, and cure them somewhere warm until the necks go papery.",
+        "cta": "Plan your rows in Garden Pro Planner",
+        "proTip": {
+          "label": "Pro tip",
+          "text": "Spacing decides bulb size more than feeding does. Onions planted close together will simply make small onions, however well you treat them the rest of the season."
+        },
+        "steps": [
+          {
+            "label": "Start From Sets",
+            "bullets": [
+              "Sets are easier than seed",
+              "Push into soft soil"
+            ]
+          },
+          {
+            "label": "Sun and Drainage",
+            "bullets": [
+              "Full sun, free-draining soil",
+              "Onions rot in wet ground"
+            ]
+          },
+          {
+            "label": "Tips Just Showing",
+            "bullets": [
+              "Bury so the tip shows",
+              "Birds tug proud sets out"
+            ]
+          },
+          {
+            "label": "Space for Size",
+            "bullets": [
+              "Six inches apart for big bulbs",
+              "Close spacing gives small onions"
+            ]
+          },
+          {
+            "label": "Weed Carefully",
+            "bullets": [
+              "Onions hate competition",
+              "Hand weed to spare roots"
+            ]
+          },
+          {
+            "label": "Water While Swelling",
+            "bullets": [
+              "Water as the bulbs swell",
+              "Ease off as they mature"
+            ]
+          },
+          {
+            "label": "Let Tops Fall",
+            "bullets": [
+              "Leaves flop when they finish",
+              "Stop watering at that point"
+            ]
+          },
+          {
+            "label": "Cure Before Storing",
+            "bullets": [
+              "Dry somewhere warm and airy",
+              "Necks must go papery"
+            ]
+          }
+        ]
+      },
+      "es": {
+        "slug": "como-cultivar-cebollas",
+        "title": "Cómo Cultivar Cebollas Lo Bastante Grandes Para Guardar",
+        "eyebrow": "Guía para principiantes",
+        "chartTitle": "Cómo cultivar cebollas",
+        "description": "Plantar bulbillos, distancias para el tamaño y el curado que decide si se conservan o se pudren.",
+        "pinDescription": "Cómo cultivar cebollas: hunde los bulbillos en tierra blanda dejando la punta a la vista, respeta las distancias porque marcan el tamaño, deja de regar cuando caigan las hojas y cúralas hasta que el cuello quede papel.",
+        "cta": "Planifica tus hileras en Garden Pro Planner",
+        "proTip": {
+          "label": "Consejo",
+          "text": "La distancia de plantación marca el tamaño más que el abonado. Unas cebollas plantadas juntas darán cebollas pequeñas por bien que las cuides el resto de la temporada."
+        },
+        "steps": [
+          {
+            "label": "Usa Bulbillos",
+            "bullets": [
+              "Más fáciles que la semilla",
+              "Húndelos en tierra blanda"
+            ]
+          },
+          {
+            "label": "Sol y Drenaje",
+            "bullets": [
+              "Pleno sol y buen drenaje",
+              "Se pudren en suelo mojado"
+            ]
+          },
+          {
+            "label": "Punta a la Vista",
+            "bullets": [
+              "Entierra dejando la punta fuera",
+              "Los pájaros sacan los sueltos"
+            ]
+          },
+          {
+            "label": "Distancia y Tamaño",
+            "bullets": [
+              "Quince centímetros para bulbos grandes",
+              "Juntas salen pequeñas"
+            ]
+          },
+          {
+            "label": "Desbroza con Cuidado",
+            "bullets": [
+              "No soportan la competencia",
+              "Quita hierbas a mano"
+            ]
+          },
+          {
+            "label": "Riega al Engordar",
+            "bullets": [
+              "Riega mientras engorda el bulbo",
+              "Afloja cuando ya madure"
+            ]
+          },
+          {
+            "label": "Deja Caer las Hojas",
+            "bullets": [
+              "La hoja cae al terminar",
+              "Deja de regar entonces"
+            ]
+          },
+          {
+            "label": "Cura Antes de Guardar",
+            "bullets": [
+              "Seca en sitio cálido y aireado",
+              "El cuello debe quedar seco"
+            ]
+          }
+        ]
+      },
+      "icons": [
+        {
+          "slug": "onion-sets",
+          "subject": "a small pile of papery brown onion sets ready for planting"
+        },
+        {
+          "slug": "sun-over-plant",
+          "subject": "a bright sun shining above a small leafy vegetable plant growing in soil"
+        },
+        {
+          "slug": "planting-onion-set",
+          "subject": "a hand pressing an onion set into dark soil with its tip left showing"
+        },
+        {
+          "slug": "spaced-plants-row",
+          "subject": "three small strawberry plants evenly spaced in a row in dark garden soil"
+        },
+        {
+          "slug": "hand-weeding",
+          "subject": "a hand pulling a small weed from between rows of young plants"
+        },
+        {
+          "slug": "watering-can-sprinkle",
+          "subject": "a metal watering can sprinkling water over a garden bed"
+        },
+        {
+          "slug": "onion-tops-flopped",
+          "subject": "onion plants in soil with their green tops bent over and lying flat"
+        },
+        {
+          "slug": "curing-onions",
+          "subject": "several golden onions with dried tops laid out to cure on a wooden slat"
+        }
+      ],
+      "proTipIcon": {
+        "slug": "onion-sets",
+        "subject": "a small pile of papery brown onion sets ready for planting"
+      }
+    },
+    {
+      "key": "grow-pumpkins",
+      "category": "vegetables",
+      "tags": [
+        "pumpkins",
+        "vegetables",
+        "beginners",
+        "infographics"
+      ],
+      "pinBoard": "Vegetable Garden Layouts",
+      "pinKeywords": [
+        "how to grow pumpkins",
+        "growing pumpkins from seed",
+        "pumpkin plant care",
+        "when to harvest pumpkins"
+      ],
+      "en": {
+        "slug": "how-to-grow-pumpkins",
+        "title": "How to Grow Pumpkins Worth Carrying Indoors",
+        "eyebrow": "Beginner-friendly guide",
+        "chartTitle": "How to grow pumpkins",
+        "description": "Spacing, feeding and pollination for pumpkins, and the trick that stops the underside rotting.",
+        "pinDescription": "How to grow pumpkins: wait for warm soil before sowing, give each vine several feet of room, water the roots rather than the leaves, thin to a few fruit per vine, and rest each pumpkin on a board so the underside stays dry.",
+        "cta": "Plan your beds with Garden Pro Planner",
+        "proTip": {
+          "label": "Pro tip",
+          "text": "A vine that sets six fruit ripens six small ones. Thinning to two or three early sends the same energy into fewer pumpkins, which is where the size comes from."
+        },
+        "steps": [
+          {
+            "label": "Wait for Warmth",
+            "bullets": [
+              "Sow after the last frost",
+              "Cold soil rots the seed"
+            ]
+          },
+          {
+            "label": "Give Them Room",
+            "bullets": [
+              "Vines run a long way",
+              "Allow several feet each"
+            ]
+          },
+          {
+            "label": "Feed the Soil",
+            "bullets": [
+              "Plant into plenty of compost",
+              "Pumpkins are hungry feeders"
+            ]
+          },
+          {
+            "label": "Water the Roots",
+            "bullets": [
+              "Water the base, not leaves",
+              "Wet leaves invite mildew"
+            ]
+          },
+          {
+            "label": "Help Pollination",
+            "bullets": [
+              "Hand pollinate on cool mornings",
+              "Male flowers open first"
+            ]
+          },
+          {
+            "label": "Thin the Fruit",
+            "bullets": [
+              "Keep two or three per vine",
+              "Fewer fruit grow bigger"
+            ]
+          },
+          {
+            "label": "Lift Off the Soil",
+            "bullets": [
+              "Rest each fruit on a board",
+              "Stops the underside rotting"
+            ]
+          },
+          {
+            "label": "Cure the Skin",
+            "bullets": [
+              "Cut with a length of stem",
+              "Cure in sun to harden"
+            ]
+          }
+        ]
+      },
+      "es": {
+        "slug": "como-cultivar-calabazas",
+        "title": "Cómo Cultivar Calabazas Que Valga la Pena Cargar",
+        "eyebrow": "Guía para principiantes",
+        "chartTitle": "Cómo cultivar calabazas",
+        "description": "Distancias, abonado y polinización de la calabaza, y el truco que evita que se pudra por abajo.",
+        "pinDescription": "Cómo cultivar calabazas: espera a que la tierra se caliente para sembrar, deja varios metros por planta, riega la base y no las hojas, deja solo dos o tres frutos por mata y apoya cada calabaza sobre una tabla.",
+        "cta": "Planifica tu huerto con Garden Pro Planner",
+        "proTip": {
+          "label": "Consejo",
+          "text": "Una mata con seis frutos madura seis calabazas pequeñas. Dejar solo dos o tres desde pronto manda la misma energía a menos frutos, y de ahí sale el tamaño."
+        },
+        "steps": [
+          {
+            "label": "Espera al Calor",
+            "bullets": [
+              "Siembra pasada la última helada",
+              "La tierra fría pudre la semilla"
+            ]
+          },
+          {
+            "label": "Dales Sitio",
+            "bullets": [
+              "Las guías se extienden mucho",
+              "Deja varios metros por planta"
+            ]
+          },
+          {
+            "label": "Abona la Tierra",
+            "bullets": [
+              "Planta con bastante compost",
+              "Son muy exigentes"
+            ]
+          },
+          {
+            "label": "Riega la Base",
+            "bullets": [
+              "Riega el pie, no la hoja",
+              "La hoja mojada coge oídio"
+            ]
+          },
+          {
+            "label": "Ayuda a Polinizar",
+            "bullets": [
+              "Poliniza a mano por la mañana",
+              "Las flores macho abren antes"
+            ]
+          },
+          {
+            "label": "Aclara los Frutos",
+            "bullets": [
+              "Deja dos o tres por mata",
+              "Menos frutos crecen más"
+            ]
+          },
+          {
+            "label": "Súbelas del Suelo",
+            "bullets": [
+              "Apoya el fruto en una tabla",
+              "Evita que se pudra abajo"
+            ]
+          },
+          {
+            "label": "Cura la Piel",
+            "bullets": [
+              "Corta dejando un trozo de tallo",
+              "Cura al sol para endurecer"
+            ]
+          }
+        ]
+      },
+      "icons": [
+        {
+          "slug": "pumpkin-seedling",
+          "subject": "a young pumpkin seedling with two broad leaves in dark soil"
+        },
+        {
+          "slug": "sprawling-vine",
+          "subject": "a long trailing squash vine with broad leaves spreading across soil"
+        },
+        {
+          "slug": "soil-mix",
+          "subject": "a heap of dark crumbly soil mixed with compost, a trowel resting in it"
+        },
+        {
+          "slug": "watering-can-sprinkle",
+          "subject": "a metal watering can sprinkling water over a garden bed"
+        },
+        {
+          "slug": "hand-pollinating",
+          "subject": "a small soft brush touching the centre of a yellow squash flower"
+        },
+        {
+          "slug": "pumpkin-on-vine",
+          "subject": "a single orange pumpkin growing on a green vine among broad leaves"
+        },
+        {
+          "slug": "pumpkin-on-board",
+          "subject": "an orange pumpkin resting on a flat wooden board on top of soil"
+        },
+        {
+          "slug": "cured-pumpkins",
+          "subject": "two orange pumpkins with cut stems sitting in bright sunlight"
+        }
+      ],
+      "proTipIcon": {
+        "slug": "pumpkin-on-vine",
+        "subject": "a single orange pumpkin growing on a green vine among broad leaves"
+      }
+    },
+    {
+      "key": "grow-broccoli",
+      "category": "vegetables",
+      "tags": [
+        "broccoli",
+        "vegetables",
+        "beginners",
+        "infographics"
+      ],
+      "pinBoard": "Raised Bed Gardening",
+      "pinKeywords": [
+        "how to grow broccoli",
+        "growing broccoli from seed",
+        "broccoli side shoots",
+        "when to cut broccoli"
+      ],
+      "en": {
+        "slug": "how-to-grow-broccoli",
+        "title": "How to Grow Broccoli That Makes a Head Worth Cutting",
+        "eyebrow": "Beginner-friendly guide",
+        "chartTitle": "How to grow broccoli",
+        "description": "Raising plants, spacing and netting for broccoli, plus when to cut so the side shoots follow.",
+        "pinDescription": "How to grow broccoli: start it in modules and plant out young, give it firm rich soil and generous spacing, net it against caterpillars and pigeons, and cut the central head while the buds are still tight.",
+        "cta": "Plan your beds with Garden Pro Planner",
+        "proTip": {
+          "label": "Pro tip",
+          "text": "Cutting the central head is not the end of the crop. Leave the plant in the ground and it pushes out smaller side shoots for weeks afterwards, which is often the bigger harvest."
+        },
+        "steps": [
+          {
+            "label": "Start in Trays",
+            "bullets": [
+              "Sow in modules, plant out",
+              "Easier than direct sowing"
+            ]
+          },
+          {
+            "label": "Firm Rich Soil",
+            "bullets": [
+              "Brassicas want firm ground",
+              "Tread it before planting"
+            ]
+          },
+          {
+            "label": "Plant Out Young",
+            "bullets": [
+              "Plant out at four leaves",
+              "Older seedlings sulk"
+            ]
+          },
+          {
+            "label": "Space Them Well",
+            "bullets": [
+              "Eighteen inches apart at least",
+              "Crowding gives tiny heads"
+            ]
+          },
+          {
+            "label": "Net the Bed",
+            "bullets": [
+              "Netting stops cabbage caterpillars",
+              "Pigeons strip plants too"
+            ]
+          },
+          {
+            "label": "Water Steadily",
+            "bullets": [
+              "Dry spells open heads early",
+              "Mulch to keep moisture in"
+            ]
+          },
+          {
+            "label": "Cut Central Head",
+            "bullets": [
+              "Cut while the buds are tight",
+              "Yellow flowers mean too late"
+            ]
+          },
+          {
+            "label": "Side Shoots Follow",
+            "bullets": [
+              "Smaller shoots keep coming",
+              "Keep picking for weeks"
+            ]
+          }
+        ]
+      },
+      "es": {
+        "slug": "como-cultivar-brocoli",
+        "title": "Cómo Cultivar Brócoli Que Dé una Pella Que Merezca la Pena",
+        "eyebrow": "Guía para principiantes",
+        "chartTitle": "Cómo cultivar brócoli",
+        "description": "Semillero, distancias y mallas para el brócoli, y cuándo cortar para que salgan los brotes laterales.",
+        "pinDescription": "Cómo cultivar brócoli: siembra en alvéolos y trasplanta joven, dale tierra firme y rica con distancias generosas, protege con malla contra orugas y palomas, y corta la pella central con los botones aún cerrados.",
+        "cta": "Planifica tu huerto con Garden Pro Planner",
+        "proTip": {
+          "label": "Consejo",
+          "text": "Cortar la pella central no acaba la cosecha. Si dejas la planta en tierra, seguirá sacando brotes laterales durante semanas, y muchas veces esa es la cosecha más grande."
+        },
+        "steps": [
+          {
+            "label": "Siembra en Alvéolos",
+            "bullets": [
+              "Siembra en semillero y trasplanta",
+              "Más fácil que siembra directa"
+            ]
+          },
+          {
+            "label": "Tierra Firme y Rica",
+            "bullets": [
+              "Las coles quieren suelo asentado",
+              "Pisa antes de plantar"
+            ]
+          },
+          {
+            "label": "Trasplanta Joven",
+            "bullets": [
+              "Trasplanta con cuatro hojas",
+              "Las mayores se atascan"
+            ]
+          },
+          {
+            "label": "Deja Distancia",
+            "bullets": [
+              "Cuarenta centímetros como mínimo",
+              "Apretadas dan pellas pequeñas"
+            ]
+          },
+          {
+            "label": "Pon Malla",
+            "bullets": [
+              "La malla frena a las orugas",
+              "Las palomas también atacan"
+            ]
+          },
+          {
+            "label": "Riega Constante",
+            "bullets": [
+              "La sequía abre la pella antes",
+              "Acolcha para retener humedad"
+            ]
+          },
+          {
+            "label": "Corta la Pella",
+            "bullets": [
+              "Corta con los botones cerrados",
+              "Si amarillea, ya es tarde"
+            ]
+          },
+          {
+            "label": "Brotes Laterales",
+            "bullets": [
+              "Salen brotes más pequeños",
+              "Sigue recogiendo semanas"
+            ]
+          }
+        ]
+      },
+      "icons": [
+        {
+          "slug": "seed-tray-indoors",
+          "subject": "a small seed tray of young seedlings on a windowsill in soft daylight"
+        },
+        {
+          "slug": "soil-mix",
+          "subject": "a heap of dark crumbly soil mixed with compost, a trowel resting in it"
+        },
+        {
+          "slug": "broccoli-seedling",
+          "subject": "a young broccoli seedling with four small leaves held in a hand"
+        },
+        {
+          "slug": "spaced-plants-row",
+          "subject": "three small strawberry plants evenly spaced in a row in dark garden soil"
+        },
+        {
+          "slug": "brassica-netting",
+          "subject": "fine white mesh netting stretched on hoops over a bed of leafy brassica plants"
+        },
+        {
+          "slug": "mulched-plant",
+          "subject": "a young vegetable plant surrounded by a ring of brown wood-chip mulch on dark soil"
+        },
+        {
+          "slug": "broccoli-head",
+          "subject": "a tight blue-green broccoli head surrounded by large leaves"
+        },
+        {
+          "slug": "broccoli-side-shoots",
+          "subject": "several small broccoli side shoots growing from a thick cut stem"
+        }
+      ],
+      "proTipIcon": {
+        "slug": "broccoli-head",
+        "subject": "a tight blue-green broccoli head surrounded by large leaves"
+      }
     }
   ]
 }
