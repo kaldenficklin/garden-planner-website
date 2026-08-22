@@ -1,5 +1,6 @@
 ---
 import { render } from 'astro:content';
+import { APP_STORE } from '../../lib/stores';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import PostNav from '../../components/PostNav.astro';
 import RelatedPosts from '../../components/RelatedPosts.astro';
@@ -199,7 +200,7 @@ const jsonLd = {
       <aside class="post-cta">
         <h3>Grow this in Garden Pro Planner</h3>
         <p>Plan your season around a 265+ plant library and your local frost dates — with a square-foot bed planner, a planting calendar, pest guides, and yield tracking.</p>
-        <a class="btn" href="https://apps.apple.com/app/id1539031278" data-cta="post-footer">Get the free app</a>
+        <a class="btn" href={APP_STORE} data-store-link data-cta="post-footer">Get the free app</a>
       </aside>
     </div>
 

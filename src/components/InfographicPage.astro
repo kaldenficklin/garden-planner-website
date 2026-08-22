@@ -9,6 +9,7 @@
  * through an archive, which is not this traffic.
  */
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { APP_STORE } from '../lib/stores';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import { formatDate, postHref, type Post } from '../lib/posts';
 import { pinCreateHref, pinDescriptionFor } from '../lib/pinterest';
@@ -164,7 +165,7 @@ const jsonLd = {
       <aside class="post-cta">
         <h3>{T.ctaTitle}</h3>
         <p>{T.ctaBody}</p>
-        <a class="btn" href="https://apps.apple.com/app/id1539031278" data-cta="post-footer">{T.ctaBtn}</a>
+        <a class="btn" href={APP_STORE} data-store-link data-cta="post-footer">{T.ctaBtn}</a>
       </aside>
     </div>
   </article>

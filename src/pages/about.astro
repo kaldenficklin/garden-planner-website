@@ -7,6 +7,7 @@
  */
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
+import { APP_STORE, PLAY_STORE, STORE_LINKS } from '../lib/stores';
 
 const canonical = 'https://thegardenplanner.app/about/';
 
@@ -31,7 +32,7 @@ const orgLd = {
   },
   email: 'support@thegardenplanner.app',
   founder: { '@type': 'Person', name: 'Kalden Ficklin' },
-  sameAs: ['https://apps.apple.com/app/id1539031278'],
+  sameAs: STORE_LINKS,
 };
 ---
 <BaseLayout
@@ -67,7 +68,7 @@ const orgLd = {
       <p>Gardening advice ages, and local conditions vary more than any article can. If something here is wrong or out of date for your region, email <a href="mailto:support@thegardenplanner.app">support@thegardenplanner.app</a> and it will be corrected.</p>
 
       <h2>Get the app</h2>
-      <p>Garden Pro Planner is free on the <a href="https://apps.apple.com/app/id1539031278" data-cta="about">App Store</a>, for iPhone and iPad running iOS 15 or later. See the <a href="/support">support page</a> for help getting started, the <a href="/privacy">privacy policy</a> for what the app stores, and the <a href="/terms">terms</a>.</p>
+      <p>Garden Pro Planner is free on the <a href={APP_STORE} data-cta="about">App Store</a>, for iPhone and iPad running iOS 15 or later, and on <a href={PLAY_STORE} data-cta="about-android">Google Play</a> for Android. See the <a href="/support">support page</a> for help getting started, the <a href="/privacy">privacy policy</a> for what the app stores, and the <a href="/terms">terms</a>.</p>
     </div>
   </main>
 </BaseLayout>

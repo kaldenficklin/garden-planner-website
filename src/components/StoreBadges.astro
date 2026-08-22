@@ -1,0 +1,36 @@
+---
+/**
+ * The pair of store badges — App Store and Google Play, side by side.
+ *
+ * One component rather than markup repeated per CTA: the same pair appears in
+ * the hero, the final band, and the CTA band on every blog and infographic
+ * page, and before Android shipped the App Store button was pasted into all of
+ * them separately.
+ *
+ * `light` is the inverted pill (white on a dark band); `cta` is the analytics
+ * label, suffixed per store so the two can be told apart in the numbers.
+ */
+import { APP_STORE, PLAY_STORE } from '../lib/stores';
+
+interface Props {
+  /** Value for data-cta, e.g. "hero" → "hero-ios" / "hero-android". */
+  cta: string;
+  /** White pill for use on the dark CTA bands. */
+  light?: boolean;
+}
+
+const { cta, light = false } = Astro.props;
+const cls = light ? 'appstore appstore-light' : 'appstore';
+---
+
+<a class={cls} href={APP_STORE} data-cta={`${cta}-ios`} aria-label="Download on the App Store">
+  <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true" fill="currentColor"><path d="M16.365 1.43c0 1.14-.42 2.22-1.17 3.02-.9.96-2.37 1.7-3.63 1.6-.15-1.13.41-2.32 1.11-3.06.79-.83 2.2-1.46 3.36-1.5.02.31.02.62.02.94zM20.7 17.02c-.55 1.27-.82 1.84-1.53 2.96-.99 1.56-2.39 3.5-4.12 3.51-1.54.02-1.93-.99-4.02-.98-2.09.01-2.52.99-4.06.98-1.73-.01-3.05-1.76-4.04-3.32-2.77-4.36-3.06-9.48-1.35-12.2 1.21-1.94 3.13-3.07 4.93-3.07 1.84 0 2.99 1 4.51 1 1.47 0 2.37-1 4.5-1 1.61 0 3.32.87 4.54 2.38-3.99 2.18-3.34 7.86.11 9.74z"/></svg>
+  <span class="appstore-txt"><small>Download on the</small><strong>App Store</strong></span>
+</a>
+<a class={cls} href={PLAY_STORE} data-cta={`${cta}-android`} aria-label="Get it on Google Play">
+  {/* The Play triangle, four faces. Flat fills rather than the brand gradient:
+      the badge sits on both the dark pill and the light one, and a gradient
+      tuned for one reads as mud on the other. */}
+  <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path d="M3.6 1.8a1.5 1.5 0 0 0-.5 1.15v18.1c0 .46.18.87.5 1.15l.1.08L13.8 12.1v-.2L3.7 1.72l-.1.08z" fill="#00D2FF"/><path d="M17.15 15.48l-3.35-3.36v-.24l3.36-3.36.08.05 3.98 2.26c1.14.64 1.14 1.7 0 2.35l-3.98 2.26-.09.04z" fill="#FFCE00"/><path d="M17.24 15.43L13.8 12 3.6 22.2c.37.4.99.45 1.69.05l11.95-6.82z" fill="#FF3A44"/><path d="M17.24 8.57L5.29 1.75C4.59 1.35 3.97 1.4 3.6 1.8L13.8 12l3.44-3.43z" fill="#00E676"/></svg>
+  <span class="appstore-txt"><small>Get it on</small><strong>Google Play</strong></span>
+</a>

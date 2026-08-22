@@ -101,13 +101,21 @@ h1,h2,h3{font-family:'Fraunces',Georgia,serif;font-weight:600;line-height:1.1;co
 .badge-row li{position:relative;padding-left:22px}
 .badge-row li::before{content:"✓";position:absolute;left:0;color:var(--green-600);font-weight:700}
 
-/* App Store button */
+/* Store buttons — the App Store and Google Play pills, always as a pair. */
 .appstore{display:inline-flex;align-items:center;gap:12px;background:#111;color:#fff;border-radius:14px;padding:10px 20px;transition:background .15s ease,transform .15s ease}
 .appstore:hover{background:#000;text-decoration:none;transform:translateY(-1px)}
 .appstore-txt{display:flex;flex-direction:column;line-height:1.1;text-align:left}
 .appstore-txt small{font-size:11px;font-weight:400;opacity:.85}
 .appstore-txt strong{font-size:19px;font-weight:600}
 .appstore-light{background:#fff;color:#111}
+/* The header/sticky "Get the app" buttons carry one glyph for whichever store
+   they point at. Apple by default — the same default as their href — and the
+   Android script swaps both together. */
+.btn-icon-android{display:none}
+.is-android .btn-icon-ios{display:none}
+.is-android .btn-icon-android{display:inline-block}
+/* The pair inside a CTA band. `.cta-row` alone is left-aligned for the hero. */
+.cta-row-center{justify-content:center}
 .appstore-light:hover{background:#f2f2f2}
 
 /* Phone frame */
@@ -187,7 +195,10 @@ h1,h2,h3{font-family:'Fraunces',Georgia,serif;font-weight:600;line-height:1.1;co
 .cta-band{background:linear-gradient(135deg,var(--green-700),var(--green-500));text-align:center}
 .cta-inner h2{color:#fff;font-size:clamp(28px,4vw,42px)}
 .cta-inner p{color:rgba(255,255,255,.9);font-size:19px;margin:14px 0 30px}
-.cta-band .appstore{margin:0 auto}
+/* No `margin:0 auto` here — it centred the badge back when there was one of
+   them, but as flex items a pair of auto margins eats the free space and
+   shoves the two apart to opposite ends of the band. `.cta-row-center` does
+   the centring instead. */
 
 /* Footer */
 .site-footer{background:var(--green-900);color:#cfe3d6;padding:48px 0}
