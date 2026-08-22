@@ -136,8 +136,10 @@ h1,h2,h3{font-family:'Fraunces',Georgia,serif;font-weight:600;line-height:1.1;co
 
 /* Gallery — a grid so every phone comes out the same width. As a flex row they
    sized to their captions, and "265+ plant library" is twice as wide as
-   "Calendar". Becomes a swipeable flex carousel on narrow screens, below. */
-.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:24px;justify-items:center;align-items:start}
+   "Calendar". Three fixed columns rather than auto-fit: six screens auto-fit
+   into one row of six at 152px each, too small to read a Gantt bar in.
+   Becomes a swipeable flex carousel on narrow screens, below. */
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:32px 24px;justify-items:center;align-items:start}
 .gallery figure{margin:0;text-align:center;width:100%;max-width:260px}
 .gallery figure .phone{margin-left:auto;margin-right:auto}
 .gallery figcaption{margin-top:16px;font-weight:600;color:var(--ink)}
