@@ -10,6 +10,7 @@
 /** The frontmatter fields a pin is built from. */
 export interface PinData {
   title: string;
+  pinTitle?: string;
   description: string;
   pinDescription?: string;
   pinKeywords?: string[];
@@ -30,6 +31,23 @@ export function pinDescriptionFor(data: PinData): string {
   const sentence = data.pinDescription ?? `${data.title}. ${data.description}`;
   const tags = (data.pinKeywords ?? data.tags ?? []).slice(0, 5).map(hashtag).join(' ');
   return tags ? `${sentence} ${tags}` : sentence;
+}
+
+/**
+ * The exact text handed to Pinterest as the pin title.
+ *
+ * Deliberately the bare post title, with no " — Garden Pro Planner" suffix. The
+ * page's <title> carries that suffix for search results, but a pin headline is
+ * already attributed to the account and the board, so the suffix there only
+ * eats into the ~40 characters Pinterest shows before truncating.
+ *
+ * Pinterest's pin/create/button/ endpoint has no title parameter, so this
+ * cannot reach a pin saved via the on-page Save button — it is read from
+ * data-pin-title by the browser Save extension, and is what og:title offers to
+ * anything that auto-fills from the page.
+ */
+export function pinTitleFor(data: PinData): string {
+  return data.pinTitle ?? data.title;
 }
 
 /**

@@ -8,7 +8,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import { postHref, type Post } from '../lib/posts';
-import { pinCreateHref, pinDescriptionFor } from '../lib/pinterest';
+import { pinCreateHref, pinDescriptionFor, pinTitleFor } from '../lib/pinterest';
 
 interface Props {
   posts: Post[];
@@ -70,8 +70,9 @@ const cards = posts.map((post) => {
   const href = postHref(post);
   const url = new URL(href, Astro.site).href;
   const media = new URL(post.data.infographicImage ?? '/assets/app-icon.png', Astro.site).href;
+  const pinTitle = pinTitleFor(post.data);
   const pinDescription = pinDescriptionFor(post.data);
-  return { post, href, url, media, pinDescription, pinHref: pinCreateHref(url, media, pinDescription) };
+  return { post, href, url, media, pinTitle, pinDescription, pinHref: pinCreateHref(url, media, pinDescription) };
 });
 
 // ItemList tells Google the page is a gallery and in what order, which is what
@@ -117,7 +118,7 @@ const jsonLd = {
       </header>
 
       <ul class="ig-grid">
-        {cards.map(({ post, href, url, media, pinDescription, pinHref }) => (
+        {cards.map(({ post, href, url, media, pinTitle, pinDescription, pinHref }) => (
           <li class="ig-card">
             <a class="ig-card-link" href={href}>
               {post.data.infographicImage && (
@@ -129,6 +130,7 @@ const jsonLd = {
                   loading="lazy"
                   data-pin-media={media}
                   data-pin-url={url}
+                  data-pin-title={pinTitle}
                   data-pin-description={pinDescription}
                 />
               )}

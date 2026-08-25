@@ -3,6 +3,16 @@ import { APP_STORE, PLAY_STORE } from '../lib/stores';
 
 export interface Props {
   title: string;
+  /**
+   * og:title / twitter:title, when the social headline should differ from the
+   * <title>. Defaults to `title`.
+   *
+   * The <title> carries the " — Garden Pro Planner" suffix because a search
+   * result needs the source named. A social card is already attributed to the
+   * account, so there the suffix only eats the ~40 characters Pinterest shows
+   * before it truncates.
+   */
+  ogTitle?: string;
   description: string;
   canonical?: string;
   image?: string;
@@ -26,6 +36,7 @@ export interface Props {
 
 const {
   title,
+  ogTitle,
   description,
   canonical = new URL(Astro.url.pathname, Astro.site).href,
   image = 'https://thegardenplanner.app/assets/app-icon.png',
@@ -59,7 +70,7 @@ const {
 
   <!-- Open Graph -->
   <meta property="og:type" content={type} />
-  <meta property="og:title" content={title} />
+  <meta property="og:title" content={ogTitle ?? title} />
   <meta property="og:description" content={description} />
   <meta property="og:url" content={canonical} />
   <meta property="og:image" content={image} />
@@ -74,7 +85,7 @@ const {
     </>
   )}
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content={title} />
+  <meta name="twitter:title" content={ogTitle ?? title} />
   <meta name="twitter:description" content={description} />
   <meta name="twitter:image" content={image} />
 
