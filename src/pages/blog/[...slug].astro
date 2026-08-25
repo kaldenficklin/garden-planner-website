@@ -68,8 +68,11 @@ const pinImage = isInfographic
 const hashtag = (s: string) =>
   '#' + s.trim().split(/[\s\-_]+/).map((w) => w.charAt(0).toUpperCase() + w.slice(1)).join('');
 const pinTags = (data.pinKeywords ?? data.tags).slice(0, 5).map(hashtag).join(' ');
+// The pin headline: the punchier short title where a post defines one. Note
+// this is NOT the og:title — see the BaseLayout call below.
+const pinTitle = data.pinTitle ?? data.title;
 const pinDescription =
-  `${data.pinTitle ?? data.title}. ${data.description}` + (pinTags ? ` ${pinTags}` : '');
+  `${pinTitle}. ${data.description}` + (pinTags ? ` ${pinTags}` : '');
 const pinHref =
   'https://www.pinterest.com/pin/create/button/' +
   `?url=${encodeURIComponent(url)}` +
@@ -103,6 +106,7 @@ const jsonLd = {
 ---
 <BaseLayout
   title={`${data.title} — Garden Pro Planner`}
+  ogTitle={data.title}
   description={data.description}
   canonical={url}
   image={image}
@@ -144,6 +148,7 @@ const jsonLd = {
             height={isInfographic ? 1500 : 800}
             fetchpriority="high"
             data-pin-media={pinImage}
+            data-pin-title={pinTitle}
             data-pin-description={pinDescription}
           />
           <div class="hero-actions">
@@ -186,10 +191,11 @@ const jsonLd = {
         <div class="pin-source" aria-hidden="true">
           <img
             src={data.pinImage}
-            alt={data.pinTitle ?? data.title}
+            alt={pinTitle}
             loading="lazy"
             width="1000"
             height="1500"
+            data-pin-title={pinTitle}
             data-pin-description={pinDescription}
           />
         </div>
