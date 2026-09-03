@@ -11,7 +11,7 @@
  * switched on later that day.
  */
 
-const BASE = process.env.IMAGE_API ?? 'http://192.168.0.119:4000';
+const BASE = process.env.IMAGE_API ?? 'http://192.168.40.238:4000';
 
 /** One health probe. Resolves true/false, never throws. */
 export async function isUp(timeoutMs = 4000) {

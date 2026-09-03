@@ -34,7 +34,7 @@ import { tmpdir } from 'node:os';
 const HERE = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(HERE, '..');
 
-const API = (process.env.IMAGE_API_URL ?? 'http://192.168.0.119:4000').replace(/\/$/, '');
+const API = (process.env.IMAGE_API_URL ?? 'http://192.168.40.238:4000').replace(/\/$/, '');
 
 /** 2:3 vertical master. Both the 1200x800 hero and the 1000x1500 pin crop out of this. */
 const WIDTH = 1536;
