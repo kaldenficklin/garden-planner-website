@@ -91,13 +91,24 @@ export async function inspectIcon(buf) {
 export async function makeIcon({ slug, subject, attempts = 3, log = console.log }) {
   let last;
   for (let i = 1; i <= attempts; i++) {
-    const buf = await generate({
-      prompt: `${subject}. ${STYLE}`,
-      quality: 'max',
-      width: 1024,
-      height: 1024,
-      realism: false,
-    });
+    // A transport failure — most often the per-image timeout aborting while the
+    // API is still warming its models up after the PC wakes — is a failed
+    // attempt, not a failed run. Letting it escape the loop killed the whole
+    // 2026-09-05 publish partway through its first icon.
+    let buf;
+    try {
+      buf = await generate({
+        prompt: `${subject}. ${STYLE}`,
+        quality: 'max',
+        width: 1024,
+        height: 1024,
+        realism: false,
+      });
+    } catch (err) {
+      last = { ok: false, error: String(err?.message ?? err) };
+      log(`[icon:${slug}] attempt ${i} failed: ${last.error}`);
+      continue;
+    }
     const check = await inspectIcon(buf);
     last = check;
     if (check.ok) {
@@ -106,7 +117,7 @@ export async function makeIcon({ slug, subject, attempts = 3, log = console.log 
     }
     log(`[icon:${slug}] attempt ${i} rejected: ${check.blank ? 'blank canvas' : 'subject bleeds to the edge'}`);
   }
-  throw new Error(`icon "${slug}" failed inspection after ${attempts} attempts (${JSON.stringify(last)})`);
+  throw new Error(`icon "${slug}" failed after ${attempts} attempts (${JSON.stringify(last)})`);
 }
 
 function arg(name) {
