@@ -1,144 +1,153 @@
-/* Blog styles — builds on the shared tokens defined in style.css */
+/* =============================================================================
+   Blog styles — builds on the tokens in style.css
+   =============================================================================
+   MOBILE FIRST, matching style.css: base rules are the phone, media queries are
+   `min-width`. The blog is where nearly all of this site's search and Pinterest
+   traffic lands, and nearly all of that is a phone, so the phone layout is the
+   one that costs nothing to render.
+
+   Breakpoints here are the same two that matter on this content: 560px (the
+   phone stops being narrow) and 900px (desktop).
+   ========================================================================== */
 
 .blog-hero {
-  background: linear-gradient(180deg, var(--green-50), #fff);
+  background: linear-gradient(180deg, var(--leaf-50), #fff);
   border-bottom: 1px solid var(--line);
-  padding: 64px 0 40px;
+  padding: 34px 0 26px;
 }
-.blog-hero h1 { font-size: clamp(34px, 5vw, 52px); margin-top: 6px; }
-.blog-hero .lead { margin-top: 18px; }
+.blog-hero h1 { font-size: clamp(28px, 7vw, 38px); margin-top: 6px; }
+.blog-hero .lead { margin-top: 14px; color: var(--ink-soft); font-size: 16.5px; max-width: 58ch; }
 
-/* Post list */
-.post-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 22px; }
+/* ------------------------------------------------------------- post list --- */
+.post-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 16px; }
 .post-card {
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  background: var(--white);
+  background: var(--paper);
   transition: box-shadow .2s ease, transform .2s ease, border-color .2s ease;
 }
-.post-card:hover { box-shadow: var(--shadow); transform: translateY(-2px); border-color: var(--green-100); }
-.post-card-link { display: block; padding: 26px 28px; color: inherit; }
+.post-card:hover { box-shadow: var(--shadow-sm); transform: translateY(-2px); border-color: var(--leaf-100); }
+.post-card-link { display: block; padding: 20px 20px 22px; color: inherit; }
 .post-card-link:hover { text-decoration: none; }
-.post-date, .post-meta { color: var(--ink-soft); font-size: 14px; font-weight: 500; }
-.post-card-title { font-size: 24px; margin: 8px 0 10px; color: var(--ink); }
+.post-date, .post-meta { color: var(--ink-faint); font-size: 13.5px; font-weight: 500; }
+.post-card-title { font-size: 21px; margin: 8px 0 10px; color: var(--ink); }
 .post-card-desc { color: var(--ink-soft); margin: 0; }
-.read-more { display: inline-block; margin-top: 14px; color: var(--green-700); font-weight: 600; font-size: 15px; }
+.read-more { display: inline-block; margin-top: 14px; color: var(--leaf-700); font-weight: 600; font-size: 15px; }
 
 .page-count { color: var(--ink-soft); font-size: 14px; font-weight: 600; margin: 16px 0 0; }
 
-/* Pager under the post list */
+/* ----------------------------------------------------------------- pager --- */
 .pager {
-  display: flex; align-items: center; justify-content: space-between; gap: 16px;
-  margin-top: 44px; padding-top: 26px; border-top: 1px solid var(--line);
+  display: flex; align-items: center; flex-wrap: wrap; justify-content: center;
+  gap: 12px 16px;
+  margin-top: 32px; padding-top: 26px; border-top: 1px solid var(--line);
 }
 .pager-step { font-weight: 600; font-size: 15px; white-space: nowrap; }
 .pager-step.is-disabled { color: var(--ink-soft); opacity: .4; }
-.pager-pages { list-style: none; display: flex; gap: 8px; margin: 0; padding: 0; }
+.pager-pages { list-style: none; display: flex; gap: 8px; margin: 0; padding: 0; order: -1; width: 100%; justify-content: center; }
 .pager-page {
-  display: grid; place-items: center; min-width: 40px; min-height: 40px;
+  display: grid; place-items: center; min-width: 44px; min-height: 44px;
   padding: 0 10px; border-radius: 10px; border: 1px solid var(--line);
-  font-weight: 600; font-size: 15px; color: var(--ink-soft); background: var(--white);
+  font-weight: 600; font-size: 15px; color: var(--ink-soft); background: var(--paper);
   transition: border-color .15s ease, color .15s ease, background .15s ease;
 }
-.pager-page:hover { border-color: var(--green-100); background: var(--green-50); color: var(--green-700); text-decoration: none; }
-.pager-page.is-current { background: var(--green-600); border-color: var(--green-600); color: #fff; }
+.pager-page:hover { border-color: var(--leaf-100); background: var(--leaf-50); color: var(--leaf-700); text-decoration: none; }
+.pager-page.is-current { background: var(--leaf-600); border-color: var(--leaf-600); color: #fff; }
 
-/* Previous / next post, at the foot of an article */
+/* --------------------------------------------------- previous / next post -- */
+/* Side by side, the two titles get about 20 characters each on a phone, so
+   they stack until there is room. */
 .post-nav {
-  display: grid; grid-template-columns: 1fr 1fr; gap: 16px;
-  margin-top: 44px; padding-top: 28px; border-top: 1px solid var(--line);
+  display: grid; grid-template-columns: 1fr; gap: 14px;
+  margin-top: 36px; padding-top: 28px; border-top: 1px solid var(--line);
 }
 .post-nav-link {
   display: flex; flex-direction: column; gap: 6px;
   padding: 16px 18px; border: 1px solid var(--line); border-radius: 14px;
-  color: inherit; background: var(--white);
+  color: inherit; background: var(--paper);
   transition: border-color .15s ease, box-shadow .15s ease, transform .15s ease;
 }
-.post-nav-link:hover { text-decoration: none; border-color: var(--green-100); box-shadow: var(--shadow); transform: translateY(-2px); }
-.post-nav-older { text-align: right; }
-.post-nav-dir { color: var(--green-700); font-size: 13px; font-weight: 600; }
-.post-nav-title { font-family: 'Fraunces', Georgia, serif; font-size: 17px; line-height: 1.3; }
+.post-nav-link:hover { text-decoration: none; border-color: var(--leaf-100); box-shadow: var(--shadow-sm); transform: translateY(-2px); }
+.post-nav-older { text-align: left; }
+.post-nav-dir { color: var(--leaf-700); font-size: 13px; font-weight: 600; }
+.post-nav-title { font-family: var(--font-display); font-size: 17px; line-height: 1.3; }
 
 /* Related posts — sits outside the narrow article column, so the cards get the
    full page width rather than being squeezed into the reading measure. */
-.related { padding: 56px 0 8px; border-top: 1px solid var(--line); }
-.related-title { font-size: 26px; margin-bottom: 24px; }
+.related { padding: 40px 0 8px; border-top: 1px solid var(--line); }
+.related-title { font-size: 23px; margin-bottom: 20px; }
 
-/* Tags */
+/* ------------------------------------------------------------------ tags --- */
 .tag-row { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; padding: 0; margin: 14px 0 0; }
 .tag {
   display: inline-block;
   font-size: 12px; font-weight: 600; letter-spacing: .02em;
-  color: var(--green-700); background: var(--green-100);
-  padding: 4px 11px; border-radius: 999px;
+  color: var(--leaf-700); background: var(--leaf-100);
+  padding: 5px 11px; border-radius: 999px;
 }
 a.tag-link { transition: background .15s ease, color .15s ease; }
-a.tag-link:hover { background: var(--green-600); color: #fff; text-decoration: none; }
+a.tag-link:hover { background: var(--leaf-600); color: #fff; text-decoration: none; }
 
 /* Tags sit outside the card's own link, so they get the card's padding here. */
-.post-card-tags { padding: 0 28px 22px; margin-top: -6px; }
+.post-card-tags { padding: 0 20px 20px; margin-top: -6px; }
 .post-card-tags .tag-row { margin-top: 0; }
 .tag-back { margin-top: 32px; font-weight: 600; }
 
-/* Single post */
-.crumbs { margin-bottom: 18px; font-weight: 500; font-size: 15px; }
+/* ----------------------------------------------------------- single post --- */
+.crumbs { margin-bottom: 16px; font-weight: 500; font-size: 14px; }
 .crumb-list { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; }
 .crumb + .crumb::before { content: "/"; margin-right: 8px; color: var(--ink-soft); opacity: .6; }
 /* The trail ends on the current page's title, which can be long. */
 .crumb:last-child span { color: var(--ink-soft); }
-.blog-hero .crumbs { margin-bottom: 22px; }
+.blog-hero .crumbs { margin-bottom: 20px; }
 
-.post-header h1 { font-size: clamp(30px, 4.5vw, 46px); }
+.post-header h1 { font-size: clamp(27px, 7.2vw, 36px); }
 .post-header .post-meta { margin: 14px 0 0; }
 .post-header .tag-row { margin-top: 16px; }
-.post-hero { position: relative; margin: 26px 0 0; }
+.post-hero { position: relative; margin: 22px 0 0; }
 /* height:auto so the intrinsic-size attributes that stop the layout jumping
    don't also lock the rendered height. */
 .post-hero-img { width: 100%; height: auto; border-radius: var(--radius); display: block; }
 
 /* Save / share buttons, sitting over the hero photo */
-.hero-actions { position: absolute; top: 14px; right: 14px; display: flex; gap: 8px; }
+.hero-actions { position: absolute; top: 10px; right: 10px; display: flex; gap: 6px; }
 .pin-btn, .share-btn {
   display: inline-flex; align-items: center; gap: 7px;
-  padding: 9px 15px 9px 13px; border: 0; border-radius: 999px;
+  padding: 9px 14px 9px 12px; border: 0; border-radius: 999px;
   background: rgba(255,255,255,.94);
-  font-family: inherit; font-weight: 600; font-size: 14px; line-height: 1;
-  box-shadow: 0 4px 14px -4px rgba(18,58,38,.45);
+  font-family: inherit; font-weight: 600; font-size: 13px; line-height: 1;
+  box-shadow: 0 4px 14px -4px rgba(14,51,36,.45);
   backdrop-filter: saturate(140%) blur(6px);
   cursor: pointer;
   transition: background .15s ease, color .15s ease, transform .15s ease;
 }
 .pin-btn { color: #e60023; }
 .pin-btn:hover { background: #e60023; color: #fff; text-decoration: none; transform: translateY(-1px); }
-.share-btn { color: var(--green-700); }
-.share-btn:hover { background: var(--green-700); color: #fff; transform: translateY(-1px); }
-.share-btn.is-copied { background: var(--green-700); color: #fff; }
+.share-btn { color: var(--leaf-700); }
+.share-btn:hover { background: var(--leaf-700); color: #fff; transform: translateY(-1px); }
+.share-btn.is-copied { background: var(--leaf-700); color: #fff; }
 .pin-btn:active, .share-btn:active { transform: translateY(0); }
 .pin-btn svg, .share-btn svg { flex: none; }
-@media (max-width: 520px) {
-  .hero-actions { top: 10px; right: 10px; gap: 6px; }
-  .pin-btn, .share-btn { padding: 8px 13px 8px 11px; font-size: 13px; }
-}
 
 /* The 2:3 pin lives in the DOM so Pinterest's "save from URL" flow finds it,
    but it is never shown to readers. */
 .pin-source { position: absolute; left: -9999px; top: 0; width: 1000px; height: 1500px; overflow: hidden; }
 
-/* Prose — readable article body */
-.prose { margin-top: 30px; font-size: 18px; line-height: 1.75; color: var(--ink); }
+/* ----------------------------------------------------------------- prose --- */
+.prose { margin-top: 24px; font-size: 17px; line-height: 1.75; color: var(--ink); }
 .prose > * + * { margin-top: 1.1em; }
-.prose h2 { font-size: 28px; margin-top: 1.8em; }
-.prose h3 { font-size: 22px; margin-top: 1.6em; }
+.prose h2 { font-size: 24px; margin-top: 1.8em; }
+.prose h3 { font-size: 20px; margin-top: 1.6em; }
 .prose ul, .prose ol { padding-left: 1.4em; }
 .prose li + li { margin-top: .4em; }
-.prose a { color: var(--green-700); text-decoration: underline; text-underline-offset: 2px; }
+.prose a { color: var(--leaf-700); text-decoration: underline; text-underline-offset: 2px; }
 .prose blockquote {
-  border-left: 4px solid var(--green-500);
+  border-left: 4px solid var(--leaf-500);
   padding: 4px 0 4px 20px; margin-left: 0;
   color: var(--ink-soft); font-style: italic;
 }
 .prose code {
-  background: var(--green-50); border: 1px solid var(--line);
+  background: var(--leaf-50); border: 1px solid var(--line);
   border-radius: 6px; padding: 1px 6px; font-size: .9em;
 }
 .prose pre {
@@ -147,124 +156,197 @@ a.tag-link:hover { background: var(--green-600); color: #fff; text-decoration: n
 }
 .prose pre code { background: none; border: none; padding: 0; color: inherit; }
 .prose img { border-radius: 12px; margin: 1.4em 0; }
-.prose table { width: 100%; border-collapse: collapse; font-size: 16px; }
+/* A wide comparison table scrolls inside its own box rather than stretching the
+   page — on a phone, `white-space: nowrap` is what keeps the columns readable
+   instead of collapsing each cell into a four-line stack. */
+.prose table { display: block; overflow-x: auto; white-space: nowrap; width: 100%; border-collapse: collapse; font-size: 16px; }
 .prose th, .prose td { border: 1px solid var(--line); padding: 10px 12px; text-align: left; }
-.prose th { background: var(--green-50); font-family: 'Inter', sans-serif; }
+.prose th { background: var(--leaf-50); font-family: var(--font-body); }
 
-/* In-article CTA */
+/* ------------------------------------------------------- mid-article CTA --- */
+/* Placed inside the article by src/lib/rehype-app-cta.mjs, before the third
+   <h2>. It has to read as a considered aside rather than an ad break, or it
+   costs more trust than the tap is worth — hence the harvest rule down the
+   left rather than a filled block, and a hook sentence rather than a headline.
+   Harvest, not leaf: the CTA's whole argument is the savings one, and that
+   colour means only that. */
+.inline-cta {
+  margin: 2em 0;
+  padding: 20px 20px 18px;
+  background: var(--harvest-50);
+  border: 1px solid var(--harvest-100);
+  border-left: 3px solid var(--harvest-600);
+  border-radius: 4px var(--radius) var(--radius) 4px;
+}
+.inline-cta-body { display: flex; flex-direction: column; gap: 14px; }
+.inline-cta-hook {
+  margin: 0;
+  font-size: 16.5px;
+  line-height: 1.55;
+  font-weight: 500;
+  color: var(--ink);
+}
+.inline-cta-btn {
+  align-self: stretch;
+  background: var(--harvest-600);
+  text-decoration: none;
+}
+.inline-cta-btn:hover { background: var(--harvest-700); text-decoration: none; }
+.inline-cta-foot {
+  margin: 12px 0 0;
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: var(--ink-faint);
+}
+/* `.prose > * + *` would otherwise add a second top margin on top of the one
+   above, and the article's own link styling would underline the button. */
+.prose > .inline-cta + * { margin-top: 2em; }
+.prose .inline-cta a { text-decoration: none; }
+
+/* ------------------------------------------------------- end-of-post CTA --- */
 .post-cta {
-  margin-top: 44px; padding: 28px;
-  background: var(--green-50); border: 1px solid var(--green-100);
+  margin-top: 36px; padding: 24px 20px;
+  background: var(--leaf-50); border: 1px solid var(--leaf-100);
   border-radius: var(--radius); text-align: center;
 }
-.post-cta h3 { font-size: 22px; }
+.post-cta h3 { font-size: 21px; }
 .post-cta p { color: var(--ink-soft); margin: 10px auto 18px; max-width: 46ch; }
-.post-cta .btn { min-height: 48px; padding: 12px 26px; }
+.post-cta .btn { min-height: 48px; padding: 12px 26px; width: 100%; }
+.post-cta-foot { margin: 14px auto 0 !important; font-size: 13px; color: var(--ink-faint); }
 
-@media (max-width: 560px) {
-  .blog-hero { padding: 40px 0 32px; }
-  /* Side by side, the two titles get about 20 characters each. Stack them. */
-  .post-nav { grid-template-columns: 1fr; margin-top: 36px; }
-  .post-nav-older { text-align: left; }
-  .pager { flex-wrap: wrap; justify-content: center; gap: 12px 16px; margin-top: 32px; }
-  .pager-pages { order: -1; width: 100%; justify-content: center; }
-  .related { padding-top: 40px; }
-  .related-title { font-size: 23px; }
-  .post-card-link { padding: 20px 20px 22px; }
-  .post-card-title { font-size: 21px; }
-  .post-list { gap: 16px; }
-  .prose { font-size: 17px; margin-top: 24px; }
-  .prose h2 { font-size: 24px; }
-  .prose h3 { font-size: 20px; }
-  /* Wide comparison tables scroll on their own rather than stretching the page. */
-  .prose table { display: block; overflow-x: auto; white-space: nowrap; }
-  .post-cta { padding: 24px 20px; margin-top: 36px; }
-  .post-cta .btn { width: 100%; }
+/* =============================================================================
+   560px
+   ========================================================================== */
+@media (min-width: 560px) {
+  .blog-hero { padding: 48px 0 34px; }
+  .post-list { gap: 20px; }
+  .post-card-link { padding: 24px 26px; }
+  .post-card-tags { padding: 0 26px 22px; }
+  .post-card-title { font-size: 23px; }
+
+  .pager { justify-content: space-between; flex-wrap: nowrap; margin-top: 44px; }
+  .pager-pages { order: 0; width: auto; }
+
+  .post-nav { grid-template-columns: 1fr 1fr; gap: 16px; }
+  .post-nav-older { text-align: right; }
+
+  .hero-actions { top: 14px; right: 14px; gap: 8px; }
+  .pin-btn, .share-btn { padding: 9px 15px 9px 13px; font-size: 14px; }
+
+  .prose { font-size: 18px; margin-top: 30px; }
+  .prose h2 { font-size: 26px; }
+  .prose h3 { font-size: 22px; }
+
+  .inline-cta { padding: 24px 24px 20px; }
+  .inline-cta-body { flex-direction: row; align-items: center; justify-content: space-between; gap: 20px; }
+  .inline-cta-btn { align-self: auto; flex: none; }
+
+  .post-cta { padding: 28px; }
+  .post-cta .btn { width: auto; }
 }
 
-/* ---- /infographics/ section ------------------------------------------- */
-/* A picture grid, not the text list used on /blog: these entries are images,
-   and the thumbnail is what tells a reader whether they want this one. */
-.ig-head { margin-bottom: 36px; }
+/* =============================================================================
+   900px — desktop
+   ========================================================================== */
+@media (min-width: 900px) {
+  .blog-hero { padding: 64px 0 40px; }
+  .blog-hero h1 { font-size: clamp(34px, 5vw, 52px); }
+  .blog-hero .lead { font-size: 19px; }
+
+  .post-header h1 { font-size: clamp(32px, 4.5vw, 46px); }
+  .related { padding-top: 56px; }
+  .related-title { font-size: 26px; }
+  .prose h2 { font-size: 28px; }
+  /* Desktop has room for a real table again. */
+  .prose table { display: table; white-space: normal; }
+}
+
+/* =============================================================================
+   /infographics/
+   =============================================================================
+   A picture grid, not the text list used on /blog: these entries are images,
+   and the thumbnail is what tells a reader whether they want this one.
+   ========================================================================== */
+.ig-head { margin-bottom: 26px; }
 .ig-intro { color: var(--ink-soft); margin: 12px 0 0; max-width: 60ch; }
 .ig-meta { margin: 14px 0 0; font-size: 15px; color: var(--ink-soft); }
 
 /* Denser than a card list on purpose: the point of this page is scanning the
-   whole library at once, so the columns are sized to fit five across a 1080px
-   wrap and three across a phone rather than to make any one chart large. */
+   whole library at once, so the columns are sized to fit three across a phone
+   and five across a 1080px wrap rather than to make any one chart large. */
 .ig-grid {
   list-style: none;
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(184px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 14px;
 }
 .ig-card { margin: 0; position: relative; }
 .ig-card-link {
   display: block;
   height: 100%;
   color: inherit;
-  border: 1px solid var(--border, #e7e2d6);
+  border: 1px solid var(--line);
   border-radius: 14px;
   overflow: hidden;
-  background: #fff;
+  background: var(--paper);
   transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
 }
 .ig-card-link:hover {
   text-decoration: none;
   transform: translateY(-2px);
-  box-shadow: var(--shadow);
-  border-color: var(--green-100);
+  box-shadow: var(--shadow-sm);
+  border-color: var(--leaf-100);
 }
 /* The intrinsic 2:3 ratio is declared on the <img> so the grid reserves each
    card's height before the images land and the page doesn't reflow. */
 .ig-card img { display: block; width: 100%; height: auto; aspect-ratio: 2 / 3; object-fit: cover; }
 .ig-card-title {
   display: block;
-  padding: 12px 14px 14px;
+  padding: 10px 12px 12px;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 1.3;
 }
 
 /* Save-to-Pinterest, one per chart. It sits over the image rather than under
    the title so it reads as belonging to that picture, and it is a sibling of
    the card link rather than a child — a link inside a link is invalid and
-   browsers drop it. Hidden until hover on a mouse, always visible on touch,
-   where there is no hover to reveal it. */
+   browsers drop it. On touch it is permanently visible (no hover to reveal
+   it), so it drops to the icon alone, which covers far less of the artwork. */
 .ig-pin {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 7px;
+  right: 7px;
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  padding: 6px 11px;
-  border-radius: 999px;
+  padding: 7px;
+  border-radius: 50%;
   background: #e60023;
   color: #fff;
   font-size: 13px;
   font-weight: 600;
   line-height: 1;
   box-shadow: 0 2px 8px rgba(0, 0, 0, .22);
-  opacity: 0;
-  transform: translateY(-4px);
   transition: opacity .15s ease, transform .15s ease, background .15s ease;
 }
-.ig-card:hover .ig-pin,
-.ig-pin:focus-visible { opacity: 1; transform: none; }
+.ig-pin span { display: none; }
 .ig-pin:hover { background: #ad081b; text-decoration: none; color: #fff; }
 
-@media (hover: none) {
-  .ig-pin { opacity: 1; transform: none; }
+@media (min-width: 640px) {
+  .ig-grid { grid-template-columns: repeat(auto-fill, minmax(184px, 1fr)); gap: 20px; }
+  .ig-card-title { padding: 12px 14px 14px; font-size: 15px; }
+  .ig-pin { top: 10px; right: 10px; padding: 6px 11px; border-radius: 999px; }
+  .ig-pin span { display: inline; }
 }
 
-@media (max-width: 640px) {
-  .ig-grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 14px; }
-  .ig-card-title { padding: 10px 12px 12px; font-size: 14px; }
-  /* No hover to reveal it here, so it is permanently on top of the chart —
-     drop to the icon alone, which covers far less of the artwork. */
-  .ig-pin { top: 7px; right: 7px; padding: 7px; border-radius: 50%; }
-  .ig-pin span { display: none; }
+/* With a mouse, hold it back until the card is hovered. Touch devices report
+   `hover: none` and keep it visible, which is why this is a capability query
+   and not a width one. */
+@media (hover: hover) {
+  .ig-pin { opacity: 0; transform: translateY(-4px); }
+  .ig-card:hover .ig-pin,
+  .ig-pin:focus-visible { opacity: 1; transform: none; }
 }

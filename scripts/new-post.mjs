@@ -48,6 +48,7 @@ title: "${title.replace(/"/g, '\\"')}"
 description: "TODO: one-sentence summary (~155 chars) — this is the Google/social snippet."
 date: ${today}
 tags: [${tags.map((t) => `"${t}"`).join(', ')}]
+ctaHook: "TODO: one sentence tying THIS post's subject to the app — the line a reader would nod at having just read the section above it. Delete the field to fall back to the generic one."
 draft: true
 ---
 

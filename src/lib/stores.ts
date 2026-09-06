@@ -4,12 +4,11 @@
  * package `com.ficklinholdings.gardenplanner` (NOT `com.gardenplanner`, which
  * another publisher holds permanently; see app.config.ts in the app repo).
  *
- * Import these rather than pasting the URLs: they were hardcoded in nine files
- * before Android shipped, and every one of them had to be found by grep.
+ * The values themselves live in ./store-urls.mjs so the rehype plugin that runs
+ * inside the markdown pipeline can share them. Import from here in src/.
  */
-export const APP_STORE = 'https://apps.apple.com/app/id1539031278';
-export const PLAY_STORE =
-  'https://play.google.com/store/apps/details?id=com.ficklinholdings.gardenplanner';
+export { APP_STORE, PLAY_STORE } from './store-urls.mjs';
+import { APP_STORE, PLAY_STORE } from './store-urls.mjs';
 
 /** Both listings, for schema.org `sameAs`. */
 export const STORE_LINKS = [APP_STORE, PLAY_STORE];

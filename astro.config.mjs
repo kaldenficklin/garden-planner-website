@@ -1,6 +1,7 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
+import { rehypeAppCta } from './src/lib/rehype-app-cta.mjs';
 
 // The secondary marketing pages (privacy/support/terms/delete-account) live in
 // public/ and pass through untouched. Astro builds the landing page and /blog.
@@ -20,6 +21,11 @@ export default defineConfig({
       ],
     }),
   ],
+  markdown: {
+    // Places one app CTA at reading depth inside every post. See the plugin for
+    // why it is a rehype pass and not markup in the page component.
+    rehypePlugins: [rehypeAppCta],
+  },
   build: {
     // Clean URLs: /blog/my-post/ instead of /blog/my-post.html
     format: 'directory',

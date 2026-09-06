@@ -24,8 +24,21 @@ export interface Props {
   publishedTime?: string;
   modifiedTime?: string;
   articleTags?: string[];
-  /** Page language. Sets <html lang> and og:locale. */
-  lang?: 'en' | 'es';
+  /**
+   * Page language for <html lang>. A full BCP-47 tag: 'en', 'es', but also
+   * 'en-GB' for the UK landing page, where the regional subtag is what tells a
+   * browser (and a screen reader) to expect British spelling and pronunciation.
+   */
+  lang?: string;
+  /** og:locale override. Derived from `lang` when not given. */
+  ogLocale?: string;
+  /**
+   * Root the header's on-page anchors at a different landing page. The UK page
+   * carries the same sections as the US one, so "Features" there has to mean
+   * /uk/#features — pointed at "/" it silently throws UK visitors onto the US
+   * page and out of the market they arrived in.
+   */
+  navBase?: string;
   /**
    * hreflang alternates for a translated page. Every version of a page must
    * list every version including itself, plus an x-default — Google ignores a
@@ -46,8 +59,13 @@ const {
   modifiedTime,
   articleTags = [],
   lang = 'en',
+  ogLocale,
+  navBase = '/',
   alternates = [],
 } = Astro.props;
+
+const OG_LOCALES: Record<string, string> = { en: 'en_US', 'en-GB': 'en_GB', es: 'es_ES' };
+const resolvedOgLocale = ogLocale ?? OG_LOCALES[lang] ?? 'en_US';
 ---
 <!DOCTYPE html>
 <html lang={lang}>
@@ -75,7 +93,7 @@ const {
   <meta property="og:url" content={canonical} />
   <meta property="og:image" content={image} />
   <meta property="og:site_name" content="Garden Pro Planner" />
-  <meta property="og:locale" content={lang === 'es' ? 'es_ES' : 'en_US'} />
+  <meta property="og:locale" content={resolvedOgLocale} />
   {type === 'article' && (
     <>
       <meta property="article:author" content="Garden Pro Planner" />
@@ -101,11 +119,11 @@ const {
        stylesheet already carries display=swap, so text is visible throughout. -->
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
   <noscript><link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" /></noscript>
-  <link rel="stylesheet" href="/assets/style.css?v=3" />
+  <link rel="stylesheet" href="/assets/style.css?v=4" />
   <!-- Bump ?v= on every edit to these files. /assets/* is served immutable for
        a year, so a changed stylesheet under an unchanged query string never
        reaches anyone who has already visited. -->
-  <link rel="stylesheet" href="/assets/blog.css?v=7" />
+  <link rel="stylesheet" href="/assets/blog.css?v=8" />
 
   <script defer src="/assets/analytics.js?v=2" is:inline></script>
   <script defer src="/assets/site.js?v=1" is:inline></script>
@@ -119,9 +137,10 @@ const {
         <span class="brand-name">Garden Pro Planner</span>
       </a>
       <nav class="nav">
-        <a href="/#features">Features</a>
+        <a href={`${navBase}#features`}>Features</a>
+        <a href={`${navBase}#savings`}>Savings</a>
         <a href="/blog">Blog</a>
-        <a href="/#faq">FAQ</a>
+        <a href={`${navBase}#faq`}>FAQ</a>
         <a class="btn btn-sm" href={APP_STORE} data-store-link data-cta="header">
           <svg class="btn-icon btn-icon-ios" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" fill="currentColor"><path d="M16.365 1.43c0 1.14-.42 2.22-1.17 3.02-.9.96-2.37 1.7-3.63 1.6-.15-1.13.41-2.32 1.11-3.06.79-.83 2.2-1.46 3.36-1.5.02.31.02.62.02.94zM20.7 17.02c-.55 1.27-.82 1.84-1.53 2.96-.99 1.56-2.39 3.5-4.12 3.51-1.54.02-1.93-.99-4.02-.98-2.09.01-2.52.99-4.06.98-1.73-.01-3.05-1.76-4.04-3.32-2.77-4.36-3.06-9.48-1.35-12.2 1.21-1.94 3.13-3.07 4.93-3.07 1.84 0 2.99 1 4.51 1 1.47 0 2.37-1 4.5-1 1.61 0 3.32.87 4.54 2.38-3.99 2.18-3.34 7.86.11 9.74z"/></svg><svg class="btn-icon btn-icon-android" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" fill="currentColor"><path d="M3.6 1.8a1.5 1.5 0 0 0-.5 1.15v18.1c0 .46.18.87.5 1.15l.1.08L13.8 12.1v-.2L3.7 1.72l-.1.08zm13.55 13.68l-3.35-3.36v-.24l3.36-3.36.08.05 3.98 2.26c1.14.64 1.14 1.7 0 2.35l-3.98 2.26-.09.04zm.09-6.91L5.29 1.75C4.59 1.35 3.97 1.4 3.6 1.8L13.8 12l3.44-3.43zM13.8 12L3.6 22.2c.37.4.99.45 1.69.05l11.95-6.82L13.8 12z"/></svg>
           <span>Get the app</span>

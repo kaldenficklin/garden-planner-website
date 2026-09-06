@@ -1,0 +1,297 @@
+---
+/**
+ * The landing page, rendered once per market (src/lib/markets.ts).
+ *
+ * `/` is the US page and `/uk/` the UK one. Everything that differs between
+ * them is data on the Market object — copy, spelling, hero photograph,
+ * currency, crop names, FAQ — so the structure below can only ever be one
+ * thing, and the two pages cannot drift.
+ *
+ * Section order is the positioning, in order of how much it moves someone:
+ *
+ *   1  hero            the sentence the whole product is now sold on
+ *   2  two questions   that sentence made concrete: timing, then savings
+ *   3  savings         the estimator — the one interactive proof on the page
+ *   4  features        what it does, once they care
+ *   5  screens         what it looks like
+ *   6  blog            the SEO surface, and the reason most visitors are here
+ *   7  faq             the objections, market by market
+ *   8  final CTA
+ *
+ * The estimator sits third rather than near the bottom on purpose. Most of this
+ * site's traffic lands on a blog post from search and never sees this page at
+ * all; the ones who do arrive here came to answer "is this worth it", and the
+ * estimator is the only block that answers it without an install.
+ */
+import PostCard from './PostCard.astro';
+import StoreBadges from './StoreBadges.astro';
+import SavingsEstimator from './SavingsEstimator.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { publishedPosts, articles } from '../lib/posts';
+import { STORE_LINKS } from '../lib/stores';
+import { landingAlternates, type Market } from '../lib/markets';
+
+interface Props {
+  market: Market;
+}
+const { market } = Astro.props;
+
+const latest = articles(await publishedPosts()).slice(0, 3);
+const url = new URL(market.path, 'https://thegardenplanner.app').href;
+
+const appLd = {
+  '@context': 'https://schema.org',
+  '@type': 'MobileApplication',
+  name: 'Garden Pro Planner',
+  url,
+  image: 'https://thegardenplanner.app/assets/app-icon.png',
+  description: market.metaDescription,
+  applicationCategory: 'LifestyleApplication',
+  operatingSystem: 'iOS 15+, Android 8+',
+  softwareVersion: '2.2.0',
+  offers: { '@type': 'Offer', price: '0', priceCurrency: market.id === 'uk' ? 'GBP' : 'USD' },
+  author: { '@type': 'Person', name: 'Kalden Ficklin' },
+  publisher: { '@id': 'https://thegardenplanner.app/#organization' },
+};
+
+// Identifies the publisher once. Posts point their `publisher` at this @id so
+// Google resolves the app, the blog and the site to one entity. Emitted on both
+// landing pages with the same @id, which is how a graph node is meant to repeat.
+const orgLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Organization',
+      '@id': 'https://thegardenplanner.app/#organization',
+      name: 'Garden Pro Planner',
+      url: 'https://thegardenplanner.app/',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://thegardenplanner.app/assets/app-icon.png',
+        width: 1024,
+        height: 1024,
+      },
+      email: 'support@thegardenplanner.app',
+      founder: { '@type': 'Person', name: 'Kalden Ficklin' },
+      sameAs: STORE_LINKS,
+    },
+    {
+      '@type': 'WebSite',
+      '@id': 'https://thegardenplanner.app/#website',
+      url: 'https://thegardenplanner.app/',
+      name: 'Garden Pro Planner',
+      publisher: { '@id': 'https://thegardenplanner.app/#organization' },
+    },
+  ],
+};
+
+// Google checks that the answers in FAQ structured data actually appear on the
+// page, so this reads the same array the <details> list below renders from.
+const faqLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: market.faqs.map(({ q, a }) => ({
+    '@type': 'Question',
+    name: q,
+    acceptedAnswer: { '@type': 'Answer', text: a },
+  })),
+};
+
+const heroSm = market.heroImage.replace(/\.jpg$/, '-sm.jpg');
+---
+
+<BaseLayout
+  title={market.title}
+  description={market.metaDescription}
+  canonical={url}
+  lang={market.id === 'uk' ? 'en-GB' : 'en'}
+  ogLocale={market.ogLocale}
+  navBase={market.path}
+  image="https://thegardenplanner.app/assets/app-icon.png"
+  alternates={landingAlternates()}
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(orgLd)} />
+    <script type="application/ld+json" set:html={JSON.stringify(appLd)} />
+    <script type="application/ld+json" set:html={JSON.stringify(faqLd)} />
+    <meta name="p:domain_verify" content="0a20837e590225ddfeb792ae57256376" />
+    <meta name="theme-color" content="#0E3324" />
+    {/* The hero photo is the LCP element. Preloading the matching srcset
+        candidate stops the browser waiting for CSS to discover it. */}
+    <link
+      rel="preload"
+      as="image"
+      href={market.heroImage}
+      imagesrcset={`${heroSm} 800w, ${market.heroImage} 1600w`}
+      imagesizes="100vw"
+    />
+  </Fragment>
+
+  <!-- ---------------------------------------------------------------- hero -->
+  <section class="hero">
+    <div class="hero-media">
+      <img
+        src={market.heroImage}
+        srcset={`${heroSm} 800w, ${market.heroImage} 1600w`}
+        sizes="100vw"
+        alt={market.heroImageAlt}
+        width="1600"
+        height="1064"
+        fetchpriority="high"
+      />
+    </div>
+
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Garden planner &amp; harvest tracker</p>
+        <h1>{market.headlineLead} <span class="accent">{market.headlineAccent}</span></h1>
+        <p class="lead">{market.lead}</p>
+        <div class="cta-row"><StoreBadges cta="hero" /></div>
+        <ul class="badge-row">{market.proof.map((p) => <li>{p}</li>)}</ul>
+      </div>
+      <div class="hero-shot">
+        <div class="phone">
+          <img
+            src="/assets/screens/calendar-timeline.png"
+            alt="The planting calendar on its timeline view: one bar per crop, marked with sowing, transplant and harvest dates"
+            width="660"
+            height="1434"
+            loading="eager"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="wrap market-switch">
+      Showing {market.label} dates and prices. <a href={market.otherPath}>{market.otherLabel}</a>
+    </div>
+  </section>
+
+  <!-- ------------------------------------------------------ two questions -->
+  <section class="section">
+    <div class="wrap">
+      <div class="questions">
+        <article class="qa qa-timing">
+          <span class="qa-tag">When to plant</span>
+          <h3>Your dates, not the packet's</h3>
+          <p>{market.timingBody}</p>
+        </article>
+        <article class="qa qa-savings">
+          <span class="qa-tag">What it saved</span>
+          <h3>A running total, not a hunch</h3>
+          <p>{market.savingsBody}</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <SavingsEstimator market={market} />
+
+  <!-- ------------------------------------------------------------ features -->
+  <section id="features" class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <h2 class="section-title section-title-left">Everything you need for a better season</h2>
+        </div>
+      </div>
+      <div class="features">
+        <div class="feature">
+          <div class="feature-ico">📅</div>
+          <h3>Know when to plant</h3>
+          <p>A planting calendar tuned to your location's frost dates shows when to start seeds, when to plant out, and when to harvest — with calendar sync and watering reminders.</p>
+        </div>
+        <div class="feature">
+          <div class="feature-ico">🧺</div>
+          <h3>Track your harvest</h3>
+          <p>See the expected yield of every plant, log what you pick, and watch the estimated season savings add up. Plant counts follow your bed layout, so the numbers keep up on their own.</p>
+        </div>
+        <div class="feature">
+          <div class="feature-ico">📐</div>
+          <h3>Lay out every bed</h3>
+          <p>Plant each bed on a square-foot grid, square by square. Every square is scored for the plant in your hand — good companions, room to grow, and what will shade what.</p>
+        </div>
+        <div class="feature">
+          <div class="feature-ico">🌱</div>
+          <h3>265+ plants, filtered</h3>
+          <p>{market.featuresZone} Group by type, soil, sun, watering, season or difficulty, and filter for plants that are safe around pets.</p>
+        </div>
+        <div class="feature">
+          <div class="feature-ico">🐛</div>
+          <h3>Keep what you grew</h3>
+          <p>Detailed pest guides with treatment tips, watering recommendations for each area, and a garden journal of dated notes and photos so you remember what worked.</p>
+        </div>
+        <div class="feature">
+          <div class="feature-ico">🌍</div>
+          <h3>Make it yours</h3>
+          <p>Add your own photos of each garden and plant, pick a colour theme, and use the app in any of nine languages.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ------------------------------------------------------------- screens -->
+  <section id="screens" class="section section-alt">
+    <div class="wrap">
+      <div class="section-head"><div><h2 class="section-title section-title-left">Take a look inside</h2></div></div>
+      <div class="gallery">
+        <figure><div class="phone phone-sm"><img src="/assets/screens/calendar.png" alt="The planting calendar, month by month" width="660" height="1434" loading="lazy" /></div><figcaption>Planting calendar</figcaption></figure>
+        <figure><div class="phone phone-sm"><img src="/assets/screens/yield.png" alt="Expected yield and the running savings estimate" width="660" height="1434" loading="lazy" /></div><figcaption>Yield &amp; savings</figcaption></figure>
+        <figure><div class="phone phone-sm"><img src="/assets/screens/blueprint.png" alt="A bed laid out on a square-foot grid" width="660" height="1434" loading="lazy" /></div><figcaption>Bed blueprint</figcaption></figure>
+        <figure><div class="phone phone-sm"><img src="/assets/screens/garden-season.png" alt="A bed's season as a timeline, one bar per crop from sowing to harvest" width="660" height="1434" loading="lazy" /></div><figcaption>Bed timeline</figcaption></figure>
+        <figure><div class="phone phone-sm"><img src="/assets/screens/plant-detail.png" alt="A plant page, with its dated schedule and season wheel" width="660" height="1434" loading="lazy" /></div><figcaption>Plant details</figcaption></figure>
+        {/* Caption deliberately carries no plant count: the capture behind it has
+            a region filter applied, so it reads "225 plants" on screen.
+            Recapture with filters cleared before putting the number back. */}
+        <figure><div class="phone phone-sm"><img src="/assets/screens/plants.png" alt="The plant guide, filtered and grouped by type" width="660" height="1434" loading="lazy" /></div><figcaption>Plant library</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ---------------------------------------------------------------- blog -->
+  {latest.length > 0 && (
+    <section id="blog" class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <h2 class="section-title section-title-left">From the blog</h2>
+            <p class="section-sub">Practical guides on when to plant, what to plant together, and how to keep pests off it.</p>
+          </div>
+          <a class="section-link" href="/blog">All posts →</a>
+        </div>
+        <div class="post-grid">
+          {latest.map((post) => <PostCard post={post} />)}
+        </div>
+        <p class="section-foot"><a class="btn btn-outline" href="/blog">Read the blog</a></p>
+      </div>
+    </section>
+  )}
+
+  <!-- ----------------------------------------------------------------- faq -->
+  <section id="faq" class="section section-alt">
+    <div class="wrap wrap-narrow">
+      <h2 class="section-title">Frequently asked questions</h2>
+      <div class="faq">
+        {market.faqs.map(({ q, a }) => (
+          <details>
+            <summary>{q}</summary>
+            <p>{a}</p>
+          </details>
+        ))}
+        <details>
+          <summary>Where can I read the privacy policy?</summary>
+          <p>Our full privacy policy is available <a href="/privacy">here</a>.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ----------------------------------------------------------- final CTA -->
+  <section id="get" class="section cta-band">
+    <div class="wrap cta-inner">
+      <h2>Plant on the right day. Harvest more.</h2>
+      <p>Free to start, on iPhone, iPad and Android.</p>
+      <div class="cta-row cta-row-center"><StoreBadges cta="footer-band" light /></div>
+    </div>
+  </section>
+</BaseLayout>

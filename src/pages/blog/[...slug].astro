@@ -103,6 +103,20 @@ const jsonLd = {
   },
   mainEntityOfPage: { '@type': 'WebPage', '@id': url },
 };
+
+// Google renders a breadcrumb trail in place of the raw URL on a search result,
+// which on a phone is most of the visible line. The <nav> above already shows
+// this trail; this is the machine-readable half of the same thing.
+const crumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: crumbs.map((c, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    name: c.name,
+    item: new URL(c.href, Astro.site).href,
+  })),
+};
 ---
 <BaseLayout
   title={`${data.title} — Garden Pro Planner`}
@@ -116,6 +130,7 @@ const jsonLd = {
   articleTags={data.pinKeywords ?? data.tags}
 >
   <script type="application/ld+json" slot="head" set:html={JSON.stringify(jsonLd)} />
+  <script type="application/ld+json" slot="head" set:html={JSON.stringify(crumbLd)} />
 
   <article class="section">
     <div class="wrap wrap-narrow">
@@ -203,10 +218,18 @@ const jsonLd = {
 
       <PostNav newer={newer} older={older} />
 
+      {/* The end-of-post CTA. Most readers never reach it — that is what the
+          mid-article one placed by rehype-app-cta.mjs is for — so this one is
+          written for the reader who did read to the end, and leads with the
+          next season rather than with this post's crop. */}
       <aside class="post-cta">
-        <h3>Grow this in Garden Pro Planner</h3>
-        <p>Plan your season around a 265+ plant library and your local frost dates — with a square-foot bed planner, a planting calendar, pest guides, and yield tracking.</p>
+        <h3>Get next season's dates right</h3>
+        <p>
+          Garden Pro Planner builds your planting calendar from your own local frost dates, lays
+          out every bed square by square, and totals up what each harvest saved you.
+        </p>
         <a class="btn" href={APP_STORE} data-store-link data-cta="post-footer">Get the free app</a>
+        <p class="post-cta-foot">Free on iPhone, iPad and Android · 265+ plants · nine languages</p>
       </aside>
     </div>
 

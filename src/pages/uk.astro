@@ -1,0 +1,12 @@
+---
+/**
+ * The UK landing page. Same structure as `/`, British copy and currency.
+ *
+ * Built at /uk/ (astro `build.format: 'directory'`) and cross-linked with `/`
+ * by reciprocal hreflang from landingAlternates(). A one-sided hreflang set is
+ * ignored by Google, so both pages must list both — plus the x-default on `/`.
+ */
+import Landing from '../components/Landing.astro';
+import { UK } from '../lib/markets';
+---
+<Landing market={UK} />

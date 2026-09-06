@@ -11,13 +11,18 @@ Built with [Astro](https://astro.build). The secondary marketing pages live in
 
 | Path | Purpose |
 | --- | --- |
-| `src/pages/index.astro` | Landing page — its own `<head>`, not `BaseLayout` |
+| `src/pages/index.astro` | US landing page (`/`) — a thin wrapper over `Landing.astro` |
+| `src/pages/uk.astro` | UK landing page (`/uk/`) — same, with the UK market |
+| `src/components/Landing.astro` | The landing page itself, rendered once per market |
+| `src/lib/markets.ts` | **Everything that differs between the US and UK pages** |
+| `src/components/SavingsEstimator.astro` | The interactive "what could one bed save you?" block |
+| `src/lib/rehype-app-cta.mjs` | Injects the mid-article CTA into every post |
 | `src/pages/about.astro` | About / publisher page (`/about`) |
 | `public/privacy.html` | Privacy policy (`/privacy`) |
 | `public/support.html` | Support / FAQ (`/support`) |
 | `public/terms.html` | Terms (`/terms`) |
-| `public/assets/style.css` | Site styles |
-| `public/assets/blog.css` | Blog-specific styles |
+| `public/assets/style.css` | Site styles — **mobile first**, `min-width` queries |
+| `public/assets/blog.css` | Blog-specific styles — mobile first too |
 | `public/assets/analytics.js` | GA4 + campaign attribution + download tracking |
 | `public/assets/site.js` | Mobile download bar |
 | `public/assets/screens/` | App screenshots — see "App screenshots" below |
@@ -29,10 +34,42 @@ Built with [Astro](https://astro.build). The secondary marketing pages live in
 | `src/pages/blog/` | Blog index, `/blog/page/N/`, tag hubs, post template, RSS |
 | `netlify.toml` | Build + publish config |
 
-The landing page is an Astro page rather than static HTML only because its
-"From the blog" section reads the post collection. Everything else about it is
-still hand-written markup, and it deliberately keeps its own `<head>` — the app
-and FAQ structured data on it belong to no other page.
+## Two landing pages, US and UK
+
+`/` is the US page and `/uk/` the UK one. Both render `Landing.astro`; every
+difference between them — spelling, hardiness language, "yard" vs "allotment",
+`$`/lb vs `£`/kg, crop names, hero photograph, FAQ — is data on the `Market`
+object in `src/lib/markets.ts`. **Change copy there, not in the component**, or
+the two pages drift.
+
+Why two URLs rather than one page that swaps words at runtime: Google indexes
+what the crawler is served, so a runtime swap ranks US wording in the UK too.
+The pages carry reciprocal `hreflang` (`en-US`, `en-GB`, and `x-default` on `/`)
+via `landingAlternates()` — a one-sided set is ignored, so both pages must list
+both. `/` is `x-default` because every other locale falls back to it.
+
+The hero photographs are generated per market by
+`scripts/gen-marketing-images.mjs` against the local image-api.
+
+## The blog's app CTA
+
+Every post gets **two** CTAs, and the important one is not at the bottom.
+
+- **Mid-article**, injected by `src/lib/rehype-app-cta.mjs` immediately before
+  the third `<h2>`. Almost nobody reaches the end of a post they arrived at
+  from a search for "why is my zucchini not fruiting" — they read until their
+  question is answered and leave — so the only CTA that can catch them is
+  inside the answer. It is a rehype pass rather than markup in the page
+  component because `<Content />` offers no seam to splice at; doing it at the
+  HAST stage also puts it in the crawled HTML and costs no layout shift.
+- **End of post**, in `src/pages/blog/[...slug].astro`, written for the reader
+  who did finish.
+
+Set **`ctaHook`** in a post's frontmatter: one sentence tying *that* post's
+subject to the app. A generic "get the app" earns nothing mid-article. Posts
+without one fall back to a generic timing-and-savings line.
+
+Infographic entries are skipped — they are a caption around one image.
 
 ## Blog pagination
 

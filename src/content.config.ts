@@ -39,6 +39,13 @@ const blog = defineCollection({
     // section and scripts/lib/overlay.mjs.
     pinEyebrow: z.string().optional(),
     pinHighlight: z.string().optional(),
+    // One sentence tying THIS post's subject to the app, used by the CTA that
+    // src/lib/rehype-app-cta.mjs places mid-article. Write it as the sentence a
+    // reader would nod at having just read the section above it — "your last
+    // frost date is the whole game here" — not as a feature list. Optional; the
+    // plugin falls back to a generic timing-and-savings line.
+    ctaHook: z.string().optional(),
+
     // Set to true to keep a post out of the build while drafting.
     draft: z.boolean().default(false),
 

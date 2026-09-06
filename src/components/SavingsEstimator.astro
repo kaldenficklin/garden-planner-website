@@ -1,0 +1,184 @@
+---
+/**
+ * "What could one bed save you?" — the interactive estimator on both landing
+ * pages.
+ *
+ * This is the single highest-intent block on the site. The dominant reason
+ * people start a food garden right now is the grocery bill (2026 NGA / Axiom
+ * gardening studies: 54% of food gardeners are explicitly trying to lower one),
+ * and the app's harvest tracker is the feature that answers it — so the landing
+ * page lets you feel that number before you install anything.
+ *
+ * Honesty rules, because this is a money claim on a marketing page:
+ *
+ *  - **Yields are the app's own catalog figures** (`yieldNumber`, in pounds,
+ *    from data/plants-current.json in the app repo). The estimator and the app
+ *    therefore cannot disagree, and nothing here is invented.
+ *  - **Prices are editable and labelled as a starting figure**, not as a
+ *    researched national average. An average would be a number we would have to
+ *    keep true across two countries and every season, and we cannot.
+ *  - **It never claims to be what a user earned.** It is an estimate of retail
+ *    value at the counts *you* type, and says so under the total.
+ *
+ * Progressive enhancement: the server renders a realistic filled-in state with
+ * a correct total, so the block is complete and persuasive with JS off or still
+ * loading. The script only re-computes; it never builds the markup.
+ */
+import type { Market } from '../lib/markets';
+
+interface Props {
+  market: Market;
+}
+const { market } = Astro.props;
+
+/** A modest first bed rather than a showpiece plot — a total nobody has to squint at. */
+const DEFAULT_COUNTS = [4, 2, 2, 6, 6, 3];
+
+const rows = market.crops.map((c, i) => {
+  const perPlant = c.lbPerPlant / market.unitFromLb;
+  const count = DEFAULT_COUNTS[i] ?? 2;
+  return { ...c, perPlant, count, value: perPlant * count * c.price };
+});
+const total = rows.reduce((sum, r) => sum + r.value, 0);
+
+const money = (n: number) =>
+  market.currency + n.toLocaleString('en', { minimumFractionDigits: 0, maximumFractionDigits: 0 });
+---
+
+<section id="savings" class="section estimator-section">
+  <div class="wrap">
+    <div class="est-head">
+      <p class="eyebrow">The number people actually want</p>
+      <h2 class="section-title section-title-left">What could one bed save you?</h2>
+      <p class="section-sub">
+        Set how many of each you would grow. The yields are the same per-plant figures the app
+        uses; the prices are a starting point you can change to whatever yours are.
+      </p>
+    </div>
+
+    <div
+      class="est"
+      data-estimator
+      data-currency={market.currency}
+      data-unit={market.unit}
+    >
+      <ul class="est-rows">
+        {rows.map((r, i) => (
+          <li class="est-row" data-row data-per-plant={r.perPlant.toFixed(4)}>
+            <div class="est-crop">
+              <span class="est-name">{r.name}</span>
+              <span class="est-yield">
+                {r.perPlant.toFixed(r.perPlant < 1 ? 1 : 0)} {market.unit} per plant
+              </span>
+            </div>
+
+            <div class="est-stepper">
+              <button type="button" class="est-step" data-step="-1" aria-label={`One fewer ${r.name}`}>−</button>
+              <label class="est-count-label">
+                <span class="sr-only">{r.name} plants</span>
+                <input
+                  class="est-count"
+                  type="number"
+                  inputmode="numeric"
+                  min="0"
+                  max="99"
+                  step="1"
+                  value={r.count}
+                  data-count
+                />
+              </label>
+              <button type="button" class="est-step" data-step="1" aria-label={`One more ${r.name}`}>+</button>
+            </div>
+
+            <output class="est-value" data-value>{money(r.value)}</output>
+
+            <label class="est-price">
+              <span class="est-price-cur">{market.currency}</span>
+              <input
+                class="est-price-input"
+                type="number"
+                inputmode="decimal"
+                min="0"
+                step="0.1"
+                value={r.price}
+                data-price
+                aria-label={`Shop price for ${r.name}, per ${market.unit}`}
+              />
+              <span class="est-price-unit">/{market.unit}</span>
+            </label>
+          </li>
+        ))}
+      </ul>
+
+      <div class="est-total">
+        <div class="est-total-copy">
+          <span class="est-total-label">Estimated value of one season</span>
+          <p class="est-total-note">
+            Retail value of the harvest at the counts and prices above. Your real number depends on
+            your season — which is the point of logging it.
+          </p>
+        </div>
+        <strong class="est-total-figure" data-total>{money(total)}</strong>
+      </div>
+
+      <div class="est-cta">
+        <p>Track the real one, harvest by harvest.</p>
+        <a class="btn btn-lg" href="#get" data-cta="estimator">Get the free app</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  /**
+   * Recompute on any input. Kept deliberately tiny and dependency-free: the
+   * server already rendered a correct state, so this only has to keep it true.
+   */
+  for (const est of document.querySelectorAll<HTMLElement>('[data-estimator]')) {
+    const currency = est.dataset.currency ?? '$';
+    const rows = Array.from(est.querySelectorAll<HTMLElement>('[data-row]'));
+    const totalEl = est.querySelector<HTMLElement>('[data-total]');
+
+    const money = (n: number) =>
+      currency + n.toLocaleString('en', { minimumFractionDigits: 0, maximumFractionDigits: 0 });
+
+    const clamp = (n: number, lo: number, hi: number) => Math.min(hi, Math.max(lo, n));
+
+    function recompute() {
+      let total = 0;
+      for (const row of rows) {
+        const perPlant = Number(row.dataset.perPlant ?? 0);
+        const countEl = row.querySelector<HTMLInputElement>('[data-count]');
+        const priceEl = row.querySelector<HTMLInputElement>('[data-price]');
+        const valueEl = row.querySelector<HTMLElement>('[data-value]');
+        if (!countEl || !priceEl || !valueEl) continue;
+
+        // An empty or junk field reads as 0 rather than NaN, which would
+        // otherwise propagate into the total and render "$NaN".
+        const count = clamp(Math.round(Number(countEl.value) || 0), 0, 99);
+        const price = Math.max(0, Number(priceEl.value) || 0);
+        const value = perPlant * count * price;
+
+        valueEl.textContent = money(value);
+        row.classList.toggle('is-empty', count === 0);
+        total += value;
+      }
+      if (totalEl) totalEl.textContent = money(total);
+    }
+
+    est.addEventListener('input', (e) => {
+      if ((e.target as HTMLElement).matches('[data-count],[data-price]')) recompute();
+    });
+
+    est.addEventListener('click', (e) => {
+      const btn = (e.target as HTMLElement).closest<HTMLElement>('[data-step]');
+      if (!btn) return;
+      const input = btn.parentElement?.querySelector<HTMLInputElement>('[data-count]');
+      if (!input) return;
+      input.value = String(clamp((Number(input.value) || 0) + Number(btn.dataset.step), 0, 99));
+      recompute();
+    });
+
+    recompute();
+  }
+</script>
