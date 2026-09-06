@@ -1,15 +1,44 @@
-# Instagram & Pinterest strategy
+# Social distribution strategy
 
 Companion to `STYLE.md`. That file governs how posts are written; this one
 governs how they get distributed.
 
 Accounts:
 
-| Platform  | Handle               | Type                    |
-| --------- | -------------------- | ----------------------- |
-| Instagram | `gardenplannerguru`  | Personal — by choice    |
-| Pinterest | `GardenPlannerGuru`  | Business                |
-| Site      | thegardenplanner.app | Claimed on Pinterest ✅ |
+| Platform  | Handle                | Type                    |
+| --------- | --------------------- | ----------------------- |
+| Instagram | `gardenplannerguru`   | Personal — by choice    |
+| Pinterest | `GardenPlannerGuru`   | Business                |
+| Facebook  | `Garden Planner Guru` | Page — see below        |
+| Site      | thegardenplanner.app  | Claimed on Pinterest ✅ |
+
+## The Facebook Page is deliberately unattributed
+
+The Page is not to be publicly linkable to the owner's personal profile. That
+is a standing constraint, not a preference, and it shapes how the Page is
+operated.
+
+Facebook itself is not the risk. Page Transparency shows the *number* of people
+managing a Page and the country they are in — never names, profile links,
+photos or email addresses; Meta withholds those for admin safety. Everything
+that can leak is behavioural:
+
+- **Never use "Invite friends."** The invite is sent from the personal profile,
+  with that person's name on it. This is the clearest possible link and there is
+  no way to unsend it. The Page grows from Pinterest and the blog instead.
+- **Always switch into the Page identity before posting or commenting.** A
+  comment made while the personal profile is active carries that profile's
+  name. The composer and the comment box are separate controls, and the comment
+  box is the one that silently reverts.
+- **Keep the Page out of Accounts Center** alongside the personal profile, and
+  do not list it under Work on the personal profile.
+
+Facebook may still surface the Page to friends through "Pages you may like."
+That is correlation rather than attribution, and no setting prevents it.
+
+The Page is broadcast, so its content can be fully generated — nobody expects a
+Page to be a person. Facebook *Groups* are the opposite and are covered at the
+bottom of this file.
 
 ---
 
@@ -147,11 +176,25 @@ shareable and the worst converter. Use it for reach, not for clicks.
 This is where the traffic actually comes from, and it is underbuilt right now —
 the account has a bio and a claimed domain but no boards and no pins.
 
-1. **Create 6–8 boards** matching how gardeners search, not how the blog is
-   organized: Vegetable Garden Layouts · Raised Bed Gardening · Companion
-   Planting · Garden Pests & Organic Control · Seed Starting & Frost Dates ·
-   Container & Small Space Gardening · Succession Planting. Give each a keyword
-   description; board descriptions are indexed.
+1. **Boards, in two tiers.** Both name them the way gardeners search, not the
+   way the blog is organized. Give every board a keyword description — board
+   descriptions are indexed.
+
+   *Topic boards, the working set:* Vegetable Garden Layouts · Raised Bed
+   Gardening · Companion Planting · Garden Pests & Organic Control · Seed
+   Starting & Frost Dates · Container & Small Space Gardening · Succession
+   Planting · Garden Infographics (plus a separate Spanish board — a Spanish
+   pin on an English board reads as spam to the algorithm and to the people
+   following it).
+
+   *Twelve monthly boards:* "What to Plant in January" through "What to Plant
+   in December." These are the compounding asset — Pinterest resurfaces them
+   every year, so a board built once earns for several seasons. Build
+   January/February/March first regardless of what month it currently is,
+   because those are the months the traffic actually arrives in.
+
+   A post usually belongs on both: its topic board and the month it serves.
+   `pinBoard` in the frontmatter names the primary one.
 2. **Pin all 12 posts manually**, each with its blog URL, into the most relevant
    board. Use the `pinKeywords` already in each post's frontmatter — they were
    written for exactly this — as the pin description, phrased as a sentence
@@ -186,16 +229,17 @@ searches are seasonal and the content is evergreen.
 
 ---
 
-## The daily infographic routine
+## The infographic routine
 
-Two infographics go up every day, each as an English and a Spanish pair, from
-`scripts/daily-infographics.mjs`. They are the pin engine: four fresh pins a
-day, every one a new image pointing at a new URL, which is exactly the repeat
-action point 4 above calls the highest-leverage thing on the platform.
+English/Spanish infographic pairs from `scripts/daily-infographics.mjs`. Every
+one is a new image pointing at a new URL, which is exactly the repeat action
+point 4 above calls the highest-leverage thing on Pinterest.
 
-They live in their own section rather than on `/blog`. At two a day they would
-outnumber the articles within a month and bury them in the index, the tag hubs
-and the blog RSS feed.
+**Cadence dropped from two a day to about two a week in September 2026.** At
+fourteen a week they outnumbered the articles inside a month and buried them in
+the index, the tag hubs and the blog RSS feed. They are now produced inside the
+Saturday `weekly-garden-content` batch. They still live in their own section
+rather than on `/blog`.
 
 | URL | What it is |
 | --- | --- |
@@ -206,19 +250,22 @@ and the blog RSS feed.
 
 ### Pinning
 
-Pins are created by hand, deliberately: the schedulers that consume an RSS feed
-(Tailwind, Publer) are all paid, and the free alternative — Pinterest's own
-API — needs a developer app and a stored refresh token. Neither is worth it at
-four pins a day.
+Pinning is now driven by the `daily-garden-share` scheduled routine, which
+posts one pin per weekday through the logged-in browser session after the human
+approves that day's plan. That is the third option between the two that were
+rejected here: the RSS schedulers (Tailwind, Publer) are all paid, and
+Pinterest's own API needs a developer app and a stored refresh token.
 
-The manual flow is already short, because the pin is built into the page:
+Pinning by hand still works and is the fallback whenever the routine is skipped
+or the browser step fails, because the pin is built into the page: open the post
+and hit **Save this pin**, which hands Pinterest the 1000x1500 image, the
+`pinDescription` from the frontmatter, and the page URL, so nothing has to be
+typed or pasted.
 
-1. Run finishes and prints the four URLs to pin, with the board for each.
-2. Open each page and hit **Save this pin**. The button hands Pinterest the
-   1000x1500 image, the `pinDescription` from the frontmatter, and the page URL,
-   so nothing has to be typed or pasted.
-3. Space them out across the day rather than posting four at once. New accounts
-   get throttled for bulk posting.
+Either way, **space pins across the day** rather than posting a batch at once —
+bulk posting gets throttled. This is the reason the Saturday batch is written
+all at once but published one post per weekday rather than pushed live
+together.
 
 Boards: English infographics go to **Garden Infographics**, Spanish ones to a
 separate Spanish board. A Spanish pin on an English board reads as spam to the
@@ -244,3 +291,26 @@ published content files, so there is no separate ledger to fall out of sync.
 The routine warns when the pool is down to five days of runway and refuses to
 publish a duplicate, so a topic file left empty means a quiet day rather than a
 repeat.
+
+
+---
+
+## What is never automated
+
+Two channels are worked by hand, always, and no routine is permitted to post to
+them: **Reddit** and **Facebook Groups**.
+
+They are the two highest-trust surfaces available and the two where being caught
+automating ends the channel permanently — moderators ban on sight and there is
+no appeal and no second account. They are also where the app actually gets
+recommended, unprompted, by other people.
+
+Automation's role there is monitoring only: surfacing threads worth answering
+("is it too late to plant", "what's eating my", "garden planner app",
+competitor names) and drafting a private brief on what the plant is and what is
+likely wrong with it. Every word that gets posted is written by a person.
+
+The rule for a reply: answer the question fully *without* mentioning the app,
+then disclose — "I built a planner that does this, happy to share if useful."
+Full answer first, disclosure every time, roughly ten helpful comments to one
+mention.
