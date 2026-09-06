@@ -248,29 +248,92 @@ the original posts, almost always as filler credibility), "simply," "just,"
 
 ## Images
 
-Every post carries two images, both derived from a single generated photo. See
-the README for the commands; this section is about the look.
+Every post carries two images, both cropped out of a single generated master.
+See the README for the commands; this section is about the look.
 
-**The photo is documentary, not stock.** Natural diffused daylight, shallow
-depth of field, muted greens and earth tones, one clear subject. It should look
-like someone crouched down in an actual garden with a 50mm lens, not like a
-brochure. No hands holding produce toward the camera, no smiling models, no
-suspiciously glossy vegetables.
+**The artwork is a colored-pencil illustration, not a photograph.** Warm
+off-white paper, visible pencil grain and cross-hatching, muted sage and olive
+greens with terracotta and ochre, one clear subject. It should read like a
+plate out of a vintage botanical field guide or a seed catalogue, drawn by
+someone who was looking at the actual plant.
 
-**It has to be botanically right.** The photo is a factual claim, exactly like
-the text. If the article is about squash bug eggs, the image shows squash bug
-eggs in the V of a leaf vein, not a generic beetle. Look at what came back
-before you commit it, and regenerate with a more specific subject if it's
-wrong. A gardening blog that shows the wrong pest loses the reader in one
-glance.
+This changed in September 2026, and the reason matters more than the taste.
+Gardeners are the worst possible audience for synthetic garden photography.
+They know what a tomato truss looks like in week nine, they count leaflets, and
+a generated raised bed with impossible spacing reads as fake to them almost
+immediately. On a blog whose entire product is *trust me about your garden*,
+being caught publishing fake photos costs more than good-looking heroes are
+worth. A drawing makes no claim to be a photograph, so there is nothing to
+catch. It also survives a Pinterest thumbnail better than a shallow-depth
+macro, and it gives the blog a look nobody else in the category has.
 
-**No text in the generated photo.** All type is composited afterward from the
+**If you want a real photograph, take one.** An honest mediocre phone photo of
+your own garden beats a beautiful fake every time. Never generate photorealism
+and publish it as though it were real.
+
+**The garden in the drawing is an ordinary one.** Timber raised beds, terracotta
+and plastic pots, a plain kitchen garden, a balcony that holds four containers.
+Not a manicured estate, not a magazine garden. The reader is growing food in a
+suburban back garden and worrying about the grocery bill; aspirational imagery
+reads as *this is not for me* to exactly the person most likely to convert.
+
+**It has to be botanically right.** The drawing is a factual claim, exactly like
+the text. If the article is about squash bug eggs, it shows squash bug eggs in
+the V of a leaf vein, not a generic beetle. Illustration makes this easier to
+get wrong, not harder — the model will happily draw whole garlic bulbs sitting
+on the soil for a post about planting single cloves, and it will sometimes draw
+two of a tool it only needed one of. **Look at both files before you commit
+them.** Reruns are free.
+
+**No people, no hands.** Not because anatomy fails the way it does in photos,
+but because the frame is stronger without them: the plant, the soil, the tool
+lying in the bed. Keep hands and figures out of the subject line.
+
+**No text in the generated artwork.** All type is composited afterward from the
 brand fonts, so it stays crisp and identical across every pin. Never ask the
 image model for a title, label, or caption.
 
 **The pin title can differ from the SEO title.** Long titles work in search
 results and fail on an image. When the post title runs past roughly 55
 characters, write a shorter one for the pin and record it as `pinTitle`.
+
+## Post shapes
+
+Structure still has to vary from post to post — that rule is unchanged and it
+is the one that keeps the archive from sounding like a template. What changed
+in September 2026 is that the blog now draws its shapes from what actually
+performs in this category, which is the Epic Gardening pattern: numbered,
+scannable, calendar-driven, and answering a question the reader already has.
+
+Rotate through these. Never run the same shape twice in one week.
+
+- **The dated list.** "9 Things to Plant in October Before the Ground Closes."
+  A numbered run of items, each with a heading, two or three paragraphs, and a
+  reason it belongs on *this* month's list. The workhorse, and the best pin.
+- **The myth check.** "Should You Bury Tomato Plants Sideways?" State the
+  common advice, say plainly whether it holds, then spend the post on the
+  conditions under which it does and doesn't. Answer in the first two
+  paragraphs — never withhold it for suspense.
+- **The diagnosis.** "Your Squash Leaves Turned White Overnight." Symptom
+  first, the two or three things it could be, how to tell them apart, what to
+  do today. These land the same afternoon someone walks outside and finds the
+  damage, which is why they convert.
+- **The ranked comparison.** "The Fastest Crops You Can Grow." A short table or
+  ordered list with a real number attached to each row — days to maturity,
+  spacing, yield per square foot.
+- **The single argument.** One idea, followed all the way down, no list at all.
+  Run one of these a week or the blog turns into listicles.
+
+**How the numbered shapes coexist with "prefer prose."** The Formatting rule
+above bans stacked bold-lead bullets, and it still does. A dated list is not
+that: each item is an `##` or `###` heading with real paragraphs under it, the
+way a person would talk through nine things one at a time. What stays banned is
+the fake list — a paragraph chopped into `- **Bold term.** One sentence.` rows
+to look scannable. If an item can't carry two paragraphs, it isn't an item.
+
+**Numbers in a title have to be exact.** A post titled "9 Things" contains nine
+things. Do not round, do not pad the list to hit a rounder number, and do not
+promise a count the body doesn't deliver.
 
 ## Pre-publish check
 

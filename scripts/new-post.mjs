@@ -5,9 +5,16 @@
  * Usage:
  *   npm run new-post -- "When to Start Tomato Seeds Indoors"
  *   npm run new-post -- "When to Start Tomato Seeds Indoors" "seed-starting,tomatoes"
+ *   npm run new-post -- "When to Start Tomato Seeds Indoors" "seed-starting" 2027-02-11
  *
- * Creates src/content/blog/<slug>.md dated today. Fill in the body and build.
- * Designed so an AI agent only has to (1) run this, then (2) write the body.
+ * Creates src/content/blog/<slug>.md. Fill in the body and build. Designed so
+ * an AI agent only has to (1) run this, then (2) write the body.
+ *
+ * The third argument sets `date:` explicitly, which is what the weekly batch
+ * routine uses: it writes five posts on a Saturday and dates each one for the
+ * weekday it will be published on, so the blog index, the RSS feed and the
+ * `<time>` on the page all read correctly once the daily routine flips
+ * `draft` to false. Defaults to today.
  */
 import { writeFile, mkdir } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
@@ -22,9 +29,15 @@ const tags = (process.argv[3] || '')
   .split(',')
   .map((t) => t.trim())
   .filter(Boolean);
+const dateArg = process.argv[4];
 
 if (!title) {
-  console.error('Usage: npm run new-post -- "Post Title" "tag1,tag2"');
+  console.error('Usage: npm run new-post -- "Post Title" "tag1,tag2" [YYYY-MM-DD]');
+  process.exit(1);
+}
+
+if (dateArg && !/^\d{4}-\d{2}-\d{2}$/.test(dateArg)) {
+  console.error(`Bad date "${dateArg}" — expected YYYY-MM-DD.`);
   process.exit(1);
 }
 
@@ -35,7 +48,7 @@ const slug = title
   .replace(/-+/g, '-')
   .replace(/^-|-$/g, '');
 
-const today = new Date().toISOString().slice(0, 10);
+const today = dateArg ?? new Date().toISOString().slice(0, 10);
 const file = join(BLOG_DIR, `${slug}.md`);
 
 if (existsSync(file)) {

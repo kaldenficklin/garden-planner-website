@@ -133,6 +133,10 @@ A post is a single Markdown file in `src/content/blog/`. Scaffold one with:
 npm run new-post -- "When to Start Tomato Seeds Indoors" "seed-starting,tomatoes"
 ```
 
+A third argument sets `date:` explicitly (`... "seed-starting" 2027-02-11`),
+which is how the weekly batch routine writes five posts on a Saturday and dates
+each one for the weekday it will actually go live on.
+
 Then fill in the `description` and body, set `draft: false`, commit, and push.
 Netlify rebuilds and the post appears on `/blog`, in the RSS feed, and in the
 sitemap automatically. No HTML or template editing required.
@@ -161,40 +165,67 @@ draft: false                   # true keeps it out of the build
 
 ## Post images
 
-Each post gets two images, both generated from one photo:
+Each post gets two images, both cropped out of one generated master:
 
 | File | Size | Where it's used |
 | --- | --- | --- |
 | `<slug>-hero.jpg` | 1200×800 | Top of the post; `og:image` and `twitter:image` for link shares |
-| `<slug>-pin.jpg` | 1000×1500 | Pinterest only — same photo with the title overlaid in brand type |
+| `<slug>-pin.jpg` | 1000×1500 | Pinterest only — same artwork with the title overlaid in brand type |
 
 Generate both with one command:
 
 ```sh
-node scripts/gen-post-image.mjs \
+node scripts/gen-post-art.mjs \
   --slug how-to-plant-garlic-in-fall \
   --title "How to Plant Garlic in Fall" \
-  --subject "hands pressing garlic cloves into dark soil in a raised bed, papery bulbs and a trowel beside them, autumn light"
+  --subject "a shallow trench in a timber raised bed with a row of fat garlic cloves set pointed-end-up, papery skins scattered, a worn trowel across the bed edge, fallen maple leaves" \
+  --eyebrow "PLANT NOW" --highlight "GARLIC"
 ```
 
-`--subject` describes only what is *in* the shot. The house photographic style
-lives in `scripts/gen-post-image.mjs` and is appended automatically, so every
-hero on the blog looks like it came from the same photographer. Change that
-`STYLE` constant only if you intend to restyle the whole blog.
+`--subject` describes only what is *in* the drawing. The house illustration
+style lives in the `STYLE` constant in `scripts/gen-post-art.mjs` and is
+appended automatically, so every hero on the blog looks like it came out of the
+same sketchbook. Change that constant only if you intend to restyle the whole
+blog.
 
-The photo comes from the Higgsfield CLI (`higgsfield auth login` once, ~7
-credits per post). The title is composited locally by `scripts/make-images.mjs`
-using the brand fonts in `scripts/fonts/`, so the type is crisp and identical on
-every pin rather than being hallucinated into the image.
+**The artwork is a colored-pencil illustration, not a photograph**, and that is
+a deliberate reversal of how this blog worked until September 2026.
+[`STYLE.md`](STYLE.md)'s "Images" section has the full reasoning; the short
+version is that gardeners spot fake garden photography and this is a trust
+product, whereas a drawing never claims to be a photo. The old photographic
+generator is still in the tree as `scripts/gen-post-image.mjs` for reference,
+but nothing should call it.
 
-**If the hero crop cuts the point out of the photo**, don't regenerate — the
+Both scripts talk to the local image-api (the ComfyUI box on the LAN, source in
+`~/Code/image-api`) via `scripts/lib/image-api.mjs`. No credits, no auth. Pass
+`--wait` to block until the Windows machine comes up rather than failing — that
+is what the unattended weekly routine does. Override the host with `IMAGE_API`.
+
+The title is composited locally by `scripts/make-images.mjs` using the brand
+fonts in `scripts/fonts/`, so the type is crisp and identical on every pin
+rather than being hallucinated into the image. `--eyebrow` and `--highlight`
+feed the pin's Tabloid Bold treatment; mirror whatever you pass into the
+`pinEyebrow` / `pinHighlight` frontmatter fields.
+
+**Look at both files before committing them.** An illustration gets botany
+wrong in ways an exit code never reports — whole garlic bulbs lying on the soil
+for a post about planting cloves, two trowels where the subject asked for one.
+Regeneration is free; a wrong drawing on a gardening blog is a credibility
+problem exactly like wrong text.
+
+**If the hero crop cuts the point out of the artwork**, don't regenerate — the
 hero is a wide slice of a tall image, and the default picks the busiest region,
-which is wrong whenever the subject sits low in the frame (a tree over a dying
-bed, pots on a patio). Add `--crop south` (or `north` / `centre`) and record the
-same value as `heroCrop` in the post's frontmatter so it survives a rebuild.
+which is wrong whenever the subject sits low in the frame. Add `--crop south`
+(or `north` / `centre`) and record the same value as `heroCrop` in the post's
+frontmatter so it survives a rebuild. The master is kept in
+`$TMPDIR/gpp-masters/<slug>.png`, so a recrop costs nothing:
+
+```sh
+node scripts/make-images.mjs "$TMPDIR/gpp-masters/<slug>.png" <slug> "<pin title>" south
+```
 
 To re-composite every post after changing the pin design, the fonts, or the JPEG
-quality — no credits, no regeneration:
+quality — no regeneration at all:
 
 ```sh
 node scripts/rebuild-images.mjs
@@ -369,11 +400,17 @@ app ships a release.
 
 ---
 
-## Daily infographics
+## Infographics
 
-Two infographics a day, English and Spanish, published to `/infographics/` and
-`/es/infographics/`. The run ends by printing the four URLs to pin and the board
-for each; pins are created by hand. See SOCIAL.md.
+English/Spanish infographic pairs, published to `/infographics/` and
+`/es/infographics/`.
+
+**Cadence changed in September 2026.** This used to be a launchd job publishing
+two a day at 7am, which put out fourteen a week and buried the articles. It is
+now roughly two a *week*, produced inside the Saturday batch by the
+`weekly-garden-content` scheduled task (`~/.claude/scheduled-tasks/`), and the
+launchd agent has been unloaded. The script below is unchanged and is still the
+right way to run one by hand.
 
 ```sh
 node scripts/daily-infographics.mjs                  # 2 topics, commit and push
@@ -387,21 +424,21 @@ any icons they need that the shared library does not have, composites both
 languages, runs the QA gate, writes the posts, rebuilds the site, and commits.
 Netlify publishes from `main`.
 
-### Scheduling it
+### Running it
 
 ```sh
-sed -e "s|REPO_PATH|$PWD|g" -e "s|HOME_PATH|$HOME|g" \
-  scripts/app.thegardenplanner.infographics.plist > ~/Library/LaunchAgents/app.thegardenplanner.infographics.plist
-launchctl load ~/Library/LaunchAgents/app.thegardenplanner.infographics.plist
+node scripts/daily-infographics.mjs --count 2
 ```
 
-Runs at 7am. Logs to `~/Library/Logs/garden-planner/daily-infographics.log`.
-Run it immediately with `launchctl start app.thegardenplanner.infographics`.
+The launchd agent that used to fire this at 7am daily is retired — the plist is
+kept at `~/Library/LaunchAgents/.app.thegardenplanner.infographics.plist.retired`
+and `scripts/app.thegardenplanner.infographics.plist` is left in the tree, so
+the schedule can be restored if the weekly batch ever proves too thin.
 
-**It has to run on a machine at home.** The image API is on the LAN, so this is
-a launchd job on the Mac, not a cloud task. If the Windows PC hosting the API is
-off, the run waits for it — polling every five minutes for up to twenty hours —
-rather than failing. Turning the PC on at 6pm still gets that day published.
+**It has to run on a machine at home.** The image API is on the LAN, so this
+cannot be a cloud task. If the Windows PC hosting the API is off, the run waits
+for it — polling every five minutes for up to twenty hours — rather than
+failing.
 
 ### What the QA gate checks
 

@@ -69,9 +69,14 @@ export async function waitForApi({
  *
  * `realism: false` suppresses the API's DSLR/photography prompt scaffolding,
  * which actively fights an illustration request.
+ *
+ * `negativePrompt` is only honoured by the tiers that support one; it is
+ * omitted from the payload entirely when not supplied, so callers that don't
+ * care are unaffected.
  */
 export async function generate({
   prompt,
+  negativePrompt,
   quality = 'max',
   width = 1024,
   height = 1024,
@@ -86,7 +91,16 @@ export async function generate({
     res = await fetch(`${BASE}/api/photo`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ prompt, quality, width, height, seed, realism, returnBase64: true }),
+      body: JSON.stringify({
+        prompt,
+        ...(negativePrompt ? { negativePrompt } : {}),
+        quality,
+        width,
+        height,
+        seed,
+        realism,
+        returnBase64: true,
+      }),
       signal: ctl.signal,
     });
   } finally {
