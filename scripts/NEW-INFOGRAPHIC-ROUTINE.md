@@ -18,7 +18,7 @@ is enough to rebuild it from scratch.
 - **Subject area:** `[what the infographics are about]`
 - **Languages:** `[en only / en + es / …]`
 - **How many per day:** `[2]`
-- **Local image API:** `[http://192.168.0.119:4000]` — a LAN ComfyUI HTTP API.
+- **Local image API:** `[http://<comfyui-host>:4000]` — a LAN ComfyUI HTTP API.
   `GET /api/capabilities` lists installed models; `POST /api/photo` takes
   `{prompt, quality, width, height, realism, returnBase64}`.
 
