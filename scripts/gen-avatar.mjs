@@ -26,6 +26,19 @@
  *
  * Round subjects earn their keep here. A rosette, a bulb, a seed head — things
  * that are already circular sit inside a circular mask without a fight.
+ *
+ * --people
+ * --------
+ * Off by default, and the default is the right one for anything on the blog:
+ * this model draws hands and faces badly, and a mangled hand is worse than no
+ * image. An avatar is the one place the trade can go the other way, because a
+ * figure at 40px is a silhouette and the detail that fails is not resolvable
+ * anyway.
+ *
+ * If you pass it, keep the figure MID-DISTANCE and TURNED AWAY, and put a hat
+ * on them. Close-up hands and any face large enough to have features are where
+ * this reliably goes wrong. The flag relaxes the constraint; it does not make
+ * the model good at anatomy, so look at the output properly.
  */
 import { writeFileSync, mkdirSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
@@ -46,17 +59,35 @@ const STYLE =
   'confident linework, muted natural palette of sage and olive green, terracotta and ochre. ' +
   'ONE single subject, centred, large, filling most of the frame, with clear even margin ' +
   'all around it and nothing at all in the corners. Strong tonal contrast against the pale ' +
-  'paper so it reads clearly when very small. Plain uncluttered background, no scene, ' +
-  'no horizon, no other objects. Square composition. ' +
-  'Nobody in the drawing: no people, no hands, no fingers, no faces. ' +
+  'paper so it reads clearly when very small. Square composition. ' +
   'No text, no lettering, no numbers, no watermark, no logos, no border, no frame.';
 
-const NEGATIVE =
+/** Appended unless --people. Keeps the default safe for anything on the blog. */
+const NO_PEOPLE =
+  ' Plain uncluttered background, no scene, no horizon, no other objects. ' +
+  'Nobody in the drawing: no people, no hands, no fingers, no faces.';
+
+/** Appended with --people, to steer toward the one composition that survives. */
+const WITH_PEOPLE =
+  ' A single figure seen from behind or in profile at a middle distance, small in the frame, ' +
+  'wearing a broad-brimmed sun hat, face turned away and not visible, hands not close to the ' +
+  'viewer. Simple uncluttered surroundings.';
+
+const NEGATIVE_BASE =
   'photograph, photorealistic, 3d render, cgi, digital painting, anime, cartoon, ' +
   'vector art, flat illustration, clip art, logo, emblem, badge, ' +
-  'busy background, scene, landscape, multiple subjects, cluttered, ' +
-  'person, people, hand, hands, fingers, face, ' +
+  'multiple subjects, cluttered, ' +
   'text, lettering, numbers, watermark, border, frame, oversaturated, neon';
+
+const NEGATIVE_NO_PEOPLE = ', busy background, scene, landscape, person, people, hand, hands, fingers, face';
+
+/**
+ * With --people we still fight the specific failures rather than people as
+ * such: faces close enough to have features, and hands close enough to count.
+ */
+const NEGATIVE_WITH_PEOPLE =
+  ', portrait, close-up face, facial features, looking at viewer, ' +
+  'close-up hands, detailed fingers, deformed hands, extra fingers, extra limbs, crowd';
 
 const arg = (n) => {
   const i = process.argv.indexOf(`--${n}`);
@@ -66,7 +97,9 @@ const arg = (n) => {
 const name = arg('name');
 const subject = arg('subject');
 if (!name || !subject) {
-  console.error('usage: gen-avatar.mjs --name <slug> --subject "<one centred subject>" [--seed N]');
+  console.error(
+    'usage: gen-avatar.mjs --name <slug> --subject "<one centred subject>" [--seed N] [--people] [--wait]'
+  );
   process.exit(1);
 }
 
@@ -79,10 +112,14 @@ if (!(await isUp())) {
   }
 }
 
-console.log(`[${name}] drawing…`);
+const people = process.argv.includes('--people');
+const style = STYLE + (people ? WITH_PEOPLE : NO_PEOPLE);
+const negative = NEGATIVE_BASE + (people ? NEGATIVE_WITH_PEOPLE : NEGATIVE_NO_PEOPLE);
+
+console.log(`[${name}] drawing…${people ? ' (people allowed — check the anatomy)' : ''}`);
 const buf = await generate({
-  prompt: `${subject}. ${STYLE}`,
-  negativePrompt: NEGATIVE,
+  prompt: `${subject}. ${style}`,
+  negativePrompt: negative,
   quality: 'max',
   width: SIZE,
   height: SIZE,
