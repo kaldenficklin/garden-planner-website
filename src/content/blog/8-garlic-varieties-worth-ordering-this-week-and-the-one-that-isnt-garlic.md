@@ -11,7 +11,7 @@ pinEyebrow: "ORDER THIS WEEK"
 pinHighlight: "GARLIC"
 pinKeywords: ["fall vegetable garden", "planting garlic", "garlic varieties", "hardneck garlic", "winter garden prep"]
 ctaHook: "Garlic goes in two to four weeks before your ground freezes, which is a date your calendar can work out and a date almost nobody guesses right."
-draft: true
+draft: false
 ---
 
 Seed garlic is one of the few things in gardening with a genuine deadline on the buying end rather than the planting end. The good suppliers post their catalogs in late summer, the interesting varieties go through September, and by the time the weather feels like garlic weather in October you are choosing from whatever nobody else wanted. I have ordered in the third week of October twice. Both times I planted a variety I had not heard of and did not particularly like.
