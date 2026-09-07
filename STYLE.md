@@ -184,12 +184,43 @@ See `scripts/lib/overlay.mjs` for the implementation.
 Do not use: delve, tapestry, testament, underscore, boasts, vibrant, robust,
 crucial, pivotal, meticulous, seamless, leverage, foster, showcase, elevate,
 unlock, myriad, plethora, embark, realm, navigate (figurative), landscape
-(figurative), "plays a vital role," "a testament to," "when it comes to," "it's
+(figurative), additionally, bolster, garner, interplay, intricate, enhance,
+enduring, profound, groundbreaking, renowned, nestled, "diverse array," "in the
+heart of," "plays a vital role," "a testament to," "when it comes to," "it's
 worth noting that," "in today's world."
 
 Use sparingly and only with real meaning: "actually" (appeared 17 times across
 the original posts, almost always as filler credibility), "simply," "just,"
 "of course," "essentially."
+
+### The AI tells specifically
+
+Wikipedia maintains a good catalogue of these at
+[Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing),
+and it is worth reading once. Most of what it lists is already banned above —
+the vocabulary, negative parallelism, trailing participles, "serves as" for
+"is," excessive bold and em dashes. These are the ones it names that the rest of
+this guide does not:
+
+- **No significance inflation.** "Marking a pivotal moment," "a key turning
+  point," "the evolving landscape of," "has become increasingly important."
+  Almost nothing in a garden is a turning point. If a thing matters, say what it
+  does, and the reader will work out that it matters.
+- **No formula conclusion.** "Despite its benefits, X faces several
+  challenges." "Challenges and future prospects." A closing paragraph that
+  balances a positive against a vague negative and speculates about the future
+  is the single most recognisable shape in generated prose.
+- **No vague association.** "Associated with," "connected to," "in connection
+  with," "widely regarded as." Say who, or say what causes what, or cut it.
+- **Sentence-case headings, always.** Title Case On Every Heading is a tell in
+  its own right, independent of the words in them.
+- **No decorative structure.** No horizontal rules between sections, no emoji as
+  bullets or headers, no bold-lead inline lists dressed up as prose.
+
+The underlying test is the one at the bottom of this file and it beats every
+checklist: read it out loud. Generated text is fluent and never unsure, never
+specific about a Tuesday, and never admits it got something wrong. The voice in
+Part 1 is the actual defence. The bans just stop the obvious cases.
 
 ### Openings
 
@@ -343,6 +374,7 @@ deliberate justification.
 ```sh
 f=src/content/blog/YOUR-POST.md
 grep -nEi "bottom line|in summary|takeaway|final thoughts|at the end of the day|delve|tapestry|testament|underscore|boasts|vibrant|robust|crucial|pivotal|meticulous|seamless|leverage|foster|showcase|elevate|unlock|myriad|plethora|game.chang|experts say|studies show|research suggests|when it comes to|worth noting" "$f"
+grep -nEi "additionally|bolster|garner|interplay|intricate|enhance|enduring|profound|groundbreaking|renowned|nestled|diverse array|in the heart of|serves as|stands as|functions as|turning point|evolving landscape|increasingly important|faces several|future prospects|associated with|in connection with|widely regarded" "$f"
 echo "em dashes: $(grep -o '—' "$f" | wc -l)  (max 2)"
 echo "bold bullets: $(grep -c '^- \*\*' "$f")  (max ~6, one list)"
 echo "'actually': $(grep -oi 'actually' "$f" | wc -l)  (aim 0-1)"
