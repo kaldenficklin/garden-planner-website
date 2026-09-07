@@ -32,6 +32,15 @@
  *
  * Infographic entries are skipped: they are a caption around one image, and a
  * CTA wedged into three paragraphs is the whole page.
+ *
+ * IT ALSO TAGS IN-BODY STORE LINKS
+ * A post body that links the App Store in prose is plain Markdown, so there is
+ * nowhere to hang the `data-store-link` attribute that BaseLayout's script looks
+ * for when it swaps a CTA to Google Play on Android. Those links used to be
+ * hardcoded to Apple and sent every Android reader to a store they cannot buy
+ * from. Since this plugin already walks the tree for every post, it stamps the
+ * attribute on as it goes — which fixes the existing ones and every future one
+ * without anybody having to remember.
  */
 import { APP_STORE } from './store-urls.mjs';
 
@@ -89,9 +98,35 @@ function insertionPoint(children) {
   return Math.min(i, children.length);
 }
 
+/**
+ * Mark every prose link to the App Store as OS-swappable, so BaseLayout's
+ * Android script rewrites it to Play like any other single-destination CTA.
+ * Walks the whole tree rather than the top level: these links live inside
+ * paragraphs and list items.
+ */
+function tagStoreLinks(node) {
+  if (node.type === 'element' && node.tagName === 'a') {
+    const href = node.properties?.href;
+    // Literal attribute keys, as in ctaNode above — the camelCase hast forms do
+    // not survive serialisation here.
+    if (href === APP_STORE && !('data-store-link' in node.properties)) {
+      node.properties['data-store-link'] = '';
+      // Without a data-cta these would report as 'unspecified' and blur into
+      // every other untagged link in the numbers.
+      node.properties['data-cta'] = node.properties['data-cta'] || 'post-body';
+    }
+  }
+  for (const child of node.children ?? []) tagStoreLinks(child);
+}
+
 export function rehypeAppCta() {
   return (tree, file) => {
     const frontmatter = file?.data?.astro?.frontmatter ?? {};
+
+    // Runs for infographics too — they are short, but a prose store link in one
+    // is just as broken on Android as anywhere else.
+    tagStoreLinks(tree);
+
     if (frontmatter.type === 'infographic') return;
 
     const children = tree.children ?? [];

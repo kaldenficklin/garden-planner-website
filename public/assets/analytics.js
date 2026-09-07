@@ -105,9 +105,28 @@
     window.rdt('track', 'PageVisit');
   }
 
-  /* ── App Store click = the conversion ───────────────────────────────── */
+  /* ── Store click = the conversion ───────────────────────────────────── */
 
   var APP_STORE_HOST = 'apps.apple.com';
+  var PLAY_STORE_HOST = 'play.google.com';
+
+  // Both stores count. On Android the inline script in BaseLayout rewrites every
+  // [data-store-link] href to Play *before* any click happens, so a listener
+  // bound to Apple alone sees nothing at all from an Android visitor — which is
+  // exactly how every Android conversion went unrecorded until this was widened.
+  // `:not([href*="/account/"])` keeps Apple's subscription-management deep link
+  // on the support page out of the conversion count — it is somewhere an
+  // existing customer goes to cancel, which is the opposite of an install.
+  var STORE_LINK_SELECTOR =
+    'a[href*="' + APP_STORE_HOST + '"]:not([href*="/account/"]), ' +
+    'a[href*="' + PLAY_STORE_HOST + '"]';
+
+  // Which store a click is headed for. Kept as its own event param rather than
+  // baked into cta_location, so placement stays one clean dimension ('hero',
+  // 'sticky-bar', 'post-inline') and store is another.
+  function storeFor(url) {
+    return url.indexOf(PLAY_STORE_HOST) !== -1 ? 'android' : 'ios';
+  }
 
   // Apple only honours `ct` when it is paired with a provider token.
   function withAppleCampaign(url) {
@@ -137,13 +156,14 @@
       link_url: link.href,
       // Which button did the work — hero, sticky bar, footer, a blog post…
       cta_location: link.getAttribute('data-cta') || 'unspecified',
+      store: storeFor(link.href),
       page_path: window.location.pathname
     };
     for (var key in attribution) {
       if (Object.prototype.hasOwnProperty.call(attribution, key)) payload[key] = attribution[key];
     }
 
-    // gtag uses sendBeacon, so the hit survives the jump to the App Store.
+    // gtag uses sendBeacon, so the hit survives the jump to the store.
     if (gaEnabled) gtag('event', 'app_store_click', payload);
     if (window.rdt) window.rdt('track', 'Lead');
   }
@@ -151,7 +171,7 @@
   document.addEventListener('click', function (event) {
     var target = event.target;
     if (!target || !target.closest) return;
-    var link = target.closest('a[href*="' + APP_STORE_HOST + '"]');
+    var link = target.closest(STORE_LINK_SELECTOR);
     if (link) trackAppStoreClick(link);
   });
 

@@ -220,8 +220,26 @@ anything that matters here.
   saves per pin. Outbound clicks are the number that maps to site traffic.
 - **Instagram:** saves and shares per post, and link taps on stories. Saves
   predict reach; link taps predict traffic.
-- **Site:** referral traffic split by source, and App Store click-through from
+- **Site:** referral traffic split by source, and store click-through from the
   `data-cta` attributes already wired into the pages.
+
+**Every URL the weekly brief hands to a platform is UTM-tagged**
+(`utm_source=pinterest` / `facebook` / `instagram`). That is what makes the site
+half joinable to the social half: `analytics.js` keeps the tags in
+`sessionStorage` and stamps them onto the `app_store_click` event, so a person
+who arrives from a pin, reads two posts and *then* taps through is still
+credited to Pinterest. The live URL in the brief stays untagged — that one is
+for the 200-poll and for anywhere canonical.
+
+**The `weekly-funnel-report` routine reads all of this back** on Saturday
+mornings, before `weekly-garden-content` picks the next slate, and writes to
+`~/Code/garden-marketing-drafts/funnel-YYYY-MM-DD.md`. Until September 2026
+nothing ever read the numbers back and every topic decision was intuition.
+
+One caveat that will otherwise mislead: **Android store clicks were not counted
+at all before September 2026.** The GA4 listener matched Apple only, while the
+site swaps CTAs to Google Play on Android. Historic Android figures are zeros
+that mean "not measured".
 
 Give it 60–90 days before judging Pinterest. Pins have a long tail — a pin
 posted in July can start driving traffic the following spring, because the

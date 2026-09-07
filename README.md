@@ -316,21 +316,24 @@ buttons that mostly go unclicked.
 ## Analytics & ad tracking
 
 Google Analytics 4 runs on every page via `public/assets/analytics.js`.
-Measurement ID **`G-D8MEPMRV8T`** ("Garden Planner" property, web stream
-15277152559). Everything is configured at the top of that one file.
+Measurement ID **`G-ZJYHEXNQBX`** ("Garden Pro Planner Website" property,
+401448878 / 547196945, web stream 15330067195). Everything is configured at the
+top of that one file.
 
 ### The conversion
 
-Every tap on an App Store link fires a GA4 event named **`app_store_click`**.
-That is the number to watch — it counts people sent to the App Store, which is
-as far as the web can see. (Apple does not report back who installed, so actual
-installs live in App Store Connect, not GA.)
+Every tap on a store link — **App Store or Google Play** — fires a GA4 event
+named **`app_store_click`**. That is the number to watch: it counts people sent
+to a store, which is as far as the web can see. (Neither store reports back who
+installed, so actual installs live in App Store Connect and the Play Console,
+not GA.)
 
 Each event carries:
 
 | Parameter | Meaning |
 | --- | --- |
-| `cta_location` | Which button: `hero`, `sticky-bar`, `header`, `footer-band`, `post-footer`, … |
+| `cta_location` | Which button: `hero`, `sticky-bar`, `header`, `footer-band`, `post-inline`, `post-footer`, `post-body`, … |
+| `store` | `ios` or `android`, derived from the href at click time |
 | `utm_source` … `utm_term` | Standard campaign tags |
 | `campaign_id`, `adgroup_id`, `ad_id` | Reddit's IDs, for splitting results by ad |
 | `rdt_cid` | Reddit click ID |
@@ -340,7 +343,30 @@ an ad, reads a blog post, and *then* downloads is still credited to the ad.
 
 **One-time setup in GA:** Admin → Events → mark `app_store_click` as a key
 event, so it shows up as a conversion in reports. To break results down by
-`cta_location` or `ad_id`, register them under Admin → Custom definitions.
+`cta_location`, `store` or `ad_id`, register them under Admin → Custom
+definitions.
+
+#### Android used to be invisible, and `cta_location` changed shape
+
+Until September 2026 the click listener matched `apps.apple.com` only. On
+Android the inline script in `BaseLayout.astro` rewrites every
+`[data-store-link]` href to Play *before* any click happens, so **no Android
+click ever fired an event** — Android conversions read as zero because they were
+never counted, not because they were not happening. Treat any pre-September-2026
+comparison between platforms as meaningless.
+
+Fixing it also split placement and store into two dimensions. `cta_location`
+used to carry the store as a suffix (`hero-ios`, `hero-android`,
+`footer-link-android`); it is now just the placement (`hero`, `footer-link`) and
+the new `store` param says which store. Reports built on the old suffixed values
+need rewriting, and the two eras will not stitch together.
+
+Anything single-destination needs `data-store-link` or it will never swap to
+Play on Android. Prose links inside post bodies are Markdown and cannot carry
+the attribute, so `src/lib/rehype-app-cta.mjs` stamps it on at build time and
+labels them `post-body`. Apple's `/account/subscriptions` link on the support
+page is deliberately excluded from the selector — that is a customer going to
+cancel, not an install.
 
 ### Reddit ad destination URL
 

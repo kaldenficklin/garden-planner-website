@@ -125,7 +125,7 @@ const resolvedOgLocale = ogLocale ?? OG_LOCALES[lang] ?? 'en_US';
        reaches anyone who has already visited. -->
   <link rel="stylesheet" href="/assets/blog.css?v=8" />
 
-  <script defer src="/assets/analytics.js?v=2" is:inline></script>
+  <script defer src="/assets/analytics.js?v=3" is:inline></script>
   <script defer src="/assets/site.js?v=1" is:inline></script>
   <slot name="head" />
 </head>
@@ -166,7 +166,7 @@ const resolvedOgLocale = ogLocale ?? OG_LOCALES[lang] ?? 'en_US';
         <a href="/privacy">Privacy</a>
         <a href="/support">Support</a>
         <a href={APP_STORE} data-cta="footer-link">App Store</a>
-        <a href={PLAY_STORE} data-cta="footer-link-android">Google Play</a>
+        <a href={PLAY_STORE} data-cta="footer-link">Google Play</a>
       </nav>
       <p class="copyright">© <span id="year">2026</span> Garden Pro Planner. All rights reserved.</p>
     </div>
@@ -186,13 +186,14 @@ const resolvedOgLocale = ogLocale ?? OG_LOCALES[lang] ?? 'en_US';
 
   <script is:inline define:vars={{ PLAY_STORE }}>
     document.getElementById('year').textContent = String(new Date().getFullYear());
-    /* See the same block on the landing page: the single-destination CTAs ship
-       pointing at Apple and move to Play only on an Android UA. */
+    /* The single-destination CTAs ship pointing at Apple and move to Play only
+       on an Android UA. Which store a click went to is not encoded in data-cta
+       — analytics.js derives a `store` param from the href, so cta_location
+       stays one clean dimension (placement) and store is another. */
     if (/Android/i.test(navigator.userAgent)) {
       document.documentElement.classList.add('is-android');
       for (const a of document.querySelectorAll('[data-store-link]')) {
         a.href = PLAY_STORE;
-        a.dataset.cta += '-android';
       }
     }
   </script>
