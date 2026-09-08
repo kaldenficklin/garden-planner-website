@@ -7,11 +7,12 @@ image: "/assets/blog/6-crops-you-can-still-start-in-a-pot-this-month-ranked-by-h
 imageAlt: "A colored pencil drawing of four terracotta and black plastic pots on a wooden balcony ledge against a brick wall, holding young loose-leaf lettuce, arugula, red-veined mustard greens and a radish with its shoulder showing above the soil"
 pinImage: "/assets/blog/6-crops-you-can-still-start-in-a-pot-this-month-ranked-by-how-fast-they-feed-you-pin.jpg"
 pinTitle: "6 Crops to Start in a Pot This Month"
+pinBoard: "Container & Small Space Gardening"
 pinEyebrow: "LAST CHANCE"
 pinHighlight: "POT"
 pinKeywords: ["container gardening", "small space gardening", "balcony vegetable garden", "fall vegetable garden", "growing food in pots"]
 ctaHook: "Fall sowing is arithmetic against your own first frost and your own daylight, and both of those are local numbers rather than a rule of thumb."
-draft: true
+draft: false
 ---
 
 Most fall planting advice assumes you have ground. Beds to clear, rows to sow, a hoop to throw plastic over in November. If what you have is a balcony and four pots, the advice reads like it is for somebody else, and you end up doing nothing in September and starting again in April.
