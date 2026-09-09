@@ -12,7 +12,7 @@ pinHighlight: "NOT MOLD"
 heroCrop: "centre"
 pinKeywords: ["cabbage aphids", "organic pest control", "fall vegetable garden", "growing kale", "garden pests"]
 ctaHook: "Telling three gray-white problems apart is exactly the kind of thing worth having a pest guide in your pocket for, rather than a search result written about a different continent."
-draft: true
+draft: false
 ---
 
 You go out to cut kale for dinner, turn a leaf over, and there is a gray-white crust packed into the crook where the midrib meets the blade. It looks like dust. It looks a bit like mold. It does not look like an insect, because it is not moving and because there is no obvious individual anything in it.
