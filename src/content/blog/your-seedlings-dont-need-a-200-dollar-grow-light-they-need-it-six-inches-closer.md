@@ -4,14 +4,14 @@ description: "Full-spectrum, blurple, wattage claims: most of what grow light li
 date: 2026-09-10
 tags: ["seed-starting", "beginners", "planning"]
 image: "/assets/blog/your-seedlings-dont-need-a-200-dollar-grow-light-they-need-it-six-inches-closer-hero.jpg"
-imageAlt: "A colored pencil drawing of a plain white fluorescent shop light hanging on two chains above a tray of stocky young tomato seedlings on a basement shelf, terracotta pots either side"
+imageAlt: "A colored pencil drawing of a tray of stocky young tomato seedlings on a wooden basement shelf, a terracotta pot either side and more seedlings on the shelf below"
 pinImage: "/assets/blog/your-seedlings-dont-need-a-200-dollar-grow-light-they-need-it-six-inches-closer-pin.jpg"
 pinTitle: "Stop Buying Expensive Grow Lights"
 pinEyebrow: "SEED STARTING"
 pinHighlight: "SIX INCHES CLOSER"
 pinKeywords: ["seed starting indoors", "grow lights for seedlings", "leggy seedlings", "vegetable garden tips", "seed starting setup"]
 ctaHook: "Most leggy seedlings are a timing problem wearing a lighting problem's clothes, started weeks before the transplant window allows."
-draft: true
+draft: false
 ---
 
 This is a September post about a January problem, and that is deliberate. The seed catalogs land after Christmas, everybody sets up a shelf in the first week of January, and by the time you are standing in a kitchen looking at a tray of pale wobbly stems in February it is too late to research anything. So: the shopping decision, four months early.
