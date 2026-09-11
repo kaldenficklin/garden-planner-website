@@ -44,7 +44,7 @@ const appLd = {
   '@type': 'MobileApplication',
   name: 'Garden Planner Pro',
   url,
-  image: 'https://thegardenplanner.app/assets/app-icon.png',
+  image: 'https://thegardenplanner.app/assets/app-icon-v2.png',
   description: market.metaDescription,
   applicationCategory: 'LifestyleApplication',
   operatingSystem: 'iOS 15+, Android 8+',
@@ -67,7 +67,7 @@ const orgLd = {
       url: 'https://thegardenplanner.app/',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://thegardenplanner.app/assets/app-icon.png',
+        url: 'https://thegardenplanner.app/assets/app-icon-v2.png',
         width: 1024,
         height: 1024,
       },
@@ -107,7 +107,7 @@ const heroSm = market.heroImage.replace(/\.jpg$/, '-sm.jpg');
   lang={market.id === 'uk' ? 'en-GB' : 'en'}
   ogLocale={market.ogLocale}
   navBase={market.path}
-  image="https://thegardenplanner.app/assets/app-icon.png"
+  image="https://thegardenplanner.app/assets/app-icon-v2.png"
   alternates={landingAlternates()}
 >
   <Fragment slot="head">
@@ -152,7 +152,7 @@ const heroSm = market.heroImage.replace(/\.jpg$/, '-sm.jpg');
       <div class="hero-shot">
         <div class="phone">
           <img
-            src="/assets/screens/calendar-timeline.png"
+            src="/assets/screens/2.5.0/calendar-timeline.png"
             alt="The planting calendar on its timeline view: the season's frost dates above one bar per crop, running from sowing to harvest"
             width="660"
             height="1367"
@@ -237,12 +237,12 @@ const heroSm = market.heroImage.replace(/\.jpg$/, '-sm.jpg');
       <div class="gallery">
         {/* The 2.5.0 store set, in the store's order after the hero's calendar:
             the money, the bed, the new Garden Log, then the detail. */}
-        <figure><div class="phone phone-sm"><img src="/assets/screens/yield.png" alt="Expected yield: the season's estimated savings, with a planted and harvested count for each crop" width="660" height="1367" loading="lazy" /></div><figcaption>Yield &amp; savings</figcaption></figure>
-        <figure><div class="phone phone-sm"><img src="/assets/screens/blueprint.png" alt="A bed's watering plan for the next two weeks, above its square-foot blueprint" width="660" height="1367" loading="lazy" /></div><figcaption>Blueprint &amp; watering</figcaption></figure>
-        <figure><div class="phone phone-sm"><img src="/assets/screens/garden-log.png" alt="The Garden Log: dated harvests, one entry per picking, grouped by day" width="660" height="1367" loading="lazy" /></div><figcaption>Garden Log</figcaption></figure>
-        <figure><div class="phone phone-sm"><img src="/assets/screens/garden-season.png" alt="A bed's season as a timeline, one bar per crop from sowing to harvest" width="660" height="1367" loading="lazy" /></div><figcaption>Bed timeline</figcaption></figure>
-        <figure><div class="phone phone-sm"><img src="/assets/screens/plant-season.png" alt="A plant's season wheel and rotation group, with the varieties you grow" width="660" height="1367" loading="lazy" /></div><figcaption>Season &amp; varieties</figcaption></figure>
-        <figure><div class="phone phone-sm"><img src="/assets/screens/plant-requirements.png" alt="A plant's requirements: sunlight, watering, soil pH, temperature and hardiness zones" width="660" height="1367" loading="lazy" /></div><figcaption>Plant requirements</figcaption></figure>
+        <figure><div class="phone phone-sm"><img src="/assets/screens/2.5.0/yield.png" alt="Expected yield: the season's estimated savings, with a planted and harvested count for each crop" width="660" height="1367" loading="lazy" /></div><figcaption>Yield &amp; savings</figcaption></figure>
+        <figure><div class="phone phone-sm"><img src="/assets/screens/2.5.0/blueprint.png" alt="A bed's watering plan for the next two weeks, above its square-foot blueprint" width="660" height="1367" loading="lazy" /></div><figcaption>Blueprint &amp; watering</figcaption></figure>
+        <figure><div class="phone phone-sm"><img src="/assets/screens/2.5.0/garden-log.png" alt="The Garden Log: dated harvests, one entry per picking, grouped by day" width="660" height="1367" loading="lazy" /></div><figcaption>Garden Log</figcaption></figure>
+        <figure><div class="phone phone-sm"><img src="/assets/screens/2.5.0/garden-season.png" alt="A bed's season as a timeline, one bar per crop from sowing to harvest" width="660" height="1367" loading="lazy" /></div><figcaption>Bed timeline</figcaption></figure>
+        <figure><div class="phone phone-sm"><img src="/assets/screens/2.5.0/plant-season.png" alt="A plant's season wheel and rotation group, with the varieties you grow" width="660" height="1367" loading="lazy" /></div><figcaption>Season &amp; varieties</figcaption></figure>
+        <figure><div class="phone phone-sm"><img src="/assets/screens/2.5.0/plant-requirements.png" alt="A plant's requirements: sunlight, watering, soil pH, temperature and hardiness zones" width="660" height="1367" loading="lazy" /></div><figcaption>Plant requirements</figcaption></figure>
       </div>
     </div>
   </section>

@@ -52,7 +52,7 @@ const {
   ogTitle,
   description,
   canonical = new URL(Astro.url.pathname, Astro.site).href,
-  image = 'https://thegardenplanner.app/assets/app-icon.png',
+  image = 'https://thegardenplanner.app/assets/app-icon-v2.png',
   type = 'website',
   noindex = false,
   publishedTime,
@@ -107,8 +107,8 @@ const resolvedOgLocale = ogLocale ?? OG_LOCALES[lang] ?? 'en_US';
   <meta name="twitter:description" content={description} />
   <meta name="twitter:image" content={image} />
 
-  <link rel="icon" type="image/png" href="/assets/app-icon.png" />
-  <link rel="apple-touch-icon" href="/assets/app-icon.png" />
+  <link rel="icon" type="image/png" href="/assets/app-icon-v2.png" />
+  <link rel="apple-touch-icon" href="/assets/app-icon-v2.png" />
 
   <link rel="alternate" type="application/rss+xml" title="Garden Planner Pro Blog" href="/blog/rss.xml" />
 
@@ -125,15 +125,15 @@ const resolvedOgLocale = ogLocale ?? OG_LOCALES[lang] ?? 'en_US';
        reaches anyone who has already visited. -->
   <link rel="stylesheet" href="/assets/blog.css?v=9" />
 
-  <script defer src="/assets/analytics.js?v=3" is:inline></script>
-  <script defer src="/assets/site.js?v=1" is:inline></script>
+  <script defer src="/assets/analytics.js?v=4" is:inline></script>
+  <script defer src="/assets/site.js?v=2" is:inline></script>
   <slot name="head" />
 </head>
 <body>
   <header class="site-header">
     <div class="wrap header-inner">
       <a class="brand" href="/">
-        <img class="brand-mark" src="/assets/app-icon.png" alt="" width="32" height="32" />
+        <img class="brand-mark" src="/assets/app-icon-v2.png" alt="" width="32" height="32" />
         <span class="brand-name">Garden Planner Pro</span>
       </a>
       <nav class="nav">
@@ -156,7 +156,7 @@ const resolvedOgLocale = ogLocale ?? OG_LOCALES[lang] ?? 'en_US';
   <footer class="site-footer">
     <div class="wrap footer-inner">
       <div class="footer-brand">
-        <img class="brand-mark" src="/assets/app-icon.png" alt="" width="32" height="32" />
+        <img class="brand-mark" src="/assets/app-icon-v2.png" alt="" width="32" height="32" />
         <span>Garden Planner Pro</span>
       </div>
       <nav class="footer-nav">
@@ -175,7 +175,7 @@ const resolvedOgLocale = ogLocale ?? OG_LOCALES[lang] ?? 'en_US';
   <!-- Phone-only download bar; slides up once the reader has scrolled in. -->
   <div class="mobile-cta">
     <div class="mobile-cta-inner">
-      <img class="mobile-cta-icon" src="/assets/app-icon.png" alt="" width="44" height="44" />
+      <img class="mobile-cta-icon" src="/assets/app-icon-v2.png" alt="" width="44" height="44" />
       <span class="mobile-cta-text">
         <strong>Garden Planner Pro</strong>
         <span>Free · iPhone, iPad &amp; Android</span>

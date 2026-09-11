@@ -25,7 +25,15 @@ const HERE = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(HERE, '..');
 const APP_REPO = resolve(ROOT, process.env.APP_REPO ?? '../garden-pro-planner');
 const SRC = join(APP_REPO, 'store-assets/mockups');
-const OUT = join(ROOT, 'public/assets/screens');
+/**
+ * The app version these screens show, and the folder they are served from.
+ * /assets/* is cached `immutable` for a year (netlify.toml), so a new picture
+ * under an old URL never reaches anyone who has visited before — the 2.5.0
+ * rebrand shipped that way and returning visitors kept the old screens. Bump
+ * this on every re-sync and update the paths in Landing.astro to match.
+ */
+const VERSION = '2.5.0';
+const OUT = join(ROOT, 'public/assets/screens', VERSION);
 
 /** The mockup export names run `…Max.png`, `…Max-1.png`, … */
 const mock = (n) => `iMockup - iPhone 15 Pro Max${n === 0 ? '' : `-${n}`}.png`;
@@ -43,7 +51,7 @@ const SCREENS = {
   1: 'garden-season.png', //     05-bed-season: a bed's season timeline
   3: 'plant-season.png', //      06-plant-season: season, rotation, varieties
   4: 'plant-requirements.png', //07-requirements: sun, water, pH, zone
-  0: 'gardens.png', //           08-gardens: My Gardens
+  // 0 (08-gardens) is not synced: the landing page has no slot for it.
 };
 
 /** Display width the site uses at 1x. Everything is emitted at 2x. */

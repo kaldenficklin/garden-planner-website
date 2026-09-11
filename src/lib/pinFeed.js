@@ -46,7 +46,7 @@ export async function pinFeed(context, lang) {
     items: entries.map((post) => {
       const slug = post.id.replace(/\.md$/, '').replace(/^es\//, '');
       const link = lang === 'es' ? `/es/infographics/${slug}/` : `/infographics/${slug}/`;
-      const image = new URL(post.data.infographicImage ?? '/assets/app-icon.png', site).href;
+      const image = new URL(post.data.infographicImage ?? '/assets/app-icon-v2.png', site).href;
       const mime = image.endsWith('.png') ? 'image/png' : 'image/jpeg';
       const description = pinDescriptionFor(post.data);
 

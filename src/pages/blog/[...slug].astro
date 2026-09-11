@@ -52,7 +52,7 @@ const heroSrc = isInfographic ? data.infographicImage : data.image;
 const url = new URL(`/blog/${post.id}/`, Astro.site).href;
 const image = heroSrc
   ? new URL(heroSrc, Astro.site).href
-  : 'https://thegardenplanner.app/assets/app-icon.png';
+  : 'https://thegardenplanner.app/assets/app-icon-v2.png';
 
 // Pinterest wants the tall 2:3 image with the title burned in, not the clean
 // hero. Fall back to the hero so a post without a pin image still pins.
@@ -99,7 +99,7 @@ const jsonLd = {
     '@type': 'Organization',
     '@id': 'https://thegardenplanner.app/#organization',
     name: 'Garden Planner Pro',
-    logo: { '@type': 'ImageObject', url: 'https://thegardenplanner.app/assets/app-icon.png' },
+    logo: { '@type': 'ImageObject', url: 'https://thegardenplanner.app/assets/app-icon-v2.png' },
   },
   mainEntityOfPage: { '@type': 'WebPage', '@id': url },
 };

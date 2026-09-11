@@ -69,7 +69,7 @@ const alternates = [
 const cards = posts.map((post) => {
   const href = postHref(post);
   const url = new URL(href, Astro.site).href;
-  const media = new URL(post.data.infographicImage ?? '/assets/app-icon.png', Astro.site).href;
+  const media = new URL(post.data.infographicImage ?? '/assets/app-icon-v2.png', Astro.site).href;
   const pinTitle = pinTitleFor(post.data);
   const pinDescription = pinDescriptionFor(post.data);
   return { post, href, url, media, pinTitle, pinDescription, pinHref: pinCreateHref(url, media, pinDescription) };

@@ -417,6 +417,14 @@ displays them at. The mockups carry their own device frame, so the site draws no
 bezel; `.phone` only sizes them and casts a shadow. Which mockup is which screen
 comes from the `mock:` numbers in the app's `store-assets/gen-previews.js`.
 
+**Never replace an asset in place.** `/assets/*` is served
+`Cache-Control: immutable` for a year, so a new picture under an old URL never
+reaches anyone who has visited before. Screens live in a versioned folder
+(`public/assets/screens/2.5.0/`) — bump `VERSION` in `sync-screens.mjs` on every
+re-sync and update the paths in `Landing.astro`. The same goes for the icon
+(`app-icon-v2.png`; `app-icon.png` stays for old external links) and for the
+`?v=` on every stylesheet and script.
+
 The site's colours follow the app's theme: lime `#9BE04F` and the forest greens
 of the dark "sprout" theme (`src/constants/theme.ts` in the app repo), with the
 app icon in `public/assets/app-icon.png` copied from `assets/images/icon.png`.
