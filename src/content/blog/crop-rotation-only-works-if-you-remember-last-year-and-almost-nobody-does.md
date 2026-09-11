@@ -11,7 +11,7 @@ pinEyebrow: "GARDEN PLANNING"
 pinHighlight: "ROTATION"
 pinKeywords: ["crop rotation", "vegetable garden planning", "raised bed gardening", "garden journal", "winter garden prep"]
 ctaHook: "A rotation is only as good as the record behind it, and a record made in September is worth ten made from memory in February."
-draft: true
+draft: false
 ---
 
 Ask anyone who grows vegetables whether they rotate their crops and you will get a yes. Ask them where the tomatoes were two summers ago and watch what happens to their face.
