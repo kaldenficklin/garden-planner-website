@@ -59,7 +59,7 @@ guideProTip:
   label: "Pro tip"
   text: "Frost genuinely improves kale. Cold weather converts some of the starch in the leaves to sugar, so the same plant tastes sweeter in December than it did in September."
   icon: "frosted-kale-leaf"
-guideCta: "Plan your beds with Garden Pro Planner"
+guideCta: "Plan your beds with Garden Planner Pro"
 pinDescription: "How to grow kale: sow it in early summer for an autumn and winter crop, plant it deep into firm soil, net it against cabbage white butterflies, and pick the lower leaves so the crown keeps producing."
 pinBoard: "Raised Bed Gardening"
 pinKeywords:

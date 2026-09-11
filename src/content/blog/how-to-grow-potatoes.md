@@ -59,7 +59,7 @@ guideProTip:
   label: "Pro tip"
   text: "Tubers form along the buried stem, not below the roots. Every time you mound soil up a growing plant you add more stem for potatoes to form on, which is why hilling matters more than feeding."
   icon: "hilling-potatoes"
-guideCta: "Plan your beds with Garden Pro Planner"
+guideCta: "Plan your beds with Garden Planner Pro"
 pinDescription: "How to grow potatoes: chit the seed potatoes first, plant them deep, then hill soil up the stems as they grow because tubers form along the buried stem, not under the roots."
 pinBoard: "Raised Bed Gardening"
 pinKeywords:

@@ -45,7 +45,7 @@
 import { APP_STORE } from './store-urls.mjs';
 
 const DEFAULT_HOOK =
-  'Garden Pro Planner works your sowing, planting and harvest dates out from ' +
+  'Garden Planner Pro works your sowing, planting and harvest dates out from ' +
   'your own local frost dates — then logs each harvest and totals up what it saved you.';
 
 /** Blocks a CTA must never be inserted directly after. */
@@ -75,7 +75,7 @@ function ctaNode(hook) {
       ),
     ]),
     el('p', { className: ['inline-cta-foot'] }, [
-      text('Free on iPhone, iPad and Android · 265+ plants · no account needed to start'),
+      text('Free on iPhone, iPad and Android · 440+ plants · no account needed to start'),
     ]),
   ]);
 }

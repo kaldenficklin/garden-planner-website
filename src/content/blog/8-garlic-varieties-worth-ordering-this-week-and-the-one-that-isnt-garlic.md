@@ -78,6 +78,6 @@ Work backward from how you cook. A bulb of hardneck gives you four to six cloves
 
 That is a smaller order than most people expect, and it is why ordering two or three varieties is realistic rather than greedy. A pound of seed garlic goes a long way.
 
-The date it goes in the ground is the part worth getting right, and it is not a fixed one — it is two to four weeks before your ground freezes hard, which moves by hundreds of miles and by two weeks from one year to the next. Garden Pro Planner works it out from your own frost dates rather than from a general rule, and puts it on the calendar with everything else you are meant to be doing in October. If you want the rest of the growing side, [how to grow garlic from a single bulb](/blog/how-to-grow-garlic/) covers the planting depth, the scapes and the leaf signal that tells you when to lift.
+The date it goes in the ground is the part worth getting right, and it is not a fixed one — it is two to four weeks before your ground freezes hard, which moves by hundreds of miles and by two weeks from one year to the next. Garden Planner Pro works it out from your own frost dates rather than from a general rule, and puts it on the calendar with everything else you are meant to be doing in October. If you want the rest of the growing side, [how to grow garlic from a single bulb](/blog/how-to-grow-garlic/) covers the planting depth, the scapes and the leaf signal that tells you when to lift.
 
 Order this week. Plant in six. Then forget about it until spring, which is the best thing about the whole crop.

@@ -59,7 +59,7 @@ guideProTip:
   label: "Pro tip"
   text: "Soak the seed clusters in water overnight before sowing. The corky coat holds a germination inhibitor, and a soak washes enough of it away to bring the row up several days sooner and far more evenly."
   icon: "soaking-seed-bowl"
-guideCta: "Plan your sowings with Garden Pro Planner"
+guideCta: "Plan your sowings with Garden Planner Pro"
 pinDescription: "How to grow beets from seed: sow direct because they hate root disturbance, thin the seed clusters early, keep the water steady so the roots stay tender, and pull them small. A save-and-keep guide for the vegetable garden."
 pinBoard: "Vegetable Garden Layouts"
 pinKeywords:

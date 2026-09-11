@@ -95,7 +95,7 @@ county and your plants are still clean, copper on those clean plants can buy
 time. That is the whole of what it does.
 
 If you are not sure which of the three you are looking at, the pest guides in
-[Garden Pro Planner](https://apps.apple.com/app/id1539031278) lay the symptoms
+[Garden Planner Pro](https://apps.apple.com/app/id1539031278) lay the symptoms
 out side by side with treatment notes, which is easier than squinting at search
 results with a leaf in your hand.
 

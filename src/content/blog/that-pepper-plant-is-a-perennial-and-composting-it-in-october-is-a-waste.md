@@ -59,7 +59,7 @@ average first frost date, and do it then, while the plant is still comfortable.
 For most of the northern half of the country that means somewhere between the
 middle of September and the first week of October, which is why late August is
 the right time to be reading this rather than the night before. (If you have
-never pinned down your own first frost date, Garden Pro Planner sets its whole
+never pinned down your own first frost date, Garden Planner Pro sets its whole
 planting calendar off your local frost dates, so it will tell you the window
 instead of making you dig through a zone map.)
 

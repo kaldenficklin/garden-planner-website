@@ -47,4 +47,4 @@ Garlic is the one crop where the decisions that matter happen months before the 
 
 The five things on this chart are all decisions, not planting-day technique, which is exactly why they're easy to put off. Order garlic like you'd order anything else you don't need for two months, and you'll be picking from whatever's left instead of what you wanted.
 
-If you're not sure which type does well where you garden, Garden Pro Planner's plant library breaks out hardneck and softneck by climate before you commit to an order.
+If you're not sure which type does well where you garden, Garden Planner Pro's plant library breaks out hardneck and softneck by climate before you commit to an order.

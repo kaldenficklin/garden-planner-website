@@ -59,7 +59,7 @@ guideProTip:
   label: "Consejo"
   text: "La lavanda no rebrota de la madera desnuda. Poda un poco cada año dejando siempre hoja verde por debajo del corte, y la mata se mantiene compacta en vez de abrirse por el centro."
   icon: "lavender-plant"
-guideCta: "Diseña tus parterres en Garden Pro Planner"
+guideCta: "Diseña tus parterres en Garden Planner Pro"
 pinDescription: "Cómo cultivar lavanda: pleno sol y drenaje importan más que nada, riega solo mientras arraiga y poda cada año sin cortar nunca en la madera desnuda."
 pinBoard: "Companion Planting"
 pinKeywords:

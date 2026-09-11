@@ -59,7 +59,7 @@ guideProTip:
   label: "Consejo"
   text: "Las primeras flores son casi todas macho, así que no cuaja nada y parece un fracaso. Espera una o dos semanas a las flores hembra, las que llevan un frutito detrás, antes de preocuparte."
   icon: "squash-male-flower"
-guideCta: "Planifica tu huerto en Garden Pro Planner"
+guideCta: "Planifica tu huerto en Garden Planner Pro"
 pinDescription: "Cómo cultivar calabacín: dale espacio de verdad, riega en la base para evitar el oídio, poliniza a mano si no cuaja y recoge pequeño y a menudo."
 pinBoard: "Vegetable Garden Layouts"
 pinKeywords:

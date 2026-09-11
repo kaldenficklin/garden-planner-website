@@ -4,7 +4,7 @@ Paste the whole of this file to Claude Code, working in the repo of the site you
 want the routine for. Replace the bracketed values in "Fill these in" first.
 
 This describes the method used to build the routine in
-`scripts/daily-infographics.mjs` in the Garden Pro Planner site. Point Claude at
+`scripts/daily-infographics.mjs` in the Garden Planner Pro site. Point Claude at
 that repo as a reference implementation if it is available; otherwise this file
 is enough to rebuild it from scratch.
 

@@ -54,6 +54,6 @@ If you've got a lot of plants and real numbers to deal with, *Bacillus thuringie
 
 Hornworms overwinter as hard brown pupae a few inches down in the soil, right where the tomatoes were standing. Turning that bed over after harvest brings them up where the cold and the birds can get at them.
 
-Rotating works for the same reason. Tomatoes, peppers, eggplant and potatoes all host hornworms, so moving the whole family to a different bed each year means the moths that emerge have a longer trip to find dinner. Planting dill, fennel, yarrow or alyssum near the tomatoes helps too, since the adult braconid wasps live on nectar even though their larvae are parasites. Garden Pro Planner's pest guides cover hornworms and the rest of the regulars, if you want to match what you're seeing to whatever is causing it.
+Rotating works for the same reason. Tomatoes, peppers, eggplant and potatoes all host hornworms, so moving the whole family to a different bed each year means the moths that emerge have a longer trip to find dinner. Planting dill, fennel, yarrow or alyssum near the tomatoes helps too, since the adult braconid wasps live on nectar even though their larvae are parasites. Garden Planner Pro's pest guides cover hornworms and the rest of the regulars, if you want to match what you're seeing to whatever is causing it.
 
 Mostly though, it's just the habit. Look down at the soil while you're standing there watering anyway. Dark pellets mean look up. That's genuinely the whole thing, and it'll catch one days before it costs you the top of a plant.

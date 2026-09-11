@@ -59,7 +59,7 @@ guideProTip:
   label: "Pro tip"
   text: "Turn a few leaves over every week from late spring and rub off the clusters of yellow eggs you find. Two minutes of that beats any spray once the caterpillars have hatched and burrowed into the head."
   icon: "cabbage-white-eggs"
-guideCta: "Look up brassica pests in Garden Pro Planner"
+guideCta: "Look up brassica pests in Garden Planner Pro"
 pinDescription: "How to grow cabbage: plant into firm soil, net the bed from day one against butterflies and pigeons, fit a collar against root fly, and cut the head as soon as it feels solid. A save-and-keep guide for the vegetable garden."
 pinBoard: "Vegetable Garden Layouts"
 pinKeywords:

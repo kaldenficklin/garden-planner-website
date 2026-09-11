@@ -59,7 +59,7 @@ guideProTip:
   label: "Consejo"
   text: "Unas coles abiertas y flojas casi siempre significan tierra floja. Pisa el bancal antes de plantar, asienta bien las plantas y entutora todo lo que pase de la rodilla, y la misma variedad que se te abrió el año pasado saldrá prieta."
   icon: "tight-sprout-buttons"
-guideCta: "Planifica un bancal de invierno con Garden Pro Planner"
+guideCta: "Planifica un bancal de invierno con Garden Planner Pro"
 pinDescription: "Cómo cultivar coles de Bruselas: siembra pronto porque necesitan una temporada larga, planta en tierra bien pisada, entutora los tallos altos y recoge de abajo hacia arriba según se aprietan. Una guía para guardar."
 pinBoard: "Vegetable Garden Layouts"
 pinKeywords:

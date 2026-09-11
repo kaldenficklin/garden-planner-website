@@ -11,7 +11,7 @@ pinEyebrow: "STORAGE MISTAKE"
 pinHighlight: "OPPOSITE ROOMS"
 heroCrop: "south"
 pinKeywords: ["how to store potatoes for winter", "root cellar alternatives", "fall vegetable garden", "storing winter squash", "food preservation tips"]
-ctaHook: "Garden Pro Planner's yield tracking gives every harvest a date, which is the number you want when you are deciding what to eat first in February."
+ctaHook: "Garden Planner Pro's yield tracking gives every harvest a date, which is the number you want when you are deciding what to eat first in February."
 draft: false
 ---
 

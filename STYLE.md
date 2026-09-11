@@ -74,7 +74,7 @@ too early" is a fabrication that changes what people do in their gardens. Every
 piece of growing advice on this blog has to be correct.
 
 **2. Never fabricate results from the app.** No invented yield totals, savings
-figures, or testimonials attributed to using Garden Pro Planner. Personal color
+figures, or testimonials attributed to using Garden Planner Pro. Personal color
 is one thing; a manufactured product claim is a different category entirely.
 
 One craft note that is not about ethics: keep anecdotes plausible and hard to
@@ -269,8 +269,8 @@ Part 1 is the actual defence. The bans just stop the obvious cases.
 
 - One mention per post. Two only if the second is a single clause.
 - Vary placement — it does not have to be the final paragraph, and it should not
-  always open with "Garden Pro Planner's...".
-- Tie it to a real feature (frost-date calendar, 225+ plant library, pest
+  always open with "Garden Planner Pro's...".
+- Tie it to a real feature (frost-date calendar, 440+ plant library, pest
   guides, watering reminders, yield tracking, calendar sync, pet-safe filtering).
   Never invent features.
 - It should read as a useful aside, not a sales close.

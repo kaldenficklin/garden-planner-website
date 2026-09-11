@@ -59,7 +59,7 @@ guideProTip:
   label: "Pro tip"
   text: "Cut immediately below a leaf joint. The concentration of the hormones that produce roots is highest at that point, and a cutting trimmed halfway between joints roots slowly if it roots at all."
   icon: "cutting-below-node"
-guideCta: "Plan your herb bed in Garden Pro Planner"
+guideCta: "Plan your herb bed in Garden Planner Pro"
 pinDescription: "How to take plant cuttings: take soft new growth in early summer, cut just below a leaf joint, strip the lower leaves, keep the humidity up and the compost only just damp, and expect roots in a few weeks."
 pinBoard: "Container & Small Space Gardening"
 pinKeywords:

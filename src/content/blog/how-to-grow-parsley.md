@@ -59,7 +59,7 @@ guideProTip:
   label: "Pro tip"
   text: "Parsley is biennial, so the plant that was perfect last year will bolt in its second spring and taste bitter. Sow a new one every year and treat the old one as a bonus rather than the main crop."
   icon: "bolting-herb-stem"
-guideCta: "Plan your herb bed in Garden Pro Planner"
+guideCta: "Plan your herb bed in Garden Planner Pro"
 pinDescription: "How to grow parsley: soak the seed and be patient because it is famously slow to germinate, keep it moist and picked from the outside, and sow a fresh plant every year because the second summer goes straight to seed."
 pinBoard: "Container & Small Space Gardening"
 pinKeywords:

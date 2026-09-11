@@ -112,7 +112,7 @@ cloves are next year's seed garlic, and clove size is most of what decides bulb
 size in the crop that follows. Pull four or five of the best heads now and put
 them somewhere you will not absentmindedly reach for them, because they go back
 in the ground in October and you will not want to buy what you already grew.
-Garden Pro Planner will hold that planting date against your local frost dates
+Garden Planner Pro will hold that planting date against your local frost dates
 so it does not slide past you in the middle of fall cleanup.
 
 The rest is yours. Braid the softnecks if you like the look of them hanging in

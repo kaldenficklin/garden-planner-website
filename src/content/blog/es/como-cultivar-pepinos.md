@@ -59,7 +59,7 @@ guideProTip:
   label: "Consejo"
   text: "El amargor viene del estrés, casi siempre riego irregular o calor. Un pepino que se secó una vez amargará hagas lo que hagas después, así que vale más la constancia que el rescate."
   icon: "cucumber-vine"
-guideCta: "Diseña un bancal vertical en Garden Pro Planner"
+guideCta: "Diseña un bancal vertical en Garden Planner Pro"
 pinDescription: "Cómo cultivar pepinos: guíalos por una espaldera para ganar sitio y mantener el fruto limpio, riega de forma constante porque la sequía los amarga, y recoge jóvenes."
 pinBoard: "Container & Small Space Gardening"
 pinKeywords:

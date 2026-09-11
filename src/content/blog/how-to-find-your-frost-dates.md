@@ -59,6 +59,6 @@ Air and soil warm on completely different schedules. Soil lags, sometimes badly,
 
 Buy a soil thermometer. Wait for consistent 60°F soil before transplanting warm-season crops, and closer to 70°F for melons and okra. Five dollars, and it saves you a month.
 
-Garden Pro Planner pulls your local frost dates from your location and builds the seed-starting, transplant and harvest schedule for 225+ plants around them, which takes care of the arithmetic even if it can't take care of the judgment.
+Garden Planner Pro pulls your local frost dates from your location and builds the seed-starting, transplant and harvest schedule for 440+ plants around them, which takes care of the arithmetic even if it can't take care of the judgment.
 
 Your frost dates are a framework, not a forecast. Look them up once, then spend a season finding out all the ways your particular patch of ground disagrees with them.

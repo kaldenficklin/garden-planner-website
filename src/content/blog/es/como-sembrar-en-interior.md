@@ -59,7 +59,7 @@ guideProTip:
   label: "Consejo"
   text: "Las plántulas estiradas indican falta de luz, no de calor. Una ventana casi nunca basta, y una luz barata a unos centímetros de las hojas lo arregla del todo."
   icon: "grow-light-seedlings"
-guideCta: "Calcula tus fechas en Garden Pro Planner"
+guideCta: "Calcula tus fechas en Garden Planner Pro"
 pinDescription: "Cómo sembrar en interior: cuenta hacia atrás desde la última helada, pon la luz mucho más cerca de lo que crees, riega por abajo y aclimata las plantas una semana antes de sacarlas."
 pinBoard: "Seed Starting & Frost Dates"
 pinKeywords:

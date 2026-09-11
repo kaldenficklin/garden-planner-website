@@ -49,7 +49,7 @@ Take the cuttings from this year's growth, the part of the stem that has firmed 
 
 Then wait, and do not keep tugging on them. Rosemary can take a month or two. Some of the cuttings will die and look no different for a while, which is maddening. This is why you start in August rather than at the end of September, when you have no margin for a batch that fails.
 
-If you do not know your first frost date offhand, the planting calendar in Garden Pro Planner is built around your local frost dates, and reading that one number off it tells you how many rooting weeks you have left.
+If you do not know your first frost date offhand, the planting calendar in Garden Planner Pro is built around your local frost dates, and reading that one number off it tells you how many rooting weeks you have left.
 
 ## Why not just dig up the rosemary
 

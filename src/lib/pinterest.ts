@@ -36,7 +36,7 @@ export function pinDescriptionFor(data: PinData): string {
 /**
  * The exact text handed to Pinterest as the pin title.
  *
- * Deliberately the bare post title, with no " — Garden Pro Planner" suffix. The
+ * Deliberately the bare post title, with no " — Garden Planner Pro" suffix. The
  * page's <title> carries that suffix for search results, but a pin headline is
  * already attributed to the account and the board, so the suffix there only
  * eats into the ~40 characters Pinterest shows before truncating.

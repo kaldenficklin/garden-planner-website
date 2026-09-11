@@ -59,7 +59,7 @@ guideProTip:
   label: "Pro tip"
   text: "Four feet is the width that matters. Any wider and you end up stepping into the bed to reach the middle, which compacts the soil and undoes the main reason for building one."
   icon: "raised-bed-frame"
-guideCta: "Lay out your beds in Garden Pro Planner"
+guideCta: "Lay out your beds in Garden Planner Pro"
 pinDescription: "How to build a raised bed: keep it four feet wide so you can reach the middle from both sides, at least a foot deep, and fill it with a compost-rich mix rather than garden soil."
 pinBoard: "Raised Bed Gardening"
 pinKeywords:

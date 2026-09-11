@@ -59,7 +59,7 @@ guideProTip:
   label: "Pro tip"
   text: "Carrot seed is tiny and needs constant moisture to germinate, which is the usual reason a row never comes up. Cover the row with a board or damp cloth and check daily, lifting it the moment green shows."
   icon: "carrot-seed-row"
-guideCta: "Plan your rows in Garden Pro Planner"
+guideCta: "Plan your rows in Garden Planner Pro"
 pinDescription: "How to grow straight carrots: loosen deep stone-free soil, sow direct and shallow, keep the seedbed damp until germination, and thin properly. A save-and-keep root vegetable guide."
 pinBoard: "Vegetable Garden Layouts"
 pinKeywords:

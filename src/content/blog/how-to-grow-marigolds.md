@@ -59,7 +59,7 @@ guideProTip:
   label: "Pro tip"
   text: "Rich soil and heavy feeding give you a big leafy marigold with few flowers. They bloom hardest in poor ground, which makes them ideal for the awkward corners of a vegetable bed."
   icon: "marigold-flower"
-guideCta: "Plan your companions in Garden Pro Planner"
+guideCta: "Plan your companions in Garden Planner Pro"
 pinDescription: "How to grow marigolds: sow direct after frost, give them poor soil rather than rich, and deadhead every few days because a marigold that sets seed stops flowering."
 pinBoard: "Companion Planting"
 pinKeywords:

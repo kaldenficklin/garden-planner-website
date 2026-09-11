@@ -59,7 +59,7 @@ guideProTip:
   label: "Pro tip"
   text: "Cut chives low, not tipped. Snipping the top inch leaves you a clump of blunt, tough stems that never really recover. Take whole stems at the base and the regrowth comes up tender."
   icon: "cutting-chives-low"
-guideCta: "Plan your herb bed in Garden Pro Planner"
+guideCta: "Plan your herb bed in Garden Planner Pro"
 pinDescription: "How to grow chives: give them sun and ordinary soil, cut the whole clump low rather than trimming the tips, divide it every few years before it crowds itself out, and keep the flowers if you want them to seed around."
 pinBoard: "Container & Small Space Gardening"
 pinKeywords:

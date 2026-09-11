@@ -59,7 +59,7 @@ guideProTip:
   label: "Pro tip"
   text: "Mulch two to three inches around each plant. It holds moisture, blocks weeds, and stops the soil splash that spreads disease onto the lower leaves."
   icon: "mulched-plant"
-guideCta: "Plan your beds with Garden Pro Planner"
+guideCta: "Plan your beds with Garden Planner Pro"
 pinDescription: "How to grow tomatoes from planting to harvest: pick the right variety, plant the stem deep for stronger roots, water at the base, and pick at full colour. A save-and-keep guide for the vegetable garden."
 pinBoard: "Vegetable Garden Layouts"
 pinKeywords:

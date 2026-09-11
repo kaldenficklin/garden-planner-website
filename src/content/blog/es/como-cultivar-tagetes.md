@@ -59,7 +59,7 @@ guideProTip:
   label: "Consejo"
   text: "La tierra rica y mucho abono te dan una planta frondosa con pocas flores. Florecen más en suelo pobre, lo que las hace ideales para los rincones difíciles del huerto."
   icon: "marigold-flower"
-guideCta: "Planifica asociaciones en Garden Pro Planner"
+guideCta: "Planifica asociaciones en Garden Planner Pro"
 pinDescription: "Cómo cultivar tagetes: siembra tras las heladas, dales tierra pobre en vez de rica y quita las flores secas cada pocos días, porque si granan dejan de florecer."
 pinBoard: "Companion Planting"
 pinKeywords:

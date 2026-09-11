@@ -62,6 +62,6 @@ That last part is worth as much as the rotation itself. In February you will rem
 
 A photograph from the bedroom window with the plants still standing is a decent substitute if you are not going to write anything. Ten seconds, and it beats reconstructing it in the spring.
 
-This is the part Garden Pro Planner is genuinely good at and undersold on: the beds carry what you planted where, season after season, so the map is already there when you sit down in February with the seed catalog, and so is the note about the corner where nothing came up. A rotation you can actually follow is mostly just a rotation you can remember.
+This is the part Garden Planner Pro is genuinely good at and undersold on: the beds carry what you planted where, season after season, so the map is already there when you sit down in February with the seed catalog, and so is the note about the corner where nothing came up. A rotation you can actually follow is mostly just a rotation you can remember.
 
 Then next April, when a bed is empty and sunny and you are holding a tray of peppers, something will tell you what was in it. That is the whole trick, and it is available to you for about ten minutes of work this weekend, while the garden is still standing there explaining itself.

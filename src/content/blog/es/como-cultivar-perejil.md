@@ -59,7 +59,7 @@ guideProTip:
   label: "Consejo"
   text: "El perejil es bienal, así que la planta perfecta del año pasado florecerá en su segunda primavera y amargará. Siembra una nueva cada año y trata la vieja como un extra, no como la cosecha principal."
   icon: "bolting-herb-stem"
-guideCta: "Planifica tus hierbas en Garden Pro Planner"
+guideCta: "Planifica tus hierbas en Garden Planner Pro"
 pinDescription: "Cómo cultivar perejil: remoja la semilla y ten paciencia porque tarda mucho en germinar, mantenlo húmedo y recoge siempre de fuera hacia dentro, y siembra una planta nueva cada año porque el segundo verano se sube a flor."
 pinBoard: "Container & Small Space Gardening"
 pinKeywords:

@@ -59,7 +59,7 @@ guideProTip:
   label: "Consejo"
   text: "La mayoría de los frutales jóvenes se pierden en sus dos primeros veranos, y casi siempre por sequía y no por frío. Un riego largo y lento por semana en épocas secas vale más que un rociado diario."
   icon: "watering-can-sprinkle"
-guideCta: "Planifica tu huerto en Garden Pro Planner"
+guideCta: "Planifica tu huerto en Garden Planner Pro"
 pinDescription: "Cómo plantar bien un árbol frutal: cava ancho y no profundo, deja el injerto por encima de la tierra, no eches abono en el hoyo y riega a fondo durante los dos primeros veranos."
 pinBoard: "Raised Bed Gardening"
 pinKeywords:

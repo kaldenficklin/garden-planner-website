@@ -59,7 +59,7 @@ guideProTip:
   label: "Consejo"
   text: "La semilla de zanahoria es diminuta y necesita humedad constante para germinar, que es la razón habitual de que una hilera no nazca. Tapa la línea con una tabla o un paño húmedo y revísala a diario."
   icon: "carrot-seed-row"
-guideCta: "Planifica tus hileras en Garden Pro Planner"
+guideCta: "Planifica tus hileras en Garden Planner Pro"
 pinDescription: "Cómo cultivar zanahorias rectas: mulle la tierra profunda y sin piedras, siembra directa y superficial, mantén el semillero húmedo hasta que nazcan, y aclara bien."
 pinBoard: "Vegetable Garden Layouts"
 pinKeywords:

@@ -59,7 +59,7 @@ guideProTip:
   label: "Consejo"
   text: "Si la quieres en el bancal, entierra la maceta entera dejando el borde por encima de la tierra. Tienes el aspecto de una mata plantada y la raíz sigue sin poder escaparse de lado."
   icon: "mint-in-pot"
-guideCta: "Planifica tus hierbas en Garden Pro Planner"
+guideCta: "Planifica tus hierbas en Garden Planner Pro"
 pinDescription: "Cómo cultivar menta: tenla en maceta porque se extiende por estolones subterráneos y se come un bancal en una temporada, pellízcala a menudo y córtala a fondo cuando se haga leñosa."
 pinBoard: "Container & Small Space Gardening"
 pinKeywords:

@@ -33,7 +33,7 @@ Six to eight weeks back puts sowing between roughly March 15 and March 29. Sow i
 
 The same method covers most warm-season crops and only the number changes. Peppers and eggplant want 8 to 10 weeks, so they go in earlier than tomatoes, which surprises people who assume everything starts at once.
 
-If you don't know your frost date, look it up by ZIP code through NOAA or the National Gardening Association, or ask your regional extension service, which usually has better local resolution. Garden Pro Planner fills your frost dates in from your location and counts back for 225+ plants, which removes the arithmetic and, more usefully, removes the temptation to start early because a date on a screen is harder to argue with than a feeling in February.
+If you don't know your frost date, look it up by ZIP code through NOAA or the National Gardening Association, or ask your regional extension service, which usually has better local resolution. Garden Planner Pro fills your frost dates in from your location and counts back for 440+ plants, which removes the arithmetic and, more usefully, removes the temptation to start early because a date on a screen is harder to argue with than a feeling in February.
 
 ## Getting seedlings that are worth planting
 

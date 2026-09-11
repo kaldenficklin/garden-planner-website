@@ -59,7 +59,7 @@ guideProTip:
   label: "Pro tip"
   text: "Keep dill away from fennel. They cross-pollinate readily, and seed saved from a dill plant grown next to fennel comes up as a muddled hybrid that tastes clearly of neither."
   icon: "fennel-bulb"
-guideCta: "Plan your herb bed in Garden Pro Planner"
+guideCta: "Plan your herb bed in Garden Planner Pro"
 pinDescription: "How to grow dill: sow it direct because it hates transplanting, give it shelter from wind, sow again every few weeks for leaf, and let the last sowing flower if you want seed for pickling."
 pinBoard: "Container & Small Space Gardening"
 pinKeywords:

@@ -49,6 +49,6 @@ Frost protection buys weeks at the front of the cold season, not months, and it 
 
 It will not save peppers, basil, beans or tomatoes. Those are done at the first real frost regardless of what you drape over them, and the effort is better spent picking everything green that night.
 
-One more thing to have straight before you commit to a covered bed is your own first frost date, because the whole plan is built around it. Garden Pro Planner keeps a planting calendar tuned to your local frost dates, so you can see how many weeks a crop has left before the average first frost rather than guessing from how the weather feels.
+One more thing to have straight before you commit to a covered bed is your own first frost date, because the whole plan is built around it. Garden Planner Pro keeps a planting calendar tuned to your local frost dates, so you can see how many weeks a crop has left before the average first frost rather than guessing from how the weather feels.
 
 Order the fabric this week. Put it somewhere you will find it in the dark, with the bricks, because the night you need it you will be doing all of this at dusk with a flashlight in your teeth, and the difference between a fall garden that ends in October and one you are still cutting from at Thanksgiving is about twenty minutes of work you did not have to improvise.

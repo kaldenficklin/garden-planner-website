@@ -59,7 +59,7 @@ guideProTip:
   label: "Consejo"
   text: "Cortar la pella central no acaba la cosecha. Si dejas la planta en tierra, seguirá sacando brotes laterales durante semanas, y muchas veces esa es la cosecha más grande."
   icon: "broccoli-head"
-guideCta: "Planifica tu huerto con Garden Pro Planner"
+guideCta: "Planifica tu huerto con Garden Planner Pro"
 pinDescription: "Cómo cultivar brócoli: siembra en alvéolos y trasplanta joven, dale tierra firme y rica con distancias generosas, protege con malla contra orugas y palomas, y corta la pella central con los botones aún cerrados."
 pinBoard: "Raised Bed Gardening"
 pinKeywords:

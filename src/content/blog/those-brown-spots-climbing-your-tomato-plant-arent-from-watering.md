@@ -27,6 +27,6 @@ You are not going to cure the leaves that already have it. What you're managing 
 
 One thing worth knowing before you panic and pull the whole plant: a little bit of lower-leaf yellowing on an otherwise loaded, productive plant in late summer is close to normal. The plant is old, it's carrying a lot of fruit, and it's reallocating resources away from leaves it doesn't strictly need anymore. What separates ordinary end-of-season fatigue from early blight is that ring pattern in the spot itself, and how fast the line is moving up the plant. Fatigue is slow and even. Blight has a leading edge you can watch move week to week.
 
-If you're not sure what you're looking at, Garden Pro Planner's pest and disease guides have photos next to the exact ring-and-halo pattern I'm describing, which is a lot more useful than trying to match it against a description from memory while you're standing in the garden with dirt on your knees.
+If you're not sure what you're looking at, Garden Planner Pro's pest and disease guides have photos next to the exact ring-and-halo pattern I'm describing, which is a lot more useful than trying to match it against a description from memory while you're standing in the garden with dirt on your knees.
 
 Next year, the fix starts before you ever plant: rotate where your tomatoes go if you have the space, since the fungus overwinters in the soil where infected plants grew. It's a small thing to remember in October, and it's the difference between fighting this in July or not fighting it at all.

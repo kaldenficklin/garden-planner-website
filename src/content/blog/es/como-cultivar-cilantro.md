@@ -59,7 +59,7 @@ guideProTip:
   label: "Consejo"
   text: "Deja de intentar mantener viva una sola mata de cilantro. Es anual y florece por calendario, y sembrar cada tres semanas te da suministro continuo donde pelearte con una planta nunca lo consigue."
   icon: "succession-sowing-rows"
-guideCta: "Planifica tus hierbas en Garden Pro Planner"
+guideCta: "Planifica tus hierbas en Garden Planner Pro"
 pinDescription: "Cómo cultivar cilantro: siembra directo en los meses frescos, siembra un puñado nuevo cada pocas semanas porque toda planta acaba floreciendo, riega de forma constante y corta tallos enteros de fuera."
 pinBoard: "Container & Small Space Gardening"
 pinKeywords:

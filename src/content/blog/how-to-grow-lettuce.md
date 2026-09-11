@@ -59,7 +59,7 @@ guideProTip:
   label: "Pro tip"
   text: "Sow a short row every two weeks rather than one long row at once. Lettuce goes from perfect to bitter in a matter of days, so a steady trickle beats a glut you cannot eat in time."
   icon: "spaced-plants-row"
-guideCta: "Plan your salad beds in Garden Pro Planner"
+guideCta: "Plan your salad beds in Garden Planner Pro"
 pinDescription: "How to grow lettuce that stays sweet: sow little and often, give it afternoon shade in heat, keep the soil damp, and cut the outer leaves so one plant keeps giving. A save-and-keep guide."
 pinBoard: "Vegetable Garden Layouts"
 pinKeywords:

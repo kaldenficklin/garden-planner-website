@@ -53,6 +53,6 @@ Check the packet before you save anything. If it says F1 or hybrid, the seed ins
 
 Biennials have nothing for you this year either. Carrots, beets, onions, chard, cabbage and kale do not flower until their second summer.
 
-Whatever you save, get it fully dry, then into a paper envelope, then into a sealed jar in the coolest dark spot in the house. Beans and lettuce will still be good in three years or so. Peppers fade faster than that. When you sit down over the winter to work out what still needs ordering, Garden Pro Planner counts your indoor start dates back from your local frost dates, so you can see how much of your own seed actually covers the spring and how much of that catalog order you can cross off.
+Whatever you save, get it fully dry, then into a paper envelope, then into a sealed jar in the coolest dark spot in the house. Beans and lettuce will still be good in three years or so. Peppers fade faster than that. When you sit down over the winter to work out what still needs ordering, Garden Planner Pro counts your indoor start dates back from your local frost dates, so you can see how much of your own seed actually covers the spring and how much of that catalog order you can cross off.
 
 One thing tomorrow morning, and it is the one people skip: write the variety and the year on the envelope before you set it down. Unlabeled seed is not seed. It is a small jar of mystery you will throw away in February, standing over the trash, annoyed at a version of yourself who was standing in the sun in August with a pen right there in your pocket.

@@ -59,7 +59,7 @@ guideProTip:
   label: "Pro tip"
   text: "Loose open sprouts almost always mean loose soil. Tread the bed before planting, heel the plants in hard, and stake anything over knee height, and the same variety that blew last year will hold tight."
   icon: "tight-sprout-buttons"
-guideCta: "Plan a winter bed with Garden Pro Planner"
+guideCta: "Plan a winter bed with Garden Planner Pro"
 pinDescription: "How to grow Brussels sprouts: sow early because they need a long season, plant into firm trodden soil, stake the tall stems, and pick from the bottom of the stalk upwards as the sprouts firm up. A save-and-keep guide."
 pinBoard: "Vegetable Garden Layouts"
 pinKeywords:

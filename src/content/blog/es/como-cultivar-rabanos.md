@@ -59,7 +59,7 @@ guideProTip:
   label: "Consejo"
   text: "Siembra una hilera corta cada dos semanas en vez de una larga de golpe. El rábano pasa de perfecto a fibroso en pocos días, y una hilera entera lista el mismo día se desperdicia."
   icon: "radish"
-guideCta: "Planifica tus hileras en Garden Pro Planner"
+guideCta: "Planifica tus hileras en Garden Planner Pro"
 pinDescription: "Cómo cultivar rábanos: siembra directamente en tierra suelta y sin piedras, aclara pronto para que la raíz tenga sitio, riega de forma constante y arráncalos jóvenes antes de que se pongan fibrosos."
 pinBoard: "Container & Small Space Gardening"
 pinKeywords:

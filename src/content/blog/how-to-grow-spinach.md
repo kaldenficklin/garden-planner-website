@@ -59,7 +59,7 @@ guideProTip:
   label: "Pro tip"
   text: "Bolting is a heat and stress response, not an age one. Spinach that dries out once will run to seed early even in mild weather, so steady moisture matters more than the calendar."
   icon: "spinach"
-guideCta: "Plan your rows in Garden Pro Planner"
+guideCta: "Plan your rows in Garden Planner Pro"
 pinDescription: "How to grow spinach: sow it in the cool of spring or autumn, keep the soil evenly moist so it never checks, feed it nitrogen for leafy growth, and pick the outer leaves so the centre keeps producing."
 pinBoard: "Vegetable Garden Layouts"
 pinKeywords:

@@ -47,4 +47,4 @@ Late summer is when the garden stops trickling and starts dumping, and the count
 
 The ranking isn't about which vegetable is best, just which one is closest to done. Greens go first because they're mostly water and give it up fast. Peppers and radishes buy you real time because a thicker skin, or no skin at all touching air, slows the whole process down.
 
-Garden Pro Planner's yield tracking logs what came in and when, so you're working from what's really piling up instead of guessing.
+Garden Planner Pro's yield tracking logs what came in and when, so you're working from what's really piling up instead of guessing.

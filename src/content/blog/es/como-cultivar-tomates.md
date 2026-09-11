@@ -59,7 +59,7 @@ guideProTip:
   label: "Consejo"
   text: "Cubre con cinco a ocho centímetros de acolchado. Retiene la humedad, frena las malas hierbas y evita las salpicaduras de tierra que llevan enfermedades a las hojas bajas."
   icon: "mulched-plant"
-guideCta: "Planifica tu huerto con Garden Pro Planner"
+guideCta: "Planifica tu huerto con Garden Planner Pro"
 pinDescription: "Cómo cultivar tomates desde la siembra hasta la cosecha: elige bien la variedad, entierra el tallo para que eche más raíces, riega en la base y recoge con color pleno. Una guía para guardar."
 pinBoard: "Vegetable Garden Layouts"
 pinKeywords:

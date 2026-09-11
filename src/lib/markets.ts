@@ -100,7 +100,7 @@ export const US: Market = {
   otherLabel: 'United Kingdom',
   otherPath: '/uk/',
 
-  title: 'Garden Pro Planner — Know when to plant, and what it saved you',
+  title: 'Garden Planner Pro — Know when to plant, and what it saved you',
   metaDescription:
     'A garden planner that builds your season around your own local frost dates, lays out every raised bed square by square, then logs each harvest and adds up what you saved on groceries. Free on iPhone, iPad and Android.',
   heroImage: '/assets/marketing/hero-us.jpg',
@@ -109,8 +109,8 @@ export const US: Market = {
 
   headlineLead: 'Know what to plant, when to plant it,',
   headlineAccent: 'and what it saved you.',
-  lead: 'Garden Pro Planner builds your whole season around your own local frost dates — then tracks every harvest and adds up what you did not have to buy at the store.',
-  proof: ['Free to start', '265+ plant library', 'iPhone, iPad & Android'],
+  lead: 'Garden Planner Pro builds your whole season around your own local frost dates — then tracks every harvest and adds up what you did not have to buy at the store.',
+  proof: ['Free to start', '440+ plant library', 'iPhone, iPad & Android'],
 
   timingBody:
     'Seed packets print one date for the whole country. Your calendar is built from the last and first frost at your location, so you know when to start seeds indoors, when to transplant, and roughly when each crop comes in.',
@@ -147,7 +147,7 @@ export const US: Market = {
     },
     {
       q: 'How big is the plant library?',
-      a: "265+ plants, each with sunlight, soil, pH, watering needs, spacing, expected yield, pests, and whether it's safe around pets.",
+      a: "440+ plants, each with sunlight, soil, pH, watering needs, spacing, expected yield, pests, and whether it's safe around pets.",
     },
   ],
 };
@@ -161,7 +161,7 @@ export const UK: Market = {
   otherLabel: 'United States',
   otherPath: '/',
 
-  title: 'Garden Pro Planner UK — Know when to sow, and what it saved you',
+  title: 'Garden Planner Pro UK — Know when to sow, and what it saved you',
   metaDescription:
     'A garden planner built around your own local frost dates, for raised beds, a veg patch or a full allotment. Plan beds square by square, then log every harvest and watch the shopping savings add up. Free on iPhone, iPad and Android.',
   heroImage: '/assets/marketing/hero-uk.jpg',
@@ -170,8 +170,8 @@ export const UK: Market = {
 
   headlineLead: 'Know what to sow, when to sow it,',
   headlineAccent: 'and what it saved you.',
-  lead: 'Garden Pro Planner builds your whole season around your own local frost dates — whether that is two raised beds, a veg patch or a full allotment — then tracks every harvest and adds up what you did not have to buy.',
-  proof: ['Free to start', '265+ plant library', 'iPhone, iPad & Android'],
+  lead: 'Garden Planner Pro builds your whole season around your own local frost dates — whether that is two raised beds, a veg patch or a full allotment — then tracks every harvest and adds up what you did not have to buy.',
+  proof: ['Free to start', '440+ plant library', 'iPhone, iPad & Android'],
 
   timingBody:
     'A seed packet prints one sowing window for the whole country, and the country runs from Cornwall to Aberdeen. Your calendar is built from the last and first frost where you actually garden, so you know when to sow under cover, when to plant out, and roughly when each crop is ready.',
@@ -208,7 +208,7 @@ export const UK: Market = {
     },
     {
       q: 'How big is the plant library?',
-      a: "265+ plants, each with sunlight, soil, pH, watering needs, spacing, expected yield, pests, and whether it's safe around pets.",
+      a: "440+ plants, each with sunlight, soil, pH, watering needs, spacing, expected yield, pests, and whether it's safe around pets.",
     },
   ],
 };

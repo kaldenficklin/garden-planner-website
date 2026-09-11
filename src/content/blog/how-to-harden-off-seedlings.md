@@ -59,7 +59,7 @@ guideProTip:
   label: "Pro tip"
   text: "Wind does more damage than cold during hardening off, and it is the factor people forget entirely. A seedling raised in still indoor air has no stem strength, and one gusty afternoon can flatten a whole tray."
   icon: "wind-bent-seedling"
-guideCta: "Plan your beds with Garden Pro Planner"
+guideCta: "Plan your beds with Garden Planner Pro"
 pinDescription: "How to harden off seedlings: start with an hour of shade, build up over a week or two, bring them in at night until the end, skip the wind and midday sun early on, and plant out on a dull evening."
 pinBoard: "Seed Starting & Frost Dates"
 pinKeywords:

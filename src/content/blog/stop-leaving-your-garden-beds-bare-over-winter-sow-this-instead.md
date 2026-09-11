@@ -78,7 +78,7 @@ is the exception at both ends and can go in a good deal later.
 
 Which means the sowing window opens right about now in the north and stays open
 into October further south. If you are not sure when your first frost lands,
-that is the number the whole schedule hangs on, and Garden Pro Planner keeps a
+that is the number the whole schedule hangs on, and Garden Planner Pro keeps a
 planting calendar tuned to your local frost dates so you can count backward from
 it instead of guessing.
 

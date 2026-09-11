@@ -59,7 +59,7 @@ guideProTip:
   label: "Pro tip"
   text: "Cut the outer stems right down at the base with a knife rather than tearing them off. A torn stalk leaves a ragged stump that rots in wet weather and takes the crown with it."
   icon: "chard-rainbow-stems"
-guideCta: "Track your harvests with Garden Pro Planner"
+guideCta: "Track your harvests with Garden Planner Pro"
 pinDescription: "How to grow Swiss chard: sow direct once the soil warms, thin the seed clusters, give each plant a foot of room, and pick the outer stems so the centre keeps going. One sowing can feed you for the better part of a year."
 pinBoard: "Vegetable Garden Layouts"
 pinKeywords:

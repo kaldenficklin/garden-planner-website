@@ -59,7 +59,7 @@ guideProTip:
   label: "Consejo"
   text: "El acolchado mantiene la tierra en la humedad que ya tiene. Echarlo sobre suelo seco sella esa sequedad, así que riega a fondo primero y acolcha justo después, con la tierra todavía húmeda."
   icon: "mulch-depth-cross-section"
-guideCta: "Planifica tu huerto con Garden Pro Planner"
+guideCta: "Planifica tu huerto con Garden Planner Pro"
 pinDescription: "Cómo acolchar el huerto: pon cinco o siete centímetros de material orgánico sobre tierra ya húmeda, déjalo separado de tallos y troncos, repónlo cada año y nunca lo eches sobre suelo seco o helado."
 pinBoard: "Raised Bed Gardening"
 pinKeywords:

@@ -18,12 +18,12 @@ import { pinDescriptionFor } from './pinterest';
 
 const COPY = {
   en: {
-    title: 'Garden Pro Planner — Garden Infographics',
+    title: 'Garden Planner Pro — Garden Infographics',
     description:
       'Save-and-keep reference charts for the vegetable garden: how to grow each crop, when to plant it, and the mistakes worth avoiding.',
   },
   es: {
-    title: 'Garden Pro Planner — Infografías de Jardinería',
+    title: 'Garden Planner Pro — Infografías de Jardinería',
     description:
       'Fichas de consulta rápida para el huerto: cómo cultivar cada planta, cuándo sembrarla y los errores que conviene evitar.',
   },

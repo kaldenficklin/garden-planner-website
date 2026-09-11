@@ -61,6 +61,6 @@ There's no mysticism in it anywhere. It's chemistry, insect behavior, and real e
 
 Potatoes, corn, fennel and brassicas go in a different bed entirely.
 
-Garden Pro Planner includes companion planting guidance and filtering across 225+ plants, including which are pet-safe, which helps when you're working out what can share a bed before you commit the space to it.
+Garden Planner Pro includes companion planting guidance and filtering across 440+ plants, including which are pet-safe, which helps when you're working out what can share a bed before you commit the space to it.
 
 None of this substitutes for the basics. A tomato in poor soil, crowded against its neighbors and watered erratically, is not going to be rescued by a marigold. Get soil, spacing and water right first. Then use companions to tilt the odds a little further your way.

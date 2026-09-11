@@ -59,7 +59,7 @@ guideProTip:
   label: "Consejo"
   text: "El pimiento tira la flor cuando las noches son muy cálidas o le falta agua. Un riego constante y algo de sombra por la tarde en una ola de calor salvan una cosecha que si no se queda en nada."
   icon: "pepper-flower"
-guideCta: "Sigue tus pimientos en Garden Pro Planner"
+guideCta: "Sigue tus pimientos en Garden Planner Pro"
 pinDescription: "Cómo cultivar pimientos que cuajen: siembra pronto en interior, espera tierra templada, abona bajo en nitrógeno al abrir la flor y pellizca las primeras flores."
 pinBoard: "Vegetable Garden Layouts"
 pinKeywords:

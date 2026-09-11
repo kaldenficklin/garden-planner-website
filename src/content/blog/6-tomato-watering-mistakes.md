@@ -53,4 +53,4 @@ Tomatoes forgive a lot, but watering is the one thing they keep score on. Get it
 
 None of the six habits below are exotic. Most of them are about timing and consistency rather than volume — the same watering can, used a little differently, fixes half the list. Save the chart and check it against whatever you actually did this morning.
 
-If you'd rather not track it by memory, Garden Pro Planner's watering reminders adjust to your local weather instead of running on a fixed calendar.
+If you'd rather not track it by memory, Garden Planner Pro's watering reminders adjust to your local weather instead of running on a fixed calendar.

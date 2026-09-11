@@ -59,7 +59,7 @@ guideProTip:
   label: "Consejo"
   text: "El ancho es lo que importa. Más de metro y veinte y acabarás metiéndote dentro para llegar al centro, lo que compacta la tierra y echa por tierra la razón de construirlo."
   icon: "raised-bed-frame"
-guideCta: "Diseña tus bancales en Garden Pro Planner"
+guideCta: "Diseña tus bancales en Garden Planner Pro"
 pinDescription: "Cómo construir un bancal elevado: no más de metro veinte de ancho para llegar al centro desde ambos lados, al menos treinta centímetros de hondo y relleno con mezcla rica en compost."
 pinBoard: "Raised Bed Gardening"
 pinKeywords:

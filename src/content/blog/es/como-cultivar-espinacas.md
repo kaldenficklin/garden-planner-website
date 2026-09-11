@@ -59,7 +59,7 @@ guideProTip:
   label: "Consejo"
   text: "Subirse a flor responde al calor y al estrés, no a la edad. Una espinaca que se seque una sola vez florecerá pronto aunque haga fresco, así que el riego constante importa más que el calendario."
   icon: "spinach"
-guideCta: "Planifica tus hileras en Garden Pro Planner"
+guideCta: "Planifica tus hileras en Garden Planner Pro"
 pinDescription: "Cómo cultivar espinacas: siembra en el fresco de primavera u otoño, mantén la tierra siempre húmeda, aporta nitrógeno para hoja abundante y recolecta las hojas exteriores para que el centro siga produciendo."
 pinBoard: "Vegetable Garden Layouts"
 pinKeywords:

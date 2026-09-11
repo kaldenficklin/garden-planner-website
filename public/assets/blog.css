@@ -189,9 +189,10 @@ a.tag-link:hover { background: var(--leaf-600); color: #fff; text-decoration: no
 .inline-cta-btn {
   align-self: stretch;
   background: var(--harvest-600);
+  color: #fff;
   text-decoration: none;
 }
-.inline-cta-btn:hover { background: var(--harvest-700); text-decoration: none; }
+.inline-cta-btn:hover { background: var(--harvest-700); color: #fff; text-decoration: none; }
 .inline-cta-foot {
   margin: 12px 0 0;
   font-size: 12.5px;
@@ -199,9 +200,12 @@ a.tag-link:hover { background: var(--leaf-600); color: #fff; text-decoration: no
   color: var(--ink-faint);
 }
 /* `.prose > * + *` would otherwise add a second top margin on top of the one
-   above, and the article's own link styling would underline the button. */
+   above, and the article's own link styling would underline the button — and
+   colour it: `.prose a` outranks `.inline-cta-btn`, which left link-green text
+   on the ochre fill. */
 .prose > .inline-cta + * { margin-top: 2em; }
-.prose .inline-cta a { text-decoration: none; }
+.prose .inline-cta a,
+.prose .inline-cta a:hover { color: #fff; text-decoration: none; }
 
 /* ------------------------------------------------------- end-of-post CTA --- */
 .post-cta {

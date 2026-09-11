@@ -59,7 +59,7 @@ guideProTip:
   label: "Pro tip"
   text: "Spacing decides bulb size more than feeding does. Onions planted close together will simply make small onions, however well you treat them the rest of the season."
   icon: "onion-sets"
-guideCta: "Plan your rows in Garden Pro Planner"
+guideCta: "Plan your rows in Garden Planner Pro"
 pinDescription: "How to grow onions: push sets into soft soil with the tips just showing, space them properly because spacing decides bulb size, stop watering once the tops flop, and cure them somewhere warm until the necks go papery."
 pinBoard: "Vegetable Garden Layouts"
 pinKeywords:

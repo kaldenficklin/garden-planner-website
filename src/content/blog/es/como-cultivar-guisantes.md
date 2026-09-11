@@ -59,7 +59,7 @@ guideProTip:
   label: "Consejo"
   text: "El guisante fija su propio nitrógeno, así que abonar mucho te da un muro de hojas y muy pocas vainas. Guarda el compost para el cultivo exigente que venga detrás."
   icon: "pea-flower"
-guideCta: "Planifica tus hileras en Garden Pro Planner"
+guideCta: "Planifica tus hileras en Garden Planner Pro"
 pinDescription: "Cómo cultivar guisantes: siembra en tierra fresca a principios de primavera, pon soporte incluso a las variedades enanas, riega bien en cuanto abran las flores porque es cuando se llena la vaina, y recoge a diario."
 pinBoard: "Vegetable Garden Layouts"
 pinKeywords:

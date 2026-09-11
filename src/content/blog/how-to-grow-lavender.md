@@ -59,7 +59,7 @@ guideProTip:
   label: "Pro tip"
   text: "Lavender will not regrow from bare woody stems. Prune a little every year while there are still green leaves below your cut, and the plant stays compact instead of splitting open."
   icon: "lavender-plant"
-guideCta: "Plan your borders in Garden Pro Planner"
+guideCta: "Plan your borders in Garden Planner Pro"
 pinDescription: "How to grow lavender: full sun and sharp drainage matter more than anything, water only while it establishes, and prune every year without ever cutting into the bare wood."
 pinBoard: "Companion Planting"
 pinKeywords:

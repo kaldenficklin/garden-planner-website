@@ -59,7 +59,7 @@ guideProTip:
   label: "Consejo"
   text: "Un tomate estirado tiene arreglo, cosa que no pasa con casi ninguna otra plántula. Entierra el tallo hasta las hojas más bajas al trasplantar y enraizará por toda esa parte, dándote una planta baja con más raíz."
   icon: "deep-planted-seedling"
-guideCta: "Planifica tu huerto con Garden Pro Planner"
+guideCta: "Planifica tu huerto con Garden Planner Pro"
 pinDescription: "Por qué las plántulas se estiran: buscan una luz demasiado débil o demasiado lejana. Acércalas a una luz más fuerte, baja la temperatura, acaríciales las puntas a diario y salva los tomates plantándolos más hondo."
 pinBoard: "Seed Starting & Frost Dates"
 pinKeywords:

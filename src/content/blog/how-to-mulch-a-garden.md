@@ -59,7 +59,7 @@ guideProTip:
   label: "Pro tip"
   text: "Mulch holds the soil at whatever moisture it already has. Laying it on dry ground seals the dryness in, so water thoroughly first and mulch immediately afterwards while the soil is still damp."
   icon: "mulch-depth-cross-section"
-guideCta: "Plan your beds with Garden Pro Planner"
+guideCta: "Plan your beds with Garden Planner Pro"
 pinDescription: "How to mulch a garden: lay two to three inches of organic material on soil that is already moist, keep it back from stems and trunks, top it up each year, and never lay it on dry or frozen ground."
 pinBoard: "Raised Bed Gardening"
 pinKeywords:

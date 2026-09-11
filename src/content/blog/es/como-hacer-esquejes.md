@@ -59,7 +59,7 @@ guideProTip:
   label: "Consejo"
   text: "Corta justo por debajo de un nudo. Ahí es donde se concentran las hormonas que generan raíces, y un esqueje cortado a media distancia entre nudos enraíza despacio, si es que enraíza."
   icon: "cutting-below-node"
-guideCta: "Planifica tus hierbas en Garden Pro Planner"
+guideCta: "Planifica tus hierbas en Garden Planner Pro"
 pinDescription: "Cómo hacer esquejes: toma brote tierno a principios de verano, corta justo debajo de un nudo, quita las hojas de abajo, mantén la humedad alta y el sustrato apenas húmedo, y espera raíces en pocas semanas."
 pinBoard: "Container & Small Space Gardening"
 pinKeywords:

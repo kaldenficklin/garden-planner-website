@@ -59,7 +59,7 @@ guideProTip:
   label: "Pro tip"
   text: "Most young fruit trees are lost in their first two summers, and almost always to drought rather than cold. One long slow soak a week through dry spells beats a daily sprinkle every time."
   icon: "watering-can-sprinkle"
-guideCta: "Map your orchard in Garden Pro Planner"
+guideCta: "Map your orchard in Garden Planner Pro"
 pinDescription: "How to plant a fruit tree properly: dig wide rather than deep, keep the graft union above the soil, skip the fertiliser in the hole, and water deeply through the first two summers."
 pinBoard: "Raised Bed Gardening"
 pinKeywords:

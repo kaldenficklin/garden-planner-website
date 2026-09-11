@@ -81,7 +81,7 @@ there is rotation and buying varieties bred to resist it, which is a decision
 you make in February with a seed catalog open.
 
 Which is the real argument for naming what you had while the evidence is still
-standing in front of you. Garden Pro Planner has pest and disease guides with
+standing in front of you. Garden Planner Pro has pest and disease guides with
 treatment notes for exactly this, and ten minutes with them now is worth more
 than trying to remember in spring whether the spots had yellow halos.
 

@@ -59,7 +59,7 @@ guideProTip:
   label: "Consejo"
   text: "Siembra una hilera corta cada dos semanas en vez de una larga de golpe. La lechuga pasa de perfecta a amarga en pocos días, así que conviene un goteo constante y no una cosecha que no puedas comer."
   icon: "spaced-plants-row"
-guideCta: "Planifica tu huerto en Garden Pro Planner"
+guideCta: "Planifica tu huerto en Garden Planner Pro"
 pinDescription: "Cómo cultivar lechuga que no amargue: siembra poco y a menudo, dale sombra por la tarde en verano, mantén la tierra húmeda y corta las hojas de fuera."
 pinBoard: "Vegetable Garden Layouts"
 pinKeywords:

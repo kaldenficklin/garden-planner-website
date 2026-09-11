@@ -24,7 +24,7 @@ Count from an open flower to a ripe tomato and you are looking at somewhere in t
 
 Now count forward from today. If your first frost lands in early October, a flower opening this week has about six weeks, and it needs every one of them to go well. If your frost comes in late September, that flower has no chance at all and never did.
 
-So the honest way to think about it is a cutoff date, not a guess. Take your average first frost, count back roughly eight weeks, and any flower opening after that date is decoration. Anything already set and sized up is the real crop. If you are not sure what your frost date is, that number is the single most useful thing to know about your garden right now, and it is the one thing every fall decision hangs on. It is what Garden Pro Planner builds its planting calendar around, and it is worth pinning down whether you get it from an app or a neighbor who has been growing here for thirty years.
+So the honest way to think about it is a cutoff date, not a guess. Take your average first frost, count back roughly eight weeks, and any flower opening after that date is decoration. Anything already set and sized up is the real crop. If you are not sure what your frost date is, that number is the single most useful thing to know about your garden right now, and it is the one thing every fall decision hangs on. It is what Garden Planner Pro builds its planting calendar around, and it is worth pinning down whether you get it from an app or a neighbor who has been growing here for thirty years.
 
 ## Why the plant will not sort this out on its own
 

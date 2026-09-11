@@ -29,7 +29,7 @@ Skip the sunny windowsill. I did this for years, convinced light was doing somet
 
 Check the box every couple of days and pull anything that's turned. In my experience it runs anywhere from a week to three, depending on how mature the fruit was going in — the palest ones take the longest, and a few of them simply won't get there before they go soft, which is normal and not something you did wrong.
 
-If you'd rather not gamble on your actual frost date, Garden Pro Planner's frost-date calendar backs the harvest window in from your local dates automatically, so you're not relying on a forecast you checked once and forgot about.
+If you'd rather not gamble on your actual frost date, Garden Planner Pro's frost-date calendar backs the harvest window in from your local dates automatically, so you're not relying on a forecast you checked once and forgot about.
 
 ## The ones that won't ripen
 

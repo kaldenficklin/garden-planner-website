@@ -59,7 +59,7 @@ guideProTip:
   label: "Consejo"
   text: "Una mata con seis frutos madura seis calabazas pequeñas. Dejar solo dos o tres desde pronto manda la misma energía a menos frutos, y de ahí sale el tamaño."
   icon: "pumpkin-on-vine"
-guideCta: "Planifica tu huerto con Garden Pro Planner"
+guideCta: "Planifica tu huerto con Garden Planner Pro"
 pinDescription: "Cómo cultivar calabazas: espera a que la tierra se caliente para sembrar, deja varios metros por planta, riega la base y no las hojas, deja solo dos o tres frutos por mata y apoya cada calabaza sobre una tabla."
 pinBoard: "Vegetable Garden Layouts"
 pinKeywords:

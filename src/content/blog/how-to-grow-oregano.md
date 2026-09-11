@@ -59,7 +59,7 @@ guideProTip:
   label: "Pro tip"
   text: "Harvest oregano just as the flower buds form and before they open. That is when the aromatic oils are at their strongest, and it is the difference between oregano that tastes of something and oregano that tastes of grass."
   icon: "oregano-buds"
-guideCta: "Plan your herb bed in Garden Pro Planner"
+guideCta: "Plan your herb bed in Garden Planner Pro"
 pinDescription: "How to grow oregano: give it full sun and poor free-draining soil, resist feeding it, cut it hard just before it flowers when the flavour peaks, and divide the clump every few years to keep it going."
 pinBoard: "Container & Small Space Gardening"
 pinKeywords:

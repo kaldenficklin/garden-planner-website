@@ -9,7 +9,7 @@ export async function GET(context) {
     .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 
   return rss({
-    title: 'Garden Pro Planner Blog',
+    title: 'Garden Planner Pro Blog',
     description:
       'Practical gardening guides: when to plant, companion planting, pest control, seed starting, and harvest tips.',
     site: context.site,

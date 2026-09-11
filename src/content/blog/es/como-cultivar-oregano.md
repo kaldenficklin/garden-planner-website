@@ -59,7 +59,7 @@ guideProTip:
   label: "Consejo"
   text: "Cosecha el orégano justo cuando se formen los botones florales y antes de que abran. Ahí los aceites aromáticos están más fuertes, y es la diferencia entre un orégano que sabe y uno que sabe a hierba."
   icon: "oregano-buds"
-guideCta: "Planifica tus hierbas en Garden Pro Planner"
+guideCta: "Planifica tus hierbas en Garden Planner Pro"
 pinDescription: "Cómo cultivar orégano: dale pleno sol y tierra pobre con buen drenaje, no lo abones, córtalo justo antes de que florezca cuando el sabor está en su punto y divide la mata cada pocos años."
 pinBoard: "Container & Small Space Gardening"
 pinKeywords:

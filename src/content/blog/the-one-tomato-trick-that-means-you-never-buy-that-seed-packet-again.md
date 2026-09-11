@@ -28,6 +28,6 @@ Label the envelope with the variety and the year before you put it away, not aft
 
 Early August is the actual window for this, not a coincidence. The first fruit off your earliest plants is ripening now, weeks before the glut hits and every tomato starts looking the same. That early fruit came from whatever set flowers fastest in the heat, which is exactly the trait worth keeping. Wait for the pile on the counter in three weeks and you'll be choosing from abundance instead of choosing on purpose.
 
-Dried seed keeps for several years in a cool, dark spot — an envelope in a drawer works fine, no need for anything fancier. Garden Pro Planner's calendar sync can carry a reminder forward to next year's start date, so "test germination on the saved Cherokee Purple seed" shows up on your phone in February instead of living only in the same drawer as the envelope.
+Dried seed keeps for several years in a cool, dark spot — an envelope in a drawer works fine, no need for anything fancier. Garden Planner Pro's calendar sync can carry a reminder forward to next year's start date, so "test germination on the saved Cherokee Purple seed" shows up on your phone in February instead of living only in the same drawer as the envelope.
 
 The jar on my counter still has three more days to go. It'll keep smelling worse before it smells like nothing at all, which is how you know it's ready.

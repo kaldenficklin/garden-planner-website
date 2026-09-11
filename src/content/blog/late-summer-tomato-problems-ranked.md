@@ -42,4 +42,4 @@ Most of what goes wrong on a tomato plant in August traces back to one of five t
 
 Early blight and split fruit both make this list because they share the same root cause more often than not: inconsistent soil moisture through a stretch of unpredictable summer weather. Get the watering steady and both problems get quieter, even if neither disappears completely.
 
-If you're not sure which one you're looking at, Garden Pro Planner's pest and disease guides pair photos with the fix so you're not matching a symptom against a memory.
+If you're not sure which one you're looking at, Garden Planner Pro's pest and disease guides pair photos with the fix so you're not matching a symptom against a memory.

@@ -1,6 +1,6 @@
 # thegardenplanner.app
 
-Marketing website **and blog** for **Garden Pro Planner** ([App Store](https://apps.apple.com/app/id1539031278)).
+Marketing website **and blog** for **Garden Planner Pro** ([App Store](https://apps.apple.com/app/id1539031278)).
 
 Built with [Astro](https://astro.build). The secondary marketing pages live in
 `public/` and pass through untouched; Astro builds the landing page and the
@@ -403,22 +403,23 @@ npm run preview   # serve the built dist/
 
 ## App screenshots
 
-`public/assets/screens/` is a copy of the app repo's plain iPhone 6.9" captures,
-resized for the web. To refresh them after a UI change, recapture in the app repo
-and re-sync:
-
-```sh
-cd ../garden-pro-planner && npm run screenshots:capture
-```
+`public/assets/screens/` is a copy of the app repo's 2.5.0 device mockups — the
+same eight framed iPhone screens the App Store previews are composed from —
+resized for the web. When the app ships new mockups, re-sync:
 
 ```sh
 node scripts/sync-screens.mjs
 ```
 
-The sync script reads `../garden-pro-planner/store-assets/screenshots/iphone-6.9/`
-(override with `APP_REPO=…`) and writes 660px-wide PNGs — 2x the widest size the
-site ever displays them at. Use the *plain* captures, not the composed
-`store-assets/marketing/` images: the site draws its own phone bezel in CSS.
+The sync script reads `../garden-pro-planner/store-assets/mockups/` (override
+with `APP_REPO=…`) and writes 660px-wide PNGs — 2x the widest size the site ever
+displays them at. The mockups carry their own device frame, so the site draws no
+bezel; `.phone` only sizes them and casts a shadow. Which mockup is which screen
+comes from the `mock:` numbers in the app's `store-assets/gen-previews.js`.
+
+The site's colours follow the app's theme: lime `#9BE04F` and the forest greens
+of the dark "sprout" theme (`src/constants/theme.ts` in the app repo), with the
+app icon in `public/assets/app-icon.png` copied from `assets/images/icon.png`.
 
 Copy claims that quote the app (plant count, feature names) come from the App
 Store listing in `../garden-pro-planner/store.config.json`. Check it when the

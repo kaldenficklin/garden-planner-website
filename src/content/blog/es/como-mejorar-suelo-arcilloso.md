@@ -59,7 +59,7 @@ guideProTip:
   label: "Consejo"
   text: "Añadir arena a la arcilla en poca cantidad la endurece, no la afloja. Harían falta proporciones enormes de arena para cambiar la textura, y cualquier cosa menor rellena los huecos entre partículas y fragua como el hormigón."
   icon: "sand-crossed-out"
-guideCta: "Planifica tu huerto con Garden Pro Planner"
+guideCta: "Planifica tu huerto con Garden Planner Pro"
 pinDescription: "Cómo mejorar el suelo arcilloso: añade materia orgánica cada año y deja que las lombrices la incorporen, no lo caves ni lo pises mojado, mantenlo cubierto en invierno y construye hacia arriba si el problema real es el drenaje."
 pinBoard: "Raised Bed Gardening"
 pinKeywords:

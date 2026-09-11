@@ -59,7 +59,7 @@ guideProTip:
   label: "Pro tip"
   text: "Pinch off the first flush of flowers on a new plant. You lose a few early berries and get a far stronger plant, and a much bigger crop, for the rest of the season."
   icon: "strawberry-flower-pinch"
-guideCta: "Track your harvest in Garden Pro Planner"
+guideCta: "Track your harvest in Garden Planner Pro"
 pinDescription: "How to grow strawberries at home: set the crown level with the soil, give them full sun, mulch under the fruit, and pinch the first flowers so the plant roots properly. A save-and-keep guide."
 pinBoard: "Container & Small Space Gardening"
 pinKeywords:

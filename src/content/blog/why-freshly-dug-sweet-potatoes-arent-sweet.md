@@ -31,7 +31,7 @@ The real deadline is frost. Frost kills the vines, and once the vines are dead t
 
 Cold soil is the quieter risk. Sweet potatoes are a tropical crop and they sulk below about 50°F, so a stretch of chilly nights in late September can start the injury even before a true frost lands. If your first frost date is closing in, dig. You can always cure a slightly small root. You cannot fix a chilled one.
 
-To find out where you actually sit, Garden Pro Planner will give you your local first frost date and count the crop backward from it, which is the number that matters far more than the seed packet's day count.
+To find out where you actually sit, Garden Planner Pro will give you your local first frost date and count the crop backward from it, which is the number that matters far more than the seed packet's day count.
 
 ## Digging without wrecking them
 

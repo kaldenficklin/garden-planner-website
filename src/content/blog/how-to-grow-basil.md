@@ -59,7 +59,7 @@ guideProTip:
   label: "Pro tip"
   text: "Pinch the growing tip once the plant has two or three sets of true leaves, and keep pinching every couple of weeks. Each cut turns one stem into two, and a pinched plant stays productive far longer."
   icon: "pinching-basil-tip"
-guideCta: "Plan your herb bed in Garden Pro Planner"
+guideCta: "Plan your herb bed in Garden Planner Pro"
 pinDescription: "How to grow basil that stays bushy: pinch above a leaf pair to force branching, keep it warm, water the soil rather than the leaves, and remove flower buds as they appear. A save-and-keep herb guide."
 pinBoard: "Container & Small Space Gardening"
 pinKeywords:

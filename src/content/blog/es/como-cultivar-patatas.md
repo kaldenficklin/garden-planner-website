@@ -59,7 +59,7 @@ guideProTip:
   label: "Consejo"
   text: "Los tubérculos se forman a lo largo del tallo enterrado, no debajo de la raíz. Cada vez que aporcas tierra añades más tallo donde pueden formarse patatas, y por eso aporcar importa más que abonar."
   icon: "hilling-potatoes"
-guideCta: "Planifica tu huerto en Garden Pro Planner"
+guideCta: "Planifica tu huerto en Garden Planner Pro"
 pinDescription: "Cómo cultivar patatas: pregermina la simiente, plántala honda y aporca tierra sobre los tallos, porque los tubérculos salen del tallo enterrado y no bajo la raíz."
 pinBoard: "Raised Bed Gardening"
 pinKeywords:

@@ -57,4 +57,4 @@ Container space is limited, and a slow crop can tie up a pot for months before y
 
 The chart below runs fastest to slowest, from microgreens ready inside two weeks to peppers that want a full summer of warmth. Somewhere in the middle tends to be the sweet spot — fast enough to feel like progress, productive enough to be worth the pot it's sitting in.
 
-Garden Pro Planner's planting calendar works out real sow and harvest dates against your local frost dates for whichever ones you pick, so the ranges above turn into an actual date on your calendar.
+Garden Planner Pro's planting calendar works out real sow and harvest dates against your local frost dates for whichever ones you pick, so the ranges above turn into an actual date on your calendar.

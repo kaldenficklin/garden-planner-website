@@ -59,7 +59,7 @@ guideProTip:
   label: "Pro tip"
   text: "Bitterness comes from stress, usually uneven watering or heat. A cucumber that dried out once will taste bitter no matter what you do afterwards, so consistency beats rescue."
   icon: "cucumber-vine"
-guideCta: "Plan a vertical bed in Garden Pro Planner"
+guideCta: "Plan a vertical bed in Garden Planner Pro"
 pinDescription: "How to grow cucumbers: train them up a trellis to save space and keep fruit clean, water steadily because dry spells turn them bitter, and pick young and often."
 pinBoard: "Container & Small Space Gardening"
 pinKeywords:

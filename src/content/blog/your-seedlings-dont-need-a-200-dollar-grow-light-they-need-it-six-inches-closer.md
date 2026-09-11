@@ -68,6 +68,6 @@ If you are only going to buy one thing for seed starting, buy the light before y
 
 Half the leggy seedlings I have seen were not underlit so much as overgrown. Somebody started tomatoes in the second week of January, in a climate where transplanting happens in mid May, and asked a seedling to sit in a small cell under artificial light for eighteen weeks. Nothing survives that looking good.
 
-Starting dates come from your own last frost, counted backward by the weeks each crop needs, and the answer is usually later than the enthusiasm of early January suggests. Garden Pro Planner works those dates out from your frost dates rather than from a generic chart, which is the unglamorous fix for a problem people keep trying to solve with equipment.
+Starting dates come from your own last frost, counted backward by the weeks each crop needs, and the answer is usually later than the enthusiasm of early January suggests. Garden Planner Pro works those dates out from your frost dates rather than from a generic chart, which is the unglamorous fix for a problem people keep trying to solve with equipment.
 
 Buy the chains. Hang it low. Start later than you want to.

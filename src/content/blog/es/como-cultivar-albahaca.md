@@ -59,7 +59,7 @@ guideProTip:
   label: "Consejo"
   text: "Pellizca la punta cuando la planta tenga dos o tres pares de hojas verdaderas, y repite cada dos semanas. Cada corte convierte un tallo en dos, y una planta pellizcada produce mucho más tiempo."
   icon: "pinching-basil-tip"
-guideCta: "Planifica tus hierbas en Garden Pro Planner"
+guideCta: "Planifica tus hierbas en Garden Planner Pro"
 pinDescription: "Cómo cultivar albahaca frondosa: pellizca sobre un par de hojas para que ramifique, mantenla en calor, riega la tierra y no las hojas, y quita los botones florales en cuanto aparezcan."
 pinBoard: "Container & Small Space Gardening"
 pinKeywords:

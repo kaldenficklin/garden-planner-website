@@ -59,7 +59,7 @@ guideProTip:
   label: "Consejo"
   text: "La helada mejora de verdad la col rizada. El frío convierte parte del almidón de la hoja en azúcar, así que la misma planta sabe más dulce en diciembre que en septiembre."
   icon: "frosted-kale-leaf"
-guideCta: "Planifica tu huerto con Garden Pro Planner"
+guideCta: "Planifica tu huerto con Garden Planner Pro"
 pinDescription: "Cómo cultivar col rizada: siembra a principios de verano para cosechar en otoño e invierno, planta hondo en tierra firme, protege con malla contra la mariposa de la col y recoge las hojas de abajo."
 pinBoard: "Raised Bed Gardening"
 pinKeywords:

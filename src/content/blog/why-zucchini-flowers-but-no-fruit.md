@@ -62,6 +62,6 @@ If you've got plenty of female flowers opening, bees are clearly working the gar
 
 But for the specific complaint of "endless flowers, tiny yellow squash that shrivel and drop," it's pollination the overwhelming majority of the time. Check for female flowers before you change anything else.
 
-Garden Pro Planner's plant library covers pollination needs crop by crop, so you can see ahead of time which of the things you're growing depend on pollinator visits and which will fruit regardless. Squash, cucumbers and melons are the ones to watch.
+Garden Planner Pro's plant library covers pollination needs crop by crop, so you can see ahead of time which of the things you're growing depend on pollinator visits and which will fruit regardless. Squash, cucumbers and melons are the ones to watch.
 
 The reason this is worth knowing before peak squash season is that it turns a mystery into a chore, and a chore you can actually do something about. Two summers of assuming my plants were broken, and the fix was a paintbrush and five minutes before breakfast.

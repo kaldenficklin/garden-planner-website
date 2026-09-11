@@ -42,4 +42,4 @@ The window for a fall harvest doesn't close all at once, it closes crop by crop,
 
 Radishes are the forgiving one, worth a try almost any time this list is still relevant. Bush beans are the gamble, only worth the bed space if your frost date is genuinely weeks out rather than days.
 
-Garden Pro Planner works out real sow-by dates against your local frost date, so you're not doing the subtraction in your head while standing in the garden with a seed packet.
+Garden Planner Pro works out real sow-by dates against your local frost date, so you're not doing the subtraction in your head while standing in the garden with a seed packet.

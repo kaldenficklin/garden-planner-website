@@ -59,7 +59,7 @@ guideProTip:
   label: "Consejo"
   text: "Siembra una hilera corta cada dos semanas desde la primavera hasta mediados de verano en lugar de todo de golpe. Así tendrás girasoles en flor durante meses y no quince días espectaculares."
   icon: "sunflower-bloom"
-guideCta: "Diseña tus parterres en Garden Pro Planner"
+guideCta: "Diseña tus parterres en Garden Planner Pro"
 pinDescription: "Cómo cultivar girasoles desde semilla: siembra directa en vez de trasplantar, pon tutor a las variedades altas antes de que lo necesiten, y corta cuando los primeros pétalos se levanten."
 pinBoard: "Vegetable Garden Layouts"
 pinKeywords:

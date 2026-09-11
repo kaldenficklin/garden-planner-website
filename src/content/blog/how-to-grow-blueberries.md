@@ -59,7 +59,7 @@ guideProTip:
   label: "Pro tip"
   text: "Yellow leaves with green veins almost always mean the soil is not acid enough rather than short of feed. Adding fertiliser at that point makes it worse, not better."
   icon: "blueberry-bush"
-guideCta: "Track your fruit in Garden Pro Planner"
+guideCta: "Track your fruit in Garden Planner Pro"
 pinDescription: "How to grow blueberries: they need genuinely acid soil, two different varieties for a decent crop, rainwater rather than tap water, and mulch over their very shallow roots."
 pinBoard: "Container & Small Space Gardening"
 pinKeywords:

@@ -59,7 +59,7 @@ guideProTip:
   label: "Pro tip"
   text: "Never cut thyme back into bare brown wood. Unlike most shrubs it does not reliably reshoot from old stems, so trim only where there are still small green leaves below your cut."
   icon: "trimming-herb-dome"
-guideCta: "Plan your herb bed in Garden Pro Planner"
+guideCta: "Plan your herb bed in Garden Planner Pro"
 pinDescription: "How to grow thyme: give it sharp drainage and full sun, water it far less than you think, trim it lightly after flowering to stop it going woody, and replace the plant every few years when the middle gives out."
 pinBoard: "Container & Small Space Gardening"
 pinKeywords:

@@ -64,4 +64,4 @@ Keep the debris out. Rake up fallen leaves, twigs and husks rather than letting 
 
 Walnut wilt is one of the most common mystery failures in home gardening, and it gets misdiagnosed as blight, bad soil, poor drainage or a watering problem for entire seasons, because on paper everything else genuinely does look fine. I spent a summer testing soil that had nothing wrong with it.
 
-If a bed keeps failing at one particular end, look up before you look down. Then check what your neighbors have too. Garden Pro Planner's plant library covers which crops are more sensitive to difficult conditions like this, which at least helps you steer the nightshades toward a corner of the yard where they've got a chance.
+If a bed keeps failing at one particular end, look up before you look down. Then check what your neighbors have too. Garden Planner Pro's plant library covers which crops are more sensitive to difficult conditions like this, which at least helps you steer the nightshades toward a corner of the yard where they've got a chance.

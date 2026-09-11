@@ -59,7 +59,7 @@ guideProTip:
   label: "Consejo"
   text: "Nunca cortes tomillo sobre madera vieja pelada. A diferencia de otros arbustos no rebrota de forma fiable desde el tallo viejo, así que recorta solo donde queden hojas verdes por debajo del corte."
   icon: "trimming-herb-dome"
-guideCta: "Planifica tus hierbas en Garden Pro Planner"
+guideCta: "Planifica tus hierbas en Garden Planner Pro"
 pinDescription: "Cómo cultivar tomillo: dale drenaje muy bueno y pleno sol, riégalo mucho menos de lo que crees, recórtalo ligero tras la floración para que no se haga leñoso y renuévalo cada pocos años."
 pinBoard: "Container & Small Space Gardening"
 pinKeywords:

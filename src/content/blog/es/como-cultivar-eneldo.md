@@ -59,7 +59,7 @@ guideProTip:
   label: "Consejo"
   text: "Mantén el eneldo lejos del hinojo. Se cruzan con facilidad, y la semilla guardada de un eneldo criado junto a hinojo sale como un híbrido confuso que no sabe claramente a ninguno de los dos."
   icon: "fennel-bulb"
-guideCta: "Planifica tus hierbas en Garden Pro Planner"
+guideCta: "Planifica tus hierbas en Garden Planner Pro"
 pinDescription: "Cómo cultivar eneldo: siembra directo porque detesta el trasplante, protégelo del viento, resiembra cada pocas semanas para tener hoja y deja florecer la última siembra si quieres semilla para encurtir."
 pinBoard: "Container & Small Space Gardening"
 pinKeywords:

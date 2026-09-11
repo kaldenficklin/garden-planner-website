@@ -10,7 +10,7 @@
  *     "layout": "mistakes" | "ranked",
  *     "eyebrow": "CONSISTENCY MATTERS",
  *     "title": "6 Tomato Watering Mistakes",
- *     "ctaText": "Get the full watering guide in Garden Pro Planner",
+ *     "ctaText": "Get the full watering guide in Garden Planner Pro",
  *     "items": [ ... see scripts/lib/infographic.mjs for the row shape ... ]
  *   }
  *

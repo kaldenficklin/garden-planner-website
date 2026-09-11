@@ -1,5 +1,5 @@
 /*
- * Garden Pro Planner — small UI behaviours.
+ * Garden Planner Pro — small UI behaviours.
  * Currently just the mobile download bar, which slides up once the visitor has
  * scrolled past the hero so it never sits on top of the hero's own CTA.
  */

@@ -26,12 +26,12 @@ const next = current < total ? new URL(pageHref(current + 1), Astro.site).href :
 // query, and its own description so search results aren't identical.
 const title =
   current === 1
-    ? 'The Garden Pro Planner Blog — Grow a Better Garden'
-    : `The Garden Pro Planner Blog — Page ${current}`;
+    ? 'The Garden Planner Pro Blog — Grow a Better Garden'
+    : `The Garden Planner Pro Blog — Page ${current}`;
 const description =
   current === 1
-    ? 'Practical gardening guides: when to plant, companion planting, pest control, seed starting, and harvest tips — from the team behind Garden Pro Planner.'
-    : `Page ${current} of the Garden Pro Planner blog: more guides on planting times, companion planting, pest control, and getting a bigger harvest.`;
+    ? 'Practical gardening guides: when to plant, companion planting, pest control, seed starting, and harvest tips — from the team behind Garden Planner Pro.'
+    : `Page ${current} of the Garden Planner Pro blog: more guides on planting times, companion planting, pest control, and getting a bigger harvest.`;
 ---
 <BaseLayout title={title} description={description} canonical={canonical}>
   <Fragment slot="head">
@@ -41,7 +41,7 @@ const description =
 
   <section class="blog-hero">
     <div class="wrap wrap-narrow">
-      <p class="eyebrow">The Garden Pro Planner Blog</p>
+      <p class="eyebrow">The Garden Planner Pro Blog</p>
       <h1>Grow a better garden</h1>
       <p class="lead">Planting guides, timing charts, and season-by-season advice to help you plan, grow, and harvest more.</p>
       <p class="ig-meta">Prefer pictures? Browse the <a href="/infographics/">garden infographics</a> — save-and-keep reference charts, two new ones every day.</p>
@@ -65,7 +65,7 @@ const description =
   <section class="section cta-band">
     <div class="wrap cta-inner">
       <h2>Plan your best season yet.</h2>
-      <p>Get the 265+ plant library, a square-foot bed planner, a planting calendar tuned to your frost dates, and yield tracking.</p>
+      <p>Get the 440+ plant library, a square-foot bed planner, a planting calendar tuned to your frost dates, and yield tracking.</p>
       <div class="cta-row cta-row-center"><StoreBadges cta="blog-index-band" light /></div>
     </div>
   </section>

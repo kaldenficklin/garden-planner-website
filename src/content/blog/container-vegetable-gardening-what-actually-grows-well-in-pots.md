@@ -77,6 +77,6 @@ Overcrowding is the common one. Three pepper plants in a 5-gallon pot gives you 
 
 Skipping drainage holes to hold more water in backfires completely. Choosing full-size varieties when a compact one exists is the other big one, so check the seed packet or tag for "bush," "patio," "dwarf" or "compact," which are bred exactly for this.
 
-Garden Pro Planner's plant library covers 225+ vegetables, herbs and flowers with container notes, plus a planting calendar built on your local frost dates, which is useful on a balcony where you're fitting crops into a small number of pots and want the timing right the first time.
+Garden Planner Pro's plant library covers 440+ vegetables, herbs and flowers with container notes, plus a planting calendar built on your local frost dates, which is useful on a balcony where you're fitting crops into a small number of pots and want the timing right the first time.
 
 If you're starting fresh, start small and boring: lettuce, a pepper, some basil, and one patio tomato in the biggest pot you own. Get a season of watering those under your belt and then expand. It's a much better experience than the balcony full of dead pots I began with.

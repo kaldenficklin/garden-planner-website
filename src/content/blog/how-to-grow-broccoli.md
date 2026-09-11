@@ -59,7 +59,7 @@ guideProTip:
   label: "Pro tip"
   text: "Cutting the central head is not the end of the crop. Leave the plant in the ground and it pushes out smaller side shoots for weeks afterwards, which is often the bigger harvest."
   icon: "broccoli-head"
-guideCta: "Plan your beds with Garden Pro Planner"
+guideCta: "Plan your beds with Garden Planner Pro"
 pinDescription: "How to grow broccoli: start it in modules and plant out young, give it firm rich soil and generous spacing, net it against caterpillars and pigeons, and cut the central head while the buds are still tight."
 pinBoard: "Raised Bed Gardening"
 pinKeywords:

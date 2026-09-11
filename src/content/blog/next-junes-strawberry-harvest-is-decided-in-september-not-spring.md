@@ -65,7 +65,7 @@ midsummer, deeply, and keep going until the ground is genuinely cold. A light
 feed helps here too, something modest and nitrogen-leaning, but water is the
 bigger lever and it is the free one.
 
-If you keep a watering schedule in [Garden Pro Planner](https://apps.apple.com/app/id1539031278),
+If you keep a watering schedule in [Garden Planner Pro](https://apps.apple.com/app/id1539031278),
 this is a good week to make sure the strawberry bed didn't quietly fall off it
 when the harvest ended. Mine did, two years running, which is how I learned to
 connect a thin June to a dry September.

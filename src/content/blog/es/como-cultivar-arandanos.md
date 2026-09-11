@@ -59,7 +59,7 @@ guideProTip:
   label: "Consejo"
   text: "Las hojas amarillas con nervios verdes casi siempre significan que la tierra no es bastante ácida, y no que falte abono. Echar fertilizante en ese momento empeora la cosa."
   icon: "blueberry-bush"
-guideCta: "Sigue tu fruta en Garden Pro Planner"
+guideCta: "Sigue tu fruta en Garden Planner Pro"
 pinDescription: "Cómo cultivar arándanos: necesitan suelo realmente ácido, dos variedades distintas para una buena cosecha, agua de lluvia en vez de agua del grifo y acolchado sobre sus raíces superficiales."
 pinBoard: "Container & Small Space Gardening"
 pinKeywords:

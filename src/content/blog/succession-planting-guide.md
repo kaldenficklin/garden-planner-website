@@ -67,6 +67,6 @@ And keep the interval going. Sow a short row every two or three weeks rather tha
 
 The concept isn't difficult. The bookkeeping is, and that's where it falls apart, because knowing which bed went quiet last week and whether a beet still has time to make it is exactly the sort of thing that evaporates in a busy August.
 
-Garden Pro Planner's planting calendar is built around your local frost dates, so the countback from frost to sowing date is already done when you're standing in the garden deciding, and its yield tracking makes it fairly obvious which beds have stopped producing and are ready for their next round.
+Garden Planner Pro's planting calendar is built around your local frost dates, so the countback from frost to sowing date is already done when you're standing in the garden deciding, and its yield tracking makes it fairly obvious which beds have stopped producing and are ready for their next round.
 
 An empty bed in July isn't the end of the season. It's about a third of it still sitting there unused, which is roughly what I wasted every year until somebody told me the term for it.

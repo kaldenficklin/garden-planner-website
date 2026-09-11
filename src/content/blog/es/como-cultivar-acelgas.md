@@ -59,7 +59,7 @@ guideProTip:
   label: "Consejo"
   text: "Corta las pencas de fuera a ras de la base con un cuchillo en vez de arrancarlas. Un tallo desgarrado deja un tocón deshilachado que se pudre con la humedad y se lleva la corona por delante."
   icon: "chard-rainbow-stems"
-guideCta: "Lleva la cuenta de tus cosechas con Garden Pro Planner"
+guideCta: "Lleva la cuenta de tus cosechas con Garden Planner Pro"
 pinDescription: "Cómo cultivar acelgas: siembra directa cuando el suelo se temple, aclara los glomérulos, deja treinta centímetros entre plantas y corta siempre las hojas de fuera para que el centro siga produciendo. Una siembra da casi un año de hojas."
 pinBoard: "Vegetable Garden Layouts"
 pinKeywords:

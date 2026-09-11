@@ -59,7 +59,7 @@ guideProTip:
   label: "Pro tip"
   text: "A vine that sets six fruit ripens six small ones. Thinning to two or three early sends the same energy into fewer pumpkins, which is where the size comes from."
   icon: "pumpkin-on-vine"
-guideCta: "Plan your beds with Garden Pro Planner"
+guideCta: "Plan your beds with Garden Planner Pro"
 pinDescription: "How to grow pumpkins: wait for warm soil before sowing, give each vine several feet of room, water the roots rather than the leaves, thin to a few fruit per vine, and rest each pumpkin on a board so the underside stays dry."
 pinBoard: "Vegetable Garden Layouts"
 pinKeywords:

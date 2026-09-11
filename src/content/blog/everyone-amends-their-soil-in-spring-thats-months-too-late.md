@@ -56,6 +56,6 @@ If pH came back low, lime goes on now and gets raked into the top few inches, be
 
 And if phosphorus and potassium came back high, which happens constantly in beds that have been composted for years, then stop buying the bag with three numbers on it. Excess phosphorus does not help the plant and does run off into water.
 
-This is also the moment to decide what goes where next spring, while the results are in front of you and the beds are visible rather than theoretical. I keep next year's layout in Garden Pro Planner and let its planting calendar work backward from my frost dates, so the potato bed and the brassica bed stay separate on paper in September instead of getting sorted out in a hurry in May.
+This is also the moment to decide what goes where next spring, while the results are in front of you and the beds are visible rather than theoretical. I keep next year's layout in Garden Planner Pro and let its planting calendar work backward from my frost dates, so the potato bed and the brassica bed stay separate on paper in September instead of getting sorted out in a hurry in May.
 
 One thing will undo all of this: sampling a bed you amended a few weeks ago. Fresh lime, fresh fertilizer, or a heavy layer of compost turned in will give you a reading that describes the bag rather than the bed. If you have just topped a bed off, leave it and test that one next year.

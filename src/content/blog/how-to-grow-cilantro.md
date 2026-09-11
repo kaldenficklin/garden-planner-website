@@ -59,7 +59,7 @@ guideProTip:
   label: "Pro tip"
   text: "Stop trying to keep one cilantro plant alive. It is an annual that flowers on a schedule, and succession sowing every three weeks gives you a continuous supply where fussing over one plant never will."
   icon: "succession-sowing-rows"
-guideCta: "Plan your herb bed in Garden Pro Planner"
+guideCta: "Plan your herb bed in Garden Planner Pro"
 pinDescription: "How to grow cilantro: sow it direct in the cooler months, sow a fresh patch every few weeks because every plant bolts eventually, keep it watered, and harvest whole outer stems rather than shearing the top."
 pinBoard: "Container & Small Space Gardening"
 pinKeywords:

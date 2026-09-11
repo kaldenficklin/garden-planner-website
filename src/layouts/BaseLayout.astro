@@ -7,7 +7,7 @@ export interface Props {
    * og:title / twitter:title, when the social headline should differ from the
    * <title>. Defaults to `title`.
    *
-   * The <title> carries the " — Garden Pro Planner" suffix because a search
+   * The <title> carries the " — Garden Planner Pro" suffix because a search
    * result needs the source named. A social card is already attributed to the
    * account, so there the suffix only eats the ~40 characters Pinterest shows
    * before it truncates.
@@ -92,11 +92,11 @@ const resolvedOgLocale = ogLocale ?? OG_LOCALES[lang] ?? 'en_US';
   <meta property="og:description" content={description} />
   <meta property="og:url" content={canonical} />
   <meta property="og:image" content={image} />
-  <meta property="og:site_name" content="Garden Pro Planner" />
+  <meta property="og:site_name" content="Garden Planner Pro" />
   <meta property="og:locale" content={resolvedOgLocale} />
   {type === 'article' && (
     <>
-      <meta property="article:author" content="Garden Pro Planner" />
+      <meta property="article:author" content="Garden Planner Pro" />
       {publishedTime && <meta property="article:published_time" content={publishedTime} />}
       {modifiedTime && <meta property="article:modified_time" content={modifiedTime} />}
       {articleTags.map((t) => <meta property="article:tag" content={t} />)}
@@ -110,7 +110,7 @@ const resolvedOgLocale = ogLocale ?? OG_LOCALES[lang] ?? 'en_US';
   <link rel="icon" type="image/png" href="/assets/app-icon.png" />
   <link rel="apple-touch-icon" href="/assets/app-icon.png" />
 
-  <link rel="alternate" type="application/rss+xml" title="Garden Pro Planner Blog" href="/blog/rss.xml" />
+  <link rel="alternate" type="application/rss+xml" title="Garden Planner Pro Blog" href="/blog/rss.xml" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -119,11 +119,11 @@ const resolvedOgLocale = ogLocale ?? OG_LOCALES[lang] ?? 'en_US';
        stylesheet already carries display=swap, so text is visible throughout. -->
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
   <noscript><link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" /></noscript>
-  <link rel="stylesheet" href="/assets/style.css?v=4" />
+  <link rel="stylesheet" href="/assets/style.css?v=5" />
   <!-- Bump ?v= on every edit to these files. /assets/* is served immutable for
        a year, so a changed stylesheet under an unchanged query string never
        reaches anyone who has already visited. -->
-  <link rel="stylesheet" href="/assets/blog.css?v=8" />
+  <link rel="stylesheet" href="/assets/blog.css?v=9" />
 
   <script defer src="/assets/analytics.js?v=3" is:inline></script>
   <script defer src="/assets/site.js?v=1" is:inline></script>
@@ -133,8 +133,8 @@ const resolvedOgLocale = ogLocale ?? OG_LOCALES[lang] ?? 'en_US';
   <header class="site-header">
     <div class="wrap header-inner">
       <a class="brand" href="/">
-        <span class="brand-mark">G</span>
-        <span class="brand-name">Garden Pro Planner</span>
+        <img class="brand-mark" src="/assets/app-icon.png" alt="" width="32" height="32" />
+        <span class="brand-name">Garden Planner Pro</span>
       </a>
       <nav class="nav">
         <a href={`${navBase}#features`}>Features</a>
@@ -156,8 +156,8 @@ const resolvedOgLocale = ogLocale ?? OG_LOCALES[lang] ?? 'en_US';
   <footer class="site-footer">
     <div class="wrap footer-inner">
       <div class="footer-brand">
-        <span class="brand-mark">G</span>
-        <span>Garden Pro Planner</span>
+        <img class="brand-mark" src="/assets/app-icon.png" alt="" width="32" height="32" />
+        <span>Garden Planner Pro</span>
       </div>
       <nav class="footer-nav">
         <a href="/">Home</a>
@@ -168,7 +168,7 @@ const resolvedOgLocale = ogLocale ?? OG_LOCALES[lang] ?? 'en_US';
         <a href={APP_STORE} data-cta="footer-link">App Store</a>
         <a href={PLAY_STORE} data-cta="footer-link">Google Play</a>
       </nav>
-      <p class="copyright">© <span id="year">2026</span> Garden Pro Planner. All rights reserved.</p>
+      <p class="copyright">© <span id="year">2026</span> Garden Planner Pro. All rights reserved.</p>
     </div>
   </footer>
 
@@ -177,7 +177,7 @@ const resolvedOgLocale = ogLocale ?? OG_LOCALES[lang] ?? 'en_US';
     <div class="mobile-cta-inner">
       <img class="mobile-cta-icon" src="/assets/app-icon.png" alt="" width="44" height="44" />
       <span class="mobile-cta-text">
-        <strong>Garden Pro Planner</strong>
+        <strong>Garden Planner Pro</strong>
         <span>Free · iPhone, iPad &amp; Android</span>
       </span>
       <a class="btn mobile-cta-btn" href={APP_STORE} data-store-link data-cta="sticky-bar">Get</a>

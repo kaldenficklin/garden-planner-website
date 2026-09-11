@@ -55,7 +55,7 @@ Then look at lettuce. You eat the leaf. The plant never has to flower at all, an
 
 The harvesting pattern splits along exactly the same line. Fruiting crops keep producing as long as you keep picking, because taking the mature fruit off tells the plant to flower and set again. Leave one zucchini on the vine to turn into a marrow and the whole plant noticeably slows down. Root and leaf crops don't work like that. You get what you get, once, and then you sow again.
 
-Garden Pro Planner's plant library covers pollination needs crop by crop across 225+ plants, which is worth a look before you commit a low-bee balcony to cucumbers.
+Garden Planner Pro's plant library covers pollination needs crop by crop across 440+ plants, which is worth a look before you commit a low-bee balcony to cucumbers.
 
 ## The Supreme Court weighed in and got it wrong on purpose
 

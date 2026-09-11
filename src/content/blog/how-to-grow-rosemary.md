@@ -59,7 +59,7 @@ guideProTip:
   label: "Pro tip"
   text: "A rosemary that suddenly goes grey and brittle has usually drowned, not dried out. The roots rot in wet soil and the top dies afterwards, which is why it looks like thirst."
   icon: "rosemary-sprig"
-guideCta: "Plan your herb bed in Garden Pro Planner"
+guideCta: "Plan your herb bed in Garden Planner Pro"
 pinDescription: "How to grow rosemary: give it gritty free-draining soil and full sun, water only when the soil is properly dry, and never feed it richly. Overwatering kills far more plants than cold does."
 pinBoard: "Container & Small Space Gardening"
 pinKeywords:

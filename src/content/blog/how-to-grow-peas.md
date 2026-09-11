@@ -59,7 +59,7 @@ guideProTip:
   label: "Pro tip"
   text: "Peas fix their own nitrogen, so a rich feed gives you a wall of leaves and very few pods. Save the compost for the hungry crop that follows them in the same bed."
   icon: "pea-flower"
-guideCta: "Plan your rows in Garden Pro Planner"
+guideCta: "Plan your rows in Garden Planner Pro"
 pinDescription: "How to grow peas: sow them into cool soil in early spring, give even the dwarf types something to climb, water well once the flowers open because that is when the pods fill, and pick every day to keep them coming."
 pinBoard: "Vegetable Garden Layouts"
 pinKeywords:

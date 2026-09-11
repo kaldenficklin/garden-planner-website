@@ -1,5 +1,5 @@
 /*
- * Garden Pro Planner — site analytics
+ * Garden Planner Pro — site analytics
  *
  * Loads Google Analytics 4, remembers the campaign a visitor arrived on, and
  * fires an `app_store_click` event whenever someone taps through to the App
@@ -12,7 +12,7 @@
 
   /* ── Config ─────────────────────────────────────────────────────────── */
 
-  // "Garden Pro Planner Website" property (401448878 / 547196945), web stream
+  // "Garden Planner Pro Website" property (401448878 / 547196945), web stream
   // 15330067195. Deliberately its own property: the apps report into
   // "garden-planner-e91af" (545945963), and mixing site sessions into the app's
   // numbers would distort both.

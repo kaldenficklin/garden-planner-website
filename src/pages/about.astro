@@ -22,7 +22,7 @@ const orgLd = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
   '@id': 'https://thegardenplanner.app/#organization',
-  name: 'Garden Pro Planner',
+  name: 'Garden Planner Pro',
   url: 'https://thegardenplanner.app/',
   logo: {
     '@type': 'ImageObject',
@@ -36,8 +36,8 @@ const orgLd = {
 };
 ---
 <BaseLayout
-  title="About Garden Pro Planner"
-  description="Who builds Garden Pro Planner, where the plant data and frost dates come from, and how the guides on this blog are put together."
+  title="About Garden Planner Pro"
+  description="Who builds Garden Planner Pro, where the plant data and frost dates come from, and how the guides on this blog are put together."
   canonical={canonical}
 >
   <script type="application/ld+json" slot="head" set:html={JSON.stringify(orgLd)} />
@@ -45,10 +45,10 @@ const orgLd = {
   <main class="page">
     <div class="wrap wrap-narrow">
       <Breadcrumbs items={crumbs} />
-      <h1>About Garden Pro Planner</h1>
+      <h1>About Garden Planner Pro</h1>
       <p class="updated">Who's behind the app, and where the numbers come from.</p>
 
-      <p>Garden Pro Planner is a garden planning app for iPhone and iPad, built and operated by Kalden Ficklin. It has been featured on CBS, NBC and FOX, and is used by gardeners in nine languages.</p>
+      <p>Garden Planner Pro is a garden planning app for iPhone and iPad, built and operated by Kalden Ficklin. It has been featured on CBS, NBC and FOX, and is used by gardeners in nine languages.</p>
 
       <!-- Add a short first-person bio here — how long you have gardened, where,
            what you grow. This is the single biggest E-E-A-T lever on a site that
@@ -56,7 +56,7 @@ const orgLd = {
            cannot be written from the app's data. -->
 
       <h2>Where the plant data comes from</h2>
-      <p>The app carries a library of 265+ plants. Each entry records sunlight, soil type and pH range, watering needs, spacing and planting depth, days to germinate, days from sprout to harvest, hardiness zone range, expected yield, common pests, crop rotation group, and whether the plant is safe around pets. The same catalog is what the blog's spacing and timing figures are drawn from, so a number quoted in a post is the number the app will give you.</p>
+      <p>The app carries a library of 440+ plants. Each entry records sunlight, soil type and pH range, watering needs, spacing and planting depth, days to germinate, days from sprout to harvest, hardiness zone range, expected yield, common pests, crop rotation group, and whether the plant is safe around pets. The same catalog is what the blog's spacing and timing figures are drawn from, so a number quoted in a post is the number the app will give you.</p>
 
       <h2>How the planting dates are calculated</h2>
       <p>Planting dates are not generic. The app takes your location, looks up ten years of historical daily minimum temperatures for that spot, and averages them into a last-spring and first-fall frost date. Every sow, transplant and harvest window is then counted backwards or forwards from your own frost dates rather than from a national map. Where local weather history is unavailable, it falls back to a hardiness-zone lookup.</p>
@@ -68,7 +68,7 @@ const orgLd = {
       <p>Gardening advice ages, and local conditions vary more than any article can. If something here is wrong or out of date for your region, email <a href="mailto:support@thegardenplanner.app">support@thegardenplanner.app</a> and it will be corrected.</p>
 
       <h2>Get the app</h2>
-      <p>Garden Pro Planner is free on the <a href={APP_STORE} data-cta="about">App Store</a>, for iPhone and iPad running iOS 15 or later, and on <a href={PLAY_STORE} data-cta="about">Google Play</a> for Android. See the <a href="/support">support page</a> for help getting started, the <a href="/privacy">privacy policy</a> for what the app stores, and the <a href="/terms">terms</a>.</p>
+      <p>Garden Planner Pro is free on the <a href={APP_STORE} data-cta="about">App Store</a>, for iPhone and iPad running iOS 15 or later, and on <a href={PLAY_STORE} data-cta="about">Google Play</a> for Android. See the <a href="/support">support page</a> for help getting started, the <a href="/privacy">privacy policy</a> for what the app stores, and the <a href="/terms">terms</a>.</p>
     </div>
   </main>
 </BaseLayout>

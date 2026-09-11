@@ -59,7 +59,7 @@ guideProTip:
   label: "Pro tip"
   text: "Sow a short row every two weeks from spring through midsummer instead of all at once. You get sunflowers in bloom for months rather than one spectacular fortnight and then bare stalks."
   icon: "sunflower-bloom"
-guideCta: "Plan your flower beds in Garden Pro Planner"
+guideCta: "Plan your flower beds in Garden Planner Pro"
 pinDescription: "How to grow sunflowers from seed: sow direct rather than transplanting, give tall varieties a stake before they need it, and cut for the vase as the first petals lift. A save-and-keep flower guide."
 pinBoard: "Vegetable Garden Layouts"
 pinKeywords:

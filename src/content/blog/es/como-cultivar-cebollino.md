@@ -59,7 +59,7 @@ guideProTip:
   label: "Consejo"
   text: "Corta el cebollino bajo, no por la punta. Despuntar deja una mata de tallos romos y duros que ya no se recuperan. Corta tallos enteros desde la base y lo que rebrota sale tierno."
   icon: "cutting-chives-low"
-guideCta: "Planifica tus hierbas en Garden Pro Planner"
+guideCta: "Planifica tus hierbas en Garden Planner Pro"
 pinDescription: "Cómo cultivar cebollino: dale sol y tierra normal, corta la mata entera desde abajo en vez de despuntarla, divídela cada pocos años antes de que se ahogue a sí misma y deja alguna flor si quieres que se resiembre."
 pinBoard: "Container & Small Space Gardening"
 pinKeywords:

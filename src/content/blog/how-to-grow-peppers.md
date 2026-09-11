@@ -59,7 +59,7 @@ guideProTip:
   label: "Pro tip"
   text: "Peppers drop their flowers when nights stay hot or the plant is thirsty. Steady water and a little afternoon shade in a heatwave will save a crop that otherwise sets nothing."
   icon: "pepper-flower"
-guideCta: "Track your peppers in Garden Pro Planner"
+guideCta: "Track your peppers in Garden Planner Pro"
 pinDescription: "How to grow peppers that set fruit: start seed early indoors, wait for warm soil, feed low-nitrogen once flowers open, and pinch the first blooms so the plant builds a frame first."
 pinBoard: "Vegetable Garden Layouts"
 pinKeywords:

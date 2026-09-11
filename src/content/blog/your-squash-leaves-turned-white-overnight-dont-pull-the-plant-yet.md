@@ -97,7 +97,7 @@ do well.
 
 Whether it works where you are is a first frost question and nothing else. Count
 backward from your average first frost, add a week of margin, and see whether
-the number still covers the days to maturity on the packet. Garden Pro Planner
+the number still covers the days to maturity on the packet. Garden Planner Pro
 keeps a planting calendar tuned to your local frost dates, which is the fastest
 way to settle it.
 

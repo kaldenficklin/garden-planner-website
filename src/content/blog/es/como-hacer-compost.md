@@ -59,7 +59,7 @@ guideProTip:
   label: "Consejo"
   text: "Un montón baboso y agrio casi siempre va corto de marrones, no de aire. Mete un cubo de hojas secas, cartón triturado o paja y el olor suele desaparecer en un par de días."
   icon: "dry-brown-leaves"
-guideCta: "Planifica tu huerto con Garden Pro Planner"
+guideCta: "Planifica tu huerto con Garden Planner Pro"
 pinDescription: "Cómo hacer compost: mezcla unas dos partes de material marrón seco por una de verde, mantenlo húmedo como una esponja escurrida, hazlo lo bastante grande para que caliente y voltéalo cuando deje de calentarse."
 pinBoard: "Raised Bed Gardening"
 pinKeywords:

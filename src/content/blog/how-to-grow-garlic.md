@@ -59,7 +59,7 @@ guideProTip:
   label: "Pro tip"
   text: "Plant the biggest cloves and eat the small ones. Bulb size follows clove size closely, so the fat outer cloves are next year's crop and the small inner ones are dinner."
   icon: "garlic-bulb"
-guideCta: "Plan your beds with Garden Pro Planner"
+guideCta: "Plan your beds with Garden Planner Pro"
 pinDescription: "How to grow garlic: plant cloves in autumn so the cold can do its work, mulch them over winter, snap off the scapes on hardneck types, and lift the bulbs when the lower leaves brown but the tops are still green."
 pinBoard: "Vegetable Garden Layouts"
 pinKeywords:

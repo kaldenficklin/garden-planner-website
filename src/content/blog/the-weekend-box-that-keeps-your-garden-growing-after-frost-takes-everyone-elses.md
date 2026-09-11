@@ -38,6 +38,6 @@ Cooking them. On a sunny 40-degree day, the inside of a closed frame can climb p
 
 Snow is not the enemy here either. A few inches sitting on the glass acts as extra insulation, and the greens underneath are usually fine when you brush it off. What gets them is a frame left sealed shut on the one bright, still day in the middle of a cold snap - exactly the kind of day you'd guess needs the most protection, and needs the least.
 
-Garden Pro Planner's frost-date calendar is what tells me when my own first hard freeze is likely to land, which is the number that decides whether I still have time to get a frame's worth of spinach established before the ground stops cooperating. Past that date, the box is buying time on crops already in the soil, not starting new ones.
+Garden Planner Pro's frost-date calendar is what tells me when my own first hard freeze is likely to land, which is the number that decides whether I still have time to get a frame's worth of spinach established before the ground stops cooperating. Past that date, the box is buying time on crops already in the soil, not starting new ones.
 
 A cold frame left up through a mild winter can outlast the season it was built for. Mine is currently on its fourth fall, held together at one corner with a hinge that has been "temporary" since the week I built it.

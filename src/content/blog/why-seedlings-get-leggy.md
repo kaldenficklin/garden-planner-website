@@ -59,7 +59,7 @@ guideProTip:
   label: "Pro tip"
   text: "A leggy tomato is fixable in a way most seedlings are not. Bury the stem right up to the lowest leaves when you pot it on and it will root along the buried section, giving you a short plant with a bigger root system."
   icon: "deep-planted-seedling"
-guideCta: "Plan your beds with Garden Pro Planner"
+guideCta: "Plan your beds with Garden Planner Pro"
 pinDescription: "Why seedlings get leggy: they are reaching for light that is too weak or too far away. Move them closer to a stronger light, drop the temperature, brush them daily, and rescue tomatoes by planting them deeper."
 pinBoard: "Seed Starting & Frost Dates"
 pinKeywords:

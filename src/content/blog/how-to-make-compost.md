@@ -59,7 +59,7 @@ guideProTip:
   label: "Pro tip"
   text: "A slimy, sour heap is almost always short of browns, not short of air. Fork in a bucket of dry leaves, shredded cardboard or straw and the smell usually goes within a couple of days."
   icon: "dry-brown-leaves"
-guideCta: "Plan your beds with Garden Pro Planner"
+guideCta: "Plan your beds with Garden Planner Pro"
 pinDescription: "How to make compost: mix roughly two parts dry brown material to one part green, keep it as damp as a wrung-out sponge, build it big enough to hold heat, and turn it when it stops warming up."
 pinBoard: "Raised Bed Gardening"
 pinKeywords:

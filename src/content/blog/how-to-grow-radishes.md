@@ -59,7 +59,7 @@ guideProTip:
   label: "Pro tip"
   text: "Sow a short row every couple of weeks rather than one long row at once. Radishes go from perfect to woody in days, so a whole row ready on the same day is mostly waste."
   icon: "radish"
-guideCta: "Plan your rows in Garden Pro Planner"
+guideCta: "Plan your rows in Garden Planner Pro"
 pinDescription: "How to grow radishes: sow them straight into loose stone-free soil, thin them early so the roots have room, water steadily to keep them crisp, and pull them young before they turn woody and split."
 pinBoard: "Container & Small Space Gardening"
 pinKeywords:

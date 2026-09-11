@@ -42,13 +42,13 @@ const url = new URL(market.path, 'https://thegardenplanner.app').href;
 const appLd = {
   '@context': 'https://schema.org',
   '@type': 'MobileApplication',
-  name: 'Garden Pro Planner',
+  name: 'Garden Planner Pro',
   url,
   image: 'https://thegardenplanner.app/assets/app-icon.png',
   description: market.metaDescription,
   applicationCategory: 'LifestyleApplication',
   operatingSystem: 'iOS 15+, Android 8+',
-  softwareVersion: '2.2.0',
+  softwareVersion: '2.5.0',
   offers: { '@type': 'Offer', price: '0', priceCurrency: market.id === 'uk' ? 'GBP' : 'USD' },
   author: { '@type': 'Person', name: 'Kalden Ficklin' },
   publisher: { '@id': 'https://thegardenplanner.app/#organization' },
@@ -63,7 +63,7 @@ const orgLd = {
     {
       '@type': 'Organization',
       '@id': 'https://thegardenplanner.app/#organization',
-      name: 'Garden Pro Planner',
+      name: 'Garden Planner Pro',
       url: 'https://thegardenplanner.app/',
       logo: {
         '@type': 'ImageObject',
@@ -79,7 +79,7 @@ const orgLd = {
       '@type': 'WebSite',
       '@id': 'https://thegardenplanner.app/#website',
       url: 'https://thegardenplanner.app/',
-      name: 'Garden Pro Planner',
+      name: 'Garden Planner Pro',
       publisher: { '@id': 'https://thegardenplanner.app/#organization' },
     },
   ],
@@ -115,7 +115,7 @@ const heroSm = market.heroImage.replace(/\.jpg$/, '-sm.jpg');
     <script type="application/ld+json" set:html={JSON.stringify(appLd)} />
     <script type="application/ld+json" set:html={JSON.stringify(faqLd)} />
     <meta name="p:domain_verify" content="0a20837e590225ddfeb792ae57256376" />
-    <meta name="theme-color" content="#0E3324" />
+    <meta name="theme-color" content="#111C0B" />
     {/* The hero photo is the LCP element. Preloading the matching srcset
         candidate stops the browser waiting for CSS to discover it. */}
     <link
@@ -153,9 +153,9 @@ const heroSm = market.heroImage.replace(/\.jpg$/, '-sm.jpg');
         <div class="phone">
           <img
             src="/assets/screens/calendar-timeline.png"
-            alt="The planting calendar on its timeline view: one bar per crop, marked with sowing, transplant and harvest dates"
+            alt="The planting calendar on its timeline view: the season's frost dates above one bar per crop, running from sowing to harvest"
             width="660"
-            height="1434"
+            height="1367"
             loading="eager"
           />
         </div>
@@ -213,13 +213,13 @@ const heroSm = market.heroImage.replace(/\.jpg$/, '-sm.jpg');
         </div>
         <div class="feature">
           <div class="feature-ico">🌱</div>
-          <h3>265+ plants, filtered</h3>
-          <p>{market.featuresZone} Group by type, soil, sun, watering, season or difficulty, and filter for plants that are safe around pets.</p>
+          <h3>440+ plants, filtered</h3>
+          <p>{market.featuresZone} Group by type, soil, sun, watering, season or difficulty, filter for plants that are safe around pets, and look up pest guides with treatment tips.</p>
         </div>
         <div class="feature">
-          <div class="feature-ico">🐛</div>
-          <h3>Keep what you grew</h3>
-          <p>Detailed pest guides with treatment tips, watering recommendations for each area, and a garden journal of dated notes and photos so you remember what worked.</p>
+          <div class="feature-ico">📓</div>
+          <h3>Remember what worked</h3>
+          <p>The Garden Log keeps what you planted, picked and noted, season by season on one timeline. Rate each crop at season's end, mark the ones to grow again, and get a shopping list of the seeds and supplies your beds still need.</p>
         </div>
         <div class="feature">
           <div class="feature-ico">🌍</div>
@@ -235,15 +235,14 @@ const heroSm = market.heroImage.replace(/\.jpg$/, '-sm.jpg');
     <div class="wrap">
       <div class="section-head"><div><h2 class="section-title section-title-left">Take a look inside</h2></div></div>
       <div class="gallery">
-        <figure><div class="phone phone-sm"><img src="/assets/screens/calendar.png" alt="The planting calendar, month by month" width="660" height="1434" loading="lazy" /></div><figcaption>Planting calendar</figcaption></figure>
-        <figure><div class="phone phone-sm"><img src="/assets/screens/yield.png" alt="Expected yield and the running savings estimate" width="660" height="1434" loading="lazy" /></div><figcaption>Yield &amp; savings</figcaption></figure>
-        <figure><div class="phone phone-sm"><img src="/assets/screens/blueprint.png" alt="A bed laid out on a square-foot grid" width="660" height="1434" loading="lazy" /></div><figcaption>Bed blueprint</figcaption></figure>
-        <figure><div class="phone phone-sm"><img src="/assets/screens/garden-season.png" alt="A bed's season as a timeline, one bar per crop from sowing to harvest" width="660" height="1434" loading="lazy" /></div><figcaption>Bed timeline</figcaption></figure>
-        <figure><div class="phone phone-sm"><img src="/assets/screens/plant-detail.png" alt="A plant page, with its dated schedule and season wheel" width="660" height="1434" loading="lazy" /></div><figcaption>Plant details</figcaption></figure>
-        {/* Caption deliberately carries no plant count: the capture behind it has
-            a region filter applied, so it reads "225 plants" on screen.
-            Recapture with filters cleared before putting the number back. */}
-        <figure><div class="phone phone-sm"><img src="/assets/screens/plants.png" alt="The plant guide, filtered and grouped by type" width="660" height="1434" loading="lazy" /></div><figcaption>Plant library</figcaption></figure>
+        {/* The 2.5.0 store set, in the store's order after the hero's calendar:
+            the money, the bed, the new Garden Log, then the detail. */}
+        <figure><div class="phone phone-sm"><img src="/assets/screens/yield.png" alt="Expected yield: the season's estimated savings, with a planted and harvested count for each crop" width="660" height="1367" loading="lazy" /></div><figcaption>Yield &amp; savings</figcaption></figure>
+        <figure><div class="phone phone-sm"><img src="/assets/screens/blueprint.png" alt="A bed's watering plan for the next two weeks, above its square-foot blueprint" width="660" height="1367" loading="lazy" /></div><figcaption>Blueprint &amp; watering</figcaption></figure>
+        <figure><div class="phone phone-sm"><img src="/assets/screens/garden-log.png" alt="The Garden Log: dated harvests, one entry per picking, grouped by day" width="660" height="1367" loading="lazy" /></div><figcaption>Garden Log</figcaption></figure>
+        <figure><div class="phone phone-sm"><img src="/assets/screens/garden-season.png" alt="A bed's season as a timeline, one bar per crop from sowing to harvest" width="660" height="1367" loading="lazy" /></div><figcaption>Bed timeline</figcaption></figure>
+        <figure><div class="phone phone-sm"><img src="/assets/screens/plant-season.png" alt="A plant's season wheel and rotation group, with the varieties you grow" width="660" height="1367" loading="lazy" /></div><figcaption>Season &amp; varieties</figcaption></figure>
+        <figure><div class="phone phone-sm"><img src="/assets/screens/plant-requirements.png" alt="A plant's requirements: sunlight, watering, soil pH, temperature and hardiness zones" width="660" height="1367" loading="lazy" /></div><figcaption>Plant requirements</figcaption></figure>
       </div>
     </div>
   </section>

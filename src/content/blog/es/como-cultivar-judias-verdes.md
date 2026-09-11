@@ -59,7 +59,7 @@ guideProTip:
   label: "Consejo"
   text: "Las judías fijan su propio nitrógeno, así que un abono rico en nitrógeno te da una planta enorme y casi ninguna vaina. Con compost al plantar sobra."
   icon: "compost-and-feed"
-guideCta: "Planifica tus hileras en Garden Pro Planner"
+guideCta: "Planifica tus hileras en Garden Planner Pro"
 pinDescription: "Cómo cultivar judías verdes: siembra directa en tierra templada, no abones con nitrógeno porque ellas lo fijan solas, y recoge cada dos días."
 pinBoard: "Vegetable Garden Layouts"
 pinKeywords:

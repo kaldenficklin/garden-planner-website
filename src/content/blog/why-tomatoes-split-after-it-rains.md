@@ -30,4 +30,4 @@ Picking ripe fruit early, before a big storm, is the other real lever. A tomato 
 
 Split tomatoes aren't a lost cause, by the way. If you catch them the same day, before anything gets into the crack, they're still fine to eat, just cut around the split and use them soon. It's the ones left out for a few days after splitting that turn into a problem, since the open crack is an easy way in for rot and fruit flies.
 
-I check the forecast a lot more than I used to, mostly because of this. The Garden Pro Planner app's watering reminders catch the "it's been dry for a week and I forgot" half of the equation, which is the half I control. The rain, obviously, I don't get a vote on.
+I check the forecast a lot more than I used to, mostly because of this. The Garden Planner Pro app's watering reminders catch the "it's been dry for a week and I forgot" half of the equation, which is the half I control. The rain, obviously, I don't get a vote on.

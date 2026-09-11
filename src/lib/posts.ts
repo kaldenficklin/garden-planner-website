@@ -132,7 +132,7 @@ export function tagCopy(tag: string) {
   return (
     TAG_COPY[tagSlug(tag)] ?? {
       label: titleCase(tagSlug(tag)),
-      intro: `Guides and how-tos from the Garden Pro Planner blog on ${titleCase(tagSlug(tag)).toLowerCase()}.`,
+      intro: `Guides and how-tos from the Garden Planner Pro blog on ${titleCase(tagSlug(tag)).toLowerCase()}.`,
     }
   );
 }

@@ -1,5 +1,5 @@
 /* =============================================================================
-   Garden Pro Planner — site styles
+   Garden Planner Pro — site styles
    =============================================================================
 
    MOBILE FIRST. The base rules are the phone layout and every media query is
@@ -14,28 +14,37 @@
      900px   the desktop shape: hero side by side, three-column grids, full nav
      1180px  wide desktop; only the wrap max-width changes
 
-   COLOUR. Two hues carry the positioning — "know what to plant, when to plant
-   it, and what it saved you":
-     leaf     the garden green the app icon is built on. Structure and trust.
+   COLOUR. Follows the app's 2.5 rebrand — the lime basket on black, and the
+   dark "sprout" theme (src/constants/theme.ts in the app repo). Three roles:
+     lime     the app's accent, #9BE04F. Buttons and marks, always with dark
+              ink on it — lime is a fill, never text on white (it fails
+              contrast there).
+     leaf     the forest greens of the app's backdrop, for dark grounds, and a
+              deeper green for links and text on white. Structure and trust.
      harvest  a warm ochre reserved *exclusively* for the money story — the
-              savings estimator, the running total, the harvest CTA. It is the
-              one loud colour on the page and it means one thing. Don't spend it
-              on a generic button; the moment it decorates, it stops signalling.
+              savings estimator, the running total, the harvest CTA. The app's
+              own yield bars run lime into ochre, so the pairing is theirs. It
+              means one thing; the moment it decorates, it stops signalling.
 
    Neutrals are warm and slightly olive rather than true grey, so photography of
    soil and foliage sits on them without the page looking blue by comparison.
    ========================================================================== */
 
 :root{
-  /* Leaf — brand green, deepened from the old #1f7a4d so it holds up against
-     the photography and clears contrast on white at body size. */
-  --leaf-900:#0E3324;
-  --leaf-800:#14472F;
-  --leaf-700:#1A6742;
-  --leaf-600:#22855A;
-  --leaf-500:#2FA36E;
-  --leaf-100:#D8EBDF;
-  --leaf-50:#F0F7F1;
+  /* Lime — the app's accent. --on-lime is the app's onAccent. */
+  --lime:#9BE04F;
+  --lime-600:#86CC38;
+  --on-lime:#101C06;
+
+  /* Leaf — 900/800 are the app's background and backdrop; 700/600 are deep
+     enough to carry white text and to read as links on white at body size. */
+  --leaf-900:#111C0B;
+  --leaf-800:#16320B;
+  --leaf-700:#2E6512;
+  --leaf-600:#3A7C17;
+  --leaf-500:#5FA82A;
+  --leaf-100:#DCEFC6;
+  --leaf-50:#F2F9EA;
 
   /* Harvest — the savings accent. Nothing else may use it. */
   --harvest-800:#7C4409;
@@ -97,7 +106,7 @@ body{
   background:var(--paper);
   line-height:1.6;
   -webkit-font-smoothing:antialiased;
-  -webkit-tap-highlight-color:rgba(34,133,90,.12);
+  -webkit-tap-highlight-color:rgba(95,168,42,.14);
   overflow-x:hidden;
   /* Room for the sticky download bar. Removed at 900px, where the bar hides. */
   padding-bottom:82px;
@@ -126,12 +135,9 @@ p{margin:0}
 .header-inner{display:flex;align-items:center;justify-content:space-between;gap:12px;height:58px}
 .brand{display:flex;align-items:center;gap:9px;color:var(--ink);font-weight:600;min-width:0;min-height:44px}
 .brand:hover{text-decoration:none}
-.brand-mark{
-  display:grid;place-items:center;flex:none;width:32px;height:32px;border-radius:9px;
-  font-family:var(--font-display);font-weight:600;font-size:19px;color:#fff;
-  background:linear-gradient(140deg,var(--leaf-500),var(--leaf-700));
-  box-shadow:inset 0 0 0 1px rgba(255,255,255,.22);
-}
+/* The app icon itself — the lime basket on black — rather than a lettermark,
+   so the header, the store listing and the home screen show one symbol. */
+.brand-mark{display:block;flex:none;width:32px;height:32px;border-radius:8px;background:#000}
 .brand-name{font-family:var(--font-display);font-size:17px;white-space:nowrap}
 /* Below ~400px the wordmark and the download button cannot both fit. The mark
    alone still identifies the site; the button is what the header is for. */
@@ -143,12 +149,12 @@ p{margin:0}
 /* ---------------------------------------------------------------- buttons -- */
 .btn{
   display:inline-flex;align-items:center;justify-content:center;gap:8px;
-  background:var(--leaf-600);color:#fff;border-radius:999px;
+  background:var(--lime);color:var(--on-lime);border-radius:999px;
   padding:12px 22px;min-height:46px;font-weight:600;font-size:15px;
   border:0;cursor:pointer;font-family:inherit;
   transition:background .15s ease,transform .15s ease,box-shadow .15s ease;
 }
-.btn:hover{background:var(--leaf-700);color:#fff;text-decoration:none;transform:translateY(-1px);box-shadow:0 8px 20px -8px rgba(14,51,36,.45)}
+.btn:hover{background:var(--lime-600);color:var(--on-lime);text-decoration:none;transform:translateY(-1px);box-shadow:0 8px 20px -8px rgba(17,28,11,.45)}
 .btn:active{transform:translateY(0)}
 .btn-lg{padding:15px 28px;min-height:54px;font-size:17px}
 .btn-outline{background:transparent;color:var(--leaf-700);border:1px solid var(--leaf-100);box-shadow:none}
@@ -156,12 +162,11 @@ p{margin:0}
 
 .btn-sm{
   gap:7px;padding:9px 16px;min-height:42px;font-size:14px;
-  background:var(--leaf-600);box-shadow:0 1px 2px rgba(14,51,36,.2);
+  box-shadow:0 1px 2px rgba(17,28,11,.2);
   /* "Get the app" wrapped to two lines at 375px, which doubled the header
      height and shoved the hero down the fold. */
   white-space:nowrap;
 }
-.btn-sm:hover{background:var(--leaf-700)}
 .btn-sm .btn-icon{flex:none}
 .btn-icon-android{display:none}
 .is-android .btn-icon-ios{display:none}
@@ -191,7 +196,7 @@ p{margin:0}
 .hero-media img{width:100%;height:100%;object-fit:cover;object-position:50% 62%}
 .hero-media::after{
   content:"";position:absolute;inset:0;
-  background:linear-gradient(180deg,rgba(9,32,22,.86) 0%,rgba(9,32,22,.74) 45%,rgba(9,32,22,.9) 100%);
+  background:linear-gradient(180deg,rgba(12,24,7,.86) 0%,rgba(12,24,7,.74) 45%,rgba(12,24,7,.9) 100%);
 }
 .hero-grid{position:relative;z-index:1;display:grid;gap:28px;padding:38px var(--gutter) 40px}
 .hero-copy{min-width:0}
@@ -201,14 +206,14 @@ p{margin:0}
   text-transform:uppercase;letter-spacing:.12em;font-size:11.5px;font-weight:600;
   color:var(--leaf-600);margin:0 0 12px;
 }
-.hero .eyebrow{color:var(--harvest-500)}
+.hero .eyebrow{color:var(--lime)}
 .lead{font-size:16.5px;color:rgba(255,255,255,.86);margin:16px 0 24px;max-width:46ch}
 .badge-row{
   list-style:none;display:flex;flex-wrap:wrap;gap:8px 18px;padding:0;margin:20px 0 0;
   color:rgba(255,255,255,.82);font-size:13.5px;font-weight:500;
 }
 .badge-row li{position:relative;padding-left:20px}
-.badge-row li::before{content:"✓";position:absolute;left:0;color:var(--harvest-500);font-weight:700}
+.badge-row li::before{content:"✓";position:absolute;left:0;color:var(--lime);font-weight:700}
 .hero-shot{display:flex;justify-content:center}
 
 /* Market switcher — a quiet line, not a flag-picker widget. */
@@ -223,11 +228,15 @@ p{margin:0}
 }
 
 /* ------------------------------------------------------------------ phone -- */
+/* The screens are the app's 2.5.0 device mockups, frame included (see
+   scripts/sync-screens.mjs), so this only sizes them and casts a shadow. A
+   drop-shadow rather than a box-shadow, so it follows the rounded frame and
+   not the image's transparent corners. */
 .phone{
   position:relative;width:100%;max-width:250px;margin:0 auto;
-  border-radius:32px;padding:8px;background:#111;box-shadow:var(--shadow);
+  filter:drop-shadow(0 20px 26px rgba(17,28,11,.32));
 }
-.phone img{border-radius:24px;width:100%;height:auto}
+.phone img{width:100%;height:auto}
 .phone-sm{max-width:230px}
 
 /* --------------------------------------------------------------- sections -- */
@@ -335,8 +344,8 @@ p{margin:0}
   padding:20px 18px;background:var(--paper);border-top:1px solid var(--line-soft);
 }
 .est-cta p{font-weight:600;font-size:16px}
-.est-cta .btn{width:100%;background:var(--harvest-600)}
-.est-cta .btn:hover{background:var(--harvest-700)}
+.est-cta .btn{width:100%;background:var(--harvest-600);color:#fff}
+.est-cta .btn:hover{background:var(--harvest-700);color:#fff}
 
 /* --------------------------------------------------------------- features -- */
 .features{display:grid;grid-template-columns:1fr;gap:14px}
@@ -404,18 +413,19 @@ p{margin:0}
 .faq details p{margin:0 0 16px;color:var(--ink-soft)}
 
 /* --------------------------------------------------------------- cta band -- */
-.cta-band{background:linear-gradient(150deg,var(--leaf-800),var(--leaf-600));text-align:center}
+/* The app's own backdrop wash, forest into deep teal-green. */
+.cta-band{background:linear-gradient(150deg,var(--leaf-800),#11290A 55%,#09301E);text-align:center}
 .cta-inner h2{color:#fff;font-size:clamp(25px,6vw,36px)}
 .cta-inner p{color:rgba(255,255,255,.9);font-size:17px;margin:12px 0 26px}
 
 /* ---------------------------------------------------------------- footer --- */
-.site-footer{background:var(--leaf-900);color:#C6DCCD;padding:40px 0}
+.site-footer{background:var(--leaf-900);color:#D2E4BD;padding:40px 0}
 .footer-inner{display:flex;flex-direction:column;align-items:center;gap:18px;text-align:center}
 .footer-brand{display:flex;align-items:center;gap:10px;font-family:var(--font-display);font-size:17px;color:#fff}
 .footer-nav{display:flex;gap:4px 18px;flex-wrap:wrap;justify-content:center}
-.footer-nav a{color:#C6DCCD;font-weight:500;padding:8px 0;display:inline-block}
-.footer-nav a:hover{color:#fff}
-.copyright{margin:0;font-size:13.5px;color:#87A995}
+.footer-nav a{color:#D2E4BD;font-weight:500;padding:8px 0;display:inline-block}
+.footer-nav a:hover{color:var(--lime)}
+.copyright{margin:0;font-size:13.5px;color:#96AC80}
 
 /* ------------------------------------------------------ sticky download ---- */
 .mobile-cta{

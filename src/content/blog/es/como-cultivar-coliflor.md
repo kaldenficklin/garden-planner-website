@@ -59,7 +59,7 @@ guideProTip:
   label: "Consejo"
   text: "Trasplanta cuando las plantas aún son jóvenes, seis semanas en alvéolo como mucho. Una coliflor que se ha quedado hasta enrollar las raíces en el fondo ya ha decidido que es una planta pequeña, y hará una pella acorde."
   icon: "seed-tray-indoors"
-guideCta: "Programa tus siembras de coles con Garden Pro Planner"
+guideCta: "Programa tus siembras de coles con Garden Planner Pro"
 pinDescription: "Cómo cultivar coliflor: elige el tipo según la temporada, planta en tierra rica y firme y no dejes nunca que la planta se pare, porque una coliflor parada hace una pella del tamaño de una moneda. Tapa la pella con las hojas para que quede blanca."
 pinBoard: "Vegetable Garden Layouts"
 pinKeywords:

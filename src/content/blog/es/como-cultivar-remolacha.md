@@ -59,7 +59,7 @@ guideProTip:
   label: "Consejo"
   text: "Pon los glomérulos en agua la noche antes de sembrar. La cubierta corchosa lleva un inhibidor de la germinación y el remojo se lleva parte de él, así que la línea nace varios días antes y mucho más pareja."
   icon: "soaking-seed-bowl"
-guideCta: "Planifica tus siembras con Garden Pro Planner"
+guideCta: "Planifica tus siembras con Garden Planner Pro"
 pinDescription: "Cómo cultivar remolacha desde semilla: siembra directa porque no soporta el trasplante, aclara pronto los glomérulos, riega de forma constante para que la raíz quede tierna y arráncala pequeña. Una guía para guardar."
 pinBoard: "Vegetable Garden Layouts"
 pinKeywords:

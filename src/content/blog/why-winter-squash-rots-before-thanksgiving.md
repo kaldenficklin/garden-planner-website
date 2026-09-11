@@ -39,7 +39,7 @@ Give it as long as you can. Flavor keeps developing on the vine well past the po
 
 The limit on all that patience is your first hard frost. Frosted fruit stores badly, and a stretch of nights in the forties will shorten how long it keeps even when nothing looks damaged. If frost is forecast and the squash is anywhere near ready, bring it in. A vine can be dead and the fruit under it perfectly fine, but do not leave that fruit sitting out in the cold for a week afterward.
 
-This is the week to look up your actual first-frost date rather than guessing from last year. Garden Pro Planner keeps a planting calendar tuned to your local frost dates, which is mostly useful in spring, and then quietly becomes a harvest deadline in the fall.
+This is the week to look up your actual first-frost date rather than guessing from last year. Garden Planner Pro keeps a planting calendar tuned to your local frost dates, which is mostly useful in spring, and then quietly becomes a harvest deadline in the fall.
 
 ## Curing, and the one squash that hates it
 

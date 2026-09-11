@@ -59,7 +59,7 @@ guideProTip:
   label: "Pro tip"
   text: "If you want mint in a bed, sink the whole pot into the soil with the rim standing proud. You get the look of a planted clump and the roots still cannot escape sideways."
   icon: "mint-in-pot"
-guideCta: "Plan your herb bed in Garden Pro Planner"
+guideCta: "Plan your herb bed in Garden Planner Pro"
 pinDescription: "How to grow mint: keep it in a pot because it spreads by underground runners and will take a bed in one season, pinch it often, and cut it hard when it gets woody."
 pinBoard: "Container & Small Space Gardening"
 pinKeywords:

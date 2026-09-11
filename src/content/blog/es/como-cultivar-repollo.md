@@ -59,7 +59,7 @@ guideProTip:
   label: "Consejo"
   text: "Dale la vuelta a unas cuantas hojas cada semana desde finales de primavera y frota los grupos de huevos amarillos que encuentres. Dos minutos de eso valen más que cualquier tratamiento cuando las orugas ya se han metido en la cabeza."
   icon: "cabbage-white-eggs"
-guideCta: "Consulta las plagas de las coles en Garden Pro Planner"
+guideCta: "Consulta las plagas de las coles en Garden Planner Pro"
 pinDescription: "Cómo cultivar repollo: planta en tierra bien asentada, pon malla desde el primer día contra mariposas y palomas, coloca un collarín contra la mosca de la col y corta la cabeza en cuanto esté dura. Una guía para guardar."
 pinBoard: "Vegetable Garden Layouts"
 pinKeywords:

@@ -59,7 +59,7 @@ guideProTip:
   label: "Consejo"
   text: "La distancia de plantación marca el tamaño más que el abonado. Unas cebollas plantadas juntas darán cebollas pequeñas por bien que las cuides el resto de la temporada."
   icon: "onion-sets"
-guideCta: "Planifica tus hileras en Garden Pro Planner"
+guideCta: "Planifica tus hileras en Garden Planner Pro"
 pinDescription: "Cómo cultivar cebollas: hunde los bulbillos en tierra blanda dejando la punta a la vista, respeta las distancias porque marcan el tamaño, deja de regar cuando caigan las hojas y cúralas hasta que el cuello quede papel."
 pinBoard: "Vegetable Garden Layouts"
 pinKeywords:

@@ -59,7 +59,7 @@ guideProTip:
   label: "Pro tip"
   text: "Leggy, stretched seedlings mean too little light, not too little warmth. A windowsill is usually not enough, and a cheap light a few inches above the tray fixes it outright."
   icon: "grow-light-seedlings"
-guideCta: "Count back from your frost date in Garden Pro Planner"
+guideCta: "Count back from your frost date in Garden Planner Pro"
 pinDescription: "How to start seeds indoors: count back from your last frost date, use light far closer than you think, water from below, and harden seedlings off over a week before planting out."
 pinBoard: "Seed Starting & Frost Dates"
 pinKeywords:

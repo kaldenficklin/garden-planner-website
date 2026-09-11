@@ -59,7 +59,7 @@ guideProTip:
   label: "Consejo"
   text: "El viento hace más daño que el frío durante la aclimatación, y es el factor que todo el mundo olvida. Una plántula criada en aire quieto no tiene fuerza en el tallo, y una tarde de rachas puede tumbar una bandeja entera."
   icon: "wind-bent-seedling"
-guideCta: "Planifica tu huerto con Garden Pro Planner"
+guideCta: "Planifica tu huerto con Garden Planner Pro"
 pinDescription: "Cómo aclimatar plántulas: empieza con una hora a la sombra, ve subiendo a lo largo de una o dos semanas, métela por la noche hasta el final, evita el viento y el sol del mediodía al principio y trasplanta en una tarde nublada."
 pinBoard: "Seed Starting & Frost Dates"
 pinKeywords:

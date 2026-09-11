@@ -38,7 +38,7 @@ Late July into the first couple weeks of August is the window for most of these,
 | Spinach | 40–45 | Late August-September |
 | Radishes | 25–30 | September, repeatedly |
 
-Your actual first frost date is the number that makes this table mean anything, and it's worth knowing precisely rather than roughly, since a week either way changes what fits. I check mine every year in Garden Pro Planner, which pulls it from your location rather than a regional average, and the fall planting suggestions shift automatically once it knows your dates.
+Your actual first frost date is the number that makes this table mean anything, and it's worth knowing precisely rather than roughly, since a week either way changes what fits. I check mine every year in Garden Planner Pro, which pulls it from your location rather than a regional average, and the fall planting suggestions shift automatically once it knows your dates.
 
 ## The crops that don't wait for you to catch up
 

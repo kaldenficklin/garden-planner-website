@@ -59,7 +59,7 @@ guideProTip:
   label: "Pro tip"
   text: "Beans fix their own nitrogen, so a rich nitrogen feed gives you a huge leafy plant and almost no pods. Compost at planting is all they need."
   icon: "compost-and-feed"
-guideCta: "Plan your rows in Garden Pro Planner"
+guideCta: "Plan your rows in Garden Planner Pro"
 pinDescription: "How to grow green beans: sow direct in warm soil, skip the nitrogen feed because beans make their own, and pick every couple of days to keep the plant producing."
 pinBoard: "Vegetable Garden Layouts"
 pinKeywords:

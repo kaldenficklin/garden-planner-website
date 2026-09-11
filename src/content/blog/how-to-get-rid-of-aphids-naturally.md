@@ -58,6 +58,6 @@ Check new plants before they come home from the nursery, undersides included, be
 
 A handful of aphids on an established, healthy plant is not a problem and doesn't need treating. Plants tolerate light feeding without any real cost, and a small resident population is what keeps the ladybugs and lacewings around to deal with the next outbreak.
 
-I step in when new growth starts curling and stunting, when sooty mold is spreading, or when they turn up on seedlings, which are too small to absorb the damage. Otherwise I leave it alone. Garden Pro Planner's pest guides run through treatment options for aphids and a long list of other regulars if you're not certain what you're looking at, which is worth checking before you spray anything.
+I step in when new growth starts curling and stunting, when sooty mold is spreading, or when they turn up on seedlings, which are too small to absorb the damage. Otherwise I leave it alone. Garden Planner Pro's pest guides run through treatment options for aphids and a long list of other regulars if you're not certain what you're looking at, which is worth checking before you spray anything.
 
 The thing that actually keeps aphids down is noticing them early. Five minutes of looking under leaves once a week beats any spray you can buy in August.

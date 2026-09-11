@@ -59,7 +59,7 @@ guideProTip:
   label: "Consejo"
   text: "Un romero que se pone gris y quebradizo de golpe casi siempre se ha ahogado, no secado. La raíz se pudre en tierra húmeda y la parte de arriba muere después, por eso parece sed."
   icon: "rosemary-sprig"
-guideCta: "Planifica tus hierbas en Garden Pro Planner"
+guideCta: "Planifica tus hierbas en Garden Planner Pro"
 pinDescription: "Cómo cultivar romero: tierra suelta con grava y pleno sol, riega solo cuando esté bien seco y no lo abones en exceso. El riego mata muchas más plantas que el frío."
 pinBoard: "Container & Small Space Gardening"
 pinKeywords:

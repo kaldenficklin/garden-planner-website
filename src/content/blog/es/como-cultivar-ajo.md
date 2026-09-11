@@ -59,7 +59,7 @@ guideProTip:
   label: "Consejo"
   text: "Planta los dientes más gordos y cómete los pequeños. El tamaño de la cabeza sigue al del diente, así que los de fuera son la cosecha del año que viene."
   icon: "garlic-bulb"
-guideCta: "Planifica tu huerto con Garden Pro Planner"
+guideCta: "Planifica tu huerto con Garden Planner Pro"
 pinDescription: "Cómo cultivar ajo: planta los dientes en otoño para que el frío haga su trabajo, acolcha en invierno, corta los escapos en las variedades de cuello duro y arranca las cabezas cuando las hojas de abajo se sequen."
 pinBoard: "Vegetable Garden Layouts"
 pinKeywords:

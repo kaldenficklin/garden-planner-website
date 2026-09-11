@@ -59,7 +59,7 @@ guideProTip:
   label: "Consejo"
   text: "Pellizca la primera floración de una planta nueva. Pierdes unas pocas fresas tempranas y ganas una planta mucho más fuerte, con más cosecha durante el resto de la temporada."
   icon: "strawberry-flower-pinch"
-guideCta: "Registra tu cosecha en Garden Pro Planner"
+guideCta: "Registra tu cosecha en Garden Planner Pro"
 pinDescription: "Cómo cultivar fresas en casa: deja la corona al nivel del suelo, dales pleno sol, pon acolchado bajo el fruto y pellizca las primeras flores para que la planta arraigue. Guía para guardar."
 pinBoard: "Container & Small Space Gardening"
 pinKeywords:

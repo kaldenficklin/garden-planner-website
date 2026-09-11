@@ -59,7 +59,7 @@ guideProTip:
   label: "Pro tip"
   text: "Adding sand to clay in small amounts makes it harder, not looser. You need an enormous proportion of sand to change the texture, and anything less fills the gaps between clay particles and sets like concrete."
   icon: "sand-crossed-out"
-guideCta: "Plan your beds with Garden Pro Planner"
+guideCta: "Plan your beds with Garden Planner Pro"
 pinDescription: "How to improve clay soil: add organic matter every year and let the worms work it in, never dig or walk on it when wet, keep it covered over winter, and build up rather than down if drainage is the real problem."
 pinBoard: "Raised Bed Gardening"
 pinKeywords:

@@ -59,7 +59,7 @@ guideProTip:
   label: "Pro tip"
   text: "Early flowers are nearly all male, so nothing sets and it looks like failure. Wait a week or two for the female flowers, the ones with a tiny fruit behind the bloom, before worrying."
   icon: "squash-male-flower"
-guideCta: "Plan your beds with Garden Pro Planner"
+guideCta: "Plan your beds with Garden Planner Pro"
 pinDescription: "How to grow zucchini: give each plant real space, water at the base to keep mildew off, hand-pollinate when nothing is setting, and pick small and often to keep it producing."
 pinBoard: "Vegetable Garden Layouts"
 pinKeywords:

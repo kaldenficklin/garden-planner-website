@@ -59,7 +59,7 @@ guideProTip:
   label: "Pro tip"
   text: "Plant out while the seedlings are still young, six weeks in a module at the very most. A cauliflower left until its roots are circling the pot has already decided it is a small plant, and it will make a curd to match."
   icon: "seed-tray-indoors"
-guideCta: "Time your brassica sowings with Garden Pro Planner"
+guideCta: "Time your brassica sowings with Garden Planner Pro"
 pinDescription: "How to grow cauliflower: match the type to the season, plant into rich firm soil, and never let the plant check, because a stalled cauliflower makes a curd the size of a coin. Snap leaves over the head to keep it white."
 pinBoard: "Vegetable Garden Layouts"
 pinKeywords:

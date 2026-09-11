@@ -72,6 +72,6 @@ Water at the base rather than overhead. Soaker hoses and drip lines put water wh
 
 Group plants by thirst. If cucumbers and drought-tolerant herbs share a bed, one of them is always getting the wrong amount, and it's usually both.
 
-Garden Pro Planner sends watering reminders based on what you've actually planted, which mostly helps with the crops that punish you for forgetting rather than the forgiving ones.
+Garden Planner Pro sends watering reminders based on what you've actually planted, which mostly helps with the crops that punish you for forgetting rather than the forgiving ones.
 
 But the finger test is the thing. If you take one habit from this, make it that: two inches down, before you turn the tap on. It would have saved the plant I drowned.

@@ -29,7 +29,7 @@ So a fall sowing has two clocks running. Frost decides whether the plant survive
 
 The practical version: take the days-to-maturity number on the packet, which was worked out for long summer days, and add somewhere between two and four weeks for a September sowing. Then check that it still lands before your ten-hour date. That sounds fussy and it takes about a minute, and it is the difference between eating and just watching.
 
-Garden Pro Planner does this arithmetic against your own location rather than a general rule, which matters here more than usual — the gap between Boston and Atlanta on both of those clocks is enormous, and the seed packet knows about neither.
+Garden Planner Pro does this arithmetic against your own location rather than a general rule, which matters here more than usual — the gap between Boston and Atlanta on both of those clocks is enormous, and the seed packet knows about neither.
 
 ## The six, fastest first
 
