@@ -388,9 +388,43 @@ Two settings at the top of `analytics.js`:
 - `REDDIT_ADVERTISER_ID` — turns on the Reddit pixel so Reddit can optimize
   delivery toward people who actually tap through. Found in Reddit Ads →
   Events Manager → Reddit Pixel.
-- `APPLE_PROVIDER_TOKEN` — from App Store Connect → App Analytics → Campaigns.
-  Set it and App Store product-page views get tagged with the same campaign, so
-  Apple's install numbers line up with GA's click numbers.
+- `APPLE_PROVIDER_TOKEN` — **on since 12 Sep 2026** (`10675356`, from App Store
+  Connect → Analytics → Campaigns → Generate a campaign link). See "Store-side
+  attribution" below.
+
+### Store-side attribution
+
+GA4 follows a visitor as far as the store button. To see which **installs** came
+from which source and button, `analytics.js` tags the store URL itself on page
+load, after BaseLayout has already moved single-destination CTAs to Play on
+Android:
+
+| Store | Parameter | Read it in |
+| --- | --- | --- |
+| App Store | `pt=10675356&ct=<label>&mt=8` | App Store Connect → Analytics → Acquisition → Campaigns |
+| Google Play | `referrer=utm_source=…&utm_medium=…&utm_campaign=<label>&utm_content=<placement>` (URL-encoded) | Play Console → Grow users → Store performance, by UTM campaign |
+
+Both use the same label, `<source>-<placement>`, e.g. `pinterest-post-inline`,
+`google-post-body`, `direct-hero`:
+
+- **source** is `utm_source` if the visit arrived tagged; otherwise the referring
+  site's second-level name (`l.facebook.com` → `facebook`, `ca.pinterest.com` →
+  `pinterest`), remembered in `sessionStorage` for the visit; otherwise `direct`.
+- **placement** is the link's `data-cta`.
+
+So a store-console row joins straight to GA4's `utm_source` and `cta_location`.
+The post slug is deliberately not in the label — Apple caps `ct` at 40 characters.
+
+Limits worth knowing before reading the numbers:
+
+- **Apple hides a campaign until at least 5 Apple Accounts have installed through
+  it**, and only counts users who share analytics with developers. At this site's
+  volume most labels will stay invisible for weeks — "no data" is not "no installs".
+- Source-type splits (App Store Search / Browse / Web Referrer / App Referrer)
+  need no tagging and cover history; the weekly funnel report reads those too.
+- The old code defaulted `ct` to `reddit` for any untagged visitor, which would
+  have labelled Google searchers as Reddit. It never ran, because the token was
+  empty.
 
 ## Local development
 

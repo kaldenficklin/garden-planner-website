@@ -21,7 +21,7 @@
   // Optional. App Store Connect → App Analytics → Campaigns issues a "provider
   // token". Set it and App Store product-page views get attributed to the same
   // campaign the visitor arrived on, so Apple's numbers line up with GA's.
-  var APPLE_PROVIDER_TOKEN = '';
+  var APPLE_PROVIDER_TOKEN = '10675356';
 
   // Optional. Reddit Ads → Events Manager → Reddit Pixel (looks like
   // "a2_abc123def"). Set it to let Reddit optimize delivery toward clickers.
@@ -128,26 +128,91 @@
     return url.indexOf(PLAY_STORE_HOST) !== -1 ? 'android' : 'ios';
   }
 
-  // Apple only honours `ct` when it is paired with a provider token.
-  function withAppleCampaign(url) {
-    if (!APPLE_PROVIDER_TOKEN) return url;
-    try {
-      var parsed = new URL(url, window.location.origin);
-      if (parsed.hostname.indexOf(APP_STORE_HOST) === -1) return url;
-      parsed.searchParams.set('pt', APPLE_PROVIDER_TOKEN);
-      parsed.searchParams.set('ct', (attribution.utm_campaign || 'reddit').slice(0, 40));
-      parsed.searchParams.set('mt', '8');
-      return parsed.href;
-    } catch (e) {
-      return url;
-    }
+  /* ── Store-side attribution ─────────────────────────────────────────────
+   * GA4 can follow a visitor as far as the store button and no further. These
+   * tags ride the store URL itself, so the stores can say which installs came
+   * from which source and which button:
+   *
+   *   Apple  pt + ct  → App Store Connect → Analytics → Campaigns
+   *   Play   referrer → Play Console → Store performance, by UTM campaign
+   *
+   * Both are labelled the same way — `<source>-<placement>`, e.g.
+   * `pinterest-post-inline` — so a row in either store console joins straight
+   * to GA4's utm_source and cta_location. Apple caps `ct` at 40 characters,
+   * which is why the post slug is not part of the label.
+   */
+
+  function slug(value) {
+    return String(value || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
   }
 
-  function decorateAppStoreLinks() {
-    if (!APPLE_PROVIDER_TOKEN) return;
-    var links = document.querySelectorAll('a[href*="' + APP_STORE_HOST + '"]');
+  // Where this visitor came from. A UTM tag wins; otherwise the external site
+  // that referred them (google, pinterest, facebook…), remembered for the visit
+  // so page two still knows. `l.facebook.com` and `ca.pinterest.com` both
+  // reduce to their second-level name.
+  var REF_KEY = 'gpp_ref_source';
+  function visitSource() {
+    if (attribution.utm_source) return slug(attribution.utm_source);
+    try {
+      var stored = sessionStorage.getItem(REF_KEY);
+      if (stored) return stored;
+    } catch (e) { /* private mode */ }
+    var source = 'direct';
+    try {
+      var host = new URL(document.referrer).hostname;
+      if (host && host !== window.location.hostname) {
+        var parts = host.split('.');
+        source = slug(parts.length > 1 ? parts[parts.length - 2] : host) || 'direct';
+      }
+    } catch (e) { /* no referrer */ }
+    try { sessionStorage.setItem(REF_KEY, source); } catch (e) { /* private mode */ }
+    return source;
+  }
+
+  function storeLabel(link) {
+    var placement = slug(link.getAttribute('data-cta') || 'unspecified');
+    return (visitSource() + '-' + placement).slice(0, 40);
+  }
+
+  // Apple only honours `ct` when it is paired with a provider token.
+  function withAppleCampaign(url, label) {
+    if (!APPLE_PROVIDER_TOKEN) return url;
+    var parsed = new URL(url, window.location.origin);
+    parsed.searchParams.set('pt', APPLE_PROVIDER_TOKEN);
+    parsed.searchParams.set('ct', label);
+    parsed.searchParams.set('mt', '8');
+    return parsed.href;
+  }
+
+  // Play reads UTM tags from a single URL-encoded `referrer` parameter. It needs
+  // utm_source and utm_campaign at minimum to show a campaign row.
+  function withPlayReferrer(url, label, link) {
+    var parsed = new URL(url, window.location.origin);
+    var referrer = new URLSearchParams({
+      utm_source: visitSource(),
+      utm_medium: slug(attribution.utm_medium) || 'web',
+      utm_campaign: label,
+      utm_content: slug(link.getAttribute('data-cta') || 'unspecified')
+    });
+    parsed.searchParams.set('referrer', referrer.toString());
+    return parsed.href;
+  }
+
+  // Runs after BaseLayout's inline script has already moved single-destination
+  // CTAs to Play on Android, so it decorates whichever store each link now
+  // points at. A link that fails to parse is left exactly as it was.
+  function decorateStoreLinks() {
+    var links = document.querySelectorAll(STORE_LINK_SELECTOR);
     for (var i = 0; i < links.length; i++) {
-      links[i].href = withAppleCampaign(links[i].href);
+      var link = links[i];
+      try {
+        var label = storeLabel(link);
+        if (link.href.indexOf(APP_STORE_HOST) !== -1) {
+          link.href = withAppleCampaign(link.href, label);
+        } else if (link.href.indexOf(PLAY_STORE_HOST) !== -1) {
+          link.href = withPlayReferrer(link.href, label, link);
+        }
+      } catch (e) { /* leave the link untouched */ }
     }
   }
 
@@ -176,8 +241,8 @@
   });
 
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', decorateAppStoreLinks);
+    document.addEventListener('DOMContentLoaded', decorateStoreLinks);
   } else {
-    decorateAppStoreLinks();
+    decorateStoreLinks();
   }
 })();
