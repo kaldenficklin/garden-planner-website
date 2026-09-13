@@ -45,6 +45,16 @@ const blog = defineCollection({
     // frost date is the whole game here" — not as a feature list. Optional; the
     // plugin falls back to a generic timing-and-savings line.
     ctaHook: z.string().optional(),
+    // Which store page this post's readers land on. Every store link on the
+    // page — the mid-article CTA, the header button, the sticky bar, the
+    // footer — resolves through src/lib/store-urls.mjs, where each key maps to
+    // an Apple Custom Product Page and a Play custom listing. The rule:
+    //   diagnosis posts ("what's eating my", "why is my X doing Y")  → pests
+    //   yield, savings, the glut, what to grow instead of buying     → savings
+    //   spacing, companion planting, rotation, raised-bed layout     → beds
+    //   calendar posts and everything else                           → timing
+    // `timing` is the default listing; leaving this unset means the same thing.
+    storePage: z.enum(['timing', 'pests', 'savings', 'beds']).optional(),
 
     // Set to true to keep a post out of the build while drafting.
     draft: z.boolean().default(false),

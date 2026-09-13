@@ -222,6 +222,12 @@
       // Which button did the work — hero, sticky bar, footer, a blog post…
       cta_location: link.getAttribute('data-cta') || 'unspecified',
       store: storeFor(link.href),
+      // Which topic-matched store page the visitor is being sent to — a post
+      // about slugs points every CTA on it at the pest page. BaseLayout stamps
+      // the key on <html>; pages without one are the default listing. Registered
+      // as the GA4 custom dimension `store_page`, so the same split exists on
+      // both sides of the store button.
+      store_page: document.documentElement.getAttribute('data-store-page') || 'default',
       page_path: window.location.pathname
     };
     for (var key in attribution) {

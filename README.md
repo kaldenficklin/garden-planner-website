@@ -159,9 +159,34 @@ pinImage: "/assets/blog/foo-pin.jpg" # 2:3 Pinterest image, title burned in
 pinTitle: "Shorter Pin Title"        # optional, when `title` is too long
 heroCrop: "south"                    # optional, see "Post images" below
 pinKeywords: ["fall vegetable garden", "organic pest control"]  # 3–5, see below
+ctaHook: "one sentence tying this post to the app"  # mid-article CTA, see above
+storePage: pests               # optional: pests | savings | beds | timing, see below
 draft: false                   # true keeps it out of the build
 ---
 ```
+
+### `storePage`: which store page the post sends readers to
+
+Both stores can show a different product page depending on the link that
+brought the visitor — Apple's **Custom Product Pages** (`?ppid=`) and Play's
+**custom store listings** (`&listing=`). The default listing leads with the
+frost-date calendar, which is the right first screen for a "when to plant"
+reader and the wrong one for a "what's eating my plants" reader. `storePage`
+picks the page every store link on the post resolves to: the mid-article CTA,
+the end-of-post CTA, the header button, the sticky bar and the footer links.
+
+| `storePage` | Post is about | Store page opens on |
+| --- | --- | --- |
+| `pests` | diagnosis — "what's eating my", "why is my X doing Y" | the pest guide |
+| `savings` | yield, savings, the glut, what to grow instead of buying | the harvest log and savings total |
+| `beds` | spacing, companion planting, rotation, raised-bed layout | the square-foot bed grid |
+| `timing` (or unset) | calendar posts and everything else | the default listing |
+
+The keys and their store ids live in `src/lib/store-urls.mjs` (`STORE_PAGES`).
+A key with no id yet resolves to the default listing, so posts can carry the
+field before the page exists in either console. The Android swap in
+`BaseLayout.astro` reads each link's `data-play-href`, which is how the Play
+listing follows the same choice.
 
 ## Post images
 
@@ -425,6 +450,37 @@ Limits worth knowing before reading the numbers:
 - The old code defaulted `ct` to `reddit` for any untagged visitor, which would
   have labelled Google searchers as Reddit. It never ran, because the token was
   empty.
+
+### Topic-matched store pages
+
+A post's `storePage` (see "Adding a blog post") puts `?ppid=<custom product
+page>` on its App Store links and `&listing=<custom listing>` on its Play links.
+The campaign parameters above are added on top — `URLSearchParams.set` keeps
+both — so a single click carries source, placement *and* page.
+
+- `app_store_click` carries a **`store_page`** param (`pests`, `savings`,
+  `beds`, or `default`), read from `data-store-page` on `<html>`. Registered as a
+  GA4 custom dimension on 12 Sep 2026; nothing before that date has it.
+- Apple reports each custom product page's impressions → page views → installs
+  under App Analytics → Acquisition, filtered by product page. Play reports
+  custom-listing acquisitions under Store performance. Neither needs the label.
+- The ids are filled in `src/lib/store-urls.mjs`. The Apple ones come from
+  `npm run cpp:sync` in the app repo; the Play names are chosen when the listing
+  is created in Play Console.
+
+### Smart App Banner
+
+Every page carries `<meta name="apple-itunes-app">`, so Safari on iPhone and
+iPad shows Apple's native "Get" / "Open" strip for the app above the page. Its
+`affiliate-data` carries the same provider token as the store links with the
+label `smart-banner-<storePage|default>`, so banner installs appear in App Store
+Connect → Campaigns under that label. Two limits:
+
+- The banner is native UI: GA4 never sees a tap on it. Only App Store Connect
+  does, and the 5-install threshold above applies.
+- There is no `app-argument` yet. It would let "Open" land on the tab matching
+  the post's store page, but the `gardenplanner://` scheme has not been tested
+  from outside the app; `BaseLayout.astro` says what to verify before adding it.
 
 ## Local development
 

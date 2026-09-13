@@ -11,6 +11,7 @@ pinEyebrow: "NIGHT FEEDER"
 pinHighlight: "OVERNIGHT"
 pinKeywords: ["slug control garden", "organic pest control", "fall vegetable garden", "growing lettuce", "garden pests"]
 ctaHook: "Working out which of four night feeders you are dealing with is exactly what a pest guide is for, rather than a search result written about a different continent and a different month."
+storePage: pests
 draft: true
 ---
 

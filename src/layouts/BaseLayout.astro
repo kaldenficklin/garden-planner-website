@@ -1,8 +1,14 @@
 ---
-import { APP_STORE, PLAY_STORE } from '../lib/stores';
+import { PLAY_STORE, storeUrl, type StorePage } from '../lib/stores';
 
 export interface Props {
   title: string;
+  /**
+   * Which store page this page's readers land on — the header button, the
+   * sticky bar and the footer links all resolve through src/lib/store-urls.mjs.
+   * Blog posts pass their frontmatter `storePage`; unset is the default listing.
+   */
+  storePage?: StorePage;
   /**
    * og:title / twitter:title, when the social headline should differ from the
    * <title>. Defaults to `title`.
@@ -62,13 +68,44 @@ const {
   ogLocale,
   navBase = '/',
   alternates = [],
+  storePage,
 } = Astro.props;
 
 const OG_LOCALES: Record<string, string> = { en: 'en_US', 'en-GB': 'en_GB', es: 'es_ES' };
 const resolvedOgLocale = ogLocale ?? OG_LOCALES[lang] ?? 'en_US';
+
+// The single-destination CTAs ship pointing at Apple; the inline script at the
+// foot of the page moves them to `data-play-href` on an Android UA.
+const IOS_URL = storeUrl('ios', storePage);
+const PLAY_URL = storeUrl('android', storePage);
+
+/*
+ * Smart App Banner — Safari on iPhone and iPad draws a native "Get"/"Open"
+ * strip above the page for the app named here, on every page that carries the
+ * tag. It is the one install prompt that needs no design and no JavaScript.
+ *
+ * `affiliate-data` carries the same provider token analytics.js puts on store
+ * links, so banner installs show in App Store Connect → Campaigns under their
+ * own label rather than vanishing into "Web Referrer". The label cannot know
+ * the traffic source (it is set at build time), which is why it is kept out
+ * of the `<source>-<placement>` family the click-through links use.
+ *
+ * No `app-argument` yet. It would let "Open" land on the tab matching this
+ * page's store page (`gardenplanner://calendar`, `://yield` — the tab routes in
+ * the app's `lib/deeplinks.ts`), but the scheme has only ever been driven by
+ * notification payloads, never by an external URL, and it has not been tested
+ * from outside the app. Add it once a Release build on the simulator has been
+ * shown to open those URLs on the right tab; until then "Open" goes to wherever
+ * the app last was, which is fine.
+ *
+ * The banner is native UI, so GA4 never sees a tap on it — only App Store
+ * Connect does.
+ */
+const bannerLabel = `smart-banner-${storePage ?? 'default'}`;
+const smartBanner = `app-id=1539031278, affiliate-data=pt=10675356&ct=${bannerLabel}`;
 ---
 <!DOCTYPE html>
-<html lang={lang}>
+<html lang={lang} data-store-page={storePage ?? 'default'}>
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -109,6 +146,7 @@ const resolvedOgLocale = ogLocale ?? OG_LOCALES[lang] ?? 'en_US';
 
   <link rel="icon" type="image/png" href="/assets/app-icon-v2.png" />
   <link rel="apple-touch-icon" href="/assets/app-icon-v2.png" />
+  <meta name="apple-itunes-app" content={smartBanner} />
 
   <link rel="alternate" type="application/rss+xml" title="Garden Planner Pro Blog" href="/blog/rss.xml" />
 
@@ -125,7 +163,7 @@ const resolvedOgLocale = ogLocale ?? OG_LOCALES[lang] ?? 'en_US';
        reaches anyone who has already visited. -->
   <link rel="stylesheet" href="/assets/blog.css?v=9" />
 
-  <script defer src="/assets/analytics.js?v=4" is:inline></script>
+  <script defer src="/assets/analytics.js?v=5" is:inline></script>
   <script defer src="/assets/site.js?v=2" is:inline></script>
   <slot name="head" />
 </head>
@@ -141,7 +179,7 @@ const resolvedOgLocale = ogLocale ?? OG_LOCALES[lang] ?? 'en_US';
         <a href={`${navBase}#savings`}>Savings</a>
         <a href="/blog">Blog</a>
         <a href={`${navBase}#faq`}>FAQ</a>
-        <a class="btn btn-sm" href={APP_STORE} data-store-link data-cta="header">
+        <a class="btn btn-sm" href={IOS_URL} data-play-href={PLAY_URL} data-store-link data-cta="header">
           <svg class="btn-icon btn-icon-ios" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" fill="currentColor"><path d="M16.365 1.43c0 1.14-.42 2.22-1.17 3.02-.9.96-2.37 1.7-3.63 1.6-.15-1.13.41-2.32 1.11-3.06.79-.83 2.2-1.46 3.36-1.5.02.31.02.62.02.94zM20.7 17.02c-.55 1.27-.82 1.84-1.53 2.96-.99 1.56-2.39 3.5-4.12 3.51-1.54.02-1.93-.99-4.02-.98-2.09.01-2.52.99-4.06.98-1.73-.01-3.05-1.76-4.04-3.32-2.77-4.36-3.06-9.48-1.35-12.2 1.21-1.94 3.13-3.07 4.93-3.07 1.84 0 2.99 1 4.51 1 1.47 0 2.37-1 4.5-1 1.61 0 3.32.87 4.54 2.38-3.99 2.18-3.34 7.86.11 9.74z"/></svg><svg class="btn-icon btn-icon-android" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" fill="currentColor"><path d="M3.6 1.8a1.5 1.5 0 0 0-.5 1.15v18.1c0 .46.18.87.5 1.15l.1.08L13.8 12.1v-.2L3.7 1.72l-.1.08zm13.55 13.68l-3.35-3.36v-.24l3.36-3.36.08.05 3.98 2.26c1.14.64 1.14 1.7 0 2.35l-3.98 2.26-.09.04zm.09-6.91L5.29 1.75C4.59 1.35 3.97 1.4 3.6 1.8L13.8 12l3.44-3.43zM13.8 12L3.6 22.2c.37.4.99.45 1.69.05l11.95-6.82L13.8 12z"/></svg>
           <span>Get the app</span>
         </a>
@@ -165,8 +203,8 @@ const resolvedOgLocale = ogLocale ?? OG_LOCALES[lang] ?? 'en_US';
         <a href="/about">About</a>
         <a href="/privacy">Privacy</a>
         <a href="/support">Support</a>
-        <a href={APP_STORE} data-cta="footer-link">App Store</a>
-        <a href={PLAY_STORE} data-cta="footer-link">Google Play</a>
+        <a href={IOS_URL} data-cta="footer-link">App Store</a>
+        <a href={PLAY_URL} data-cta="footer-link">Google Play</a>
       </nav>
       <p class="copyright">© <span id="year">2026</span> Garden Planner Pro. All rights reserved.</p>
     </div>
@@ -180,7 +218,7 @@ const resolvedOgLocale = ogLocale ?? OG_LOCALES[lang] ?? 'en_US';
         <strong>Garden Planner Pro</strong>
         <span>Free · iPhone, iPad &amp; Android</span>
       </span>
-      <a class="btn mobile-cta-btn" href={APP_STORE} data-store-link data-cta="sticky-bar">Get</a>
+      <a class="btn mobile-cta-btn" href={IOS_URL} data-play-href={PLAY_URL} data-store-link data-cta="sticky-bar">Get</a>
     </div>
   </div>
 
@@ -189,11 +227,13 @@ const resolvedOgLocale = ogLocale ?? OG_LOCALES[lang] ?? 'en_US';
     /* The single-destination CTAs ship pointing at Apple and move to Play only
        on an Android UA. Which store a click went to is not encoded in data-cta
        — analytics.js derives a `store` param from the href, so cta_location
-       stays one clean dimension (placement) and store is another. */
+       stays one clean dimension (placement) and store is another.
+       `data-play-href` is the Play URL for the page's store page (a custom
+       listing); a link without one goes to the plain listing. */
     if (/Android/i.test(navigator.userAgent)) {
       document.documentElement.classList.add('is-android');
       for (const a of document.querySelectorAll('[data-store-link]')) {
-        a.href = PLAY_STORE;
+        a.href = a.dataset.playHref || PLAY_STORE;
       }
     }
   </script>

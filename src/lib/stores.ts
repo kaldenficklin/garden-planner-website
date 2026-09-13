@@ -7,8 +7,11 @@
  * The values themselves live in ./store-urls.mjs so the rehype plugin that runs
  * inside the markdown pipeline can share them. Import from here in src/.
  */
-export { APP_STORE, PLAY_STORE } from './store-urls.mjs';
+export { APP_STORE, PLAY_STORE, STORE_PAGES, storeUrl } from './store-urls.mjs';
 import { APP_STORE, PLAY_STORE } from './store-urls.mjs';
 
 /** Both listings, for schema.org `sameAs`. */
 export const STORE_LINKS = [APP_STORE, PLAY_STORE];
+
+/** A topic-matched store page a post can send its readers to. */
+export type StorePage = 'timing' | 'pests' | 'savings' | 'beds';

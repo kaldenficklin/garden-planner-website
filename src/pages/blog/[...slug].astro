@@ -1,6 +1,6 @@
 ---
 import { render } from 'astro:content';
-import { APP_STORE } from '../../lib/stores';
+import { storeUrl } from '../../lib/stores';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import PostNav from '../../components/PostNav.astro';
 import RelatedPosts from '../../components/RelatedPosts.astro';
@@ -128,6 +128,7 @@ const crumbLd = {
   publishedTime={data.date.toISOString()}
   modifiedTime={(data.updated ?? data.date).toISOString()}
   articleTags={data.pinKeywords ?? data.tags}
+  storePage={data.storePage}
 >
   <script type="application/ld+json" slot="head" set:html={JSON.stringify(jsonLd)} />
   <script type="application/ld+json" slot="head" set:html={JSON.stringify(crumbLd)} />
@@ -228,7 +229,13 @@ const crumbLd = {
           Garden Planner Pro builds your planting calendar from your own local frost dates, lays
           out every bed square by square, and totals up what each harvest saved you.
         </p>
-        <a class="btn" href={APP_STORE} data-store-link data-cta="post-footer">Get the free app</a>
+        <a
+          class="btn"
+          href={storeUrl('ios', data.storePage)}
+          data-play-href={storeUrl('android', data.storePage)}
+          data-store-link
+          data-cta="post-footer"
+        >Get the free app</a>
         <p class="post-cta-foot">Free on iPhone, iPad and Android · 440+ plants · nine languages</p>
       </aside>
     </div>

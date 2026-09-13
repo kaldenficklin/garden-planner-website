@@ -42,7 +42,7 @@
  * attribute on as it goes — which fixes the existing ones and every future one
  * without anybody having to remember.
  */
-import { APP_STORE } from './store-urls.mjs';
+import { APP_STORE, storeUrl } from './store-urls.mjs';
 
 const DEFAULT_HOOK =
   'Garden Planner Pro works your sowing, planting and harvest dates out from ' +
@@ -59,7 +59,13 @@ const el = (tagName, properties, children = []) => ({
 });
 const text = (value) => ({ type: 'text', value });
 
-function ctaNode(hook) {
+/**
+ * `page` is the post's `storePage`. The href is the iOS URL for that page and
+ * `data-play-href` the Android one — BaseLayout's Android swap reads the latter
+ * instead of the plain Play URL, so a pest post lands on the pest listing on
+ * both stores.
+ */
+function ctaNode(hook, page) {
   return el('aside', { className: ['inline-cta'], 'data-inline-cta': '' }, [
     el('div', { className: ['inline-cta-body'] }, [
       el('p', { className: ['inline-cta-hook'] }, [text(hook)]),
@@ -67,7 +73,8 @@ function ctaNode(hook) {
         'a',
         {
           className: ['btn', 'inline-cta-btn'],
-          href: APP_STORE,
+          href: storeUrl('ios', page),
+          'data-play-href': storeUrl('android', page),
           'data-store-link': '',
           'data-cta': 'post-inline',
         },
@@ -104,28 +111,33 @@ function insertionPoint(children) {
  * Walks the whole tree rather than the top level: these links live inside
  * paragraphs and list items.
  */
-function tagStoreLinks(node) {
+function tagStoreLinks(node, page) {
   if (node.type === 'element' && node.tagName === 'a') {
     const href = node.properties?.href;
     // Literal attribute keys, as in ctaNode above — the camelCase hast forms do
     // not survive serialisation here.
     if (href === APP_STORE && !('data-store-link' in node.properties)) {
+      // A prose link is written to the plain listing; move it to the post's
+      // store page like every other CTA on the page.
+      node.properties.href = storeUrl('ios', page);
+      node.properties['data-play-href'] = storeUrl('android', page);
       node.properties['data-store-link'] = '';
       // Without a data-cta these would report as 'unspecified' and blur into
       // every other untagged link in the numbers.
       node.properties['data-cta'] = node.properties['data-cta'] || 'post-body';
     }
   }
-  for (const child of node.children ?? []) tagStoreLinks(child);
+  for (const child of node.children ?? []) tagStoreLinks(child, page);
 }
 
 export function rehypeAppCta() {
   return (tree, file) => {
     const frontmatter = file?.data?.astro?.frontmatter ?? {};
+    const page = frontmatter.storePage;
 
     // Runs for infographics too — they are short, but a prose store link in one
     // is just as broken on Android as anywhere else.
-    tagStoreLinks(tree);
+    tagStoreLinks(tree, page);
 
     if (frontmatter.type === 'infographic') return;
 
@@ -135,7 +147,7 @@ export function rehypeAppCta() {
     const blocks = children.filter((n) => n.type === 'element').length;
     if (blocks < 4) return;
 
-    children.splice(insertionPoint(children), 0, ctaNode(frontmatter.ctaHook || DEFAULT_HOOK));
+    children.splice(insertionPoint(children), 0, ctaNode(frontmatter.ctaHook || DEFAULT_HOOK, page));
   };
 }
 

@@ -11,6 +11,7 @@ pinEyebrow: "BED PLANNING"
 pinHighlight: "4x8 BED"
 pinKeywords: ["raised bed garden layout", "square foot gardening", "vegetable garden spacing", "4x8 raised bed", "vegetable garden planning"]
 ctaHook: "Laying a bed out square by square before anything is bought is a lot cheaper than discovering the spacing problem in June, which is why the app draws the bed as a grid rather than a list."
+storePage: beds
 draft: true
 ---
 
