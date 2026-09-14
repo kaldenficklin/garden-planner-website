@@ -12,7 +12,7 @@ pinHighlight: "OVERNIGHT"
 pinKeywords: ["slug control garden", "organic pest control", "fall vegetable garden", "growing lettuce", "garden pests"]
 ctaHook: "Working out which of four night feeders you are dealing with is exactly what a pest guide is for, rather than a search result written about a different continent and a different month."
 storePage: pests
-draft: true
+draft: false
 ---
 
 You set out a tray of lettuce plugs on Saturday. By Wednesday morning four of them are green stumps and the rest have holes in them you could post a letter through. So you do the sensible thing and turn every leaf over looking for the caterpillar.
