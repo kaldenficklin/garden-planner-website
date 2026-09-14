@@ -147,6 +147,22 @@ const smartBanner = `app-id=1539031278, affiliate-data=pt=10675356&ct=${bannerLa
   <link rel="icon" type="image/png" href="/assets/app-icon-v2.png" />
   <link rel="apple-touch-icon" href="/assets/app-icon-v2.png" />
   <meta name="apple-itunes-app" content={smartBanner} />
+  <!-- The page cannot ask whether the Smart App Banner is showing, so this
+       guesses from the UA: Safari proper on iPhone/iPad (iPadOS reports as a
+       Mac with touch). Chrome, Firefox, Edge etc. on iOS and in-app webviews
+       never draw the banner — webviews lack the `Safari/` token, the others
+       are excluded by name. `has-smart-banner` hides the header's own "Get the
+       app" so the two don't stack; it runs in <head> so there is no flash.
+       Private tabs and a banner the reader closed also lose the header button,
+       but the sticky bar and in-article CTAs still carry the install link. -->
+  <script is:inline>
+    (function () {
+      var ua = navigator.userAgent;
+      var ios = /iPhone|iPad|iPod/.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1);
+      var safari = /Safari\//.test(ua) && !/CriOS|FxiOS|EdgiOS|OPiOS|GSA\/|DuckDuckGo|YaBrowser|FBAN|FBAV|Instagram|Pinterest|Line\/|Twitter|LinkedInApp|Snapchat/.test(ua);
+      if (ios && safari) document.documentElement.classList.add('has-smart-banner');
+    })();
+  </script>
 
   <link rel="alternate" type="application/rss+xml" title="Garden Planner Pro Blog" href="/blog/rss.xml" />
 
@@ -157,7 +173,7 @@ const smartBanner = `app-id=1539031278, affiliate-data=pt=10675356&ct=${bannerLa
        stylesheet already carries display=swap, so text is visible throughout. -->
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
   <noscript><link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" /></noscript>
-  <link rel="stylesheet" href="/assets/style.css?v=5" />
+  <link rel="stylesheet" href="/assets/style.css?v=6" />
   <!-- Bump ?v= on every edit to these files. /assets/* is served immutable for
        a year, so a changed stylesheet under an unchanged query string never
        reaches anyone who has already visited. -->

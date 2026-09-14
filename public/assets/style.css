@@ -168,6 +168,11 @@ p{margin:0}
   white-space:nowrap;
 }
 .btn-sm .btn-icon{flex:none}
+/* Safari on iOS already draws the native Smart App Banner above the page (see
+   BaseLayout), so a second install button right under it is redundant. */
+.has-smart-banner .site-header .nav .btn{display:none}
+/* The brand name only drops out under 400px to make room for that button. */
+.has-smart-banner .brand-name{display:inline}
 .btn-icon-android{display:none}
 .is-android .btn-icon-ios{display:none}
 .is-android .btn-icon-android{display:inline-block}
