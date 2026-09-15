@@ -11,7 +11,7 @@ pinEyebrow: "PLAN NOW"
 pinHighlight: "JANUARY"
 pinKeywords: ["seed starting indoors", "when to start seeds", "vegetable garden planning", "growing onions from seed", "winter garden planning"]
 ctaHook: "Every date in this post is really a subtraction from your own last frost, which is the sum the app does for you rather than making you keep a spreadsheet of it."
-draft: true
+draft: false
 ---
 
 I am writing this in the middle of September with the squash still coming in, which is a strange time to be thinking about January. It is also the only useful time. The catalogs land around the second week of December, everything sells out of the good onion varieties by the end of that month, and if you have not worked out what you actually need before you sit down with them, you order by picture.
