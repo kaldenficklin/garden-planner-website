@@ -12,7 +12,7 @@ pinHighlight: "4x8 BED"
 pinKeywords: ["raised bed garden layout", "square foot gardening", "vegetable garden spacing", "4x8 raised bed", "vegetable garden planning"]
 ctaHook: "Laying a bed out square by square before anything is bought is a lot cheaper than discovering the spacing problem in June, which is why the app draws the bed as a grid rather than a list."
 storePage: beds
-draft: true
+draft: false
 ---
 
 A four by eight foot bed is thirty-two square feet, and thirty-two square feet in early spring looks like a farm. It is bare, it is level, the soil is dark, and you have a seed order in front of you. That is the exact moment the bed gets oversold.
@@ -29,7 +29,7 @@ These assume a bed you can reach into from both long sides, so no path inside it
 | Carrots (thinned) | 3 in | about 500 |
 | Beets | 4 in | about 290 |
 | Bush beans | 4 in | about 290 |
-| Onions | 4 to 6 in | 140 to 290 |
+| Onions | 4 to 6 in | 130 to 290 |
 | Garlic | 6 in | about 130 |
 | Spinach | 6 in | about 130 |
 | Leaf lettuce | 6 in | about 130 |
