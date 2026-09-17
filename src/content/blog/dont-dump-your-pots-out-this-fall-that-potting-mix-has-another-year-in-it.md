@@ -11,7 +11,7 @@ pinEyebrow: "SAVE THE SOIL"
 pinHighlight: "DON'T DUMP"
 pinKeywords: ["container gardening tips", "reuse potting soil", "balcony vegetable garden", "small space gardening", "fall garden jobs"]
 ctaHook: "The only hard rule here is not reusing mix from a pot that had a root disease, which means the useful thing to have in April is a note about what was in each pot and how it did."
-draft: true
+draft: false
 ---
 
 Every autumn the same thing happens on balconies and back steps: the tomato comes out, the pot gets tipped onto the compost heap or into a bag for the tip, and in April three new bags of potting mix get carried up the stairs. If you grow in containers, that mix is one of the more expensive things you buy all year, and most of what gets thrown out was fine.
