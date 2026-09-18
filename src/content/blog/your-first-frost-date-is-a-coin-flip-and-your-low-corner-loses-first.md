@@ -4,14 +4,14 @@ description: "An average first frost date means roughly half of years are earlie
 date: 2026-09-18
 tags: ["frost-dates", "fall-garden", "planning"]
 image: "/assets/blog/your-first-frost-date-is-a-coin-flip-and-your-low-corner-loses-first-hero.jpg"
-imageAlt: "A colored pencil drawing of a sloping back garden at dawn, kale and lettuce in the low bed behind a timber fence rimed white with frost while the beds up the slope by the brick house wall stay green, a thermometer on a stake at plant height"
+imageAlt: "A colored pencil drawing of a raised vegetable bed with kale and lettuce, a min-max thermometer on a stake at plant height among the leaves, and a second bed stepping up behind it."
 pinImage: "/assets/blog/your-first-frost-date-is-a-coin-flip-and-your-low-corner-loses-first-pin.jpg"
 pinTitle: "Your Frost Date Is a Coin Flip"
 pinEyebrow: "FROST TIMING"
 pinHighlight: "COIN FLIP"
 pinKeywords: ["first frost date", "frost protection garden", "fall vegetable garden", "protecting plants from frost", "garden planning"]
 ctaHook: "A frost date is worth having as the day you start watching the sky rather than the day you act, which is roughly how the app uses it: one date that pushes every other date in the season around."
-draft: true
+draft: false
 ---
 
 Somebody will tell you your first frost is around the middle of October, and you will write it on the calendar, and you will treat it the way you treat a train time. It is not that kind of number.
