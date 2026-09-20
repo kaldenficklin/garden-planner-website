@@ -13712,6 +13712,1867 @@
         "slug": "frost-calendar",
         "subject": "a wall calendar page with a frost crystal drawn on one of the dates"
       }
+    },
+    {
+      "key": "make-leaf-mold",
+      "category": "soil",
+      "tags": [
+        "soil",
+        "compost",
+        "fall garden",
+        "infographics"
+      ],
+      "pinBoard": "Raised Bed Gardening",
+      "pinKeywords": [
+        "leaf mold",
+        "how to use fall leaves",
+        "free soil improver",
+        "fall garden jobs"
+      ],
+      "en": {
+        "slug": "how-to-make-leaf-mold",
+        "title": "How to Make Leaf Mold: A Beginner's Guide in 8 Steps",
+        "eyebrow": "Beginner-friendly guide",
+        "chartTitle": "How to make leaf mold",
+        "description": "Eight steps to turning a pile of fallen leaves into the best free soil improver there is, and why it is not the same thing as compost.",
+        "pinDescription": "How to make leaf mold from fallen leaves: shred them first, wet them right through, pack them into a cage or a punctured bag, and then leave them alone for a year. Free, and better than anything you can buy for holding water in a bed.",
+        "cta": "Plan your beds in Garden Planner Pro",
+        "proTip": {
+          "label": "Pro tip",
+          "text": "If you only change one thing, run the mower over the leaves before you bag them. Shredded leaves rot in about a year, whole ones can take two or three."
+        },
+        "steps": [
+          {
+            "label": "Gather Fallen Leaves",
+            "bullets": [
+              "Any tree but black walnut",
+              "Rake them up while dry"
+            ]
+          },
+          {
+            "label": "Shred Them First",
+            "bullets": [
+              "Mow over the pile twice",
+              "Halves the waiting time"
+            ]
+          },
+          {
+            "label": "Wet Them Right Through",
+            "bullets": [
+              "Dry leaves never rot",
+              "Soak as you fill"
+            ]
+          },
+          {
+            "label": "Bag Or Cage Them",
+            "bullets": [
+              "Wire cage or punctured sack",
+              "Air still has to reach in"
+            ]
+          },
+          {
+            "label": "Keep Them Separate",
+            "bullets": [
+              "This is fungal, not hot",
+              "Compost works differently"
+            ]
+          },
+          {
+            "label": "Then Leave It Alone",
+            "bullets": [
+              "About a year for shredded",
+              "No turning needed"
+            ]
+          },
+          {
+            "label": "Check It Is Damp",
+            "bullets": [
+              "Squeeze a handful each spring",
+              "Add water if it crumbles dry"
+            ]
+          },
+          {
+            "label": "Use It Everywhere",
+            "bullets": [
+              "Mulch, potting mix, bed topping",
+              "Holds water like nothing else"
+            ]
+          }
+        ],
+        "article": {
+          "intro": "Leaf mold is the one soil improver that costs nothing, takes almost no work, and is better at the job than most of what you can buy. The catch is patience.\n\nIt is also not compost, and treating it like compost is why people give up on it.",
+          "sections": [
+            {
+              "heading": "Why it is a different process from the compost heap",
+              "body": "A compost heap is bacterial and hot. You feed it a mix of green and brown material, it heats up, and in a few months you have something dark and crumbly full of nutrients.\n\nLeaves do not do that. They are almost all carbon, so a pile of them will not heat up no matter how you stack it, and the thing that breaks them down is fungal rather than bacterial. Fungal decay is cold and slow and needs nothing from you but time and moisture.\n\nSo do not try to speed it up with nitrogen feeds or turn it every fortnight. Both are compost habits and neither helps here. Leaves in a heap of their own, wet, left alone, will get there on their own schedule.\n\nThe result is also different. Leaf mold is low in nutrients and will not feed a hungry crop. What it does, better than compost and far better than peat, is hold water and open up structure. A bed topped with it dries out noticeably slower in July."
+            },
+            {
+              "heading": "The two things that actually decide how fast it goes",
+              "body": "Shredding and water. Nothing else is close.\n\nWhole leaves mat together into wet sheets that air cannot get through, and a pile of them can sit for two or three years. Run a mower over the pile a couple of times before you collect it and you roughly halve that, because you have multiplied the number of torn edges the fungi can start from. Ten minutes of mowing buys you a year.\n\nWater is the other one, and the failure is always the same: a bag of dry leaves stays a bag of dry leaves indefinitely. Wet them as you fill the bag or cage, not afterwards, because once a mass of leaves is packed in it sheds water off the top rather than soaking through.\n\nWhich leaves you use matters less than people think. Oak, beech and sweet chestnut are tougher and slower because they are high in tannins, but they still get there. The one to leave out is black walnut, whose leaves carry juglone."
+            },
+            {
+              "heading": "Where to put it while it waits",
+              "body": "The cheapest container is four posts and a square of chicken wire, open to the rain. The easiest is a black plastic sack with a dozen holes stabbed in it with a fork, tied loosely and shoved behind the shed.\n\nEither works. The holes matter in the bag version, because a sealed airless bag goes slimy and sour rather than crumbly. Leave the top loose.\n\nThen do nothing for a year. Have a look the following autumn: shredded leaves should have gone dark, lost most of their leaf shape, and smell like a woodland floor. If they are still recognisable, wet them and give them another six months. Nothing is wrong."
+            },
+            {
+              "heading": "What to do with it once it is ready",
+              "body": "Half-rotted leaf mold, still a bit leafy, is an excellent mulch. Spread it two or three inches deep over beds in autumn and let the worms take it down.\n\nFully rotted, crumbly leaf mold is worth saving for seed sowing. Mixed about half and half with garden compost and a little grit it makes a good seed-starting mix, and it is the reason to keep a bag going every year rather than only when you remember.\n\nThe one place not to use it is as a feed. Something hungry in the middle of summer wants compost or a liquid feed, not leaf mold. Use it for what it is good at, which is holding water in a bed that would otherwise bake."
+            }
+          ]
+        }
+      },
+      "es": {
+        "slug": "como-hacer-mantillo-de-hojas",
+        "title": "Cómo Hacer Mantillo de Hojas: Guía para Principiantes en 8 Pasos",
+        "eyebrow": "Guía para principiantes",
+        "chartTitle": "Cómo hacer mantillo de hojas",
+        "description": "Ocho pasos para convertir un montón de hojas caídas en el mejor mejorador de suelo gratuito que existe, y por qué no es lo mismo que el compost.",
+        "pinDescription": "Cómo hacer mantillo de hojas con las hojas caídas: tritúralas primero, mójalas bien, mételas en una jaula de alambre o en un saco agujereado y déjalas en paz un año. Gratis, y mejor que nada que puedas comprar para retener agua en un bancal.",
+        "cta": "Planifica tus bancales en Garden Planner Pro",
+        "proTip": {
+          "label": "Consejo",
+          "text": "Si solo cambias una cosa, pasa el cortacésped por encima de las hojas antes de embolsarlas. Trituradas tardan cerca de un año; enteras pueden tardar dos o tres."
+        },
+        "steps": [
+          {
+            "label": "Recoge Hojas Caídas",
+            "bullets": [
+              "Cualquier árbol menos el nogal negro",
+              "Rastrilla en seco"
+            ]
+          },
+          {
+            "label": "Tritúralas Primero",
+            "bullets": [
+              "Pasa el cortacésped dos veces",
+              "Reduce a la mitad la espera"
+            ]
+          },
+          {
+            "label": "Mójalas Bien",
+            "bullets": [
+              "Las hojas secas no se pudren",
+              "Moja mientras llenas"
+            ]
+          },
+          {
+            "label": "Saco O Jaula",
+            "bullets": [
+              "Alambre o saco agujereado",
+              "El aire tiene que entrar"
+            ]
+          },
+          {
+            "label": "Aparte Del Compost",
+            "bullets": [
+              "Esto es hongos, no calor",
+              "El compost funciona de otra forma"
+            ]
+          },
+          {
+            "label": "Y Déjalo Estar",
+            "bullets": [
+              "Un año si está triturado",
+              "No hace falta voltear"
+            ]
+          },
+          {
+            "label": "Comprueba La Humedad",
+            "bullets": [
+              "Aprieta un puñado cada primavera",
+              "Riega si se desmenuza seco"
+            ]
+          },
+          {
+            "label": "Úsalo En Todo",
+            "bullets": [
+              "Acolchado, sustrato, cobertura",
+              "Retiene agua como nada"
+            ]
+          }
+        ],
+        "article": {
+          "intro": "El mantillo de hojas es el único mejorador de suelo que no cuesta nada, apenas da trabajo y hace su trabajo mejor que casi todo lo que puedes comprar. El precio es la paciencia.\n\nTampoco es compost, y tratarlo como si lo fuera es la razón por la que mucha gente lo abandona.",
+          "sections": [
+            {
+              "heading": "Por qué es un proceso distinto al del compostador",
+              "body": "Un montón de compost es bacteriano y caliente. Le das una mezcla de material verde y marrón, se calienta, y en unos meses tienes algo oscuro y desmenuzable lleno de nutrientes.\n\nLas hojas no hacen eso. Son carbono casi puro, así que un montón de hojas no se va a calentar por mucho que lo apiles, y lo que las descompone son hongos y no bacterias. La descomposición fúngica es fría y lenta y no necesita nada de ti salvo tiempo y humedad.\n\nAsí que no intentes acelerarlo con aportes de nitrógeno ni voltearlo cada quince días. Las dos cosas son costumbres del compost y ninguna ayuda aquí. Las hojas en un montón propio, húmedas y en paz, llegarán solas.\n\nEl resultado también es distinto. El mantillo de hojas tiene pocos nutrientes y no va a alimentar a un cultivo exigente. Lo que hace, mejor que el compost y mucho mejor que la turba, es retener agua y abrir la estructura. Un bancal cubierto con él se seca bastante más despacio en julio."
+            },
+            {
+              "heading": "Las dos cosas que deciden la velocidad",
+              "body": "Triturar y mojar. Nada más se le acerca.\n\nLas hojas enteras se apelmazan en láminas húmedas por las que no pasa el aire, y un montón así puede quedarse dos o tres años. Pasa el cortacésped un par de veces antes de recogerlas y reduces eso casi a la mitad, porque has multiplicado los bordes rotos por donde los hongos pueden empezar. Diez minutos de cortacésped te ahorran un año.\n\nEl agua es la otra, y el fallo siempre es el mismo: un saco de hojas secas sigue siendo un saco de hojas secas indefinidamente. Mójalas mientras llenas el saco o la jaula, no después, porque una vez compactadas el agua resbala por encima en vez de calar.\n\nQué hojas uses importa menos de lo que se cree. El roble, el haya y el castaño son más duros y lentos por su contenido en taninos, pero también llegan. La que hay que dejar fuera es la del nogal negro, que lleva juglona."
+            },
+            {
+              "heading": "Dónde ponerlo mientras espera",
+              "body": "El recipiente más barato son cuatro postes y un cuadrado de malla de gallinero, abierto a la lluvia. El más fácil es un saco de plástico negro con una docena de agujeros hechos con una horca, atado flojo y arrinconado detrás del cobertizo.\n\nLos dos valen. Los agujeros importan en la versión del saco, porque un saco cerrado y sin aire acaba baboso y ácido en vez de desmenuzable. Deja la boca floja.\n\nY luego no hagas nada durante un año. Échale un vistazo al otoño siguiente: las hojas trituradas deberían haberse oscurecido, haber perdido casi toda su forma y oler a suelo de bosque. Si todavía se reconocen, mójalas y dales seis meses más. No pasa nada."
+            },
+            {
+              "heading": "Qué hacer con él cuando está listo",
+              "body": "El mantillo a medio hacer, todavía con aspecto de hoja, es un acolchado excelente. Extiéndelo cinco o siete centímetros sobre los bancales en otoño y deja que las lombrices se lo lleven hacia abajo.\n\nEl mantillo ya deshecho y desmenuzable merece guardarse para semilleros. Mezclado a partes iguales con compost de jardín y un poco de arena gruesa da un buen sustrato de siembra, y esa es la razón para tener un saco en marcha todos los años y no solo cuando te acuerdas.\n\nEl único sitio donde no usarlo es como abono. Una planta hambrienta en pleno verano quiere compost o un fertilizante líquido, no mantillo de hojas. Úsalo para lo que es bueno, que es retener agua en un bancal que si no se cocería."
+            }
+          ]
+        }
+      },
+      "icons": [
+        {
+          "slug": "dry-brown-leaves"
+        },
+        {
+          "slug": "shredding-leaves-mower",
+          "subject": "a lawn mower on grass with a scatter of shredded brown autumn leaves behind it"
+        },
+        {
+          "slug": "watering-can-sprinkle"
+        },
+        {
+          "slug": "leaf-sack-punched",
+          "subject": "a black plastic sack filled with brown leaves with fork holes punched in the side, standing against a fence"
+        },
+        {
+          "slug": "wire-leaf-cage",
+          "subject": "a square cage of chicken wire on four posts filled with brown autumn leaves"
+        },
+        {
+          "slug": "clock-hours"
+        },
+        {
+          "slug": "squeezing-damp-compost"
+        },
+        {
+          "slug": "mulched-bed-surface"
+        }
+      ],
+      "proTipIcon": {
+        "slug": "finished-compost-crumb"
+      }
+    },
+    {
+      "key": "build-a-cold-frame",
+      "category": "seeds",
+      "tags": [
+        "season extension",
+        "frost",
+        "planning",
+        "infographics"
+      ],
+      "pinBoard": "Seed Starting & Frost Dates",
+      "pinKeywords": [
+        "cold frame",
+        "season extension",
+        "winter vegetable garden",
+        "diy garden projects"
+      ],
+      "en": {
+        "slug": "how-to-build-a-cold-frame",
+        "title": "How to Build a Cold Frame: A Beginner's Guide in 8 Steps",
+        "eyebrow": "Beginner-friendly guide",
+        "chartTitle": "How to build a cold frame",
+        "description": "Eight steps to a box with a clear lid that carries salad through winter and hardens off seedlings in spring, built from whatever you have.",
+        "pinDescription": "How to build a cold frame: face the lid south, slope it so rain runs off and low winter sun gets in, sit it on bare soil rather than paving, and vent it on every mild day. The cheapest way to add weeks to both ends of the growing year.",
+        "cta": "Check your frost dates in Garden Planner Pro",
+        "proTip": {
+          "label": "Pro tip",
+          "text": "More cold frame plants are lost to cooking than to freezing. A closed frame in February sun gets hot enough to wilt lettuce by mid morning, so prop the lid whenever the day is mild."
+        },
+        "steps": [
+          {
+            "label": "Find A Sunny Wall",
+            "bullets": [
+              "South-facing and sheltered",
+              "A wall gives back heat at night"
+            ]
+          },
+          {
+            "label": "Sit It On Soil",
+            "bullets": [
+              "Bare ground stores warmth",
+              "Paving stays cold all night"
+            ]
+          },
+          {
+            "label": "Build The Box",
+            "bullets": [
+              "Untreated timber or old bricks",
+              "Higher at the back"
+            ]
+          },
+          {
+            "label": "Slope The Lid",
+            "bullets": [
+              "Rain runs off, low sun gets in",
+              "About one hand of drop"
+            ]
+          },
+          {
+            "label": "Use A Clear Lid",
+            "bullets": [
+              "Old window or twinwall sheet",
+              "Hinge it at the back"
+            ]
+          },
+          {
+            "label": "Seal The Gaps",
+            "bullets": [
+              "Draughts do the damage",
+              "Pack soil round the base"
+            ]
+          },
+          {
+            "label": "Vent On Mild Days",
+            "bullets": [
+              "Prop the lid by mid morning",
+              "Closed frames cook plants"
+            ]
+          },
+          {
+            "label": "Shut Before Dusk",
+            "bullets": [
+              "Traps the days warmth",
+              "Add fleece on hard nights"
+            ]
+          }
+        ],
+        "article": {
+          "intro": "A cold frame is a box with a clear lid, and that is genuinely all it is. No heat, no power, no glazing skills.\n\nWhat it buys you is a few weeks at each end of the year and somewhere to harden seedlings off without carrying trays in and out every evening.",
+          "sections": [
+            {
+              "heading": "Where it goes matters more than what it is made of",
+              "body": "Put it against a south-facing wall if you have one. A wall absorbs sun all day and releases it slowly overnight, and a frame tucked against one runs measurably warmer than the same frame in the open.\n\nSit it on bare soil rather than on a patio. Soil is the frame's storage heater: it takes in warmth through the day and gives it back after dark, which is the whole mechanism by which an unheated box keeps plants alive. A frame on paving loses most of that.\n\nSomewhere sheltered from the prevailing wind, too. Wind strips heat off the lid faster than anything else, and it is what lifts an unlatched lid off in February and breaks it.\n\nThe box itself can be old scaffold boards, reclaimed bricks, or a stack of straw bales with a window on top. None of it is precious. Skip pressure-treated timber for anything you grow food in if it is the older kind, and use untreated softwood or cedar instead."
+            },
+            {
+              "heading": "The lid is the only part with rules",
+              "body": "It has to be clear, it has to slope, and it has to be easy to open one-handed.\n\nClear so light gets through: an old single-glazed window, a sheet of twinwall polycarbonate, or a timber frame with heavy clear plastic stapled to it. Polycarbonate is lighter and will not shatter, which matters if the frame is where a child walks past.\n\nSloping so rain and snow run off rather than pooling, and so that the low winter sun, which comes in at a shallow angle, strikes the glazing closer to square. Build the back of the box a hand's width higher than the front and the lid takes care of both at once. Face the low side toward the midday sun.\n\nHinge it at the back so it opens like a lid rather than lifting off, and fit something to prop it at two or three heights. You will be opening and shutting it most days, and any frame that is awkward to vent ends up never vented."
+            },
+            {
+              "heading": "Using it through the year",
+              "body": "From autumn it holds winter salads, corn salad, spinach, winter lettuce and hardy herbs, all cropping slowly through the cold months. In late winter it becomes the place seed trays go to get used to real weather before planting out. By late spring it can simply have the lid taken off and grow something.\n\nThe daily job is venting. On any mild sunny day, prop the lid open in the morning and close it in the late afternoon while there is still warmth to trap. The temperature inside a shut frame on a bright February day climbs far higher than the air outside, and a tray of seedlings wilts in an hour.\n\nOn a hard frost night, throw an old blanket or a sheet of fleece over the closed lid. It is a box, not a greenhouse, and on the coldest nights it needs the help."
+            },
+            {
+              "heading": "What it will not do",
+              "body": "A cold frame does not make a frost-free space. Everything in it still goes below freezing on a cold night, and tender plants will still die. What it does is take the edge off, keep rain and wind off the foliage, and raise the soil temperature enough that hardy crops keep growing slowly instead of stopping.\n\nSo stock it with things that were going to survive anyway and want a better winter, rather than with things that need rescuing. The list of what genuinely overwinters in an unheated frame is short and worth learning by trying it for a year."
+            }
+          ]
+        }
+      },
+      "es": {
+        "slug": "como-construir-una-cama-fria",
+        "title": "Cómo Construir una Cama Fría: Guía para Principiantes en 8 Pasos",
+        "eyebrow": "Guía para principiantes",
+        "chartTitle": "Cómo construir una cama fría",
+        "description": "Ocho pasos para una caja con tapa transparente que mantiene ensaladas todo el invierno y aclimata plántulas en primavera, hecha con lo que tengas.",
+        "pinDescription": "Cómo construir una cama fría: orienta la tapa al sur, dale inclinación para que escurra el agua y entre el sol bajo del invierno, apóyala sobre tierra y no sobre losa, y ventílala todos los días templados. La forma más barata de ganar semanas por los dos extremos del año.",
+        "cta": "Consulta tus fechas de helada en Garden Planner Pro",
+        "proTip": {
+          "label": "Consejo",
+          "text": "En una cama fría se pierden más plantas cocidas que heladas. Con el sol de febrero y la tapa cerrada, dentro hace calor suficiente para marchitar una lechuga a media mañana, así que calza la tapa siempre que el día sea suave."
+        },
+        "steps": [
+          {
+            "label": "Busca Un Muro Soleado",
+            "bullets": [
+              "Orientado al sur y resguardado",
+              "El muro devuelve calor de noche"
+            ]
+          },
+          {
+            "label": "Apóyala En Tierra",
+            "bullets": [
+              "El suelo desnudo guarda calor",
+              "La losa se queda fría"
+            ]
+          },
+          {
+            "label": "Monta La Caja",
+            "bullets": [
+              "Madera sin tratar o ladrillo viejo",
+              "Más alta por detrás"
+            ]
+          },
+          {
+            "label": "Inclina La Tapa",
+            "bullets": [
+              "Escurre el agua y entra el sol",
+              "Un palmo de desnivel"
+            ]
+          },
+          {
+            "label": "Tapa Transparente",
+            "bullets": [
+              "Ventana vieja o policarbonato",
+              "Con bisagra detrás"
+            ]
+          },
+          {
+            "label": "Sella Las Rendijas",
+            "bullets": [
+              "Las corrientes son lo que mata",
+              "Calza tierra en la base"
+            ]
+          },
+          {
+            "label": "Ventila Si Hace Sol",
+            "bullets": [
+              "Abre a media mañana",
+              "Cerrada cuece las plantas"
+            ]
+          },
+          {
+            "label": "Cierra Antes Del Anochecer",
+            "bullets": [
+              "Atrapa el calor del día",
+              "Manta encima si hiela fuerte"
+            ]
+          }
+        ],
+        "article": {
+          "intro": "Una cama fría es una caja con la tapa transparente, y de verdad no es nada más. Sin calefacción, sin electricidad, sin saber montar cristales.\n\nLo que te da son unas semanas por cada extremo del año y un sitio donde aclimatar plántulas sin entrar y sacar bandejas cada tarde.",
+          "sections": [
+            {
+              "heading": "Dónde va importa más que de qué está hecha",
+              "body": "Ponla contra un muro orientado al sur si lo tienes. Un muro absorbe sol todo el día y lo suelta despacio por la noche, y una cama arrimada a uno funciona bastante más cálida que la misma en campo abierto.\n\nApóyala sobre tierra desnuda y no sobre un patio. La tierra es el acumulador de la cama: recoge calor durante el día y lo devuelve al anochecer, que es todo el mecanismo por el que una caja sin calefacción mantiene vivas a las plantas. Sobre losa se pierde casi todo eso.\n\nY en un sitio resguardado del viento dominante. El viento roba calor de la tapa más deprisa que ninguna otra cosa, y es lo que levanta una tapa sin pestillo en febrero y la rompe.\n\nLa caja puede ser de tablones viejos, ladrillo recuperado o una pila de balas de paja con una ventana encima. Nada de esto es delicado. Evita la madera tratada a presión de la antigua para cultivar alimento y usa madera blanda sin tratar o cedro."
+            },
+            {
+              "heading": "La tapa es la única parte con reglas",
+              "body": "Tiene que ser transparente, tiene que estar inclinada y tiene que abrirse con una mano.\n\nTransparente para que pase la luz: una ventana vieja de vidrio simple, una placa de policarbonato celular o un bastidor de madera con plástico grueso grapado. El policarbonato pesa menos y no estalla, lo que importa si la cama está donde pasa un niño.\n\nInclinada para que el agua y la nieve escurran en vez de encharcarse, y para que el sol bajo del invierno, que llega muy rasante, incida sobre la tapa más de frente. Haz la parte de atrás un palmo más alta que la de delante y la tapa resuelve las dos cosas a la vez. El lado bajo mira al sol del mediodía.\n\nCon bisagra detrás para que se abra como una tapa en vez de levantarse entera, y con algo para calzarla a dos o tres alturas. La vas a abrir y cerrar casi todos los días, y una cama incómoda de ventilar acaba sin ventilarse nunca."
+            },
+            {
+              "heading": "Cómo se usa a lo largo del año",
+              "body": "Desde el otoño aloja ensaladas de invierno, canónigos, espinaca, lechuga de invierno y hierbas rústicas, todo produciendo despacio durante los meses fríos. A final del invierno pasa a ser el sitio donde las bandejas de semillero se acostumbran al tiempo real antes de trasplantar. Ya en primavera avanzada se le puede quitar la tapa y cultivar algo dentro sin más.\n\nLa tarea diaria es ventilar. Cualquier día suave y soleado, calza la tapa por la mañana y ciérrala a media tarde, cuando todavía queda calor que atrapar. La temperatura dentro de una cama cerrada un día claro de febrero sube muchísimo por encima de la de fuera, y una bandeja de plántulas se marchita en una hora.\n\nEn una noche de helada fuerte, echa una manta vieja o una tela de protección sobre la tapa cerrada. Es una caja, no un invernadero, y las noches más frías necesita ayuda."
+            },
+            {
+              "heading": "Lo que no va a hacer",
+              "body": "Una cama fría no crea un espacio libre de heladas. Todo lo que hay dentro baja de cero en una noche fría, y las plantas tiernas se siguen muriendo. Lo que hace es quitar filo al frío, mantener la lluvia y el viento fuera del follaje y subir la temperatura del suelo lo bastante para que los cultivos rústicos sigan creciendo despacio en vez de pararse.\n\nAsí que llénala de cosas que iban a sobrevivir de todos modos y quieren un invierno mejor, no de cosas que necesitan rescate. La lista de lo que aguanta de verdad en una cama sin calefacción es corta y merece la pena aprenderla probando un año."
+            }
+          ]
+        }
+      },
+      "icons": [
+        {
+          "slug": "sunny-wall-pot"
+        },
+        {
+          "slug": "level-ground"
+        },
+        {
+          "slug": "cedar-boards"
+        },
+        {
+          "slug": "cold-frame-closed",
+          "subject": "a low timber cold frame with a sloping clear lid closed, standing on garden soil beside a bed"
+        },
+        {
+          "slug": "cold-frame-lid-open",
+          "subject": "a timber cold frame with its clear hinged lid propped open on a stick, showing trays of small seedlings inside"
+        },
+        {
+          "slug": "weighted-cover-edge",
+          "subject": "a brick holding down the edge of a cold frame lid against the timber side of the frame"
+        },
+        {
+          "slug": "thermometer-warm-soil"
+        },
+        {
+          "slug": "frost-calendar"
+        }
+      ],
+      "proTipIcon": {
+        "slug": "seedling-tray-outside"
+      }
+    },
+    {
+      "key": "test-your-soil",
+      "category": "soil",
+      "tags": [
+        "soil",
+        "planning",
+        "beginners",
+        "infographics"
+      ],
+      "pinBoard": "Raised Bed Gardening",
+      "pinKeywords": [
+        "soil test",
+        "garden soil ph",
+        "improve garden soil",
+        "vegetable garden planning"
+      ],
+      "en": {
+        "slug": "how-to-test-your-soil",
+        "title": "How to Test Your Soil: A Beginner's Guide in 8 Steps",
+        "eyebrow": "Beginner-friendly guide",
+        "chartTitle": "How to test your soil",
+        "description": "Eight steps to finding out what you are actually growing in, from two free tests you can do with your hands to the lab test worth paying for.",
+        "pinDescription": "How to test your garden soil: the ribbon test tells you the texture, a hole full of water tells you the drainage, and a pH kit tells you why nothing is taking up the feed you keep adding. Do it in autumn, when there is time to act on the answer.",
+        "cta": "Plan your beds in Garden Planner Pro",
+        "proTip": {
+          "label": "Pro tip",
+          "text": "Take one sample from six spots and mix them in a bucket before testing. A single trowelful from one corner tells you about that corner, which is almost never what you wanted to know."
+        },
+        "steps": [
+          {
+            "label": "Test In Autumn",
+            "bullets": [
+              "Time to act before spring",
+              "Soil is moist, not baked"
+            ]
+          },
+          {
+            "label": "Sample Six Spots",
+            "bullets": [
+              "Mix them in a bucket",
+              "One hole tells you nothing"
+            ]
+          },
+          {
+            "label": "Dig To Root Depth",
+            "bullets": [
+              "Six inches down, not the surface",
+              "Scrape off mulch first"
+            ]
+          },
+          {
+            "label": "Do The Ribbon Test",
+            "bullets": [
+              "Roll damp soil between fingers",
+              "Long ribbon means clay"
+            ]
+          },
+          {
+            "label": "Try The Jar Test",
+            "bullets": [
+              "Soil and water, shaken, settled",
+              "Sand, silt and clay in layers"
+            ]
+          },
+          {
+            "label": "Check The Drainage",
+            "bullets": [
+              "Fill a hole, time it twice",
+              "Slow second fill means trouble"
+            ]
+          },
+          {
+            "label": "Measure The pH",
+            "bullets": [
+              "Cheap kit is accurate enough",
+              "Most vegetables want 6.0 to 7.0"
+            ]
+          },
+          {
+            "label": "Lab Test The Nutrients",
+            "bullets": [
+              "Only way to read nutrients",
+              "Worth it once every few years"
+            ]
+          }
+        ],
+        "article": {
+          "intro": "Most garden problems that get blamed on feeding are really about texture, drainage or pH. All three are cheap to find out and none of them change quickly, which is why autumn is the right time to look.\n\nThree of the tests below cost nothing and take an afternoon.",
+          "sections": [
+            {
+              "heading": "Texture, in two free tests",
+              "body": "Texture is the proportion of sand, silt and clay, and it decides how your soil holds water, how fast it warms in spring, and how much it will let you walk on it in March.\n\nThe ribbon test takes two minutes. Take a walnut-sized lump of moist soil, work it between your palms until it is smooth, then squeeze it out between thumb and forefinger into a flat ribbon. Sandy soil will not hold together at all. Loam makes a short ribbon that breaks under an inch. Clay makes a long smooth ribbon and feels slippery rather than gritty.\n\nThe jar test is slower and more exact. Fill a straight-sided jar a third full of soil, top it with water and a drop of washing-up liquid, shake it hard, and leave it on a windowsill for a day. Sand drops out within a minute, silt over a few hours, clay over a day or more, and you get visible bands you can measure with a ruler.\n\nNeither result is something you fix. Texture is what it is. What it tells you is which problems to expect and which amendments are worth the money."
+            },
+            {
+              "heading": "Drainage, which is the one that kills plants",
+              "body": "Dig a hole about a foot deep and a foot across, fill it with water, and let it drain away completely. Then fill it again and time how long the second fill takes to empty.\n\nThe second fill is the one that counts, because by then the surrounding soil is already wet and you are measuring the real rate rather than dry soil soaking it up. Roughly speaking, an hour or two is good, most of a day is workable for a lot of crops, and more than a day is a drainage problem you have to design around rather than amend away.\n\nDo this in the wettest part of the garden and the driest, because the answer often differs by more than people expect across one plot. If one bed is always the one that fails, this test usually explains it."
+            },
+            {
+              "heading": "pH, and why it matters more than feeding",
+              "body": "pH governs whether the nutrients already in your soil are available to roots. At the wrong pH they are locked up, and adding more fertiliser does very little, which is the single most common reason a heavily fed bed still underperforms.\n\nMost vegetables want somewhere between 6.0 and 7.0. Potatoes prefer it lower and are less prone to scab in acid soil; brassicas do better toward the top of that range and clubroot is worse in acid ground. Blueberries are the outlier and want it genuinely acid, which is why they usually belong in a pot of their own mix rather than in a bed.\n\nA cheap kit from a garden centre is accurate enough for this decision. Test in several spots, and remember that lime raises pH slowly over months while sulphur lowers it even more slowly, so an autumn test is what lets you act before spring."
+            },
+            {
+              "heading": "The one test worth paying for",
+              "body": "You cannot see nitrogen, phosphorus, potassium or organic matter with any home method, and the colour-change home kits for nutrients are not reliable enough to spend money on the back of.\n\nA laboratory test through an extension service or a soil lab is inexpensive, comes back with actual numbers and a recommendation, and is worth doing once when you take on a garden and then every few years after. Follow the sampling instructions they send rather than the ones here, since labs differ.\n\nIf you do only one thing, do the drainage test. It is free, it takes a day of waiting and five minutes of work, and it explains more failed beds than any other single number."
+            }
+          ]
+        }
+      },
+      "es": {
+        "slug": "como-analizar-el-suelo",
+        "title": "Cómo Analizar el Suelo: Guía para Principiantes en 8 Pasos",
+        "eyebrow": "Guía para principiantes",
+        "chartTitle": "Cómo analizar el suelo",
+        "description": "Ocho pasos para saber en qué estás cultivando de verdad, desde dos pruebas gratuitas que se hacen con las manos hasta el análisis de laboratorio que sí merece pagarse.",
+        "pinDescription": "Cómo analizar el suelo del huerto: la prueba de la cinta te dice la textura, un hoyo lleno de agua te dice el drenaje y un kit de pH te explica por qué nada aprovecha el abono que llevas años echando. Hazlo en otoño, cuando da tiempo a actuar.",
+        "cta": "Planifica tus bancales en Garden Planner Pro",
+        "proTip": {
+          "label": "Consejo",
+          "text": "Coge una muestra de seis puntos distintos y mézclalas en un cubo antes de analizar. Una paletada de una esquina te habla de esa esquina, que casi nunca es lo que querías saber."
+        },
+        "steps": [
+          {
+            "label": "Analiza En Otoño",
+            "bullets": [
+              "Da tiempo a actuar",
+              "La tierra está húmeda"
+            ]
+          },
+          {
+            "label": "Seis Puntos Distintos",
+            "bullets": [
+              "Mézclalos en un cubo",
+              "Un solo hoyo no dice nada"
+            ]
+          },
+          {
+            "label": "A Profundidad De Raíz",
+            "bullets": [
+              "Quince centímetros, no la superficie",
+              "Aparta el acolchado antes"
+            ]
+          },
+          {
+            "label": "Prueba De La Cinta",
+            "bullets": [
+              "Aprieta tierra húmeda entre dedos",
+              "Cinta larga es arcilla"
+            ]
+          },
+          {
+            "label": "Prueba Del Bote",
+            "bullets": [
+              "Tierra y agua, agitar, reposar",
+              "Arena, limo y arcilla en capas"
+            ]
+          },
+          {
+            "label": "Mide El Drenaje",
+            "bullets": [
+              "Llena un hoyo y cronometra",
+              "El segundo llenado es el bueno"
+            ]
+          },
+          {
+            "label": "Mide El pH",
+            "bullets": [
+              "Un kit barato basta",
+              "La mayoría quiere 6,0 a 7,0"
+            ]
+          },
+          {
+            "label": "Análisis De Laboratorio",
+            "bullets": [
+              "Única forma de ver nutrientes",
+              "Cada pocos años basta"
+            ]
+          }
+        ],
+        "article": {
+          "intro": "La mayoría de los problemas de huerto que se achacan al abono son en realidad de textura, drenaje o pH. Las tres cosas son baratas de averiguar y ninguna cambia deprisa, y por eso el otoño es el momento de mirarlas.\n\nTres de las pruebas de abajo no cuestan nada y se hacen en una tarde.",
+          "sections": [
+            {
+              "heading": "La textura, con dos pruebas gratis",
+              "body": "La textura es la proporción de arena, limo y arcilla, y decide cómo retiene el agua tu suelo, con qué rapidez se calienta en primavera y hasta qué punto te deja pisarlo en marzo.\n\nLa prueba de la cinta lleva dos minutos. Coge un puñado de tierra húmeda del tamaño de una nuez, trabájalo entre las palmas hasta que quede liso y apriétalo entre el pulgar y el índice formando una cinta plana. Un suelo arenoso no se sostiene. Un suelo franco da una cinta corta que se rompe antes de tres centímetros. La arcilla da una cinta larga y lisa y se nota jabonosa más que áspera.\n\nLa prueba del bote es más lenta y más exacta. Llena un tarro de paredes rectas un tercio de tierra, completa con agua y una gota de lavavajillas, agítalo fuerte y déjalo un día en la ventana. La arena cae en un minuto, el limo en unas horas, la arcilla en un día o más, y quedan bandas visibles que puedes medir con una regla.\n\nNinguno de los dos resultados es algo que se arregle. La textura es la que es. Lo que te dice es qué problemas esperar y qué enmiendas merecen el dinero."
+            },
+            {
+              "heading": "El drenaje, que es lo que mata plantas",
+              "body": "Cava un hoyo de unos treinta centímetros de hondo y otros tantos de ancho, llénalo de agua y deja que se vacíe del todo. Después vuelve a llenarlo y cronometra cuánto tarda en vaciarse el segundo llenado.\n\nEl segundo es el que cuenta, porque para entonces la tierra de alrededor ya está mojada y estás midiendo el ritmo real y no la absorción de un suelo seco. A grandes rasgos, una o dos horas está bien, casi un día es manejable para muchos cultivos, y más de un día es un problema de drenaje que hay que rodear con el diseño en vez de corregir con enmiendas.\n\nHazlo en la zona más húmeda del jardín y en la más seca, porque la respuesta suele cambiar dentro de una misma parcela más de lo que la gente espera. Si siempre hay un bancal que falla, esta prueba suele explicarlo."
+            },
+            {
+              "heading": "El pH, y por qué importa más que abonar",
+              "body": "El pH decide si los nutrientes que ya hay en tu suelo están disponibles para las raíces. Con el pH equivocado quedan bloqueados, y echar más fertilizante sirve de poco, que es la razón más común de que un bancal muy abonado siga rindiendo mal.\n\nLa mayoría de las hortalizas quieren entre 6,0 y 7,0. La patata lo prefiere más bajo y sufre menos sarna en suelo ácido; las coles van mejor en la parte alta de ese rango y la hernia de la col empeora en terreno ácido. El arándano es la excepción y quiere suelo verdaderamente ácido, y por eso suele ir en una maceta con su propio sustrato y no en un bancal.\n\nUn kit barato de vivero es suficientemente exacto para esta decisión. Mide en varios puntos y ten en cuenta que la cal sube el pH a lo largo de meses y el azufre lo baja aún más despacio, así que analizar en otoño es lo que te deja actuar antes de la primavera."
+            },
+            {
+              "heading": "El análisis que sí merece pagarse",
+              "body": "El nitrógeno, el fósforo, el potasio y la materia orgánica no se ven con ningún método casero, y los kits domésticos de cambio de color para nutrientes no son fiables como para gastar dinero a partir de ellos.\n\nUn análisis de laboratorio a través de un servicio agrario o un laboratorio de suelos sale barato, vuelve con cifras reales y una recomendación, y merece hacerse una vez al estrenar un huerto y luego cada pocos años. Sigue las instrucciones de muestreo que te manden ellos y no las de aquí, porque cada laboratorio tiene las suyas.\n\nSi solo vas a hacer una cosa, haz la del drenaje. Es gratis, son cinco minutos de trabajo y un día de espera, y explica más bancales fracasados que ningún otro dato."
+            }
+          ]
+        }
+      },
+      "icons": [
+        {
+          "slug": "frost-calendar"
+        },
+        {
+          "slug": "soil-sample-spots",
+          "subject": "a bucket of dark soil on a garden bed with a small trowel resting across the rim and three shallow sample holes in the bed behind it"
+        },
+        {
+          "slug": "seed-sowing-depth"
+        },
+        {
+          "slug": "soil-finger-test"
+        },
+        {
+          "slug": "soil-jar-test",
+          "subject": "a straight sided glass jar of water standing on soil with settled bands of sand silt and clay visible in layers at the bottom"
+        },
+        {
+          "slug": "drainage-hole-water",
+          "subject": "a square hole dug in garden soil filled to the brim with muddy water, the spade stuck in the ground beside it"
+        },
+        {
+          "slug": "soil-ph-test-kit",
+          "subject": "a small soil pH test tube of coloured liquid standing in a wooden tray beside a printed colour comparison card and a pinch of soil"
+        },
+        {
+          "slug": "checkmark"
+        }
+      ],
+      "proTipIcon": {
+        "slug": "earthworm-in-soil"
+      }
+    },
+    {
+      "key": "sow-a-cover-crop",
+      "category": "soil",
+      "tags": [
+        "soil",
+        "fall garden",
+        "organic gardening",
+        "infographics"
+      ],
+      "pinBoard": "Raised Bed Gardening",
+      "pinKeywords": [
+        "cover crop",
+        "green manure",
+        "fall garden jobs",
+        "improve garden soil"
+      ],
+      "en": {
+        "slug": "how-to-sow-a-cover-crop",
+        "title": "How to Sow a Cover Crop: A Beginner's Guide in 8 Steps",
+        "eyebrow": "Beginner-friendly guide",
+        "chartTitle": "How to sow a cover crop",
+        "description": "Eight steps to covering an empty bed for winter, from picking the right crop for the job to cutting it down at the right moment in spring.",
+        "pinDescription": "How to sow a cover crop: rye for holding soil through winter rain, clover and field beans for nitrogen. Sow thickly by early autumn, cut it down before it flowers, and wait two or three weeks before planting into it.",
+        "cta": "Plan next year's beds in Garden Planner Pro",
+        "proTip": {
+          "label": "Pro tip",
+          "text": "Cut it down before it flowers, not when you get round to it. Once a cover crop sets seed you have bought yourself a weed problem in the exact bed you were trying to improve."
+        },
+        "steps": [
+          {
+            "label": "Match Crop To Job",
+            "bullets": [
+              "Rye holds soil",
+              "Clover and beans add nitrogen"
+            ]
+          },
+          {
+            "label": "Sow By Early Autumn",
+            "bullets": [
+              "Needs weeks of growth",
+              "Rye tolerates the coldest soil"
+            ]
+          },
+          {
+            "label": "Clear The Bed",
+            "bullets": [
+              "Pull spent crops and weeds",
+              "Rake the surface level"
+            ]
+          },
+          {
+            "label": "Sow It Thickly",
+            "bullets": [
+              "Broadcast by hand",
+              "Thin stands let weeds in"
+            ]
+          },
+          {
+            "label": "Rake It In",
+            "bullets": [
+              "Cover the seed shallowly",
+              "Birds take what sits on top"
+            ]
+          },
+          {
+            "label": "Water It Once",
+            "bullets": [
+              "Only if autumn is dry",
+              "Rain usually does the rest"
+            ]
+          },
+          {
+            "label": "Cut Before Flowering",
+            "bullets": [
+              "Never let it set seed",
+              "Nitrogen peaks at flowering"
+            ]
+          },
+          {
+            "label": "Wait Before Planting",
+            "bullets": [
+              "Two or three weeks",
+              "Rotting roots stall seedlings"
+            ]
+          }
+        ],
+        "article": {
+          "intro": "A cover crop is a crop you grow for the soil rather than for the kitchen, sown into a bed you are not using so that something is living in it over winter.\n\nIt is the cheapest soil improvement there is, and the whole thing hinges on two dates: when you sow it and when you cut it.",
+          "sections": [
+            {
+              "heading": "Pick the one that does the job you need",
+              "body": "They are not interchangeable, and the choice comes down to what the bed's problem is.\n\nCereal rye is the workhorse for holding soil. It germinates in colder soil than almost anything else, so it is the one to reach for if you are late, and it makes a dense fibrous root system that stops winter rain washing structure out of a bare bed. It adds no nitrogen.\n\nLegumes do add nitrogen, because they host bacteria in root nodules that fix it out of the air. Crimson clover and field beans are the usual choices, and they want sowing earlier than rye because they are slower to establish. Follow them with something hungry: brassicas, or sweetcorn.\n\nMustard and phacelia grow fast and smother weeds, and phacelia is good for early bees if any of it flowers. Mustard is a brassica, though, so keep it out of a rotation where clubroot is a worry, and out of beds that grow cabbages next year."
+            },
+            {
+              "heading": "Sowing is deliberately crude",
+              "body": "Clear the bed of spent crops and weeds and rake the surface roughly level. Then scatter the seed by hand across the whole bed, much more thickly than you would sow a vegetable, and rake it lightly in so most of it is covered.\n\nThere is no spacing and no rows. A thin patchy stand is worse than useless, because the gaps fill with winter weeds and you have done the work without getting the benefit. Err heavy.\n\nWater it in if the autumn is dry, and after that leave it. Most years the rain handles everything. The one job left is to look at it occasionally through the winter and note whether it actually established, because a bed where the birds took the lot is one you would rather mulch than discover bare in February."
+            },
+            {
+              "heading": "Cutting it down is where people get it wrong",
+              "body": "The timing rule is simple: cut it before it flowers.\n\nWith a legume, the nitrogen stored in the plant peaks around flowering and then moves into making seed, so cutting at early flowering is when you get the most out of it. With anything, letting it set seed turns a soil improver into a weed you will be pulling out of that bed for two years.\n\nCut it at the base with shears or a sharp spade and leave the tops lying on the surface as a mulch, or turn them shallowly into the top few inches. There is no need to dig them deeply in, and on a no-dig bed leaving them on top and covering with compost works fine.\n\nThen wait. Fresh green material rotting in the soil ties up nitrogen temporarily while it breaks down, and seedlings planted straight into it sulk and yellow. Two or three weeks between cutting down and sowing is the usual advice, and it is worth honouring."
+            },
+            {
+              "heading": "When not to bother",
+              "body": "If the bed is going to be planted with garlic or overwintering onions, it does not need a cover crop, because it already has a crop in it.\n\nIf you are sowing in December in a cold area, you have missed it. A cover crop that germinates and then sits at two leaves all winter holds very little soil and adds almost nothing. Put mulch on instead and sow the cover crop earlier next year.\n\nAnd if the bed is small and you already have leaves to spare, a good thick mulch does most of the same job with none of the spring timing to get right. The cover crop earns its place on bigger beds, on slopes, and where you specifically want the nitrogen."
+            }
+          ]
+        }
+      },
+      "es": {
+        "slug": "como-sembrar-un-abono-verde",
+        "title": "Cómo Sembrar un Abono Verde: Guía para Principiantes en 8 Pasos",
+        "eyebrow": "Guía para principiantes",
+        "chartTitle": "Cómo sembrar un abono verde",
+        "description": "Ocho pasos para cubrir un bancal vacío durante el invierno, desde elegir la especie adecuada hasta segarla en el momento justo en primavera.",
+        "pinDescription": "Cómo sembrar un abono verde: centeno para sujetar la tierra durante las lluvias de invierno, trébol y habas para aportar nitrógeno. Siembra espeso a principios de otoño, siega antes de que florezca y espera dos o tres semanas antes de plantar encima.",
+        "cta": "Planifica los bancales del año que viene en Garden Planner Pro",
+        "proTip": {
+          "label": "Consejo",
+          "text": "Siega antes de que florezca, no cuando te venga bien. En cuanto un abono verde grana te has comprado un problema de malas hierbas en el mismo bancal que querías mejorar."
+        },
+        "steps": [
+          {
+            "label": "Elige Según El Objetivo",
+            "bullets": [
+              "El centeno sujeta la tierra",
+              "Trébol y habas dan nitrógeno"
+            ]
+          },
+          {
+            "label": "Siembra En Otoño",
+            "bullets": [
+              "Necesita semanas de crecimiento",
+              "El centeno aguanta más frío"
+            ]
+          },
+          {
+            "label": "Despeja El Bancal",
+            "bullets": [
+              "Quita restos y malas hierbas",
+              "Rastrilla la superficie"
+            ]
+          },
+          {
+            "label": "Siembra Espeso",
+            "bullets": [
+              "A voleo con la mano",
+              "Lo ralo deja entrar malas hierbas"
+            ]
+          },
+          {
+            "label": "Rastrilla Por Encima",
+            "bullets": [
+              "Tapa la semilla ligeramente",
+              "Los pájaros se llevan lo suelto"
+            ]
+          },
+          {
+            "label": "Riega Una Vez",
+            "bullets": [
+              "Solo si el otoño es seco",
+              "La lluvia suele bastar"
+            ]
+          },
+          {
+            "label": "Siega Antes De Florecer",
+            "bullets": [
+              "Nunca la dejes granar",
+              "El nitrógeno es máximo en flor"
+            ]
+          },
+          {
+            "label": "Espera Antes De Plantar",
+            "bullets": [
+              "Dos o tres semanas",
+              "Las raíces en descomposición frenan"
+            ]
+          }
+        ],
+        "article": {
+          "intro": "Un abono verde es un cultivo que siembras para el suelo y no para la cocina, en un bancal que no estás usando, para que haya algo vivo en él durante el invierno.\n\nEs la mejora de suelo más barata que existe, y todo depende de dos fechas: cuándo lo siembras y cuándo lo siegas.",
+          "sections": [
+            {
+              "heading": "Elige el que hace el trabajo que necesitas",
+              "body": "No son intercambiables, y la elección depende de cuál sea el problema del bancal.\n\nEl centeno es el caballo de batalla para sujetar la tierra. Germina en suelo más frío que casi cualquier otra cosa, así que es el recurso si vas tarde, y forma un sistema radicular denso y fibroso que impide que la lluvia de invierno se lleve la estructura de un bancal desnudo. No aporta nitrógeno.\n\nLas leguminosas sí lo aportan, porque alojan bacterias en nódulos radiculares que lo fijan del aire. El trébol encarnado y las habas son las opciones habituales, y hay que sembrarlas antes que el centeno porque tardan más en arrancar. Detrás de ellas planta algo exigente: coles, o maíz dulce.\n\nLa mostaza y la facelia crecen deprisa y ahogan las malas hierbas, y la facelia es buena para las abejas tempranas si llega a florecer. La mostaza, eso sí, es una crucífera, así que déjala fuera de una rotación donde preocupe la hernia de la col y fuera de los bancales que llevarán coles el año que viene."
+            },
+            {
+              "heading": "La siembra es deliberadamente tosca",
+              "body": "Despeja el bancal de restos de cultivo y malas hierbas y rastrilla la superficie hasta dejarla más o menos llana. Luego esparce la semilla a mano por todo el bancal, mucho más espesa de lo que sembrarías una hortaliza, y rastrilla por encima para que quede casi toda tapada.\n\nNo hay marco de plantación ni líneas. Una siembra rala y a parches es peor que inútil, porque los huecos se llenan de malas hierbas de invierno y has hecho el trabajo sin llevarte el beneficio. Pásate de espeso.\n\nRiega si el otoño viene seco y después déjalo. La mayoría de los años la lluvia se encarga de todo. Lo único que queda es mirarlo de vez en cuando durante el invierno y comprobar que de verdad nació, porque un bancal en el que los pájaros se lo llevaron todo es de los que prefieres acolchar antes que descubrir pelado en febrero."
+            },
+            {
+              "heading": "Segarlo es donde se falla",
+              "body": "La regla de tiempo es sencilla: siégalo antes de que florezca.\n\nEn una leguminosa, el nitrógeno acumulado en la planta llega al máximo hacia la floración y después se va a formar semilla, así que segar al inicio de la floración es cuando más se aprovecha. En cualquier especie, dejar que grane convierte un mejorador de suelo en una mala hierba que estarás arrancando de ese bancal dos años.\n\nCórtalo por la base con unas tijeras o una pala afilada y deja la parte aérea tendida encima como acolchado, o incorpórala superficialmente en los primeros centímetros. No hace falta enterrarla hondo, y en un bancal de no laboreo funciona bien dejarla arriba y cubrir con compost.\n\nY luego espera. El material verde fresco descomponiéndose en la tierra inmoviliza nitrógeno temporalmente mientras se rompe, y las plántulas puestas justo encima se quedan paradas y amarillean. Dos o tres semanas entre segar y sembrar es el consejo habitual y conviene respetarlo."
+            },
+            {
+              "heading": "Cuándo no vale la pena",
+              "body": "Si el bancal va a llevar ajos o cebollas de invierno, no necesita abono verde, porque ya tiene un cultivo dentro.\n\nSi estás sembrando en diciembre en una zona fría, se te ha pasado. Un abono verde que germina y se queda con dos hojas todo el invierno sujeta muy poca tierra y aporta casi nada. Pon acolchado y siembra antes el año que viene.\n\nY si el bancal es pequeño y ya te sobran hojas, un buen acolchado grueso hace casi el mismo trabajo sin tener que acertar con los tiempos de primavera. El abono verde se gana el sitio en bancales grandes, en pendientes y allí donde quieras el nitrógeno en concreto."
+            }
+          ]
+        }
+      },
+      "icons": [
+        {
+          "slug": "cover-crop-green"
+        },
+        {
+          "slug": "frost-calendar"
+        },
+        {
+          "slug": "bare-seedbed-row"
+        },
+        {
+          "slug": "sowing-seeds-drill"
+        },
+        {
+          "slug": "level-ground"
+        },
+        {
+          "slug": "watering-can-sprinkle"
+        },
+        {
+          "slug": "cut-pea-stems"
+        },
+        {
+          "slug": "compost-mulch-bed"
+        }
+      ],
+      "proTipIcon": {
+        "slug": "pea-roots-nodules"
+      }
+    },
+    {
+      "key": "store-winter-squash",
+      "category": "vegetables",
+      "tags": [
+        "harvest",
+        "food preservation",
+        "squash",
+        "infographics"
+      ],
+      "pinBoard": "Vegetable Garden Layouts",
+      "pinKeywords": [
+        "storing winter squash",
+        "curing pumpkins",
+        "fall harvest storage",
+        "food preservation"
+      ],
+      "en": {
+        "slug": "how-to-store-winter-squash",
+        "title": "How to Store Winter Squash: A Beginner's Guide in 8 Steps",
+        "eyebrow": "Beginner-friendly guide",
+        "chartTitle": "How to store winter squash",
+        "description": "Eight steps to squash that keeps until spring, from the thumbnail test in the garden to the one type you should never cure.",
+        "pinDescription": "How to store winter squash: leave it until the rind resists a thumbnail, cut it with a long stem handle, cure it somewhere warm for about ten days, then store it cool and dry with the fruits not touching. Acorn squash is the exception and skips curing.",
+        "cta": "Track your harvest in Garden Planner Pro",
+        "proTip": {
+          "label": "Pro tip",
+          "text": "Never carry a squash by its stem. If the stem pulls out you have opened a hole straight into the flesh, and that fruit now has weeks rather than months."
+        },
+        "steps": [
+          {
+            "label": "Wait For Hard Rind",
+            "bullets": [
+              "A thumbnail should not dent it",
+              "Colour alone is not ripeness"
+            ]
+          },
+          {
+            "label": "Beat The First Frost",
+            "bullets": [
+              "Frosted fruit will not keep",
+              "Cover the patch if needed"
+            ]
+          },
+          {
+            "label": "Cut A Long Stem",
+            "bullets": [
+              "Leave a handspan of stem",
+              "Use shears, never twist"
+            ]
+          },
+          {
+            "label": "Carry It Underneath",
+            "bullets": [
+              "Never lift by the stem",
+              "A pulled stem is an open wound"
+            ]
+          },
+          {
+            "label": "Wipe It Dry",
+            "bullets": [
+              "Cloth, not a wash",
+              "Water on the rind invites rot"
+            ]
+          },
+          {
+            "label": "Cure It Warm",
+            "bullets": [
+              "About ten days, warm and airy",
+              "Hardens the skin for storage"
+            ]
+          },
+          {
+            "label": "Skip Curing Acorns",
+            "bullets": [
+              "Acorn squash keeps worse cured",
+              "Store it straight away"
+            ]
+          },
+          {
+            "label": "Store Cool And Apart",
+            "bullets": [
+              "Dry, around fifty degrees",
+              "Not touching, checked weekly"
+            ]
+          }
+        ],
+        "article": {
+          "intro": "Winter squash is one of the few crops that genuinely keeps for months without a freezer, a jar or any processing at all. Most of what decides whether yours does happens in the two weeks around harvest.\n\nAnd one popular type wants the opposite treatment from all the others.",
+          "sections": [
+            {
+              "heading": "Knowing when it is actually ready",
+              "body": "Colour is the thing everyone goes by and it is the least reliable signal. A butternut turns tan long before it is ready to store, and plenty of varieties colour up weeks early.\n\nThe test that works is the rind. Press a thumbnail into it firmly somewhere inconspicuous. On a ripe squash it will not dent, and your nail slides off a surface that feels more like wood than vegetable. If it marks, the fruit needs longer on the vine.\n\nTwo other signs back it up: the stem where it meets the fruit goes dry, corky and pale, and the tendril nearest the fruit has usually browned off. The vine itself often looks dreadful by then, which worries people unnecessarily.\n\nThe deadline is the first real frost. A light frost on the leaves is survivable, but frost on the fruit damages the flesh under the rind and the squash will rot in storage rather than keeping. If a frost is forecast and the rinds are close, throw a blanket over the patch for the night rather than harvesting everything unripe."
+            },
+            {
+              "heading": "Handling, which matters more than it sounds",
+              "body": "Cut each fruit with shears or a knife, leaving a generous handspan of stem attached. Do not twist it off the vine.\n\nThat stem is a seal. Where it joins the fruit there is a small opening, and while the stem is intact and dry it plugs it. Pull the stem out and you have left an open wound in the top of the squash that mould finds within days. This is the single most common reason a stored squash fails early, and it usually happens at the moment of carrying it indoors.\n\nSo carry each one with a hand underneath, like a bowl, and never by the handle you just carefully left on. Set them down rather than dropping them, since a bruise you cannot see becomes a soft patch in November.\n\nWipe the dirt off with a dry cloth. If a fruit is genuinely muddy, a cloth barely damp with water is fine, but dry it straight afterwards. Do not wash and stack wet squash."
+            },
+            {
+              "heading": "Curing, and the exception",
+              "body": "Curing means keeping the harvested fruit somewhere warm and airy for about ten days. The skin hardens, small scratches seal over, and the flesh sweetens as starches convert. A sunny porch, a warm shed, or a spare room works; single layer, not touching, with air moving round them.\n\nAcorn squash is the exception, and it is worth knowing because it is widely grown. Acorns do not improve with curing. Warm storage makes them stringy and shortens how long they keep, so take them straight from the garden into cool storage. The same caution applies to delicata and most other thin-skinned types, which are short keepers whatever you do and are best eaten first.\n\nEverything thick-skinned wants curing: butternut, hubbard, kabocha, spaghetti squash, pumpkins for pie."
+            },
+            {
+              "heading": "Where they spend the winter",
+              "body": "Cool, dry, dark and airy. Somewhere around fifty degrees is the target, which in most houses means a spare bedroom, a landing, or an unheated hallway rather than a cellar, because damp is more of a problem than warmth.\n\nDo not put them in the fridge, do not put them in a sealed box, and do not stack them in a crate. Lay them out in a single layer on a shelf or a piece of cardboard with a gap between each one, so that a fruit that starts to go does not take its neighbours with it.\n\nWalk past them once a week and look. Any softening, any damp patch, any smell, and that one comes out and gets eaten or cut up that evening. Done properly, a butternut will still be sound the following spring, and a hubbard longer than that."
+            }
+          ]
+        }
+      },
+      "es": {
+        "slug": "como-guardar-calabazas-de-invierno",
+        "title": "Cómo Guardar Calabazas de Invierno: Guía para Principiantes en 8 Pasos",
+        "eyebrow": "Guía para principiantes",
+        "chartTitle": "Cómo guardar calabazas",
+        "description": "Ocho pasos para que la calabaza aguante hasta la primavera, desde la prueba de la uña en el huerto hasta el único tipo que nunca hay que curar.",
+        "pinDescription": "Cómo guardar calabazas de invierno: espera a que la corteza resista la uña, córtala dejando un buen trozo de pedúnculo, cúrala unos diez días en un sitio cálido y guárdala fresca y seca sin que se toquen entre ellas. La calabaza bellota es la excepción y no se cura.",
+        "cta": "Registra tu cosecha en Garden Planner Pro",
+        "proTip": {
+          "label": "Consejo",
+          "text": "No cojas nunca una calabaza por el rabo. Si el pedúnculo se suelta has abierto un agujero directo a la pulpa, y esa pieza pasa de durar meses a durar semanas."
+        },
+        "steps": [
+          {
+            "label": "Espera Corteza Dura",
+            "bullets": [
+              "La uña no debe marcarla",
+              "El color no indica madurez"
+            ]
+          },
+          {
+            "label": "Antes De La Helada",
+            "bullets": [
+              "La fruta helada no se guarda",
+              "Cubre la parcela si hace falta"
+            ]
+          },
+          {
+            "label": "Corta Con Pedúnculo",
+            "bullets": [
+              "Deja un palmo de rabo",
+              "Con tijeras, nunca retorciendo"
+            ]
+          },
+          {
+            "label": "Cárgala Por Debajo",
+            "bullets": [
+              "Nunca la levantes del rabo",
+              "Un rabo suelto es una herida"
+            ]
+          },
+          {
+            "label": "Sécala Con Un Paño",
+            "bullets": [
+              "Paño, no lavarla",
+              "El agua en la corteza pudre"
+            ]
+          },
+          {
+            "label": "Cúrala En Calor",
+            "bullets": [
+              "Unos diez días, cálido y aireado",
+              "Endurece la piel"
+            ]
+          },
+          {
+            "label": "La Bellota No",
+            "bullets": [
+              "Curada aguanta menos",
+              "Directa al almacén"
+            ]
+          },
+          {
+            "label": "Fresco Y Separadas",
+            "bullets": [
+              "Seco y unos diez grados",
+              "Sin tocarse, revisar cada semana"
+            ]
+          }
+        ],
+        "article": {
+          "intro": "La calabaza de invierno es de los pocos cultivos que de verdad se conservan meses sin congelador, sin tarros y sin ningún procesado. Casi todo lo que decide si la tuya lo hará ocurre en las dos semanas que rodean a la cosecha.\n\nY un tipo muy popular quiere justo el trato contrario a todos los demás.",
+          "sections": [
+            {
+              "heading": "Saber cuándo está lista de verdad",
+              "body": "El color es lo que todo el mundo mira y es la señal menos fiable. Una butternut se pone beige mucho antes de estar lista para guardar, y muchas variedades cogen color con semanas de antelación.\n\nLa prueba que funciona es la corteza. Aprieta la uña con firmeza en algún punto discreto. En una calabaza madura no deja marca, y la uña resbala sobre una superficie que se nota más a madera que a hortaliza. Si se marca, la pieza necesita más tiempo en la mata.\n\nHay dos señales que lo confirman: el pedúnculo, donde se une al fruto, se seca y se vuelve corchoso y pálido, y el zarcillo más cercano al fruto suele haberse secado. La mata en sí suele tener muy mal aspecto para entonces, cosa que preocupa sin motivo.\n\nEl plazo lo pone la primera helada de verdad. Una helada suave sobre las hojas se supera, pero la helada sobre el fruto daña la pulpa bajo la corteza y esa calabaza se pudrirá en el almacén en vez de conservarse. Si anuncian helada y las cortezas están casi hechas, echa una manta sobre la parcela esa noche en vez de cosecharlo todo verde."
+            },
+            {
+              "heading": "El manejo, que importa más de lo que parece",
+              "body": "Corta cada fruto con tijeras o cuchillo dejando un buen palmo de pedúnculo pegado. No lo arranques retorciendo.\n\nEse pedúnculo es un tapón. Donde se une al fruto hay una pequeña abertura, y mientras el rabo siga entero y seco la mantiene cerrada. Si el rabo se sale, has dejado una herida abierta en lo alto de la calabaza que el moho encuentra en pocos días. Esta es la causa más común de que una calabaza guardada falle pronto, y suele ocurrir justo al llevarla dentro de casa.\n\nAsí que llévala con una mano por debajo, como un cuenco, y nunca por el asa que acabas de dejar con tanto cuidado. Déjalas en el suelo en vez de soltarlas, porque un golpe que no se ve se convierte en una mancha blanda en noviembre.\n\nLimpia la tierra con un paño seco. Si una pieza viene muy embarrada, un paño apenas húmedo vale, pero sécala justo después. No laves ni apiles calabazas mojadas."
+            },
+            {
+              "heading": "El curado, y la excepción",
+              "body": "Curar es tener el fruto cosechado en un sitio cálido y aireado unos diez días. La piel endurece, los arañazos pequeños cicatrizan y la pulpa se endulza al convertirse los almidones. Sirve un porche soleado, un cobertizo templado o una habitación libre; en una sola capa, sin tocarse y con aire alrededor.\n\nLa calabaza bellota es la excepción, y conviene saberlo porque se cultiva mucho. A las bellota el curado no las mejora. El calor las deja fibrosas y acorta su conservación, así que van directas del huerto al almacén fresco. Lo mismo vale para la delicata y casi todas las de piel fina, que duran poco hagas lo que hagas y conviene comerse primero.\n\nTodo lo de piel gruesa quiere curado: butternut, hubbard, kabocha, espagueti y las calabazas de pastel."
+            },
+            {
+              "heading": "Dónde pasan el invierno",
+              "body": "Fresco, seco, oscuro y aireado. El objetivo son unos diez grados, que en la mayoría de las casas significa una habitación de invitados, un rellano o un pasillo sin calefacción antes que un sótano, porque la humedad da más problemas que el calor.\n\nNo las metas en la nevera, ni en una caja cerrada, ni apiladas en un cajón. Extiéndelas en una sola capa sobre una estantería o un cartón, con un hueco entre cada una, para que la que empiece a estropearse no se lleve por delante a las vecinas.\n\nPasa por delante una vez por semana y míralas. Cualquier reblandecimiento, cualquier mancha húmeda, cualquier olor, y esa sale y se cocina esa misma noche. Bien hecho, una butternut sigue entera la primavera siguiente, y una hubbard más todavía."
+            }
+          ]
+        }
+      },
+      "icons": [
+        {
+          "slug": "thumb-press-fruit"
+        },
+        {
+          "slug": "frost-calendar"
+        },
+        {
+          "slug": "pumpkin-on-vine"
+        },
+        {
+          "slug": "pumpkin-on-board"
+        },
+        {
+          "slug": "dry-brown-leaves"
+        },
+        {
+          "slug": "cured-pumpkins"
+        },
+        {
+          "slug": "acorn-squash-single",
+          "subject": "a single dark green ribbed acorn squash with a short dry stem, drawn on its own with clear space around it"
+        },
+        {
+          "slug": "squash-spaced-shelf",
+          "subject": "three small winter squashes of different shapes arranged in a loose triangle with clear gaps between them, nothing else around them"
+        }
+      ],
+      "proTipIcon": {
+        "slug": "curing-onions"
+      }
+    },
+    {
+      "key": "plan-a-seed-order",
+      "category": "seeds",
+      "tags": [
+        "seed starting",
+        "planning",
+        "beginners",
+        "infographics"
+      ],
+      "pinBoard": "Seed Starting & Frost Dates",
+      "pinKeywords": [
+        "seed order",
+        "garden planning",
+        "seed catalog",
+        "vegetable garden on a budget"
+      ],
+      "en": {
+        "slug": "how-to-plan-a-seed-order",
+        "title": "How to Plan a Seed Order: A Beginner's Guide in 8 Steps",
+        "eyebrow": "Beginner-friendly guide",
+        "chartTitle": "How to plan a seed order",
+        "description": "Eight steps to a January seed order you will actually plant, starting with the box you already own and the beds you actually have.",
+        "pinDescription": "How to plan a seed order without overbuying: shop your own seed box first, count beds rather than wishes, check days to maturity against your own season, and buy fresh onion and parsnip every year because those two really do not keep.",
+        "cta": "Plan next year's beds in Garden Planner Pro",
+        "proTip": {
+          "label": "Pro tip",
+          "text": "Order from the bed outwards, not from the catalogue inwards. Write down how many square feet you have first, and the list stops being a wish and starts being a plan."
+        },
+        "steps": [
+          {
+            "label": "Shop Your Box First",
+            "bullets": [
+              "Most seed keeps for years",
+              "Test anything doubtful"
+            ]
+          },
+          {
+            "label": "List What You Ate",
+            "bullets": [
+              "Last year's kitchen, not the catalogue",
+              "Cut what nobody finished"
+            ]
+          },
+          {
+            "label": "Count The Beds",
+            "bullets": [
+              "Measure before you choose",
+              "Space is the real limit"
+            ]
+          },
+          {
+            "label": "Check Days To Maturity",
+            "bullets": [
+              "Against your own frost dates",
+              "Long varieties need a long season"
+            ]
+          },
+          {
+            "label": "Buy These Fresh",
+            "bullets": [
+              "Onion, leek and parsnip",
+              "They do not keep a year"
+            ]
+          },
+          {
+            "label": "Pick Disease Resistance",
+            "bullets": [
+              "For whatever beat you last year",
+              "Listed in the description"
+            ]
+          },
+          {
+            "label": "Split Big Packets",
+            "bullets": [
+              "Share squash and brassicas",
+              "Hundreds of seeds go stale"
+            ]
+          },
+          {
+            "label": "Order Early",
+            "bullets": [
+              "Good varieties sell out",
+              "December beats February"
+            ]
+          }
+        ],
+        "article": {
+          "intro": "The seed order is the cheapest part of a garden and the one that quietly decides most of the year. It is also where nearly everybody overspends, because a catalogue in January is designed to be read by somebody who is bored of winter.\n\nThe cure is doing three things before you open it.",
+          "sections": [
+            {
+              "heading": "Start with the box you already own",
+              "body": "Before anything else, tip the seed box out on the table and sort it. Most vegetable seed keeps far longer than the packet date implies: tomatoes, squash, cucumbers, beans, peas, brassicas and lettuce will usually be fine for years.\n\nThe genuinely short-lived ones are a small list. Onion, leek and chive fade within a year or two, and parsnip is the worst of all and is worth buying fresh every single year. Those go on the order automatically.\n\nFor anything you are unsure about, run a germination test now rather than finding out in April. Ten seeds on a damp paper towel in a bag somewhere warm, counted after that crop's usual germination time. Seven or more up and you sow it as normal; four or five and you sow thicker; one or two and it goes on the list.\n\nThis single step usually cuts an order by a third, and it is the difference between a seed drawer that works and one that is mostly archaeology."
+            },
+            {
+              "heading": "Then work out what you have room for",
+              "body": "The second discipline is arithmetic. Measure the beds, write the number down, and only then start choosing.\n\nIt is astonishing how fast a wish list outgrows a garden. A packet of squash is thirty seeds and a suburban bed has room for two plants. Four tomato varieties sounds modest until you count that it is sixteen plants and you have space for six.\n\nWork out roughly how many plants of each thing you want in the ground, and buy for that plus a small margin for failures. Where a packet is far bigger than you need, which is most of the cucurbits and brassicas, split it with someone. Two gardeners buying four packets between them and halving each is a better outcome than two gardeners buying four packets each and binning most of it in three years.\n\nAnd be honest about last year. If nobody in the house ate the kohlrabi, the answer is not a different variety of kohlrabi."
+            },
+            {
+              "heading": "The two numbers on the packet that matter",
+              "body": "Days to maturity is the one people skip. It is a rough guide rather than a promise, and it is usually counted from transplanting rather than from sowing for things that get started indoors, but it tells you whether a variety fits your season at all.\n\nCount the weeks between your last frost and your first frost, and be suspicious of anything whose days to maturity eats most of that window, especially the long-season peppers and melons and the big winter squashes. In a short season those are the varieties that produce beautifully in photographs and green fruit in your garden.\n\nThe second is disease resistance, which is listed in the small print of most descriptions as a string of letters. If something specific beat you last year, blight, wilt, mildew, this is the cheapest possible response to it: pick a variety bred to resist that one thing and change nothing else."
+            },
+            {
+              "heading": "When to press the button",
+              "body": "Earlier than feels necessary. The interesting varieties, and particularly anything that had a good year in the seed press, sell out in January and February, and a substitution chosen for you by a supplier is rarely the one you wanted.\n\nOrdering in December also means the packets are on the shelf before the first sowings come round, which for onions and leeks in many places is January itself.\n\nWrite the final order down somewhere that survives the year, with the varieties and the supplier. Next December the most useful document you can have is last year's list with notes scribbled on it about what worked, and it takes two minutes to start."
+            }
+          ]
+        }
+      },
+      "es": {
+        "slug": "como-planificar-el-pedido-de-semillas",
+        "title": "Cómo Planificar el Pedido de Semillas: Guía para Principiantes en 8 Pasos",
+        "eyebrow": "Guía para principiantes",
+        "chartTitle": "Cómo planificar el pedido de semillas",
+        "description": "Ocho pasos para un pedido de semillas de enero que de verdad vayas a sembrar, empezando por la caja que ya tienes y los bancales que realmente hay.",
+        "pinDescription": "Cómo planificar el pedido de semillas sin pasarte: revisa primero tu propia caja, cuenta bancales en vez de deseos, compara los días a cosecha con tu temporada y compra cebolla, puerro y chirivía frescas cada año porque esas de verdad no se guardan.",
+        "cta": "Planifica los bancales del año que viene en Garden Planner Pro",
+        "proTip": {
+          "label": "Consejo",
+          "text": "Haz el pedido desde el bancal hacia fuera, no desde el catálogo hacia dentro. Apunta primero cuántos metros tienes y la lista deja de ser un deseo y pasa a ser un plan."
+        },
+        "steps": [
+          {
+            "label": "Revisa Tu Caja",
+            "bullets": [
+              "Casi toda la semilla dura años",
+              "Prueba lo dudoso"
+            ]
+          },
+          {
+            "label": "Apunta Lo Que Comisteis",
+            "bullets": [
+              "La cocina del año pasado",
+              "Quita lo que nadie terminó"
+            ]
+          },
+          {
+            "label": "Cuenta Los Bancales",
+            "bullets": [
+              "Mide antes de elegir",
+              "El espacio es el límite real"
+            ]
+          },
+          {
+            "label": "Mira Días A Cosecha",
+            "bullets": [
+              "Frente a tus fechas de helada",
+              "Las tardías piden temporada larga"
+            ]
+          },
+          {
+            "label": "Estas Siempre Nuevas",
+            "bullets": [
+              "Cebolla, puerro y chirivía",
+              "No aguantan un año"
+            ]
+          },
+          {
+            "label": "Busca Resistencias",
+            "bullets": [
+              "A lo que te venció el año pasado",
+              "Viene en la descripción"
+            ]
+          },
+          {
+            "label": "Comparte Los Sobres",
+            "bullets": [
+              "Calabazas y coles",
+              "Cientos de semillas se estropean"
+            ]
+          },
+          {
+            "label": "Pide Pronto",
+            "bullets": [
+              "Las buenas se agotan",
+              "Diciembre mejor que febrero"
+            ]
+          }
+        ],
+        "article": {
+          "intro": "El pedido de semillas es la parte más barata de un huerto y la que decide en silencio casi todo el año. También es donde casi todo el mundo se pasa, porque un catálogo en enero está pensado para que lo lea alguien harto del invierno.\n\nEl remedio es hacer tres cosas antes de abrirlo.",
+          "sections": [
+            {
+              "heading": "Empieza por la caja que ya tienes",
+              "body": "Antes que nada, vuelca la caja de semillas sobre la mesa y ordénala. Casi toda la semilla de hortaliza dura mucho más de lo que sugiere la fecha del sobre: tomate, calabaza, pepino, judía, guisante, coles y lechuga suelen estar bien durante años.\n\nLas de vida corta de verdad son unas pocas. La cebolla, el puerro y el cebollino pierden fuerza en uno o dos años, y la chirivía es la peor de todas y merece comprarse nueva cada año. Esas entran en el pedido automáticamente.\n\nCon lo que tengas dudas, haz una prueba de germinación ahora en vez de enterarte en abril. Diez semillas sobre papel de cocina húmedo dentro de una bolsa en un sitio cálido, contadas pasado el tiempo normal de ese cultivo. Siete o más nacidas y la siembras como siempre; cuatro o cinco y la siembras más espesa; una o dos y va a la lista.\n\nEste paso por sí solo suele recortar un pedido en un tercio, y es la diferencia entre un cajón de semillas que funciona y uno que es casi arqueología."
+            },
+            {
+              "heading": "Luego calcula lo que te cabe",
+              "body": "La segunda disciplina es aritmética. Mide los bancales, apunta el número y solo entonces empieza a elegir.\n\nEs asombroso lo deprisa que una lista de deseos se sale de un jardín. Un sobre de calabaza son treinta semillas y en un bancal de las afueras caben dos plantas. Cuatro variedades de tomate suena modesto hasta que cuentas que son dieciséis plantas y tienes sitio para seis.\n\nCalcula más o menos cuántas plantas de cada cosa quieres en el suelo y compra para eso más un pequeño margen por fallos. Donde el sobre traiga mucho más de lo que necesitas, que es el caso de casi todas las cucurbitáceas y las coles, compártelo con alguien. Dos hortelanos comprando cuatro sobres entre los dos y partiéndolos por la mitad es mejor resultado que dos hortelanos comprando cuatro sobres cada uno y tirando casi todo en tres años.\n\nY sé sincero sobre el año pasado. Si en casa nadie se comió el colinabo, la respuesta no es otra variedad de colinabo."
+            },
+            {
+              "heading": "Los dos datos del sobre que importan",
+              "body": "Los días a cosecha son los que se saltan. Es una orientación y no una promesa, y en lo que se siembra en semillero suele contarse desde el trasplante y no desde la siembra, pero te dice si una variedad cabe siquiera en tu temporada.\n\nCuenta las semanas que hay entre tu última helada y la primera, y desconfía de todo lo que se coma casi esa ventana entera, sobre todo los pimientos y melones de ciclo largo y las calabazas grandes de invierno. En una temporada corta esas son las variedades que salen preciosas en las fotos y verdes en tu huerto.\n\nEl segundo dato es la resistencia a enfermedades, que aparece en la letra pequeña de casi todas las descripciones como una serie de siglas. Si algo concreto te venció el año pasado, mildiu, fusarium, oídio, esta es la respuesta más barata posible: elige una variedad criada para resistir justo eso y no cambies nada más."
+            },
+            {
+              "heading": "Cuándo darle al botón",
+              "body": "Antes de lo que parece necesario. Las variedades interesantes, y en especial cualquiera que haya tenido buena prensa, se agotan en enero y febrero, y una sustitución elegida por el proveedor rara vez es la que querías.\n\nPedir en diciembre significa además tener los sobres en casa antes de las primeras siembras, que para cebollas y puerros en muchos sitios es el propio enero.\n\nApunta el pedido definitivo en algún sitio que sobreviva al año, con las variedades y el proveedor. El diciembre que viene el documento más útil que puedes tener es la lista del año anterior con notas garabateadas sobre qué funcionó, y empezarla cuesta dos minutos."
+            }
+          ]
+        }
+      },
+      "icons": [
+        {
+          "slug": "seed-packet-resow"
+        },
+        {
+          "slug": "harvest-basket-tomatoes"
+        },
+        {
+          "slug": "raised-bed-frame"
+        },
+        {
+          "slug": "frost-calendar"
+        },
+        {
+          "slug": "onion-sets"
+        },
+        {
+          "slug": "checkmark"
+        },
+        {
+          "slug": "seed-saving-envelope"
+        },
+        {
+          "slug": "seed-order-list",
+          "subject": "a small notepad with a short handwritten list, a pencil lying across it, and two paper seed packets tucked behind it"
+        }
+      ],
+      "proTipIcon": {
+        "slug": "seed-tray-indoors"
+      }
+    },
+    {
+      "key": "grow-microgreens",
+      "category": "vegetables",
+      "tags": [
+        "container gardening",
+        "seed starting",
+        "beginners",
+        "infographics"
+      ],
+      "pinBoard": "Container & Small Space Gardening",
+      "pinKeywords": [
+        "how to grow microgreens",
+        "indoor gardening",
+        "small space gardening",
+        "winter growing"
+      ],
+      "en": {
+        "slug": "how-to-grow-microgreens",
+        "title": "How to Grow Microgreens: A Beginner's Guide in 8 Steps",
+        "eyebrow": "Beginner-friendly guide",
+        "chartTitle": "How to grow microgreens",
+        "description": "Eight steps to cutting fresh greens on a windowsill in under three weeks, in the middle of winter, with no garden at all.",
+        "pinDescription": "How to grow microgreens on a windowsill: sow thickly in a shallow tray, keep them covered and dark for a few days, then bring them into bright light and water from below. Ready to cut in one to three weeks, all winter, with no garden.",
+        "cta": "Browse the plant library in Garden Planner Pro",
+        "proTip": {
+          "label": "Pro tip",
+          "text": "Never grow microgreens from tomato, pepper, eggplant or potato seed. The rest of the plant is edible later, but the seedling leaves of the nightshade family are not safe to eat."
+        },
+        "steps": [
+          {
+            "label": "Pick Fast Seed",
+            "bullets": [
+              "Radish, pea, broccoli, mustard",
+              "Sold by weight, not by packet"
+            ]
+          },
+          {
+            "label": "Skip The Nightshades",
+            "bullets": [
+              "No tomato, pepper or eggplant",
+              "Those seedling leaves are toxic"
+            ]
+          },
+          {
+            "label": "Use A Shallow Tray",
+            "bullets": [
+              "An inch of damp mix",
+              "Drainage holes matter"
+            ]
+          },
+          {
+            "label": "Sow Very Thickly",
+            "bullets": [
+              "Almost touching, one layer",
+              "Nothing gets thinned"
+            ]
+          },
+          {
+            "label": "Press, Do Not Bury",
+            "bullets": [
+              "Firm the seed into the mix",
+              "A dusting of mix on top"
+            ]
+          },
+          {
+            "label": "Cover For Three Days",
+            "bullets": [
+              "Dark until they lift the lid",
+              "Keeps the surface damp"
+            ]
+          },
+          {
+            "label": "Then Bright Light",
+            "bullets": [
+              "Brightest windowsill you have",
+              "Turn the tray daily"
+            ]
+          },
+          {
+            "label": "Cut Above The Soil",
+            "bullets": [
+              "Scissors at the first true leaves",
+              "Sow a new tray weekly"
+            ]
+          }
+        ],
+        "article": {
+          "intro": "Microgreens are ordinary vegetable seedlings, cut and eaten when they are an inch or two tall. Radish tastes like radish. Pea shoots taste like peas.\n\nThey are the one thing worth growing in January on a windowsill in a flat, because they need no garden, no light rig, and no more than three weeks.",
+          "sections": [
+            {
+              "heading": "What to grow, and the one safety rule",
+              "body": "Start with radish, pea, sunflower, broccoli, mustard, kale and cress. They germinate fast and reliably, and radish in particular goes from seed to plate in about a week.\n\nBuy seed by weight rather than in garden packets. You are sowing hundreds of seeds per tray, and a packet sized for a row of radishes will cover about a third of one. Seed sold for sprouting or microgreens is the same thing in a useful quantity.\n\nThe one hard rule is the nightshade family. Do not grow microgreens from tomato, pepper, eggplant or potato seed. The fruit of those plants is food and the foliage is not, and at the seedling stage you would be eating the foliage. Every other common vegetable and herb on the seed rack is fine.\n\nAvoid seed sold as a garden crop that has been treated with fungicide, usually dyed pink or blue. That is meant to go in soil, not on a plate."
+            },
+            {
+              "heading": "Sowing, which is nothing like sowing a row",
+              "body": "Use a shallow tray, an inch or so of damp seed compost, levelled and gently firmed. Any plastic food container with holes punched in the bottom works.\n\nThen sow far more thickly than any instinct allows. Seeds almost touching, in a single even layer over the whole surface. There is no thinning, no spacing, and no competition problem, because nothing is going to grow long enough to need room.\n\nPress the seed down into the mix rather than burying it, then sift the thinnest dusting of compost over the top. Water gently, ideally by standing the tray in a shallow dish for a few minutes and letting it drink from below, because a watering can will wash the seed into drifts.\n\nCover the tray for the first few days. A second tray upside down on top, or a plate, or a plastic bag. They germinate in the dark, the cover keeps the surface from drying, and the seedlings come up pale and straight and reaching. Lift the cover once the shoots are pushing against it."
+            },
+            {
+              "heading": "Light, water and about ten days",
+              "body": "As soon as they are up, they need the brightest place you have. A south-facing windowsill in winter is enough for most of them, though they will lean hard toward it, so turn the tray every day. They green up within hours of getting light.\n\nWater from below whenever the surface looks dry, and let the tray drain rather than sit in water. Damp is the point and wet is the failure: the one thing that goes wrong with microgreens is a fuzzy grey mould at soil level, which comes from a tray that is too wet, too crowded against a wall, or never gets any air movement. A cracked window for ten minutes a day fixes most of it.\n\nThey are ready when the first true leaves appear above the two seed leaves, usually somewhere between one and three weeks depending on what you sowed."
+            },
+            {
+              "heading": "Cutting, and keeping it going",
+              "body": "Cut with scissors just above the soil line, taking what you need for that meal. Do not pull them up, and do not wash them until you are about to eat, since wet microgreens go slimy in the fridge within a day.\n\nMost kinds do not regrow usefully after cutting. Pea shoots are the exception and will often give a second, smaller cut. For everything else, tip the spent tray into the compost and start again with fresh mix rather than reusing it, because the old root mat holds exactly the damp that grows mould.\n\nThe habit that makes this worth doing is sowing a new tray every week, on the same day, whether or not you feel like it. Three trays on a rotation is a continuous supply of something green through the months when there is nothing at all in the garden."
+            }
+          ]
+        }
+      },
+      "es": {
+        "slug": "como-cultivar-microverdes",
+        "title": "Cómo Cultivar Microverdes: Guía para Principiantes en 8 Pasos",
+        "eyebrow": "Guía para principiantes",
+        "chartTitle": "Cómo cultivar microverdes",
+        "description": "Ocho pasos para cortar verde fresco en la ventana en menos de tres semanas, en pleno invierno y sin tener jardín.",
+        "pinDescription": "Cómo cultivar microverdes en una ventana: siembra muy espeso en una bandeja poco honda, tápalos a oscuras unos días y pásalos luego a mucha luz regando por abajo. Listos para cortar en una a tres semanas, todo el invierno y sin jardín.",
+        "cta": "Explora la biblioteca de plantas en Garden Planner Pro",
+        "proTip": {
+          "label": "Consejo",
+          "text": "No cultives nunca microverdes de tomate, pimiento, berenjena o patata. El resto de la planta se come más adelante, pero las hojas de plántula de las solanáceas no son seguras."
+        },
+        "steps": [
+          {
+            "label": "Semilla Rápida",
+            "bullets": [
+              "Rábano, guisante, brócoli, mostaza",
+              "Cómprala a peso"
+            ]
+          },
+          {
+            "label": "Nada De Solanáceas",
+            "bullets": [
+              "Ni tomate, ni pimiento, ni berenjena",
+              "Esas hojas son tóxicas"
+            ]
+          },
+          {
+            "label": "Bandeja Poco Honda",
+            "bullets": [
+              "Dos centímetros de sustrato",
+              "Con agujeros de drenaje"
+            ]
+          },
+          {
+            "label": "Siembra Muy Espeso",
+            "bullets": [
+              "Casi tocándose, en una capa",
+              "Aquí no se aclara nada"
+            ]
+          },
+          {
+            "label": "Presiona, No Entierres",
+            "bullets": [
+              "Asienta la semilla en el sustrato",
+              "Un velo de tierra encima"
+            ]
+          },
+          {
+            "label": "Tapa Tres Días",
+            "bullets": [
+              "A oscuras hasta que empujen",
+              "Mantiene húmeda la superficie"
+            ]
+          },
+          {
+            "label": "Después Mucha Luz",
+            "bullets": [
+              "La ventana más clara que tengas",
+              "Gira la bandeja a diario"
+            ]
+          },
+          {
+            "label": "Corta Sobre La Tierra",
+            "bullets": [
+              "Tijeras a la primera hoja verdadera",
+              "Siembra otra bandeja cada semana"
+            ]
+          }
+        ],
+        "article": {
+          "intro": "Los microverdes son plántulas corrientes de hortaliza, cortadas y comidas cuando miden dos o tres centímetros. El rábano sabe a rábano. Los brotes de guisante saben a guisante.\n\nSon lo único que merece la pena cultivar en enero en la ventana de un piso, porque no necesitan jardín, ni equipo de luz, ni más de tres semanas.",
+          "sections": [
+            {
+              "heading": "Qué sembrar, y la única regla de seguridad",
+              "body": "Empieza por rábano, guisante, girasol, brócoli, mostaza, col rizada y berro. Germinan rápido y sin fallos, y el rábano en particular va de semilla a plato en cosa de una semana.\n\nCompra la semilla a peso y no en sobres de jardinería. Estás sembrando cientos de semillas por bandeja, y un sobre pensado para una línea de rábanos te cubre un tercio de una. La semilla que se vende para germinados o microverdes es lo mismo en una cantidad útil.\n\nLa única regla estricta es la familia de las solanáceas. No cultives microverdes de tomate, pimiento, berenjena ni patata. El fruto de esas plantas es alimento y el follaje no lo es, y en fase de plántula lo que te estarías comiendo es el follaje. Cualquier otra hortaliza o hierba del expositor vale.\n\nEvita la semilla vendida para cultivo de campo que venga tratada con fungicida, normalmente teñida de rosa o azul. Esa va a la tierra, no a un plato."
+            },
+            {
+              "heading": "La siembra no se parece en nada a sembrar una línea",
+              "body": "Usa una bandeja poco honda con un par de centímetros de sustrato de semillero húmedo, nivelado y apenas asentado. Sirve cualquier envase de comida para llevar con agujeros en el fondo.\n\nY luego siembra mucho más espeso de lo que cualquier instinto permite. Semillas casi tocándose, en una capa uniforme sobre toda la superficie. No hay que aclarar, no hay marco y no hay problema de competencia, porque nada va a crecer lo bastante como para necesitar sitio.\n\nPresiona la semilla contra el sustrato en vez de enterrarla y tamiza encima un velo finísimo de tierra. Riega con suavidad, mejor poniendo la bandeja unos minutos en un plato con agua para que beba desde abajo, porque una regadera arrastra la semilla y la amontona.\n\nTapa la bandeja los primeros días. Otra bandeja del revés encima, un plato o una bolsa. Germinan a oscuras, la tapa evita que se seque la superficie y las plántulas salen pálidas, rectas y estiradas. Destapa en cuanto los brotes empujen contra la tapa."
+            },
+            {
+              "heading": "Luz, agua y unos diez días",
+              "body": "En cuanto asoman necesitan el sitio más luminoso que tengas. Una ventana al sur en invierno basta para casi todos, aunque se inclinarán mucho hacia ella, así que gira la bandeja cada día. Se ponen verdes a las pocas horas de recibir luz.\n\nRiega desde abajo cuando la superficie se vea seca y deja escurrir la bandeja en vez de dejarla en agua. Húmedo es el objetivo y encharcado es el fallo: lo único que se tuerce con los microverdes es un moho gris y algodonoso a ras de tierra, que sale de una bandeja demasiado mojada, demasiado pegada a una pared o sin nada de movimiento de aire. Una ventana entreabierta diez minutos al día resuelve casi todo.\n\nEstán listos cuando aparece la primera hoja verdadera por encima de las dos hojas de semilla, normalmente entre una y tres semanas según lo que hayas sembrado."
+            },
+            {
+              "heading": "Cortar, y mantener el ritmo",
+              "body": "Corta con tijeras justo por encima de la tierra, solo lo que vayas a usar en esa comida. No los arranques, y no los laves hasta el momento de comerlos, porque un microverde mojado se vuelve baboso en la nevera en un día.\n\nCasi ninguno rebrota de forma aprovechable después del corte. Los brotes de guisante son la excepción y suelen dar un segundo corte más pequeño. Con el resto, vuelca la bandeja gastada al compost y empieza de nuevo con sustrato limpio en vez de reutilizarlo, porque la maraña de raíces vieja retiene justo la humedad que cría moho.\n\nLa costumbre que hace que esto valga la pena es sembrar una bandeja nueva cada semana, el mismo día, tengas ganas o no. Tres bandejas en rotación son un suministro continuo de algo verde durante los meses en que en el huerto no hay absolutamente nada."
+            }
+          ]
+        }
+      },
+      "icons": [
+        {
+          "slug": "microgreens"
+        },
+        {
+          "slug": "tomato-seedling-pot"
+        },
+        {
+          "slug": "seed-tray-indoors"
+        },
+        {
+          "slug": "dense-sown-herb-patch"
+        },
+        {
+          "slug": "seed-sowing-depth"
+        },
+        {
+          "slug": "tray-covered-dark",
+          "subject": "a shallow seed tray with a second empty tray turned upside down over it as a lid, drawn on its own"
+        },
+        {
+          "slug": "bright-shade-windowsill"
+        },
+        {
+          "slug": "cutting-microgreens-scissors",
+          "subject": "a small dense tray of young microgreen shoots with a pair of scissors lying across the rim of the tray"
+        }
+      ],
+      "proTipIcon": {
+        "slug": "bottom-watering-tray"
+      }
+    },
+    {
+      "key": "prune-fruit-trees",
+      "category": "fruit",
+      "tags": [
+        "fruit",
+        "trees",
+        "planning",
+        "infographics"
+      ],
+      "pinBoard": "Raised Bed Gardening",
+      "pinKeywords": [
+        "pruning fruit trees",
+        "winter pruning",
+        "apple tree care",
+        "backyard orchard"
+      ],
+      "en": {
+        "slug": "how-to-prune-fruit-trees",
+        "title": "How to Prune Fruit Trees: A Beginner's Guide in 8 Steps",
+        "eyebrow": "Beginner-friendly guide",
+        "chartTitle": "How to prune fruit trees",
+        "description": "Eight steps to pruning an apple or pear without ruining it, including the one group of fruit trees you must not touch in winter.",
+        "pinDescription": "How to prune fruit trees: apples and pears in winter while dormant, plums and cherries in summer instead. Take out dead, damaged and crossing wood first, open the middle to light, cut back to a bud, and never take more than a quarter in one year.",
+        "cta": "Plan your garden year in Garden Planner Pro",
+        "proTip": {
+          "label": "Pro tip",
+          "text": "Prune plums, cherries and apricots in summer, never in winter. Winter cuts on stone fruit are how silver leaf and bacterial canker get in, and that is a tree you lose rather than a crop."
+        },
+        "steps": [
+          {
+            "label": "Apples And Pears",
+            "bullets": [
+              "Prune while fully dormant",
+              "Midwinter, leaves long gone"
+            ]
+          },
+          {
+            "label": "Stone Fruit In Summer",
+            "bullets": [
+              "Plum, cherry, apricot",
+              "Winter cuts invite silver leaf"
+            ]
+          },
+          {
+            "label": "Sharpen And Clean",
+            "bullets": [
+              "Blunt tools crush the wood",
+              "Wipe blades between trees"
+            ]
+          },
+          {
+            "label": "Start With Three Ds",
+            "bullets": [
+              "Dead, damaged, diseased",
+              "Then anything crossing"
+            ]
+          },
+          {
+            "label": "Open The Middle",
+            "bullets": [
+              "Light and air to the centre",
+              "Aim for an open goblet"
+            ]
+          },
+          {
+            "label": "Cut Above A Bud",
+            "bullets": [
+              "Just above an outward bud",
+              "Angled away from it"
+            ]
+          },
+          {
+            "label": "Leave No Stubs",
+            "bullets": [
+              "Cut outside the branch collar",
+              "Stubs die back and rot"
+            ]
+          },
+          {
+            "label": "Stop At A Quarter",
+            "bullets": [
+              "Never more in one winter",
+              "Hard pruning makes water shoots"
+            ]
+          }
+        ],
+        "article": {
+          "intro": "Pruning a fruit tree frightens people more than any other garden job, and the fear is mostly misplaced. An apple tree is very hard to kill with secateurs.\n\nWhat you can do is get the season wrong on the wrong tree, which is a real mistake and the first thing worth sorting out.",
+          "sections": [
+            {
+              "heading": "Which tree, which season",
+              "body": "Apples and pears are pruned in winter, when the tree is fully dormant, the leaves are long gone and you can see the whole shape. Anywhere from after leaf fall to just before the buds break.\n\nPlums, cherries, apricots, peaches and all the other stone fruit are the opposite, and this is the part that matters. They are pruned in summer, while they are growing strongly, because that is when a wound seals fastest. A winter cut on a plum sits open and wet for months, and it is the classic way that silver leaf and bacterial canker get into a tree. You can lose the whole tree to that, which is a different order of mistake from a badly shaped apple.\n\nIf you take one thing away: apples and pears now, stone fruit in July.\n\nNewly planted trees are their own subject, shaped over the first three or four years to build a framework. What follows is maintenance pruning of an established tree."
+            },
+            {
+              "heading": "The order to work in",
+              "body": "Stand back and look at the tree for a minute before cutting anything. It is genuinely the most useful part of the job and the part everyone skips.\n\nThen work through it in order. First the three Ds: dead wood, damaged wood, diseased wood. That alone improves most neglected trees and there is no judgement involved, because none of it was doing anything.\n\nSecond, anything crossing or rubbing. Two branches grinding against each other in the wind wear a wound that never closes, so take out whichever is weaker or worse placed.\n\nThird, the middle. A fruit tree wants light and air through the centre, roughly the shape of an open goblet or a wine glass, because fruit ripens where light reaches and disease settles where air does not move. Take out branches growing straight up through the middle and anything heading back into the centre.\n\nFourth, and only if there is more to do, shorten what is left."
+            },
+            {
+              "heading": "How to make the cut",
+              "body": "Two kinds of cut, and both have a rule.\n\nShortening a shoot: cut just above a bud, about a quarter inch up, with the cut sloping away from the bud so water runs off it. Choose a bud pointing outward, away from the middle of the tree, because that is the direction the new shoot will grow.\n\nRemoving a whole branch: cut just outside the branch collar, the slightly swollen ring of bark where the branch meets the trunk. That collar is the tree's own sealing tissue. Cutting flush to the trunk removes it and leaves a wound that takes years to close, and leaving a long stub gives you a piece of dead wood that rots back toward the trunk.\n\nDo not paint the cuts with anything. Wound sealants were standard advice for a long time and are now understood to trap moisture and slow the tree's own response. A clean cut left open is better.\n\nUse sharp tools, and wipe the blades between trees if you are cutting anything diseased."
+            },
+            {
+              "heading": "How much, and what happens if you take too much",
+              "body": "A quarter of the canopy in one winter is the usual limit, and less is safer.\n\nGo beyond that and the tree responds to the loss by throwing up water shoots: vertical, whippy growth straight out of the main limbs, which bears no fruit and blocks all the light you just let in. Then you prune those out the following year, which provokes more. A badly overgrown tree is brought back over three or four winters, not one.\n\nIf you are unsure, do less. An under-pruned tree still gives you fruit. The nervous beginner's mistake is almost never that they cut too little."
+            }
+          ]
+        }
+      },
+      "es": {
+        "slug": "como-podar-arboles-frutales",
+        "title": "Cómo Podar Árboles Frutales: Guía para Principiantes en 8 Pasos",
+        "eyebrow": "Guía para principiantes",
+        "chartTitle": "Cómo podar árboles frutales",
+        "description": "Ocho pasos para podar un manzano o un peral sin estropearlo, incluido el grupo de frutales que no se debe tocar en invierno.",
+        "pinDescription": "Cómo podar árboles frutales: manzanos y perales en invierno, en reposo; ciruelos y cerezos en verano. Quita primero la madera muerta, dañada y cruzada, abre el centro a la luz, corta sobre una yema y nunca retires más de un cuarto en un año.",
+        "cta": "Planifica tu año de huerto en Garden Planner Pro",
+        "proTip": {
+          "label": "Consejo",
+          "text": "Poda ciruelos, cerezos y albaricoqueros en verano, nunca en invierno. Los cortes de invierno en frutales de hueso son la puerta del plomo y del chancro bacteriano, y ahí pierdes el árbol y no solo la cosecha."
+        },
+        "steps": [
+          {
+            "label": "Manzano Y Peral",
+            "bullets": [
+              "Poda en pleno reposo",
+              "Pleno invierno, sin hoja"
+            ]
+          },
+          {
+            "label": "Hueso En Verano",
+            "bullets": [
+              "Ciruelo, cerezo, albaricoquero",
+              "En invierno entra el plomo"
+            ]
+          },
+          {
+            "label": "Afila Y Limpia",
+            "bullets": [
+              "La herramienta roma machaca",
+              "Limpia entre árbol y árbol"
+            ]
+          },
+          {
+            "label": "Empieza Por Lo Malo",
+            "bullets": [
+              "Muerto, dañado, enfermo",
+              "Y luego lo que se cruza"
+            ]
+          },
+          {
+            "label": "Abre El Centro",
+            "bullets": [
+              "Luz y aire hasta dentro",
+              "Forma de copa abierta"
+            ]
+          },
+          {
+            "label": "Corta Sobre Yema",
+            "bullets": [
+              "Justo encima de una yema exterior",
+              "En bisel hacia fuera"
+            ]
+          },
+          {
+            "label": "Sin Dejar Tocones",
+            "bullets": [
+              "Corta fuera del cuello de rama",
+              "El tocón se seca y pudre"
+            ]
+          },
+          {
+            "label": "Un Cuarto Como Mucho",
+            "bullets": [
+              "Nunca más en un invierno",
+              "La poda dura da chupones"
+            ]
+          }
+        ],
+        "article": {
+          "intro": "Podar un frutal da más miedo que ninguna otra tarea del huerto, y el miedo está casi siempre mal colocado. Un manzano es muy difícil de matar con unas tijeras de podar.\n\nLo que sí se puede hacer es equivocarse de temporada con el árbol equivocado, y ese error sí es real y es lo primero que conviene aclarar.",
+          "sections": [
+            {
+              "heading": "Qué árbol, qué temporada",
+              "body": "Los manzanos y perales se podan en invierno, cuando el árbol está en reposo pleno, ya sin hoja y con toda la estructura a la vista. Desde la caída de la hoja hasta justo antes de que broten las yemas.\n\nLos ciruelos, cerezos, albaricoqueros, melocotoneros y el resto de frutales de hueso son lo contrario, y esta es la parte que importa. Se podan en verano, mientras crecen con fuerza, porque es cuando una herida cicatriza más deprisa. Un corte de invierno en un ciruelo se queda abierto y húmedo durante meses, y es la vía clásica por la que el plomo y el chancro bacteriano entran en el árbol. Ahí puedes perder el árbol entero, que es un error de otra categoría que un manzano mal formado.\n\nSi te quedas con una sola idea: manzanos y perales ahora, frutales de hueso en julio.\n\nLos árboles recién plantados son otro asunto, y se forman durante los tres o cuatro primeros años para construir el esqueleto. Lo que sigue es poda de mantenimiento de un árbol ya hecho."
+            },
+            {
+              "heading": "El orden en que se trabaja",
+              "body": "Apártate y mira el árbol un minuto antes de cortar nada. Es de verdad la parte más útil del trabajo y la que todo el mundo se salta.\n\nLuego ve por orden. Primero lo malo: madera muerta, madera dañada, madera enferma. Solo con eso mejora la mayoría de los árboles descuidados y no hay criterio que aplicar, porque nada de eso servía para nada.\n\nSegundo, todo lo que se cruce o roce. Dos ramas frotándose con el viento se abren una herida que no cierra nunca, así que quita la más débil o la peor colocada.\n\nTercero, el centro. Un frutal quiere luz y aire por dentro, más o menos con forma de copa abierta, porque la fruta madura donde llega la luz y la enfermedad se instala donde el aire no se mueve. Quita las ramas que suben rectas por el medio y todo lo que se dirija de vuelta hacia dentro.\n\nCuarto, y solo si queda trabajo, acorta lo que quede."
+            },
+            {
+              "heading": "Cómo se hace el corte",
+              "body": "Hay dos tipos de corte y cada uno tiene su regla.\n\nAcortar un brote: corta justo encima de una yema, medio centímetro por encima, con el bisel cayendo hacia el lado contrario a la yema para que escurra el agua. Elige una yema que mire hacia fuera, lejos del centro del árbol, porque esa es la dirección en la que crecerá el brote nuevo.\n\nQuitar una rama entera: corta justo por fuera del cuello de rama, ese anillo de corteza algo engrosado donde la rama se une al tronco. Ese cuello es el tejido con el que el árbol sella. Cortar a ras de tronco lo elimina y deja una herida que tarda años en cerrar, y dejar un tocón largo te deja un trozo de madera muerta que se pudre hacia el tronco.\n\nNo pintes los cortes con nada. Los selladores de heridas fueron consejo habitual mucho tiempo y hoy se entiende que atrapan humedad y frenan la respuesta del propio árbol. Un corte limpio al aire es mejor.\n\nUsa herramienta afilada y limpia las hojas entre árbol y árbol si estás cortando algo enfermo."
+            },
+            {
+              "heading": "Cuánto, y qué pasa si te pasas",
+              "body": "Un cuarto de la copa en un invierno es el límite habitual, y menos es más seguro.\n\nSi te pasas, el árbol responde a la pérdida echando chupones: brotes verticales y flexibles que salen directos de las ramas principales, que no dan fruta y tapan toda la luz que acabas de dejar entrar. Y luego los podas al año siguiente, lo que provoca más. Un árbol muy descuidado se recupera a lo largo de tres o cuatro inviernos, no de uno.\n\nSi tienes dudas, corta menos. Un árbol podado de menos te sigue dando fruta. El error del principiante nervioso casi nunca es haber cortado demasiado poco."
+            }
+          ]
+        }
+      },
+      "icons": [
+        {
+          "slug": "apple-tree-branch"
+        },
+        {
+          "slug": "plum-branch-in-leaf",
+          "subject": "a short branch of a plum tree in full summer leaf with three ripe purple plums hanging from it, drawn on its own"
+        },
+        {
+          "slug": "secateurs-and-stone",
+          "subject": "a pair of clean sharp bypass secateurs lying closed beside a small rectangular sharpening stone"
+        },
+        {
+          "slug": "dead-crossing-branches",
+          "subject": "two bare fruit tree branches crossing and rubbing against each other, one of them dead and grey with peeling bark"
+        },
+        {
+          "slug": "open-centre-tree",
+          "subject": "a small bare dormant apple tree drawn whole with clear space around it, its centre open and uncluttered and its branches spread outward like a goblet"
+        },
+        {
+          "slug": "pruning-cut-to-bud",
+          "subject": "a close view of a bare fruit tree shoot cut at a slope just above an outward facing bud"
+        },
+        {
+          "slug": "branch-collar-cut",
+          "subject": "a close view of the base of a fruit tree branch where it meets the trunk, showing the slightly swollen ring of the branch collar and a clean pruning cut just outside it"
+        },
+        {
+          "slug": "checkmark"
+        }
+      ],
+      "proTipIcon": {
+        "slug": "graft-union"
+      }
     }
   ]
 }
