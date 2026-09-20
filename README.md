@@ -530,11 +530,14 @@ app ships a release.
 English/Spanish infographic pairs, published to `/infographics/` and
 `/es/infographics/`.
 
-**Cadence changed in September 2026.** This used to be a launchd job publishing
-two a day at 7am, which put out fourteen a week and buried the articles. It is
-now roughly two a *week*, produced inside the Saturday batch by the
-`weekly-garden-content` scheduled task (`~/.claude/scheduled-tasks/`), and the
-launchd agent has been unloaded. The script below is unchanged and is still the
+**Cadence changed twice in September 2026.** This used to be a launchd job
+publishing two a day at 7am, which put out fourteen a week and buried the
+articles. It dropped to two a *week*, and on 20 September went to **five a
+week, one per weekday**, which pairs each article with one infographic. They are
+produced inside the weekly batch by the `weekly-garden-content` scheduled task
+(`~/.claude/scheduled-tasks/`), and the launchd agent has been unloaded. Each
+topic produces an en/es pair, so five topics is ten pins; from the same date the
+share brief tags and pins the Spanish half too. The script below is unchanged and is still the
 right way to run one by hand.
 
 ```sh
