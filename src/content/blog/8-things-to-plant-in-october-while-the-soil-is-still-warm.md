@@ -11,7 +11,7 @@ pinEyebrow: "PLANT NOW"
 pinHighlight: "OCTOBER"
 pinKeywords: ["fall vegetable garden", "what to plant in october", "garlic planting", "overwintering vegetables", "fall garden ideas"]
 ctaHook: "If you are not sure how many weeks of warm soil you have left, the planting calendar counts back from your own first frost date rather than a regional average."
-draft: true
+draft: false
 ---
 
 The thing that trips people up about October is that they plant by how it feels
