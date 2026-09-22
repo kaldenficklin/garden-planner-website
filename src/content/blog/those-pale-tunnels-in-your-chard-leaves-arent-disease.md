@@ -12,7 +12,7 @@ pinHighlight: "TUNNELS"
 pinKeywords: ["leaf miner control", "swiss chard problems", "organic pest control", "fall vegetable garden", "spinach pests"]
 storePage: pests
 ctaHook: "The pest guide has the egg rows photographed from underneath, which is the only stage of this you can do anything about."
-draft: true
+draft: false
 ---
 
 Go and hold one of the bad leaves up against the light before you read any
