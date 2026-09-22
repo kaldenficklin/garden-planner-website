@@ -47,8 +47,8 @@ comparison.
 
 This is the part that actually changes your season. The adult is a small grey
 fly, and it lays its eggs on the *undersides* of leaves in a tidy little row of
-white ovals, three or six or a dozen, set on end and lined up like seeds on a
-ruler. Once you have seen one row you will spot them forever.
+white ovals, usually two to five of them, lying flat side by side like grains
+of rice. Once you have seen one row you will spot them forever.
 
 Go through the bed and turn leaves over. Every row you find and wipe off with a
 thumb is a set of tunnels that never happens. This is the only stage of the
