@@ -11,7 +11,7 @@ pinEyebrow: "BEFORE WINTER"
 pinHighlight: "RANKED"
 pinKeywords: ["winter mulch", "fall vegetable garden", "raised bed gardening", "leaf mulch", "garden soil improvement"]
 ctaHook: "The garden journal is the only reason I know which bed got leaves and which got straw last year, because by April they all look the same."
-draft: true
+draft: false
 ---
 
 Mulching a bed in October is a bet about April. You are spending an afternoon
