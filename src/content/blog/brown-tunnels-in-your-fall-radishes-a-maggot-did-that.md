@@ -4,7 +4,7 @@ description: "Rusty grooves and slimy tunnels in fall radishes and turnips are c
 date: 2026-09-28
 tags: ["pests-and-problems", "fall-garden", "organic-gardening"]
 image: "/assets/blog/brown-tunnels-in-your-fall-radishes-a-maggot-did-that-hero.jpg"
-imageAlt: "TODO"
+imageAlt: "Colored-pencil drawing of a pulled purple-topped turnip lying on dark soil beside a timber raised bed, with a small cluster of reddish-brown oval root maggot pupae in the soil next to it"
 pinImage: "/assets/blog/brown-tunnels-in-your-fall-radishes-a-maggot-did-that-pin.jpg"
 pinTitle: "Brown Tunnels in Your Radishes?"
 pinEyebrow: "ROOT MAGGOTS"

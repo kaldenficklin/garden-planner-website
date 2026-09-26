@@ -4,11 +4,12 @@ description: "If you garden to cut the grocery bill, potatoes and onions are the
 date: 2026-10-01
 tags: ["planning", "vegetables", "harvest"]
 image: "/assets/blog/the-crops-that-save-you-money-are-the-ones-sold-in-little-plastic-boxes-hero.jpg"
-imageAlt: "TODO"
+imageAlt: "Colored-pencil drawing of pots of basil, thyme and chives on a back step beside a bowl of raspberries, with a raised bed of loose-leaf lettuce and a staked cherry tomato behind"
 pinImage: "/assets/blog/the-crops-that-save-you-money-are-the-ones-sold-in-little-plastic-boxes-pin.jpg"
 pinTitle: "The Crops That Actually Save You Money"
 pinEyebrow: "GROCERY BILL"
 pinHighlight: "SAVE YOU MONEY"
+heroCrop: "centre"
 pinKeywords: ["save money gardening", "vegetable garden planning", "grow your own food", "garden on a budget", "what to grow in a small garden"]
 storePage: savings
 ctaHook: "The harvest log totals what each bed gave you against shop prices, which is the fastest way to find out which crops are paying for themselves in your garden."

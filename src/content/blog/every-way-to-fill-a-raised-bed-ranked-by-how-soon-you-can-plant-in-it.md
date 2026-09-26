@@ -4,7 +4,7 @@ description: "Bagged mix, bulk soil, your own dirt, buried logs or lasagna layer
 date: 2026-10-02
 tags: ["planning", "beginners", "organic-gardening"]
 image: "/assets/blog/every-way-to-fill-a-raised-bed-ranked-by-how-soon-you-can-plant-in-it-hero.jpg"
-imageAlt: "TODO"
+imageAlt: "Colored-pencil drawing of a new timber raised bed in autumn filled in layers of fallen leaves, green grass clippings, straw and dark compost over cardboard, with a wheelbarrow of leaves beside it"
 pinImage: "/assets/blog/every-way-to-fill-a-raised-bed-ranked-by-how-soon-you-can-plant-in-it-pin.jpg"
 pinTitle: "5 Ways to Fill a Raised Bed, Ranked"
 pinEyebrow: "BUILD IT NOW"

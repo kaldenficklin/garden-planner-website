@@ -4,7 +4,7 @@ description: "Kale, cabbage and lettuce going purple in autumn is usually the co
 date: 2026-09-30
 tags: ["pests-and-problems", "fall-garden", "vegetables"]
 image: "/assets/blog/your-fall-kale-turned-purple-put-the-bone-meal-down-hero.jpg"
-imageAlt: "TODO"
+imageAlt: "Colored-pencil drawing of a curly kale plant in a raised bed on a frosty autumn morning, its lower leaves tinged purple along the veins and edges, a closed paper bag of fertiliser set aside on the soil"
 pinImage: "/assets/blog/your-fall-kale-turned-purple-put-the-bone-meal-down-pin.jpg"
 pinTitle: "Why Your Fall Kale Turned Purple"
 pinEyebrow: "DON'T FEED IT"

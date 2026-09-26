@@ -4,7 +4,7 @@ description: "Peas, spinach, potatoes and five more go in weeks before your last
 date: 2026-09-29
 tags: ["planning", "frost-dates", "vegetables"]
 image: "/assets/blog/8-crops-you-can-plant-weeks-before-your-last-frost-hero.jpg"
-imageAlt: "TODO"
+imageAlt: "Colored-pencil drawing of a timber raised bed in early spring with frost on the soil, young peas climbing a twig support, spinach, lettuce, sprouting onion sets and two small cabbage transplants"
 pinImage: "/assets/blog/8-crops-you-can-plant-weeks-before-your-last-frost-pin.jpg"
 pinTitle: "8 Crops to Plant Before Your Last Frost"
 pinEyebrow: "EARLY SPRING"
