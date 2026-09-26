@@ -26,6 +26,1169 @@
   ],
   "topics": [
     {
+      "key": "protect-plants-from-frost",
+      "category": "seeds",
+      "tags": [
+        "frost",
+        "season extension",
+        "planning",
+        "infographics"
+      ],
+      "pinBoard": "Seed Starting & Frost Dates",
+      "pinKeywords": [
+        "how to protect plants from frost",
+        "frost protection garden",
+        "fleece and cloches",
+        "extending the season"
+      ],
+      "en": {
+        "slug": "how-to-protect-plants-from-frost",
+        "title": "How to Protect Plants from Frost: A Beginner's Guide in 8 Steps",
+        "eyebrow": "Beginner-friendly guide",
+        "chartTitle": "How to protect plants from frost",
+        "description": "Eight steps to getting tender plants through a cold night, from spotting the risky conditions to uncovering them in the morning.",
+        "pinDescription": "How to protect plants from frost: watch for a clear, still, dry evening, cover plants before dusk to trap the days warmth, keep the cover off the leaves, and take it off again in the morning.",
+        "cta": "Check your frost dates in Garden Planner Pro",
+        "proTip": {
+          "label": "Pro tip",
+          "text": "Cover before dusk, not at bedtime. The cover works by trapping heat the soil released during the day, so putting it on at ten at night traps nothing but cold air."
+        },
+        "steps": [
+          {
+            "label": "Know The Risky Nights",
+            "bullets": [
+              "Clear, still and dry",
+              "Cloud and wind protect you"
+            ]
+          },
+          {
+            "label": "Water Beforehand",
+            "bullets": [
+              "Damp soil holds more heat",
+              "Water in the morning"
+            ]
+          },
+          {
+            "label": "Cover Before Dusk",
+            "bullets": [
+              "Traps the days warmth",
+              "Too late traps cold air"
+            ]
+          },
+          {
+            "label": "Keep Fabric Off Leaves",
+            "bullets": [
+              "Touching fabric freezes the leaf",
+              "Use hoops or canes"
+            ]
+          },
+          {
+            "label": "Seal The Edges",
+            "bullets": [
+              "Weigh down every edge",
+              "Warm air escapes at gaps"
+            ]
+          },
+          {
+            "label": "Move Pots To Shelter",
+            "bullets": [
+              "Pot roots freeze first",
+              "Group them by a wall"
+            ]
+          },
+          {
+            "label": "Uncover In The Morning",
+            "bullets": [
+              "Plants cook under cover",
+              "Let light and air back"
+            ]
+          },
+          {
+            "label": "Wait Before Cutting Back",
+            "bullets": [
+              "Damage looks worse than it is",
+              "Prune when growth restarts"
+            ]
+          }
+        ],
+        "article": {
+          "intro": "Frost protection is mostly about two things people get wrong: which nights actually matter, and what time of day you put the cover on.\n\nGet those right and a sheet of fleece will carry a tender plant through a night that would otherwise have finished it.",
+          "sections": [
+            {
+              "heading": "The dangerous night is the beautiful one",
+              "body": "A still, clear, dry evening after a bright day is the frost risk. With no cloud to hold it in, the heat the ground absorbed radiates straight up into the sky, and with no wind to mix the air, cold air pools at ground level.\n\nA cloudy or breezy night at the same forecast temperature is usually fine. This is why a frost can hit one part of a garden and not another: cold air flows downhill and settles in dips and against solid fences, which is what people mean by a frost pocket.\n\nThe air temperature is measured at head height, so ground level can be two or three degrees colder than the forecast number. A forecast of two degrees above freezing is still a frost night for anything tender."
+            },
+            {
+              "heading": "How a cover actually works",
+              "body": "A fleece or a cloche generates no heat. All it does is trap warmth that the soil absorbed during the day and slow its escape overnight.\n\nThat single fact settles the timing: the cover has to go on in the late afternoon or at dusk, while there is still warmth in the ground to trap. Going out at bedtime and throwing fleece over cold plants achieves very little.\n\nIt also explains two details. Water the soil in the morning if frost is forecast, because damp soil stores more heat than dry and releases it slowly overnight. And seal the cover to the ground, weighted with stones or bricks all the way round, because the warm air you are trying to keep will leak out of any gap at the edge.\n\nKeep the fabric off the foliage on hoops or canes. Wherever a cover rests directly on a leaf it conducts the cold straight through, and you get a frost burn in the exact shape of the fabric."
+            },
+            {
+              "heading": "Pots, and what to prioritise",
+              "body": "Plants in containers are far more exposed than the same plants in the ground, because the roots are surrounded by cold air rather than insulated by soil. A plant that is hardy in a border can be killed in a pot in the same garden.\n\nSo move pots against a house wall, which stays warmer, and group them together so they shelter one another. Wrap the pots rather than the plants, with bubble wrap or hessian, and lift them off cold paving onto pot feet or a bit of wood.\n\nIn the vegetable garden, the priorities are anything tender that has just gone out and anything in flower. A frost on open blossom on fruit trees is what costs you the crop, even when the tree itself is untouched."
+            },
+            {
+              "heading": "The morning after",
+              "body": "Take covers off in the morning. Fleece left on through a sunny day cooks the plants underneath and holds damp air around them, and plastic cloches heat up alarmingly fast.\n\nIf something has been caught, leave it alone for a while. Frosted foliage looks dreadful, blackened and limp, and a surprising amount of it recovers from buds lower down. Cutting it off straight away removes the damaged growth that is sheltering the live parts underneath, and exposes them to the next cold night.\n\nWait until growth restarts, then cut back to where you can see green. Some plants surprise you weeks later. The exception is anything mushy and rotting, which should come off promptly before it spreads."
+            }
+          ]
+        }
+      },
+      "es": {
+        "slug": "como-proteger-las-plantas-de-las-heladas",
+        "title": "Cómo Proteger las Plantas de las Heladas: Guía para Principiantes en 8 Pasos",
+        "eyebrow": "Guía para principiantes",
+        "chartTitle": "Cómo proteger de las heladas",
+        "description": "Ocho pasos para salvar plantas tiernas de una noche fría, desde reconocer la noche de riesgo hasta destaparlas por la mañana.",
+        "pinDescription": "Cómo proteger las plantas de las heladas: vigila las noches despejadas, secas y sin viento, cubre antes del anochecer para atrapar el calor del día, no dejes que la tela toque las hojas y destapa por la mañana.",
+        "cta": "Consulta tus fechas de helada en Garden Planner Pro",
+        "proTip": {
+          "label": "Consejo",
+          "text": "Cubre antes del anochecer, no al irte a la cama. La protección funciona atrapando el calor que el suelo ha soltado durante el día, así que ponerla a las diez de la noche no atrapa más que aire frío."
+        },
+        "steps": [
+          {
+            "label": "Conoce Las Noches",
+            "bullets": [
+              "Despejada, seca y sin viento",
+              "Las nubes y el viento protegen"
+            ]
+          },
+          {
+            "label": "Riega Antes",
+            "bullets": [
+              "La tierra húmeda guarda calor",
+              "Riega por la mañana"
+            ]
+          },
+          {
+            "label": "Cubre Antes Del Anochecer",
+            "bullets": [
+              "Atrapa el calor del día",
+              "Tarde solo atrapa frío"
+            ]
+          },
+          {
+            "label": "Tela Sin Tocar Hojas",
+            "bullets": [
+              "Donde toca, la hoja se quema",
+              "Usa arcos o cañas"
+            ]
+          },
+          {
+            "label": "Sella Contra El Suelo",
+            "bullets": [
+              "Sujeta bien todos los bordes",
+              "El calor se escapa por ahí"
+            ]
+          },
+          {
+            "label": "Resguarda Las Macetas",
+            "bullets": [
+              "La raíz en maceta se hiela antes",
+              "Júntalas junto a un muro"
+            ]
+          },
+          {
+            "label": "Destapa Por La Mañana",
+            "bullets": [
+              "Tapadas se cuecen",
+              "Devuélveles luz y aire"
+            ]
+          },
+          {
+            "label": "No Podes Enseguida",
+            "bullets": [
+              "El daño parece peor de lo que es",
+              "Poda cuando rebrote"
+            ]
+          }
+        ],
+        "article": {
+          "intro": "La protección contra heladas va sobre todo de dos cosas que se suelen entender mal: qué noches importan de verdad y a qué hora del día se pone la cubierta.\n\nAcierta en las dos y una manta térmica sacará adelante a una planta tierna en una noche que de otro modo habría acabado con ella.",
+          "sections": [
+            {
+              "heading": "La noche peligrosa es la noche bonita",
+              "body": "Una tarde despejada, seca y sin viento después de un día luminoso es la que trae helada. Sin nubes que lo retengan, el calor que absorbió el suelo se escapa directo hacia el cielo, y sin viento que mezcle el aire, el frío se acumula a ras de suelo.\n\nUna noche nublada o con brisa a la misma temperatura de previsión suele ir bien. Por eso una helada puede pillar una parte del jardín y otra no: el aire frío corre cuesta abajo y se posa en las hondonadas y contra las vallas macizas, que es lo que se llama una bolsa de helada.\n\nLa temperatura del aire se mide a la altura de la cabeza, así que a ras de suelo puede haber dos o tres grados menos que en la previsión. Una previsión de dos grados sobre cero sigue siendo noche de helada para cualquier planta tierna."
+            },
+            {
+              "heading": "Cómo funciona en realidad una cubierta",
+              "body": "Una manta térmica o una campana no generan calor. Lo único que hacen es atrapar el calor que el suelo absorbió durante el día y frenar su escape por la noche.\n\nEse solo dato resuelve el momento: la cubierta tiene que ponerse a última hora de la tarde o al anochecer, mientras aún queda calor en la tierra que atrapar. Salir a la hora de acostarse y echar la tela sobre unas plantas ya frías consigue muy poco.\n\nExplica también dos detalles. Riega la tierra por la mañana si se anuncia helada, porque el suelo húmedo almacena más calor que el seco y lo suelta despacio durante la noche. Y sella la cubierta contra el suelo, con piedras o ladrillos todo alrededor, porque el aire templado que quieres conservar se escapa por cualquier rendija del borde.\n\nMantén la tela separada del follaje con arcos o cañas. Allí donde la cubierta se apoya sobre una hoja, conduce el frío directamente, y sale una quemadura con la forma exacta de la tela."
+            },
+            {
+              "heading": "Las macetas y a qué dar prioridad",
+              "body": "Las plantas en maceta están mucho más expuestas que esas mismas plantas en el suelo, porque las raíces están rodeadas de aire frío en vez de aisladas por la tierra. Una planta rústica en un arriate puede morir en maceta en ese mismo jardín.\n\nAsí que arrima las macetas a la pared de la casa, que se mantiene más cálida, y agrúpalas para que se protejan entre ellas. Envuelve las macetas más que las plantas, con plástico de burbujas o arpillera, y súbelas del pavimento frío sobre unos tacos o un trozo de madera.\n\nEn el huerto, la prioridad es todo lo tierno recién trasplantado y todo lo que esté en flor. Una helada sobre la flor abierta de los frutales es lo que te cuesta la cosecha, aunque el árbol no sufra nada."
+            },
+            {
+              "heading": "La mañana siguiente",
+              "body": "Quita las cubiertas por la mañana. Una manta dejada puesta durante un día soleado cuece las plantas de debajo y les mantiene aire húmedo alrededor, y las campanas de plástico se calientan a una velocidad alarmante.\n\nSi algo ha resultado dañado, déjalo en paz un tiempo. El follaje helado tiene un aspecto pésimo, negro y lacio, y una cantidad sorprendente rebrota desde yemas más bajas. Cortarlo enseguida quita el follaje dañado que está resguardando las partes vivas de debajo y las expone a la siguiente noche fría.\n\nEspera a que rebrote y entonces corta hasta donde veas verde. Algunas plantas te sorprenden semanas después. La excepción es todo lo que esté blando y podrido, que conviene retirar pronto antes de que se extienda."
+            }
+          ]
+        }
+      },
+      "icons": [
+        {
+          "slug": "clear-night-sky",
+          "subject": "a clear starry night sky above the dark silhouette of a garden"
+        },
+        {
+          "slug": "watering-can-sprinkle",
+          "subject": "a metal watering can pouring water onto soil at the base of a plant"
+        },
+        {
+          "slug": "fleece-over-hoops",
+          "subject": "white horticultural fleece stretched over hoops covering a garden bed at dusk"
+        },
+        {
+          "slug": "cloche-over-plant",
+          "subject": "a clear bell cloche placed over a single small plant in a garden bed"
+        },
+        {
+          "slug": "weighted-cover-edge",
+          "subject": "a stone holding down the edge of a sheet of fleece against garden soil"
+        },
+        {
+          "slug": "wrapped-pot-wall",
+          "subject": "a plant pot wrapped in hessian standing against a house wall"
+        },
+        {
+          "slug": "uncovering-bed-morning",
+          "subject": "a hand pulling back a fleece cover from a garden bed in morning light"
+        },
+        {
+          "slug": "frosted-damaged-leaves",
+          "subject": "blackened frost-damaged leaves drooping on a plant stem"
+        }
+      ],
+      "proTipIcon": {
+        "slug": "frost-calendar",
+        "subject": "a wall calendar page with a frost crystal drawn on one of the dates"
+      }
+    },
+    {
+      "key": "sow-a-cover-crop",
+      "category": "soil",
+      "tags": [
+        "soil",
+        "fall garden",
+        "organic gardening",
+        "infographics"
+      ],
+      "pinBoard": "Raised Bed Gardening",
+      "pinKeywords": [
+        "cover crop",
+        "green manure",
+        "fall garden jobs",
+        "improve garden soil"
+      ],
+      "en": {
+        "slug": "how-to-sow-a-cover-crop",
+        "title": "How to Sow a Cover Crop: A Beginner's Guide in 8 Steps",
+        "eyebrow": "Beginner-friendly guide",
+        "chartTitle": "How to sow a cover crop",
+        "description": "Eight steps to covering an empty bed for winter, from picking the right crop for the job to cutting it down at the right moment in spring.",
+        "pinDescription": "How to sow a cover crop: rye for holding soil through winter rain, clover and field beans for nitrogen. Sow thickly by early autumn, cut it down before it flowers, and wait two or three weeks before planting into it.",
+        "cta": "Plan next year's beds in Garden Planner Pro",
+        "proTip": {
+          "label": "Pro tip",
+          "text": "Cut it down before it flowers, not when you get round to it. Once a cover crop sets seed you have bought yourself a weed problem in the exact bed you were trying to improve."
+        },
+        "steps": [
+          {
+            "label": "Match Crop To Job",
+            "bullets": [
+              "Rye holds soil",
+              "Clover and beans add nitrogen"
+            ]
+          },
+          {
+            "label": "Sow By Early Autumn",
+            "bullets": [
+              "Needs weeks of growth",
+              "Rye tolerates the coldest soil"
+            ]
+          },
+          {
+            "label": "Clear The Bed",
+            "bullets": [
+              "Pull spent crops and weeds",
+              "Rake the surface level"
+            ]
+          },
+          {
+            "label": "Sow It Thickly",
+            "bullets": [
+              "Broadcast by hand",
+              "Thin stands let weeds in"
+            ]
+          },
+          {
+            "label": "Rake It In",
+            "bullets": [
+              "Cover the seed shallowly",
+              "Birds take what sits on top"
+            ]
+          },
+          {
+            "label": "Water It Once",
+            "bullets": [
+              "Only if autumn is dry",
+              "Rain usually does the rest"
+            ]
+          },
+          {
+            "label": "Cut Before Flowering",
+            "bullets": [
+              "Never let it set seed",
+              "Nitrogen peaks at flowering"
+            ]
+          },
+          {
+            "label": "Wait Before Planting",
+            "bullets": [
+              "Two or three weeks",
+              "Rotting roots stall seedlings"
+            ]
+          }
+        ],
+        "article": {
+          "intro": "A cover crop is a crop you grow for the soil rather than for the kitchen, sown into a bed you are not using so that something is living in it over winter.\n\nIt is the cheapest soil improvement there is, and the whole thing hinges on two dates: when you sow it and when you cut it.",
+          "sections": [
+            {
+              "heading": "Pick the one that does the job you need",
+              "body": "They are not interchangeable, and the choice comes down to what the bed's problem is.\n\nCereal rye is the workhorse for holding soil. It germinates in colder soil than almost anything else, so it is the one to reach for if you are late, and it makes a dense fibrous root system that stops winter rain washing structure out of a bare bed. It adds no nitrogen.\n\nLegumes do add nitrogen, because they host bacteria in root nodules that fix it out of the air. Crimson clover and field beans are the usual choices, and they want sowing earlier than rye because they are slower to establish. Follow them with something hungry: brassicas, or sweetcorn.\n\nMustard and phacelia grow fast and smother weeds, and phacelia is good for early bees if any of it flowers. Mustard is a brassica, though, so keep it out of a rotation where clubroot is a worry, and out of beds that grow cabbages next year."
+            },
+            {
+              "heading": "Sowing is deliberately crude",
+              "body": "Clear the bed of spent crops and weeds and rake the surface roughly level. Then scatter the seed by hand across the whole bed, much more thickly than you would sow a vegetable, and rake it lightly in so most of it is covered.\n\nThere is no spacing and no rows. A thin patchy stand is worse than useless, because the gaps fill with winter weeds and you have done the work without getting the benefit. Err heavy.\n\nWater it in if the autumn is dry, and after that leave it. Most years the rain handles everything. The one job left is to look at it occasionally through the winter and note whether it actually established, because a bed where the birds took the lot is one you would rather mulch than discover bare in February."
+            },
+            {
+              "heading": "Cutting it down is where people get it wrong",
+              "body": "The timing rule is simple: cut it before it flowers.\n\nWith a legume, the nitrogen stored in the plant peaks around flowering and then moves into making seed, so cutting at early flowering is when you get the most out of it. With anything, letting it set seed turns a soil improver into a weed you will be pulling out of that bed for two years.\n\nCut it at the base with shears or a sharp spade and leave the tops lying on the surface as a mulch, or turn them shallowly into the top few inches. There is no need to dig them deeply in, and on a no-dig bed leaving them on top and covering with compost works fine.\n\nThen wait. Fresh green material rotting in the soil ties up nitrogen temporarily while it breaks down, and seedlings planted straight into it sulk and yellow. Two or three weeks between cutting down and sowing is the usual advice, and it is worth honouring."
+            },
+            {
+              "heading": "When not to bother",
+              "body": "If the bed is going to be planted with garlic or overwintering onions, it does not need a cover crop, because it already has a crop in it.\n\nIf you are sowing in December in a cold area, you have missed it. A cover crop that germinates and then sits at two leaves all winter holds very little soil and adds almost nothing. Put mulch on instead and sow the cover crop earlier next year.\n\nAnd if the bed is small and you already have leaves to spare, a good thick mulch does most of the same job with none of the spring timing to get right. The cover crop earns its place on bigger beds, on slopes, and where you specifically want the nitrogen."
+            }
+          ]
+        }
+      },
+      "es": {
+        "slug": "como-sembrar-un-abono-verde",
+        "title": "Cómo Sembrar un Abono Verde: Guía para Principiantes en 8 Pasos",
+        "eyebrow": "Guía para principiantes",
+        "chartTitle": "Cómo sembrar un abono verde",
+        "description": "Ocho pasos para cubrir un bancal vacío durante el invierno, desde elegir la especie adecuada hasta segarla en el momento justo en primavera.",
+        "pinDescription": "Cómo sembrar un abono verde: centeno para sujetar la tierra durante las lluvias de invierno, trébol y habas para aportar nitrógeno. Siembra espeso a principios de otoño, siega antes de que florezca y espera dos o tres semanas antes de plantar encima.",
+        "cta": "Planifica los bancales del año que viene en Garden Planner Pro",
+        "proTip": {
+          "label": "Consejo",
+          "text": "Siega antes de que florezca, no cuando te venga bien. En cuanto un abono verde grana te has comprado un problema de malas hierbas en el mismo bancal que querías mejorar."
+        },
+        "steps": [
+          {
+            "label": "Elige Según El Objetivo",
+            "bullets": [
+              "El centeno sujeta la tierra",
+              "Trébol y habas dan nitrógeno"
+            ]
+          },
+          {
+            "label": "Siembra En Otoño",
+            "bullets": [
+              "Necesita semanas de crecimiento",
+              "El centeno aguanta más frío"
+            ]
+          },
+          {
+            "label": "Despeja El Bancal",
+            "bullets": [
+              "Quita restos y malas hierbas",
+              "Rastrilla la superficie"
+            ]
+          },
+          {
+            "label": "Siembra Espeso",
+            "bullets": [
+              "A voleo con la mano",
+              "Lo ralo deja entrar malas hierbas"
+            ]
+          },
+          {
+            "label": "Rastrilla Por Encima",
+            "bullets": [
+              "Tapa la semilla ligeramente",
+              "Los pájaros se llevan lo suelto"
+            ]
+          },
+          {
+            "label": "Riega Una Vez",
+            "bullets": [
+              "Solo si el otoño es seco",
+              "La lluvia suele bastar"
+            ]
+          },
+          {
+            "label": "Siega Antes De Florecer",
+            "bullets": [
+              "Nunca la dejes granar",
+              "El nitrógeno es máximo en flor"
+            ]
+          },
+          {
+            "label": "Espera Antes De Plantar",
+            "bullets": [
+              "Dos o tres semanas",
+              "Las raíces en descomposición frenan"
+            ]
+          }
+        ],
+        "article": {
+          "intro": "Un abono verde es un cultivo que siembras para el suelo y no para la cocina, en un bancal que no estás usando, para que haya algo vivo en él durante el invierno.\n\nEs la mejora de suelo más barata que existe, y todo depende de dos fechas: cuándo lo siembras y cuándo lo siegas.",
+          "sections": [
+            {
+              "heading": "Elige el que hace el trabajo que necesitas",
+              "body": "No son intercambiables, y la elección depende de cuál sea el problema del bancal.\n\nEl centeno es el caballo de batalla para sujetar la tierra. Germina en suelo más frío que casi cualquier otra cosa, así que es el recurso si vas tarde, y forma un sistema radicular denso y fibroso que impide que la lluvia de invierno se lleve la estructura de un bancal desnudo. No aporta nitrógeno.\n\nLas leguminosas sí lo aportan, porque alojan bacterias en nódulos radiculares que lo fijan del aire. El trébol encarnado y las habas son las opciones habituales, y hay que sembrarlas antes que el centeno porque tardan más en arrancar. Detrás de ellas planta algo exigente: coles, o maíz dulce.\n\nLa mostaza y la facelia crecen deprisa y ahogan las malas hierbas, y la facelia es buena para las abejas tempranas si llega a florecer. La mostaza, eso sí, es una crucífera, así que déjala fuera de una rotación donde preocupe la hernia de la col y fuera de los bancales que llevarán coles el año que viene."
+            },
+            {
+              "heading": "La siembra es deliberadamente tosca",
+              "body": "Despeja el bancal de restos de cultivo y malas hierbas y rastrilla la superficie hasta dejarla más o menos llana. Luego esparce la semilla a mano por todo el bancal, mucho más espesa de lo que sembrarías una hortaliza, y rastrilla por encima para que quede casi toda tapada.\n\nNo hay marco de plantación ni líneas. Una siembra rala y a parches es peor que inútil, porque los huecos se llenan de malas hierbas de invierno y has hecho el trabajo sin llevarte el beneficio. Pásate de espeso.\n\nRiega si el otoño viene seco y después déjalo. La mayoría de los años la lluvia se encarga de todo. Lo único que queda es mirarlo de vez en cuando durante el invierno y comprobar que de verdad nació, porque un bancal en el que los pájaros se lo llevaron todo es de los que prefieres acolchar antes que descubrir pelado en febrero."
+            },
+            {
+              "heading": "Segarlo es donde se falla",
+              "body": "La regla de tiempo es sencilla: siégalo antes de que florezca.\n\nEn una leguminosa, el nitrógeno acumulado en la planta llega al máximo hacia la floración y después se va a formar semilla, así que segar al inicio de la floración es cuando más se aprovecha. En cualquier especie, dejar que grane convierte un mejorador de suelo en una mala hierba que estarás arrancando de ese bancal dos años.\n\nCórtalo por la base con unas tijeras o una pala afilada y deja la parte aérea tendida encima como acolchado, o incorpórala superficialmente en los primeros centímetros. No hace falta enterrarla hondo, y en un bancal de no laboreo funciona bien dejarla arriba y cubrir con compost.\n\nY luego espera. El material verde fresco descomponiéndose en la tierra inmoviliza nitrógeno temporalmente mientras se rompe, y las plántulas puestas justo encima se quedan paradas y amarillean. Dos o tres semanas entre segar y sembrar es el consejo habitual y conviene respetarlo."
+            },
+            {
+              "heading": "Cuándo no vale la pena",
+              "body": "Si el bancal va a llevar ajos o cebollas de invierno, no necesita abono verde, porque ya tiene un cultivo dentro.\n\nSi estás sembrando en diciembre en una zona fría, se te ha pasado. Un abono verde que germina y se queda con dos hojas todo el invierno sujeta muy poca tierra y aporta casi nada. Pon acolchado y siembra antes el año que viene.\n\nY si el bancal es pequeño y ya te sobran hojas, un buen acolchado grueso hace casi el mismo trabajo sin tener que acertar con los tiempos de primavera. El abono verde se gana el sitio en bancales grandes, en pendientes y allí donde quieras el nitrógeno en concreto."
+            }
+          ]
+        }
+      },
+      "icons": [
+        {
+          "slug": "cover-crop-green"
+        },
+        {
+          "slug": "frost-calendar"
+        },
+        {
+          "slug": "bare-seedbed-row"
+        },
+        {
+          "slug": "sowing-seeds-drill"
+        },
+        {
+          "slug": "level-ground"
+        },
+        {
+          "slug": "watering-can-sprinkle"
+        },
+        {
+          "slug": "cut-pea-stems"
+        },
+        {
+          "slug": "compost-mulch-bed"
+        }
+      ],
+      "proTipIcon": {
+        "slug": "pea-roots-nodules"
+      }
+    },
+    {
+      "key": "overwinter-herbs",
+      "category": "herbs",
+      "tags": [
+        "herbs",
+        "container gardening",
+        "fall garden",
+        "infographics"
+      ],
+      "pinBoard": "Container & Small Space Gardening",
+      "pinKeywords": [
+        "overwintering herbs",
+        "herbs indoors winter",
+        "container herb garden",
+        "fall garden jobs"
+      ],
+      "en": {
+        "slug": "how-to-overwinter-herbs",
+        "title": "How to Overwinter Herbs: A Beginner's Guide in 8 Steps",
+        "eyebrow": "Beginner-friendly guide",
+        "chartTitle": "How to overwinter herbs",
+        "description": "Eight steps to keeping herbs alive through winter, which starts with knowing that most of them want to stay outside and be left alone.",
+        "pinDescription": "How to overwinter herbs: thyme, sage, oregano, chives and mint stay outside. Only the tender ones come in, and indoors they want a cool bright window, much less water and no feed at all. Most indoor herb losses are overwatering, not cold.",
+        "cta": "Browse the plant library in Garden Planner Pro",
+        "proTip": {
+          "label": "Pro tip",
+          "text": "Rosemary is killed by wet far more often than by cold. A pot that sits in a saucer of water all winter will lose it at temperatures the same plant would shrug off in free-draining ground."
+        },
+        "steps": [
+          {
+            "label": "Sort Hardy From Tender",
+            "bullets": [
+              "Thyme, sage, oregano stay out",
+              "Basil is an annual, let it go"
+            ]
+          },
+          {
+            "label": "Lift Before The Frost",
+            "bullets": [
+              "Tender ones come in early",
+              "Not after the first cold night"
+            ]
+          },
+          {
+            "label": "Cut Back And Tidy",
+            "bullets": [
+              "Clear dead and yellow growth",
+              "Never hard prune in autumn"
+            ]
+          },
+          {
+            "label": "Pot In Gritty Mix",
+            "bullets": [
+              "Drainage matters more than feed",
+              "Add grit to the compost"
+            ]
+          },
+          {
+            "label": "Cool Bright Window",
+            "bullets": [
+              "East or south facing",
+              "Away from the radiator"
+            ]
+          },
+          {
+            "label": "Water Much Less",
+            "bullets": [
+              "Only when dry two inches down",
+              "Wet roots kill more than cold"
+            ]
+          },
+          {
+            "label": "Stop Feeding",
+            "bullets": [
+              "They are resting, not growing",
+              "Feed again in spring"
+            ]
+          },
+          {
+            "label": "Take Cuttings Too",
+            "bullets": [
+              "Cheap insurance if one dies",
+              "Root them before it gets cold"
+            ]
+          }
+        ],
+        "article": {
+          "intro": "Most of the herbs in a garden do not need overwintering at all. They are hardy, they have done this before, and the kindest thing is to stop fussing and leave them where they are.\n\nThe work is in telling those apart from the few that genuinely will not survive, and then not killing those indoors.",
+          "sections": [
+            {
+              "heading": "The three groups",
+              "body": "The hardy perennials stay outside and need almost nothing: thyme, sage, oregano, chives, mint, winter savory. Cut off anything dead or slimy, make sure pots are not sitting in puddles, and that is the job. Chives die right back to nothing and look finished; they are not.\n\nThe tender ones will not survive a frost and have to come indoors or be given up on: lemon verbena, tender basils, scented pelargoniums, and bay in a cold area or an exposed spot.\n\nThen the borderline group, which is where people lose plants. Rosemary, French tarragon and bay are hardy enough in many places but hate a cold wet winter. They are often fine in the ground in a sheltered, free-draining spot and die in a pot that stays sodden. Move those pots to the driest, most sheltered place you have, raise them off the ground on feet or bricks so water runs out, and leave them there.\n\nBasil is worth being blunt about. It is an annual, it is going to die, and no amount of windowsill will change that. Use it up."
+            },
+            {
+              "heading": "Bringing them in, which is mostly about timing",
+              "body": "Do it earlier than feels necessary, while nights are merely cool rather than freezing. A plant moved indoors before the shock of a first frost adjusts to the change far better than one rescued the morning after.\n\nCheck it over on the way in. Look under the leaves for aphids, whitefly and the fine webbing of spider mite, because a warm dry house in December is the ideal conditions for all three and one infested plant becomes five. Rinse the foliage, knock off what you find, and keep new arrivals apart from your houseplants for a week or two.\n\nTidy rather than prune. Take off dead, yellow and damaged growth, but resist cutting a plant hard back now. A hard autumn prune pushes out soft new shoots at exactly the moment the plant cannot support them, and on woody herbs that growth is what the cold kills. Save real pruning for spring."
+            },
+            {
+              "heading": "Why indoor herbs die, and it is almost never cold",
+              "body": "It is water. A herb indoors in December is barely growing, so it uses a fraction of what it drank in July, and people keep watering on the summer schedule. The roots sit wet, they rot, and the plant collapses from below in a way that looks like it dried out.\n\nSo water only when the compost is dry a couple of inches down, and empty the saucer afterwards every time. Pot into a gritty free-draining mix rather than a moisture-retentive one, in a pot with real drainage holes.\n\nLight is the other half. The brightest windowsill you have, ideally cool rather than beside a radiator, because warmth without light makes pale floppy growth that then does not survive going back outside. A cool bright hall or porch beats a warm dark kitchen.\n\nAnd stop feeding. Feeding something that is resting pushes weak growth it cannot hold."
+            },
+            {
+              "heading": "The insurance policy",
+              "body": "Take cuttings in early autumn of anything borderline, before it gets cold. Rosemary, sage, thyme and bay all root readily from short non-flowering shoots, and a few small rooted plants on a windowsill cost nothing and cover you if the parent plant does not make it.\n\nIt is also the honest answer for old woody herbs. A sage or a thyme that has gone leggy and bare in the middle is near the end of its useful life whatever you do this winter, and replacing it from a cutting is better than nursing it through another year."
+            }
+          ]
+        }
+      },
+      "es": {
+        "slug": "como-pasar-el-invierno-las-hierbas",
+        "title": "Cómo Pasar el Invierno las Hierbas: Guía para Principiantes en 8 Pasos",
+        "eyebrow": "Guía para principiantes",
+        "chartTitle": "Hierbas en invierno",
+        "description": "Ocho pasos para mantener vivas las hierbas todo el invierno, empezando por saber que casi todas quieren quedarse fuera y que las dejen en paz.",
+        "pinDescription": "Cómo pasar el invierno las hierbas: el tomillo, la salvia, el orégano, el cebollino y la menta se quedan fuera. Solo entran las tiernas, y dentro quieren una ventana fresca y luminosa, mucha menos agua y nada de abono. Casi todas se pierden por exceso de riego, no por frío.",
+        "cta": "Explora la biblioteca de plantas en Garden Planner Pro",
+        "proTip": {
+          "label": "Consejo",
+          "text": "Al romero lo mata la humedad mucho más que el frío. Una maceta en un plato con agua todo el invierno se pierde a temperaturas que esa misma planta aguantaría sin inmutarse en suelo con buen drenaje."
+        },
+        "steps": [
+          {
+            "label": "Separa Rústicas Y Tiernas",
+            "bullets": [
+              "Tomillo, salvia y orégano fuera",
+              "La albahaca es anual, déjala ir"
+            ]
+          },
+          {
+            "label": "Entra Antes De Helar",
+            "bullets": [
+              "Las tiernas, pronto",
+              "No tras la primera noche fría"
+            ]
+          },
+          {
+            "label": "Limpia Y Recorta",
+            "bullets": [
+              "Quita lo seco y lo amarillo",
+              "Nunca podes fuerte en otoño"
+            ]
+          },
+          {
+            "label": "Sustrato Con Arena",
+            "bullets": [
+              "El drenaje importa más que el abono",
+              "Añade arena gruesa"
+            ]
+          },
+          {
+            "label": "Ventana Fresca Y Clara",
+            "bullets": [
+              "Al este o al sur",
+              "Lejos del radiador"
+            ]
+          },
+          {
+            "label": "Riega Mucho Menos",
+            "bullets": [
+              "Solo si está seco por dentro",
+              "La raíz mojada mata más"
+            ]
+          },
+          {
+            "label": "Deja De Abonar",
+            "bullets": [
+              "Están en reposo",
+              "Vuelve a abonar en primavera"
+            ]
+          },
+          {
+            "label": "Haz Esquejes",
+            "bullets": [
+              "Seguro barato por si acaso",
+              "Enraiza antes del frío"
+            ]
+          }
+        ],
+        "article": {
+          "intro": "Casi ninguna de las hierbas de un huerto necesita que la protejas del invierno. Son rústicas, lo han hecho otras veces, y lo mejor que puedes hacer es dejar de preocuparte y dejarlas donde están.\n\nEl trabajo está en distinguir esas de las pocas que de verdad no van a sobrevivir, y luego en no matarlas dentro de casa.",
+          "sections": [
+            {
+              "heading": "Los tres grupos",
+              "body": "Las perennes rústicas se quedan fuera y no necesitan casi nada: tomillo, salvia, orégano, cebollino, menta, ajedrea de invierno. Quita lo seco o lo blando, asegúrate de que las macetas no queden en charcos, y ya está. El cebollino desaparece del todo y parece acabado; no lo está.\n\nLas tiernas no aguantan una helada y tienen que entrar o darse por perdidas: hierba luisa, albahacas tiernas, geranios de olor, y el laurel en zona fría o en sitio expuesto.\n\nY luego el grupo intermedio, que es donde se pierden plantas. El romero, el estragón francés y el laurel son bastante rústicos en muchos sitios pero llevan mal un invierno frío y húmedo. Suelen ir bien en tierra en un sitio resguardado y con buen drenaje, y se mueren en una maceta que se queda empapada. Lleva esas macetas al sitio más seco y resguardado que tengas, súbelas del suelo sobre tacos o ladrillos para que escurran, y déjalas ahí.\n\nCon la albahaca conviene ser claro. Es anual, se va a morir, y ninguna ventana lo va a cambiar. Aprovéchala."
+            },
+            {
+              "heading": "Meterlas dentro, que es sobre todo cuestión de tiempo",
+              "body": "Hazlo antes de lo que parece necesario, cuando las noches todavía son frescas y no heladas. Una planta que entra antes del golpe de la primera helada se adapta mucho mejor al cambio que otra rescatada a la mañana siguiente.\n\nRevísala al entrar. Mira por debajo de las hojas buscando pulgón, mosca blanca y la telaraña fina de la araña roja, porque una casa cálida y seca en diciembre son las condiciones ideales para las tres y una planta infestada se convierte en cinco. Enjuaga el follaje, quita lo que encuentres y ten las recién llegadas apartadas de tus plantas de interior una semana o dos.\n\nLimpia en vez de podar. Quita lo muerto, lo amarillo y lo dañado, pero no cortes la planta a fondo ahora. Una poda fuerte de otoño provoca brotes tiernos justo cuando la planta no puede sostenerlos, y en las hierbas leñosas ese brote nuevo es lo que mata el frío. Deja la poda de verdad para la primavera."
+            },
+            {
+              "heading": "Por qué se mueren dentro, y casi nunca es de frío",
+              "body": "Es el agua. Una hierba dentro de casa en diciembre apenas crece, así que consume una fracción de lo que bebía en julio, y la gente sigue regando con el ritmo del verano. Las raíces se quedan mojadas, se pudren, y la planta se derrumba desde abajo con un aspecto que parece de sequía.\n\nAsí que riega solo cuando el sustrato esté seco unos centímetros hacia dentro, y vacía el plato siempre después. Trasplanta a una mezcla suelta con arena gruesa y buen drenaje en vez de a un sustrato que retiene humedad, y en maceta con agujeros de verdad.\n\nLa luz es la otra mitad. La ventana más luminosa que tengas, mejor fresca que pegada a un radiador, porque calor sin luz da brotes pálidos y blandos que luego no aguantan volver a salir fuera. Un recibidor fresco y claro es mejor que una cocina cálida y oscura.\n\nY deja de abonar. Alimentar algo que está en reposo solo provoca brotes débiles que no puede sostener."
+            },
+            {
+              "heading": "El seguro",
+              "body": "Haz esquejes a principios de otoño de todo lo que esté en el grupo intermedio, antes de que llegue el frío. El romero, la salvia, el tomillo y el laurel enraízan con facilidad a partir de brotes cortos sin flor, y unas cuantas plantitas enraizadas en una ventana no cuestan nada y te cubren si la planta madre no llega.\n\nEs además la respuesta sincera para las hierbas leñosas viejas. Una salvia o un tomillo que se ha alargado y se ha quedado pelado por el centro está cerca del final de su vida útil hagas lo que hagas este invierno, y reponerlo de un esqueje es mejor que arrastrarlo otro año más."
+            }
+          ]
+        }
+      },
+      "icons": [
+        {
+          "slug": "rosemary-sprig"
+        },
+        {
+          "slug": "frost-calendar"
+        },
+        {
+          "slug": "cutting-herb-stems"
+        },
+        {
+          "slug": "gritty-compost-pot"
+        },
+        {
+          "slug": "bright-shade-windowsill"
+        },
+        {
+          "slug": "dry-watering-can"
+        },
+        {
+          "slug": "no-fertiliser"
+        },
+        {
+          "slug": "stripped-cutting"
+        }
+      ],
+      "proTipIcon": {
+        "slug": "herb-in-terracotta-pot"
+      }
+    },
+    {
+      "key": "build-a-cold-frame",
+      "category": "seeds",
+      "tags": [
+        "season extension",
+        "frost",
+        "planning",
+        "infographics"
+      ],
+      "pinBoard": "Seed Starting & Frost Dates",
+      "pinKeywords": [
+        "cold frame",
+        "season extension",
+        "winter vegetable garden",
+        "diy garden projects"
+      ],
+      "en": {
+        "slug": "how-to-build-a-cold-frame",
+        "title": "How to Build a Cold Frame: A Beginner's Guide in 8 Steps",
+        "eyebrow": "Beginner-friendly guide",
+        "chartTitle": "How to build a cold frame",
+        "description": "Eight steps to a box with a clear lid that carries salad through winter and hardens off seedlings in spring, built from whatever you have.",
+        "pinDescription": "How to build a cold frame: face the lid south, slope it so rain runs off and low winter sun gets in, sit it on bare soil rather than paving, and vent it on every mild day. The cheapest way to add weeks to both ends of the growing year.",
+        "cta": "Check your frost dates in Garden Planner Pro",
+        "proTip": {
+          "label": "Pro tip",
+          "text": "More cold frame plants are lost to cooking than to freezing. A closed frame in February sun gets hot enough to wilt lettuce by mid morning, so prop the lid whenever the day is mild."
+        },
+        "steps": [
+          {
+            "label": "Find A Sunny Wall",
+            "bullets": [
+              "South-facing and sheltered",
+              "A wall gives back heat at night"
+            ]
+          },
+          {
+            "label": "Sit It On Soil",
+            "bullets": [
+              "Bare ground stores warmth",
+              "Paving stays cold all night"
+            ]
+          },
+          {
+            "label": "Build The Box",
+            "bullets": [
+              "Untreated timber or old bricks",
+              "Higher at the back"
+            ]
+          },
+          {
+            "label": "Slope The Lid",
+            "bullets": [
+              "Rain runs off, low sun gets in",
+              "About one hand of drop"
+            ]
+          },
+          {
+            "label": "Use A Clear Lid",
+            "bullets": [
+              "Old window or twinwall sheet",
+              "Hinge it at the back"
+            ]
+          },
+          {
+            "label": "Seal The Gaps",
+            "bullets": [
+              "Draughts do the damage",
+              "Pack soil round the base"
+            ]
+          },
+          {
+            "label": "Vent On Mild Days",
+            "bullets": [
+              "Prop the lid by mid morning",
+              "Closed frames cook plants"
+            ]
+          },
+          {
+            "label": "Shut Before Dusk",
+            "bullets": [
+              "Traps the days warmth",
+              "Add fleece on hard nights"
+            ]
+          }
+        ],
+        "article": {
+          "intro": "A cold frame is a box with a clear lid, and that is genuinely all it is. No heat, no power, no glazing skills.\n\nWhat it buys you is a few weeks at each end of the year and somewhere to harden seedlings off without carrying trays in and out every evening.",
+          "sections": [
+            {
+              "heading": "Where it goes matters more than what it is made of",
+              "body": "Put it against a south-facing wall if you have one. A wall absorbs sun all day and releases it slowly overnight, and a frame tucked against one runs measurably warmer than the same frame in the open.\n\nSit it on bare soil rather than on a patio. Soil is the frame's storage heater: it takes in warmth through the day and gives it back after dark, which is the whole mechanism by which an unheated box keeps plants alive. A frame on paving loses most of that.\n\nSomewhere sheltered from the prevailing wind, too. Wind strips heat off the lid faster than anything else, and it is what lifts an unlatched lid off in February and breaks it.\n\nThe box itself can be old scaffold boards, reclaimed bricks, or a stack of straw bales with a window on top. None of it is precious. Skip pressure-treated timber for anything you grow food in if it is the older kind, and use untreated softwood or cedar instead."
+            },
+            {
+              "heading": "The lid is the only part with rules",
+              "body": "It has to be clear, it has to slope, and it has to be easy to open one-handed.\n\nClear so light gets through: an old single-glazed window, a sheet of twinwall polycarbonate, or a timber frame with heavy clear plastic stapled to it. Polycarbonate is lighter and will not shatter, which matters if the frame is where a child walks past.\n\nSloping so rain and snow run off rather than pooling, and so that the low winter sun, which comes in at a shallow angle, strikes the glazing closer to square. Build the back of the box a hand's width higher than the front and the lid takes care of both at once. Face the low side toward the midday sun.\n\nHinge it at the back so it opens like a lid rather than lifting off, and fit something to prop it at two or three heights. You will be opening and shutting it most days, and any frame that is awkward to vent ends up never vented."
+            },
+            {
+              "heading": "Using it through the year",
+              "body": "From autumn it holds winter salads, corn salad, spinach, winter lettuce and hardy herbs, all cropping slowly through the cold months. In late winter it becomes the place seed trays go to get used to real weather before planting out. By late spring it can simply have the lid taken off and grow something.\n\nThe daily job is venting. On any mild sunny day, prop the lid open in the morning and close it in the late afternoon while there is still warmth to trap. The temperature inside a shut frame on a bright February day climbs far higher than the air outside, and a tray of seedlings wilts in an hour.\n\nOn a hard frost night, throw an old blanket or a sheet of fleece over the closed lid. It is a box, not a greenhouse, and on the coldest nights it needs the help."
+            },
+            {
+              "heading": "What it will not do",
+              "body": "A cold frame does not make a frost-free space. Everything in it still goes below freezing on a cold night, and tender plants will still die. What it does is take the edge off, keep rain and wind off the foliage, and raise the soil temperature enough that hardy crops keep growing slowly instead of stopping.\n\nSo stock it with things that were going to survive anyway and want a better winter, rather than with things that need rescuing. The list of what genuinely overwinters in an unheated frame is short and worth learning by trying it for a year."
+            }
+          ]
+        }
+      },
+      "es": {
+        "slug": "como-construir-una-cama-fria",
+        "title": "Cómo Construir una Cama Fría: Guía para Principiantes en 8 Pasos",
+        "eyebrow": "Guía para principiantes",
+        "chartTitle": "Cómo construir una cama fría",
+        "description": "Ocho pasos para una caja con tapa transparente que mantiene ensaladas todo el invierno y aclimata plántulas en primavera, hecha con lo que tengas.",
+        "pinDescription": "Cómo construir una cama fría: orienta la tapa al sur, dale inclinación para que escurra el agua y entre el sol bajo del invierno, apóyala sobre tierra y no sobre losa, y ventílala todos los días templados. La forma más barata de ganar semanas por los dos extremos del año.",
+        "cta": "Consulta tus fechas de helada en Garden Planner Pro",
+        "proTip": {
+          "label": "Consejo",
+          "text": "En una cama fría se pierden más plantas cocidas que heladas. Con el sol de febrero y la tapa cerrada, dentro hace calor suficiente para marchitar una lechuga a media mañana, así que calza la tapa siempre que el día sea suave."
+        },
+        "steps": [
+          {
+            "label": "Busca Un Muro Soleado",
+            "bullets": [
+              "Orientado al sur y resguardado",
+              "El muro devuelve calor de noche"
+            ]
+          },
+          {
+            "label": "Apóyala En Tierra",
+            "bullets": [
+              "El suelo desnudo guarda calor",
+              "La losa se queda fría"
+            ]
+          },
+          {
+            "label": "Monta La Caja",
+            "bullets": [
+              "Madera sin tratar o ladrillo viejo",
+              "Más alta por detrás"
+            ]
+          },
+          {
+            "label": "Inclina La Tapa",
+            "bullets": [
+              "Escurre el agua y entra el sol",
+              "Un palmo de desnivel"
+            ]
+          },
+          {
+            "label": "Tapa Transparente",
+            "bullets": [
+              "Ventana vieja o policarbonato",
+              "Con bisagra detrás"
+            ]
+          },
+          {
+            "label": "Sella Las Rendijas",
+            "bullets": [
+              "Las corrientes son lo que mata",
+              "Calza tierra en la base"
+            ]
+          },
+          {
+            "label": "Ventila Si Hace Sol",
+            "bullets": [
+              "Abre a media mañana",
+              "Cerrada cuece las plantas"
+            ]
+          },
+          {
+            "label": "Cierra Antes Del Anochecer",
+            "bullets": [
+              "Atrapa el calor del día",
+              "Manta encima si hiela fuerte"
+            ]
+          }
+        ],
+        "article": {
+          "intro": "Una cama fría es una caja con la tapa transparente, y de verdad no es nada más. Sin calefacción, sin electricidad, sin saber montar cristales.\n\nLo que te da son unas semanas por cada extremo del año y un sitio donde aclimatar plántulas sin entrar y sacar bandejas cada tarde.",
+          "sections": [
+            {
+              "heading": "Dónde va importa más que de qué está hecha",
+              "body": "Ponla contra un muro orientado al sur si lo tienes. Un muro absorbe sol todo el día y lo suelta despacio por la noche, y una cama arrimada a uno funciona bastante más cálida que la misma en campo abierto.\n\nApóyala sobre tierra desnuda y no sobre un patio. La tierra es el acumulador de la cama: recoge calor durante el día y lo devuelve al anochecer, que es todo el mecanismo por el que una caja sin calefacción mantiene vivas a las plantas. Sobre losa se pierde casi todo eso.\n\nY en un sitio resguardado del viento dominante. El viento roba calor de la tapa más deprisa que ninguna otra cosa, y es lo que levanta una tapa sin pestillo en febrero y la rompe.\n\nLa caja puede ser de tablones viejos, ladrillo recuperado o una pila de balas de paja con una ventana encima. Nada de esto es delicado. Evita la madera tratada a presión de la antigua para cultivar alimento y usa madera blanda sin tratar o cedro."
+            },
+            {
+              "heading": "La tapa es la única parte con reglas",
+              "body": "Tiene que ser transparente, tiene que estar inclinada y tiene que abrirse con una mano.\n\nTransparente para que pase la luz: una ventana vieja de vidrio simple, una placa de policarbonato celular o un bastidor de madera con plástico grueso grapado. El policarbonato pesa menos y no estalla, lo que importa si la cama está donde pasa un niño.\n\nInclinada para que el agua y la nieve escurran en vez de encharcarse, y para que el sol bajo del invierno, que llega muy rasante, incida sobre la tapa más de frente. Haz la parte de atrás un palmo más alta que la de delante y la tapa resuelve las dos cosas a la vez. El lado bajo mira al sol del mediodía.\n\nCon bisagra detrás para que se abra como una tapa en vez de levantarse entera, y con algo para calzarla a dos o tres alturas. La vas a abrir y cerrar casi todos los días, y una cama incómoda de ventilar acaba sin ventilarse nunca."
+            },
+            {
+              "heading": "Cómo se usa a lo largo del año",
+              "body": "Desde el otoño aloja ensaladas de invierno, canónigos, espinaca, lechuga de invierno y hierbas rústicas, todo produciendo despacio durante los meses fríos. A final del invierno pasa a ser el sitio donde las bandejas de semillero se acostumbran al tiempo real antes de trasplantar. Ya en primavera avanzada se le puede quitar la tapa y cultivar algo dentro sin más.\n\nLa tarea diaria es ventilar. Cualquier día suave y soleado, calza la tapa por la mañana y ciérrala a media tarde, cuando todavía queda calor que atrapar. La temperatura dentro de una cama cerrada un día claro de febrero sube muchísimo por encima de la de fuera, y una bandeja de plántulas se marchita en una hora.\n\nEn una noche de helada fuerte, echa una manta vieja o una tela de protección sobre la tapa cerrada. Es una caja, no un invernadero, y las noches más frías necesita ayuda."
+            },
+            {
+              "heading": "Lo que no va a hacer",
+              "body": "Una cama fría no crea un espacio libre de heladas. Todo lo que hay dentro baja de cero en una noche fría, y las plantas tiernas se siguen muriendo. Lo que hace es quitar filo al frío, mantener la lluvia y el viento fuera del follaje y subir la temperatura del suelo lo bastante para que los cultivos rústicos sigan creciendo despacio en vez de pararse.\n\nAsí que llénala de cosas que iban a sobrevivir de todos modos y quieren un invierno mejor, no de cosas que necesitan rescate. La lista de lo que aguanta de verdad en una cama sin calefacción es corta y merece la pena aprenderla probando un año."
+            }
+          ]
+        }
+      },
+      "icons": [
+        {
+          "slug": "sunny-wall-pot"
+        },
+        {
+          "slug": "level-ground"
+        },
+        {
+          "slug": "cedar-boards"
+        },
+        {
+          "slug": "cold-frame-closed",
+          "subject": "a low timber cold frame with a sloping clear lid closed, standing on garden soil beside a bed"
+        },
+        {
+          "slug": "cold-frame-lid-open",
+          "subject": "a timber cold frame with its clear hinged lid propped open on a stick, showing trays of small seedlings inside"
+        },
+        {
+          "slug": "weighted-cover-edge",
+          "subject": "a brick holding down the edge of a cold frame lid against the timber side of the frame"
+        },
+        {
+          "slug": "thermometer-warm-soil"
+        },
+        {
+          "slug": "frost-calendar"
+        }
+      ],
+      "proTipIcon": {
+        "slug": "seedling-tray-outside"
+      }
+    },
+    {
+      "key": "plan-a-seed-order",
+      "category": "seeds",
+      "tags": [
+        "seed starting",
+        "planning",
+        "beginners",
+        "infographics"
+      ],
+      "pinBoard": "Seed Starting & Frost Dates",
+      "pinKeywords": [
+        "seed order",
+        "garden planning",
+        "seed catalog",
+        "vegetable garden on a budget"
+      ],
+      "en": {
+        "slug": "how-to-plan-a-seed-order",
+        "title": "How to Plan a Seed Order: A Beginner's Guide in 8 Steps",
+        "eyebrow": "Beginner-friendly guide",
+        "chartTitle": "How to plan a seed order",
+        "description": "Eight steps to a January seed order you will actually plant, starting with the box you already own and the beds you actually have.",
+        "pinDescription": "How to plan a seed order without overbuying: shop your own seed box first, count beds rather than wishes, check days to maturity against your own season, and buy fresh onion and parsnip every year because those two really do not keep.",
+        "cta": "Plan next year's beds in Garden Planner Pro",
+        "proTip": {
+          "label": "Pro tip",
+          "text": "Order from the bed outwards, not from the catalogue inwards. Write down how many square feet you have first, and the list stops being a wish and starts being a plan."
+        },
+        "steps": [
+          {
+            "label": "Shop Your Box First",
+            "bullets": [
+              "Most seed keeps for years",
+              "Test anything doubtful"
+            ]
+          },
+          {
+            "label": "List What You Ate",
+            "bullets": [
+              "Last year's kitchen, not the catalogue",
+              "Cut what nobody finished"
+            ]
+          },
+          {
+            "label": "Count The Beds",
+            "bullets": [
+              "Measure before you choose",
+              "Space is the real limit"
+            ]
+          },
+          {
+            "label": "Check Days To Maturity",
+            "bullets": [
+              "Against your own frost dates",
+              "Long varieties need a long season"
+            ]
+          },
+          {
+            "label": "Buy These Fresh",
+            "bullets": [
+              "Onion, leek and parsnip",
+              "They do not keep a year"
+            ]
+          },
+          {
+            "label": "Pick Disease Resistance",
+            "bullets": [
+              "For whatever beat you last year",
+              "Listed in the description"
+            ]
+          },
+          {
+            "label": "Split Big Packets",
+            "bullets": [
+              "Share squash and brassicas",
+              "Hundreds of seeds go stale"
+            ]
+          },
+          {
+            "label": "Order Early",
+            "bullets": [
+              "Good varieties sell out",
+              "December beats February"
+            ]
+          }
+        ],
+        "article": {
+          "intro": "The seed order is the cheapest part of a garden and the one that quietly decides most of the year. It is also where nearly everybody overspends, because a catalogue in January is designed to be read by somebody who is bored of winter.\n\nThe cure is doing three things before you open it.",
+          "sections": [
+            {
+              "heading": "Start with the box you already own",
+              "body": "Before anything else, tip the seed box out on the table and sort it. Most vegetable seed keeps far longer than the packet date implies: tomatoes, squash, cucumbers, beans, peas, brassicas and lettuce will usually be fine for years.\n\nThe genuinely short-lived ones are a small list. Onion, leek and chive fade within a year or two, and parsnip is the worst of all and is worth buying fresh every single year. Those go on the order automatically.\n\nFor anything you are unsure about, run a germination test now rather than finding out in April. Ten seeds on a damp paper towel in a bag somewhere warm, counted after that crop's usual germination time. Seven or more up and you sow it as normal; four or five and you sow thicker; one or two and it goes on the list.\n\nThis single step usually cuts an order by a third, and it is the difference between a seed drawer that works and one that is mostly archaeology."
+            },
+            {
+              "heading": "Then work out what you have room for",
+              "body": "The second discipline is arithmetic. Measure the beds, write the number down, and only then start choosing.\n\nIt is astonishing how fast a wish list outgrows a garden. A packet of squash is thirty seeds and a suburban bed has room for two plants. Four tomato varieties sounds modest until you count that it is sixteen plants and you have space for six.\n\nWork out roughly how many plants of each thing you want in the ground, and buy for that plus a small margin for failures. Where a packet is far bigger than you need, which is most of the cucurbits and brassicas, split it with someone. Two gardeners buying four packets between them and halving each is a better outcome than two gardeners buying four packets each and binning most of it in three years.\n\nAnd be honest about last year. If nobody in the house ate the kohlrabi, the answer is not a different variety of kohlrabi."
+            },
+            {
+              "heading": "The two numbers on the packet that matter",
+              "body": "Days to maturity is the one people skip. It is a rough guide rather than a promise, and it is usually counted from transplanting rather than from sowing for things that get started indoors, but it tells you whether a variety fits your season at all.\n\nCount the weeks between your last frost and your first frost, and be suspicious of anything whose days to maturity eats most of that window, especially the long-season peppers and melons and the big winter squashes. In a short season those are the varieties that produce beautifully in photographs and green fruit in your garden.\n\nThe second is disease resistance, which is listed in the small print of most descriptions as a string of letters. If something specific beat you last year, blight, wilt, mildew, this is the cheapest possible response to it: pick a variety bred to resist that one thing and change nothing else."
+            },
+            {
+              "heading": "When to press the button",
+              "body": "Earlier than feels necessary. The interesting varieties, and particularly anything that had a good year in the seed press, sell out in January and February, and a substitution chosen for you by a supplier is rarely the one you wanted.\n\nOrdering in December also means the packets are on the shelf before the first sowings come round, which for onions and leeks in many places is January itself.\n\nWrite the final order down somewhere that survives the year, with the varieties and the supplier. Next December the most useful document you can have is last year's list with notes scribbled on it about what worked, and it takes two minutes to start."
+            }
+          ]
+        }
+      },
+      "es": {
+        "slug": "como-planificar-el-pedido-de-semillas",
+        "title": "Cómo Planificar el Pedido de Semillas: Guía para Principiantes en 8 Pasos",
+        "eyebrow": "Guía para principiantes",
+        "chartTitle": "Cómo planificar el pedido de semillas",
+        "description": "Ocho pasos para un pedido de semillas de enero que de verdad vayas a sembrar, empezando por la caja que ya tienes y los bancales que realmente hay.",
+        "pinDescription": "Cómo planificar el pedido de semillas sin pasarte: revisa primero tu propia caja, cuenta bancales en vez de deseos, compara los días a cosecha con tu temporada y compra cebolla, puerro y chirivía frescas cada año porque esas de verdad no se guardan.",
+        "cta": "Planifica los bancales del año que viene en Garden Planner Pro",
+        "proTip": {
+          "label": "Consejo",
+          "text": "Haz el pedido desde el bancal hacia fuera, no desde el catálogo hacia dentro. Apunta primero cuántos metros tienes y la lista deja de ser un deseo y pasa a ser un plan."
+        },
+        "steps": [
+          {
+            "label": "Revisa Tu Caja",
+            "bullets": [
+              "Casi toda la semilla dura años",
+              "Prueba lo dudoso"
+            ]
+          },
+          {
+            "label": "Apunta Lo Que Comisteis",
+            "bullets": [
+              "La cocina del año pasado",
+              "Quita lo que nadie terminó"
+            ]
+          },
+          {
+            "label": "Cuenta Los Bancales",
+            "bullets": [
+              "Mide antes de elegir",
+              "El espacio es el límite real"
+            ]
+          },
+          {
+            "label": "Mira Días A Cosecha",
+            "bullets": [
+              "Frente a tus fechas de helada",
+              "Las tardías piden temporada larga"
+            ]
+          },
+          {
+            "label": "Estas Siempre Nuevas",
+            "bullets": [
+              "Cebolla, puerro y chirivía",
+              "No aguantan un año"
+            ]
+          },
+          {
+            "label": "Busca Resistencias",
+            "bullets": [
+              "A lo que te venció el año pasado",
+              "Viene en la descripción"
+            ]
+          },
+          {
+            "label": "Comparte Los Sobres",
+            "bullets": [
+              "Calabazas y coles",
+              "Cientos de semillas se estropean"
+            ]
+          },
+          {
+            "label": "Pide Pronto",
+            "bullets": [
+              "Las buenas se agotan",
+              "Diciembre mejor que febrero"
+            ]
+          }
+        ],
+        "article": {
+          "intro": "El pedido de semillas es la parte más barata de un huerto y la que decide en silencio casi todo el año. También es donde casi todo el mundo se pasa, porque un catálogo en enero está pensado para que lo lea alguien harto del invierno.\n\nEl remedio es hacer tres cosas antes de abrirlo.",
+          "sections": [
+            {
+              "heading": "Empieza por la caja que ya tienes",
+              "body": "Antes que nada, vuelca la caja de semillas sobre la mesa y ordénala. Casi toda la semilla de hortaliza dura mucho más de lo que sugiere la fecha del sobre: tomate, calabaza, pepino, judía, guisante, coles y lechuga suelen estar bien durante años.\n\nLas de vida corta de verdad son unas pocas. La cebolla, el puerro y el cebollino pierden fuerza en uno o dos años, y la chirivía es la peor de todas y merece comprarse nueva cada año. Esas entran en el pedido automáticamente.\n\nCon lo que tengas dudas, haz una prueba de germinación ahora en vez de enterarte en abril. Diez semillas sobre papel de cocina húmedo dentro de una bolsa en un sitio cálido, contadas pasado el tiempo normal de ese cultivo. Siete o más nacidas y la siembras como siempre; cuatro o cinco y la siembras más espesa; una o dos y va a la lista.\n\nEste paso por sí solo suele recortar un pedido en un tercio, y es la diferencia entre un cajón de semillas que funciona y uno que es casi arqueología."
+            },
+            {
+              "heading": "Luego calcula lo que te cabe",
+              "body": "La segunda disciplina es aritmética. Mide los bancales, apunta el número y solo entonces empieza a elegir.\n\nEs asombroso lo deprisa que una lista de deseos se sale de un jardín. Un sobre de calabaza son treinta semillas y en un bancal de las afueras caben dos plantas. Cuatro variedades de tomate suena modesto hasta que cuentas que son dieciséis plantas y tienes sitio para seis.\n\nCalcula más o menos cuántas plantas de cada cosa quieres en el suelo y compra para eso más un pequeño margen por fallos. Donde el sobre traiga mucho más de lo que necesitas, que es el caso de casi todas las cucurbitáceas y las coles, compártelo con alguien. Dos hortelanos comprando cuatro sobres entre los dos y partiéndolos por la mitad es mejor resultado que dos hortelanos comprando cuatro sobres cada uno y tirando casi todo en tres años.\n\nY sé sincero sobre el año pasado. Si en casa nadie se comió el colinabo, la respuesta no es otra variedad de colinabo."
+            },
+            {
+              "heading": "Los dos datos del sobre que importan",
+              "body": "Los días a cosecha son los que se saltan. Es una orientación y no una promesa, y en lo que se siembra en semillero suele contarse desde el trasplante y no desde la siembra, pero te dice si una variedad cabe siquiera en tu temporada.\n\nCuenta las semanas que hay entre tu última helada y la primera, y desconfía de todo lo que se coma casi esa ventana entera, sobre todo los pimientos y melones de ciclo largo y las calabazas grandes de invierno. En una temporada corta esas son las variedades que salen preciosas en las fotos y verdes en tu huerto.\n\nEl segundo dato es la resistencia a enfermedades, que aparece en la letra pequeña de casi todas las descripciones como una serie de siglas. Si algo concreto te venció el año pasado, mildiu, fusarium, oídio, esta es la respuesta más barata posible: elige una variedad criada para resistir justo eso y no cambies nada más."
+            },
+            {
+              "heading": "Cuándo darle al botón",
+              "body": "Antes de lo que parece necesario. Las variedades interesantes, y en especial cualquiera que haya tenido buena prensa, se agotan en enero y febrero, y una sustitución elegida por el proveedor rara vez es la que querías.\n\nPedir en diciembre significa además tener los sobres en casa antes de las primeras siembras, que para cebollas y puerros en muchos sitios es el propio enero.\n\nApunta el pedido definitivo en algún sitio que sobreviva al año, con las variedades y el proveedor. El diciembre que viene el documento más útil que puedes tener es la lista del año anterior con notas garabateadas sobre qué funcionó, y empezarla cuesta dos minutos."
+            }
+          ]
+        }
+      },
+      "icons": [
+        {
+          "slug": "seed-packet-resow"
+        },
+        {
+          "slug": "harvest-basket-tomatoes"
+        },
+        {
+          "slug": "raised-bed-frame"
+        },
+        {
+          "slug": "frost-calendar"
+        },
+        {
+          "slug": "onion-sets"
+        },
+        {
+          "slug": "checkmark"
+        },
+        {
+          "slug": "seed-saving-envelope"
+        },
+        {
+          "slug": "seed-order-list",
+          "subject": "a small notepad with a short handwritten list, a pencil lying across it, and two paper seed packets tucked behind it"
+        }
+      ],
+      "proTipIcon": {
+        "slug": "seed-tray-indoors"
+      }
+    },
+    {
       "key": "grow-tomatoes",
       "category": "vegetables",
       "tags": [
@@ -13475,245 +14638,6 @@
       }
     },
     {
-      "key": "protect-plants-from-frost",
-      "category": "seeds",
-      "tags": [
-        "frost",
-        "season extension",
-        "planning",
-        "infographics"
-      ],
-      "pinBoard": "Seed Starting & Frost Dates",
-      "pinKeywords": [
-        "how to protect plants from frost",
-        "frost protection garden",
-        "fleece and cloches",
-        "extending the season"
-      ],
-      "en": {
-        "slug": "how-to-protect-plants-from-frost",
-        "title": "How to Protect Plants from Frost: A Beginner's Guide in 8 Steps",
-        "eyebrow": "Beginner-friendly guide",
-        "chartTitle": "How to protect plants from frost",
-        "description": "Eight steps to getting tender plants through a cold night, from spotting the risky conditions to uncovering them in the morning.",
-        "pinDescription": "How to protect plants from frost: watch for a clear, still, dry evening, cover plants before dusk to trap the days warmth, keep the cover off the leaves, and take it off again in the morning.",
-        "cta": "Check your frost dates in Garden Planner Pro",
-        "proTip": {
-          "label": "Pro tip",
-          "text": "Cover before dusk, not at bedtime. The cover works by trapping heat the soil released during the day, so putting it on at ten at night traps nothing but cold air."
-        },
-        "steps": [
-          {
-            "label": "Know The Risky Nights",
-            "bullets": [
-              "Clear, still and dry",
-              "Cloud and wind protect you"
-            ]
-          },
-          {
-            "label": "Water Beforehand",
-            "bullets": [
-              "Damp soil holds more heat",
-              "Water in the morning"
-            ]
-          },
-          {
-            "label": "Cover Before Dusk",
-            "bullets": [
-              "Traps the days warmth",
-              "Too late traps cold air"
-            ]
-          },
-          {
-            "label": "Keep Fabric Off Leaves",
-            "bullets": [
-              "Touching fabric freezes the leaf",
-              "Use hoops or canes"
-            ]
-          },
-          {
-            "label": "Seal The Edges",
-            "bullets": [
-              "Weigh down every edge",
-              "Warm air escapes at gaps"
-            ]
-          },
-          {
-            "label": "Move Pots To Shelter",
-            "bullets": [
-              "Pot roots freeze first",
-              "Group them by a wall"
-            ]
-          },
-          {
-            "label": "Uncover In The Morning",
-            "bullets": [
-              "Plants cook under cover",
-              "Let light and air back"
-            ]
-          },
-          {
-            "label": "Wait Before Cutting Back",
-            "bullets": [
-              "Damage looks worse than it is",
-              "Prune when growth restarts"
-            ]
-          }
-        ],
-        "article": {
-          "intro": "Frost protection is mostly about two things people get wrong: which nights actually matter, and what time of day you put the cover on.\n\nGet those right and a sheet of fleece will carry a tender plant through a night that would otherwise have finished it.",
-          "sections": [
-            {
-              "heading": "The dangerous night is the beautiful one",
-              "body": "A still, clear, dry evening after a bright day is the frost risk. With no cloud to hold it in, the heat the ground absorbed radiates straight up into the sky, and with no wind to mix the air, cold air pools at ground level.\n\nA cloudy or breezy night at the same forecast temperature is usually fine. This is why a frost can hit one part of a garden and not another: cold air flows downhill and settles in dips and against solid fences, which is what people mean by a frost pocket.\n\nThe air temperature is measured at head height, so ground level can be two or three degrees colder than the forecast number. A forecast of two degrees above freezing is still a frost night for anything tender."
-            },
-            {
-              "heading": "How a cover actually works",
-              "body": "A fleece or a cloche generates no heat. All it does is trap warmth that the soil absorbed during the day and slow its escape overnight.\n\nThat single fact settles the timing: the cover has to go on in the late afternoon or at dusk, while there is still warmth in the ground to trap. Going out at bedtime and throwing fleece over cold plants achieves very little.\n\nIt also explains two details. Water the soil in the morning if frost is forecast, because damp soil stores more heat than dry and releases it slowly overnight. And seal the cover to the ground, weighted with stones or bricks all the way round, because the warm air you are trying to keep will leak out of any gap at the edge.\n\nKeep the fabric off the foliage on hoops or canes. Wherever a cover rests directly on a leaf it conducts the cold straight through, and you get a frost burn in the exact shape of the fabric."
-            },
-            {
-              "heading": "Pots, and what to prioritise",
-              "body": "Plants in containers are far more exposed than the same plants in the ground, because the roots are surrounded by cold air rather than insulated by soil. A plant that is hardy in a border can be killed in a pot in the same garden.\n\nSo move pots against a house wall, which stays warmer, and group them together so they shelter one another. Wrap the pots rather than the plants, with bubble wrap or hessian, and lift them off cold paving onto pot feet or a bit of wood.\n\nIn the vegetable garden, the priorities are anything tender that has just gone out and anything in flower. A frost on open blossom on fruit trees is what costs you the crop, even when the tree itself is untouched."
-            },
-            {
-              "heading": "The morning after",
-              "body": "Take covers off in the morning. Fleece left on through a sunny day cooks the plants underneath and holds damp air around them, and plastic cloches heat up alarmingly fast.\n\nIf something has been caught, leave it alone for a while. Frosted foliage looks dreadful, blackened and limp, and a surprising amount of it recovers from buds lower down. Cutting it off straight away removes the damaged growth that is sheltering the live parts underneath, and exposes them to the next cold night.\n\nWait until growth restarts, then cut back to where you can see green. Some plants surprise you weeks later. The exception is anything mushy and rotting, which should come off promptly before it spreads."
-            }
-          ]
-        }
-      },
-      "es": {
-        "slug": "como-proteger-las-plantas-de-las-heladas",
-        "title": "Cómo Proteger las Plantas de las Heladas: Guía para Principiantes en 8 Pasos",
-        "eyebrow": "Guía para principiantes",
-        "chartTitle": "Cómo proteger de las heladas",
-        "description": "Ocho pasos para salvar plantas tiernas de una noche fría, desde reconocer la noche de riesgo hasta destaparlas por la mañana.",
-        "pinDescription": "Cómo proteger las plantas de las heladas: vigila las noches despejadas, secas y sin viento, cubre antes del anochecer para atrapar el calor del día, no dejes que la tela toque las hojas y destapa por la mañana.",
-        "cta": "Consulta tus fechas de helada en Garden Planner Pro",
-        "proTip": {
-          "label": "Consejo",
-          "text": "Cubre antes del anochecer, no al irte a la cama. La protección funciona atrapando el calor que el suelo ha soltado durante el día, así que ponerla a las diez de la noche no atrapa más que aire frío."
-        },
-        "steps": [
-          {
-            "label": "Conoce Las Noches",
-            "bullets": [
-              "Despejada, seca y sin viento",
-              "Las nubes y el viento protegen"
-            ]
-          },
-          {
-            "label": "Riega Antes",
-            "bullets": [
-              "La tierra húmeda guarda calor",
-              "Riega por la mañana"
-            ]
-          },
-          {
-            "label": "Cubre Antes Del Anochecer",
-            "bullets": [
-              "Atrapa el calor del día",
-              "Tarde solo atrapa frío"
-            ]
-          },
-          {
-            "label": "Tela Sin Tocar Hojas",
-            "bullets": [
-              "Donde toca, la hoja se quema",
-              "Usa arcos o cañas"
-            ]
-          },
-          {
-            "label": "Sella Contra El Suelo",
-            "bullets": [
-              "Sujeta bien todos los bordes",
-              "El calor se escapa por ahí"
-            ]
-          },
-          {
-            "label": "Resguarda Las Macetas",
-            "bullets": [
-              "La raíz en maceta se hiela antes",
-              "Júntalas junto a un muro"
-            ]
-          },
-          {
-            "label": "Destapa Por La Mañana",
-            "bullets": [
-              "Tapadas se cuecen",
-              "Devuélveles luz y aire"
-            ]
-          },
-          {
-            "label": "No Podes Enseguida",
-            "bullets": [
-              "El daño parece peor de lo que es",
-              "Poda cuando rebrote"
-            ]
-          }
-        ],
-        "article": {
-          "intro": "La protección contra heladas va sobre todo de dos cosas que se suelen entender mal: qué noches importan de verdad y a qué hora del día se pone la cubierta.\n\nAcierta en las dos y una manta térmica sacará adelante a una planta tierna en una noche que de otro modo habría acabado con ella.",
-          "sections": [
-            {
-              "heading": "La noche peligrosa es la noche bonita",
-              "body": "Una tarde despejada, seca y sin viento después de un día luminoso es la que trae helada. Sin nubes que lo retengan, el calor que absorbió el suelo se escapa directo hacia el cielo, y sin viento que mezcle el aire, el frío se acumula a ras de suelo.\n\nUna noche nublada o con brisa a la misma temperatura de previsión suele ir bien. Por eso una helada puede pillar una parte del jardín y otra no: el aire frío corre cuesta abajo y se posa en las hondonadas y contra las vallas macizas, que es lo que se llama una bolsa de helada.\n\nLa temperatura del aire se mide a la altura de la cabeza, así que a ras de suelo puede haber dos o tres grados menos que en la previsión. Una previsión de dos grados sobre cero sigue siendo noche de helada para cualquier planta tierna."
-            },
-            {
-              "heading": "Cómo funciona en realidad una cubierta",
-              "body": "Una manta térmica o una campana no generan calor. Lo único que hacen es atrapar el calor que el suelo absorbió durante el día y frenar su escape por la noche.\n\nEse solo dato resuelve el momento: la cubierta tiene que ponerse a última hora de la tarde o al anochecer, mientras aún queda calor en la tierra que atrapar. Salir a la hora de acostarse y echar la tela sobre unas plantas ya frías consigue muy poco.\n\nExplica también dos detalles. Riega la tierra por la mañana si se anuncia helada, porque el suelo húmedo almacena más calor que el seco y lo suelta despacio durante la noche. Y sella la cubierta contra el suelo, con piedras o ladrillos todo alrededor, porque el aire templado que quieres conservar se escapa por cualquier rendija del borde.\n\nMantén la tela separada del follaje con arcos o cañas. Allí donde la cubierta se apoya sobre una hoja, conduce el frío directamente, y sale una quemadura con la forma exacta de la tela."
-            },
-            {
-              "heading": "Las macetas y a qué dar prioridad",
-              "body": "Las plantas en maceta están mucho más expuestas que esas mismas plantas en el suelo, porque las raíces están rodeadas de aire frío en vez de aisladas por la tierra. Una planta rústica en un arriate puede morir en maceta en ese mismo jardín.\n\nAsí que arrima las macetas a la pared de la casa, que se mantiene más cálida, y agrúpalas para que se protejan entre ellas. Envuelve las macetas más que las plantas, con plástico de burbujas o arpillera, y súbelas del pavimento frío sobre unos tacos o un trozo de madera.\n\nEn el huerto, la prioridad es todo lo tierno recién trasplantado y todo lo que esté en flor. Una helada sobre la flor abierta de los frutales es lo que te cuesta la cosecha, aunque el árbol no sufra nada."
-            },
-            {
-              "heading": "La mañana siguiente",
-              "body": "Quita las cubiertas por la mañana. Una manta dejada puesta durante un día soleado cuece las plantas de debajo y les mantiene aire húmedo alrededor, y las campanas de plástico se calientan a una velocidad alarmante.\n\nSi algo ha resultado dañado, déjalo en paz un tiempo. El follaje helado tiene un aspecto pésimo, negro y lacio, y una cantidad sorprendente rebrota desde yemas más bajas. Cortarlo enseguida quita el follaje dañado que está resguardando las partes vivas de debajo y las expone a la siguiente noche fría.\n\nEspera a que rebrote y entonces corta hasta donde veas verde. Algunas plantas te sorprenden semanas después. La excepción es todo lo que esté blando y podrido, que conviene retirar pronto antes de que se extienda."
-            }
-          ]
-        }
-      },
-      "icons": [
-        {
-          "slug": "clear-night-sky",
-          "subject": "a clear starry night sky above the dark silhouette of a garden"
-        },
-        {
-          "slug": "watering-can-sprinkle",
-          "subject": "a metal watering can pouring water onto soil at the base of a plant"
-        },
-        {
-          "slug": "fleece-over-hoops",
-          "subject": "white horticultural fleece stretched over hoops covering a garden bed at dusk"
-        },
-        {
-          "slug": "cloche-over-plant",
-          "subject": "a clear bell cloche placed over a single small plant in a garden bed"
-        },
-        {
-          "slug": "weighted-cover-edge",
-          "subject": "a stone holding down the edge of a sheet of fleece against garden soil"
-        },
-        {
-          "slug": "wrapped-pot-wall",
-          "subject": "a plant pot wrapped in hessian standing against a house wall"
-        },
-        {
-          "slug": "uncovering-bed-morning",
-          "subject": "a hand pulling back a fleece cover from a garden bed in morning light"
-        },
-        {
-          "slug": "frosted-damaged-leaves",
-          "subject": "blackened frost-damaged leaves drooping on a plant stem"
-        }
-      ],
-      "proTipIcon": {
-        "slug": "frost-calendar",
-        "subject": "a wall calendar page with a frost crystal drawn on one of the dates"
-      }
-    },
-    {
       "key": "make-leaf-mold",
       "category": "soil",
       "tags": [
@@ -13944,239 +14868,6 @@
       ],
       "proTipIcon": {
         "slug": "finished-compost-crumb"
-      }
-    },
-    {
-      "key": "build-a-cold-frame",
-      "category": "seeds",
-      "tags": [
-        "season extension",
-        "frost",
-        "planning",
-        "infographics"
-      ],
-      "pinBoard": "Seed Starting & Frost Dates",
-      "pinKeywords": [
-        "cold frame",
-        "season extension",
-        "winter vegetable garden",
-        "diy garden projects"
-      ],
-      "en": {
-        "slug": "how-to-build-a-cold-frame",
-        "title": "How to Build a Cold Frame: A Beginner's Guide in 8 Steps",
-        "eyebrow": "Beginner-friendly guide",
-        "chartTitle": "How to build a cold frame",
-        "description": "Eight steps to a box with a clear lid that carries salad through winter and hardens off seedlings in spring, built from whatever you have.",
-        "pinDescription": "How to build a cold frame: face the lid south, slope it so rain runs off and low winter sun gets in, sit it on bare soil rather than paving, and vent it on every mild day. The cheapest way to add weeks to both ends of the growing year.",
-        "cta": "Check your frost dates in Garden Planner Pro",
-        "proTip": {
-          "label": "Pro tip",
-          "text": "More cold frame plants are lost to cooking than to freezing. A closed frame in February sun gets hot enough to wilt lettuce by mid morning, so prop the lid whenever the day is mild."
-        },
-        "steps": [
-          {
-            "label": "Find A Sunny Wall",
-            "bullets": [
-              "South-facing and sheltered",
-              "A wall gives back heat at night"
-            ]
-          },
-          {
-            "label": "Sit It On Soil",
-            "bullets": [
-              "Bare ground stores warmth",
-              "Paving stays cold all night"
-            ]
-          },
-          {
-            "label": "Build The Box",
-            "bullets": [
-              "Untreated timber or old bricks",
-              "Higher at the back"
-            ]
-          },
-          {
-            "label": "Slope The Lid",
-            "bullets": [
-              "Rain runs off, low sun gets in",
-              "About one hand of drop"
-            ]
-          },
-          {
-            "label": "Use A Clear Lid",
-            "bullets": [
-              "Old window or twinwall sheet",
-              "Hinge it at the back"
-            ]
-          },
-          {
-            "label": "Seal The Gaps",
-            "bullets": [
-              "Draughts do the damage",
-              "Pack soil round the base"
-            ]
-          },
-          {
-            "label": "Vent On Mild Days",
-            "bullets": [
-              "Prop the lid by mid morning",
-              "Closed frames cook plants"
-            ]
-          },
-          {
-            "label": "Shut Before Dusk",
-            "bullets": [
-              "Traps the days warmth",
-              "Add fleece on hard nights"
-            ]
-          }
-        ],
-        "article": {
-          "intro": "A cold frame is a box with a clear lid, and that is genuinely all it is. No heat, no power, no glazing skills.\n\nWhat it buys you is a few weeks at each end of the year and somewhere to harden seedlings off without carrying trays in and out every evening.",
-          "sections": [
-            {
-              "heading": "Where it goes matters more than what it is made of",
-              "body": "Put it against a south-facing wall if you have one. A wall absorbs sun all day and releases it slowly overnight, and a frame tucked against one runs measurably warmer than the same frame in the open.\n\nSit it on bare soil rather than on a patio. Soil is the frame's storage heater: it takes in warmth through the day and gives it back after dark, which is the whole mechanism by which an unheated box keeps plants alive. A frame on paving loses most of that.\n\nSomewhere sheltered from the prevailing wind, too. Wind strips heat off the lid faster than anything else, and it is what lifts an unlatched lid off in February and breaks it.\n\nThe box itself can be old scaffold boards, reclaimed bricks, or a stack of straw bales with a window on top. None of it is precious. Skip pressure-treated timber for anything you grow food in if it is the older kind, and use untreated softwood or cedar instead."
-            },
-            {
-              "heading": "The lid is the only part with rules",
-              "body": "It has to be clear, it has to slope, and it has to be easy to open one-handed.\n\nClear so light gets through: an old single-glazed window, a sheet of twinwall polycarbonate, or a timber frame with heavy clear plastic stapled to it. Polycarbonate is lighter and will not shatter, which matters if the frame is where a child walks past.\n\nSloping so rain and snow run off rather than pooling, and so that the low winter sun, which comes in at a shallow angle, strikes the glazing closer to square. Build the back of the box a hand's width higher than the front and the lid takes care of both at once. Face the low side toward the midday sun.\n\nHinge it at the back so it opens like a lid rather than lifting off, and fit something to prop it at two or three heights. You will be opening and shutting it most days, and any frame that is awkward to vent ends up never vented."
-            },
-            {
-              "heading": "Using it through the year",
-              "body": "From autumn it holds winter salads, corn salad, spinach, winter lettuce and hardy herbs, all cropping slowly through the cold months. In late winter it becomes the place seed trays go to get used to real weather before planting out. By late spring it can simply have the lid taken off and grow something.\n\nThe daily job is venting. On any mild sunny day, prop the lid open in the morning and close it in the late afternoon while there is still warmth to trap. The temperature inside a shut frame on a bright February day climbs far higher than the air outside, and a tray of seedlings wilts in an hour.\n\nOn a hard frost night, throw an old blanket or a sheet of fleece over the closed lid. It is a box, not a greenhouse, and on the coldest nights it needs the help."
-            },
-            {
-              "heading": "What it will not do",
-              "body": "A cold frame does not make a frost-free space. Everything in it still goes below freezing on a cold night, and tender plants will still die. What it does is take the edge off, keep rain and wind off the foliage, and raise the soil temperature enough that hardy crops keep growing slowly instead of stopping.\n\nSo stock it with things that were going to survive anyway and want a better winter, rather than with things that need rescuing. The list of what genuinely overwinters in an unheated frame is short and worth learning by trying it for a year."
-            }
-          ]
-        }
-      },
-      "es": {
-        "slug": "como-construir-una-cama-fria",
-        "title": "Cómo Construir una Cama Fría: Guía para Principiantes en 8 Pasos",
-        "eyebrow": "Guía para principiantes",
-        "chartTitle": "Cómo construir una cama fría",
-        "description": "Ocho pasos para una caja con tapa transparente que mantiene ensaladas todo el invierno y aclimata plántulas en primavera, hecha con lo que tengas.",
-        "pinDescription": "Cómo construir una cama fría: orienta la tapa al sur, dale inclinación para que escurra el agua y entre el sol bajo del invierno, apóyala sobre tierra y no sobre losa, y ventílala todos los días templados. La forma más barata de ganar semanas por los dos extremos del año.",
-        "cta": "Consulta tus fechas de helada en Garden Planner Pro",
-        "proTip": {
-          "label": "Consejo",
-          "text": "En una cama fría se pierden más plantas cocidas que heladas. Con el sol de febrero y la tapa cerrada, dentro hace calor suficiente para marchitar una lechuga a media mañana, así que calza la tapa siempre que el día sea suave."
-        },
-        "steps": [
-          {
-            "label": "Busca Un Muro Soleado",
-            "bullets": [
-              "Orientado al sur y resguardado",
-              "El muro devuelve calor de noche"
-            ]
-          },
-          {
-            "label": "Apóyala En Tierra",
-            "bullets": [
-              "El suelo desnudo guarda calor",
-              "La losa se queda fría"
-            ]
-          },
-          {
-            "label": "Monta La Caja",
-            "bullets": [
-              "Madera sin tratar o ladrillo viejo",
-              "Más alta por detrás"
-            ]
-          },
-          {
-            "label": "Inclina La Tapa",
-            "bullets": [
-              "Escurre el agua y entra el sol",
-              "Un palmo de desnivel"
-            ]
-          },
-          {
-            "label": "Tapa Transparente",
-            "bullets": [
-              "Ventana vieja o policarbonato",
-              "Con bisagra detrás"
-            ]
-          },
-          {
-            "label": "Sella Las Rendijas",
-            "bullets": [
-              "Las corrientes son lo que mata",
-              "Calza tierra en la base"
-            ]
-          },
-          {
-            "label": "Ventila Si Hace Sol",
-            "bullets": [
-              "Abre a media mañana",
-              "Cerrada cuece las plantas"
-            ]
-          },
-          {
-            "label": "Cierra Antes Del Anochecer",
-            "bullets": [
-              "Atrapa el calor del día",
-              "Manta encima si hiela fuerte"
-            ]
-          }
-        ],
-        "article": {
-          "intro": "Una cama fría es una caja con la tapa transparente, y de verdad no es nada más. Sin calefacción, sin electricidad, sin saber montar cristales.\n\nLo que te da son unas semanas por cada extremo del año y un sitio donde aclimatar plántulas sin entrar y sacar bandejas cada tarde.",
-          "sections": [
-            {
-              "heading": "Dónde va importa más que de qué está hecha",
-              "body": "Ponla contra un muro orientado al sur si lo tienes. Un muro absorbe sol todo el día y lo suelta despacio por la noche, y una cama arrimada a uno funciona bastante más cálida que la misma en campo abierto.\n\nApóyala sobre tierra desnuda y no sobre un patio. La tierra es el acumulador de la cama: recoge calor durante el día y lo devuelve al anochecer, que es todo el mecanismo por el que una caja sin calefacción mantiene vivas a las plantas. Sobre losa se pierde casi todo eso.\n\nY en un sitio resguardado del viento dominante. El viento roba calor de la tapa más deprisa que ninguna otra cosa, y es lo que levanta una tapa sin pestillo en febrero y la rompe.\n\nLa caja puede ser de tablones viejos, ladrillo recuperado o una pila de balas de paja con una ventana encima. Nada de esto es delicado. Evita la madera tratada a presión de la antigua para cultivar alimento y usa madera blanda sin tratar o cedro."
-            },
-            {
-              "heading": "La tapa es la única parte con reglas",
-              "body": "Tiene que ser transparente, tiene que estar inclinada y tiene que abrirse con una mano.\n\nTransparente para que pase la luz: una ventana vieja de vidrio simple, una placa de policarbonato celular o un bastidor de madera con plástico grueso grapado. El policarbonato pesa menos y no estalla, lo que importa si la cama está donde pasa un niño.\n\nInclinada para que el agua y la nieve escurran en vez de encharcarse, y para que el sol bajo del invierno, que llega muy rasante, incida sobre la tapa más de frente. Haz la parte de atrás un palmo más alta que la de delante y la tapa resuelve las dos cosas a la vez. El lado bajo mira al sol del mediodía.\n\nCon bisagra detrás para que se abra como una tapa en vez de levantarse entera, y con algo para calzarla a dos o tres alturas. La vas a abrir y cerrar casi todos los días, y una cama incómoda de ventilar acaba sin ventilarse nunca."
-            },
-            {
-              "heading": "Cómo se usa a lo largo del año",
-              "body": "Desde el otoño aloja ensaladas de invierno, canónigos, espinaca, lechuga de invierno y hierbas rústicas, todo produciendo despacio durante los meses fríos. A final del invierno pasa a ser el sitio donde las bandejas de semillero se acostumbran al tiempo real antes de trasplantar. Ya en primavera avanzada se le puede quitar la tapa y cultivar algo dentro sin más.\n\nLa tarea diaria es ventilar. Cualquier día suave y soleado, calza la tapa por la mañana y ciérrala a media tarde, cuando todavía queda calor que atrapar. La temperatura dentro de una cama cerrada un día claro de febrero sube muchísimo por encima de la de fuera, y una bandeja de plántulas se marchita en una hora.\n\nEn una noche de helada fuerte, echa una manta vieja o una tela de protección sobre la tapa cerrada. Es una caja, no un invernadero, y las noches más frías necesita ayuda."
-            },
-            {
-              "heading": "Lo que no va a hacer",
-              "body": "Una cama fría no crea un espacio libre de heladas. Todo lo que hay dentro baja de cero en una noche fría, y las plantas tiernas se siguen muriendo. Lo que hace es quitar filo al frío, mantener la lluvia y el viento fuera del follaje y subir la temperatura del suelo lo bastante para que los cultivos rústicos sigan creciendo despacio en vez de pararse.\n\nAsí que llénala de cosas que iban a sobrevivir de todos modos y quieren un invierno mejor, no de cosas que necesitan rescate. La lista de lo que aguanta de verdad en una cama sin calefacción es corta y merece la pena aprenderla probando un año."
-            }
-          ]
-        }
-      },
-      "icons": [
-        {
-          "slug": "sunny-wall-pot"
-        },
-        {
-          "slug": "level-ground"
-        },
-        {
-          "slug": "cedar-boards"
-        },
-        {
-          "slug": "cold-frame-closed",
-          "subject": "a low timber cold frame with a sloping clear lid closed, standing on garden soil beside a bed"
-        },
-        {
-          "slug": "cold-frame-lid-open",
-          "subject": "a timber cold frame with its clear hinged lid propped open on a stick, showing trays of small seedlings inside"
-        },
-        {
-          "slug": "weighted-cover-edge",
-          "subject": "a brick holding down the edge of a cold frame lid against the timber side of the frame"
-        },
-        {
-          "slug": "thermometer-warm-soil"
-        },
-        {
-          "slug": "frost-calendar"
-        }
-      ],
-      "proTipIcon": {
-        "slug": "seedling-tray-outside"
       }
     },
     {
@@ -14414,236 +15105,6 @@
       }
     },
     {
-      "key": "sow-a-cover-crop",
-      "category": "soil",
-      "tags": [
-        "soil",
-        "fall garden",
-        "organic gardening",
-        "infographics"
-      ],
-      "pinBoard": "Raised Bed Gardening",
-      "pinKeywords": [
-        "cover crop",
-        "green manure",
-        "fall garden jobs",
-        "improve garden soil"
-      ],
-      "en": {
-        "slug": "how-to-sow-a-cover-crop",
-        "title": "How to Sow a Cover Crop: A Beginner's Guide in 8 Steps",
-        "eyebrow": "Beginner-friendly guide",
-        "chartTitle": "How to sow a cover crop",
-        "description": "Eight steps to covering an empty bed for winter, from picking the right crop for the job to cutting it down at the right moment in spring.",
-        "pinDescription": "How to sow a cover crop: rye for holding soil through winter rain, clover and field beans for nitrogen. Sow thickly by early autumn, cut it down before it flowers, and wait two or three weeks before planting into it.",
-        "cta": "Plan next year's beds in Garden Planner Pro",
-        "proTip": {
-          "label": "Pro tip",
-          "text": "Cut it down before it flowers, not when you get round to it. Once a cover crop sets seed you have bought yourself a weed problem in the exact bed you were trying to improve."
-        },
-        "steps": [
-          {
-            "label": "Match Crop To Job",
-            "bullets": [
-              "Rye holds soil",
-              "Clover and beans add nitrogen"
-            ]
-          },
-          {
-            "label": "Sow By Early Autumn",
-            "bullets": [
-              "Needs weeks of growth",
-              "Rye tolerates the coldest soil"
-            ]
-          },
-          {
-            "label": "Clear The Bed",
-            "bullets": [
-              "Pull spent crops and weeds",
-              "Rake the surface level"
-            ]
-          },
-          {
-            "label": "Sow It Thickly",
-            "bullets": [
-              "Broadcast by hand",
-              "Thin stands let weeds in"
-            ]
-          },
-          {
-            "label": "Rake It In",
-            "bullets": [
-              "Cover the seed shallowly",
-              "Birds take what sits on top"
-            ]
-          },
-          {
-            "label": "Water It Once",
-            "bullets": [
-              "Only if autumn is dry",
-              "Rain usually does the rest"
-            ]
-          },
-          {
-            "label": "Cut Before Flowering",
-            "bullets": [
-              "Never let it set seed",
-              "Nitrogen peaks at flowering"
-            ]
-          },
-          {
-            "label": "Wait Before Planting",
-            "bullets": [
-              "Two or three weeks",
-              "Rotting roots stall seedlings"
-            ]
-          }
-        ],
-        "article": {
-          "intro": "A cover crop is a crop you grow for the soil rather than for the kitchen, sown into a bed you are not using so that something is living in it over winter.\n\nIt is the cheapest soil improvement there is, and the whole thing hinges on two dates: when you sow it and when you cut it.",
-          "sections": [
-            {
-              "heading": "Pick the one that does the job you need",
-              "body": "They are not interchangeable, and the choice comes down to what the bed's problem is.\n\nCereal rye is the workhorse for holding soil. It germinates in colder soil than almost anything else, so it is the one to reach for if you are late, and it makes a dense fibrous root system that stops winter rain washing structure out of a bare bed. It adds no nitrogen.\n\nLegumes do add nitrogen, because they host bacteria in root nodules that fix it out of the air. Crimson clover and field beans are the usual choices, and they want sowing earlier than rye because they are slower to establish. Follow them with something hungry: brassicas, or sweetcorn.\n\nMustard and phacelia grow fast and smother weeds, and phacelia is good for early bees if any of it flowers. Mustard is a brassica, though, so keep it out of a rotation where clubroot is a worry, and out of beds that grow cabbages next year."
-            },
-            {
-              "heading": "Sowing is deliberately crude",
-              "body": "Clear the bed of spent crops and weeds and rake the surface roughly level. Then scatter the seed by hand across the whole bed, much more thickly than you would sow a vegetable, and rake it lightly in so most of it is covered.\n\nThere is no spacing and no rows. A thin patchy stand is worse than useless, because the gaps fill with winter weeds and you have done the work without getting the benefit. Err heavy.\n\nWater it in if the autumn is dry, and after that leave it. Most years the rain handles everything. The one job left is to look at it occasionally through the winter and note whether it actually established, because a bed where the birds took the lot is one you would rather mulch than discover bare in February."
-            },
-            {
-              "heading": "Cutting it down is where people get it wrong",
-              "body": "The timing rule is simple: cut it before it flowers.\n\nWith a legume, the nitrogen stored in the plant peaks around flowering and then moves into making seed, so cutting at early flowering is when you get the most out of it. With anything, letting it set seed turns a soil improver into a weed you will be pulling out of that bed for two years.\n\nCut it at the base with shears or a sharp spade and leave the tops lying on the surface as a mulch, or turn them shallowly into the top few inches. There is no need to dig them deeply in, and on a no-dig bed leaving them on top and covering with compost works fine.\n\nThen wait. Fresh green material rotting in the soil ties up nitrogen temporarily while it breaks down, and seedlings planted straight into it sulk and yellow. Two or three weeks between cutting down and sowing is the usual advice, and it is worth honouring."
-            },
-            {
-              "heading": "When not to bother",
-              "body": "If the bed is going to be planted with garlic or overwintering onions, it does not need a cover crop, because it already has a crop in it.\n\nIf you are sowing in December in a cold area, you have missed it. A cover crop that germinates and then sits at two leaves all winter holds very little soil and adds almost nothing. Put mulch on instead and sow the cover crop earlier next year.\n\nAnd if the bed is small and you already have leaves to spare, a good thick mulch does most of the same job with none of the spring timing to get right. The cover crop earns its place on bigger beds, on slopes, and where you specifically want the nitrogen."
-            }
-          ]
-        }
-      },
-      "es": {
-        "slug": "como-sembrar-un-abono-verde",
-        "title": "Cómo Sembrar un Abono Verde: Guía para Principiantes en 8 Pasos",
-        "eyebrow": "Guía para principiantes",
-        "chartTitle": "Cómo sembrar un abono verde",
-        "description": "Ocho pasos para cubrir un bancal vacío durante el invierno, desde elegir la especie adecuada hasta segarla en el momento justo en primavera.",
-        "pinDescription": "Cómo sembrar un abono verde: centeno para sujetar la tierra durante las lluvias de invierno, trébol y habas para aportar nitrógeno. Siembra espeso a principios de otoño, siega antes de que florezca y espera dos o tres semanas antes de plantar encima.",
-        "cta": "Planifica los bancales del año que viene en Garden Planner Pro",
-        "proTip": {
-          "label": "Consejo",
-          "text": "Siega antes de que florezca, no cuando te venga bien. En cuanto un abono verde grana te has comprado un problema de malas hierbas en el mismo bancal que querías mejorar."
-        },
-        "steps": [
-          {
-            "label": "Elige Según El Objetivo",
-            "bullets": [
-              "El centeno sujeta la tierra",
-              "Trébol y habas dan nitrógeno"
-            ]
-          },
-          {
-            "label": "Siembra En Otoño",
-            "bullets": [
-              "Necesita semanas de crecimiento",
-              "El centeno aguanta más frío"
-            ]
-          },
-          {
-            "label": "Despeja El Bancal",
-            "bullets": [
-              "Quita restos y malas hierbas",
-              "Rastrilla la superficie"
-            ]
-          },
-          {
-            "label": "Siembra Espeso",
-            "bullets": [
-              "A voleo con la mano",
-              "Lo ralo deja entrar malas hierbas"
-            ]
-          },
-          {
-            "label": "Rastrilla Por Encima",
-            "bullets": [
-              "Tapa la semilla ligeramente",
-              "Los pájaros se llevan lo suelto"
-            ]
-          },
-          {
-            "label": "Riega Una Vez",
-            "bullets": [
-              "Solo si el otoño es seco",
-              "La lluvia suele bastar"
-            ]
-          },
-          {
-            "label": "Siega Antes De Florecer",
-            "bullets": [
-              "Nunca la dejes granar",
-              "El nitrógeno es máximo en flor"
-            ]
-          },
-          {
-            "label": "Espera Antes De Plantar",
-            "bullets": [
-              "Dos o tres semanas",
-              "Las raíces en descomposición frenan"
-            ]
-          }
-        ],
-        "article": {
-          "intro": "Un abono verde es un cultivo que siembras para el suelo y no para la cocina, en un bancal que no estás usando, para que haya algo vivo en él durante el invierno.\n\nEs la mejora de suelo más barata que existe, y todo depende de dos fechas: cuándo lo siembras y cuándo lo siegas.",
-          "sections": [
-            {
-              "heading": "Elige el que hace el trabajo que necesitas",
-              "body": "No son intercambiables, y la elección depende de cuál sea el problema del bancal.\n\nEl centeno es el caballo de batalla para sujetar la tierra. Germina en suelo más frío que casi cualquier otra cosa, así que es el recurso si vas tarde, y forma un sistema radicular denso y fibroso que impide que la lluvia de invierno se lleve la estructura de un bancal desnudo. No aporta nitrógeno.\n\nLas leguminosas sí lo aportan, porque alojan bacterias en nódulos radiculares que lo fijan del aire. El trébol encarnado y las habas son las opciones habituales, y hay que sembrarlas antes que el centeno porque tardan más en arrancar. Detrás de ellas planta algo exigente: coles, o maíz dulce.\n\nLa mostaza y la facelia crecen deprisa y ahogan las malas hierbas, y la facelia es buena para las abejas tempranas si llega a florecer. La mostaza, eso sí, es una crucífera, así que déjala fuera de una rotación donde preocupe la hernia de la col y fuera de los bancales que llevarán coles el año que viene."
-            },
-            {
-              "heading": "La siembra es deliberadamente tosca",
-              "body": "Despeja el bancal de restos de cultivo y malas hierbas y rastrilla la superficie hasta dejarla más o menos llana. Luego esparce la semilla a mano por todo el bancal, mucho más espesa de lo que sembrarías una hortaliza, y rastrilla por encima para que quede casi toda tapada.\n\nNo hay marco de plantación ni líneas. Una siembra rala y a parches es peor que inútil, porque los huecos se llenan de malas hierbas de invierno y has hecho el trabajo sin llevarte el beneficio. Pásate de espeso.\n\nRiega si el otoño viene seco y después déjalo. La mayoría de los años la lluvia se encarga de todo. Lo único que queda es mirarlo de vez en cuando durante el invierno y comprobar que de verdad nació, porque un bancal en el que los pájaros se lo llevaron todo es de los que prefieres acolchar antes que descubrir pelado en febrero."
-            },
-            {
-              "heading": "Segarlo es donde se falla",
-              "body": "La regla de tiempo es sencilla: siégalo antes de que florezca.\n\nEn una leguminosa, el nitrógeno acumulado en la planta llega al máximo hacia la floración y después se va a formar semilla, así que segar al inicio de la floración es cuando más se aprovecha. En cualquier especie, dejar que grane convierte un mejorador de suelo en una mala hierba que estarás arrancando de ese bancal dos años.\n\nCórtalo por la base con unas tijeras o una pala afilada y deja la parte aérea tendida encima como acolchado, o incorpórala superficialmente en los primeros centímetros. No hace falta enterrarla hondo, y en un bancal de no laboreo funciona bien dejarla arriba y cubrir con compost.\n\nY luego espera. El material verde fresco descomponiéndose en la tierra inmoviliza nitrógeno temporalmente mientras se rompe, y las plántulas puestas justo encima se quedan paradas y amarillean. Dos o tres semanas entre segar y sembrar es el consejo habitual y conviene respetarlo."
-            },
-            {
-              "heading": "Cuándo no vale la pena",
-              "body": "Si el bancal va a llevar ajos o cebollas de invierno, no necesita abono verde, porque ya tiene un cultivo dentro.\n\nSi estás sembrando en diciembre en una zona fría, se te ha pasado. Un abono verde que germina y se queda con dos hojas todo el invierno sujeta muy poca tierra y aporta casi nada. Pon acolchado y siembra antes el año que viene.\n\nY si el bancal es pequeño y ya te sobran hojas, un buen acolchado grueso hace casi el mismo trabajo sin tener que acertar con los tiempos de primavera. El abono verde se gana el sitio en bancales grandes, en pendientes y allí donde quieras el nitrógeno en concreto."
-            }
-          ]
-        }
-      },
-      "icons": [
-        {
-          "slug": "cover-crop-green"
-        },
-        {
-          "slug": "frost-calendar"
-        },
-        {
-          "slug": "bare-seedbed-row"
-        },
-        {
-          "slug": "sowing-seeds-drill"
-        },
-        {
-          "slug": "level-ground"
-        },
-        {
-          "slug": "watering-can-sprinkle"
-        },
-        {
-          "slug": "cut-pea-stems"
-        },
-        {
-          "slug": "compost-mulch-bed"
-        }
-      ],
-      "proTipIcon": {
-        "slug": "pea-roots-nodules"
-      }
-    },
-    {
       "key": "store-winter-squash",
       "category": "vegetables",
       "tags": [
@@ -14873,237 +15334,6 @@
       ],
       "proTipIcon": {
         "slug": "curing-onions"
-      }
-    },
-    {
-      "key": "plan-a-seed-order",
-      "category": "seeds",
-      "tags": [
-        "seed starting",
-        "planning",
-        "beginners",
-        "infographics"
-      ],
-      "pinBoard": "Seed Starting & Frost Dates",
-      "pinKeywords": [
-        "seed order",
-        "garden planning",
-        "seed catalog",
-        "vegetable garden on a budget"
-      ],
-      "en": {
-        "slug": "how-to-plan-a-seed-order",
-        "title": "How to Plan a Seed Order: A Beginner's Guide in 8 Steps",
-        "eyebrow": "Beginner-friendly guide",
-        "chartTitle": "How to plan a seed order",
-        "description": "Eight steps to a January seed order you will actually plant, starting with the box you already own and the beds you actually have.",
-        "pinDescription": "How to plan a seed order without overbuying: shop your own seed box first, count beds rather than wishes, check days to maturity against your own season, and buy fresh onion and parsnip every year because those two really do not keep.",
-        "cta": "Plan next year's beds in Garden Planner Pro",
-        "proTip": {
-          "label": "Pro tip",
-          "text": "Order from the bed outwards, not from the catalogue inwards. Write down how many square feet you have first, and the list stops being a wish and starts being a plan."
-        },
-        "steps": [
-          {
-            "label": "Shop Your Box First",
-            "bullets": [
-              "Most seed keeps for years",
-              "Test anything doubtful"
-            ]
-          },
-          {
-            "label": "List What You Ate",
-            "bullets": [
-              "Last year's kitchen, not the catalogue",
-              "Cut what nobody finished"
-            ]
-          },
-          {
-            "label": "Count The Beds",
-            "bullets": [
-              "Measure before you choose",
-              "Space is the real limit"
-            ]
-          },
-          {
-            "label": "Check Days To Maturity",
-            "bullets": [
-              "Against your own frost dates",
-              "Long varieties need a long season"
-            ]
-          },
-          {
-            "label": "Buy These Fresh",
-            "bullets": [
-              "Onion, leek and parsnip",
-              "They do not keep a year"
-            ]
-          },
-          {
-            "label": "Pick Disease Resistance",
-            "bullets": [
-              "For whatever beat you last year",
-              "Listed in the description"
-            ]
-          },
-          {
-            "label": "Split Big Packets",
-            "bullets": [
-              "Share squash and brassicas",
-              "Hundreds of seeds go stale"
-            ]
-          },
-          {
-            "label": "Order Early",
-            "bullets": [
-              "Good varieties sell out",
-              "December beats February"
-            ]
-          }
-        ],
-        "article": {
-          "intro": "The seed order is the cheapest part of a garden and the one that quietly decides most of the year. It is also where nearly everybody overspends, because a catalogue in January is designed to be read by somebody who is bored of winter.\n\nThe cure is doing three things before you open it.",
-          "sections": [
-            {
-              "heading": "Start with the box you already own",
-              "body": "Before anything else, tip the seed box out on the table and sort it. Most vegetable seed keeps far longer than the packet date implies: tomatoes, squash, cucumbers, beans, peas, brassicas and lettuce will usually be fine for years.\n\nThe genuinely short-lived ones are a small list. Onion, leek and chive fade within a year or two, and parsnip is the worst of all and is worth buying fresh every single year. Those go on the order automatically.\n\nFor anything you are unsure about, run a germination test now rather than finding out in April. Ten seeds on a damp paper towel in a bag somewhere warm, counted after that crop's usual germination time. Seven or more up and you sow it as normal; four or five and you sow thicker; one or two and it goes on the list.\n\nThis single step usually cuts an order by a third, and it is the difference between a seed drawer that works and one that is mostly archaeology."
-            },
-            {
-              "heading": "Then work out what you have room for",
-              "body": "The second discipline is arithmetic. Measure the beds, write the number down, and only then start choosing.\n\nIt is astonishing how fast a wish list outgrows a garden. A packet of squash is thirty seeds and a suburban bed has room for two plants. Four tomato varieties sounds modest until you count that it is sixteen plants and you have space for six.\n\nWork out roughly how many plants of each thing you want in the ground, and buy for that plus a small margin for failures. Where a packet is far bigger than you need, which is most of the cucurbits and brassicas, split it with someone. Two gardeners buying four packets between them and halving each is a better outcome than two gardeners buying four packets each and binning most of it in three years.\n\nAnd be honest about last year. If nobody in the house ate the kohlrabi, the answer is not a different variety of kohlrabi."
-            },
-            {
-              "heading": "The two numbers on the packet that matter",
-              "body": "Days to maturity is the one people skip. It is a rough guide rather than a promise, and it is usually counted from transplanting rather than from sowing for things that get started indoors, but it tells you whether a variety fits your season at all.\n\nCount the weeks between your last frost and your first frost, and be suspicious of anything whose days to maturity eats most of that window, especially the long-season peppers and melons and the big winter squashes. In a short season those are the varieties that produce beautifully in photographs and green fruit in your garden.\n\nThe second is disease resistance, which is listed in the small print of most descriptions as a string of letters. If something specific beat you last year, blight, wilt, mildew, this is the cheapest possible response to it: pick a variety bred to resist that one thing and change nothing else."
-            },
-            {
-              "heading": "When to press the button",
-              "body": "Earlier than feels necessary. The interesting varieties, and particularly anything that had a good year in the seed press, sell out in January and February, and a substitution chosen for you by a supplier is rarely the one you wanted.\n\nOrdering in December also means the packets are on the shelf before the first sowings come round, which for onions and leeks in many places is January itself.\n\nWrite the final order down somewhere that survives the year, with the varieties and the supplier. Next December the most useful document you can have is last year's list with notes scribbled on it about what worked, and it takes two minutes to start."
-            }
-          ]
-        }
-      },
-      "es": {
-        "slug": "como-planificar-el-pedido-de-semillas",
-        "title": "Cómo Planificar el Pedido de Semillas: Guía para Principiantes en 8 Pasos",
-        "eyebrow": "Guía para principiantes",
-        "chartTitle": "Cómo planificar el pedido de semillas",
-        "description": "Ocho pasos para un pedido de semillas de enero que de verdad vayas a sembrar, empezando por la caja que ya tienes y los bancales que realmente hay.",
-        "pinDescription": "Cómo planificar el pedido de semillas sin pasarte: revisa primero tu propia caja, cuenta bancales en vez de deseos, compara los días a cosecha con tu temporada y compra cebolla, puerro y chirivía frescas cada año porque esas de verdad no se guardan.",
-        "cta": "Planifica los bancales del año que viene en Garden Planner Pro",
-        "proTip": {
-          "label": "Consejo",
-          "text": "Haz el pedido desde el bancal hacia fuera, no desde el catálogo hacia dentro. Apunta primero cuántos metros tienes y la lista deja de ser un deseo y pasa a ser un plan."
-        },
-        "steps": [
-          {
-            "label": "Revisa Tu Caja",
-            "bullets": [
-              "Casi toda la semilla dura años",
-              "Prueba lo dudoso"
-            ]
-          },
-          {
-            "label": "Apunta Lo Que Comisteis",
-            "bullets": [
-              "La cocina del año pasado",
-              "Quita lo que nadie terminó"
-            ]
-          },
-          {
-            "label": "Cuenta Los Bancales",
-            "bullets": [
-              "Mide antes de elegir",
-              "El espacio es el límite real"
-            ]
-          },
-          {
-            "label": "Mira Días A Cosecha",
-            "bullets": [
-              "Frente a tus fechas de helada",
-              "Las tardías piden temporada larga"
-            ]
-          },
-          {
-            "label": "Estas Siempre Nuevas",
-            "bullets": [
-              "Cebolla, puerro y chirivía",
-              "No aguantan un año"
-            ]
-          },
-          {
-            "label": "Busca Resistencias",
-            "bullets": [
-              "A lo que te venció el año pasado",
-              "Viene en la descripción"
-            ]
-          },
-          {
-            "label": "Comparte Los Sobres",
-            "bullets": [
-              "Calabazas y coles",
-              "Cientos de semillas se estropean"
-            ]
-          },
-          {
-            "label": "Pide Pronto",
-            "bullets": [
-              "Las buenas se agotan",
-              "Diciembre mejor que febrero"
-            ]
-          }
-        ],
-        "article": {
-          "intro": "El pedido de semillas es la parte más barata de un huerto y la que decide en silencio casi todo el año. También es donde casi todo el mundo se pasa, porque un catálogo en enero está pensado para que lo lea alguien harto del invierno.\n\nEl remedio es hacer tres cosas antes de abrirlo.",
-          "sections": [
-            {
-              "heading": "Empieza por la caja que ya tienes",
-              "body": "Antes que nada, vuelca la caja de semillas sobre la mesa y ordénala. Casi toda la semilla de hortaliza dura mucho más de lo que sugiere la fecha del sobre: tomate, calabaza, pepino, judía, guisante, coles y lechuga suelen estar bien durante años.\n\nLas de vida corta de verdad son unas pocas. La cebolla, el puerro y el cebollino pierden fuerza en uno o dos años, y la chirivía es la peor de todas y merece comprarse nueva cada año. Esas entran en el pedido automáticamente.\n\nCon lo que tengas dudas, haz una prueba de germinación ahora en vez de enterarte en abril. Diez semillas sobre papel de cocina húmedo dentro de una bolsa en un sitio cálido, contadas pasado el tiempo normal de ese cultivo. Siete o más nacidas y la siembras como siempre; cuatro o cinco y la siembras más espesa; una o dos y va a la lista.\n\nEste paso por sí solo suele recortar un pedido en un tercio, y es la diferencia entre un cajón de semillas que funciona y uno que es casi arqueología."
-            },
-            {
-              "heading": "Luego calcula lo que te cabe",
-              "body": "La segunda disciplina es aritmética. Mide los bancales, apunta el número y solo entonces empieza a elegir.\n\nEs asombroso lo deprisa que una lista de deseos se sale de un jardín. Un sobre de calabaza son treinta semillas y en un bancal de las afueras caben dos plantas. Cuatro variedades de tomate suena modesto hasta que cuentas que son dieciséis plantas y tienes sitio para seis.\n\nCalcula más o menos cuántas plantas de cada cosa quieres en el suelo y compra para eso más un pequeño margen por fallos. Donde el sobre traiga mucho más de lo que necesitas, que es el caso de casi todas las cucurbitáceas y las coles, compártelo con alguien. Dos hortelanos comprando cuatro sobres entre los dos y partiéndolos por la mitad es mejor resultado que dos hortelanos comprando cuatro sobres cada uno y tirando casi todo en tres años.\n\nY sé sincero sobre el año pasado. Si en casa nadie se comió el colinabo, la respuesta no es otra variedad de colinabo."
-            },
-            {
-              "heading": "Los dos datos del sobre que importan",
-              "body": "Los días a cosecha son los que se saltan. Es una orientación y no una promesa, y en lo que se siembra en semillero suele contarse desde el trasplante y no desde la siembra, pero te dice si una variedad cabe siquiera en tu temporada.\n\nCuenta las semanas que hay entre tu última helada y la primera, y desconfía de todo lo que se coma casi esa ventana entera, sobre todo los pimientos y melones de ciclo largo y las calabazas grandes de invierno. En una temporada corta esas son las variedades que salen preciosas en las fotos y verdes en tu huerto.\n\nEl segundo dato es la resistencia a enfermedades, que aparece en la letra pequeña de casi todas las descripciones como una serie de siglas. Si algo concreto te venció el año pasado, mildiu, fusarium, oídio, esta es la respuesta más barata posible: elige una variedad criada para resistir justo eso y no cambies nada más."
-            },
-            {
-              "heading": "Cuándo darle al botón",
-              "body": "Antes de lo que parece necesario. Las variedades interesantes, y en especial cualquiera que haya tenido buena prensa, se agotan en enero y febrero, y una sustitución elegida por el proveedor rara vez es la que querías.\n\nPedir en diciembre significa además tener los sobres en casa antes de las primeras siembras, que para cebollas y puerros en muchos sitios es el propio enero.\n\nApunta el pedido definitivo en algún sitio que sobreviva al año, con las variedades y el proveedor. El diciembre que viene el documento más útil que puedes tener es la lista del año anterior con notas garabateadas sobre qué funcionó, y empezarla cuesta dos minutos."
-            }
-          ]
-        }
-      },
-      "icons": [
-        {
-          "slug": "seed-packet-resow"
-        },
-        {
-          "slug": "harvest-basket-tomatoes"
-        },
-        {
-          "slug": "raised-bed-frame"
-        },
-        {
-          "slug": "frost-calendar"
-        },
-        {
-          "slug": "onion-sets"
-        },
-        {
-          "slug": "checkmark"
-        },
-        {
-          "slug": "seed-saving-envelope"
-        },
-        {
-          "slug": "seed-order-list",
-          "subject": "a small notepad with a short handwritten list, a pencil lying across it, and two paper seed packets tucked behind it"
-        }
-      ],
-      "proTipIcon": {
-        "slug": "seed-tray-indoors"
       }
     },
     {
@@ -15572,236 +15802,6 @@
       ],
       "proTipIcon": {
         "slug": "graft-union"
-      }
-    },
-    {
-      "key": "overwinter-herbs",
-      "category": "herbs",
-      "tags": [
-        "herbs",
-        "container gardening",
-        "fall garden",
-        "infographics"
-      ],
-      "pinBoard": "Container & Small Space Gardening",
-      "pinKeywords": [
-        "overwintering herbs",
-        "herbs indoors winter",
-        "container herb garden",
-        "fall garden jobs"
-      ],
-      "en": {
-        "slug": "how-to-overwinter-herbs",
-        "title": "How to Overwinter Herbs: A Beginner's Guide in 8 Steps",
-        "eyebrow": "Beginner-friendly guide",
-        "chartTitle": "How to overwinter herbs",
-        "description": "Eight steps to keeping herbs alive through winter, which starts with knowing that most of them want to stay outside and be left alone.",
-        "pinDescription": "How to overwinter herbs: thyme, sage, oregano, chives and mint stay outside. Only the tender ones come in, and indoors they want a cool bright window, much less water and no feed at all. Most indoor herb losses are overwatering, not cold.",
-        "cta": "Browse the plant library in Garden Planner Pro",
-        "proTip": {
-          "label": "Pro tip",
-          "text": "Rosemary is killed by wet far more often than by cold. A pot that sits in a saucer of water all winter will lose it at temperatures the same plant would shrug off in free-draining ground."
-        },
-        "steps": [
-          {
-            "label": "Sort Hardy From Tender",
-            "bullets": [
-              "Thyme, sage, oregano stay out",
-              "Basil is an annual, let it go"
-            ]
-          },
-          {
-            "label": "Lift Before The Frost",
-            "bullets": [
-              "Tender ones come in early",
-              "Not after the first cold night"
-            ]
-          },
-          {
-            "label": "Cut Back And Tidy",
-            "bullets": [
-              "Clear dead and yellow growth",
-              "Never hard prune in autumn"
-            ]
-          },
-          {
-            "label": "Pot In Gritty Mix",
-            "bullets": [
-              "Drainage matters more than feed",
-              "Add grit to the compost"
-            ]
-          },
-          {
-            "label": "Cool Bright Window",
-            "bullets": [
-              "East or south facing",
-              "Away from the radiator"
-            ]
-          },
-          {
-            "label": "Water Much Less",
-            "bullets": [
-              "Only when dry two inches down",
-              "Wet roots kill more than cold"
-            ]
-          },
-          {
-            "label": "Stop Feeding",
-            "bullets": [
-              "They are resting, not growing",
-              "Feed again in spring"
-            ]
-          },
-          {
-            "label": "Take Cuttings Too",
-            "bullets": [
-              "Cheap insurance if one dies",
-              "Root them before it gets cold"
-            ]
-          }
-        ],
-        "article": {
-          "intro": "Most of the herbs in a garden do not need overwintering at all. They are hardy, they have done this before, and the kindest thing is to stop fussing and leave them where they are.\n\nThe work is in telling those apart from the few that genuinely will not survive, and then not killing those indoors.",
-          "sections": [
-            {
-              "heading": "The three groups",
-              "body": "The hardy perennials stay outside and need almost nothing: thyme, sage, oregano, chives, mint, winter savory. Cut off anything dead or slimy, make sure pots are not sitting in puddles, and that is the job. Chives die right back to nothing and look finished; they are not.\n\nThe tender ones will not survive a frost and have to come indoors or be given up on: lemon verbena, tender basils, scented pelargoniums, and bay in a cold area or an exposed spot.\n\nThen the borderline group, which is where people lose plants. Rosemary, French tarragon and bay are hardy enough in many places but hate a cold wet winter. They are often fine in the ground in a sheltered, free-draining spot and die in a pot that stays sodden. Move those pots to the driest, most sheltered place you have, raise them off the ground on feet or bricks so water runs out, and leave them there.\n\nBasil is worth being blunt about. It is an annual, it is going to die, and no amount of windowsill will change that. Use it up."
-            },
-            {
-              "heading": "Bringing them in, which is mostly about timing",
-              "body": "Do it earlier than feels necessary, while nights are merely cool rather than freezing. A plant moved indoors before the shock of a first frost adjusts to the change far better than one rescued the morning after.\n\nCheck it over on the way in. Look under the leaves for aphids, whitefly and the fine webbing of spider mite, because a warm dry house in December is the ideal conditions for all three and one infested plant becomes five. Rinse the foliage, knock off what you find, and keep new arrivals apart from your houseplants for a week or two.\n\nTidy rather than prune. Take off dead, yellow and damaged growth, but resist cutting a plant hard back now. A hard autumn prune pushes out soft new shoots at exactly the moment the plant cannot support them, and on woody herbs that growth is what the cold kills. Save real pruning for spring."
-            },
-            {
-              "heading": "Why indoor herbs die, and it is almost never cold",
-              "body": "It is water. A herb indoors in December is barely growing, so it uses a fraction of what it drank in July, and people keep watering on the summer schedule. The roots sit wet, they rot, and the plant collapses from below in a way that looks like it dried out.\n\nSo water only when the compost is dry a couple of inches down, and empty the saucer afterwards every time. Pot into a gritty free-draining mix rather than a moisture-retentive one, in a pot with real drainage holes.\n\nLight is the other half. The brightest windowsill you have, ideally cool rather than beside a radiator, because warmth without light makes pale floppy growth that then does not survive going back outside. A cool bright hall or porch beats a warm dark kitchen.\n\nAnd stop feeding. Feeding something that is resting pushes weak growth it cannot hold."
-            },
-            {
-              "heading": "The insurance policy",
-              "body": "Take cuttings in early autumn of anything borderline, before it gets cold. Rosemary, sage, thyme and bay all root readily from short non-flowering shoots, and a few small rooted plants on a windowsill cost nothing and cover you if the parent plant does not make it.\n\nIt is also the honest answer for old woody herbs. A sage or a thyme that has gone leggy and bare in the middle is near the end of its useful life whatever you do this winter, and replacing it from a cutting is better than nursing it through another year."
-            }
-          ]
-        }
-      },
-      "es": {
-        "slug": "como-pasar-el-invierno-las-hierbas",
-        "title": "Cómo Pasar el Invierno las Hierbas: Guía para Principiantes en 8 Pasos",
-        "eyebrow": "Guía para principiantes",
-        "chartTitle": "Hierbas en invierno",
-        "description": "Ocho pasos para mantener vivas las hierbas todo el invierno, empezando por saber que casi todas quieren quedarse fuera y que las dejen en paz.",
-        "pinDescription": "Cómo pasar el invierno las hierbas: el tomillo, la salvia, el orégano, el cebollino y la menta se quedan fuera. Solo entran las tiernas, y dentro quieren una ventana fresca y luminosa, mucha menos agua y nada de abono. Casi todas se pierden por exceso de riego, no por frío.",
-        "cta": "Explora la biblioteca de plantas en Garden Planner Pro",
-        "proTip": {
-          "label": "Consejo",
-          "text": "Al romero lo mata la humedad mucho más que el frío. Una maceta en un plato con agua todo el invierno se pierde a temperaturas que esa misma planta aguantaría sin inmutarse en suelo con buen drenaje."
-        },
-        "steps": [
-          {
-            "label": "Separa Rústicas Y Tiernas",
-            "bullets": [
-              "Tomillo, salvia y orégano fuera",
-              "La albahaca es anual, déjala ir"
-            ]
-          },
-          {
-            "label": "Entra Antes De Helar",
-            "bullets": [
-              "Las tiernas, pronto",
-              "No tras la primera noche fría"
-            ]
-          },
-          {
-            "label": "Limpia Y Recorta",
-            "bullets": [
-              "Quita lo seco y lo amarillo",
-              "Nunca podes fuerte en otoño"
-            ]
-          },
-          {
-            "label": "Sustrato Con Arena",
-            "bullets": [
-              "El drenaje importa más que el abono",
-              "Añade arena gruesa"
-            ]
-          },
-          {
-            "label": "Ventana Fresca Y Clara",
-            "bullets": [
-              "Al este o al sur",
-              "Lejos del radiador"
-            ]
-          },
-          {
-            "label": "Riega Mucho Menos",
-            "bullets": [
-              "Solo si está seco por dentro",
-              "La raíz mojada mata más"
-            ]
-          },
-          {
-            "label": "Deja De Abonar",
-            "bullets": [
-              "Están en reposo",
-              "Vuelve a abonar en primavera"
-            ]
-          },
-          {
-            "label": "Haz Esquejes",
-            "bullets": [
-              "Seguro barato por si acaso",
-              "Enraiza antes del frío"
-            ]
-          }
-        ],
-        "article": {
-          "intro": "Casi ninguna de las hierbas de un huerto necesita que la protejas del invierno. Son rústicas, lo han hecho otras veces, y lo mejor que puedes hacer es dejar de preocuparte y dejarlas donde están.\n\nEl trabajo está en distinguir esas de las pocas que de verdad no van a sobrevivir, y luego en no matarlas dentro de casa.",
-          "sections": [
-            {
-              "heading": "Los tres grupos",
-              "body": "Las perennes rústicas se quedan fuera y no necesitan casi nada: tomillo, salvia, orégano, cebollino, menta, ajedrea de invierno. Quita lo seco o lo blando, asegúrate de que las macetas no queden en charcos, y ya está. El cebollino desaparece del todo y parece acabado; no lo está.\n\nLas tiernas no aguantan una helada y tienen que entrar o darse por perdidas: hierba luisa, albahacas tiernas, geranios de olor, y el laurel en zona fría o en sitio expuesto.\n\nY luego el grupo intermedio, que es donde se pierden plantas. El romero, el estragón francés y el laurel son bastante rústicos en muchos sitios pero llevan mal un invierno frío y húmedo. Suelen ir bien en tierra en un sitio resguardado y con buen drenaje, y se mueren en una maceta que se queda empapada. Lleva esas macetas al sitio más seco y resguardado que tengas, súbelas del suelo sobre tacos o ladrillos para que escurran, y déjalas ahí.\n\nCon la albahaca conviene ser claro. Es anual, se va a morir, y ninguna ventana lo va a cambiar. Aprovéchala."
-            },
-            {
-              "heading": "Meterlas dentro, que es sobre todo cuestión de tiempo",
-              "body": "Hazlo antes de lo que parece necesario, cuando las noches todavía son frescas y no heladas. Una planta que entra antes del golpe de la primera helada se adapta mucho mejor al cambio que otra rescatada a la mañana siguiente.\n\nRevísala al entrar. Mira por debajo de las hojas buscando pulgón, mosca blanca y la telaraña fina de la araña roja, porque una casa cálida y seca en diciembre son las condiciones ideales para las tres y una planta infestada se convierte en cinco. Enjuaga el follaje, quita lo que encuentres y ten las recién llegadas apartadas de tus plantas de interior una semana o dos.\n\nLimpia en vez de podar. Quita lo muerto, lo amarillo y lo dañado, pero no cortes la planta a fondo ahora. Una poda fuerte de otoño provoca brotes tiernos justo cuando la planta no puede sostenerlos, y en las hierbas leñosas ese brote nuevo es lo que mata el frío. Deja la poda de verdad para la primavera."
-            },
-            {
-              "heading": "Por qué se mueren dentro, y casi nunca es de frío",
-              "body": "Es el agua. Una hierba dentro de casa en diciembre apenas crece, así que consume una fracción de lo que bebía en julio, y la gente sigue regando con el ritmo del verano. Las raíces se quedan mojadas, se pudren, y la planta se derrumba desde abajo con un aspecto que parece de sequía.\n\nAsí que riega solo cuando el sustrato esté seco unos centímetros hacia dentro, y vacía el plato siempre después. Trasplanta a una mezcla suelta con arena gruesa y buen drenaje en vez de a un sustrato que retiene humedad, y en maceta con agujeros de verdad.\n\nLa luz es la otra mitad. La ventana más luminosa que tengas, mejor fresca que pegada a un radiador, porque calor sin luz da brotes pálidos y blandos que luego no aguantan volver a salir fuera. Un recibidor fresco y claro es mejor que una cocina cálida y oscura.\n\nY deja de abonar. Alimentar algo que está en reposo solo provoca brotes débiles que no puede sostener."
-            },
-            {
-              "heading": "El seguro",
-              "body": "Haz esquejes a principios de otoño de todo lo que esté en el grupo intermedio, antes de que llegue el frío. El romero, la salvia, el tomillo y el laurel enraízan con facilidad a partir de brotes cortos sin flor, y unas cuantas plantitas enraizadas en una ventana no cuestan nada y te cubren si la planta madre no llega.\n\nEs además la respuesta sincera para las hierbas leñosas viejas. Una salvia o un tomillo que se ha alargado y se ha quedado pelado por el centro está cerca del final de su vida útil hagas lo que hagas este invierno, y reponerlo de un esqueje es mejor que arrastrarlo otro año más."
-            }
-          ]
-        }
-      },
-      "icons": [
-        {
-          "slug": "rosemary-sprig"
-        },
-        {
-          "slug": "frost-calendar"
-        },
-        {
-          "slug": "cutting-herb-stems"
-        },
-        {
-          "slug": "gritty-compost-pot"
-        },
-        {
-          "slug": "bright-shade-windowsill"
-        },
-        {
-          "slug": "dry-watering-can"
-        },
-        {
-          "slug": "no-fertiliser"
-        },
-        {
-          "slug": "stripped-cutting"
-        }
-      ],
-      "proTipIcon": {
-        "slug": "herb-in-terracotta-pot"
       }
     },
     {
