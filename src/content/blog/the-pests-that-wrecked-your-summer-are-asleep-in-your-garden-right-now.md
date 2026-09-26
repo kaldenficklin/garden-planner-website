@@ -12,7 +12,7 @@ pinHighlight: "ASLEEP"
 pinKeywords: ["organic pest control", "squash bug control", "fall garden cleanup", "vegetable garden pests", "fall vegetable garden"]
 storePage: pests
 ctaHook: "The pest guide lists where each one overwinters, which is the part that tells you whether the cleanup is worth doing on that bed at all."
-draft: true
+draft: false
 ---
 
 Every summer I watch people fight the same pest for three months and then stop
