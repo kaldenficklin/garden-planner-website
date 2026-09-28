@@ -12,7 +12,7 @@ pinHighlight: "TUNNELS"
 pinKeywords: ["radish problems", "root maggot control", "fall vegetable garden", "turnip pests", "organic pest control"]
 storePage: pests
 ctaHook: "The pest guide shows the root maggot at every stage, including the pupa you'll turn up in the soil this month."
-draft: true
+draft: false
 ---
 
 You pulled a row of radishes that looked perfect from above, full green tops,
