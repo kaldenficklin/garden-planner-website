@@ -13,7 +13,7 @@ heroCrop: "centre"
 pinKeywords: ["save money gardening", "vegetable garden planning", "grow your own food", "garden on a budget", "what to grow in a small garden"]
 storePage: savings
 ctaHook: "The harvest log totals what each bed gave you against shop prices, which is the fastest way to find out which crops are paying for themselves in your garden."
-draft: true
+draft: false
 ---
 
 Walk down the produce aisle and look at what's sold loose and what's sold in a
