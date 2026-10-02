@@ -12,7 +12,7 @@ pinHighlight: "RAISED BED"
 pinKeywords: ["how to fill a raised bed", "raised bed soil", "lasagna gardening", "raised garden bed ideas", "fall garden projects"]
 storePage: beds
 ctaHook: "Lay the new bed out on the square-foot grid now and you'll know exactly how much of it you need to fill, and with what, before you buy a single bag."
-draft: true
+draft: false
 ---
 
 Filling a raised bed costs more than building it, and most people only find
