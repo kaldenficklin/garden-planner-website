@@ -25,7 +25,7 @@ guideSteps:
       bullets:
           - "Frosted fruit will not keep"
           - "Cover the patch if needed"
-    - icon: "pumpkin-on-vine"
+    - icon: "squash-cut-stem"
       label: "Cut A Long Stem"
       bullets:
           - "Leave a handspan of stem"
@@ -35,7 +35,7 @@ guideSteps:
       bullets:
           - "Never lift by the stem"
           - "A pulled stem is an open wound"
-    - icon: "dry-brown-leaves"
+    - icon: "squash-dry-cloth"
       label: "Wipe It Dry"
       bullets:
           - "Cloth, not a wash"
@@ -58,7 +58,7 @@ guideSteps:
 guideProTip:
   label: "Pro tip"
   text: "Never carry a squash by its stem. If the stem pulls out you have opened a hole straight into the flesh, and that fruit now has weeks rather than months."
-  icon: "curing-onions"
+  icon: "squash-short-stem"
 guideCta: "Track your harvest in Garden Planner Pro"
 pinDescription: "How to store winter squash: leave it until the rind resists a thumbnail, cut it with a long stem handle, cure it somewhere warm for about ten days, then store it cool and dry with the fruits not touching. Acorn squash is the exception and skips curing."
 pinBoard: "Vegetable Garden Layouts"

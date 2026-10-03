@@ -25,7 +25,7 @@ guideSteps:
       bullets:
           - "La fruta helada no se guarda"
           - "Cubre la parcela si hace falta"
-    - icon: "pumpkin-on-vine"
+    - icon: "squash-cut-stem"
       label: "Corta Con Pedúnculo"
       bullets:
           - "Deja un palmo de rabo"
@@ -35,7 +35,7 @@ guideSteps:
       bullets:
           - "Nunca la levantes del rabo"
           - "Un rabo suelto es una herida"
-    - icon: "dry-brown-leaves"
+    - icon: "squash-dry-cloth"
       label: "Sécala Con Un Paño"
       bullets:
           - "Paño, no lavarla"
@@ -58,7 +58,7 @@ guideSteps:
 guideProTip:
   label: "Consejo"
   text: "No cojas nunca una calabaza por el rabo. Si el pedúnculo se suelta has abierto un agujero directo a la pulpa, y esa pieza pasa de durar meses a durar semanas."
-  icon: "curing-onions"
+  icon: "squash-short-stem"
 guideCta: "Registra tu cosecha en Garden Planner Pro"
 pinDescription: "Cómo guardar calabazas de invierno: espera a que la corteza resista la uña, córtala dejando un buen trozo de pedúnculo, cúrala unos diez días en un sitio cálido y guárdala fresca y seca sin que se toquen entre ellas. La calabaza bellota es la excepción y no se cura."
 pinBoard: "Vegetable Garden Layouts"
