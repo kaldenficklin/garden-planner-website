@@ -59,7 +59,7 @@ guideProTip:
   label: "Consejo"
   text: "La rotación va por familias botánicas, no por lo que llamas a las cosas en la cocina. La patata y el tomate son la misma familia, y el rábano y la col también, así que poner uno detrás del otro no sirve de nada."
   icon: "potato-and-tomato"
-guideCta: "Guarda tus planos de bancal año tras año con Garden Planner Pro"
+guideCta: "Planifica tu rotación con Garden Planner Pro"
 pinDescription: "Cómo planificar la rotación de cultivos: agrupa por familias botánicas, divide el huerto en cuatro bancales y mueve cada grupo un bancal cada año. El único registro que necesitas es una nota de qué creció dónde."
 pinBoard: "Vegetable Garden Layouts"
 pinKeywords:
