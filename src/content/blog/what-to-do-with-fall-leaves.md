@@ -11,7 +11,7 @@ pinEyebrow: "FREE SOIL"
 pinHighlight: "FALL LEAVES"
 pinKeywords: ["fall leaves in the garden", "leaf mulch", "fall garden cleanup", "leaf mold", "free garden compost"]
 ctaHook: "Note which beds got leaves this autumn in the garden journal, and next spring you'll know why one bed grows better than the rest."
-draft: true
+draft: false
 ---
 
 The maples are going this week. If you have a tree or two, you are about to have
