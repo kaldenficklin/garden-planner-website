@@ -11,7 +11,7 @@ pinEyebrow: "SEED STARTING"
 pinHighlight: "THIS ORDER"
 pinKeywords: ["seed starting schedule", "when to start seeds indoors", "seed starting chart", "starting seeds indoors", "spring garden planning"]
 ctaHook: "Garden Planner Pro counts back from your own last frost and puts a start-indoors date against every crop you're growing."
-draft: true
+draft: false
 ---
 
 The seed catalogues will start landing in a month or so, and sometime in
