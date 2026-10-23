@@ -30,7 +30,6 @@ export const PIN_BOARDS = {
   'garden-pests-organic-control': 'Garden Pests & Organic Control',
   'seed-starting-frost-dates': 'Seed Starting & Frost Dates',
   'container-small-space-gardening': 'Container & Small Space Gardening',
-  'succession-planting': 'Succession Planting',
   'garden-infographics': 'Garden Infographics',
   'infografias-de-jardineria': 'Infografías de Jardinería',
   'consejos-para-el-huerto': 'Consejos para el Huerto',

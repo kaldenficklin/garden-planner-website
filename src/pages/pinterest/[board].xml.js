@@ -18,11 +18,12 @@ import { PIN_BOARDS, autoPins, boardFor, toPin } from '../../lib/pinQueue';
  * Pinterest refuses to connect a feed with no items, and these feeds only list
  * entries from AUTO_PIN_FROM on, so a board with nothing new yet can't be
  * connected. While this is on, an empty feed carries that board's most recent
- * live entry (else the latest in its language) so it can be connected. Turn it
- * back off as soon as the feeds are connected: Pinterest pins what a feed
+ * live entry (else the latest in its language) so it can be connected. All
+ * of PIN_BOARDS were connected on 23 Oct 2026 and this was switched straight
+ * back off; only turn it on to connect a new board, and off again at once: Pinterest pins what a feed
  * holds, oldest first, so a seed left in place becomes a duplicate pin.
  */
-const SEED_EMPTY_FEEDS = true;
+const SEED_EMPTY_FEEDS = false;
 
 const escapeXml = (s) =>
   String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
