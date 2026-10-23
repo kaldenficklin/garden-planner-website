@@ -16718,36 +16718,28 @@
       ],
       "icons": [
         {
-          "slug": "seed-saving-envelope",
-          "subject": "a small paper envelope filled with dry seeds beside a few loose seeds"
+          "slug": "seed-packet-resow"
         },
         {
-          "slug": "tomato-plant",
-          "subject": "a leafy tomato plant with ripe red fruit on the vine"
+          "slug": "tomato-plant"
         },
         {
-          "slug": "bolting-lettuce",
-          "subject": "a lettuce plant that has run up into a tall flowering seed stalk"
+          "slug": "bolting-lettuce"
         },
         {
-          "slug": "soaking-seed-bowl",
-          "subject": "large round seeds soaking in a shallow bowl of water"
+          "slug": "dill-seed-head"
         },
         {
-          "slug": "drying-seeds-plate",
-          "subject": "small seeds spread out in a single layer on a ceramic plate to dry"
+          "slug": "soaking-seed-bowl"
         },
         {
-          "slug": "hand-pollinating",
-          "subject": "a small brush transferring pollen between two open flowers"
+          "slug": "drying-seeds-plate"
         },
         {
-          "slug": "seed-jar-storage",
-          "subject": "a sealed glass jar of labelled seed packets stored on a cool shelf"
+          "slug": "seed-jar-storage"
         },
         {
-          "slug": "frost-calendar",
-          "subject": "a wall calendar page with a date circled and a small frost symbol"
+          "slug": "seed-saving-envelope"
         }
       ],
       "proTipIcon": {
@@ -17057,7 +17049,7 @@
         "cta": "Calcula tus fechas en Garden Planner Pro",
         "proTip": {
           "label": "Consejo",
-          "text": "Aquí el agua y la electricidad comparten estante. Enchufa las luces y el temporizador a un enchufe con protección diferencial, deja los enchufes por encima de donde pueda gotear y haz que cada cable cuelgue en bucle por debajo de la toma para que las gotas caigan antes de llegar."
+          "text": "El agua y la electricidad comparten estante. Usa un enchufe con protección diferencial, ten los enchufes lejos de donde gotea y deja que cada cable cuelgue en bucle antes de la toma."
         },
         "steps": [
           {
@@ -17168,8 +17160,7 @@
         }
       ],
       "proTipIcon": {
-        "slug": "plug-in-outlet-timer",
-        "subject": "a white plug-in mechanical outlet timer with a round dial of pins plugged into a wall socket, no hands, no people"
+        "slug": "clock-hours"
       }
     },
     {
