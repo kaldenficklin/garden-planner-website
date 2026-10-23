@@ -13,7 +13,7 @@
  * the same 1000x1500 file.
  */
 import rss from '@astrojs/rss';
-import { getCollection } from 'astro:content';
+import { publishedPosts } from './posts';
 import { pinDescriptionFor } from './pinterest';
 
 const COPY = {
@@ -34,9 +34,9 @@ const escapeXml = (s) =>
 
 export async function pinFeed(context, lang) {
   const site = context.site;
-  const entries = (await getCollection('blog'))
-    .filter((p) => !p.data.draft && p.data.type === 'infographic' && (p.data.lang ?? 'en') === lang)
-    .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+  const entries = (await publishedPosts()).filter(
+    (p) => p.data.type === 'infographic' && (p.data.lang ?? 'en') === lang
+  );
 
   return rss({
     title: COPY[lang].title,

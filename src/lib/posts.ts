@@ -5,10 +5,34 @@ export type Post = CollectionEntry<'blog'>;
 /** How many posts appear on one page of /blog. */
 export const PER_PAGE = 6;
 
+/**
+ * Today's date in US Eastern time, as YYYY-MM-DD.
+ *
+ * Publishing is keyed to the reader's day, not the build server's. Netlify
+ * builds in UTC, where "tomorrow" starts at 8pm Eastern — comparing against
+ * UTC would let a post go live the evening before its date.
+ */
+export const todayEastern = (now = new Date()) =>
+  new Intl.DateTimeFormat('en-CA', { timeZone: 'America/New_York' }).format(now);
+
+/**
+ * Whether an entry is live on the site.
+ *
+ * Not a draft, and dated today or earlier. A future-dated post is committed
+ * and pushed like any other but stays out of every page, feed and sitemap
+ * until its day: the monthly batch writes a month of posts at once, and a
+ * daily build hook (the `blogPublishDaily` Cloud Function in garden-pro-planner)
+ * rebuilds the site each morning so the day's post appears without a commit.
+ * Frontmatter dates parse as UTC midnight, so compare the date part only.
+ */
+export const isLive = (p: Post, today = todayEastern()) =>
+  !p.data.draft && p.data.date.toISOString().slice(0, 10) <= today;
+
 /** Every published entry of every type and language, newest first. */
 export async function publishedPosts(): Promise<Post[]> {
+  const today = todayEastern();
   return (await getCollection('blog'))
-    .filter((p) => !p.data.draft)
+    .filter((p) => isLive(p, today))
     .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 }
 

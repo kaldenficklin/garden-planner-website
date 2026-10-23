@@ -138,7 +138,8 @@ which is how the weekly batch routine writes five posts on a Saturday and dates
 each one for the weekday it will actually go live on.
 
 Then fill in the `description` and body, set `draft: false`, commit, and push.
-Netlify rebuilds and the post appears on `/blog`, in the RSS feed, and in the
+Netlify rebuilds and, once its `date` arrives (see "Scheduled publishing"
+below), the post appears on `/blog`, in the RSS feed, and in the
 sitemap automatically. No HTML or template editing required.
 
 **Voice and style are defined in [`STYLE.md`](STYLE.md)** — read it before
@@ -187,6 +188,36 @@ A key with no id yet resolves to the default listing, so posts can carry the
 field before the page exists in either console. The Android swap in
 `BaseLayout.astro` reads each link's `data-play-href`, which is how the Play
 listing follows the same choice.
+
+## Scheduled publishing and auto-pinning
+
+**A post goes live on its `date`, not when it is pushed.** `isLive()` in
+`src/lib/posts.ts` keeps any entry dated after today (US Eastern) out of every
+page, feed and the sitemap. Its images in `public/` still deploy, which is what
+lets a pin image resolve before the post does.
+
+So the monthly batch writes a month of posts, dates each one for its weekday,
+sets `draft: false`, and pushes them all at once. Nothing else is committed for
+the rest of the month. Each morning the `blogPublishDaily` Cloud Function (in
+the `garden-pro-planner` repo, `functions/src/blog-publish.ts`) calls a Netlify
+build hook, and that day's post appears. A missed build only makes a post a day
+late. `draft: true` still means "not ready", whatever the date.
+
+**Pinterest** gets each new entry from one of two places. Only one should be
+switched on at a time, or everything is pinned twice:
+
+| Path | What it reads | Status |
+| --- | --- | --- |
+| Pinterest RSS auto-publish | `/pinterest/<board>.xml`, one feed per board in `PIN_BOARDS` | connected in Pinterest → Settings → Bulk create Pins |
+| Pinterest API, from `blogPublishDaily` | `/pinterest/pins.json` | off (`PINTEREST_MODE=off`) until the app has Standard access |
+
+Both are built from `src/lib/pinQueue.ts`, so they use the same board, title,
+description and UTM-tagged link. Only entries dated on or after
+`AUTO_PIN_FROM` appear, so the older catalogue (pinned by hand) is never
+re-pinned. The board comes from `pinBoard` for articles, and is fixed by
+language for infographics. **Set `pinBoard` and `pinDescription` on every new
+post.** The board must be one of `PIN_BOARDS`. To add a board, create it on
+Pinterest, add it to `PIN_BOARDS`, and connect its feed.
 
 ## Post images
 

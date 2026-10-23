@@ -1,12 +1,11 @@
 import rss from '@astrojs/rss';
-import { getCollection } from 'astro:content';
+import { publishedPosts } from '../../lib/posts';
 
 export async function GET(context) {
-  const posts = (await getCollection('blog'))
+  const posts = (await publishedPosts())
     // Infographics have their own per-language feeds (src/lib/pinFeed.js).
     // Two a day would swamp the article feed within a month.
-    .filter((p) => !p.data.draft && p.data.type !== 'infographic')
-    .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+    .filter((p) => p.data.type !== 'infographic');
 
   return rss({
     title: 'Garden Planner Pro Blog',
