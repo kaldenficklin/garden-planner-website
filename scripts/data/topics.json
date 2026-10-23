@@ -13900,6 +13900,240 @@
       }
     },
     {
+      "key": "test-your-soil",
+      "category": "soil",
+      "tags": [
+        "soil",
+        "planning",
+        "beginners",
+        "infographics"
+      ],
+      "pinBoard": "Raised Bed Gardening",
+      "pinKeywords": [
+        "soil test",
+        "garden soil ph",
+        "improve garden soil",
+        "vegetable garden planning"
+      ],
+      "en": {
+        "slug": "how-to-test-your-soil",
+        "title": "How to Test Your Soil: A Beginner's Guide in 8 Steps",
+        "eyebrow": "Beginner-friendly guide",
+        "chartTitle": "How to test your soil",
+        "description": "Eight steps to finding out what you are actually growing in, from two free tests you can do with your hands to the lab test worth paying for.",
+        "pinDescription": "How to test your garden soil: the ribbon test tells you the texture, a hole full of water tells you the drainage, and a pH kit tells you why nothing is taking up the feed you keep adding. Do it in autumn, when there is time to act on the answer.",
+        "cta": "Plan your beds in Garden Planner Pro",
+        "proTip": {
+          "label": "Pro tip",
+          "text": "Take one sample from six spots and mix them in a bucket before testing. A single trowelful from one corner tells you about that corner, which is almost never what you wanted to know."
+        },
+        "steps": [
+          {
+            "label": "Test In Autumn",
+            "bullets": [
+              "Time to act before spring",
+              "Soil is moist, not baked"
+            ]
+          },
+          {
+            "label": "Sample Six Spots",
+            "bullets": [
+              "Mix them in a bucket",
+              "One hole tells you nothing"
+            ]
+          },
+          {
+            "label": "Dig To Root Depth",
+            "bullets": [
+              "Six inches down, not the surface",
+              "Scrape off mulch first"
+            ]
+          },
+          {
+            "label": "Do The Ribbon Test",
+            "bullets": [
+              "Roll damp soil between fingers",
+              "Long ribbon means clay"
+            ]
+          },
+          {
+            "label": "Try The Jar Test",
+            "bullets": [
+              "Soil and water, shaken, settled",
+              "Sand, silt and clay in layers"
+            ]
+          },
+          {
+            "label": "Check The Drainage",
+            "bullets": [
+              "Fill a hole, time it twice",
+              "Slow second fill means trouble"
+            ]
+          },
+          {
+            "label": "Measure The pH",
+            "bullets": [
+              "Cheap kit is accurate enough",
+              "Most vegetables want 6.0 to 7.0"
+            ]
+          },
+          {
+            "label": "Lab Test The Nutrients",
+            "bullets": [
+              "Only way to read nutrients",
+              "Worth it once every few years"
+            ]
+          }
+        ],
+        "article": {
+          "intro": "Most garden problems that get blamed on feeding are really about texture, drainage or pH. All three are cheap to find out and none of them change quickly, which is why autumn is the right time to look.\n\nThree of the tests below cost nothing and take an afternoon.",
+          "sections": [
+            {
+              "heading": "Texture, in two free tests",
+              "body": "Texture is the proportion of sand, silt and clay, and it decides how your soil holds water, how fast it warms in spring, and how much it will let you walk on it in March.\n\nThe ribbon test takes two minutes. Take a walnut-sized lump of moist soil, work it between your palms until it is smooth, then squeeze it out between thumb and forefinger into a flat ribbon. Sandy soil will not hold together at all. Loam makes a short ribbon that breaks under an inch. Clay makes a long smooth ribbon and feels slippery rather than gritty.\n\nThe jar test is slower and more exact. Fill a straight-sided jar a third full of soil, top it with water and a drop of washing-up liquid, shake it hard, and leave it on a windowsill for a day. Sand drops out within a minute, silt over a few hours, clay over a day or more, and you get visible bands you can measure with a ruler.\n\nNeither result is something you fix. Texture is what it is. What it tells you is which problems to expect and which amendments are worth the money."
+            },
+            {
+              "heading": "Drainage, which is the one that kills plants",
+              "body": "Dig a hole about a foot deep and a foot across, fill it with water, and let it drain away completely. Then fill it again and time how long the second fill takes to empty.\n\nThe second fill is the one that counts, because by then the surrounding soil is already wet and you are measuring the real rate rather than dry soil soaking it up. Roughly speaking, an hour or two is good, most of a day is workable for a lot of crops, and more than a day is a drainage problem you have to design around rather than amend away.\n\nDo this in the wettest part of the garden and the driest, because the answer often differs by more than people expect across one plot. If one bed is always the one that fails, this test usually explains it."
+            },
+            {
+              "heading": "pH, and why it matters more than feeding",
+              "body": "pH governs whether the nutrients already in your soil are available to roots. At the wrong pH they are locked up, and adding more fertiliser does very little, which is the single most common reason a heavily fed bed still underperforms.\n\nMost vegetables want somewhere between 6.0 and 7.0. Potatoes prefer it lower and are less prone to scab in acid soil; brassicas do better toward the top of that range and clubroot is worse in acid ground. Blueberries are the outlier and want it genuinely acid, which is why they usually belong in a pot of their own mix rather than in a bed.\n\nA cheap kit from a garden centre is accurate enough for this decision. Test in several spots, and remember that lime raises pH slowly over months while sulphur lowers it even more slowly, so an autumn test is what lets you act before spring."
+            },
+            {
+              "heading": "The one test worth paying for",
+              "body": "You cannot see nitrogen, phosphorus, potassium or organic matter with any home method, and the colour-change home kits for nutrients are not reliable enough to spend money on the back of.\n\nA laboratory test through an extension service or a soil lab is inexpensive, comes back with actual numbers and a recommendation, and is worth doing once when you take on a garden and then every few years after. Follow the sampling instructions they send rather than the ones here, since labs differ.\n\nIf you do only one thing, do the drainage test. It is free, it takes a day of waiting and five minutes of work, and it explains more failed beds than any other single number."
+            }
+          ]
+        }
+      },
+      "es": {
+        "slug": "como-analizar-el-suelo",
+        "title": "Cómo Analizar el Suelo: Guía para Principiantes en 8 Pasos",
+        "eyebrow": "Guía para principiantes",
+        "chartTitle": "Cómo analizar el suelo",
+        "description": "Ocho pasos para saber en qué estás cultivando de verdad, desde dos pruebas gratuitas que se hacen con las manos hasta el análisis de laboratorio que sí merece pagarse.",
+        "pinDescription": "Cómo analizar el suelo del huerto: la prueba de la cinta te dice la textura, un hoyo lleno de agua te dice el drenaje y un kit de pH te explica por qué nada aprovecha el abono que llevas años echando. Hazlo en otoño, cuando da tiempo a actuar.",
+        "cta": "Planifica tus bancales en Garden Planner Pro",
+        "proTip": {
+          "label": "Consejo",
+          "text": "Coge una muestra de seis puntos distintos y mézclalas en un cubo antes de analizar. Una paletada de una esquina te habla de esa esquina, que casi nunca es lo que querías saber."
+        },
+        "steps": [
+          {
+            "label": "Analiza En Otoño",
+            "bullets": [
+              "Da tiempo a actuar",
+              "La tierra está húmeda"
+            ]
+          },
+          {
+            "label": "Seis Puntos Distintos",
+            "bullets": [
+              "Mézclalos en un cubo",
+              "Un solo hoyo no dice nada"
+            ]
+          },
+          {
+            "label": "A Profundidad De Raíz",
+            "bullets": [
+              "Quince centímetros, no la superficie",
+              "Aparta el acolchado antes"
+            ]
+          },
+          {
+            "label": "Prueba De La Cinta",
+            "bullets": [
+              "Aprieta tierra húmeda entre dedos",
+              "Cinta larga es arcilla"
+            ]
+          },
+          {
+            "label": "Prueba Del Bote",
+            "bullets": [
+              "Tierra y agua, agitar, reposar",
+              "Arena, limo y arcilla en capas"
+            ]
+          },
+          {
+            "label": "Mide El Drenaje",
+            "bullets": [
+              "Llena un hoyo y cronometra",
+              "El segundo llenado es el bueno"
+            ]
+          },
+          {
+            "label": "Mide El pH",
+            "bullets": [
+              "Un kit barato basta",
+              "La mayoría quiere 6,0 a 7,0"
+            ]
+          },
+          {
+            "label": "Análisis De Laboratorio",
+            "bullets": [
+              "Única forma de ver nutrientes",
+              "Cada pocos años basta"
+            ]
+          }
+        ],
+        "article": {
+          "intro": "La mayoría de los problemas de huerto que se achacan al abono son en realidad de textura, drenaje o pH. Las tres cosas son baratas de averiguar y ninguna cambia deprisa, y por eso el otoño es el momento de mirarlas.\n\nTres de las pruebas de abajo no cuestan nada y se hacen en una tarde.",
+          "sections": [
+            {
+              "heading": "La textura, con dos pruebas gratis",
+              "body": "La textura es la proporción de arena, limo y arcilla, y decide cómo retiene el agua tu suelo, con qué rapidez se calienta en primavera y hasta qué punto te deja pisarlo en marzo.\n\nLa prueba de la cinta lleva dos minutos. Coge un puñado de tierra húmeda del tamaño de una nuez, trabájalo entre las palmas hasta que quede liso y apriétalo entre el pulgar y el índice formando una cinta plana. Un suelo arenoso no se sostiene. Un suelo franco da una cinta corta que se rompe antes de tres centímetros. La arcilla da una cinta larga y lisa y se nota jabonosa más que áspera.\n\nLa prueba del bote es más lenta y más exacta. Llena un tarro de paredes rectas un tercio de tierra, completa con agua y una gota de lavavajillas, agítalo fuerte y déjalo un día en la ventana. La arena cae en un minuto, el limo en unas horas, la arcilla en un día o más, y quedan bandas visibles que puedes medir con una regla.\n\nNinguno de los dos resultados es algo que se arregle. La textura es la que es. Lo que te dice es qué problemas esperar y qué enmiendas merecen el dinero."
+            },
+            {
+              "heading": "El drenaje, que es lo que mata plantas",
+              "body": "Cava un hoyo de unos treinta centímetros de hondo y otros tantos de ancho, llénalo de agua y deja que se vacíe del todo. Después vuelve a llenarlo y cronometra cuánto tarda en vaciarse el segundo llenado.\n\nEl segundo es el que cuenta, porque para entonces la tierra de alrededor ya está mojada y estás midiendo el ritmo real y no la absorción de un suelo seco. A grandes rasgos, una o dos horas está bien, casi un día es manejable para muchos cultivos, y más de un día es un problema de drenaje que hay que rodear con el diseño en vez de corregir con enmiendas.\n\nHazlo en la zona más húmeda del jardín y en la más seca, porque la respuesta suele cambiar dentro de una misma parcela más de lo que la gente espera. Si siempre hay un bancal que falla, esta prueba suele explicarlo."
+            },
+            {
+              "heading": "El pH, y por qué importa más que abonar",
+              "body": "El pH decide si los nutrientes que ya hay en tu suelo están disponibles para las raíces. Con el pH equivocado quedan bloqueados, y echar más fertilizante sirve de poco, que es la razón más común de que un bancal muy abonado siga rindiendo mal.\n\nLa mayoría de las hortalizas quieren entre 6,0 y 7,0. La patata lo prefiere más bajo y sufre menos sarna en suelo ácido; las coles van mejor en la parte alta de ese rango y la hernia de la col empeora en terreno ácido. El arándano es la excepción y quiere suelo verdaderamente ácido, y por eso suele ir en una maceta con su propio sustrato y no en un bancal.\n\nUn kit barato de vivero es suficientemente exacto para esta decisión. Mide en varios puntos y ten en cuenta que la cal sube el pH a lo largo de meses y el azufre lo baja aún más despacio, así que analizar en otoño es lo que te deja actuar antes de la primavera."
+            },
+            {
+              "heading": "El análisis que sí merece pagarse",
+              "body": "El nitrógeno, el fósforo, el potasio y la materia orgánica no se ven con ningún método casero, y los kits domésticos de cambio de color para nutrientes no son fiables como para gastar dinero a partir de ellos.\n\nUn análisis de laboratorio a través de un servicio agrario o un laboratorio de suelos sale barato, vuelve con cifras reales y una recomendación, y merece hacerse una vez al estrenar un huerto y luego cada pocos años. Sigue las instrucciones de muestreo que te manden ellos y no las de aquí, porque cada laboratorio tiene las suyas.\n\nSi solo vas a hacer una cosa, haz la del drenaje. Es gratis, son cinco minutos de trabajo y un día de espera, y explica más bancales fracasados que ningún otro dato."
+            }
+          ]
+        }
+      },
+      "icons": [
+        {
+          "slug": "autumn-leaves-bed"
+        },
+        {
+          "slug": "soil-sample-spots",
+          "subject": "a bucket of dark soil on a garden bed with a small trowel resting across the rim and three shallow sample holes in the bed behind it"
+        },
+        {
+          "slug": "soil-core-depth"
+        },
+        {
+          "slug": "clay-soil-ribbon"
+        },
+        {
+          "slug": "soil-jar-test",
+          "subject": "a straight sided glass jar of water standing on soil with settled bands of sand silt and clay visible in layers at the bottom"
+        },
+        {
+          "slug": "drainage-hole-water",
+          "subject": "a square hole dug in garden soil filled to the brim with muddy water, the spade stuck in the ground beside it"
+        },
+        {
+          "slug": "soil-ph-test-kit",
+          "subject": "a small soil pH test tube of coloured liquid standing in a wooden tray beside a printed colour comparison card and a pinch of soil"
+        },
+        {
+          "slug": "checkmark"
+        }
+      ],
+      "proTipIcon": {
+        "slug": "earthworm-in-soil"
+      }
+    },
+    {
       "key": "grow-rhubarb",
       "category": "fruit",
       "tags": [
@@ -15570,240 +15804,6 @@
       "proTipIcon": {
         "slug": "cosmos-bloom",
         "subject": "a single open cosmos flower with eight broad petals above feathery foliage"
-      }
-    },
-    {
-      "key": "test-your-soil",
-      "category": "soil",
-      "tags": [
-        "soil",
-        "planning",
-        "beginners",
-        "infographics"
-      ],
-      "pinBoard": "Raised Bed Gardening",
-      "pinKeywords": [
-        "soil test",
-        "garden soil ph",
-        "improve garden soil",
-        "vegetable garden planning"
-      ],
-      "en": {
-        "slug": "how-to-test-your-soil",
-        "title": "How to Test Your Soil: A Beginner's Guide in 8 Steps",
-        "eyebrow": "Beginner-friendly guide",
-        "chartTitle": "How to test your soil",
-        "description": "Eight steps to finding out what you are actually growing in, from two free tests you can do with your hands to the lab test worth paying for.",
-        "pinDescription": "How to test your garden soil: the ribbon test tells you the texture, a hole full of water tells you the drainage, and a pH kit tells you why nothing is taking up the feed you keep adding. Do it in autumn, when there is time to act on the answer.",
-        "cta": "Plan your beds in Garden Planner Pro",
-        "proTip": {
-          "label": "Pro tip",
-          "text": "Take one sample from six spots and mix them in a bucket before testing. A single trowelful from one corner tells you about that corner, which is almost never what you wanted to know."
-        },
-        "steps": [
-          {
-            "label": "Test In Autumn",
-            "bullets": [
-              "Time to act before spring",
-              "Soil is moist, not baked"
-            ]
-          },
-          {
-            "label": "Sample Six Spots",
-            "bullets": [
-              "Mix them in a bucket",
-              "One hole tells you nothing"
-            ]
-          },
-          {
-            "label": "Dig To Root Depth",
-            "bullets": [
-              "Six inches down, not the surface",
-              "Scrape off mulch first"
-            ]
-          },
-          {
-            "label": "Do The Ribbon Test",
-            "bullets": [
-              "Roll damp soil between fingers",
-              "Long ribbon means clay"
-            ]
-          },
-          {
-            "label": "Try The Jar Test",
-            "bullets": [
-              "Soil and water, shaken, settled",
-              "Sand, silt and clay in layers"
-            ]
-          },
-          {
-            "label": "Check The Drainage",
-            "bullets": [
-              "Fill a hole, time it twice",
-              "Slow second fill means trouble"
-            ]
-          },
-          {
-            "label": "Measure The pH",
-            "bullets": [
-              "Cheap kit is accurate enough",
-              "Most vegetables want 6.0 to 7.0"
-            ]
-          },
-          {
-            "label": "Lab Test The Nutrients",
-            "bullets": [
-              "Only way to read nutrients",
-              "Worth it once every few years"
-            ]
-          }
-        ],
-        "article": {
-          "intro": "Most garden problems that get blamed on feeding are really about texture, drainage or pH. All three are cheap to find out and none of them change quickly, which is why autumn is the right time to look.\n\nThree of the tests below cost nothing and take an afternoon.",
-          "sections": [
-            {
-              "heading": "Texture, in two free tests",
-              "body": "Texture is the proportion of sand, silt and clay, and it decides how your soil holds water, how fast it warms in spring, and how much it will let you walk on it in March.\n\nThe ribbon test takes two minutes. Take a walnut-sized lump of moist soil, work it between your palms until it is smooth, then squeeze it out between thumb and forefinger into a flat ribbon. Sandy soil will not hold together at all. Loam makes a short ribbon that breaks under an inch. Clay makes a long smooth ribbon and feels slippery rather than gritty.\n\nThe jar test is slower and more exact. Fill a straight-sided jar a third full of soil, top it with water and a drop of washing-up liquid, shake it hard, and leave it on a windowsill for a day. Sand drops out within a minute, silt over a few hours, clay over a day or more, and you get visible bands you can measure with a ruler.\n\nNeither result is something you fix. Texture is what it is. What it tells you is which problems to expect and which amendments are worth the money."
-            },
-            {
-              "heading": "Drainage, which is the one that kills plants",
-              "body": "Dig a hole about a foot deep and a foot across, fill it with water, and let it drain away completely. Then fill it again and time how long the second fill takes to empty.\n\nThe second fill is the one that counts, because by then the surrounding soil is already wet and you are measuring the real rate rather than dry soil soaking it up. Roughly speaking, an hour or two is good, most of a day is workable for a lot of crops, and more than a day is a drainage problem you have to design around rather than amend away.\n\nDo this in the wettest part of the garden and the driest, because the answer often differs by more than people expect across one plot. If one bed is always the one that fails, this test usually explains it."
-            },
-            {
-              "heading": "pH, and why it matters more than feeding",
-              "body": "pH governs whether the nutrients already in your soil are available to roots. At the wrong pH they are locked up, and adding more fertiliser does very little, which is the single most common reason a heavily fed bed still underperforms.\n\nMost vegetables want somewhere between 6.0 and 7.0. Potatoes prefer it lower and are less prone to scab in acid soil; brassicas do better toward the top of that range and clubroot is worse in acid ground. Blueberries are the outlier and want it genuinely acid, which is why they usually belong in a pot of their own mix rather than in a bed.\n\nA cheap kit from a garden centre is accurate enough for this decision. Test in several spots, and remember that lime raises pH slowly over months while sulphur lowers it even more slowly, so an autumn test is what lets you act before spring."
-            },
-            {
-              "heading": "The one test worth paying for",
-              "body": "You cannot see nitrogen, phosphorus, potassium or organic matter with any home method, and the colour-change home kits for nutrients are not reliable enough to spend money on the back of.\n\nA laboratory test through an extension service or a soil lab is inexpensive, comes back with actual numbers and a recommendation, and is worth doing once when you take on a garden and then every few years after. Follow the sampling instructions they send rather than the ones here, since labs differ.\n\nIf you do only one thing, do the drainage test. It is free, it takes a day of waiting and five minutes of work, and it explains more failed beds than any other single number."
-            }
-          ]
-        }
-      },
-      "es": {
-        "slug": "como-analizar-el-suelo",
-        "title": "Cómo Analizar el Suelo: Guía para Principiantes en 8 Pasos",
-        "eyebrow": "Guía para principiantes",
-        "chartTitle": "Cómo analizar el suelo",
-        "description": "Ocho pasos para saber en qué estás cultivando de verdad, desde dos pruebas gratuitas que se hacen con las manos hasta el análisis de laboratorio que sí merece pagarse.",
-        "pinDescription": "Cómo analizar el suelo del huerto: la prueba de la cinta te dice la textura, un hoyo lleno de agua te dice el drenaje y un kit de pH te explica por qué nada aprovecha el abono que llevas años echando. Hazlo en otoño, cuando da tiempo a actuar.",
-        "cta": "Planifica tus bancales en Garden Planner Pro",
-        "proTip": {
-          "label": "Consejo",
-          "text": "Coge una muestra de seis puntos distintos y mézclalas en un cubo antes de analizar. Una paletada de una esquina te habla de esa esquina, que casi nunca es lo que querías saber."
-        },
-        "steps": [
-          {
-            "label": "Analiza En Otoño",
-            "bullets": [
-              "Da tiempo a actuar",
-              "La tierra está húmeda"
-            ]
-          },
-          {
-            "label": "Seis Puntos Distintos",
-            "bullets": [
-              "Mézclalos en un cubo",
-              "Un solo hoyo no dice nada"
-            ]
-          },
-          {
-            "label": "A Profundidad De Raíz",
-            "bullets": [
-              "Quince centímetros, no la superficie",
-              "Aparta el acolchado antes"
-            ]
-          },
-          {
-            "label": "Prueba De La Cinta",
-            "bullets": [
-              "Aprieta tierra húmeda entre dedos",
-              "Cinta larga es arcilla"
-            ]
-          },
-          {
-            "label": "Prueba Del Bote",
-            "bullets": [
-              "Tierra y agua, agitar, reposar",
-              "Arena, limo y arcilla en capas"
-            ]
-          },
-          {
-            "label": "Mide El Drenaje",
-            "bullets": [
-              "Llena un hoyo y cronometra",
-              "El segundo llenado es el bueno"
-            ]
-          },
-          {
-            "label": "Mide El pH",
-            "bullets": [
-              "Un kit barato basta",
-              "La mayoría quiere 6,0 a 7,0"
-            ]
-          },
-          {
-            "label": "Análisis De Laboratorio",
-            "bullets": [
-              "Única forma de ver nutrientes",
-              "Cada pocos años basta"
-            ]
-          }
-        ],
-        "article": {
-          "intro": "La mayoría de los problemas de huerto que se achacan al abono son en realidad de textura, drenaje o pH. Las tres cosas son baratas de averiguar y ninguna cambia deprisa, y por eso el otoño es el momento de mirarlas.\n\nTres de las pruebas de abajo no cuestan nada y se hacen en una tarde.",
-          "sections": [
-            {
-              "heading": "La textura, con dos pruebas gratis",
-              "body": "La textura es la proporción de arena, limo y arcilla, y decide cómo retiene el agua tu suelo, con qué rapidez se calienta en primavera y hasta qué punto te deja pisarlo en marzo.\n\nLa prueba de la cinta lleva dos minutos. Coge un puñado de tierra húmeda del tamaño de una nuez, trabájalo entre las palmas hasta que quede liso y apriétalo entre el pulgar y el índice formando una cinta plana. Un suelo arenoso no se sostiene. Un suelo franco da una cinta corta que se rompe antes de tres centímetros. La arcilla da una cinta larga y lisa y se nota jabonosa más que áspera.\n\nLa prueba del bote es más lenta y más exacta. Llena un tarro de paredes rectas un tercio de tierra, completa con agua y una gota de lavavajillas, agítalo fuerte y déjalo un día en la ventana. La arena cae en un minuto, el limo en unas horas, la arcilla en un día o más, y quedan bandas visibles que puedes medir con una regla.\n\nNinguno de los dos resultados es algo que se arregle. La textura es la que es. Lo que te dice es qué problemas esperar y qué enmiendas merecen el dinero."
-            },
-            {
-              "heading": "El drenaje, que es lo que mata plantas",
-              "body": "Cava un hoyo de unos treinta centímetros de hondo y otros tantos de ancho, llénalo de agua y deja que se vacíe del todo. Después vuelve a llenarlo y cronometra cuánto tarda en vaciarse el segundo llenado.\n\nEl segundo es el que cuenta, porque para entonces la tierra de alrededor ya está mojada y estás midiendo el ritmo real y no la absorción de un suelo seco. A grandes rasgos, una o dos horas está bien, casi un día es manejable para muchos cultivos, y más de un día es un problema de drenaje que hay que rodear con el diseño en vez de corregir con enmiendas.\n\nHazlo en la zona más húmeda del jardín y en la más seca, porque la respuesta suele cambiar dentro de una misma parcela más de lo que la gente espera. Si siempre hay un bancal que falla, esta prueba suele explicarlo."
-            },
-            {
-              "heading": "El pH, y por qué importa más que abonar",
-              "body": "El pH decide si los nutrientes que ya hay en tu suelo están disponibles para las raíces. Con el pH equivocado quedan bloqueados, y echar más fertilizante sirve de poco, que es la razón más común de que un bancal muy abonado siga rindiendo mal.\n\nLa mayoría de las hortalizas quieren entre 6,0 y 7,0. La patata lo prefiere más bajo y sufre menos sarna en suelo ácido; las coles van mejor en la parte alta de ese rango y la hernia de la col empeora en terreno ácido. El arándano es la excepción y quiere suelo verdaderamente ácido, y por eso suele ir en una maceta con su propio sustrato y no en un bancal.\n\nUn kit barato de vivero es suficientemente exacto para esta decisión. Mide en varios puntos y ten en cuenta que la cal sube el pH a lo largo de meses y el azufre lo baja aún más despacio, así que analizar en otoño es lo que te deja actuar antes de la primavera."
-            },
-            {
-              "heading": "El análisis que sí merece pagarse",
-              "body": "El nitrógeno, el fósforo, el potasio y la materia orgánica no se ven con ningún método casero, y los kits domésticos de cambio de color para nutrientes no son fiables como para gastar dinero a partir de ellos.\n\nUn análisis de laboratorio a través de un servicio agrario o un laboratorio de suelos sale barato, vuelve con cifras reales y una recomendación, y merece hacerse una vez al estrenar un huerto y luego cada pocos años. Sigue las instrucciones de muestreo que te manden ellos y no las de aquí, porque cada laboratorio tiene las suyas.\n\nSi solo vas a hacer una cosa, haz la del drenaje. Es gratis, son cinco minutos de trabajo y un día de espera, y explica más bancales fracasados que ningún otro dato."
-            }
-          ]
-        }
-      },
-      "icons": [
-        {
-          "slug": "frost-calendar"
-        },
-        {
-          "slug": "soil-sample-spots",
-          "subject": "a bucket of dark soil on a garden bed with a small trowel resting across the rim and three shallow sample holes in the bed behind it"
-        },
-        {
-          "slug": "seed-sowing-depth"
-        },
-        {
-          "slug": "soil-finger-test"
-        },
-        {
-          "slug": "soil-jar-test",
-          "subject": "a straight sided glass jar of water standing on soil with settled bands of sand silt and clay visible in layers at the bottom"
-        },
-        {
-          "slug": "drainage-hole-water",
-          "subject": "a square hole dug in garden soil filled to the brim with muddy water, the spade stuck in the ground beside it"
-        },
-        {
-          "slug": "soil-ph-test-kit",
-          "subject": "a small soil pH test tube of coloured liquid standing in a wooden tray beside a printed colour comparison card and a pinch of soil"
-        },
-        {
-          "slug": "checkmark"
-        }
-      ],
-      "proTipIcon": {
-        "slug": "earthworm-in-soil"
       }
     },
     {
