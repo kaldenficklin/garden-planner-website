@@ -1,7 +1,7 @@
 ---
 title: "Your Fall Kale Turned Purple. Put the Bone Meal Down."
 description: "Kale, cabbage and lettuce going purple in autumn is usually the cold, not a phosphorus shortage, and feeding won't fix it. When purple does mean a problem."
-date: 2026-09-30
+date: 2026-10-27
 tags: ["pests-and-problems", "fall-garden", "vegetables"]
 image: "/assets/blog/your-fall-kale-turned-purple-put-the-bone-meal-down-hero.jpg"
 imageAlt: "Colored-pencil drawing of a curly kale plant in a raised bed on a frosty autumn morning, its lower leaves tinged purple along the veins and edges, a closed paper bag of fertiliser set aside on the soil"
@@ -12,13 +12,15 @@ pinHighlight: "PURPLE"
 pinKeywords: ["kale turning purple", "fall vegetable garden", "phosphorus deficiency", "growing kale", "cold weather vegetables"]
 storePage: pests
 ctaHook: "Log the week your greens colour up in the garden journal, and next autumn you'll know it for the cold snap it is."
-draft: true
+pinDescription: "Kale, cabbage, broccoli and lettuce turning purple in autumn is a normal reaction to cold nights, not a phosphorus deficiency, and bone meal won't turn it back. When purple leaves do mean a problem, why cold soil mimics a nutrient shortage, and why frost makes kale sweeter."
+pinBoard: "Garden Pests & Organic Control"
+draft: false
 ---
 
 The advice you'll find first, if you search for purple leaves, is that it means
 phosphorus deficiency and you should feed with bone meal or a high-phosphorus
 fertiliser. In a summer seedling tray, that can be true. On kale, cabbage,
-broccoli or lettuce in the garden at the end of September, it almost never is.
+broccoli or lettuce in the garden in late October, it almost never is.
 
 What you're looking at is the plant's reaction to cold nights. Put the bone
 meal back on the shelf. The purple is harmless, it often means the leaves are

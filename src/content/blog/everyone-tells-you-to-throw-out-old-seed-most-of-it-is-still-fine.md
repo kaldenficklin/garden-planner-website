@@ -1,7 +1,7 @@
 ---
 title: "Everyone Tells You to Throw Out Old Seed. Most of It Is Still Fine."
 description: "Seed does not expire the way the packet date suggests. Which kinds really do die in a year, which last a decade, and the ten-seed test that settles it."
-date: 2026-09-23
+date: 2026-10-28
 tags: ["seed-starting", "planning", "beginners"]
 image: "/assets/blog/everyone-tells-you-to-throw-out-old-seed-most-of-it-is-still-fine-hero.jpg"
 imageAlt: "Colored-pencil drawing of a shoebox of part-used seed packets on a kitchen table, one packet tipped open with flat brown seeds spilled beside it, and ten seeds set out in a row on a folded damp paper towel"
@@ -11,7 +11,9 @@ pinEyebrow: "SEED MYTH"
 pinHighlight: "OLD SEED"
 pinKeywords: ["seed starting", "seed storage", "vegetable garden planning", "garden on a budget", "winter garden planning"]
 ctaHook: "The plant library lists what each crop needs at sowing, which is worth checking before you decide a packet is dead rather than just sown too cold."
-draft: true
+pinDescription: "The date on a seed packet is the season it was packed for, not the day the seed dies. Tomatoes, squash, beans and brassicas keep for years past it. Onion, leek and parsnip really do not. A crop-by-crop table of how long each type lasts, how storage changes it, and the ten-seed test that settles any argument before you place a January order."
+pinBoard: "Seed Starting & Frost Dates"
+draft: false
 ---
 
 Most of the seed in that shoebox is fine. The date printed on the packet is the
@@ -26,7 +28,7 @@ worst of the lot and is the one crop I buy fresh every single year without
 thinking about it. Parsley, spinach and corn salad sit somewhere in the middle.
 If you are going to throw anything out, throw out those.
 
-I am writing this in September because of when it becomes useful. In January
+I am writing this at the end of October because of when it becomes useful. In January
 you will sit down with a catalogue and a mug of something and start filling a
 basket, and what you spend depends almost entirely on whether you know what you
 already own. Sorting the box now, while the garden still gives you a reason to

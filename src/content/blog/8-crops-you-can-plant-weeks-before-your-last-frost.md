@@ -1,7 +1,7 @@
 ---
 title: "8 Crops You Can Plant Weeks Before Your Last Frost"
 description: "Peas, spinach, potatoes and five more go in weeks before your last frost date. How many weeks for each, and how to tell when the soil is ready for them."
-date: 2026-09-29
+date: 2026-10-30
 tags: ["planning", "frost-dates", "vegetables"]
 image: "/assets/blog/8-crops-you-can-plant-weeks-before-your-last-frost-hero.jpg"
 imageAlt: "Colored-pencil drawing of a timber raised bed in early spring with frost on the soil, young peas climbing a twig support, spinach, lettuce, sprouting onion sets and two small cabbage transplants"
@@ -11,7 +11,9 @@ pinEyebrow: "EARLY SPRING"
 pinHighlight: "BEFORE"
 pinKeywords: ["early spring planting", "cool season vegetables", "when to plant peas", "spring vegetable garden", "frost dates"]
 ctaHook: "The planting calendar counts each of these back from your own last frost, so the early dates show up weeks before the tomato ones do."
-draft: true
+pinDescription: "Peas, spinach, radishes, fava beans, onions, potatoes, lettuce and broccoli transplants can all go in the ground weeks before your last frost date. How many weeks early for each one, how to tell the soil is workable, and which of them people most often plant too late. Save it for when you plan your spring vegetable garden in January."
+pinBoard: "Seed Starting & Frost Dates"
+draft: false
 ---
 
 Most people treat the last frost date as the day the garden opens. It is
@@ -20,7 +22,7 @@ doesn't just survive a few frosty nights, it grows better for having been
 planted into cold soil, and by the time the tomatoes go out those beds should
 already be green.
 
-I'm writing this at the end of September on purpose. When the seed catalogue
+I'm writing this at the end of October on purpose. When the seed catalogue
 arrives in January and you sit down to plan, these are the eight whose dates
 come first, and it's easy to miss them because they fall at a time of year
 that still feels like winter. Each one below has its usual window in weeks

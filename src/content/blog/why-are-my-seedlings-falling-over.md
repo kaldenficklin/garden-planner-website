@@ -1,7 +1,7 @@
 ---
 title: "Why Are My Seedlings Falling Over? If the Stem Is Pinched at the Soil, It's Damping Off"
 description: "Seedlings flopped overnight with a thin, dark stem at the soil line? That's damping off. How to tell it from legginess, save the tray, and stop it in February."
-date: 2026-10-06
+date: 2026-10-29
 tags: ["seed-starting", "pests-and-problems", "beginners"]
 image: "/assets/blog/why-are-my-seedlings-falling-over-hero.jpg"
 imageAlt: "Colored-pencil drawing of a seed tray on a windowsill where a patch of seedlings in the front corner has toppled flat onto the compost while the rest stand upright"
@@ -12,7 +12,9 @@ pinHighlight: "FALLING OVER"
 pinKeywords: ["seedlings falling over", "damping off", "seed starting tips", "indoor seed starting", "seedling problems"]
 storePage: pests
 ctaHook: "Seeds started on the right date for your frost dates spend less time sitting in damp mix, and the planting calendar works those dates out for you."
-draft: true
+pinDescription: "Seedlings falling over overnight with a thin, dark, pinched stem at the soil line have damping off. How to tell it from leggy seedlings and from seedlings that just dried out, what to do with the rest of the tray this morning, and how to set up clean trays, fresh mix and a fan so it doesn't happen when you start seeds indoors in February."
+pinBoard: "Seed Starting & Frost Dates"
+draft: false
 ---
 
 Yesterday the tray looked perfect. This morning a patch of seedlings in one

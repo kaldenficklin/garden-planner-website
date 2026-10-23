@@ -1,7 +1,7 @@
 ---
 title: "Your Garlic Sprouted Before Winter. Is It Ruined?"
 description: "Green garlic shoots in October look like a mistake. They almost never are. What frost does to the leaves, when to mulch, and the one sign of a real problem."
-date: 2026-10-07
+date: 2026-10-23
 tags: ["garlic", "fall-garden", "pests-and-problems"]
 image: "/assets/blog/garlic-sprouted-in-fall-hero.jpg"
 imageAlt: "Colored-pencil drawing of short garlic shoots with frost-browned tips coming up in a row through dark soil, with fallen yellow leaves and a light frost on the bed"
@@ -12,7 +12,9 @@ pinHighlight: "SPROUTED"
 pinKeywords: ["growing garlic", "garlic sprouting in fall", "planting garlic", "fall vegetable garden", "garlic growing tips"]
 storePage: pests
 ctaHook: "The planting calendar times garlic from your own frost dates, so next autumn's cloves go in when they should for your garden."
-draft: true
+pinDescription: "Garlic sprouting in fall is normal and almost never hurts the harvest. Why fall-planted garlic sends up green shoots in October, what frost will do to the leaves, when to mulch the bed, and the one sign (missing shoots and soft cloves) that means a real problem."
+pinBoard: "Garden Pests & Organic Control"
+draft: false
 ---
 
 You planted the garlic a few weeks ago, and this morning there are green

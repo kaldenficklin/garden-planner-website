@@ -1,7 +1,7 @@
 ---
 title: "Why Is My Rosemary Dying Indoors? Blame the Window Before the Watering Can"
 description: "Brown needles on the rosemary you brought in for winter? Over- and underwatering are both symptoms. The cause is usually the spot, and how to find a better one."
-date: 2026-10-09
+date: 2026-10-26
 tags: ["herbs", "container-gardening", "pests-and-problems"]
 image: "/assets/blog/why-is-my-rosemary-dying-indoors-hero.jpg"
 imageAlt: "Colored-pencil drawing of a potted rosemary in a terracotta pot on a windowsill, its lower needles turned brown, with a frosty garden visible through the glass"
@@ -12,7 +12,9 @@ pinHighlight: "DYING INDOORS"
 pinKeywords: ["rosemary dying indoors", "overwintering rosemary", "growing herbs indoors", "indoor herb garden", "rosemary care"]
 storePage: pests
 ctaHook: "Watering reminders help with indoor herbs, as long as you still push a finger into the pot before you pour."
-draft: true
+pinDescription: "Rosemary dying indoors in winter, with brown needles dropping from the bottom up, is usually down to a spot that is too warm and too dim. How low light turns into root rot, why rosemary doesn't wilt before it dries out, and how to overwinter rosemary indoors in the coolest bright spot in the house."
+pinBoard: "Container & Small Space Gardening"
+draft: false
 ---
 
 You brought the rosemary in before the first frost, put it somewhere sunny,
