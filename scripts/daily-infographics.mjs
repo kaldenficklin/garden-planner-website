@@ -5,6 +5,12 @@
  *   node scripts/daily-infographics.mjs            # 2 pairs, commit and push
  *   node scripts/daily-infographics.mjs --count 1 --no-push
  *   node scripts/daily-infographics.mjs --dry-run  # render and check, write nothing
+ *   node scripts/daily-infographics.mjs --count 30 --from 2026-11-01 --no-push
+ *
+ * `--from` dates the first topic for that day and each next one a day later,
+ * which is how the monthly batch queues a month of infographics at once: the
+ * site leaves an entry out of the build until its date (isLive() in
+ * src/lib/posts.ts). Without it every topic is dated today.
  *
  * One run publishes `count` topics, each as an English and a Spanish
  * infographic sharing a translationKey. It generates any icons the topic needs
@@ -47,6 +53,16 @@ const opt = (name, fallback) => {
 };
 
 const COUNT = Number(opt('count', 2));
+const FROM = opt('from', null);
+if (FROM && !/^\d{4}-\d{2}-\d{2}$/.test(FROM)) throw new Error(`--from wants YYYY-MM-DD, got ${FROM}`);
+
+/** The publish date for the nth topic of this run. */
+function dateFor(n) {
+  if (!FROM) return new Date().toISOString().slice(0, 10);
+  const d = new Date(`${FROM}T00:00:00Z`);
+  d.setUTCDate(d.getUTCDate() + n);
+  return d.toISOString().slice(0, 10);
+}
 const DRY = flag('dry-run');
 const PUSH = !flag('no-push') && !DRY;
 
@@ -93,12 +109,12 @@ function yaml(value, indent = 0) {
 const scalar = (v) =>
   typeof v === 'string' ? `"${v.replace(/\\/g, '\\\\').replace(/"/g, '\\"')}"` : String(v);
 
-function frontmatter(topic, lang, imagePath) {
+function frontmatter(topic, lang, imagePath, date) {
   const t = topic[lang];
   return {
     title: t.title,
     description: t.description,
-    date: new Date().toISOString().slice(0, 10),
+    date,
     tags: topic.tags,
     type: 'infographic',
     lang,
@@ -162,7 +178,7 @@ async function renderOne(topic, lang) {
   return { jpeg, warnings, render };
 }
 
-async function publishTopic(topic) {
+async function publishTopic(topic, date) {
   log(`\n▶ ${topic.key}`);
   await ensureIcons(topic);
 
@@ -208,7 +224,7 @@ async function publishTopic(topic) {
   mkdirSync(join(CONTENT_DIR, 'es'), { recursive: true });
   for (const out of outputs) {
     writeFileSync(out.imageFile, out.jpeg);
-    const fm = frontmatter(topic, out.lang, out.imagePath);
+    const fm = frontmatter(topic, out.lang, out.imagePath, date);
     const md = `---${yaml(fm)}\n---\n\n${body(topic[out.lang], out.lang)}`;
     writeFileSync(out.contentFile, md);
     written.push(rel(out.imageFile), rel(out.contentFile));
@@ -236,8 +252,8 @@ if (!(await isUp())) {
   if (!(await waitForApi())) process.exit(1);
 }
 
-for (const topic of picked) {
-  await publishTopic(topic);
+for (const [n, topic] of picked.entries()) {
+  await publishTopic(topic, dateFor(n));
 }
 
 if (DRY) {
