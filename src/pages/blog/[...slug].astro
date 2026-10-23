@@ -1,25 +1,21 @@
 ---
-import { render } from 'astro:content';
-import { storeUrl } from '../../lib/stores';
-import BaseLayout from '../../layouts/BaseLayout.astro';
-import PostNav from '../../components/PostNav.astro';
-import RelatedPosts from '../../components/RelatedPosts.astro';
-import Breadcrumbs from '../../components/Breadcrumbs.astro';
-import TagRow from '../../components/TagRow.astro';
+import ArticlePage from '../../components/ArticlePage.astro';
 import {
   publishedPosts,
   articles,
   relatedPosts,
-  formatDate,
   tagsWithPages,
+  translationOf,
+  entrySlug,
   type Post,
 } from '../../lib/posts';
 
 export async function getStaticPaths() {
-  const posts = articles(await publishedPosts());
+  const all = await publishedPosts();
+  const posts = articles(all);
   const linkedTags = tagsWithPages(posts).map((t) => t.tag);
   return posts.map((post, i) => ({
-    params: { slug: post.id },
+    params: { slug: entrySlug(post) },
     props: {
       post,
       // The list is newest-first, so the entry before this one is the newer post.
@@ -27,6 +23,7 @@ export async function getStaticPaths() {
       older: posts[i + 1],
       related: relatedPosts(post, posts),
       linkedTags,
+      translation: translationOf(post, all),
     },
   }));
 }
@@ -37,242 +34,7 @@ interface Props {
   older?: Post;
   related: Post[];
   linkedTags: string[];
+  translation?: Post;
 }
-
-const { post, newer, older, related, linkedTags } = Astro.props;
-const { Content } = await render(post);
-const { data } = post;
-
-// An 'infographic' post has no separate hero photo — the composed chart
-// image (scripts/gen-infographic.mjs) IS the hero, and it's already 2:3, so
-// it doubles as the Pinterest pin with no second file needed.
-const isInfographic = data.type === 'infographic';
-const heroSrc = isInfographic ? data.infographicImage : data.image;
-
-const url = new URL(`/blog/${post.id}/`, Astro.site).href;
-const image = heroSrc
-  ? new URL(heroSrc, Astro.site).href
-  : 'https://thegardenplanner.app/assets/app-icon-v2.png';
-
-// Pinterest wants the tall 2:3 image with the title burned in, not the clean
-// hero. Fall back to the hero so a post without a pin image still pins.
-const pinImage = isInfographic
-  ? image
-  : data.pinImage
-    ? new URL(data.pinImage, Astro.site).href
-    : image;
-
-// Pinterest ranks mostly on the words in the description, so the readable
-// sentence does the work. The hashtags are reinforcement, capped at 5 and
-// placed last, which is what Pinterest's own guidance asks for.
-const hashtag = (s: string) =>
-  '#' + s.trim().split(/[\s\-_]+/).map((w) => w.charAt(0).toUpperCase() + w.slice(1)).join('');
-const pinTags = (data.pinKeywords ?? data.tags).slice(0, 5).map(hashtag).join(' ');
-// The pin headline: the punchier short title where a post defines one. Note
-// this is NOT the og:title — see the BaseLayout call below.
-const pinTitle = data.pinTitle ?? data.title;
-const pinDescription =
-  `${pinTitle}. ${data.description}` + (pinTags ? ` ${pinTags}` : '');
-const pinHref =
-  'https://www.pinterest.com/pin/create/button/' +
-  `?url=${encodeURIComponent(url)}` +
-  `&media=${encodeURIComponent(pinImage)}` +
-  `&description=${encodeURIComponent(pinDescription)}`;
-
-const crumbs = [
-  { name: 'Home', href: '/' },
-  { name: 'Blog', href: '/blog/' },
-  { name: data.title, href: `/blog/${post.id}/` },
-];
-
-// Article structured data helps Google understand and surface the post.
-const jsonLd = {
-  '@context': 'https://schema.org',
-  '@type': 'BlogPosting',
-  headline: data.title,
-  description: data.description,
-  image,
-  datePublished: data.date.toISOString(),
-  dateModified: (data.updated ?? data.date).toISOString(),
-  author: { '@type': 'Person', name: 'Kalden Ficklin', url: 'https://thegardenplanner.app/about/' },
-  publisher: {
-    '@type': 'Organization',
-    '@id': 'https://thegardenplanner.app/#organization',
-    name: 'Garden Planner Pro',
-    logo: { '@type': 'ImageObject', url: 'https://thegardenplanner.app/assets/app-icon-v2.png' },
-  },
-  mainEntityOfPage: { '@type': 'WebPage', '@id': url },
-};
-
-// Google renders a breadcrumb trail in place of the raw URL on a search result,
-// which on a phone is most of the visible line. The <nav> above already shows
-// this trail; this is the machine-readable half of the same thing.
-const crumbLd = {
-  '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: crumbs.map((c, i) => ({
-    '@type': 'ListItem',
-    position: i + 1,
-    name: c.name,
-    item: new URL(c.href, Astro.site).href,
-  })),
-};
 ---
-<BaseLayout
-  title={`${data.title} — Garden Planner Pro`}
-  ogTitle={data.title}
-  description={data.description}
-  canonical={url}
-  image={image}
-  type="article"
-  publishedTime={data.date.toISOString()}
-  modifiedTime={(data.updated ?? data.date).toISOString()}
-  articleTags={data.pinKeywords ?? data.tags}
-  storePage={data.storePage}
->
-  <script type="application/ld+json" slot="head" set:html={JSON.stringify(jsonLd)} />
-  <script type="application/ld+json" slot="head" set:html={JSON.stringify(crumbLd)} />
-
-  <article class="section">
-    <div class="wrap wrap-narrow">
-      <Breadcrumbs items={crumbs} />
-      <header class="post-header">
-        <h1>{data.title}</h1>
-        <p class="post-meta">
-          <time datetime={data.date.toISOString()}>{formatDate(data.date)}</time>
-          {data.updated && <span> · Updated {formatDate(data.updated)}</span>}
-        </p>
-        <TagRow tags={data.tags} linked={linkedTags} />
-      </header>
-
-      {heroSrc && (
-        <figure class="post-hero">
-          {/* data-pin-media points Pinterest's browser extension at the titled
-              2:3 pin instead of this clean hero. Infographic posts have no
-              separate pin — heroSrc already is the 2:3 pin image. */}
-          <img
-            class="post-hero-img"
-            src={heroSrc}
-            alt={isInfographic ? (data.infographicTitle ?? data.title) : (data.imageAlt ?? data.title)}
-            loading="eager"
-            {/* This is the LCP element. The intrinsic size reserves its box so
-                the article below doesn't jump when it lands, and fetchpriority
-                pulls it ahead of the other images in the queue. Regular heroes
-                are 1200x800 (scripts/make-images.mjs); infographics are the
-                full 1000x1500 chart (scripts/gen-infographic.mjs). */}
-            width={isInfographic ? 1000 : 1200}
-            height={isInfographic ? 1500 : 800}
-            fetchpriority="high"
-            data-pin-media={pinImage}
-            data-pin-title={pinTitle}
-            data-pin-description={pinDescription}
-          />
-          <div class="hero-actions">
-          <a
-            class="pin-btn"
-            href={pinHref}
-            target="_blank"
-            rel="noopener nofollow"
-            data-cta="pinterest-save"
-            aria-label="Save this post to Pinterest"
-          >
-            <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="currentColor"><path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.632-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
-            <span>Save this pin</span>
-          </a>
-          {/* Opens the OS share sheet on mobile (Messages, WhatsApp, Facebook,
-              email, whatever the reader actually uses). Falls back to copying
-              the link on desktop, where Web Share is patchy. */}
-          <button
-            class="share-btn"
-            type="button"
-            data-share-url={url}
-            data-share-title={data.title}
-            data-share-text={data.description}
-            data-cta="share"
-          >
-            <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
-            <span class="share-label">Share</span>
-          </button>
-          </div>
-        </figure>
-      )}
-
-      <div class="prose">
-        <Content />
-      </div>
-
-      {/* Off-screen copy of the pin so Pinterest's "save from URL" flow offers
-          the branded 2:3 image. Lazy + off-screen, so it costs readers nothing. */}
-      {data.pinImage && (
-        <div class="pin-source" aria-hidden="true">
-          <img
-            src={data.pinImage}
-            alt={pinTitle}
-            loading="lazy"
-            width="1000"
-            height="1500"
-            data-pin-title={pinTitle}
-            data-pin-description={pinDescription}
-          />
-        </div>
-      )}
-
-      <PostNav newer={newer} older={older} />
-
-      {/* The end-of-post CTA. Most readers never reach it — that is what the
-          mid-article one placed by rehype-app-cta.mjs is for — so this one is
-          written for the reader who did read to the end, and leads with the
-          next season rather than with this post's crop. */}
-      <aside class="post-cta">
-        <h3>Get next season's dates right</h3>
-        <p>
-          Garden Planner Pro builds your planting calendar from your own local frost dates, lays
-          out every bed square by square, and totals up what each harvest saved you.
-        </p>
-        <a
-          class="btn"
-          href={storeUrl('ios', data.storePage)}
-          data-play-href={storeUrl('android', data.storePage)}
-          data-store-link
-          data-cta="post-footer"
-        >Get the free app</a>
-        <p class="post-cta-foot">Free on iPhone, iPad and Android · 440+ plants · nine languages</p>
-      </aside>
-    </div>
-
-    <RelatedPosts posts={related} />
-  </article>
-</BaseLayout>
-
-<script>
-  document.querySelectorAll<HTMLButtonElement>('.share-btn').forEach((btn) => {
-    const label = btn.querySelector('.share-label');
-    btn.addEventListener('click', async () => {
-      const { shareUrl, shareTitle, shareText } = btn.dataset;
-      if (!shareUrl) return;
-
-      if (navigator.share) {
-        try {
-          await navigator.share({ title: shareTitle, text: shareText, url: shareUrl });
-        } catch {
-          /* reader dismissed the sheet */
-        }
-        return;
-      }
-
-      try {
-        await navigator.clipboard.writeText(shareUrl);
-        if (!label) return;
-        const original = label.textContent;
-        label.textContent = 'Link copied';
-        btn.classList.add('is-copied');
-        setTimeout(() => {
-          label.textContent = original;
-          btn.classList.remove('is-copied');
-        }, 2000);
-      } catch {
-        window.prompt('Copy this link:', shareUrl);
-      }
-    });
-  });
-</script>
+<ArticlePage {...Astro.props} />

@@ -5,14 +5,20 @@ import type { Post } from '../lib/posts';
 
 interface Props {
   posts: Post[];
+  lang?: 'en' | 'es';
 }
 
-const { posts } = Astro.props;
+const { posts, lang = 'en' } = Astro.props;
+
+const title = {
+  en: 'You might also be interested in',
+  es: 'También te puede interesar',
+}[lang];
 ---
 {posts.length > 0 && (
   <aside class="related" id="related">
     <div class="wrap">
-      <h2 class="related-title">You might also be interested in</h2>
+      <h2 class="related-title">{title}</h2>
       <div class="post-grid">
         {posts.map((post) => <PostCard post={post} />)}
       </div>

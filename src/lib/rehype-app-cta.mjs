@@ -27,8 +27,8 @@
  * `ctaHook` in a post's frontmatter, when the post has one — a single sentence
  * tying *this* post's subject to the app. A generic "get the app" earns nothing
  * mid-article; "your last frost date is the whole game here" earns the tap.
- * Posts without one get the default below, which leads with timing and savings
- * because those are the two things this audience buys on.
+ * Posts without one get the default in COPY below, which leads with timing and
+ * savings because those are the two things this audience buys on.
  *
  * Infographic entries are skipped: they are a caption around one image, and a
  * CTA wedged into three paragraphs is the whole page.
@@ -44,9 +44,26 @@
  */
 import { APP_STORE, storeUrl } from './store-urls.mjs';
 
-const DEFAULT_HOOK =
-  'Garden Planner Pro works your sowing, planting and harvest dates out from ' +
-  'your own local frost dates — then logs each harvest and totals up what it saved you.';
+/**
+ * The CTA's wording per language. Spanish article translations (`lang: "es"`)
+ * get Spanish copy; their `ctaHook`, when set, is already written in Spanish.
+ */
+const COPY = {
+  en: {
+    hook:
+      'Garden Planner Pro works your sowing, planting and harvest dates out from ' +
+      'your own local frost dates — then logs each harvest and totals up what it saved you.',
+    button: 'Get the free app',
+    foot: 'Free on iPhone, iPad and Android · 440+ plants · no account needed to start',
+  },
+  es: {
+    hook:
+      'Garden Planner Pro calcula tus fechas de siembra, trasplante y cosecha a partir de ' +
+      'las fechas de heladas de tu zona, y luego registra cada cosecha y suma lo que te has ahorrado.',
+    button: 'Descarga la app gratis',
+    foot: 'Gratis en iPhone, iPad y Android · más de 440 plantas · sin crear cuenta para empezar',
+  },
+};
 
 /** Blocks a CTA must never be inserted directly after. */
 const INTRODUCES_NEXT = new Set(['h1', 'h2', 'h3', 'h4', 'h5', 'h6']);
@@ -65,7 +82,7 @@ const text = (value) => ({ type: 'text', value });
  * instead of the plain Play URL, so a pest post lands on the pest listing on
  * both stores.
  */
-function ctaNode(hook, page) {
+function ctaNode(hook, page, copy) {
   return el('aside', { className: ['inline-cta'], 'data-inline-cta': '' }, [
     el('div', { className: ['inline-cta-body'] }, [
       el('p', { className: ['inline-cta-hook'] }, [text(hook)]),
@@ -78,11 +95,11 @@ function ctaNode(hook, page) {
           'data-store-link': '',
           'data-cta': 'post-inline',
         },
-        [text('Get the free app')]
+        [text(copy.button)]
       ),
     ]),
     el('p', { className: ['inline-cta-foot'] }, [
-      text('Free on iPhone, iPad and Android · 440+ plants · no account needed to start'),
+      text(copy.foot),
     ]),
   ]);
 }
@@ -147,7 +164,8 @@ export function rehypeAppCta() {
     const blocks = children.filter((n) => n.type === 'element').length;
     if (blocks < 4) return;
 
-    children.splice(insertionPoint(children), 0, ctaNode(frontmatter.ctaHook || DEFAULT_HOOK, page));
+    const copy = COPY[frontmatter.lang === 'es' ? 'es' : 'en'];
+    children.splice(insertionPoint(children), 0, ctaNode(frontmatter.ctaHook || copy.hook, page, copy));
   };
 }
 

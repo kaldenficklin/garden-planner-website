@@ -1,0 +1,59 @@
+---
+/**
+ * The Spanish article index, /es/blog/: every Spanish translation, newest
+ * first, on one page. No pagination yet — /blog's pager exists because a long
+ * archive page is slow and thin per post, and the Spanish archive only starts
+ * growing in October 2026. Split it the way BlogIndexPage does once it's long.
+ */
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../../components/Breadcrumbs.astro';
+import PostList from '../../../components/PostList.astro';
+import { storeUrl } from '../../../lib/stores';
+import { publishedPosts, articles, blogHref } from '../../../lib/posts';
+
+const posts = articles(await publishedPosts(), 'es');
+const canonical = new URL(blogHref('es'), Astro.site).href;
+---
+<BaseLayout
+  title="El blog de Garden Planner Pro — Cultiva un huerto mejor"
+  description="Guías prácticas de huerto: cuándo sembrar, asociaciones de cultivos, control de plagas, semilleros y consejos de cosecha, del equipo de Garden Planner Pro."
+  canonical={canonical}
+  lang="es"
+>
+  <section class="blog-hero">
+    <div class="wrap wrap-narrow">
+      <Breadcrumbs items={[{ name: 'Inicio', href: blogHref('es') }, { name: 'Blog', href: blogHref('es') }]} label="Ruta de navegación" />
+      <p class="eyebrow">El blog de Garden Planner Pro</p>
+      <h1>Cultiva un huerto mejor</h1>
+      <p class="lead">Guías de siembra, calendarios y consejos para cada temporada que te ayudan a planificar, cultivar y cosechar más.</p>
+      <p class="ig-meta">¿Prefieres imágenes? Echa un vistazo a las <a href="/es/infographics/">infografías de jardinería</a>: fichas de consulta rápida para guardar. · <a href={blogHref('en')} rel="alternate" hreflang="en">Read in English</a></p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap wrap-narrow">
+      {posts.length === 0 ? (
+        <p>Pronto habrá artículos nuevos. ¡Vuelve pronto!</p>
+      ) : (
+        <PostList posts={posts} lang="es" />
+      )}
+
+      {/* A button rather than the StoreBadges pair /blog uses: the badges'
+          wording is English, and a Spanish page shouldn't end on it. */}
+      <aside class="post-cta">
+        <h3>Planifica tu mejor temporada</h3>
+        <p>
+          Una biblioteca de más de 440 plantas, un planificador de bancales por cuadros, un
+          calendario de siembra ajustado a tus fechas de heladas y registro de cosecha.
+        </p>
+        <a
+          class="btn"
+          href={storeUrl('ios')}
+          data-play-href={storeUrl('android')}
+          data-store-link
+          data-cta="blog-index-band"
+        >Descarga la app gratis</a>
+      </aside>
+    </div>
+  </section>
+</BaseLayout>

@@ -1,19 +1,25 @@
 ---
-/** Links to the posts published either side of this one. */
-import type { Post } from '../lib/posts';
+/** Links to the posts published either side of this one, in the same language. */
+import { postHref, type Post } from '../lib/posts';
 
 interface Props {
   newer?: Post;
   older?: Post;
+  lang?: 'en' | 'es';
 }
 
-const { newer, older } = Astro.props;
+const { newer, older, lang = 'en' } = Astro.props;
+
+const T = {
+  en: { label: 'More posts', newer: '← Newer post', older: 'Older post →' },
+  es: { label: 'Más artículos', newer: '← Artículo más reciente', older: 'Artículo anterior →' },
+}[lang];
 ---
 {(newer || older) && (
-  <nav class="post-nav" aria-label="More posts">
+  <nav class="post-nav" aria-label={T.label}>
     {newer ? (
-      <a class="post-nav-link post-nav-newer" href={`/blog/${newer.id}/`} rel="prev">
-        <span class="post-nav-dir">← Newer post</span>
+      <a class="post-nav-link post-nav-newer" href={postHref(newer)} rel="prev">
+        <span class="post-nav-dir">{T.newer}</span>
         <span class="post-nav-title">{newer.data.title}</span>
       </a>
     ) : (
@@ -21,8 +27,8 @@ const { newer, older } = Astro.props;
       <span aria-hidden="true"></span>
     )}
     {older && (
-      <a class="post-nav-link post-nav-older" href={`/blog/${older.id}/`} rel="next">
-        <span class="post-nav-dir">Older post →</span>
+      <a class="post-nav-link post-nav-older" href={postHref(older)} rel="next">
+        <span class="post-nav-dir">{T.older}</span>
         <span class="post-nav-title">{older.data.title}</span>
       </a>
     )}

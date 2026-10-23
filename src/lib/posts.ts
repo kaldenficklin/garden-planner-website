@@ -37,7 +37,10 @@ export async function publishedPosts(): Promise<Post[]> {
 }
 
 /**
- * The written blog: English articles only.
+ * The written blog in one language: English by default, which is what /blog,
+ * its pagination, the tag hubs, the RSS feed and the landing page's "latest"
+ * rail all want. Spanish translations live apart at /es/blog/, so letting them
+ * into those lists would show every article twice, once in each language.
  *
  * Infographics are deliberately excluded. The routine publishes two a day, so
  * inside a month they would outnumber the articles and bury them on /blog, in
@@ -45,8 +48,8 @@ export async function publishedPosts(): Promise<Post[]> {
  * /infographics/, which is also a better match for how people arrive at them
  * (from a pin, wanting the chart) than a reverse-chronological article list.
  */
-export const articles = (posts: Post[]) =>
-  posts.filter((p) => p.data.type !== 'infographic' && p.data.lang === 'en');
+export const articles = (posts: Post[], lang: 'en' | 'es' = 'en') =>
+  posts.filter((p) => p.data.type !== 'infographic' && p.data.lang === lang);
 
 /** Published infographics in one language, newest first. */
 export const infographics = (posts: Post[], lang: 'en' | 'es' = 'en') =>
@@ -60,23 +63,35 @@ export const infographics = (posts: Post[], lang: 'en' | 'es' = 'en') =>
  */
 export const entrySlug = (post: Post) => post.id.replace(/\.md$/, '').replace(/^es\//, '');
 
-/** Where an entry lives. Infographics have their own section; articles stay on /blog. */
+/**
+ * Where an entry lives. Infographics have their own section; articles live on
+ * /blog, and their Spanish translations under /es/blog/ — a language prefix
+ * rather than a query or a cookie, so each version is its own crawlable URL.
+ */
 export function postHref(post: Post): string {
   const slug = entrySlug(post);
-  if (post.data.type !== 'infographic') return `/blog/${slug}/`;
-  return post.data.lang === 'es' ? `/es/infographics/${slug}/` : `/infographics/${slug}/`;
+  const es = post.data.lang === 'es';
+  if (post.data.type !== 'infographic') return es ? `/es/blog/${slug}/` : `/blog/${slug}/`;
+  return es ? `/es/infographics/${slug}/` : `/infographics/${slug}/`;
 }
 
+/** The article index for a language: the target of the "Blog" breadcrumb. */
+export const blogHref = (lang: 'en' | 'es' = 'en') => (lang === 'es' ? '/es/blog/' : '/blog/');
+
 /**
- * The other language's version of an infographic, if it exists. Pairs are
- * matched on `translationKey` rather than on slug, because the Spanish slug is
- * translated too (a Spanish URL full of English words ranks badly and reads as
- * a machine translation).
+ * The other language's version of an entry, if it exists. Pairs are matched on
+ * `translationKey` rather than on slug, because the Spanish slug is translated
+ * too (a Spanish URL full of English words ranks badly and reads as a machine
+ * translation). The type must match as well: an article's key is its English
+ * slug, and nothing stops an infographic's key from being the same words.
  */
 export function translationOf(post: Post, all: Post[]): Post | undefined {
   if (!post.data.translationKey) return undefined;
   return all.find(
-    (p) => p.data.translationKey === post.data.translationKey && p.data.lang !== post.data.lang
+    (p) =>
+      p.data.translationKey === post.data.translationKey &&
+      p.data.lang !== post.data.lang &&
+      p.data.type === post.data.type
   );
 }
 
@@ -200,8 +215,10 @@ export function relatedPosts(post: Post, all: Post[], limit = 3): Post[] {
 
 // timeZone: 'UTC' because frontmatter dates parse as UTC midnight — without it,
 // a build machine west of Greenwich renders every post a day early.
-export const formatDate = (d: Date) =>
-  d.toLocaleDateString('en-US', {
+// A long Spanish date reads the same in every Spanish locale ("23 de octubre de
+// 2026"), so es-ES serves Latin American readers just as well.
+export const formatDate = (d: Date, lang: 'en' | 'es' = 'en') =>
+  d.toLocaleDateString(lang === 'es' ? 'es-ES' : 'en-US', {
     year: 'numeric',
     month: 'long',
     day: 'numeric',

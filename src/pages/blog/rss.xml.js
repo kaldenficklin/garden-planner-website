@@ -1,11 +1,11 @@
 import rss from '@astrojs/rss';
-import { publishedPosts } from '../../lib/posts';
+import { publishedPosts, articles, postHref } from '../../lib/posts';
 
 export async function GET(context) {
-  const posts = (await publishedPosts())
-    // Infographics have their own per-language feeds (src/lib/pinFeed.js).
-    // Two a day would swamp the article feed within a month.
-    .filter((p) => p.data.type !== 'infographic');
+  // English articles only. Infographics have their own per-language feeds
+  // (src/lib/pinFeed.js) — two a day would swamp this one within a month — and
+  // each Spanish article is a translation of one already in here.
+  const posts = articles(await publishedPosts());
 
   return rss({
     title: 'Garden Planner Pro Blog',
@@ -16,7 +16,7 @@ export async function GET(context) {
       title: post.data.title,
       description: post.data.description,
       pubDate: post.data.date,
-      link: `/blog/${post.id}/`,
+      link: postHref(post),
       categories: post.data.tags,
     })),
   });

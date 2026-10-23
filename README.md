@@ -31,7 +31,10 @@ Built with [Astro](https://astro.build). The secondary marketing pages live in
 | `src/layouts/BaseLayout.astro` | Shared shell + SEO meta (every page but `/`) |
 | `src/lib/posts.ts` | Post queries, page size, related-post ranking |
 | `src/components/` | Post cards, post list, pager, related posts, post nav |
-| `src/pages/blog/` | Blog index, `/blog/page/N/`, tag hubs, post template, RSS |
+| `src/pages/blog/` | Blog index, `/blog/page/N/`, tag hubs, post route, RSS |
+| `src/components/ArticlePage.astro` | The article template, in English or Spanish |
+| `src/content/blog/es/*.md` | Spanish translations — see "Spanish articles" below |
+| `src/pages/es/blog/` | Spanish article index and post route (`/es/blog/`) |
 | `netlify.toml` | Build + publish config |
 
 ## Two landing pages, US and UK
@@ -62,14 +65,16 @@ Every post gets **two** CTAs, and the important one is not at the bottom.
   inside the answer. It is a rehype pass rather than markup in the page
   component because `<Content />` offers no seam to splice at; doing it at the
   HAST stage also puts it in the crawled HTML and costs no layout shift.
-- **End of post**, in `src/pages/blog/[...slug].astro`, written for the reader
-  who did finish.
+- **End of post**, in `src/components/ArticlePage.astro`, written for the
+  reader who did finish.
 
 Set **`ctaHook`** in a post's frontmatter: one sentence tying *that* post's
 subject to the app. A generic "get the app" earns nothing mid-article. Posts
 without one fall back to a generic timing-and-savings line.
 
-Infographic entries are skipped — they are a caption around one image.
+Infographic entries are skipped — they are a caption around one image. A
+Spanish article (`lang: "es"`) gets the Spanish button, foot line and default
+hook; its `ctaHook` is written in Spanish like the rest of the post.
 
 ## Blog pagination
 
@@ -162,6 +167,8 @@ heroCrop: "south"                    # optional, see "Post images" below
 pinKeywords: ["fall vegetable garden", "organic pest control"]  # 3–5, see below
 ctaHook: "one sentence tying this post to the app"  # mid-article CTA, see above
 storePage: pests               # optional: pests | savings | beds | timing, see below
+translationKey: "post-slug"    # the English slug; pairs it with its Spanish translation
+lang: "es"                     # Spanish translations only; English is the default
 draft: false                   # true keeps it out of the build
 ---
 ```
@@ -188,6 +195,30 @@ A key with no id yet resolves to the default listing, so posts can carry the
 field before the page exists in either console. The Android swap in
 `BaseLayout.astro` reads each link's `data-play-href`, which is how the Play
 listing follows the same choice.
+
+## Spanish articles
+
+Every English article gets a Spanish translation, **published the same day**
+(same `date`), so the pair goes live together.
+
+- **File:** `src/content/blog/es/<spanish-slug>.md`, with `lang: "es"` and no
+  `type`. Translate the slug too — a Spanish URL full of English words reads as
+  a machine translation and ranks badly.
+- **Pairing:** both files carry the same `translationKey`, which is the English
+  article's own slug. That is what puts reciprocal `hreflang` links (and an
+  `x-default` pointing at the English page) on both, and the "Ver en español" /
+  "Read in English" link under each title. A key with no live partner simply
+  renders no alternates.
+- **URL:** `/es/blog/<spanish-slug>/`, listed newest-first on `/es/blog/`.
+- **What it is kept out of:** `/blog` and its pages, the tag hubs, the RSS feed
+  and the landing page's latest posts are English-only (`articles()` in
+  `src/lib/posts.ts` defaults to `'en'`). A Spanish article's prev/next and
+  related posts come from Spanish articles only, and its tags are not shown —
+  the hubs are English — though they still rank its related posts.
+- **Chrome:** every label around the post (breadcrumbs, dates, Save/Share, the
+  end-of-post CTA, prev/next, "También te puede interesar") comes from the copy
+  table `T` in `ArticlePage.astro`; the mid-article CTA's Spanish copy is in
+  `src/lib/rehype-app-cta.mjs`.
 
 ## Scheduled publishing and auto-pinning
 

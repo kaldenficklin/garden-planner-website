@@ -67,9 +67,10 @@ const blog = defineCollection({
     // filtered apart.
     type: z.enum(['article', 'infographic']).default('article'),
 
-    // Language of this entry. Articles are English only; infographics ship as
-    // an en/es pair. The two halves of a pair share a `translationKey`, which
-    // is what wires up the hreflang alternates and the language switcher.
+    // Language of this entry. Articles and infographics both ship as en/es
+    // pairs, the Spanish half in src/content/blog/es/. The two halves share a
+    // `translationKey` — for articles, the English slug — which is what wires
+    // up the hreflang alternates and the language switcher.
     lang: z.enum(['en', 'es']).default('en'),
     translationKey: z.string().optional(),
 

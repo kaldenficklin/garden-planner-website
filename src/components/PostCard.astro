@@ -5,7 +5,7 @@
  * Styles live in style.css so both the marketing page and the blog get them.
  */
 import type { Post } from '../lib/posts';
-import { formatDate } from '../lib/posts';
+import { formatDate, postHref } from '../lib/posts';
 
 interface Props {
   post: Post;
@@ -20,7 +20,7 @@ const { data } = post;
 const cardImg = data.image ?? data.infographicImage;
 ---
 <article class="post-preview">
-  <a class="post-preview-link" href={`/blog/${post.id}/`}>
+  <a class="post-preview-link" href={postHref(post)}>
     {cardImg && (
       <img
         class="post-preview-img"
@@ -32,7 +32,7 @@ const cardImg = data.image ?? data.infographicImage;
       />
     )}
     <div class="post-preview-body">
-      <time class="post-date" datetime={data.date.toISOString()}>{formatDate(data.date)}</time>
+      <time class="post-date" datetime={data.date.toISOString()}>{formatDate(data.date, data.lang)}</time>
       <h3 class="post-preview-title">{data.title}</h3>
       <p class="post-preview-desc">{data.description}</p>
     </div>

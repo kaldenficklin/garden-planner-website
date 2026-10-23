@@ -2,15 +2,17 @@
 /** The text-only card list used by the blog index and the tag hubs. */
 import TagRow from './TagRow.astro';
 import type { Post } from '../lib/posts';
-import { formatDate, publishedPosts, articles, tagsWithPages } from '../lib/posts';
+import { formatDate, publishedPosts, articles, tagsWithPages, postHref } from '../lib/posts';
 
 interface Props {
   posts: Post[];
   /** Set on a tag hub, so that tag doesn't link back to the page you're on. */
   currentTag?: string;
+  lang?: 'en' | 'es';
 }
 
-const { posts, currentTag } = Astro.props;
+const { posts, currentTag, lang = 'en' } = Astro.props;
+const readMore = { en: 'Read more →', es: 'Leer más →' }[lang];
 
 // Which tags have a hub is a property of the whole blog, not of this slice of
 // it, so it's derived from every post rather than from `posts`.
@@ -19,16 +21,20 @@ const linked = tagsWithPages(articles(await publishedPosts())).map((t) => t.tag)
 <ul class="post-list">
   {posts.map((post) => (
     <li class="post-card">
-      <a class="post-card-link" href={`/blog/${post.id}/`}>
-        <time class="post-date" datetime={post.data.date.toISOString()}>{formatDate(post.data.date)}</time>
+      <a class="post-card-link" href={postHref(post)}>
+        <time class="post-date" datetime={post.data.date.toISOString()}>{formatDate(post.data.date, lang)}</time>
         <h2 class="post-card-title">{post.data.title}</h2>
         <p class="post-card-desc">{post.data.description}</p>
-        <span class="read-more">Read more →</span>
+        <span class="read-more">{readMore}</span>
       </a>
-      {/* Outside the card link — a link inside a link is invalid HTML. */}
-      <div class="post-card-tags">
-        <TagRow tags={post.data.tags} linked={linked} current={currentTag} />
-      </div>
+      {/* Outside the card link — a link inside a link is invalid HTML. No tags
+          on Spanish cards: the labels come from the English TAG_COPY and the
+          hubs they would link to are English-only. */}
+      {lang === 'en' && (
+        <div class="post-card-tags">
+          <TagRow tags={post.data.tags} linked={linked} current={currentTag} />
+        </div>
+      )}
     </li>
   ))}
 </ul>

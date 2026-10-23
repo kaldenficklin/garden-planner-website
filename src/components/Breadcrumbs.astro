@@ -15,9 +15,11 @@ interface Crumb {
 
 interface Props {
   items: Crumb[];
+  /** The nav's accessible name, in the page's language. */
+  label?: string;
 }
 
-const { items } = Astro.props;
+const { items, label = 'Breadcrumb' } = Astro.props;
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -30,7 +32,7 @@ const jsonLd = {
   })),
 };
 ---
-<nav class="crumbs" aria-label="Breadcrumb">
+<nav class="crumbs" aria-label={label}>
   <ol class="crumb-list">
     {items.map((item, i) => (
       <li class="crumb">
