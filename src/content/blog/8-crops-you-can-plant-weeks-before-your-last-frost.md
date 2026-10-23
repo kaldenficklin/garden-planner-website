@@ -13,6 +13,7 @@ pinKeywords: ["early spring planting", "cool season vegetables", "when to plant 
 ctaHook: "The planting calendar counts each of these back from your own last frost, so the early dates show up weeks before the tomato ones do."
 pinDescription: "Peas, spinach, radishes, fava beans, onions, potatoes, lettuce and broccoli transplants can all go in the ground weeks before your last frost date. How many weeks early for each one, how to tell the soil is workable, and which of them people most often plant too late. Save it for when you plan your spring vegetable garden in January."
 pinBoard: "Seed Starting & Frost Dates"
+translationKey: "8-crops-you-can-plant-weeks-before-your-last-frost"
 draft: false
 ---
 

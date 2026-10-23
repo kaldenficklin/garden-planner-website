@@ -14,6 +14,7 @@ storePage: pests
 ctaHook: "Log the week your greens colour up in the garden journal, and next autumn you'll know it for the cold snap it is."
 pinDescription: "Kale, cabbage, broccoli and lettuce turning purple in autumn is a normal reaction to cold nights, not a phosphorus deficiency, and bone meal won't turn it back. When purple leaves do mean a problem, why cold soil mimics a nutrient shortage, and why frost makes kale sweeter."
 pinBoard: "Garden Pests & Organic Control"
+translationKey: "your-fall-kale-turned-purple-put-the-bone-meal-down"
 draft: false
 ---
 

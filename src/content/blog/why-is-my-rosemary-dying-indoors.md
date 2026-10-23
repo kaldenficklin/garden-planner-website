@@ -14,6 +14,7 @@ storePage: pests
 ctaHook: "Watering reminders help with indoor herbs, as long as you still push a finger into the pot before you pour."
 pinDescription: "Rosemary dying indoors in winter, with brown needles dropping from the bottom up, is usually down to a spot that is too warm and too dim. How low light turns into root rot, why rosemary doesn't wilt before it dries out, and how to overwinter rosemary indoors in the coolest bright spot in the house."
 pinBoard: "Container & Small Space Gardening"
+translationKey: "why-is-my-rosemary-dying-indoors"
 draft: false
 ---
 

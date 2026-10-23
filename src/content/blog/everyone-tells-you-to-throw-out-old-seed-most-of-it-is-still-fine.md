@@ -13,6 +13,7 @@ pinKeywords: ["seed starting", "seed storage", "vegetable garden planning", "gar
 ctaHook: "The plant library lists what each crop needs at sowing, which is worth checking before you decide a packet is dead rather than just sown too cold."
 pinDescription: "The date on a seed packet is the season it was packed for, not the day the seed dies. Tomatoes, squash, beans and brassicas keep for years past it. Onion, leek and parsnip really do not. A crop-by-crop table of how long each type lasts, how storage changes it, and the ten-seed test that settles any argument before you place a January order."
 pinBoard: "Seed Starting & Frost Dates"
+translationKey: "everyone-tells-you-to-throw-out-old-seed-most-of-it-is-still-fine"
 draft: false
 ---
 

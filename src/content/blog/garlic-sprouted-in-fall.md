@@ -14,6 +14,7 @@ storePage: pests
 ctaHook: "The planting calendar times garlic from your own frost dates, so next autumn's cloves go in when they should for your garden."
 pinDescription: "Garlic sprouting in fall is normal and almost never hurts the harvest. Why fall-planted garlic sends up green shoots in October, what frost will do to the leaves, when to mulch the bed, and the one sign (missing shoots and soft cloves) that means a real problem."
 pinBoard: "Garden Pests & Organic Control"
+translationKey: "garlic-sprouted-in-fall"
 draft: false
 ---
 
