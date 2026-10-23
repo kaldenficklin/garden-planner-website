@@ -33,6 +33,7 @@ export const PIN_BOARDS = {
   'succession-planting': 'Succession Planting',
   'garden-infographics': 'Garden Infographics',
   'infografias-de-jardineria': 'Infografías de Jardinería',
+  'consejos-para-el-huerto': 'Consejos para el Huerto',
 } as const;
 
 export type BoardSlug = keyof typeof PIN_BOARDS;
@@ -48,15 +49,18 @@ export const AUTO_PIN_FROM = '2026-10-23';
 /**
  * Which board an entry goes on.
  *
+ * Everything Spanish goes on a Spanish board, because a Spanish pin on an
+ * English board reads as spam to the algorithm and to that board's followers.
  * Infographics go by language and nothing else: Garden Infographics carries
- * most of the account's reach, and a Spanish pin on an English board reads as
- * spam. Articles use `pinBoard`; one without it falls back on what the post
- * is about, so a missing field still lands somewhere sensible.
+ * most of the account's reach. English articles use `pinBoard`; one without
+ * it falls back on what the post is about, so a missing field still lands
+ * somewhere sensible.
  */
 export function boardFor(post: Post): BoardSlug {
   if (post.data.type === 'infographic') {
     return post.data.lang === 'es' ? 'infografias-de-jardineria' : 'garden-infographics';
   }
+  if (post.data.lang === 'es') return 'consejos-para-el-huerto';
   const named = Object.entries(PIN_BOARDS).find(([, name]) => name === post.data.pinBoard);
   if (named) return named[0] as BoardSlug;
   return post.data.storePage === 'pests' ? 'garden-pests-organic-control' : 'vegetable-garden-layouts';
@@ -73,6 +77,8 @@ export function pinDestination(post: Post, site: URL): string {
   url.searchParams.set('utm_campaign', entrySlug(post));
   if (post.data.type === 'infographic') {
     url.searchParams.set('utm_content', post.data.lang === 'es' ? 'infographic-es' : 'infographic');
+  } else if (post.data.lang === 'es') {
+    url.searchParams.set('utm_content', 'article-es');
   }
   return url.href;
 }

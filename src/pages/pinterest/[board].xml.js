@@ -12,7 +12,17 @@
  */
 import rss from '@astrojs/rss';
 import { publishedPosts } from '../../lib/posts';
-import { PIN_BOARDS, autoPins } from '../../lib/pinQueue';
+import { PIN_BOARDS, autoPins, boardFor, toPin } from '../../lib/pinQueue';
+
+/**
+ * Pinterest refuses to connect a feed with no items, and these feeds only list
+ * entries from AUTO_PIN_FROM on, so a board with nothing new yet can't be
+ * connected. While this is on, an empty feed carries that board's most recent
+ * live entry (else the latest in its language) so it can be connected. Turn it
+ * back off as soon as the feeds are connected: Pinterest pins what a feed
+ * holds, oldest first, so a seed left in place becomes a duplicate pin.
+ */
+const SEED_EMPTY_FEEDS = true;
 
 const escapeXml = (s) =>
   String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
@@ -23,7 +33,16 @@ export function getStaticPaths() {
 
 export async function GET(context) {
   const { board } = context.params;
-  const pins = autoPins(await publishedPosts(), context.site).filter((p) => p.boardSlug === board);
+  const live = await publishedPosts();
+  let pins = autoPins(live, context.site).filter((p) => p.boardSlug === board);
+  if (SEED_EMPTY_FEEDS && pins.length === 0) {
+    const lang = board === 'infografias-de-jardineria' || board === 'consejos-para-el-huerto' ? 'es' : 'en';
+    const seed =
+      live.find((p) => boardFor(p) === board && toPin(p, context.site)) ??
+      live.find((p) => p.data.lang === lang && toPin(p, context.site));
+    const pin = seed && toPin(seed, context.site);
+    if (pin) pins = [pin];
+  }
 
   return rss({
     title: `Garden Planner Pro — ${PIN_BOARDS[board]}`,
